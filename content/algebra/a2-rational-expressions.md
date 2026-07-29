@@ -8,6 +8,8 @@ The important point at the start: you already know how to handle rational expres
 
 Nothing in that list is new. The difficulty is that with numbers you can see the factors immediately — with six over nine, the three is obvious. With algebra the factors are hidden inside the expression, and you have to create the factors before you can use them.
 
+This is the topic the examiner's reports are hardest on. The 2025 report says a lack of basic algebra skills limited candidates across all three papers of Level 2 maths, and that it was most evident when they were asked to work with expressions involving fractions.
+
 Which means the first move in almost every one of these questions is the same: **factorise everything you can see.**
 
 ---
@@ -182,7 +184,7 @@ steps:
     note: A common factor appears, so it cancels.
 ```
 
-The reliable defence is to write brackets around the second numerator before you do anything else, and expand the minus deliberately. Every year the examiner's report lists this error.
+The reliable defence is to write brackets around the second numerator before you do anything else, and expand the minus deliberately. The reports put this skill on both of their lists: the 2025 report gives dealing incorrectly with negative numbers as a reason candidates did not achieve, and the 2024 report gives working with negative terms without error as something candidates awarded Merit could do.
 
 ```practice
 caption: adding and subtracting
