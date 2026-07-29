@@ -8,7 +8,7 @@ What follows is the toolkit for doing that — one rule that governs all of it, 
 
 ---
 
-## The rule
+## The value must not change
 
 One rule governs all work with expressions: the value must not change.
 
@@ -130,7 +130,7 @@ Factorising is the step that makes both of those available.
 
 ---
 
-## The toolkit
+## Three ways to factorise
 
 Three tools, applied in this order.
 

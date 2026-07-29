@@ -163,7 +163,7 @@ steps:
 
 Leave the denominator in factorised form. It is already simplest, and expanding it hides whether anything cancels.
 
-### The sign trap when subtracting
+### The minus applies to the whole numerator
 
 When you subtract, the minus applies to the entire numerator of the second fraction, not just its first term.
 
@@ -221,7 +221,7 @@ questions:
 
 ---
 
-## One more thing to look for
+## Brackets that differ only by a sign
 
 Sometimes two factors do not match because one is the negative of the other. Three minus $x$, and $x$ minus three, are not the same factor — but they differ only by a sign. Take a minus one out of three minus $x$, and it becomes minus one, times $x$ minus three. Now the brackets match and can cancel.
 

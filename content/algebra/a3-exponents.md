@@ -60,7 +60,7 @@ steps:
 
 Multiply the exponents.
 
-### The condition on all three
+### All three need the same base
 
 Every one of those laws requires the **same base**. Two cubed times three squared cannot be combined, because one is built from twos and the other from threes. There is nothing to gather.
 
@@ -97,7 +97,7 @@ questions:
 
 ---
 
-## Powers over products, and the trap
+## Powers over products, not over sums
 
 A power applied to a product applies to every factor.
 

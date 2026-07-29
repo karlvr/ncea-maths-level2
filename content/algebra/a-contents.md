@@ -79,7 +79,7 @@ There is an equals sign now, so there is something to find.
 
 ---
 
-## The size of it
+## How much of it is really new
 
 Seven topics and about thirty skills, but there is a lot of cross-over between the topics, and that makes the subject smaller than the count suggests.
 
