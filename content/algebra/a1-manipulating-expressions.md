@@ -4,7 +4,7 @@
 
 Nothing in this lesson has an equals sign, so nothing in it gets solved. Every question asks the same thing: here is an expression, write it more simply.
 
-What follows is the toolkit for doing that — one rule that governs all of it, then three techniques applied in a fixed order.
+What follows is the toolkit for doing that — one rule that governs all of it, the two words for the parts of an expression, then three techniques applied in a fixed order.
 
 ---
 
@@ -88,6 +88,42 @@ questions:
 
 ---
 
+## Terms and factors
+
+Two words name the parts of an expression, and the difference between them decides what you are allowed to do with those parts.
+
+**Terms** are the parts that are added. Three $x$ squared plus five $x$ minus two has three terms. The sign in front of a term belongs to that term, so the third term is minus two rather than two.
+
+Within a term, the number in front of the letters is the **coefficient**, and the letters are the **letter part**. A term with no letters at all is the **constant**. Where no number is written the coefficient is one, so $x$ squared means one $x$ squared.
+
+```figure
+caption: The parts of a term
+steps:
+  - math: \ca{3}x^2 + \ca{5}x - \cb{2}
+    note: Three and five are coefficients. Minus two is the constant.
+```
+
+**Factors** are the parts that are multiplied. Three $x$ times the bracket $x$ plus three has two factors: the three $x$, and the bracket.
+
+Which of the two words applies depends on the form in front of you. A sum is cut into terms. A product is cut into factors. The same expression can be written either way, and moving between those two forms is the whole of what expanding and factorising do.
+
+```figure
+caption: The same expression, cut two ways
+steps:
+  - math: 6x^2 + 9x
+    note: Added, so the parts are terms. There are two of them.
+  - math: 3x(2x+3)
+    note: Multiplied, so the parts are factors. Two of those as well, and one of them is a bracket.
+  - math: 6x^2 + 9x \;=\; 3x(2x+3)
+    note: One expression and one value, written two ways. Only the form has changed.
+```
+
+A term has factors of its own. Six $x$ squared is six times $x$ times $x$, so six and $x$ are both factors of it, and searching every term for a factor they all share is the first of the three techniques below. The expression as a whole is different. It has factors only once the whole of it is a product. Six $x$ squared plus nine $x$ has none, because the last thing done in it is an addition.
+
+The rest of the lesson moves between those two forms.
+
+---
+
 ## Expanding and factorising
 
 Two operations, and they are opposites of each other.
@@ -111,7 +147,7 @@ steps:
   - math: \ca{x}\!\cdot\!\cc{x} \;+\; \ca{x}\!\cdot\!\cd{5} \;+\; \cb{2}\!\cdot\!\cc{x} \;+\; \cb{2}\!\cdot\!\cd{5}
     note: Four products, because there are two terms in each bracket.
   - math: x^2 + \ca{5x} + \cb{2x} + 10
-    note: Two of them are like terms.
+    note: Two of them have the same letter part, so they combine into one.
   - math: x^2 + 7x + 10
 ```
 
@@ -537,6 +573,8 @@ questions:
 ## Summary
 
 Expressions are simplified. Equations are solved. This module is expressions.
+
+Terms are the parts that are added and factors are the parts that are multiplied. Only factors cancel.
 
 Expanding and factorising are opposites. Expanding is the mechanical direction. Factorising is the one being assessed.
 

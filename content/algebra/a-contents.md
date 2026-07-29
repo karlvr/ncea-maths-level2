@@ -14,6 +14,7 @@ Rewriting. There is no equals sign anywhere in this module, so nothing in it is 
 
 **A1 — Manipulating algebraic expressions.** The general toolkit: turning products into sums, and sums back into products.
 
+- telling terms from factors
 - expanding brackets, including three of them
 - taking out a common factor
 - difference of two squares
