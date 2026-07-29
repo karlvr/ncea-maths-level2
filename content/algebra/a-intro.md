@@ -1,8 +1,8 @@
-# Introduction — the shape of Level 2 algebra
+# The shape of Level 2 algebra
 
 ---
 
-Start with a distinction that runs through all of Level 2 algebra.
+## Expressions and equations
 
 An **expression** is a collection of terms with no equals sign. Three $x$ squared plus five $x$ minus two is an expression. It is not true and it is not false. It is a value written in parts — a value you cannot yet calculate, because you do not know what $x$ is.
 
@@ -41,9 +41,7 @@ steps:
       \end{array}
 ```
 
-Two consequences follow from that. There is nothing to solve in an expression, so a question that asks you to solve one is misworded. And you cannot move a term from one side to the other unless there is an equals sign, because without one there are no sides. Moving a term changes the value.
-
-Hold on to that distinction. It decides what a question is asking you to do, and almost everything below is one or the other.
+There is nothing to solve in an expression, so a question that asks you to solve one is misworded. And you cannot move a term from one side to the other unless there is an equals sign, because without one there are no sides, and moving a term changes the value. Whether a question hands you an expression or an equation decides what it asks you to do, and every question in this standard is one or the other.
 
 ---
 
