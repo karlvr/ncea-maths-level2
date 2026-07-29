@@ -81,7 +81,7 @@ There is an equals sign now, so there is something to find.
 
 ## The size of it
 
-Seven topics, and about thirty skills. That is the honest count, but it overstates the subject, because the seven topics are not seven separate ideas.
+Seven topics and about thirty skills, but there is a lot of cross-over between the topics, and that makes the subject smaller than the count suggests.
 
 Three of them are one quadratic asked about in three ways.
 
