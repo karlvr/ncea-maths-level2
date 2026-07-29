@@ -30,6 +30,12 @@
 
   --measure: 34rem;
   --sidebar: 17rem;
+
+  /* What already occupies the top of the viewport, and so how far down anything
+     held there has to sit. Nothing does on a wide screen. */
+  --toolbar: 0rem;
+  /* The height of the strip naming the section being read. */
+  --trail: 2.4rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -240,6 +246,48 @@ main {
   margin: 0.6rem 0 0;
 }
 
+/* ---------------------------------------------------------------- trail -- */
+
+/* The strip takes no height of its own, so a lesson is laid out as though it
+   were not there and nothing shifts when it begins naming a section. It paints
+   over the lesson instead, which is why it carries the page background. */
+.section-trail {
+  position: sticky;
+  top: var(--toolbar);
+  z-index: 1;
+  height: 0;
+  overflow: visible;
+}
+
+.section-trail p {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  height: var(--trail);
+  /* Wider than the measure, so nothing shows past the ends of the strip. */
+  margin: 0 -1rem;
+  padding: 0 1rem;
+  background: var(--page);
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* The last name in the trail is where the reader is now; anything before it is
+   the section that contains it. */
+.section-trail p > span:last-child {
+  color: var(--ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.section-trail-mark {
+  color: var(--rule);
+}
+
 .prose {
   font-family: var(--serif);
   font-size: 1.06rem;
@@ -252,13 +300,18 @@ main {
   font-size: 1.3rem;
   margin: 2rem 0 0.75rem;
   line-height: 1.3;
-  /* Room above a heading arrived at by anchor, so it is not flush to the top. */
-  scroll-margin-top: 1.5rem;
 }
 
 .prose h3 {
   font-size: 1.08rem;
   margin: 2rem 0 0.5rem;
+}
+
+/* A heading arrived at by anchor clears whatever is held at the top of the
+   viewport, and is not left flush against it. */
+.prose h2,
+.prose h3 {
+  scroll-margin-top: calc(var(--toolbar) + var(--trail) + 1.5rem);
 }
 
 .prose p {
@@ -552,20 +605,27 @@ main {
 /* -------------------------------------------------------------- narrow -- */
 
 @media (max-width: 52rem) {
+  :root {
+    --toolbar: 2.5rem;
+  }
+
   .shell {
     grid-template-columns: minmax(0, 1fr);
   }
 
+  /* Held at the very top, with the trail beneath rather than under it. */
   .menu-toggle {
-    display: block;
+    display: flex;
+    align-items: center;
     position: sticky;
     top: 0;
     z-index: 2;
     width: 100%;
+    height: var(--toolbar);
     font: inherit;
     font-size: 0.85rem;
     text-align: left;
-    padding: 0.7rem 1.25rem;
+    padding: 0 1.25rem;
     border: 0;
     border-bottom: 1px solid var(--rule);
     background: var(--page);
@@ -599,6 +659,7 @@ main {
 @media print {
   .sidebar,
   .menu-toggle,
+  .section-trail,
   .worked-controls,
   .practice-reveal,
   .lesson-onward {

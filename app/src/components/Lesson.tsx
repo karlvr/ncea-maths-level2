@@ -7,7 +7,8 @@
  * them.
  *
  * Sections carry an anchor derived from their wording, so a lesson can be
- * linked to at a point within it rather than only at its start.
+ * linked to at a point within it rather than only at its start, and the section
+ * being read stays named at the top of the page while it is scrolled through.
  */
 import { useEffect, useMemo, type ReactNode } from 'react'
 import { Link, useLocation } from 'react-router-dom'
@@ -20,6 +21,7 @@ import { sectionId, splitLesson } from '../lesson-body'
 import { neighbours, type TopicLocation } from '../syllabus'
 import { KATEX_OPTIONS } from './Maths'
 import { PracticeSet } from './PracticeSet'
+import { SectionTrail } from './SectionTrail'
 import { WorkedFigure } from './WorkedFigure'
 
 // Variables are written as `$x$` in the prose so they are set as mathematics
@@ -37,6 +39,9 @@ function textOf(node: ReactNode): string {
 const COMPONENTS = {
   h2: ({ children }: { children?: ReactNode }) => (
     <h2 id={sectionId(textOf(children))}>{children}</h2>
+  ),
+  h3: ({ children }: { children?: ReactNode }) => (
+    <h3 id={sectionId(textOf(children))}>{children}</h3>
   ),
 }
 
@@ -59,6 +64,8 @@ export function Lesson({ location }: { location: TopicLocation }) {
 
   return (
     <article className="lesson">
+      <SectionTrail topic={topic} />
+
       <header className="lesson-header">
         <p className="lesson-breadcrumb">
           {subject.title} · {module.title}

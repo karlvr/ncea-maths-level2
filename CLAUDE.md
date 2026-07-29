@@ -36,8 +36,10 @@ interleaved. Remove every block and the prose must still read as continuous
 writing — the formats are deliberately separable.
 
 Lessons are long, and stay on one page. The sidebar lists the open lesson's
-`##` headings and marks the one in view, so length is a navigation problem
-rather than a reason to split a topic across pages.
+`##` headings and marks the one in view, and a strip at the top of the page
+names the section and subsection being read once their headings have scrolled
+away — so length is a navigation problem rather than a reason to split a topic
+across pages.
 
 ### How the prose is written
 
@@ -211,11 +213,20 @@ Structure worth knowing before changing it:
 - [`src/components/Maths.tsx`](app/src/components/Maths.tsx) — the single set of
   KaTeX options. Prose, notes and figures all render through it, so a fragment
   looks identical wherever it appears. Change it in one place.
+- [`src/reading-position.ts`](app/src/reading-position.ts) — which section and
+  subsection are being read, answered once from the headings on the page so that
+  the sidebar and the sticky strip cannot disagree.
 
 Section anchors are derived from the heading wording, in one place
 (`sectionId`), and used both to build the sidebar and to stamp `id` on the
-rendered `<h2>`. Headings must therefore be plain text — notation in one would
-not survive the round trip.
+rendered `<h2>` and `<h3>`. Headings must therefore be plain text — notation in
+one would not survive the round trip.
+
+Anything held at the top of the viewport is sized in CSS by `--toolbar` (the
+narrow-screen contents bar) and `--trail` (the strip naming the section). The
+headings' `scroll-margin-top` clears both, and is also read back as the point at
+which a heading counts as the one being read — so the amount of headroom is
+stated in the stylesheet only.
 
 Routing is by hash and assets are relative, so the site works from any base
 path. Deployment to GitHub Pages happens on push to `main`.

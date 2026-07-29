@@ -7,53 +7,13 @@
  * navigable is to show the reader where in it they are, rather than to break it
  * into shorter pages.
  */
-import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
+import { useReadingPosition } from '../reading-position'
 import { SUBJECTS, type Section, type Topic } from '../syllabus'
 
-/** How far below the top of the viewport a heading counts as the one in view. */
-const THRESHOLD = 140
-
-/**
- * The section of the page currently being read, tracked as it scrolls. Empty
- * until the page has sections and has been scrolled past the first of them.
- */
-function useSectionInView(topicId: string | undefined): string | undefined {
-  const [inView, setInView] = useState<string>()
-
-  useEffect(() => {
-    setInView(undefined)
-    if (!topicId) return
-
-    const headings = [...document.querySelectorAll<HTMLElement>('.lesson .prose h2[id]')]
-    if (headings.length === 0) return
-
-    let queued = false
-    const measure = () => {
-      queued = false
-      let current: string | undefined
-      for (const heading of headings) {
-        if (heading.getBoundingClientRect().top > THRESHOLD) break
-        current = heading.id
-      }
-      setInView(current)
-    }
-    const onScroll = () => {
-      if (queued) return
-      queued = true
-      requestAnimationFrame(measure)
-    }
-
-    measure()
-    window.addEventListener('scroll', onScroll, { passive: true })
-    window.addEventListener('resize', onScroll)
-    return () => {
-      window.removeEventListener('scroll', onScroll)
-      window.removeEventListener('resize', onScroll)
-    }
-  }, [topicId])
-
-  return inView
+/** The lesson's own sections, without the subsections that sit inside them. */
+function topLevel(sections: readonly Section[]): readonly Section[] {
+  return sections.filter((section) => section.level === 2)
 }
 
 function Sections({
@@ -67,7 +27,7 @@ function Sections({
 }) {
   return (
     <ul className="contents-sections">
-      {topic.sections.map((section: Section) => (
+      {topLevel(topic.sections).map((section: Section) => (
         <li key={section.id}>
           <Link
             to={{ pathname: `/${topic.id}`, hash: `#${section.id}` }}
@@ -86,7 +46,7 @@ function Sections({
 export function Contents({ onNavigate }: { onNavigate: () => void }) {
   const { pathname } = useLocation()
   const openTopicId = pathname.replace(/^\//, '')
-  const inView = useSectionInView(openTopicId || undefined)
+  const inView = useReadingPosition(openTopicId || undefined).section
 
   return (
     <nav className="contents" aria-label="Contents">
@@ -111,7 +71,7 @@ export function Contents({ onNavigate }: { onNavigate: () => void }) {
                     <NavLink to={`/${topic.id}`} onClick={onNavigate} end>
                       {topic.title}
                     </NavLink>
-                    {topic.id === openTopicId && topic.sections.length > 0 && (
+                    {topic.id === openTopicId && topLevel(topic.sections).length > 0 && (
                       <Sections topic={topic} inView={inView} onNavigate={onNavigate} />
                     )}
                   </li>

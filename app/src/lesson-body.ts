@@ -66,10 +66,12 @@ export interface Practice {
   readonly questions: readonly Question[]
 }
 
-/** A `##` heading in a lesson, and the anchor it can be reached by. */
+/** A heading in a lesson, and the anchor it can be reached by. */
 export interface Section {
   readonly id: string
   readonly title: string
+  /** 2 for a section of the lesson, 3 for a subsection within one. */
+  readonly level: 2 | 3
 }
 
 export type LessonBlock =
@@ -80,7 +82,7 @@ export type LessonBlock =
 
 const BLOCK = /^```(figure|practice)$\n([\s\S]*?)^```$/gm
 const FENCED = /^```[\s\S]*?^```$/gm
-const HEADING = /^##\s+(.+)$/gm
+const HEADING = /^(#{2,3})\s+(.+)$/gm
 
 function toFigure(source: string, parsed: Partial<Figure> | null): LessonBlock {
   const steps = parsed?.steps
@@ -159,13 +161,14 @@ export function sectionId(title: string): string {
 }
 
 /**
- * The `##` headings of a script, in document order. Headings inside fenced
+ * The `##` and `###` headings of a script, in document order and interleaved as
+ * they appear, each carrying the level it was written at. Headings inside fenced
  * blocks are not sections, and are ignored.
  */
 export function sections(markdown: string): readonly Section[] {
   const prose = markdown.replace(FENCED, '')
   return [...prose.matchAll(HEADING)].map((match) => {
-    const title = match[1].trim()
-    return { id: sectionId(title), title }
+    const title = match[2].trim()
+    return { id: sectionId(title), title, level: match[1].length as 2 | 3 }
   })
 }
