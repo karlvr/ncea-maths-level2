@@ -180,6 +180,67 @@ questions:
   from one, record the year in `from`, and never set a question that needs a
   topic the lesson has not reached.
 
+### Deriving questions from the papers
+
+The papers are `docs/<subject>/*-exm-*.pdf`, with a marking schedule beside each.
+Extract one to text before reading it:
+
+```sh
+pdftotext -layout docs/algebra/91261-exm-2025.pdf -
+```
+
+2024 and 2025 come out clean. 2023 threads *DO NOT WRITE IN THIS AREA* through
+every line, so grep that one and expect to read around the noise.
+
+Then, per topic:
+
+**Inventory the parts before adapting any of them.** A paper is three questions
+of about five parts each, so fifteen parts a year. Write down what each part
+tests and which lesson it belongs to. Most parts sit at Merit or Excellence and
+deliberately combine topics — a rational expression whose numerator needs a
+trinomial factorised first, indices buried inside a log equation.
+
+**Expect a low yield.** Across 2023, 2024 and 2025 only two or three parts per
+topic are usable as single-topic questions. That is what "calibration, not
+supply" means in practice: the papers fix the difficulty and the wording, and the
+rest of the set is written to match. A1 carries one adapted part; its other
+twenty-two questions were written against it.
+
+**Reject a part that needs a topic the lesson has not reached**, however well it
+fits otherwise. 2024 Q1(a) asks for $x^2 + 8x - 5$ in completed-square form,
+which would suit A1's factorising work — but completing the square is B2, so it
+is not available to A1.
+
+**Read the band off the marking schedule, never off intuition.** Each part has a
+column per band, and one part often spans two. On 2025 Q2(b) the schedule gives
+Achieved for factorising either the numerator or the denominator, and Merit for
+the correct simplification. `grade` is what the question *as set* would earn, so
+that part is Merit.
+
+**Adapt by changing the numbers and keeping the structure — then derive the whole
+answer again from scratch.** This is where the work is, and where it goes wrong.
+Changing the numbers usually breaks the thing the question was testing. Adapting
+2025 Q2(b) the obvious way produced a numerator and a denominator with no factor
+in common, so nothing cancelled and the question had no point left; the
+denominator's factors have to be chosen to share one with the numerator. Work the
+adapted question end to end before writing a line of `working`.
+
+**Record the year in `from`, and only the year.** The year is enough to say the
+shape is real. The question number would point straight at the original, which is
+what adapting it was meant to avoid.
+
+**Leave the long modelling parts alone.** Each question in each paper closes with
+a contextual part — a golf ball's flight, a decibel scale, the area of a company
+logo. Those are Module B and C work: form the equation, then use the
+discriminant. They are not Module A practice, and cutting one down to fit
+destroys what it tests.
+
+To see which parts have been mined already, and from which year:
+
+```sh
+grep -rn 'from:' content/
+```
+
 ---
 
 **Always run `mise exec -- npm run check` after touching a figure or a practice
