@@ -78,6 +78,47 @@ Where the NZQA documents say something concrete and checkable — what is on the
 formulae sheet, what the examiner's report says candidates got wrong — use it.
 Read the PDFs in `docs/` rather than working from memory.
 
+### The examiner's report sweep
+
+Once a module's lessons are drafted, sweep the examiner's reports for that
+standard — `docs/<subject>/*-report-*.pdf`, every year available — and account
+for each error they name. This is a pass of its own, run after the lessons
+exist, not something to attempt while drafting them.
+
+The reports are structured as four lists per standard: what candidates awarded
+Achieved, Merit and Excellence could commonly do, and what those awarded Not
+Achieved commonly did. The Not Achieved list is the error list. The Achieved
+list is just as useful, because a skill named there is one the examiner treats
+as the floor — *converted from surd form to index form* is on it, so a lesson
+that never converts in that direction has a gap.
+
+Work through every named item and decide, in writing, which of three it is:
+
+1. **Already covered.** Point at the line that covers it. If it is covered only
+   implicitly, that counts as not covered.
+2. **A gap in a lesson that exists.** Fix it. A named error earns prose that
+   names it and a practice question that would catch it — usually both, because
+   prose explains the error and practice is where the reader meets it.
+3. **Belongs to a lesson not yet written.** Say so and leave it. Do not force a
+   Module B error into Module A because Module A is what exists.
+
+Two rules on how the reports get cited in the content:
+
+- **Cite the year and quote the finding, or do not cite at all.** "The 2024
+  report names candidates who identified three correct factors and then could
+  not expand them" is checkable against the PDF. "Every year the examiner's
+  report lists this error" is not, and a claim of that shape turned out to be
+  wrong when the reports were finally read.
+- **Attribute to the right standard.** One report PDF covers all three
+  standards sat in that paper. A finding in the 91262 section is a calculus
+  finding, and the general commentary at the front covers all of them.
+
+Two more sources worth mining in the same pass. The marking schedules
+(`*-ass-*.pdf`) show what the marker accepts, including the parenthetical
+concessions — *possibly without brackets* — and carry the grade table that says
+what a working-free answer is worth. The specification (`*-spc-*.pdf`) says what
+candidates may be required to do.
+
 ---
 
 ## Figures
