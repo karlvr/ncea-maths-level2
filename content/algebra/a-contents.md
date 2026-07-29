@@ -14,12 +14,13 @@ Rewriting. There is no equals sign anywhere in this module, so nothing in it is 
 
 **A1 — Manipulating algebraic expressions.** The general toolkit: turning products into sums, and sums back into products.
 
-- expanding brackets
+- expanding brackets, including three of them
 - taking out a common factor
 - difference of two squares
 - quadratic trinomials, with and without a coefficient on the $x$ squared
 - collecting like terms
 - checking an answer by substituting a number
+- substituting inside brackets, so that negatives and coefficients survive it
 
 **A2 — Rational expressions.** The same toolkit applied to fractions with algebra in them.
 
@@ -36,6 +37,7 @@ Rewriting. There is no equals sign anywhere in this module, so nothing in it is 
 - the zero exponent
 - negative exponents as reciprocals
 - fractional exponents as roots
+- surd form converted to index form
 
 ---
 

@@ -228,6 +228,54 @@ steps:
     note: Power first gives the same answer, but you had to know the cube root of sixty-four.
 ```
 
+### Surd form and index form
+
+A **surd** is a root written with a root sign. The rule connecting roots and fractional exponents runs in both directions, and the direction you will need most often is surd into index, because the index laws apply to powers and there is nothing they can do with a root sign.
+
+The square root of $x$ is $x$ to the half. The cube root of $x$ squared is $x$ to the two thirds — the root goes underneath, the power inside goes on top. One over the square root of $x$ is $x$ to the minus half, because being underneath a one turns the exponent negative as well.
+
+```figure
+caption: Surd form to index form
+steps:
+  - math: \sqrt{x} \;=\; x^{\frac{1}{2}}
+    note: The root becomes the denominator of the exponent.
+  - math: \sqrt[\ca{3}]{x^{\cb{2}}} \;=\; x^{\frac{\cb{2}}{\ca{3}}}
+    note: The root goes underneath, the power inside goes on top.
+  - math: \dfrac{1}{\sqrt{x}} \;=\; \dfrac{1}{x^{\frac{1}{2}}} \;=\; x^{-\frac{1}{2}}
+    note: Underneath a one as well, so the exponent turns negative.
+```
+
+Convert first, then apply the laws. The examiner's report has this skill on both of its lists: converting from surd form to index form is on the list of what candidates awarded Achieved could do, and failing to manipulate expressions involving surds is on the list of why candidates did not achieve.
+
+```practice
+caption: surd form and index form
+questions:
+  - ask: Write in index form.
+    math: \sqrt[4]{x^3}
+    grade: achieved
+    working:
+      - math: x^{\frac{3}{4}}
+        note: The three and the four do not swap. The root is always the denominator.
+  - ask: Write in index form.
+    math: \dfrac{2}{\sqrt[3]{x}}
+    grade: achieved
+    working:
+      - math: \dfrac{2}{x^{\frac{1}{3}}}
+        note: The two is not under the root sign, so the root does not reach it.
+      - math: 2x^{-\frac{1}{3}}
+        note: Only the power moves up out of the denominator. The two stays where it is.
+  - ask: Simplify, giving your answer in index form.
+    math: \sqrt{x} \times \sqrt[3]{x}
+    grade: merit
+    working:
+      - math: x^{\frac{1}{2}} \times x^{\frac{1}{3}}
+        note: Two different roots cannot be combined as roots. Convert them both first.
+      - math: x^{\frac{1}{2} + \frac{1}{3}}
+        note: The same base now, so the exponents add.
+      - math: x^{\frac{5}{6}}
+        note: A half and a third go over a common denominator of six.
+```
+
 ```practice
 caption: zero, negative and fractional exponents
 questions:
@@ -369,5 +417,7 @@ Multiplying adds the exponents. Dividing subtracts them. A power of a power mult
 A power applies to every factor in a product, and never distributes over addition. $x$ plus $y$, all squared, has a middle term.
 
 Zero exponent gives one. A negative exponent means a reciprocal, not a negative value. A fractional exponent is a root — denominator is the root, numerator is the power, and take the root first.
+
+A root sign is an exponent in another notation. Convert it to an exponent before you try to do anything with it, because the laws above are the only tools there are.
 
 The specification asks for answers in their simplest algebraic form. For exponents that normally means one term, positive exponents only, and any numbers evaluated.

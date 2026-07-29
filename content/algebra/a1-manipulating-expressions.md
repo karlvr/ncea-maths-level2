@@ -30,6 +30,62 @@ steps:
     note: The answers match, so no error has been introduced.
 ```
 
+### Substituting needs brackets
+
+Write the number inside brackets every time you substitute, before doing any arithmetic. The brackets keep the number attached to whatever was being done to $x$.
+
+Substitute minus three for $x$ in $x$ squared. With brackets, the whole of minus three is squared, and the answer is nine. Without them, only the three is squared and the minus is left sitting outside, which gives minus nine. The two answers differ by a sign.
+
+```figure
+caption: Substituting a negative number
+steps:
+  - math: x^2 \qquad\textsf{where}\qquad x = \ca{-3}
+    note: Substitute a negative number and the brackets decide the answer.
+  - math: (\ca{-3})^2 = 9
+    note: With brackets, the whole of minus three is squared.
+  - math: "-3^2 = -9"
+    note: Without them, only the three is squared, and the minus stays outside it.
+```
+
+The same pair of brackets separates two different expressions. Minus $x$ squared means square $x$ and then make the result negative. Minus $x$, all squared, means square the whole of minus $x$, and that is positive. The examiner's reports list substituting incorrectly and mishandling negative numbers as separate reasons candidates did not achieve, and a missing bracket produces both.
+
+What you substitute is often an expression rather than a number, and the brackets matter more there, because there is more inside them for the operation to reach. If the radius of a circle is two $x$, the area is $\pi$ times two $x$, all squared, which is four $\pi$ times $x$ squared. Leave the brackets off and the square reaches the $x$ but not the two, and every line after that is wrong. The 2024 report names that error exactly: candidates who formed a correct expression and then did not put brackets around the radius.
+
+```figure
+caption: Brackets around a substituted expression
+steps:
+  - math: A = \pi r^2 \qquad\textsf{where}\qquad r = \ca{2x}
+    note: This time what goes in is an expression, not a number.
+  - math: A = \pi(\ca{2x})^2 = 4\pi x^2
+    note: The bracket makes the square reach the two as well as the $x$.
+  - math: A = \pi \cdot \ca{2x}^2 = 2\pi x^2 \qquad \color{red}{\times}
+    note: Without it the two is never squared, and the error is carried through the rest of the question.
+```
+
+```practice
+caption: substituting
+questions:
+  - ask: Evaluate the expression when $x = -3$.
+    math: 2x^2 - 5x
+    grade: achieved
+    working:
+      - math: 2(\ca{-3})^2 - 5(\ca{-3})
+        note: Brackets in first, arithmetic afterwards. Doing it in that order is what keeps the signs right.
+      - math: 2(9) + 15
+        note: A negative squared is positive, and subtracting a negative adds.
+      - math: "33"
+  - ask: A student factorised the expression as $(x+3)(x-3)$. Decide by substitution whether that is correct.
+    math: x^2 - 6x + 9
+    grade: achieved
+    working:
+      - math: (\ca{1})^2 - 6(\ca{1}) + 9 = 4
+        note: Choose any number and put it into the expression you were given.
+      - math: (\ca{1}+3)(\ca{1}-3) = -8
+        note: Now the same number into the answer being tested.
+      - math: \textsf{Not correct}
+        note: The two disagree, so the factorising is wrong. The bracket that agrees is $(x-3)^2$.
+```
+
 ---
 
 ## Expanding and factorising
@@ -58,6 +114,8 @@ steps:
     note: Two of them are like terms.
   - math: x^2 + 7x + 10
 ```
+
+Three brackets are expanded the same way, two at a time: expand any two of them, then multiply that result by the bracket left over. The 2024 report describes candidates who identified three correct factors and then could not expand them, so the expansion is worth practising on its own.
 
 **Factorising** converts a sum of terms into a product. Starting from $x$ squared plus seven $x$ plus ten, you recover $x$ plus two, times $x$ plus five.
 
@@ -102,6 +160,15 @@ questions:
       - math: 9x^2 - 6x - 6x + 4
       - math: 9x^2 - 12x + 4
         note: The middle term is the one that disappears if you square term by term.
+  - ask: Expand and simplify.
+    math: (x-1)(x+2)(x-3)
+    grade: merit
+    working:
+      - math: (\ca{x^2 + x - 2})(x-3)
+        note: Expand two of the brackets first, and the third one waits.
+      - math: x^3 - 3x^2 + x^2 - 3x - 2x + 6
+        note: Six products this time, because three terms are multiplied by two.
+      - math: x^3 - 2x^2 - 5x + 6
 ```
 
 ---
@@ -475,6 +542,6 @@ Expanding and factorising are opposites. Expanding is the mechanical direction. 
 
 Factorise in a fixed order: common factor, then difference of two squares, then trinomial.
 
-Check factorising by expanding it back. Check simplifying by substituting a number.
+Check factorising by expanding it back. Check simplifying by substituting a number, and write whatever you substitute inside brackets, so that a negative keeps its sign and a coefficient gets squared along with its letter.
 
 One point from the examination specification. Algebraic technique must be shown, not just a correct answer, and answers must be given in their simplest form. The working carries as much weight as the result. So when you practise, state the reason for each step out loud — common factor first, which left a difference of two squares. Being able to say it is what lets you write it down, and writing it down is what takes you past Achieved.
