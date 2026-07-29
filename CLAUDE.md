@@ -1,0 +1,160 @@
+# Working on this repository
+
+Study material for one Year 12 (NCEA Level 2) student in New Zealand, covering
+Algebra (AS91261) and Trigonometry (AS91259), with Calculus (AS91262) to follow.
+The output is a static site of lesson pages: written explanation with worked
+figures alongside.
+
+```
+content/          the lessons — Markdown, the source of truth
+docs/             NZQA PDFs: standards, past papers, marking schedules
+app/              the site that renders content/ — React, TypeScript, Vite
+BRIEF.md          the subject-matter brief and syllabus plan
+```
+
+**Node comes from mise.** Prefix commands: `mise exec -- npm run dev`. There is
+no other Node on the machine.
+
+> BRIEF.md is still the authority on the syllabus and on what each standard
+> requires. Its *"The learning format we're building"* section is not: it
+> describes an audio-first plan with a text-to-speech pipeline, and that was
+> dropped in favour of pages with stepped figures.
+
+---
+
+## Editing the content
+
+Lessons are Markdown in `content/<subject>/`. One file is one topic, which is
+one page.
+
+**To add a lesson:** write the file, then add its path to the right module in
+[`app/src/syllabus.ts`](app/src/syllabus.ts). Nothing else. Titles come from the
+Markdown `#` heading, so never restate a title in the syllabus.
+
+A lesson file is prose with fenced ` ```figure ` blocks interleaved. Remove
+every figure and the prose must still read as continuous writing — the two are
+deliberately separable.
+
+### How the prose is written
+
+The register is **direct instruction**, not conversation. These rules come from
+Karl's own edits, and he gives feedback by editing rather than describing — so
+when a script comes back changed, read the changes as rules and apply them
+everywhere, not just where he touched.
+
+1. **Name the noun; do not point at it.** "the original expression", not "the
+   original". "If the answers differ", not "if they differ".
+2. **Spell out the action.** "then calculate and compare", not "and compare".
+3. **Plain word over technical word** where the technical word earns nothing:
+   *opposites*, not *inverses*.
+4. **Do not answer objections nobody raised.** Emphasis that teaches stays
+   ("cancel factors, **never** terms"); emphasis that merely insists goes.
+5. **No metaphors or asides that wink at the reader.** They read as casual and
+   have been cut before.
+
+**Mathematics in prose is written out in words** — "two $x$ squared minus
+eighteen", not `2x² − 18`. This is a deliberate style choice and it survives
+from the original audio-first plan. Notation belongs in figures.
+
+**Variables are the exception:** write them as inline maths, so `$x$`, `$a$`,
+`$y$`. They then set in the same italic as the figures. Everything else stays in
+words.
+
+### Placing content
+
+Explain how a thing fits in before explaining the thing. Each lesson should
+place itself against what came before and hand off to what comes after — A1
+closes by saying what factorising unlocks in A2 and B2; A3 flags that the
+same-base condition is what makes exponential equations work in B3.
+
+Subject-level framing belongs in that subject's introduction, not in its first
+topic. See [`content/algebra/a-intro.md`](content/algebra/a-intro.md).
+
+Where the NZQA documents say something concrete and checkable — what is on the
+formulae sheet, what the examiner's report says candidates got wrong — use it.
+Read the PDFs in `docs/` rather than working from memory.
+
+---
+
+## Figures
+
+Full notation: [`content/FIGURE-NOTATION.md`](content/FIGURE-NOTATION.md). In
+short:
+
+```figure
+caption: Taking out a common factor
+steps:
+  - math: 6x^2 + 9x
+    note: What appears in every term?
+  - math: \ca{3}\cb{x}(2x+3)
+    note: The common part comes out the front.
+```
+
+- **Steps are states, not instructions.** `math` is what is on the page at that
+  moment. The `note` explains it.
+- One step renders static; several render as a stepper. That is the only
+  difference, and the step count decides it — there is no flag.
+- **Write steps as though the reader will try to guess each one.** Withholding
+  the next line is the point; do not put step three's answer in step two's note.
+- **Colour, never arrows.** `\ca` `\cb` `\cc` `\cd` mean "this came from that",
+  within one figure only. Use them sparingly.
+- The block is YAML: quote anything with a colon, and anything YAML would read
+  as a number (`math: "-1"`).
+- A note that restates the maths above it, or that describes something
+  incidental to the particular example, should be deleted or generalised.
+
+**Always run `mise exec -- npm run check` after touching a figure.** It compiles
+every expression with the browser's KaTeX settings. It runs in CI too, but a
+figure that fails there has already wasted a deploy.
+
+---
+
+## The app
+
+See [`app/README.md`](app/README.md). It renders `content/` directly — nothing
+is copied or generated into the app.
+
+```sh
+cd app
+mise exec -- npm run dev      # http://localhost:5173
+mise exec -- npm run check    # validate every figure
+mise exec -- npm run build
+```
+
+Structure worth knowing before changing it:
+
+- [`src/syllabus.ts`](app/src/syllabus.ts) — the course as data. Declares only
+  ordering and grouping; everything else is read from the Markdown.
+- [`src/lesson-body.ts`](app/src/lesson-body.ts) — splits a script into prose
+  and figures. Neither format knows about the other.
+- [`src/components/Maths.tsx`](app/src/components/Maths.tsx) — the single set of
+  KaTeX options. Prose, notes and figures all render through it, so a fragment
+  looks identical wherever it appears. Change it in one place.
+
+Routing is by hash and assets are relative, so the site works from any base
+path. Deployment to GitHub Pages happens on push to `main`.
+
+### Verifying a change
+
+`npm run build` passing is not evidence the page looks right. Screenshot it:
+
+```sh
+mise exec -- npm run preview -- --port 4321
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless \
+  --disable-gpu --virtual-time-budget=5000 --window-size=1100,1750 \
+  --screenshot=out.png "http://localhost:4321/#/a1-manipulating-expressions"
+```
+
+Check dark mode too, with `--force-dark-mode`.
+
+---
+
+## House style for the code
+
+The repository follows the conventions in `~/.claude/CLAUDE.md`; the two that
+come up most here:
+
+- Document what a class or module is *for* and when to use it, never who calls
+  it. Naming consumers in lower-layer documentation inverts the abstraction.
+- Group values that always travel together into one type rather than passing
+  them separately.

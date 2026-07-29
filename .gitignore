@@ -1,0 +1,4 @@
+# Node dependencies and build output are ignored by app/.gitignore.
+
+# macOS
+.DS_Store

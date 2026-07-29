@@ -1,0 +1,485 @@
+/*
+ * Two typefaces, doing two jobs: a serif for the lesson itself, which pairs
+ * with KaTeX's own serif mathematics, and a sans for navigation and controls so
+ * the chrome stays visibly separate from the content.
+ */
+
+:root {
+  --page: #fdfcfa;
+  --raised: #f5f2ec;
+  --ink: #1e1c1a;
+  --muted: #6b6660;
+  --rule: #e2ddd4;
+  --link: #1a5fb4;
+  --focus: #1a5fb4;
+
+  /* Four hues that stay distinguishable from each other at the size
+     mathematics is set, which rules out anything close to the blue. */
+  --c-a: #0b62c4;
+  --c-b: #b34a12;
+  --c-c: #2f7d1f;
+  --c-d: #8b2fa8;
+
+  --serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+  --sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --measure: 34rem;
+  --sidebar: 17rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page: #17161a;
+    --raised: #201e24;
+    --ink: #e7e4df;
+    --muted: #9b958c;
+    --rule: #322f37;
+    --link: #7fb3f5;
+    --focus: #7fb3f5;
+
+    --c-a: #6fb3ff;
+    --c-b: #ffab6b;
+    --c-c: #86e070;
+    --c-d: #dfa0f2;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font-family: var(--sans);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--link);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ---------------------------------------------------------------- shell -- */
+
+.shell {
+  display: grid;
+  grid-template-columns: var(--sidebar) minmax(0, 1fr);
+  min-height: 100vh;
+}
+
+.sidebar {
+  border-right: 1px solid var(--rule);
+  padding: 2rem 1.25rem;
+  position: sticky;
+  top: 0;
+  align-self: start;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+main {
+  padding: 3rem 2.5rem 6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* ------------------------------------------------------------- contents -- */
+
+.masthead {
+  display: block;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+.contents h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin: 1.5rem 0 0.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.contents .standard {
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 0.75rem;
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+.contents h3 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin: 1rem 0 0.35rem;
+}
+
+.contents ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contents li {
+  margin: 0.1rem 0;
+}
+
+.contents a:not(.masthead) {
+  display: block;
+  padding: 0.3rem 0.5rem;
+  margin-left: -0.5rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  line-height: 1.35;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.contents a:not(.masthead):hover {
+  background: var(--raised);
+}
+
+.contents a.active {
+  background: var(--raised);
+  color: var(--link);
+  font-weight: 600;
+}
+
+.topic-count {
+  margin-top: 2rem;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+/* --------------------------------------------------------------- lesson -- */
+
+.lesson {
+  width: 100%;
+  max-width: var(--measure);
+}
+
+.lesson-header {
+  margin-bottom: 2.5rem;
+}
+
+.lesson-breadcrumb {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 0 0 0.75rem;
+}
+
+.lesson h1 {
+  font-family: var(--serif);
+  font-size: 1.9rem;
+  line-height: 1.2;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.lesson-subtitle {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0.6rem 0 0;
+}
+
+.prose {
+  font-family: var(--serif);
+  font-size: 1.06rem;
+  line-height: 1.72;
+}
+
+/* Section breaks come from the `---` rules in the script, so headings do not
+   draw one of their own — two lines would otherwise stack up. */
+.prose h2 {
+  font-size: 1.3rem;
+  margin: 2rem 0 0.75rem;
+  line-height: 1.3;
+}
+
+.prose h3 {
+  font-size: 1.08rem;
+  margin: 2rem 0 0.5rem;
+}
+
+.prose p {
+  margin: 0 0 1.1rem;
+}
+
+.prose strong {
+  font-weight: 600;
+}
+
+.prose ul,
+.prose ol {
+  padding-left: 1.3rem;
+}
+
+.prose li {
+  margin: 0.3rem 0;
+}
+
+.prose hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 2.5rem 0;
+}
+
+.prose table {
+  border-collapse: collapse;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.prose th,
+.prose td {
+  border-bottom: 1px solid var(--rule);
+  padding: 0.5rem 0.6rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* --------------------------------------------------------------- figure -- */
+
+.worked {
+  margin: 1.75rem 0;
+  padding: 1.1rem 1.25rem 0.9rem;
+  background: var(--raised);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+}
+
+.worked figcaption {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.worked-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: step;
+}
+
+.worked-steps > li {
+  counter-increment: step;
+  padding: 0.5rem 0;
+  border-top: 1px solid transparent;
+}
+
+.worked-steps > li + li {
+  border-top-color: var(--rule);
+}
+
+.worked-steps > li.is-hidden {
+  display: none;
+}
+
+.maths-block {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.15rem 0;
+}
+
+.maths-block .katex-display {
+  margin: 0.35rem 0;
+}
+
+.worked-note {
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--muted);
+  margin: 0.35rem 0 0;
+}
+
+.worked-steps > li.is-current .worked-note {
+  color: var(--ink);
+}
+
+.c-a { color: var(--c-a); }
+.c-b { color: var(--c-b); }
+.c-c { color: var(--c-c); }
+.c-d { color: var(--c-d); }
+
+.worked-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--rule);
+}
+
+.worked-controls button {
+  font: inherit;
+  font-size: 0.82rem;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--rule);
+  border-radius: 5px;
+  background: var(--page);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.worked-controls button:hover:not(:disabled) {
+  border-color: var(--muted);
+}
+
+.worked-controls button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.worked-count {
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.worked-jump {
+  margin-left: auto;
+}
+
+.figure-error {
+  border-left: 3px solid #c4462a;
+  padding-left: 0.75rem;
+  font-size: 0.9rem;
+  color: #c4462a;
+}
+
+/* -------------------------------------------------------------- onward -- */
+
+.lesson-onward {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+}
+
+.onward {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  font-size: 0.92rem;
+  text-decoration: none;
+  color: var(--ink);
+  max-width: 45%;
+}
+
+.onward span {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.onward:hover {
+  color: var(--link);
+}
+
+.onward-next {
+  text-align: right;
+  margin-left: auto;
+}
+
+/* -------------------------------------------------------------- narrow -- */
+
+@media (max-width: 52rem) {
+  .shell {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .menu-toggle {
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    font: inherit;
+    font-size: 0.85rem;
+    text-align: left;
+    padding: 0.7rem 1.25rem;
+    border: 0;
+    border-bottom: 1px solid var(--rule);
+    background: var(--page);
+    color: var(--ink);
+    cursor: pointer;
+  }
+
+  .sidebar {
+    display: none;
+    border-right: 0;
+    border-bottom: 1px solid var(--rule);
+    position: static;
+    max-height: none;
+  }
+
+  .is-menu-open .sidebar {
+    display: block;
+  }
+
+  main {
+    padding: 2rem 1.25rem 4rem;
+  }
+
+  .lesson h1 {
+    font-size: 1.6rem;
+  }
+}
+
+/* --------------------------------------------------------------- print -- */
+
+@media print {
+  .sidebar,
+  .menu-toggle,
+  .worked-controls,
+  .lesson-onward {
+    display: none;
+  }
+
+  /* Printed working is complete working — nothing stays withheld on paper. */
+  .worked-steps > li.is-hidden {
+    display: list-item;
+  }
+
+  .shell {
+    display: block;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  .worked {
+    break-inside: avoid;
+    background: none;
+  }
+}
