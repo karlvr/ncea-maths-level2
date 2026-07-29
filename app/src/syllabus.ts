@@ -9,6 +9,9 @@
  * Use this when you need the course as navigable data: a table of contents, a
  * lesson looked up by id, or the topic that comes next.
  */
+import { sections, type Section } from './lesson-body'
+
+export type { Section }
 
 /** One lesson. A single page, covering one topic from the standard. */
 export interface Topic {
@@ -18,6 +21,8 @@ export interface Topic {
   readonly subtitle?: string
   /** The script body, with the title and subtitle removed. */
   readonly markdown: string
+  /** The lesson's own headings, for navigating within a long page. */
+  readonly sections: readonly Section[]
 }
 
 /** A group of related topics within a subject. */
@@ -117,12 +122,14 @@ function readTopic(file: string): Topic {
   let markdown = source
   if (title) markdown = markdown.replace(title[0], '')
   if (subtitle) markdown = markdown.replace(subtitle[0], '')
+  markdown = markdown.replace(/^\s*---\s*$/m, '').trim()
 
   return {
     id: file.replace(/^.*\//, '').replace(/\.md$/, ''),
     title: title ? title[1].trim() : file,
     subtitle: subtitle?.[1].trim(),
-    markdown: markdown.replace(/^\s*---\s*$/m, '').trim(),
+    markdown,
+    sections: sections(markdown),
   }
 }
 

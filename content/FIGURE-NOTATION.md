@@ -4,7 +4,9 @@ How worked figures are described inside the lesson scripts.
 
 The prose is speakable — no symbols, everything written as it would be said aloud. Figures carry the notation. The two are complementary: the sentence tells him what is happening, the figure shows him what it looks like written down.
 
-Figures live in fenced blocks inside the script, above the passage they belong to. Strip every ` ```figure ` block and the prose still reads as a continuous script.
+Figures live in fenced blocks inside the script, beside the passage they belong to. Strip every ` ```figure ` block and the prose still reads as a continuous script.
+
+A figure illustrates something being explained. Working that answers a question the reader has been asked to attempt belongs in a practice set instead — see [PRACTICE-NOTATION.md](PRACTICE-NOTATION.md) — which withholds it until it is wanted.
 
 ---
 

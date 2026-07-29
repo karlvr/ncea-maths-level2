@@ -5,52 +5,10 @@
  * any server-side rewriting.
  */
 import { useEffect, useState } from 'react'
-import {
-  HashRouter,
-  Link,
-  NavLink,
-  Navigate,
-  Route,
-  Routes,
-  useParams,
-} from 'react-router-dom'
+import { HashRouter, Link, Navigate, Route, Routes, useParams } from 'react-router-dom'
+import { Contents } from './components/Contents'
 import { Lesson } from './components/Lesson'
 import { SUBJECTS, TOPIC_ORDER, findTopic } from './syllabus'
-
-function Contents({ onNavigate }: { onNavigate: () => void }) {
-  return (
-    <nav className="contents" aria-label="Contents">
-      <Link to="/" className="masthead" onClick={onNavigate}>
-        NCEA Level 2 Maths
-      </Link>
-      {SUBJECTS.map((subject) => (
-        <section key={subject.id}>
-          <h2>
-            {subject.title}
-            <span className="standard">
-              {subject.standard} ·{' '}
-              {subject.assessment === 'external' ? 'exam' : 'internal'}
-            </span>
-          </h2>
-          {subject.modules.map((module) => (
-            <div key={module.id} className="contents-module">
-              <h3>{module.title}</h3>
-              <ul>
-                {module.topics.map((topic) => (
-                  <li key={topic.id}>
-                    <NavLink to={`/${topic.id}`} onClick={onNavigate}>
-                      {topic.title}
-                    </NavLink>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </section>
-      ))}
-    </nav>
-  )
-}
 
 function Home() {
   useEffect(() => {

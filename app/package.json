@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "check": "node scripts/check-figures.mjs"
+    "check": "node scripts/check-content.mjs"
   },
   "dependencies": {
     "katex": "^0.18.1",

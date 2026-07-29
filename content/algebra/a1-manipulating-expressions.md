@@ -76,6 +76,34 @@ The same expression, written two ways.
 
 They differ in difficulty. Expanding is mechanical and always possible. Factorising is a search — you are working out what must have been multiplied together to produce the result — and not every expression factorises. That is why factorising is where the marks are.
 
+```practice
+caption: expanding
+questions:
+  - ask: Expand and simplify.
+    math: (x+3)(x+7)
+    grade: achieved
+    working:
+      - math: x^2 + 7x + 3x + 21
+        note: Four products, one for each pairing of terms.
+      - math: x^2 + 10x + 21
+  - ask: Expand and simplify.
+    math: (2x-5)(x+4)
+    grade: achieved
+    working:
+      - math: 2x^2 + 8x - 5x - 20
+        note: The minus five carries its sign into both of its products.
+      - math: 2x^2 + 3x - 20
+  - ask: Expand and simplify.
+    math: (3x-2)^2
+    grade: achieved
+    working:
+      - math: (3x-2)(3x-2)
+        note: A square is the bracket written out twice. It does not square each term.
+      - math: 9x^2 - 6x - 6x + 4
+      - math: 9x^2 - 12x + 4
+        note: The middle term is the one that disappears if you square term by term.
+```
+
 ---
 
 ## What factorising is for
@@ -150,6 +178,32 @@ steps:
   - math: 2(x+3)(x-3)
 ```
 
+```practice
+caption: common factor
+questions:
+  - ask: Factorise.
+    math: 12x^2 + 18x
+    grade: achieved
+    working:
+      - math: \ca{6}\!\cdot\!2\!\cdot\!\cb{x}\!\cdot\!x \;+\; \ca{6}\!\cdot\!3\!\cdot\!\cb{x}
+        note: Take the largest number that divides both, not just any number that does.
+      - math: 6x(2x+3)
+  - ask: Take out the highest common factor.
+    math: 5x^3 - 20x^2 + 15x
+    grade: achieved
+    working:
+      - math: 5x(x^2 - 4x + 3)
+        note: Every term has a five and at least one $x$. The signs stay with their terms.
+  - ask: Factorise. The common factor here is not a number.
+    math: 3x(x-2) + 5(x-2)
+    grade: merit
+    working:
+      - math: 3x\ca{(x-2)} + 5\ca{(x-2)}
+        note: A whole bracket can be a common factor, in the same way a number can.
+      - math: (x-2)(3x+5)
+        note: This move is the last step of the hardest factorising in the lesson.
+```
+
 ### Two — difference of two squares
 
 $a$ squared minus $b$ squared factorises to $a$ plus $b$, times $a$ minus $b$.
@@ -185,6 +239,35 @@ caption: The one that does not work
 steps:
   - math: x^2 + 9
     note: A sum of two squares. There is no pair of brackets that produces this — check any pair you try by expanding it.
+```
+
+```practice
+caption: difference of two squares
+questions:
+  - ask: Factorise.
+    math: x^2 - 49
+    grade: achieved
+    working:
+      - math: (x)^2 - (7)^2
+        note: Both terms are squares, and a minus separates them.
+      - math: (x+7)(x-7)
+  - ask: Factorise.
+    math: 9x^2 - 64
+    grade: achieved
+    working:
+      - math: (\ca{3x})^2 - (\cb{8})^2
+        note: Nine $x$ squared is a square, because it is three $x$ all squared.
+      - math: (\ca{3x}+\cb{8})(\ca{3x}-\cb{8})
+  - ask: Factorise fully.
+    math: 50x^2 - 8
+    grade: merit
+    working:
+      - math: 50x^2 - 8
+        note: Neither term is a square, so the rule does not apply yet.
+      - math: 2(25x^2 - 4)
+        note: Take out the common factor first, and the bracket becomes a case that does.
+      - math: 2(5x+2)(5x-2)
+        note: Fully means the two out the front stays. Dropping it changes the value.
 ```
 
 ### Three — quadratic trinomials
@@ -240,6 +323,46 @@ steps:
 
 This one is worth deliberate practice. It comes up regularly.
 
+```practice
+caption: quadratic trinomials
+questions:
+  - ask: Factorise.
+    math: x^2 + 9x + 20
+    grade: achieved
+    working:
+      - math: \cc{4} \times \cd{5} = 20 \qquad \cc{4} + \cd{5} = 9
+        note: Multiply to the constant, add to the coefficient of $x$.
+      - math: (x+4)(x+5)
+  - ask: Factorise.
+    math: x^2 - 3x - 28
+    grade: achieved
+    working:
+      - math: \cc{-7} \times \cd{4} = -28 \qquad \cc{-7} + \cd{4} = -3
+        note: A negative constant means one of each sign, and the larger carries the middle sign.
+      - math: (x-7)(x+4)
+  - ask: Factorise.
+    math: 3x^2 + 11x + 6
+    grade: merit
+    working:
+      - math: \ca{3} \times \cb{6} = 18
+        note: With a coefficient on the $x$ squared, multiply that coefficient by the constant.
+      - math: \cc{9} \times \cd{2} = 18 \qquad \cc{9} + \cd{2} = 11
+      - math: 3x^2 + \cc{9x} + \cd{2x} + 6
+        note: Split the middle term with them.
+      - math: 3x(x+3) + 2(x+3)
+        note: Factorise the two pairs separately.
+      - math: (x+3)(3x+2)
+  - ask: Factorise fully.
+    math: 4x^3 - 4x^2 - 24x
+    grade: merit
+    working:
+      - math: 4x(x^2 - x - 6)
+        note: Common factor first, which drops the power and clears the coefficient.
+      - math: \cc{-3} \times \cd{2} = -6 \qquad \cc{-3} + \cd{2} = -1
+      - math: 4x(x-3)(x+2)
+        note: Three factors. Each tool applied in turn produces one more.
+```
+
 ---
 
 ## Collecting like terms
@@ -260,6 +383,87 @@ steps:
 ```
 
 Add the coefficients. The letter part does not change.
+
+```practice
+caption: collecting like terms
+questions:
+  - ask: Simplify.
+    math: 5x^2 + 3x - 2x^2 + 8x
+    grade: achieved
+    working:
+      - math: (5\ca{x^2} - 2\ca{x^2}) + (3\cb{x} + 8\cb{x})
+        note: Gather each letter part with its own kind before adding anything.
+      - math: 3x^2 + 11x
+        note: Two terms, and they will not reduce to one.
+  - ask: Expand and simplify.
+    math: (x+4)(x-1) - (x-3)(x+2)
+    grade: merit
+    working:
+      - math: (x^2 + 3x - 4) - \ca{(x^2 - x - 6)}
+        note: Expand each product first, and keep the second one in a bracket.
+      - math: x^2 + 3x - 4 - x^2 \ca{+} x \ca{+} 6
+        note: The minus reaches every term inside that bracket, so two signs flip.
+      - math: 4x + 2
+        note: The $x$ squared terms cancel, which is the sign the signs were handled correctly.
+```
+
+---
+
+## Practice
+
+Work these on paper before revealing anything. They are ordered easiest first, and the band each one is pitched at is the band the marker would award for doing it well.
+
+```practice
+questions:
+  - ask: Factorise fully.
+    math: 8x^2 - 50
+    grade: achieved
+    working:
+      - math: 2(4x^2 - 25)
+        note: Common factor first. Neither original term is a square.
+      - math: 2(2x+5)(2x-5)
+  - ask: Find the value of $k$ for which the expression is a perfect square.
+    math: 25x^2 - 40x + k
+    grade: merit
+    from: "2025"
+    working:
+      - math: (\ca{5x} + \cb{?})^2
+        note: Twenty-five $x$ squared is five $x$ squared, so the first term of the bracket is fixed.
+      - math: (5x-4)^2 = 25x^2 - 40x + 16
+        note: The middle term is twice the product of the two, so the second term is minus four.
+      - math: k = 16
+  - ask: Factorise fully.
+    math: 6x^2 - 7x - 3
+    grade: merit
+    working:
+      - math: \ca{6} \times \cb{-3} = -18
+      - math: \cc{-9} \times \cd{2} = -18 \qquad \cc{-9} + \cd{2} = -7
+      - math: 6x^2 - 9x + 2x - 3
+      - math: 3x(2x-3) + 1(2x-3)
+        note: The second pair has no common factor other than one, and the one must be written.
+      - math: (2x-3)(3x+1)
+  - ask: Factorise fully.
+    math: x^4 - 16
+    grade: excellence
+    working:
+      - math: (x^2)^2 - (4)^2
+        note: $x$ to the fourth is $x$ squared, squared.
+      - math: (x^2+4)(x^2-4)
+        note: One of these two brackets is itself a difference of two squares.
+      - math: (x^2+4)(x+2)(x-2)
+        note: $x$ squared plus four is a sum of squares, so it stops there.
+  - ask: Factorise fully.
+    math: (x+3)^2 - (x-2)^2
+    grade: excellence
+    working:
+      - math: \big(\ca{(x+3)}\big)^2 - \big(\cb{(x-2)}\big)^2
+        note: A square minus a square, where each square is of a bracket rather than a term.
+      - math: \big[\ca{(x+3)} + \cb{(x-2)}\big]\big[\ca{(x+3)} - \cb{(x-2)}\big]
+      - math: (2x+1)(5)
+        note: The second bracket collapses, because subtracting minus two adds two.
+      - math: 5(2x+1)
+        note: Expanding both squares first gets the same answer with far more work.
+```
 
 ---
 

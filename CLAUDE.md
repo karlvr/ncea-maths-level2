@@ -31,9 +31,13 @@ one page.
 [`app/src/syllabus.ts`](app/src/syllabus.ts). Nothing else. Titles come from the
 Markdown `#` heading, so never restate a title in the syllabus.
 
-A lesson file is prose with fenced ` ```figure ` blocks interleaved. Remove
-every figure and the prose must still read as continuous writing — the two are
-deliberately separable.
+A lesson file is prose with fenced ` ```figure ` and ` ```practice ` blocks
+interleaved. Remove every block and the prose must still read as continuous
+writing — the formats are deliberately separable.
+
+Lessons are long, and stay on one page. The sidebar lists the open lesson's
+`##` headings and marks the one in view, so length is a navigation problem
+rather than a reason to split a topic across pages.
 
 ### How the prose is written
 
@@ -103,9 +107,41 @@ steps:
 - A note that restates the maths above it, or that describes something
   incidental to the particular example, should be deleted or generalised.
 
-**Always run `mise exec -- npm run check` after touching a figure.** It compiles
-every expression with the browser's KaTeX settings. It runs in CI too, but a
-figure that fails there has already wasted a deploy.
+---
+
+## Practice
+
+Full notation: [`content/PRACTICE-NOTATION.md`](content/PRACTICE-NOTATION.md).
+In short:
+
+```practice
+caption: common factor
+questions:
+  - ask: Factorise.
+    math: 12x^2 + 18x
+    grade: achieved
+    working:
+      - math: 6x(2x+3)
+        note: Take the largest number that divides both terms.
+```
+
+- **A short set follows each technique**, drilling that technique alone; **a
+  mixed set** sits under a `## Practice` heading before the summary.
+- `ask` carries the instruction, `math` carries the expression. The prose rule —
+  words, not notation — applies to `ask` and to the notes.
+- `grade` is required and is one of `achieved`, `merit`, `excellence`. It is
+  the band the marking schedule would award, not a measure of length.
+- `working` uses the same steps and the same stepper as a figure, and is hidden
+  on screen until asked for. Printing reveals all of it.
+- **Past papers are the calibration, not the supply.** Adapt anything lifted
+  from one, record the year in `from`, and never set a question that needs a
+  topic the lesson has not reached.
+
+---
+
+**Always run `mise exec -- npm run check` after touching a figure or a practice
+set.** It compiles every expression with the browser's KaTeX settings. It runs
+in CI too, but a block that fails there has already wasted a deploy.
 
 ---
 
@@ -117,7 +153,7 @@ is copied or generated into the app.
 ```sh
 cd app
 mise exec -- npm run dev      # http://localhost:5173
-mise exec -- npm run check    # validate every figure
+mise exec -- npm run check    # validate every figure and practice set
 mise exec -- npm run build
 ```
 
@@ -125,11 +161,20 @@ Structure worth knowing before changing it:
 
 - [`src/syllabus.ts`](app/src/syllabus.ts) — the course as data. Declares only
   ordering and grouping; everything else is read from the Markdown.
-- [`src/lesson-body.ts`](app/src/lesson-body.ts) — splits a script into prose
-  and figures. Neither format knows about the other.
+- [`src/lesson-body.ts`](app/src/lesson-body.ts) — splits a script into prose,
+  figures and practice, and reads out its section headings. No format knows
+  about the others.
+- [`src/components/Working.tsx`](app/src/components/Working.tsx) — the stepper.
+  A figure and a practice answer are the same thing behind it, which is why
+  they behave identically.
 - [`src/components/Maths.tsx`](app/src/components/Maths.tsx) — the single set of
   KaTeX options. Prose, notes and figures all render through it, so a fragment
   looks identical wherever it appears. Change it in one place.
+
+Section anchors are derived from the heading wording, in one place
+(`sectionId`), and used both to build the sidebar and to stamp `id` on the
+rendered `<h2>`. Headings must therefore be plain text — notation in one would
+not survive the round trip.
 
 Routing is by hash and assets are relative, so the site works from any base
 path. Deployment to GitHub Pages happens on push to `main`.

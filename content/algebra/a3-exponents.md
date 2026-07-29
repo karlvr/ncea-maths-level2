@@ -66,6 +66,35 @@ Every one of those laws requires the **same base**. Two cubed times three square
 
 That condition matters later. In Module B, solving exponential equations depends on rewriting both sides so that they have the same base. The same-base condition is the reason that rewriting step is necessary.
 
+```practice
+caption: the three laws
+questions:
+  - ask: Simplify.
+    math: x^7 \times x^4 \div x^3
+    grade: achieved
+    working:
+      - math: x^{7+4} = x^{11}
+        note: Work left to right, one law at a time.
+      - math: x^{11-3} = x^8
+  - ask: Simplify.
+    math: (y^4)^3 \times y^2
+    grade: achieved
+    working:
+      - math: y^{4 \times 3} \times y^2
+        note: A power of a power multiplies. Do that before the multiplication outside it.
+      - math: y^{12} \times y^2 = y^{14}
+        note: The two exponents are combined by adding, not by multiplying again.
+  - ask: Simplify.
+    math: \dfrac{12a^5b^3}{4a^2b^3}
+    grade: merit
+    working:
+      - math: \dfrac{12}{4} \times \dfrac{a^5}{a^2} \times \dfrac{b^3}{b^3}
+        note: Split it by base. The numbers are their own base and divide as numbers.
+      - math: 3 \times a^{5-2} \times b^{3-3}
+      - math: 3a^3
+        note: $b$ to the zero is one, so the $b$ leaves altogether rather than staying as $b$.
+```
+
 ---
 
 ## Powers over products, and the trap
@@ -92,6 +121,34 @@ steps:
 ```
 
 This is worth pairing with the cancelling rule from the last lesson, because the two are one idea appearing in two places. **Multiplication distributes. Addition does not.** Cancelling reaches every factor but not every term; a power reaches every factor but not every term. Understand that once and you have both.
+
+```practice
+caption: powers over products
+questions:
+  - ask: Simplify.
+    math: (3x^4)^2
+    grade: achieved
+    working:
+      - math: \ca{3^2} \times \cb{(x^4)^2}
+        note: The power reaches the three as well as the $x$.
+      - math: 9x^8
+  - ask: Simplify.
+    math: (2y)^3 \times (3y^2)^2
+    grade: merit
+    working:
+      - math: \ca{8y^3} \times \cb{9y^4}
+        note: Two cubed is eight and three squared is nine. Neither number is left alone.
+      - math: 72y^7
+        note: The examiner's report names writing two $y$ cubed for the first of these as a common failure.
+  - ask: Expand.
+    math: (x+2y)^2
+    grade: merit
+    working:
+      - math: (x+2y)(x+2y)
+        note: A sum inside a bracket has to be written out, not distributed over.
+      - math: x^2 + 2xy + 2xy + 4y^2
+      - math: x^2 + 4xy + 4y^2
+```
 
 ---
 
@@ -171,6 +228,43 @@ steps:
     note: Power first gives the same answer, but you had to know the cube root of sixty-four.
 ```
 
+```practice
+caption: zero, negative and fractional exponents
+questions:
+  - ask: Evaluate.
+    math: 16^{\frac{3}{2}}
+    grade: achieved
+    working:
+      - math: \big(\sqrt{16}\big)^3
+        note: The two underneath is the root, so the root is a square root.
+      - math: 4^3 = 64
+  - ask: Write without a negative exponent.
+    math: 5x^{-3}
+    grade: achieved
+    working:
+      - math: 5 \times \dfrac{1}{x^3}
+        note: The exponent belongs to the $x$ alone, so the five does not move.
+      - math: \dfrac{5}{x^3}
+  - ask: Simplify, leaving your answer with positive exponents.
+    math: \dfrac{6x^{-2}y^4}{9x^3y^{-1}}
+    grade: merit
+    working:
+      - math: \dfrac{6}{9} \times x^{-2-3} \times y^{4-(-1)}
+        note: Subtract the exponents by base. Subtracting minus one adds one.
+      - math: \tfrac{2}{3}x^{-5}y^5
+      - math: \dfrac{2y^5}{3x^5}
+        note: A negative exponent on top becomes a positive one underneath.
+  - ask: Evaluate.
+    math: \left(\dfrac{27}{8}\right)^{-\frac{2}{3}}
+    grade: merit
+    working:
+      - math: \left(\dfrac{8}{27}\right)^{\frac{2}{3}}
+        note: A negative exponent on a fraction turns the fraction over.
+      - math: \left(\sqrt[3]{\dfrac{8}{27}}\right)^2 = \left(\dfrac{2}{3}\right)^2
+        note: Root first, top and bottom.
+      - math: \dfrac{4}{9}
+```
+
 ---
 
 ## Putting it together
@@ -200,6 +294,69 @@ steps:
 ```
 
 Work through it factor by factor. Do not try to see the whole thing at once.
+
+---
+
+## Practice
+
+Work these on paper before revealing anything. They are ordered easiest first, and the band each one is pitched at is the band the marker would award for doing it well.
+
+```practice
+questions:
+  - ask: Simplify.
+    math: 4y \times \sqrt{\dfrac{y^6}{25}}
+    grade: achieved
+    from: "2025"
+    working:
+      - math: \sqrt{\dfrac{y^6}{25}} = \dfrac{y^3}{5}
+        note: A square root is the power one half, and it reaches the top and the bottom.
+      - math: 4y \times \dfrac{y^3}{5}
+      - math: \dfrac{4y^4}{5}
+  - ask: Simplify, leaving your answer with positive exponents.
+    math: \dfrac{9(3n)^2}{n^5}
+    grade: achieved
+    from: "2023"
+    working:
+      - math: \dfrac{9 \times \ca{9n^2}}{n^5}
+        note: The square reaches the three inside the bracket as well as the $n$.
+      - math: \dfrac{81n^2}{n^5} = 81n^{-3}
+      - math: \dfrac{81}{n^3}
+        note: Positive exponents were asked for, so the answer cannot be left at the line above.
+  - ask: Simplify.
+    math: \left(\dfrac{n^4}{25n^8}\right)^{-0.5}
+    grade: merit
+    from: "2023"
+    working:
+      - math: \dfrac{n^4}{25n^8} = \dfrac{1}{25n^4}
+        note: Simplify inside the bracket first. There is much less to do afterwards.
+      - math: \big(25n^4\big)^{0.5}
+        note: Minus a half means turn it over, then take the half.
+      - math: 5n^2
+        note: Minus nought point five is a fractional exponent written as a decimal.
+  - ask: Simplify.
+    math: \big(16x^8\big)^{\frac{3}{4}}
+    grade: merit
+    working:
+      - math: \ca{16^{\frac{3}{4}}} \times \cb{\big(x^8\big)^{\frac{3}{4}}}
+        note: One factor at a time.
+      - math: \ca{16^{\frac{3}{4}}} = \big(\sqrt[4]{16}\big)^3 = 2^3 = \ca{8}
+      - math: \cb{\big(x^8\big)^{\frac{3}{4}}} = x^{8 \times \frac{3}{4}} = \cb{x^6}
+      - math: 8x^6
+  - ask: Show that the expression simplifies to $\dfrac{x-1}{x(x+1)}$.
+    math: \dfrac{\left(x^{\frac{3}{2}} - x^{\frac{1}{2}}\right)\left(x^{\frac{1}{2}} + x^{-\frac{1}{2}}\right)}{\left(x^{\frac{3}{2}} + x^{\frac{1}{2}}\right)^2}
+    grade: excellence
+    from: "2024"
+    working:
+      - math: x^{\frac{3}{2}}\!\cdot\!x^{\frac{1}{2}} + x^{\frac{3}{2}}\!\cdot\!x^{-\frac{1}{2}} - x^{\frac{1}{2}}\!\cdot\!x^{\frac{1}{2}} - x^{\frac{1}{2}}\!\cdot\!x^{-\frac{1}{2}}
+        note: Expand the numerator, adding exponents at every product.
+      - math: x^2 + x - x - 1 = x^2 - 1
+        note: Two of the four terms cancel, and what is left is a difference of two squares.
+      - math: \left(x^{\frac{1}{2}}(x+1)\right)^2 = x(x+1)^2
+        note: Take a factor of $x$ to the half out of the denominator before squaring it.
+      - math: \dfrac{(x+1)(x-1)}{x(x+1)^2}
+        note: Both parts are now ordinary algebra. The exponents were only ever the disguise.
+      - math: \dfrac{x-1}{x(x+1)}
+```
 
 ---
 
