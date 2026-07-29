@@ -12,6 +12,8 @@ That definition is the whole topic. Every index law is a consequence of that def
 
 ### Multiplying: add the exponents
 
+$x$ cubed times $x$ squared. Write it out: $x$ times $x$ times $x$, then $x$ times $x$. Five $x$'s multiplied together. So the answer is $x$ to the fifth.
+
 ```figure
 caption: Multiplying — add the exponents
 steps:
@@ -23,11 +25,11 @@ steps:
   - math: x^5 \qquad \text{since } \ca{3} + \cb{2} = 5
 ```
 
-$x$ cubed times $x$ squared. Write it out: $x$ times $x$ times $x$, then $x$ times $x$. Five $x$'s multiplied together. So the answer is $x$ to the fifth.
-
 You added three and two. That is the law: when you multiply powers of the same base, add the exponents.
 
 ### Dividing: subtract the exponents
+
+$x$ to the fifth, divided by $x$ squared. Five $x$'s on top, two on the bottom. Two of the $x$'s on top cancel with the two underneath, leaving three $x$'s. So the answer is $x$ cubed.
 
 ```figure
 caption: Dividing — subtract the exponents
@@ -40,11 +42,11 @@ steps:
   - math: x^3 \qquad \text{since } 5 - 2 = 3
 ```
 
-$x$ to the fifth, divided by $x$ squared. Five $x$'s on top, two on the bottom. Two of the $x$'s on top cancel with the two underneath, leaving three $x$'s. So the answer is $x$ cubed.
-
 Subtract the exponents.
 
 ### A power of a power: multiply the exponents
+
+$x$ squared, all cubed. That means $x$ squared, times $x$ squared, times $x$ squared — three copies. Each copy is two $x$'s, so six altogether. $x$ to the sixth.
 
 ```figure
 caption: A power of a power — multiply the exponents
@@ -55,8 +57,6 @@ steps:
   - math: x^6 \qquad \text{since } 2 \times 3 = 6
     note: Each copy contributes two, three times over.
 ```
-
-$x$ squared, all cubed. That means $x$ squared, times $x$ squared, times $x$ squared — three copies. Each copy is two $x$'s, so six altogether. $x$ to the sixth.
 
 Multiply the exponents.
 
@@ -76,6 +76,8 @@ Two $x$, all cubed, means two $x$ times two $x$ times two $x$. That is two times
 
 Now the trap, and it is the same trap as in the last lesson. A power does **not** distribute over addition.
 
+$x$ plus $y$, all squared, is not $x$ squared plus $y$ squared. Expand it properly: $x$ plus $y$, times $x$ plus $y$, which gives $x$ squared plus two $x$ $y$ plus $y$ squared. There is a middle term. Check that with numbers — put in $x$ equals three and $y$ equals four. Three plus four, squared, is forty-nine. Nine plus sixteen is twenty-five. Not the same.
+
 ```figure
 caption: A power does not distribute over addition
 steps:
@@ -89,8 +91,6 @@ steps:
     note: Not the same, and the gap is the missing $2xy$ — which is twenty-four.
 ```
 
-$x$ plus $y$, all squared, is not $x$ squared plus $y$ squared. Expand it properly: $x$ plus $y$, times $x$ plus $y$, which gives $x$ squared plus two $x$ $y$ plus $y$ squared. There is a middle term. Check that with numbers — put in $x$ equals three and $y$ equals four. Three plus four, squared, is forty-nine. Nine plus sixteen is twenty-five. Not the same.
-
 This is worth pairing with the cancelling rule from the last lesson, because the two are one idea appearing in two places. **Multiplication distributes. Addition does not.** Cancelling reaches every factor but not every term; a power reaches every factor but not every term. Understand that once and you have both.
 
 ---
@@ -100,6 +100,8 @@ This is worth pairing with the cancelling rule from the last lesson, because the
 These three look like extra rules to memorise. They are not. Each one follows from the laws already stated.
 
 ### Zero
+
+$x$ cubed divided by $x$ cubed is one, since anything divided by itself is one. But the division law says subtract the exponents: three minus three is zero, so the same calculation gives $x$ to the zero.
 
 ```figure
 caption: Why anything to the power zero is one
@@ -114,11 +116,11 @@ steps:
     note: Both are right, so the two answers must be the same thing.
 ```
 
-$x$ cubed divided by $x$ cubed is one, since anything divided by itself is one. But the division law says subtract the exponents: three minus three is zero, so the same calculation gives $x$ to the zero.
-
 Both results are correct, so $x$ to the zero is one. Any base to the power zero is one.
 
 ### Negative
+
+$x$ cubed divided by $x$ to the fifth. Cancelling three $x$'s from the top and bottom leaves two $x$'s on the bottom, so the answer is one over $x$ squared. But the division law says three minus five, which is minus two — $x$ to the minus two.
 
 ```figure
 caption: Why a negative exponent is a reciprocal
@@ -133,13 +135,13 @@ steps:
     note: So a minus sign in the exponent means "one over", not "negative".
 ```
 
-$x$ cubed divided by $x$ to the fifth. Cancelling three $x$'s from the top and bottom leaves two $x$'s on the bottom, so the answer is one over $x$ squared. But the division law says three minus five, which is minus two — $x$ to the minus two.
-
 So $x$ to the minus two is one over $x$ squared. **A negative exponent means a reciprocal.** It does not mean a negative number. Two to the minus three is one eighth — a small positive number, not minus eight.
 
 The rule also runs in reverse, and you will need it in that direction. One over $x$ cubed is $x$ to the minus three. Moving a power from the bottom of a fraction to the top flips the sign of its exponent.
 
 ### Fractional
+
+$x$ to the half, times $x$ to the half. Add the exponents: a half plus a half is one, so the answer is $x$. Something which, multiplied by itself, gives $x$ — that is the square root of $x$.
 
 ```figure
 caption: Why a fractional exponent is a root
@@ -152,11 +154,11 @@ steps:
   - math: x^{\frac{1}{2}} = \sqrt{x}
 ```
 
-$x$ to the half, times $x$ to the half. Add the exponents: a half plus a half is one, so the answer is $x$. Something which, multiplied by itself, gives $x$ — that is the square root of $x$.
-
 So $x$ to the half is the square root of $x$. In general, **the denominator of a fractional exponent is the root**. $x$ to the one third is the cube root of $x$.
 
 Now combine the root rule with the power-of-a-power law, for a fraction like two thirds. $x$ to the two thirds is the cube root of $x$, all squared. The denominator gives the root, the numerator gives the power.
+
+**Do the root first.** It keeps the numbers small. Eight to the two thirds — take the cube root of eight first, which is two, then square it, which is four. Going the other way means squaring eight to get sixty-four and then finding the cube root of sixty-four, which is more work for the same answer.
 
 ```figure
 caption: Root first, then power
@@ -169,11 +171,19 @@ steps:
     note: Power first gives the same answer, but you had to know the cube root of sixty-four.
 ```
 
-**Do the root first.** It keeps the numbers small. Eight to the two thirds — take the cube root of eight first, which is two, then square it, which is four. Going the other way means squaring eight to get sixty-four and then finding the cube root of sixty-four, which is more work for the same answer.
-
 ---
 
 ## Putting it together
+
+A typical exam expression: eight $x$ to the sixth, all to the power two thirds.
+
+The power applies to each factor. So it is eight to the two thirds, times $x$ to the sixth to the two thirds.
+
+Eight to the two thirds: cube root of eight is two, squared is four.
+
+$x$ to the sixth to the two thirds: multiply the exponents, six times two thirds is four, so $x$ to the fourth.
+
+The answer is four $x$ to the fourth.
 
 ```figure
 id: a3-worked
@@ -188,16 +198,6 @@ steps:
     note: A power of a power, so multiply the exponents.
   - math: \ca{4}\cb{x^4}
 ```
-
-A typical exam expression: eight $x$ to the sixth, all to the power two thirds.
-
-The power applies to each factor. So it is eight to the two thirds, times $x$ to the sixth to the two thirds.
-
-Eight to the two thirds: cube root of eight is two, squared is four.
-
-$x$ to the sixth to the two thirds: multiply the exponents, six times two thirds is four, so $x$ to the fourth.
-
-The answer is four $x$ to the fourth.
 
 Work through it factor by factor. Do not try to see the whole thing at once.
 

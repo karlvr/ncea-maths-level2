@@ -75,8 +75,8 @@ const STRUCTURE: readonly SubjectSpec[] = [
         title: 'Introduction',
         blurb:
           'What the standard covers, how the three modules build on each other, ' +
-          'and which formulae are supplied in the exam.',
-        files: ['algebra/a-intro.md'],
+          'and a list of everything in it.',
+        files: ['algebra/a-intro.md', 'algebra/a-contents.md'],
       },
       {
         id: 'expressions',

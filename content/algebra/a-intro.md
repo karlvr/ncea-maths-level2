@@ -4,6 +4,8 @@
 
 Start with a distinction that runs through all of Level 2 algebra.
 
+An **expression** is a collection of terms with no equals sign. Three $x$ squared plus five $x$ minus two is an expression. It is not true and it is not false. It is a value written in parts — a value you cannot yet calculate, because you do not know what $x$ is.
+
 ```figure
 caption: An expression
 steps:
@@ -11,7 +13,7 @@ steps:
     note: No equals sign, and a value you cannot yet calculate.
 ```
 
-An **expression** is a collection of terms with no equals sign. Three $x$ squared plus five $x$ minus two is an expression. It is not true and it is not false. It is a value written in parts — a value you cannot yet calculate, because you do not know what $x$ is.
+An **equation** has an equals sign. Three $x$ squared plus five $x$ minus two equals zero is an equation. It states that two things are the same. That statement is true for some values of $x$ and false for others.
 
 ```figure
 caption: An equation
@@ -24,7 +26,7 @@ steps:
     note: Try $x = -2$. The claim is true. Finding the values that do this is what solving means.
 ```
 
-An **equation** has an equals sign. Three $x$ squared plus five $x$ minus two equals zero is an equation. It states that two things are the same. That statement is true for some values of $x$ and false for others.
+The two are handled differently. An expression is **simplified**: rewritten to be tidier, while meaning exactly the same thing. An equation is **solved**: you find the values of $x$ that make the statement true.
 
 ```figure
 caption: Two different jobs
@@ -38,8 +40,6 @@ steps:
       \textsf{answer is an expression} & \textsf{answer is a value of } x
       \end{array}
 ```
-
-The two are handled differently. An expression is **simplified**: rewritten to be tidier, while meaning exactly the same thing. An equation is **solved**: you find the values of $x$ that make the statement true.
 
 Two consequences follow from that. There is nothing to solve in an expression, so a question that asks you to solve one is misworded. And you cannot move a term from one side to the other unless there is an equals sign, because without one there are no sides. Moving a term changes the value.
 

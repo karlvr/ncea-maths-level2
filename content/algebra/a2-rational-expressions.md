@@ -20,6 +20,8 @@ Cancelling is division. When you cancel, you are dividing the numerator and the 
 
 Division works across multiplication. It does not work across addition.
 
+Take two $x$ plus six, all over two. Dividing by two means dividing the whole numerator by two — every term of it. Two $x$ becomes $x$, and six becomes three. The answer is $x$ plus three.
+
 ```figure
 caption: Dividing has to reach every term
 steps:
@@ -30,7 +32,7 @@ steps:
   - math: x + 3
 ```
 
-Take two $x$ plus six, all over two. Dividing by two means dividing the whole numerator by two — every term of it. Two $x$ becomes $x$, and six becomes three. The answer is $x$ plus three.
+Now the error. It is tempting to look at the two on the bottom and the two in front of the $x$ on the top, cancel that pair, and write $x$ plus six. That is wrong, because the six was never divided. The six is a separate term, and the division has to reach the six as well.
 
 ```figure
 caption: The error to avoid
@@ -41,11 +43,11 @@ steps:
     note: The six was never divided. Substitute $x = 1$ — the original is four, this is seven.
 ```
 
-Now the error. It is tempting to look at the two on the bottom and the two in front of the $x$ on the top, cancel that pair, and write $x$ plus six. That is wrong, because the six was never divided. The six is a separate term, and the division has to reach the six as well.
-
 The safe version of the rule: **you can only cancel something that is multiplying the entire numerator and multiplying the entire denominator.** Anything that is added or subtracted is a term, and a term cannot be cancelled.
 
 So the procedure is fixed. Factorise the numerator completely. Factorise the denominator completely. Only then cancel, and only cancel whole brackets.
+
+Take $x$ squared minus nine, over $x$ squared plus seven $x$ plus twelve. Nothing can be cancelled yet — the $x$ squareds are terms, not factors. Factorise the top: difference of two squares, so $x$ plus three, times $x$ minus three. Factorise the bottom: two numbers multiplying to twelve and adding to seven, so $x$ plus three, times $x$ plus four. Now $x$ plus three appears as a factor on both, so it cancels.
 
 ```figure
 id: a2-simplify
@@ -61,8 +63,6 @@ steps:
     note: Now there is a factor common to both, so it cancels.
   - math: \dfrac{x-3}{x+4}
 ```
-
-Take $x$ squared minus nine, over $x$ squared plus seven $x$ plus twelve. Nothing can be cancelled yet — the $x$ squareds are terms, not factors. Factorise the top: difference of two squares, so $x$ plus three, times $x$ minus three. Factorise the bottom: two numbers multiplying to twelve and adding to seven, so $x$ plus three, times $x$ plus four. Now $x$ plus three appears as a factor on both, so it cancels. What is left is $x$ minus three, over $x$ plus four.
 
 ---
 
@@ -82,6 +82,8 @@ Here you need a common denominator, and the same rule applies as with numbers: y
 
 Factorise the denominators first. The lowest common denominator is then built from the factors you find — take each distinct factor, and include it as many times as it appears in any single denominator.
 
+Take one over $x$ plus two, plus three over $x$ minus one. The denominators share nothing, so the common denominator is $x$ plus two, times $x$ minus one. Multiply the first fraction top and bottom by $x$ minus one, and the second top and bottom by $x$ plus two. The numerator becomes $x$ minus one, plus three lots of $x$ plus two.
+
 ```figure
 caption: Adding over a common denominator
 steps:
@@ -96,13 +98,13 @@ steps:
     note: Leave the denominator in factors. Expanding it would hide anything that cancels.
 ```
 
-Take one over $x$ plus two, plus three over $x$ minus one. The denominators share nothing, so the common denominator is $x$ plus two, times $x$ minus one. Multiply the first fraction top and bottom by $x$ minus one, and the second top and bottom by $x$ plus two. The numerator becomes $x$ minus one, plus three lots of $x$ plus two — which is $x$ minus one plus three $x$ plus six, or four $x$ plus five. The answer is four $x$ plus five, over the product of the two brackets.
-
 Leave the denominator in factorised form. It is already simplest, and expanding it hides whether anything cancels.
 
 ### The sign trap when subtracting
 
 When you subtract, the minus applies to the entire numerator of the second fraction, not just its first term.
+
+Take seven $x$ plus two, over five, minus two $x$ minus three, over five. Subtracting two $x$ minus three means subtracting the two $x$ and *adding* the three. The numerator is seven $x$ plus two, minus two $x$, plus three — so five $x$ plus five. And that has a common factor of five, which cancels with the denominator.
 
 ```figure
 caption: The minus reaches the whole numerator
@@ -117,13 +119,13 @@ steps:
     note: A common factor appears, so it cancels.
 ```
 
-Take seven $x$ plus two, over five, minus two $x$ minus three, over five. Subtracting two $x$ minus three means subtracting the two $x$ and *adding* the three. The numerator is seven $x$ plus two, minus two $x$, plus three — so five $x$ plus five. And that has a common factor of five, which cancels with the denominator, leaving $x$ plus one.
-
 The reliable defence is to write brackets around the second numerator before you do anything else, and expand the minus deliberately. Every year the examiner's report lists this error.
 
 ---
 
 ## One more thing to look for
+
+Sometimes two factors do not match because one is the negative of the other. Three minus $x$, and $x$ minus three, are not the same factor — but they differ only by a sign. Take a minus one out of three minus $x$, and it becomes minus one, times $x$ minus three. Now the brackets match and can cancel.
 
 ```figure
 caption: Brackets that differ only by a sign
@@ -134,8 +136,6 @@ steps:
     note: Take a minus one out of the top, and the brackets match.
   - math: "-1"
 ```
-
-Sometimes two factors do not match because one is the negative of the other. Three minus $x$, and $x$ minus three, are not the same factor — but they differ only by a sign. Take a minus one out of three minus $x$, and it becomes minus one, times $x$ minus three. Now the brackets match and can cancel, leaving a minus one behind.
 
 ---
 
