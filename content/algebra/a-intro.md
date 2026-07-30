@@ -75,7 +75,7 @@ The recurring difficulty in this module is not the solving. It is the **forming*
 
 ## How this standard is assessed
 
-Four credits, and it is **external** — sat in the November exam, not marked internally. Past papers therefore matter a great deal, and the examiner's report each year says exactly which mistakes cost people marks.
+Four credits, and it is **external**—sat in the November exam, not marked internally. Past papers therefore matter a great deal, and the examiner's report each year says exactly which mistakes cost people marks.
 
 The exam is three questions, each with several parts, and word problems appear throughout.
 

@@ -3,7 +3,7 @@
  *
  * Lessons are authored as Markdown in `content/` and are the source of truth for
  * their own title and subtitle; this module supplies only the ordering and
- * grouping that Markdown cannot express — which topics belong to which module,
+ * grouping that Markdown cannot express—which topics belong to which module,
  * and in what sequence they should be studied.
  *
  * Use this when you need the course as navigable data: a table of contents, a
@@ -85,9 +85,9 @@ const STRUCTURE: readonly SubjectSpec[] = [
       },
       {
         id: 'expressions',
-        title: 'Module A — Expressions',
+        title: 'Module A—Expressions',
         blurb:
-          'You are given an expression and asked to rewrite it — ' +
+          'You are given an expression and asked to rewrite it—' +
           'expand it, factorise it, cancel it down, tidy up its powers.',
         files: [
           'algebra/a1-manipulating-expressions.md',

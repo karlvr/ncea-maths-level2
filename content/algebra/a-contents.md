@@ -8,11 +8,11 @@ Read the list now, and again before the exam. In between, treat it as a checklis
 
 ---
 
-## Module A — Expressions
+## Module A—Expressions
 
 Rewriting. There is no equals sign anywhere in this module, so nothing in it is solved.
 
-**A1 — Manipulating algebraic expressions.** The general toolkit: turning products into sums, and sums back into products.
+**A1—Manipulating algebraic expressions.** The general toolkit: turning products into sums, and sums back into products.
 
 - telling terms from factors
 - expanding brackets, including three of them
@@ -23,7 +23,7 @@ Rewriting. There is no equals sign anywhere in this module, so nothing in it is 
 - checking an answer by substituting a number
 - substituting inside brackets, so that negatives and coefficients survive it
 
-**A2 — Rational expressions.** The same toolkit applied to fractions with algebra in them.
+**A2—Rational expressions.** The same toolkit applied to fractions with algebra in them.
 
 - cancelling factors, never terms
 - multiplying and dividing
@@ -31,7 +31,7 @@ Rewriting. There is no equals sign anywhere in this module, so nothing in it is 
 - subtracting a numerator that has more than one term
 - factors that differ only by a sign
 
-**A3 — Exponents.** What a power means, and the laws that follow from it.
+**A3—Exponents.** What a power means, and the laws that follow from it.
 
 - multiplying, dividing, and raising a power to a power
 - a power applied to a product
@@ -42,11 +42,11 @@ Rewriting. There is no equals sign anywhere in this module, so nothing in it is 
 
 ---
 
-## Module B — Equations
+## Module B—Equations
 
 There is an equals sign now, so there is something to find.
 
-**B1 — Forming and solving linear equations.** Turning a paragraph of words into a single equation, then solving that equation.
+**B1—Forming and solving linear equations.** Turning a paragraph of words into a single equation, then solving that equation.
 
 - rearranging to isolate the unknown
 - the unknown appearing on both sides
@@ -54,7 +54,7 @@ There is an equals sign now, so there is something to find.
 - writing down the equation you formed
 - checking the answer against the original wording
 
-**B2 — Solving quadratic equations.** Three routes to the same answer, and the skill is choosing between them.
+**B2—Solving quadratic equations.** Three routes to the same answer, and the skill is choosing between them.
 
 - solving by factorising
 - completing the square
@@ -62,7 +62,7 @@ There is an equals sign now, so there is something to find.
 - choosing which of the three to use
 - discarding a solution the context does not allow
 
-**B3 — Exponential equations and logarithms.** Equations where the unknown sits up in the power.
+**B3—Exponential equations and logarithms.** Equations where the unknown sits up in the power.
 
 - rewriting both sides to a common base
 - what a logarithm is
@@ -72,9 +72,9 @@ There is an equals sign now, so there is something to find.
 
 ---
 
-## Module C — Quadratic properties
+## Module C—Quadratic properties
 
-**C1 — The nature of the roots.** How many solutions a quadratic has, determined without solving it.
+**C1—The nature of the roots.** How many solutions a quadratic has, determined without solving it.
 
 - the discriminant
 - the three cases it distinguishes

@@ -1,4 +1,4 @@
-# A1 — Manipulating algebraic expressions
+# A1—Manipulating algebraic expressions
 
 ---
 
@@ -162,7 +162,7 @@ Three brackets are expanded the same way, two at a time: expand any two of them,
 **Factorising** converts a sum of terms into a product. Starting from $x^2 + 7x + 10$, you recover $(x+2)(x+5)$.
 
 ```figure
-caption: Factorising — the same figure, read upwards
+caption: Factorising—the same figure, read upwards
 steps:
   - math: x^2 + 7x + 10
     note: Start from the sum of terms.
@@ -172,7 +172,7 @@ steps:
     note: And you are back at the product you started with.
 ```
 
-Expanding and factorising differ in difficulty. Expanding is mechanical and always possible. Factorising is a search — you are working out what must have been multiplied together to produce the result — and not every expression factorises. That is why factorising is where the marks are.
+Expanding and factorising differ in difficulty. Expanding is mechanical and always possible. Factorising is a search—you are working out what must have been multiplied together to produce the result—and not every expression factorises. That is why factorising is where the marks are.
 
 ```practice
 caption: expanding
@@ -253,7 +253,7 @@ steps:
     note: Always in this order. Step one often turns the expression into a case for step two or three.
 ```
 
-### One — common factor
+### One—common factor
 
 Examine every term for something they all contain, and take it outside a bracket.
 
@@ -273,7 +273,7 @@ steps:
 
 Verify by expanding it back. Three $x$ times two $x$ is six $x$ squared. Three $x$ times three is nine $x$. Correct.
 
-Take out common factors first in every case. It frequently converts an unfamiliar expression into a standard one. $2x^2 - 18$ is not a recognised form. Take out the $2$ and it becomes $2(x^2 - 9)$ — and $x^2 - 9$ is the next tool.
+Take out common factors first in every case. It frequently converts an unfamiliar expression into a standard one. $2x^2 - 18$ is not a recognised form. Take out the $2$ and it becomes $2(x^2 - 9)$—and $x^2 - 9$ is the next tool.
 
 ```figure
 caption: Why the common factor comes first
@@ -281,7 +281,7 @@ steps:
   - math: 2x^2 - 18
     note: Not a form you recognise.
   - math: 2(\ca{x^2 - 9})
-    note: Take out the $2$ — and now the bracket is the next tool.
+    note: Take out the $2$—and now the bracket is the next tool.
   - math: 2(x+3)(x-3)
 ```
 
@@ -311,7 +311,7 @@ questions:
         note: This move is the last step of the hardest factorising in the lesson.
 ```
 
-### Two — difference of two squares
+### Two—difference of two squares
 
 $a^2 - b^2$ factorises to $(a+b)(a-b)$.
 
@@ -345,7 +345,7 @@ $a^2 + b^2$ does not factorise. The **plus** is what rules it out: there is no p
 caption: The one that does not work
 steps:
   - math: x^2 + 9
-    note: A sum of two squares. There is no pair of brackets that produces this — check any pair you try by expanding it.
+    note: A sum of two squares. There is no pair of brackets that produces this—check any pair you try by expanding it.
 ```
 
 ```practice
@@ -377,7 +377,7 @@ questions:
         note: Fully means the $2$ out the front stays. Dropping it changes the value.
 ```
 
-### Three — quadratic trinomials
+### Three—quadratic trinomials
 
 Three terms, with $x^2$ at the front. Take $x^2 + 7x + 12$.
 
@@ -428,7 +428,7 @@ steps:
     note: Take the common bracket out, and what is left is the other one.
 ```
 
-The 2023 and 2025 papers both hide one of these inside a rational expression — $\dfrac{3x^2 - 10x + 8}{9x^2 - 16}$ in 2023 — where the middle term has to be split before anything in the question can cancel.
+The 2023 and 2025 papers both hide one of these inside a rational expression—$\dfrac{3x^2 - 10x + 8}{9x^2 - 16}$ in 2023—where the middle term has to be split before anything in the question can cancel.
 
 ```practice
 caption: quadratic trinomials
@@ -474,7 +474,7 @@ questions:
 
 ## Collecting like terms
 
-Terms are **like** when their letter parts are identical — same letters, same powers.
+Terms are **like** when their letter parts are identical—same letters, same powers.
 
 $3x^2$ and $5x^2$ are like terms. They add to $8x^2$. $3x^2$ and $5x$ are not like terms. They stay separate, and no amount of work will combine them.
 
@@ -588,4 +588,4 @@ Factorise in a fixed order: common factor, then difference of two squares, then 
 
 Check factorising by expanding it back. Check simplifying by substituting a number, and write whatever you substitute inside brackets, so that a negative keeps its sign and a coefficient gets squared along with its letter.
 
-Answers must be given in their simplest form, and algebraic technique must be shown. So when you practise, state the reason for each step out loud — common factor first, which left a difference of two squares. Being able to say it is what lets you write it down, and writing it down is what takes you past Achieved.
+Answers must be given in their simplest form, and algebraic technique must be shown. So when you practise, state the reason for each step out loud—common factor first, which left a difference of two squares. Being able to say it is what lets you write it down, and writing it down is what takes you past Achieved.
