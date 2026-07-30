@@ -239,7 +239,7 @@ Factorising is the step that makes both of those available.
 
 ## Three ways to factorise
 
-Three tools, applied in this order.
+Three methods, applied in this order.
 
 ```figure
 caption: The order of attack
@@ -253,7 +253,7 @@ steps:
     note: Always in this order. Step one often turns the expression into a case for step two or three.
 ```
 
-### One—common factor
+### Method 1—common factor
 
 Examine every term for something they all contain, and take it outside a bracket.
 
@@ -273,7 +273,7 @@ steps:
 
 Verify by expanding it back. Three $x$ times two $x$ is six $x$ squared. Three $x$ times three is nine $x$. Correct.
 
-Take out common factors first in every case. It frequently converts an unfamiliar expression into a standard one. $2x^2 - 18$ is not a recognised form. Take out the $2$ and it becomes $2(x^2 - 9)$—and $x^2 - 9$ is the next tool.
+Take out common factors first in every case. It frequently converts an unfamiliar expression into a standard one. $2x^2 - 18$ is not a recognised form. Take out the $2$ and it becomes $2(x^2 - 9)$—and $x^2 - 9$ can be factorised as a difference of two squares.
 
 ```figure
 caption: Why the common factor comes first
@@ -281,7 +281,7 @@ steps:
   - math: 2x^2 - 18
     note: Not a form you recognise.
   - math: 2(\ca{x^2 - 9})
-    note: Take out the $2$—and now the bracket is the next tool.
+    note: Take out the $2$—and now the bracket is a difference of two squares.
   - math: 2(x+3)(x-3)
 ```
 
@@ -311,7 +311,7 @@ questions:
         note: This move is the last step of the hardest factorising in the lesson.
 ```
 
-### Two—difference of two squares
+### Method 2—difference of two squares
 
 $a^2 - b^2$ factorises to $(a+b)(a-b)$.
 
@@ -377,7 +377,7 @@ questions:
         note: Fully means the $2$ out the front stays. Dropping it changes the value.
 ```
 
-### Three—quadratic trinomials
+### Method 3—quadratic trinomials
 
 Three terms, with $x^2$ at the front. Take $x^2 + 7x + 12$.
 
@@ -467,7 +467,7 @@ questions:
         note: Common factor first, which drops the power and clears the coefficient.
       - math: \cc{-3} \times \cd{2} = -6 \qquad \cc{-3} + \cd{2} = -1
       - math: 4x(x-3)(x+2)
-        note: Three factors. Each tool applied in turn produces one more.
+        note: Three factors. Each method applied in turn produces one more.
 ```
 
 ---

@@ -12,7 +12,7 @@ Read the list now, and again before the exam. In between, treat it as a checklis
 
 Rewriting. There is no equals sign anywhere in this module, so nothing in it is solved.
 
-**A1—Manipulating algebraic expressions.** The general toolkit: turning products into sums, and sums back into products.
+**A1—Manipulating algebraic expressions.** The general moves: turning products into sums, and sums back into products.
 
 - telling terms from factors
 - expanding brackets, including three of them
@@ -23,7 +23,7 @@ Rewriting. There is no equals sign anywhere in this module, so nothing in it is 
 - checking an answer by substituting a number
 - substituting inside brackets, so that negatives and coefficients survive it
 
-**A2—Rational expressions.** The same toolkit applied to fractions with algebra in them.
+**A2—Rational expressions.** The same moves applied to fractions with algebra in them.
 
 - cancelling factors, never terms
 - multiplying and dividing

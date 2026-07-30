@@ -418,6 +418,6 @@ A power applies to every factor in a product, and never distributes over additio
 
 Zero exponent gives one. A negative exponent means a reciprocal, not a negative value. A fractional exponent is a root—denominator is the root, numerator is the power, and take the root first.
 
-A root sign is an exponent in another notation. Convert it to an exponent before you try to do anything with it, because the laws above are the only tools there are.
+A root sign is an exponent in another notation. Convert it to an exponent before you try to do anything with it, because the laws above are the only laws there are.
 
 The specification asks for answers in their simplest algebraic form. For exponents that normally means one term, positive exponents only, and any numbers evaluated.
