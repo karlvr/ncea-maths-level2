@@ -514,12 +514,30 @@ main {
   border-top: 2px solid var(--rule);
 }
 
+/* The label carries a mark so that a practice set is recognisable at scroll
+   speed, where otherwise it reads as another captioned block. The mark is
+   drawn rather than set in a font, so it takes the text colour and follows the
+   page into dark mode and onto paper. */
 .practice-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 0.72rem;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.09em;
-  color: var(--muted);
+  color: var(--ink);
   margin: 0 0 0.75rem;
+}
+
+.practice-label::before {
+  content: '';
+  flex: none;
+  width: 0.62rem;
+  height: 0.62rem;
+  background: currentColor;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
 }
 
 .practice-questions {
