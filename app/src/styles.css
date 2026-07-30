@@ -416,6 +416,21 @@ main {
   display: none;
 }
 
+/* KaTeX lays a formula out as several inline blocks, split at the operators, so
+   that a formula too wide for its column can wrap at one of them. A fragment in
+   a sentence is short enough to never need that, and wrapping it reads as a
+   broken expression — so a fragment stays on one line and moves to the next
+   whole. */
+.katex {
+  white-space: nowrap;
+}
+
+/* Maths set on its own line keeps the wrapping, because there a formula can
+   genuinely be wider than the column it sits in. */
+.katex-display .katex {
+  white-space: normal;
+}
+
 .maths-block {
   overflow-x: auto;
   overflow-y: hidden;
