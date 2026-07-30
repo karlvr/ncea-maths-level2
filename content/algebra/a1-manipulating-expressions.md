@@ -2,7 +2,7 @@
 
 ---
 
-No question in this lesson starts with an equals sign, because every one of them is an expression. So nothing gets solved. Every question asks the same thing: here is an expression, write it more simply. You will write equals signs of your own as you simplify, and each one states that the value has not changed at that step.
+No question in this lesson contains an equals sign, because every one of the questions is an expression. So nothing gets solved. Every question asks the same thing: here is an expression, write it more *simply*.
 
 ---
 

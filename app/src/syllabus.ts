@@ -87,7 +87,7 @@ const STRUCTURE: readonly SubjectSpec[] = [
         id: 'expressions',
         title: 'Module A — Expressions',
         blurb:
-          'No equals signs. You are given something and asked to rewrite it — ' +
+          'You are given an expression and asked to rewrite it — ' +
           'expand it, factorise it, cancel it down, tidy up its powers.',
         files: [
           'algebra/a1-manipulating-expressions.md',
