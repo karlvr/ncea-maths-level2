@@ -1,11 +1,15 @@
 /**
- * Validates every figure and practice set in the lesson scripts.
+ * Validates the mathematics in the lesson scripts — in figures, in practice
+ * sets, and in running prose.
  *
- * Blocks are authored by hand in Markdown and only rendered in the browser, so
+ * Scripts are authored by hand in Markdown and only rendered in the browser, so
  * a malformed block or a piece of invalid LaTeX would otherwise surface as a
  * broken page rather than as a build failure. This checks each block parses as
  * YAML, carries the fields its kind requires, and that all of its mathematics
- * compiles under the same KaTeX settings the application uses.
+ * compiles under the same KaTeX settings the application uses. Prose is checked
+ * for the same reason and matters more, because notation that fails to parse
+ * there has nothing around it to look wrong — it simply renders as its own
+ * source in the middle of a sentence.
  *
  * Run with `npm run check`. Exits non-zero if anything fails.
  */
@@ -29,6 +33,11 @@ const GRADES = ['achieved', 'merit', 'excellence']
 const BLOCK = /^```(figure|practice)$\n([\s\S]*?)^```$/gm
 const INLINE_MATHS = /\$([^$]+)\$/g
 
+const FENCED = /^```[\s\S]*?^```$/gm
+const CODE_SPAN = /`[^`\n]*`/g
+/** Inline maths in prose, which is written on one line and closed on that line. */
+const PROSE_MATHS = /\$([^$\n]+)\$/g
+
 /** KaTeX mutates the macros object it is given, so each call gets a fresh copy. */
 const options = (displayMode) => ({
   displayMode,
@@ -47,8 +56,48 @@ function* markdownFiles(directory) {
 }
 
 const problems = []
-const counted = { figure: 0, practice: 0, question: 0 }
+const counted = { figure: 0, practice: 0, question: 0, fragment: 0 }
 let expressions = 0
+
+/**
+ * The prose of a script, with everything that is not prose replaced by spaces
+ * and its line breaks left alone, so a line number in the result is a line
+ * number in the file.
+ *
+ * A fenced block is checked as a block, and mathematics inside a code span is
+ * being shown as its own source rather than rendered, so neither counts as
+ * prose.
+ */
+function proseOf(source) {
+  const blank = (match) => match.replace(/[^\n]/g, ' ')
+  return source.replace(FENCED, blank).replace(CODE_SPAN, blank)
+}
+
+/**
+ * Compiles the inline mathematics of a script's prose, and reports a delimiter
+ * left unclosed.
+ *
+ * An unclosed `$` is worth naming on its own because of how it fails: the
+ * notation after it renders as a sentence and the prose after it renders as
+ * mathematics, and neither looks like a missing dollar sign.
+ */
+function checkProse(source, where) {
+  for (const [index, line] of proseOf(source).split('\n').entries()) {
+    const at = `${where}:${index + 1}`
+    if ((line.match(/\$/g)?.length ?? 0) % 2 !== 0) {
+      problems.push(`${at}: unclosed $`)
+    }
+    for (const [, tex] of line.matchAll(PROSE_MATHS)) {
+      expressions++
+      counted.fragment++
+      try {
+        katex.renderToString(tex, options(false))
+      } catch (cause) {
+        problems.push(`${at}: ${cause.message.split('\n')[0]}`)
+      }
+    }
+  }
+}
 
 /** Compiles the display maths and the inline maths of one line of working. */
 function checkStep(step, where) {
@@ -114,6 +163,8 @@ for (const path of markdownFiles(CONTENT)) {
   const where = relative(CONTENT, path)
   const source = readFileSync(path, 'utf8')
 
+  checkProse(source, where)
+
   for (const [, kind, block] of source.matchAll(BLOCK)) {
     counted[kind]++
 
@@ -133,7 +184,8 @@ for (const path of markdownFiles(CONTENT)) {
 for (const problem of problems) console.error(`  ${problem}`)
 console.log(
   `${counted.figure} figures, ${counted.practice} practice sets, ` +
-    `${counted.question} questions, ${expressions} expressions, ` +
+    `${counted.question} questions, ${counted.fragment} fragments in prose, ` +
+    `${expressions} expressions, ` +
     `${problems.length} problem${problems.length === 1 ? '' : 's'}`,
 )
 process.exit(problems.length === 0 ? 0 : 1)
