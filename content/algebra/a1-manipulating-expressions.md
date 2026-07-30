@@ -315,25 +315,32 @@ questions:
 
 $a^2 - b^2$ factorises to $(a+b)(a-b)$.
 
-Two conditions must both hold. Both terms are perfect squares, and they are separated by a minus.
-
 ```figure
 caption: Difference of two squares
 steps:
   - math: \ca{a^2} \;\cb{-}\; \cc{b^2} \;=\; (a+b)(a-b)
-    note: Both terms are squares, and there is a minus between them. Both conditions must hold.
+    note: Both terms are squares, and there is a minus between them. Take the square root of each term. The two roots are $a$ and $b$, and they are what goes into both brackets.
 ```
 
-$x^2 - 9$ becomes $(x+3)(x-3)$. $4x^2 - 25$ becomes $(2x+5)(2x-5)$, because $4x^2$ is $(2x)^2$ and $25$ is $5^2$.
+Two conditions must both hold. The two terms, $a^2$ and $b^2$, are both perfect squares, and they are separated by a minus.
+
+A perfect square is an expression that is the square of another expression, with no surd left over (a surd is a $\sqrt{\phantom{x}}$ that cannot be simplified away). $16$ is a perfect square because it is $4^2$, and $9x^2$ is one because it is $(3x)^2$. $5$ is not, because its square root is $\sqrt{5}$.
+
+An easy one:
 
 ```figure
-caption: Spotting it
 steps:
   - math: x^2 - 9
   - math: (x+3)(x-3)
     note: $9$ is $3^2$.
+```
+
+A less obvious one:
+
+```figure
+steps:
   - math: 4x^2 - 25
-    note: Less obvious. Is each term a square?
+    note: Is each term a square?
   - math: (\ca{2x})^2 - (\cb{5})^2
     note: Both terms are squares, so the rule applies.
   - math: (\ca{2x}+\cb{5})(\ca{2x}-\cb{5})
@@ -372,9 +379,9 @@ questions:
       - math: 50x^2 - 8
         note: Neither term is a square, so the rule does not apply yet.
       - math: 2(25x^2 - 4)
-        note: Take out the common factor first, and the bracket becomes a case that does.
+        note: Take out the common factor first, and the bracket can now use difference of two squares. The “fully” in the question means keep going after this first factorisation.
       - math: 2(5x+2)(5x-2)
-        note: Fully means the $2$ out the front stays. Dropping it changes the value.
+        note: Now fully factorised. The $2$ we took out in the first step is one of the factors; be careful not to lose it.
 ```
 
 ### Method 3—quadratic trinomials

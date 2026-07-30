@@ -189,7 +189,7 @@ steps:
   - math: x^{3-5} = x^{-2}
     note: The division law gives minus two.
   - math: x^{-2} = \dfrac{1}{x^2}
-    note: So a minus sign in the exponent means "one over", not "negative".
+    note: So a minus sign in the exponent means “one over”, not “negative”.
 ```
 
 So $x^{-2}$ is $\dfrac{1}{x^2}$. **A negative exponent means a reciprocal.** It does not mean a negative number. $2^{-3}$ is $\dfrac{1}{8}$—a small positive number, not $-8$.
