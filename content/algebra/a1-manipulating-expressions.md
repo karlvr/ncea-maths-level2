@@ -2,13 +2,13 @@
 
 ---
 
-No question in this lesson contains an equals sign, because every one of the questions is an expression. So nothing gets solved. Every question asks the same thing: here is an expression, write it more *simply*.
+Every question asks the same thing: here is an expression, write it more *simply*.
 
 ---
 
 ## The value must not change
 
-One rule governs all work with expressions: the value must not change.
+One rule governs all work with expressions: the value of the expression must not change.
 
 You may rewrite an expression in any form you like, provided that substituting a number for $x$ gives the same answer before and after.
 
@@ -30,9 +30,9 @@ steps:
 
 ### Substituting needs brackets
 
-Write the number inside brackets every time you substitute, before doing any arithmetic. The brackets keep the number attached to whatever was being done to $x$.
+When substituting $x$ for a number, write the number inside brackets before doing any arithmetic. The brackets keep the number attached to whatever was being done to $x$.
 
-Substitute $-3$ for $x$ in $x^2$. With brackets, the whole of $-3$ is squared, and the answer is $9$. Without them, only the $3$ is squared and the minus is left sitting outside, which gives $-9$. The two answers differ by a sign.
+Substitute $-3$ for $x$ in $x^2$. With brackets, the whole of $-3$ is squared, and the answer is $9$. Without them, only the $3$ is squared and the minus is left sitting outside, which gives $-9$, which is incorrect.
 
 ```figure
 caption: Substituting a negative number
@@ -45,7 +45,7 @@ steps:
     note: Without them, only the $3$ is squared, and the minus stays outside it.
 ```
 
-The same pair of brackets separates two different expressions. $-x^2$ means square $x$ and then make the result negative. $(-x)^2$ means square the whole of $-x$, and that is positive. The examiner's reports list substituting incorrectly and mishandling negative numbers as separate reasons candidates did not achieve, and a missing bracket produces both.
+The expression $-x^2$ means square $x$ and then make the result negative. $(-x)^2$ means square the whole of $-x$ (which becomes positive). The examiner's reports list substituting incorrectly and mishandling negative numbers as separate reasons candidates did not achieve.
 
 What you substitute is often an expression rather than a number, and the brackets matter more there, because there is more inside them for the operation to reach. If the radius of a circle is $2x$, the area is $\pi(2x)^2$, which is $4\pi x^2$. Leave the brackets off and the square reaches the $x$ but not the $2$, and every line after that is wrong. The 2024 report names that error exactly: candidates who formed a correct expression and then did not put brackets around the radius.
 
@@ -111,20 +111,20 @@ steps:
 
 **Factors** are the parts that are multiplied. $3x(x+3)$ has two factors: the $3x$, and the bracket.
 
-Which of the two words applies depends on the form in front of you. A sum is cut into terms. A product is cut into factors. The same expression can be written either way, and moving between those two forms is the whole of what expanding and factorising do.
+Which of the two words applies depends on the form in front of you. A sum is made up of terms. A product is made up of factors. The same expression can be written either way, and moving between those two forms is called expanding and factorising.
 
 ```figure
-caption: The same expression, cut two ways
+caption: The same expression, two ways
 steps:
   - math: 6x^2 + 9x
-    note: Added, so the parts are terms. There are two of them.
+    note: Added, so the parts are terms. There are two terms.
   - math: 3x(2x+3)
-    note: Multiplied, so the parts are factors. Two of those as well, and one of them is a bracket.
+    note: Multiplied, so the parts are factors. Two factors, and one of them is a bracket.
   - math: 6x^2 + 9x \;=\; 3x(2x+3)
-    note: The two forms are equal for every value of $x$. Only the way the expression is cut into parts differs.
+    note: The two forms are equal for every value of $x$. Only the way the expression is separated into parts differs.
 ```
 
-A term has factors of its own. $6x^2$ is $6 \times x \times x$, so $6$ and $x$ are both factors of it, and searching every term for a factor they all share is the first of the three techniques below. The expression as a whole is different. It has factors only once the whole of it is a product. $6x^2 + 9x$ has none, because the last thing done in it is an addition.
+A term has factors of its own. $6x^2$ is $6 \times x \times x$, so $6$ and $x$ are both factors of it, and searching every term for a factor they all share is the first of the three techniques below. The expression as a whole is different. An expression has factors only once the whole expression is a product. $6x^2 + 9x$ has none, because it is a sum.
 
 Which of the two a part is decides what may be done to it. A factor can be cancelled against a matching factor, and a factor shared by every term can be taken outside a bracket. Neither move is available to a term.
 
