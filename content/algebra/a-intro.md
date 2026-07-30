@@ -61,7 +61,7 @@ steps:
     note: Each one needs the one above it.
 ```
 
-**Module A — Expressions.** No equals signs anywhere. You are given something and asked to rewrite it: expand it, factorise it, cancel it down, tidy up its powers. Three topics — the general toolkit, algebraic fractions, and exponents.
+**Module A — Expressions.** The question hands you no equals sign, so there is nothing to find. You are given something and asked to rewrite it: expand it, factorise it, cancel it down, tidy up its powers. Three topics — the general toolkit, algebraic fractions, and exponents.
 
 This is the module everything else stands on. You cannot solve a quadratic without being able to factorise one, and you cannot solve an exponential equation without the index laws. The 2025 examiner's report says a lack of basic algebra skills limited candidates across all three papers of Level 2 maths, and that it showed most clearly on expressions involving fractions.
 

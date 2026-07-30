@@ -2,9 +2,7 @@
 
 ---
 
-Nothing in this lesson has an equals sign, so nothing in it gets solved. Every question asks the same thing: here is an expression, write it more simply.
-
-What follows is the toolkit for doing that — one rule that governs all of it, the two words for the parts of an expression, then three techniques applied in a fixed order.
+No question in this lesson starts with an equals sign, because every one of them is an expression. So nothing gets solved. Every question asks the same thing: here is an expression, write it more simply. You will write equals signs of your own as you simplify, and each one states that the value has not changed at that step.
 
 ---
 
@@ -29,6 +27,8 @@ steps:
   - math: 12 \times 11 = 132
     note: The answers match, so no error has been introduced.
 ```
+
+Your own working is that rule applied line by line. Each line is another form of the expression, equal to the line above it, and the last line is the answer. The equals signs down the left are what state that no step changed the value.
 
 ### Substituting needs brackets
 
@@ -115,7 +115,7 @@ steps:
   - math: 3x(2x+3)
     note: Multiplied, so the parts are factors. Two of those as well, and one of them is a bracket.
   - math: 6x^2 + 9x \;=\; 3x(2x+3)
-    note: One expression and one value, written two ways. Only the form has changed.
+    note: The two forms are equal for every value of $x$. Only the way the expression is cut into parts differs.
 ```
 
 A term has factors of its own. $6x^2$ is $6 \times x \times x$, so $6$ and $x$ are both factors of it, and searching every term for a factor they all share is the first of the three techniques below. The expression as a whole is different. It has factors only once the whole of it is a product. $6x^2 + 9x$ has none, because the last thing done in it is an addition.
