@@ -62,7 +62,7 @@ Multiply the exponents.
 
 ### All three need the same base
 
-Every one of those laws requires the **same base**. $2^3 \cdot 3^2$ cannot be combined, because one is built from twos and the other from threes. There is nothing to gather.
+Every one of those laws requires the **same base**. $2^3 \cdot 3^2$ cannot be combined, because one is built from twos and the other from threes. There is nothing to combine.
 
 That condition matters later. In Module B, solving exponential equations depends on rewriting both sides so that they have the same base. The same-base condition is the reason that rewriting step is necessary.
 

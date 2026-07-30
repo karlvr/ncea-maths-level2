@@ -142,7 +142,7 @@ steps:
     note: A product on the left, a sum of terms on the right. The same expression both times.
 ```
 
-**Expanding** converts a product into a sum of terms. Take $(x+2)(x+5)$. Multiply each term in the first bracket by each term in the second. $x$ times $x$ is $x$ squared. $x$ times five is five $x$. Two times $x$ is two $x$. Two times five is ten. Collect the like terms: $x^2 + 7x + 10$.
+**Expanding** converts a product into a sum of terms. Take $(x+2)(x+5)$. Multiply each term in the first bracket by each term in the second. $x$ times $x$ is $x$ squared. $x$ times five is five $x$. Two times $x$ is two $x$. Two times five is ten. Then collect the like terms: $x^2 + 7x + 10$.
 
 ```figure
 id: a1-expand
@@ -153,7 +153,7 @@ steps:
   - math: \ca{x}\!\cdot\!\cc{x} \;+\; \ca{x}\!\cdot\!\cd{5} \;+\; \cb{2}\!\cdot\!\cc{x} \;+\; \cb{2}\!\cdot\!\cd{5}
     note: Four products, because there are two terms in each bracket.
   - math: x^2 + \ca{5x} + \cb{2x} + 10
-    note: Two of them have the same letter part, so they combine into one.
+    note: Two of them have the same letter part, so they add to one term.
   - math: x^2 + 7x + 10
 ```
 
@@ -476,7 +476,7 @@ questions:
 
 Terms are **like** when their letter parts are identical — same letters, same powers.
 
-$3x^2$ and $5x^2$ are like terms. They combine to $8x^2$. $3x^2$ and $5x$ are not like terms. They stay separate, and no amount of work will combine them.
+$3x^2$ and $5x^2$ are like terms. They add to $8x^2$. $3x^2$ and $5x$ are not like terms. They stay separate, and no amount of work will combine them.
 
 ```figure
 caption: Like and unlike
@@ -501,7 +501,7 @@ questions:
     grade: achieved
     working:
       - math: (5\ca{x^2} - 2\ca{x^2}) + (3\cb{x} + 8\cb{x})
-        note: Gather each letter part with its own kind before adding anything.
+        note: Collect each letter part with its own kind before adding anything.
       - math: 3x^2 + 11x
         note: Two terms, and they will not reduce to one.
   - ask: Expand and simplify.
