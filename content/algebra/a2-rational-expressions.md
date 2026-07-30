@@ -4,13 +4,13 @@
 
 A **rational expression** is a fraction with algebra in it. Rational means ratio—one thing divided by another. $\dfrac{x+2}{x-3}$ is a rational expression.
 
-The important point at the start: you already know how to handle rational expressions. Every rule for ordinary number fractions applies here without modification. To multiply, multiply the tops and multiply the bottoms. To divide, turn the second fraction upside down and multiply. To add, put both fractions over a common denominator first. To cancel, remove a factor that appears top and bottom.
+You already know how to handle rational expressions. Every rule for ordinary number fractions applies. To multiply, multiply the tops and multiply the bottoms. To divide, turn the second fraction upside down and multiply. To add, put both fractions over a common denominator first. To cancel, remove a factor that appears top and bottom.
 
-Nothing in that list is new. The difficulty is that with numbers you can see the factors immediately—with $\dfrac{6}{9}$, the $3$ is obvious. With algebra the factors are hidden inside the expression, and you have to create the factors before you can use them.
+The difficulty is that with numbers you can see the factors immediately—with $\dfrac{6}{9}$, the $3$ is obvious. With algebra the factors are hidden inside the expression, and you have to create the factors before you can use them.
 
 This is the topic the examiner's reports are hardest on. The 2025 report says a lack of basic algebra skills limited candidates across all three papers of Level 2 maths, and that it was most evident when they were asked to work with expressions involving fractions.
 
-Which means the first move in almost every one of these questions is the same: **factorise everything you can see.**
+The first move in almost every one of these questions is **factorise everything you can see.**
 
 ---
 
@@ -18,9 +18,9 @@ Which means the first move in almost every one of these questions is the same: *
 
 Cancelling is division. When you cancel, you are dividing the numerator and the denominator—the top and the bottom—by the same thing, which leaves the value unchanged.
 
-Division works across multiplication. It does not work across addition.
+Cancelling works on a product. It does not work on a sum.
 
-Take $\dfrac{2x+6}{2}$. Dividing by $2$ means dividing the whole numerator by $2$—every term of it. $2x$ becomes $x$, and $6$ becomes $3$. The answer is $x + 3$.
+You can still divide, if you divide every term. Take $\dfrac{2x+6}{2}$. Dividing by $2$ means dividing the whole numerator by $2$—every term of it. $2x$ becomes $x$, and $6$ becomes $3$. The answer is $x + 3$.
 
 ```figure
 caption: Dividing has to reach every term
@@ -47,16 +47,14 @@ The safe version of the rule: **you can only cancel something that is multiplyin
 
 So the procedure is fixed. Factorise the numerator completely. Factorise the denominator completely. Only then cancel, and only cancel whole brackets.
 
-Take $\dfrac{x^2 - 9}{x^2 + 7x + 12}$. Nothing can be cancelled yet—the $x^2$ terms are terms, not factors. Factorise the top: difference of two squares, so $(x+3)(x-3)$. Factorise the bottom: two numbers multiplying to $12$ and adding to $7$, so $(x+3)(x+4)$. Now $(x+3)$ appears as a factor on both, so it cancels.
-
 ```figure
 id: a2-simplify
 caption: Factorise, then cancel
 steps:
   - math: \dfrac{x^2 - 9}{x^2 + 7x + 12}
-    note: Nothing can be cancelled yet. The $x^2$ terms are terms, not factors.
+    note: Nothing can be cancelled yet. The $x^2$ terms are terms, not factors. So we factorise…
   - math: \dfrac{(x+3)(x-3)}{x^2 + 7x + 12}
-    note: The top is a difference of two squares.
+    note: The top is a difference of two squares. Next the denominator…
   - math: \dfrac{(x+3)(x-3)}{(x+3)(x+4)}
     note: The bottom needs two numbers multiplying to $12$ and adding to $7$.
   - math: \dfrac{\ca{\cancel{(x+3)}}(x-3)}{\ca{\cancel{(x+3)}}(x+4)}
@@ -104,26 +102,24 @@ Multiplying is straightforward: tops together, bottoms together.
 
 But do not multiply the brackets out first. Factorise everything first, cancel anything common across the whole fraction, and only then combine what is left. If you expand first you produce large expressions that you will have to factorise again.
 
-Take $\dfrac{x+3}{x^2-4} \times \dfrac{x-2}{x+3}$. Only one part of it will factorise, and $x^2-4$ becomes $(x+2)(x-2)$. Now $(x+3)$ sits on a top and on a bottom, and so does $(x-2)$. Both pairs cancel, and what is left is $\dfrac{1}{x+2}$.
-
 ```figure
 caption: Cancel before combining
 steps:
   - math: \dfrac{x+3}{x^2-4} \times \dfrac{x-2}{x+3}
     note: Two fractions to be multiplied, with nothing expanded.
   - math: \dfrac{x+3}{(x+2)(x-2)} \times \dfrac{x-2}{x+3}
-    note: Factorise first, and matching brackets appear.
+    note: Factorise whatever will factorise, and matching brackets appear. Now multiply…
   - math: \dfrac{\ca{(x+3)}\,\cb{(x-2)}}{(x+2)\,\cb{(x-2)}\,\ca{(x+3)}}
-    note: Tops together and bottoms together.
+    note: Multiply tops together and bottoms together. Now cancel the pairs…
   - math: \dfrac{\ca{\cancel{(x+3)}}\,\cb{\cancel{(x-2)}}}{(x+2)\,\cb{\cancel{(x-2)}}\,\ca{\cancel{(x+3)}}}
-    note: Each factor on the top has a match underneath, whichever fraction it arrived in.
+    note: Both the factors on the top have a match underneath. What’s left?
   - math: \dfrac{1}{x+2}
     note: Nothing is left on the top, so a $1$ stands there.
 ```
 
 Dividing is multiplication by the reciprocal. Turn the second fraction upside down, change the divide into a multiply, and continue as above. Turn over the second fraction and not the first—the second fraction is the one being divided by.
 
-So the order is the same for multiplying and for dividing: factorise, cancel, then combine what is left. A factor on either top cancels against a match on either bottom, so by the time the two fractions are written as one there is usually very little left to write.
+So the order is the same for multiplying and for dividing: factorise, multiply into one fraction, then cancel. Once it is one fraction, a factor on the top cancels against a match anywhere underneath, whichever fraction it arrived in.
 
 ```practice
 caption: multiplying and dividing
@@ -132,11 +128,24 @@ questions:
     math: \dfrac{3x}{x+1} \times \dfrac{x+1}{9x^2}
     grade: achieved
     working:
-      - math: \dfrac{3x\,\ca{(x+1)}}{\ca{(x+1)}\,9x^2}
+      - math: \dfrac{3x}{x+1} \times \dfrac{x+1}{(3x)^2}
+        note: $9x^2$ is $(3x)^2$, which puts a $3x$ underneath to match the one on the left.
+      - math: \dfrac{\cb{3x}\,\ca{(x+1)}}{\ca{(x+1)}\,(\cb{3x})^2}
         note: Tops together and bottoms together, without expanding anything.
-      - math: \dfrac{\cb{3x}}{9x^2}
       - math: \dfrac{1}{3x}
-        note: $3x$ divides into $9x^2$ exactly $3x$ times, leaving a $1$ on top.
+        note: Both pairs cancel. One $3x$ is left underneath, because the bottom had two of them.
+  - ask: Simplify.
+    math: \dfrac{6x^2}{x+3} \div \dfrac{2x}{x+3}
+    grade: achieved
+    working:
+      - math: \dfrac{6x^2}{x+3} \times \dfrac{x+3}{2x}
+        note: The divide becomes a multiply, with the second fraction turned over.
+      - math: \dfrac{2x \cdot 3x}{x+3} \times \dfrac{x+3}{2x}
+        note: $6x^2$ is $2x$ times $3x$, which puts a $2x$ on the top to match the one underneath.
+      - math: \dfrac{\cb{2x} \cdot 3x\,\ca{(x+3)}}{\ca{(x+3)}\,\cb{2x}}
+        note: Tops together and bottoms together.
+      - math: 3x
+        note: Both pairs cancel, and the $3x$ is what is left.
   - ask: Simplify.
     math: \dfrac{x+2}{x-4} \times \dfrac{x^2-16}{x^2-4}
     grade: merit
@@ -160,11 +169,9 @@ questions:
 
 ## Adding and subtracting
 
-Here you need a common denominator, and the same rule applies as with numbers: you cannot add fractions until the bottoms match.
+Here you need a common denominator, and the same rule applies as with numbers: you cannot add fractions until you’ve made the bottoms match.
 
 Factorise the denominators first. The lowest common denominator is then built from the factors you find—take each distinct factor, and include it as many times as it appears in any single denominator.
-
-Take $\dfrac{1}{x+2} + \dfrac{3}{x-1}$. The denominators share nothing, so the common denominator is $(x+2)(x-1)$. Multiply the first fraction top and bottom by $x-1$, and the second top and bottom by $x+2$. The numerator becomes $(x-1) + 3(x+2)$.
 
 ```figure
 caption: Adding over a common denominator
@@ -185,8 +192,6 @@ Leave the denominator in factorised form. It is already simplest, and expanding 
 ### The minus applies to the whole numerator
 
 When you subtract, the minus applies to the entire numerator of the second fraction, not just its first term.
-
-Take $\dfrac{7x+2}{5} - \dfrac{2x-3}{5}$. Subtracting $2x-3$ means subtracting the $2x$ and *adding* the $3$. The numerator is $7x + 2 - 2x + 3$, so $5x + 5$. And that has a common factor of $5$, which cancels with the denominator.
 
 ```figure
 caption: The minus reaches the whole numerator
