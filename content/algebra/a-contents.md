@@ -18,7 +18,7 @@ Rewriting. There is no equals sign anywhere in this module, so nothing in it is 
 - expanding brackets, including three of them
 - taking out a common factor
 - difference of two squares
-- quadratic trinomials, with and without a coefficient on the $x$ squared
+- quadratic trinomials, with and without a coefficient on the $x^2$
 - collecting like terms
 - checking an answer by substituting a number
 - substituting inside brackets, so that negatives and coefficients survive it

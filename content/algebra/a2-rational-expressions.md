@@ -2,11 +2,11 @@
 
 ---
 
-A **rational expression** is a fraction with algebra in it. Rational means ratio — one thing divided by another. $x$ plus two, over $x$ minus three, is a rational expression.
+A **rational expression** is a fraction with algebra in it. Rational means ratio — one thing divided by another. $\dfrac{x+2}{x-3}$ is a rational expression.
 
 The important point at the start: you already know how to handle rational expressions. Every rule for ordinary number fractions applies here without modification. To multiply, multiply the tops and multiply the bottoms. To divide, turn the second fraction upside down and multiply. To add, put both fractions over a common denominator first. To cancel, remove a factor that appears top and bottom.
 
-Nothing in that list is new. The difficulty is that with numbers you can see the factors immediately — with six over nine, the three is obvious. With algebra the factors are hidden inside the expression, and you have to create the factors before you can use them.
+Nothing in that list is new. The difficulty is that with numbers you can see the factors immediately — with $\dfrac{6}{9}$, the $3$ is obvious. With algebra the factors are hidden inside the expression, and you have to create the factors before you can use them.
 
 This is the topic the examiner's reports are hardest on. The 2025 report says a lack of basic algebra skills limited candidates across all three papers of Level 2 maths, and that it was most evident when they were asked to work with expressions involving fractions.
 
@@ -22,19 +22,19 @@ Cancelling is division. When you cancel, you are dividing the numerator and the 
 
 Division works across multiplication. It does not work across addition.
 
-Take two $x$ plus six, all over two. Dividing by two means dividing the whole numerator by two — every term of it. Two $x$ becomes $x$, and six becomes three. The answer is $x$ plus three.
+Take $\dfrac{2x+6}{2}$. Dividing by $2$ means dividing the whole numerator by $2$ — every term of it. $2x$ becomes $x$, and $6$ becomes $3$. The answer is $x + 3$.
 
 ```figure
 caption: Dividing has to reach every term
 steps:
   - math: \dfrac{2x + 6}{2}
-    note: Dividing by two means dividing all of the numerator by two.
+    note: Dividing by $2$ means dividing all of the numerator by $2$.
   - math: \dfrac{\ca{2}x}{\ca{2}} + \dfrac{\cb{6}}{\ca{2}}
-    note: Both terms, not just the one with the two in front of it.
+    note: Both terms, not just the one with the $2$ in front of it.
   - math: x + 3
 ```
 
-Now the error. It is tempting to look at the two on the bottom and the two in front of the $x$ on the top, cancel that pair, and write $x$ plus six. That is wrong, because the six was never divided. The six is a separate term, and the division has to reach the six as well.
+Now the error. It is tempting to look at the $2$ on the bottom and the $2$ in front of the $x$ on the top, cancel that pair, and write $x + 6$. That is wrong, because the $6$ was never divided. The $6$ is a separate term, and the division has to reach the $6$ as well.
 
 ```figure
 caption: The error to avoid
@@ -42,14 +42,14 @@ steps:
   - math: \dfrac{\ca{2}x + 6}{\ca{2}}
     note: Cancelling only the twos that catch the eye.
   - math: x + 6 \qquad \color{red}{\times}
-    note: The six was never divided. Substitute $x = 1$ — the original is four, this is seven.
+    note: The $6$ was never divided. Substitute $x = 1$ — the original is $4$, this is $7$.
 ```
 
 The safe version of the rule: **you can only cancel something that is multiplying the entire numerator and multiplying the entire denominator.** Anything that is added or subtracted is a term, and a term cannot be cancelled.
 
 So the procedure is fixed. Factorise the numerator completely. Factorise the denominator completely. Only then cancel, and only cancel whole brackets.
 
-Take $x$ squared minus nine, over $x$ squared plus seven $x$ plus twelve. Nothing can be cancelled yet — the $x$ squareds are terms, not factors. Factorise the top: difference of two squares, so $x$ plus three, times $x$ minus three. Factorise the bottom: two numbers multiplying to twelve and adding to seven, so $x$ plus three, times $x$ plus four. Now $x$ plus three appears as a factor on both, so it cancels.
+Take $\dfrac{x^2 - 9}{x^2 + 7x + 12}$. Nothing can be cancelled yet — the $x^2$ terms are terms, not factors. Factorise the top: difference of two squares, so $(x+3)(x-3)$. Factorise the bottom: two numbers multiplying to $12$ and adding to $7$, so $(x+3)(x+4)$. Now $(x+3)$ appears as a factor on both, so it cancels.
 
 ```figure
 id: a2-simplify
@@ -60,7 +60,7 @@ steps:
   - math: \dfrac{(x+3)(x-3)}{x^2 + 7x + 12}
     note: The top is a difference of two squares.
   - math: \dfrac{(x+3)(x-3)}{(x+3)(x+4)}
-    note: The bottom needs two numbers multiplying to twelve and adding to seven.
+    note: The bottom needs two numbers multiplying to $12$ and adding to $7$.
   - math: \dfrac{\ca{\cancel{(x+3)}}(x-3)}{\ca{\cancel{(x+3)}}(x+4)}
     note: Now there is a factor common to both, so it cancels.
   - math: \dfrac{x-3}{x+4}
@@ -76,7 +76,7 @@ questions:
       - math: \dfrac{\ca{2x}(2x+3)}{\ca{2x}}
         note: The numerator has a common factor, and it is the denominator.
       - math: 2x+3
-        note: Cancelling only the six against the two would leave the four $x$ squared undivided.
+        note: Cancelling only the $6$ against the $2$ would leave the $4x^2$ undivided.
   - ask: Simplify.
     math: \dfrac{x^2 - 25}{x^2 + 3x - 10}
     grade: achieved
@@ -84,7 +84,7 @@ questions:
       - math: \dfrac{(x+5)(x-5)}{x^2 + 3x - 10}
         note: Difference of two squares on the top.
       - math: \dfrac{(x+5)(x-5)}{(x+5)(x-2)}
-        note: Multiply to minus ten, add to three.
+        note: Multiply to $-10$, add to $3$.
       - math: \dfrac{x-5}{x-2}
   - ask: Simplify fully.
     math: \dfrac{2x^2 - 18}{x^2 + 6x + 9}
@@ -95,7 +95,7 @@ questions:
       - math: \dfrac{2(x+3)(x-3)}{(x+3)(x+3)}
         note: The two numbers for the denominator turn out to be the same number.
       - math: \dfrac{2(x-3)}{x+3}
-        note: One $x$ plus three cancels. The other stays, because only one appeared on top.
+        note: One $(x+3)$ cancels. The other stays, because only one appeared on top.
 ```
 
 ---
@@ -119,7 +119,7 @@ questions:
         note: Tops together and bottoms together, without expanding anything.
       - math: \dfrac{\cb{3x}}{9x^2}
       - math: \dfrac{1}{3x}
-        note: Three $x$ divides into nine $x$ squared three $x$ times, leaving a one on top.
+        note: $3x$ divides into $9x^2$ exactly $3x$ times, leaving a $1$ on top.
   - ask: Simplify.
     math: \dfrac{x+2}{x-4} \times \dfrac{x^2-16}{x^2-4}
     grade: merit
@@ -147,7 +147,7 @@ Here you need a common denominator, and the same rule applies as with numbers: y
 
 Factorise the denominators first. The lowest common denominator is then built from the factors you find — take each distinct factor, and include it as many times as it appears in any single denominator.
 
-Take one over $x$ plus two, plus three over $x$ minus one. The denominators share nothing, so the common denominator is $x$ plus two, times $x$ minus one. Multiply the first fraction top and bottom by $x$ minus one, and the second top and bottom by $x$ plus two. The numerator becomes $x$ minus one, plus three lots of $x$ plus two.
+Take $\dfrac{1}{x+2} + \dfrac{3}{x-1}$. The denominators share nothing, so the common denominator is $(x+2)(x-1)$. Multiply the first fraction top and bottom by $x-1$, and the second top and bottom by $x+2$. The numerator becomes $(x-1) + 3(x+2)$.
 
 ```figure
 caption: Adding over a common denominator
@@ -169,7 +169,7 @@ Leave the denominator in factorised form. It is already simplest, and expanding 
 
 When you subtract, the minus applies to the entire numerator of the second fraction, not just its first term.
 
-Take seven $x$ plus two, over five, minus two $x$ minus three, over five. Subtracting two $x$ minus three means subtracting the two $x$ and *adding* the three. The numerator is seven $x$ plus two, minus two $x$, plus three — so five $x$ plus five. And that has a common factor of five, which cancels with the denominator.
+Take $\dfrac{7x+2}{5} - \dfrac{2x-3}{5}$. Subtracting $2x-3$ means subtracting the $2x$ and *adding* the $3$. The numerator is $7x + 2 - 2x + 3$, so $5x + 5$. And that has a common factor of $5$, which cancels with the denominator.
 
 ```figure
 caption: The minus reaches the whole numerator
@@ -178,7 +178,7 @@ steps:
     note: Write the second numerator in brackets before doing anything else.
   - math: \dfrac{(7x+2) - \ca{(2x-3)}}{5}
   - math: \dfrac{7x + 2 - 2x \ca{+} 3}{5}
-    note: Minus a minus three is plus three. This sign is the one that costs marks.
+    note: Minus a $-3$ is $+3$. This sign is the one that costs marks.
   - math: \dfrac{5x + 5}{5}
   - math: \dfrac{\cb{5}(x+1)}{\cb{5}} \;=\; x+1
     note: A common factor appears, so it cancels.
@@ -205,7 +205,7 @@ questions:
       - math: \dfrac{4(x+1) - \ca{3(x-2)}}{(x-2)(x+1)}
         note: A subtraction, so the second numerator needs a bracket around it.
       - math: \dfrac{4x + 4 - 3x \ca{+} 6}{(x-2)(x+1)}
-        note: Minus three times minus two is plus six.
+        note: $-3$ times $-2$ is $+6$.
       - math: \dfrac{x+10}{(x-2)(x+1)}
   - ask: Write as a single fraction.
     math: \dfrac{2}{t} + \dfrac{t-3}{t^2} - \dfrac{1}{4t}
@@ -225,7 +225,7 @@ questions:
 
 ## Brackets that differ only by a sign
 
-Sometimes two factors do not match because one is the negative of the other. Three minus $x$, and $x$ minus three, are not the same factor — but they differ only by a sign. Take a minus one out of three minus $x$, and it becomes minus one, times $x$ minus three. Now the brackets match and can cancel.
+Sometimes two factors do not match because one is the negative of the other. $3-x$ and $x-3$ are not the same factor, but they differ only by a sign. Take a $-1$ out of $3-x$, and it becomes $-1(x-3)$. Now the brackets match and can cancel.
 
 ```figure
 caption: Brackets that differ only by a sign
@@ -233,7 +233,7 @@ steps:
   - math: \dfrac{\ca{3-x}}{\cb{x-3}}
     note: These are not the same bracket, so nothing cancels yet.
   - math: \dfrac{-1(\cb{x-3})}{\cb{x-3}}
-    note: Take a minus one out of the top, and the brackets match.
+    note: Take a $-1$ out of the top, and the brackets match.
   - math: "-1"
 ```
 
@@ -247,7 +247,7 @@ questions:
       - math: \dfrac{(x+4)\ca{(x-4)}}{\cb{4-x}}
         note: The two brackets are not the same, so nothing cancels yet.
       - math: \dfrac{(x+4)\ca{(x-4)}}{-1\,\ca{(x-4)}}
-        note: Take a minus one out of the denominator to make the brackets match.
+        note: Take a $-1$ out of the denominator to make the brackets match.
       - math: -(x+4)
   - ask: Simplify fully.
     math: \dfrac{9-x^2}{x^2+2x-15}
@@ -256,7 +256,7 @@ questions:
       - math: \dfrac{(3+x)(3-x)}{(x+5)(x-3)}
         note: Difference of two squares on top, trinomial underneath.
       - math: \dfrac{(x+3)\big(\!-\!1\big)\ca{(x-3)}}{(x+5)\ca{(x-3)}}
-        note: Three minus $x$ is minus one times $x$ minus three.
+        note: $3-x$ is $-1(x-3)$.
       - math: \dfrac{-(x+3)}{x+5}
 ```
 
@@ -291,9 +291,9 @@ questions:
     from: "2025"
     working:
       - math: \dfrac{2x(2x^2 + 7x - 4)}{3x^2 + 10x - 8}
-        note: A common factor of two $x$ drops the numerator to a quadratic.
+        note: A common factor of $2x$ drops the numerator to a quadratic.
       - math: \dfrac{2x(2x-1)\ca{(x+4)}}{(3x-2)\ca{(x+4)}}
-        note: Both are trinomials with a coefficient on the $x$ squared, so split the middle term.
+        note: Both are trinomials with a coefficient on the $x^2$, so split the middle term.
       - math: \dfrac{2x(2x-1)}{3x-2}
         note: Either this or the expanded numerator is accepted.
   - ask: The expression can be written as $A + \dfrac{B}{x}$, where $A$ and $B$ are integers. Find $A$ and $B$.

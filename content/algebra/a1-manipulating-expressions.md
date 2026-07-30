@@ -34,7 +34,7 @@ steps:
 
 Write the number inside brackets every time you substitute, before doing any arithmetic. The brackets keep the number attached to whatever was being done to $x$.
 
-Substitute minus three for $x$ in $x$ squared. With brackets, the whole of minus three is squared, and the answer is nine. Without them, only the three is squared and the minus is left sitting outside, which gives minus nine. The two answers differ by a sign.
+Substitute $-3$ for $x$ in $x^2$. With brackets, the whole of $-3$ is squared, and the answer is $9$. Without them, only the $3$ is squared and the minus is left sitting outside, which gives $-9$. The two answers differ by a sign.
 
 ```figure
 caption: Substituting a negative number
@@ -42,14 +42,14 @@ steps:
   - math: x^2 \qquad\textsf{where}\qquad x = \ca{-3}
     note: Substitute a negative number and the brackets decide the answer.
   - math: (\ca{-3})^2 = 9
-    note: With brackets, the whole of minus three is squared.
+    note: With brackets, the whole of $-3$ is squared.
   - math: "-3^2 = -9"
-    note: Without them, only the three is squared, and the minus stays outside it.
+    note: Without them, only the $3$ is squared, and the minus stays outside it.
 ```
 
-The same pair of brackets separates two different expressions. Minus $x$ squared means square $x$ and then make the result negative. Minus $x$, all squared, means square the whole of minus $x$, and that is positive. The examiner's reports list substituting incorrectly and mishandling negative numbers as separate reasons candidates did not achieve, and a missing bracket produces both.
+The same pair of brackets separates two different expressions. $-x^2$ means square $x$ and then make the result negative. $(-x)^2$ means square the whole of $-x$, and that is positive. The examiner's reports list substituting incorrectly and mishandling negative numbers as separate reasons candidates did not achieve, and a missing bracket produces both.
 
-What you substitute is often an expression rather than a number, and the brackets matter more there, because there is more inside them for the operation to reach. If the radius of a circle is two $x$, the area is $\pi$ times two $x$, all squared, which is four $\pi$ times $x$ squared. Leave the brackets off and the square reaches the $x$ but not the two, and every line after that is wrong. The 2024 report names that error exactly: candidates who formed a correct expression and then did not put brackets around the radius.
+What you substitute is often an expression rather than a number, and the brackets matter more there, because there is more inside them for the operation to reach. If the radius of a circle is $2x$, the area is $\pi(2x)^2$, which is $4\pi x^2$. Leave the brackets off and the square reaches the $x$ but not the $2$, and every line after that is wrong. The 2024 report names that error exactly: candidates who formed a correct expression and then did not put brackets around the radius.
 
 ```figure
 caption: Brackets around a substituted expression
@@ -57,9 +57,9 @@ steps:
   - math: A = \pi r^2 \qquad\textsf{where}\qquad r = \ca{2x}
     note: This time what goes in is an expression, not a number.
   - math: A = \pi(\ca{2x})^2 = 4\pi x^2
-    note: The bracket makes the square reach the two as well as the $x$.
+    note: The bracket makes the square reach the $2$ as well as the $x$.
   - math: A = \pi \cdot \ca{2x}^2 = 2\pi x^2 \qquad \color{red}{\times}
-    note: Without it the two is never squared, and the error is carried through the rest of the question.
+    note: Without it the $2$ is never squared, and the error is carried through the rest of the question.
 ```
 
 ```practice
@@ -92,18 +92,18 @@ questions:
 
 Two words name the parts of an expression, and the difference between them decides what you are allowed to do with those parts.
 
-**Terms** are the parts that are added. Three $x$ squared plus five $x$ minus two has three terms. The sign in front of a term belongs to that term, so the third term is minus two rather than two.
+**Terms** are the parts that are added. $3x^2 + 5x - 2$ has three terms. The sign in front of a term belongs to that term, so the third term is $-2$ rather than $2$.
 
-Within a term, the number in front of the letters is the **coefficient**, and the letters are the **letter part**. A term with no letters at all is the **constant**. Where no number is written the coefficient is one, so $x$ squared means one $x$ squared.
+Within a term, the number in front of the letters is the **coefficient**, and the letters are the **letter part**. A term with no letters at all is the **constant**. Where no number is written the coefficient is $1$, so $x^2$ means $1x^2$.
 
 ```figure
 caption: The parts of a term
 steps:
   - math: \ca{3}x^2 + \ca{5}x - \cb{2}
-    note: Three and five are coefficients. Minus two is the constant.
+    note: $3$ and $5$ are coefficients. $-2$ is the constant.
 ```
 
-**Factors** are the parts that are multiplied. Three $x$ times the bracket $x$ plus three has two factors: the three $x$, and the bracket.
+**Factors** are the parts that are multiplied. $3x(x+3)$ has two factors: the $3x$, and the bracket.
 
 Which of the two words applies depends on the form in front of you. A sum is cut into terms. A product is cut into factors. The same expression can be written either way, and moving between those two forms is the whole of what expanding and factorising do.
 
@@ -118,7 +118,7 @@ steps:
     note: One expression and one value, written two ways. Only the form has changed.
 ```
 
-A term has factors of its own. Six $x$ squared is six times $x$ times $x$, so six and $x$ are both factors of it, and searching every term for a factor they all share is the first of the three techniques below. The expression as a whole is different. It has factors only once the whole of it is a product. Six $x$ squared plus nine $x$ has none, because the last thing done in it is an addition.
+A term has factors of its own. $6x^2$ is $6 \times x \times x$, so $6$ and $x$ are both factors of it, and searching every term for a factor they all share is the first of the three techniques below. The expression as a whole is different. It has factors only once the whole of it is a product. $6x^2 + 9x$ has none, because the last thing done in it is an addition.
 
 The rest of the lesson moves between those two forms.
 
@@ -136,7 +136,7 @@ steps:
     note: A product on the left, a sum of terms on the right. The same expression both times.
 ```
 
-**Expanding** converts a product into a sum of terms. Take $x$ plus two, times $x$ plus five. Multiply each term in the first bracket by each term in the second. $x$ times $x$ is $x$ squared. $x$ times five is five $x$. Two times $x$ is two $x$. Two times five is ten. Collect the like terms: $x$ squared plus seven $x$ plus ten.
+**Expanding** converts a product into a sum of terms. Take $(x+2)(x+5)$. Multiply each term in the first bracket by each term in the second. $x$ times $x$ is $x$ squared. $x$ times five is five $x$. Two times $x$ is two $x$. Two times five is ten. Collect the like terms: $x^2 + 7x + 10$.
 
 ```figure
 id: a1-expand
@@ -153,7 +153,7 @@ steps:
 
 Three brackets are expanded the same way, two at a time: expand any two of them, then multiply that result by the bracket left over. The 2024 report describes candidates who identified three correct factors and then could not expand them, so the expansion is worth practising on its own.
 
-**Factorising** converts a sum of terms into a product. Starting from $x$ squared plus seven $x$ plus ten, you recover $x$ plus two, times $x$ plus five.
+**Factorising** converts a sum of terms into a product. Starting from $x^2 + 7x + 10$, you recover $(x+2)(x+5)$.
 
 ```figure
 caption: Factorising — the same figure, read upwards
@@ -161,7 +161,7 @@ steps:
   - math: x^2 + 7x + 10
     note: Start from the sum of terms.
   - math: x^2 + \ca{5x} + \cb{2x} + 10
-    note: Seven x came from somewhere. Split it back apart.
+    note: $7x$ came from somewhere. Split it back apart.
   - math: (\ca{x}+\cb{2})(\cc{x}+\cd{5})
     note: And you are back at the product you started with.
 ```
@@ -185,7 +185,7 @@ questions:
     grade: achieved
     working:
       - math: 2x^2 + 8x - 5x - 20
-        note: The minus five carries its sign into both of its products.
+        note: The $-5$ carries its sign into both of its products.
       - math: 2x^2 + 3x - 20
   - ask: Expand and simplify.
     math: (3x-2)^2
@@ -253,7 +253,7 @@ steps:
 
 Examine every term for something they all contain, and take it outside a bracket.
 
-Six $x$ squared plus nine $x$. Every term contains a factor of three, and every term contains at least one $x$. Take out three $x$. What remains inside the bracket is two $x$ plus three. The result is three $x$, bracket, two $x$ plus three.
+$6x^2 + 9x$. Every term contains a factor of $3$, and every term contains at least one $x$. Take out $3x$. What remains inside the bracket is $2x + 3$. The result is $3x(2x+3)$.
 
 ```figure
 id: a1-common-factor
@@ -262,14 +262,14 @@ steps:
   - math: 6x^2 + 9x
     note: What appears in every term?
   - math: \ca{3}\!\cdot\!2\!\cdot\!\cb{x}\!\cdot\!x \;+\; \ca{3}\!\cdot\!3\!\cdot\!\cb{x}
-    note: A three in both, and at least one $x$ in both.
+    note: A $3$ in both, and at least one $x$ in both.
   - math: \ca{3}\cb{x}(2x+3)
     note: The common part comes out the front, and what each term had left stays inside.
 ```
 
 Verify by expanding it back. Three $x$ times two $x$ is six $x$ squared. Three $x$ times three is nine $x$. Correct.
 
-Take out common factors first in every case. It frequently converts an unfamiliar expression into a standard one. Two $x$ squared minus eighteen is not a recognised form. Take out the two and it becomes two, bracket, $x$ squared minus nine — and $x$ squared minus nine is the next tool.
+Take out common factors first in every case. It frequently converts an unfamiliar expression into a standard one. $2x^2 - 18$ is not a recognised form. Take out the $2$ and it becomes $2(x^2 - 9)$ — and $x^2 - 9$ is the next tool.
 
 ```figure
 caption: Why the common factor comes first
@@ -277,7 +277,7 @@ steps:
   - math: 2x^2 - 18
     note: Not a form you recognise.
   - math: 2(\ca{x^2 - 9})
-    note: Take out the two — and now the bracket is the next tool.
+    note: Take out the $2$ — and now the bracket is the next tool.
   - math: 2(x+3)(x-3)
 ```
 
@@ -296,7 +296,7 @@ questions:
     grade: achieved
     working:
       - math: 5x(x^2 - 4x + 3)
-        note: Every term has a five and at least one $x$. The signs stay with their terms.
+        note: Every term has a $5$ and at least one $x$. The signs stay with their terms.
   - ask: Factorise. The common factor here is not a number.
     math: 3x(x-2) + 5(x-2)
     grade: merit
@@ -309,7 +309,7 @@ questions:
 
 ### Two — difference of two squares
 
-$a$ squared minus $b$ squared factorises to $a$ plus $b$, times $a$ minus $b$.
+$a^2 - b^2$ factorises to $(a+b)(a-b)$.
 
 Two conditions must both hold. Both terms are perfect squares, and they are separated by a minus.
 
@@ -320,14 +320,14 @@ steps:
     note: Both terms are squares, and there is a minus between them. Both conditions must hold.
 ```
 
-$x$ squared minus nine becomes $x$ plus three, times $x$ minus three. Four $x$ squared minus twenty-five becomes two $x$ plus five, times two $x$ minus five — because four $x$ squared is two $x$ all squared, and twenty-five is five squared.
+$x^2 - 9$ becomes $(x+3)(x-3)$. $4x^2 - 25$ becomes $(2x+5)(2x-5)$, because $4x^2$ is $(2x)^2$ and $25$ is $5^2$.
 
 ```figure
 caption: Spotting it
 steps:
   - math: x^2 - 9
   - math: (x+3)(x-3)
-    note: Nine is three squared.
+    note: $9$ is $3^2$.
   - math: 4x^2 - 25
     note: Less obvious. Is each term a square?
   - math: (\ca{2x})^2 - (\cb{5})^2
@@ -335,7 +335,7 @@ steps:
   - math: (\ca{2x}+\cb{5})(\ca{2x}-\cb{5})
 ```
 
-$a$ squared **plus** $b$ squared does not factorise. There is no pair of brackets that produces $x$ squared plus nine.
+$a^2 + b^2$ does not factorise. The **plus** is what rules it out: there is no pair of brackets that produces $x^2 + 9$.
 
 ```figure
 caption: The one that does not work
@@ -359,7 +359,7 @@ questions:
     grade: achieved
     working:
       - math: (\ca{3x})^2 - (\cb{8})^2
-        note: Nine $x$ squared is a square, because it is three $x$ all squared.
+        note: $9x^2$ is a square, because it is $(3x)^2$.
       - math: (\ca{3x}+\cb{8})(\ca{3x}-\cb{8})
   - ask: Factorise fully.
     math: 50x^2 - 8
@@ -370,14 +370,14 @@ questions:
       - math: 2(25x^2 - 4)
         note: Take out the common factor first, and the bracket becomes a case that does.
       - math: 2(5x+2)(5x-2)
-        note: Fully means the two out the front stays. Dropping it changes the value.
+        note: Fully means the $2$ out the front stays. Dropping it changes the value.
 ```
 
 ### Three — quadratic trinomials
 
-Three terms, with $x$ squared at the front. Take $x$ squared plus seven $x$ plus twelve.
+Three terms, with $x^2$ at the front. Take $x^2 + 7x + 12$.
 
-Find two numbers that multiply to give the constant and add to give the coefficient of $x$. Multiply to twelve, add to seven: three and four. The factorisation is $x$ plus three, times $x$ plus four.
+Find two numbers that multiply to give the constant and add to give the coefficient of $x$. Multiply to $12$, add to $7$: $3$ and $4$. The factorisation is $(x+3)(x+4)$.
 
 ```figure
 id: a1-trinomial
@@ -404,14 +404,14 @@ steps:
       \end{array}
 ```
 
-When there is a coefficient in front of the $x$ squared, the method extends. Take two $x$ squared plus seven $x$ plus three. Multiply the coefficient of $x$ squared by the constant: two times three is six. Find two numbers that multiply to six and add to seven: six and one. Use them to split the middle term into six $x$ plus one $x$. Then factorise the first two terms and the last two terms separately, and a common bracket appears.
+When there is a coefficient in front of the $x^2$, the method extends. Take $2x^2 + 7x + 3$. Multiply the coefficient of $x^2$ by the constant: $2 \times 3 = 6$. Find two numbers that multiply to $6$ and add to $7$: $6$ and $1$. Use them to split the middle term into $6x + x$. Then factorise the first two terms and the last two terms separately, and a common bracket appears.
 
 ```figure
 id: a1-split-middle
 caption: When there is a coefficient on the x squared
 steps:
   - math: \ca{2}x^2 + 7x + \cb{3}
-    note: Multiply the coefficient of $x^2$ by the constant. Two times three is six.
+    note: Multiply the coefficient of $x^2$ by the constant, so $2 \times 3 = 6$.
   - math: \cc{6} \times \cd{1} = 6 \qquad \cc{6} + \cd{1} = 7
     note: Now find two numbers multiplying to six and adding to seven.
   - math: 2x^2 + \cc{6x} + \cd{x} + 3
@@ -448,7 +448,7 @@ questions:
     grade: merit
     working:
       - math: \ca{3} \times \cb{6} = 18
-        note: With a coefficient on the $x$ squared, multiply that coefficient by the constant.
+        note: With a coefficient on the $x^2$, multiply that coefficient by the constant.
       - math: \cc{9} \times \cd{2} = 18 \qquad \cc{9} + \cd{2} = 11
       - math: 3x^2 + \cc{9x} + \cd{2x} + 6
         note: Split the middle term with them.
@@ -472,7 +472,7 @@ questions:
 
 Terms are **like** when their letter parts are identical — same letters, same powers.
 
-Three $x$ squared and five $x$ squared are like terms. They combine to eight $x$ squared. Three $x$ squared and five $x$ are not like terms. They stay separate, and no amount of work will combine them.
+$3x^2$ and $5x^2$ are like terms. They combine to $8x^2$. $3x^2$ and $5x$ are not like terms. They stay separate, and no amount of work will combine them.
 
 ```figure
 caption: Like and unlike
@@ -507,7 +507,7 @@ questions:
       - math: x^2 + 3x - 4 - x^2 \ca{+} x \ca{+} 6
         note: The minus reaches every term inside that bracket, so two signs flip.
       - math: 4x + 2
-        note: The $x$ squared terms cancel, which is the sign the signs were handled correctly.
+        note: The $x^2$ terms cancel, which is the sign the signs were handled correctly.
 ```
 
 ---
@@ -531,9 +531,9 @@ questions:
     from: "2025"
     working:
       - math: (\ca{5x} + \cb{?})^2
-        note: Twenty-five $x$ squared is five $x$ squared, so the first term of the bracket is fixed.
+        note: $25x^2$ is $(5x)^2$, so the first term of the bracket is fixed.
       - math: (5x-4)^2 = 25x^2 - 40x + 16
-        note: The middle term is twice the product of the two, so the second term is minus four.
+        note: The middle term is twice the product of the two, so the second term is $-4$.
       - math: k = 16
   - ask: Factorise fully.
     math: 6x^2 - 7x - 3
@@ -543,18 +543,18 @@ questions:
       - math: \cc{-9} \times \cd{2} = -18 \qquad \cc{-9} + \cd{2} = -7
       - math: 6x^2 - 9x + 2x - 3
       - math: 3x(2x-3) + 1(2x-3)
-        note: The second pair has no common factor other than one, and the one must be written.
+        note: The second pair has no common factor other than $1$, and the $1$ must be written.
       - math: (2x-3)(3x+1)
   - ask: Factorise fully.
     math: x^4 - 16
     grade: excellence
     working:
       - math: (x^2)^2 - (4)^2
-        note: $x$ to the fourth is $x$ squared, squared.
+        note: $x^4$ is $(x^2)^2$.
       - math: (x^2+4)(x^2-4)
         note: One of these two brackets is itself a difference of two squares.
       - math: (x^2+4)(x+2)(x-2)
-        note: $x$ squared plus four is a sum of squares, so it stops there.
+        note: $x^2 + 4$ is a sum of squares, so it stops there.
   - ask: Factorise fully.
     math: (x+3)^2 - (x-2)^2
     grade: excellence
@@ -563,7 +563,7 @@ questions:
         note: A square minus a square, where each square is of a bracket rather than a term.
       - math: \big[\ca{(x+3)} + \cb{(x-2)}\big]\big[\ca{(x+3)} - \cb{(x-2)}\big]
       - math: (2x+1)(5)
-        note: The second bracket collapses, because subtracting minus two adds two.
+        note: The second bracket collapses, because subtracting $-2$ adds $2$.
       - math: 5(2x+1)
         note: Expanding both squares first gets the same answer with far more work.
 ```

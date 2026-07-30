@@ -4,7 +4,7 @@
 
 ## Expressions and equations
 
-An **expression** is a collection of terms with no equals sign. Three $x$ squared plus five $x$ minus two is an expression. It is not true and it is not false. It is a value written in parts — a value you cannot yet calculate, because you do not know what $x$ is.
+An **expression** is a collection of terms with no equals sign. $3x^2 + 5x - 2$ is an expression. It is not true and it is not false. It is a value written in parts — a value you cannot yet calculate, because you do not know what $x$ is.
 
 ```figure
 caption: An expression
@@ -13,7 +13,7 @@ steps:
     note: No equals sign, and a value you cannot yet calculate.
 ```
 
-An **equation** has an equals sign. Three $x$ squared plus five $x$ minus two equals zero is an equation. It states that two things are the same. That statement is true for some values of $x$ and false for others.
+An **equation** has an equals sign. $3x^2 + 5x - 2 = 0$ is an equation. It states that two things are the same. That statement is true for some values of $x$ and false for others.
 
 ```figure
 caption: An equation
@@ -21,7 +21,7 @@ steps:
   - math: 3x^2 + 5x - 2 = 0
     note: A claim that two things are the same. True for some values of $x$, false for others.
   - math: 3(\ca{0})^2 + 5(\ca{0}) - 2 = -2
-    note: Try $x = 0$. That gives minus two, not zero, so the claim is false here.
+    note: Try $x = 0$. That gives $-2$, not $0$, so the claim is false here.
   - math: 3(\cb{-2})^2 + 5(\cb{-2}) - 2 = 0
     note: Try $x = -2$. The claim is true. Finding the values that do this is what solving means.
 ```

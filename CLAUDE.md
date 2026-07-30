@@ -57,14 +57,48 @@ everywhere, not just where he touched.
    ("cancel factors, **never** terms"); emphasis that merely insists goes.
 5. **No metaphors or asides that wink at the reader.** They read as casual and
    have been cut before.
+6. **Do not announce what is coming; write it.** "Two consequences follow from
+   that" and "What follows is the toolkit for doing that" describe the shape of
+   the next few sentences, which the reader can see for themselves. Cut the
+   announcement and keep what it was announcing. The sidebar already lists the
+   headings, so a paragraph that lists them again earns nothing.
+7. **Do not direct the reader's attention.** "Hold on to that distinction" and
+   "this one is worth deliberate practice" ask for effort instead of teaching.
+   Where such a sentence carries a claim, keep the claim and drop the
+   instruction wrapped around it.
 
-**Mathematics in prose is written out in words** — "two $x$ squared minus
-eighteen", not `2x² − 18`. This is a deliberate style choice and it survives
-from the original audio-first plan. Notation belongs in figures.
+**Mathematics in prose is written as notation**, inline: `$2x^2 - 18$`, not "two
+$x$ squared minus eighteen". It sets in the same serif as the figures, so a
+fragment reads the same in a sentence as it does in a step. The lessons were
+first sounded out in words to feed a text-to-speech pipeline; that pipeline is
+gone, and the spelled-out form is now the harder of the two to read. Where the
+words were standing in for something unspeakable the gain is largest — "all
+squared" exists only because a bracket cannot be said aloud, and `$(-x)^2$`
+beside `$-x^2$` puts the bracket where the reader can see it.
 
-**Variables are the exception:** write them as inline maths, so `$x$`, `$a$`,
-`$y$`. They then set in the same italic as the figures. Everything else stays in
-words.
+Two kinds of number stay in words.
+
+- **Counting and quantity**: "has three terms", "five of them multiplied
+  together", "the two answers differ by a sign". These are English, not
+  mathematics. Set a number as notation when the reader can find it in the
+  expression on the page — "take out the $2$, and it becomes $2(x^2 - 9)$" — and
+  as a word otherwise.
+- **A calculation narrated beside the figure that shows it**: reading each term
+  out in words walks the reader through the figure, so those paragraphs stay as
+  they are. Do not convert them mechanically.
+
+A whole expression still belongs in a figure rather than in a sentence. Inline
+notation cannot break across lines, so a paragraph carrying six fragments sets
+badly.
+
+**A fraction in prose is `\dfrac`, and a fraction inside an exponent is `\frac`.**
+Inline, `\frac` sets a fraction at half the size of the body text, which for
+anything with more than one term in it is too small to read — so
+`$\dfrac{x^2 - 9}{x^2 + 7x + 12}$`. In an exponent the small size is correct and
+`\dfrac` overlaps the line above, so `$x^{\frac{2}{3}}$` keeps `\frac`. Both
+raise the height of the line they sit on, which is the cost of setting a fraction
+in running prose at all; a paragraph that opens with one sits tight under its
+heading.
 
 ### Placing content
 
@@ -72,6 +106,19 @@ Explain how a thing fits in before explaining the thing. Each lesson should
 place itself against what came before and hand off to what comes after — A1
 closes by saying what factorising unlocks in A2 and B2; A3 flags that the
 same-base condition is what makes exponential equations work in B3.
+
+The same applies within a lesson: **close a section on what it decides, not on
+its last mechanical detail.** A section that defines something has to say
+somewhere what the definition buys — which question it answers, which move it
+makes available, what it rules out — and that belongs last, in the section's own
+terms.
+
+Watch for this when applying rules 6 and 7 above, because cutting a scaffolding
+sentence often takes the payoff with it. The introduction's expressions and
+equations section defined both words over four figures and was then left with no
+line saying the distinction decides what a question is asking, because that
+claim had been sitting inside "hold on to that distinction". It had to be
+written back in as the closing sentence.
 
 Subject-level framing belongs in that subject's introduction, not in its first
 topic. See [`content/algebra/a-intro.md`](content/algebra/a-intro.md).
@@ -170,8 +217,10 @@ questions:
 
 - **A short set follows each technique**, drilling that technique alone; **a
   mixed set** sits under a `## Practice` heading before the summary.
-- `ask` carries the instruction, `math` carries the expression. The prose rule —
-  words, not notation — applies to `ask` and to the notes.
+- `ask` carries the instruction, `math` carries the expression. Notes and `ask`
+  follow the prose rule and set notation inline, but the expression a question is
+  about still goes in `math`, because an expression of any size sets badly inside
+  a sentence.
 - `grade` is required and is one of `achieved`, `merit`, `excellence`. It is
   the band the marking schedule would award, not a measure of length.
 - `working` uses the same steps and the same stepper as a figure, and is hidden

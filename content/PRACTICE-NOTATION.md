@@ -53,9 +53,9 @@ text. `npm run check` compiles every expression and rejects a missing or unknown
 
 ## The instruction goes in `ask`, the notation in `math`
 
-The lesson prose writes mathematics out in words. A question is not prose — the
-notation is the thing being asked about — but the split is the same one: `ask`
-carries the sentence, `math` carries the expression.
+The lesson prose sets notation inline, and a question could too. It does not,
+because here the notation is the thing being asked about rather than a fragment
+of a sentence: `ask` carries the sentence, `math` carries the expression.
 
 ```
 ask: Simplify fully.
