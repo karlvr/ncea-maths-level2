@@ -120,7 +120,7 @@ steps:
 
 A term has factors of its own. $6x^2$ is $6 \times x \times x$, so $6$ and $x$ are both factors of it, and searching every term for a factor they all share is the first of the three techniques below. The expression as a whole is different. It has factors only once the whole of it is a product. $6x^2 + 9x$ has none, because the last thing done in it is an addition.
 
-The rest of the lesson moves between those two forms.
+Which of the two a part is decides what may be done to it. A factor can be cancelled against a matching factor, and a factor shared by every term can be taken outside a bracket. Neither move is available to a term.
 
 ---
 
@@ -166,9 +166,7 @@ steps:
     note: And you are back at the product you started with.
 ```
 
-The same expression, written two ways.
-
-They differ in difficulty. Expanding is mechanical and always possible. Factorising is a search — you are working out what must have been multiplied together to produce the result — and not every expression factorises. That is why factorising is where the marks are.
+Expanding and factorising differ in difficulty. Expanding is mechanical and always possible. Factorising is a search — you are working out what must have been multiplied together to produce the result — and not every expression factorises. That is why factorising is where the marks are.
 
 ```practice
 caption: expanding
@@ -424,7 +422,7 @@ steps:
     note: Take the common bracket out, and what is left is the other one.
 ```
 
-This one is worth deliberate practice. It comes up regularly.
+The 2023 and 2025 papers both hide one of these inside a rational expression — $\dfrac{3x^2 - 10x + 8}{9x^2 - 16}$ in 2023 — where the middle term has to be split before anything in the question can cancel.
 
 ```practice
 caption: quadratic trinomials
@@ -486,6 +484,8 @@ steps:
 ```
 
 Add the coefficients. The letter part does not change.
+
+Knowing which terms are like is what tells you when an expression is finished. $3x^2 + 11x$ is two terms and stays two terms, and an answer that forces it into one has changed the value.
 
 ```practice
 caption: collecting like terms

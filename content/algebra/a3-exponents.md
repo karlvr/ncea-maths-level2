@@ -120,7 +120,7 @@ steps:
     note: Not the same, and the gap is the missing $2xy$ — which is $24$.
 ```
 
-This is worth pairing with the cancelling rule from the last lesson, because the two are one idea appearing in two places. **Multiplication distributes. Addition does not.** Cancelling reaches every factor but not every term; a power reaches every factor but not every term. Understand that once and you have both.
+This is worth pairing with the cancelling rule from the last lesson, because the two are one idea appearing in two places. **Multiplication distributes. Addition does not.** Cancelling reaches every factor but not every term; a power reaches every factor but not every term.
 
 ```practice
 caption: powers over products
@@ -154,7 +154,7 @@ questions:
 
 ## Zero, negative and fractional exponents
 
-These three look like extra rules to memorise. They are not. Each one follows from the laws already stated.
+Each of these three follows from the laws already stated.
 
 ### Zero
 
@@ -341,7 +341,7 @@ steps:
   - math: \ca{4}\cb{x^4}
 ```
 
-Work through it factor by factor. Do not try to see the whole thing at once.
+Nothing in that is new. Each factor met one of the laws above, and the only new thing is that they arrived in the same expression.
 
 ---
 

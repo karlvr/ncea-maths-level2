@@ -16,8 +16,6 @@ Which means the first move in almost every one of these questions is the same: *
 
 ## Cancelling: factors only, never terms
 
-This is the single most common error at Level 2, so it is worth understanding rather than memorising.
-
 Cancelling is division. When you cancel, you are dividing the numerator and the denominator — the top and the bottom — by the same thing, which leaves the value unchanged.
 
 Division works across multiplication. It does not work across addition.
@@ -106,7 +104,26 @@ Multiplying is straightforward: tops together, bottoms together.
 
 But do not multiply the brackets out first. Factorise everything first, cancel anything common across the whole fraction, and only then combine what is left. If you expand first you produce large expressions that you will have to factorise again.
 
+Take $\dfrac{x+3}{x^2-4} \times \dfrac{x-2}{x+3}$. Only one part of it will factorise, and $x^2-4$ becomes $(x+2)(x-2)$. Now $(x+3)$ sits on a top and on a bottom, and so does $(x-2)$. Both pairs cancel, and what is left is $\dfrac{1}{x+2}$.
+
+```figure
+caption: Cancel before combining
+steps:
+  - math: \dfrac{x+3}{x^2-4} \times \dfrac{x-2}{x+3}
+    note: Two fractions to be multiplied, with nothing expanded.
+  - math: \dfrac{x+3}{(x+2)(x-2)} \times \dfrac{x-2}{x+3}
+    note: Factorise first, and matching brackets appear.
+  - math: \dfrac{\ca{(x+3)}\,\cb{(x-2)}}{(x+2)\,\cb{(x-2)}\,\ca{(x+3)}}
+    note: Tops together and bottoms together.
+  - math: \dfrac{\ca{\cancel{(x+3)}}\,\cb{\cancel{(x-2)}}}{(x+2)\,\cb{\cancel{(x-2)}}\,\ca{\cancel{(x+3)}}}
+    note: Each factor on the top has a match underneath, whichever fraction it arrived in.
+  - math: \dfrac{1}{x+2}
+    note: Nothing is left on the top, so a $1$ stands there.
+```
+
 Dividing is multiplication by the reciprocal. Turn the second fraction upside down, change the divide into a multiply, and continue as above. Turn over the second fraction and not the first — the second fraction is the one being divided by.
+
+So the order is the same for multiplying and for dividing: factorise, cancel, then combine what is left. A factor on either top cancels against a match on either bottom, so by the time the two fractions are written as one there is usually very little left to write.
 
 ```practice
 caption: multiplying and dividing
@@ -237,6 +254,8 @@ steps:
   - math: "-1"
 ```
 
+A subtraction written the other way round is what produces such a pair, and a difference of two squares is where that happens most: $9-x^2$ factorises to $(3+x)(3-x)$, while $x^2-9$ gives $(x+3)(x-3)$. Before deciding that nothing cancels, check whether taking out a $-1$ would make two brackets match.
+
 ```practice
 caption: brackets that differ only by a sign
 questions:
@@ -338,3 +357,5 @@ Cancel factors, never terms. A factor multiplies the whole numerator and the who
 To multiply, factorise and cancel before combining. To divide, flip the second fraction. To add or subtract, factorise the denominators to find the common denominator, and put brackets around a numerator you are subtracting.
 
 Leave your answer factorised. Expanding it out is not simplifying — the specification asks for the simplest algebraic form, and factorised is simplest.
+
+The common denominator comes back in Module B. An equation with fractions in it is cleared by multiplying every term by the lowest common denominator, found exactly as it is found here — with the difference that an equation may be multiplied through and an expression may not.
