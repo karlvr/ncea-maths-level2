@@ -10,7 +10,7 @@ No question in this lesson starts with an equals sign, because every one of them
 
 One rule governs all work with expressions: the value must not change.
 
-You may rewrite an expression in any form you like, provided that substituting a number for $x$ gives the same answer before and after. Everything else in this lesson is technique for doing exactly that.
+You may rewrite an expression in any form you like, provided that substituting a number for $x$ gives the same answer before and after.
 
 That rule also allows you to check your work. Choose a number, substitute it into the original expression and into your simplified expression, then calculate and compare the two. If the answers differ, there is an error in the working.
 
@@ -27,8 +27,6 @@ steps:
   - math: 12 \times 11 = 132
     note: The answers match, so no error has been introduced.
 ```
-
-Your own working is that rule applied line by line. Each line is another form of the expression, equal to the line above it, and the last line is the answer. The equals signs down the left are what state that no step changed the value.
 
 ### Substituting needs brackets
 
@@ -85,6 +83,14 @@ questions:
       - math: \textsf{Not correct}
         note: The two disagree, so the factorising is wrong. The bracket that agrees is $(x-3)^2$.
 ```
+
+---
+
+## Show your working
+
+The value must not change, and your working is where you show that it did not. Each line is another form of the same expression, equal to the line above it, so the value carries unchanged from the first line to the last.
+
+The examination specification requires algebraic technique to be shown, not just a correct answer. An answer with no working is marked *Correct Answer Only*, which is worth an Achieved tick at best and cannot reach Merit or Excellence however right the answer is. So every step gets written down, including the ones that look too small to be worth it.
 
 ---
 
@@ -582,4 +588,4 @@ Factorise in a fixed order: common factor, then difference of two squares, then 
 
 Check factorising by expanding it back. Check simplifying by substituting a number, and write whatever you substitute inside brackets, so that a negative keeps its sign and a coefficient gets squared along with its letter.
 
-One point from the examination specification. Algebraic technique must be shown, not just a correct answer, and answers must be given in their simplest form. The working carries as much weight as the result. So when you practise, state the reason for each step out loud — common factor first, which left a difference of two squares. Being able to say it is what lets you write it down, and writing it down is what takes you past Achieved.
+Answers must be given in their simplest form, and algebraic technique must be shown. So when you practise, state the reason for each step out loud — common factor first, which left a difference of two squares. Being able to say it is what lets you write it down, and writing it down is what takes you past Achieved.
