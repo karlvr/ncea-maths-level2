@@ -108,6 +108,14 @@ const STRUCTURE: readonly SubjectSpec[] = [
           'algebra/b3-exponential-equations.md',
         ],
       },
+      {
+        id: 'quadratic-properties',
+        title: 'Module C—Quadratic properties',
+        blurb:
+          'Finding how many solutions a quadratic equation has, or being given ' +
+          'the number of solutions and working out the unknown coefficient.',
+        files: ['algebra/c1-nature-of-the-roots.md'],
+      },
     ],
   },
 ]

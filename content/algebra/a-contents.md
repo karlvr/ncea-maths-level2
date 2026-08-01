@@ -86,7 +86,10 @@ There is an equals sign now, so there is something to find.
 
 - the discriminant
 - the three cases it distinguishes
+- what those three cases look like on a graph
+- whether the roots are rational
 - working backwards, from a stated number of roots to an unknown coefficient
+- a pair of equations with only one solution
 
 ---
 
