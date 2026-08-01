@@ -12,7 +12,7 @@ app/              the site that renders content/ — React, TypeScript, Vite
 BRIEF.md          the subject-matter brief and syllabus plan
 ```
 
-**Node comes from mise.** Prefix commands: `mise exec -- npm run dev`. There is
+**Node comes from mise.** Prefix commands: `mise exec -- pnpm dev`. There is
 no other Node on the machine.
 
 > BRIEF.md is still the authority on the syllabus and on what each standard
@@ -292,7 +292,7 @@ grep -rn 'from:' content/
 
 ---
 
-**Always run `mise exec -- npm run check` after touching a figure or a practice
+**Always run `mise exec -- pnpm check` after touching a figure or a practice
 set.** It compiles every expression with the browser's KaTeX settings. It runs
 in CI too, but a block that fails there has already wasted a deploy.
 
@@ -305,9 +305,9 @@ is copied or generated into the app.
 
 ```sh
 cd app
-mise exec -- npm run dev      # http://localhost:5173
-mise exec -- npm run check    # validate every figure and practice set
-mise exec -- npm run build
+mise exec -- pnpm dev      # http://localhost:5173
+mise exec -- pnpm check    # validate every figure and practice set
+mise exec -- pnpm build
 ```
 
 Structure worth knowing before changing it:
@@ -343,10 +343,10 @@ path. Deployment to GitHub Pages happens on push to `main`.
 
 ### Verifying a change
 
-`npm run build` passing is not evidence the page looks right. Screenshot it:
+`pnpm build` passing is not evidence the page looks right. Screenshot it:
 
 ```sh
-mise exec -- npm run preview -- --port 4321
+mise exec -- pnpm preview --port 4321
 "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless \
   --disable-gpu --virtual-time-budget=5000 --window-size=1100,1750 \
   --screenshot=out.png "http://localhost:4321/#/a1-manipulating-expressions"

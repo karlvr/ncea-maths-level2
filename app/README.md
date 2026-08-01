@@ -4,10 +4,10 @@ A static site that renders the lesson scripts in [`../content`](../content) as
 pages with worked figures. React, TypeScript and Vite; no server.
 
 ```sh
-mise exec -- npm install
-mise exec -- npm run dev      # http://localhost:5173
-mise exec -- npm run check    # validate every figure
-mise exec -- npm run build
+mise exec -- pnpm install
+mise exec -- pnpm dev      # http://localhost:5173
+mise exec -- pnpm check    # validate every figure
+mise exec -- pnpm build
 ```
 
 ## How the content reaches the page
@@ -32,7 +32,7 @@ statically; several render as a stepper, so a line can be attempted before it is
 revealed. Every state is in the document whether revealed or not, so printing a
 lesson gives complete working.
 
-`npm run check` compiles every figure's LaTeX with the settings the browser
+`pnpm check` compiles every figure's LaTeX with the settings the browser
 uses. It runs in CI before deployment, because a figure that fails to parse
 would otherwise only show up on the published page.
 
