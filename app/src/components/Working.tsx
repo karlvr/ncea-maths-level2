@@ -13,6 +13,7 @@
 import { useCallback, useState } from 'react'
 import type { WorkingStep } from '../lesson-body'
 import { Annotated, MathsBlock } from './Maths'
+import { Sketch } from './Sketch'
 
 export function Working({ steps }: { steps: readonly WorkingStep[] }) {
   const last = steps.length - 1
@@ -46,6 +47,7 @@ export function Working({ steps }: { steps: readonly WorkingStep[] }) {
               .join(' ')
               .trim()}
           >
+            {step.graph && <Sketch graph={step.graph} />}
             {step.math && <MathsBlock tex={step.math} />}
             {step.note && (
               <p className="worked-note">

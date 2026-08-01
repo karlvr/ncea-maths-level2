@@ -81,7 +81,47 @@ Use them sparingly. A figure where everything is coloured says nothing.
 
 ---
 
-## What a good figure looks like
+## Sketches
+
+A step may carry a `graph` instead of — or as well as — its `math`. It draws as
+a sketch in the examination's sense: shape, intercepts and turning points,
+with numbers on the axes only where a value is worth reading.
+
+````markdown
+```figure
+caption: A curve and its tangent
+steps:
+  - graph:
+      domain: [-1, 4]
+      curves:
+        - poly: [1, -4, 3]
+          label: f
+        - poly: [2, -6]
+          color: a
+          label: tangent
+          dashed: true
+      points:
+        - at: [3, 0]
+          color: a
+          guides: true
+      xticks: [3]
+    note: The tangent touches the curve where $x = 3$.
+```
+````
+
+| Field | Meaning |
+|---|---|
+| `domain` | The x-interval the sketch covers, as `[low, high]`. Required. |
+| `range` | The y-interval shown. Derived from the curves when omitted. |
+| `curves` | Each has `poly`, the polynomial's coefficients highest power first — `[1, 0, -3]` is $x^2-3$ — and optionally `color` (`a`–`d`, the highlight palette), `label`, `labelAt` (the x to set the label at), `dashed`, and its own `domain`. |
+| `points` | Each has `at: [x, y]`, and optionally `label`, `color`, and `guides`, which draws dashed lines from the point to each axis. |
+| `xticks`, `yticks` | Values marked on an axis. An unmarked axis carries only its arrowhead. |
+| `xlabel`, `ylabel` | Axis labels, where the context names them something other than `x` and `y`. |
+
+Labels are plain text, not notation — write `f ′(x)` with the prime character,
+not `$f'(x)$`. A sketch is qualitative: pick a domain that shows the shape, mark
+the values the point of the figure depends on, and leave the rest of the axes
+bare.
 
 The figure shows the mathematics; the prose explains it. They should not duplicate each other. If a note simply restates the sentence beneath it, delete the note.
 

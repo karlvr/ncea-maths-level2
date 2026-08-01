@@ -474,6 +474,86 @@ main {
 .c-c { color: var(--c-c); }
 .c-d { color: var(--c-d); }
 
+/* --------------------------------------------------------------- sketch -- */
+
+.sketch {
+  display: block;
+  margin: 0.35rem auto;
+  width: min(23rem, 100%);
+  height: auto;
+}
+
+.sketch-axis {
+  stroke: var(--muted);
+  stroke-width: 1.25;
+  fill: none;
+}
+
+.sketch-arrow {
+  fill: var(--muted);
+}
+
+.sketch-tick {
+  stroke: var(--muted);
+  stroke-width: 1.25;
+}
+
+.sketch text {
+  font-family: var(--serif);
+  font-size: 15px;
+  fill: var(--ink);
+}
+
+.sketch .sketch-axis-label {
+  font-style: italic;
+  fill: var(--muted);
+}
+
+.sketch .sketch-numeral {
+  font-size: 13px;
+  fill: var(--muted);
+}
+
+.sketch-curve {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.sketch-curve.is-dashed {
+  stroke-dasharray: 6 5;
+}
+
+.sketch-curve.c-a { stroke: var(--c-a); }
+.sketch-curve.c-b { stroke: var(--c-b); }
+.sketch-curve.c-c { stroke: var(--c-c); }
+.sketch-curve.c-d { stroke: var(--c-d); }
+
+.sketch-point {
+  fill: var(--ink);
+}
+
+.sketch-point.c-a { fill: var(--c-a); }
+.sketch-point.c-b { fill: var(--c-b); }
+.sketch-point.c-c { fill: var(--c-c); }
+.sketch-point.c-d { fill: var(--c-d); }
+
+.sketch-guide {
+  stroke: var(--muted);
+  stroke-width: 1;
+  stroke-dasharray: 3 4;
+}
+
+.sketch .sketch-label {
+  font-style: italic;
+}
+
+.sketch .sketch-label.c-a { fill: var(--c-a); }
+.sketch .sketch-label.c-b { fill: var(--c-b); }
+.sketch .sketch-label.c-c { fill: var(--c-c); }
+.sketch .sketch-label.c-d { fill: var(--c-d); }
+
 .worked-controls {
   display: flex;
   align-items: center;

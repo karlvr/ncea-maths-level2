@@ -15,10 +15,61 @@
  */
 import { parse } from 'yaml'
 
+/** The highlight palette, shared with the `\ca`–`\cd` colour macros. */
+export type Highlight = 'a' | 'b' | 'c' | 'd'
+
+/** One curve in a sketch: a polynomial, and how it should be drawn. */
+export interface GraphCurve {
+  /** Polynomial coefficients, highest power first: `[1, 0, -3]` is $x^2-3$. */
+  readonly poly: readonly number[]
+  /** Highlight colour. Uncoloured curves draw in the ink colour. */
+  readonly color?: Highlight
+  /** Label for the curve, set in plain text beside it. */
+  readonly label?: string
+  /** The x at which to set the label. Defaults to near the right-hand end. */
+  readonly labelAt?: number
+  readonly dashed?: boolean
+  /** The x-interval to draw over, where narrower than the sketch's domain. */
+  readonly domain?: readonly [number, number]
+}
+
+/** One marked point in a sketch. */
+export interface GraphPoint {
+  /** The point, as `[x, y]`. */
+  readonly at: readonly [number, number]
+  /** Label for the point, set in plain text beside it. */
+  readonly label?: string
+  readonly color?: Highlight
+  /** Draw dashed guides from the point to each axis. */
+  readonly guides?: boolean
+}
+
+/**
+ * A sketch: polynomial curves over a stated domain, with marked points. Drawn
+ * the way an examination expects a sketch to be drawn — shape, intercepts and
+ * turning points, with numbers on the axes only where they say something.
+ */
+export interface Graph {
+  /** The x-interval the sketch covers. */
+  readonly domain: readonly [number, number]
+  /** The y-interval shown. Derived from the curves when omitted. */
+  readonly range?: readonly [number, number]
+  readonly curves?: readonly GraphCurve[]
+  readonly points?: readonly GraphPoint[]
+  /** Values marked on each axis. Unmarked axes carry only their arrowheads. */
+  readonly xticks?: readonly number[]
+  readonly yticks?: readonly number[]
+  /** Axis labels. `x` and `y` unless the context names them otherwise. */
+  readonly xlabel?: string
+  readonly ylabel?: string
+}
+
 /** One line of working: what is on the page at this point in a derivation. */
 export interface WorkingStep {
   /** LaTeX for the expression as it stands. Not delimited — the field is maths. */
   readonly math?: string
+  /** A sketch shown at this step, above any expression. */
+  readonly graph?: Graph
   /** A line explaining this step, in prose, with inline maths in `$…$`. */
   readonly note?: string
 }
@@ -48,6 +99,8 @@ export interface Question {
   readonly ask: string
   /** The expression the question is about, set on its own line. */
   readonly math?: string
+  /** The sketch the question is about, where the question shows a graph. */
+  readonly graph?: Graph
   /** The band the question is pitched at. */
   readonly grade: Grade
   /** The examination year the question was adapted from, where there is one. */

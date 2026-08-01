@@ -12,6 +12,7 @@
 import { useState } from 'react'
 import type { Practice, Question } from '../lesson-body'
 import { Annotated, MathsBlock } from './Maths'
+import { Sketch } from './Sketch'
 import { Working } from './Working'
 
 function PracticeQuestion({ question }: { question: Question }) {
@@ -29,6 +30,7 @@ function PracticeQuestion({ question }: { question: Question }) {
       <p className="practice-ask">
         <Annotated text={question.ask} />
       </p>
+      {question.graph && <Sketch graph={question.graph} />}
       {question.math && <MathsBlock tex={question.math} />}
 
       <button

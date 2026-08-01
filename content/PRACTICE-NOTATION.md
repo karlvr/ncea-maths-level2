@@ -40,6 +40,7 @@ Each question:
 |---|---|
 | `ask` | The instruction, in prose, with inline maths in `$…$`. |
 | `math` | The expression the question is about, set on its own line. Raw LaTeX, no `$` delimiters. Optional, where the instruction says everything. |
+| `graph` | The sketch the question is about, where the question shows a graph rather than an expression — see the sketch fields in [FIGURE-NOTATION.md](FIGURE-NOTATION.md). A step of `working` may carry one too, where the answer is itself a sketch. |
 | `grade` | `achieved`, `merit` or `excellence`. Required. |
 | `from` | The examination year the question was adapted from. Quote it, or YAML reads it as a number. |
 | `working` | The answer, one line at a time. Same `math` and `note` fields as a figure's steps, and the same stepper. |

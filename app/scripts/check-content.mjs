@@ -56,7 +56,7 @@ function* markdownFiles(directory) {
 }
 
 const problems = []
-const counted = { figure: 0, practice: 0, question: 0, fragment: 0 }
+const counted = { figure: 0, practice: 0, question: 0, fragment: 0, sketch: 0 }
 let expressions = 0
 
 /**
@@ -99,11 +99,69 @@ function checkProse(source, where) {
   }
 }
 
+const HIGHLIGHTS = ['a', 'b', 'c', 'd']
+
+const isInterval = (pair) =>
+  Array.isArray(pair) &&
+  pair.length === 2 &&
+  pair.every((n) => typeof n === 'number') &&
+  pair[0] < pair[1]
+
+/**
+ * Validates the shape of a sketch: intervals ordered, polynomials numeric,
+ * points in coordinate pairs. Labels are plain text — notation would arrive in
+ * the browser as its own source, so a `$` in one is reported here.
+ */
+function checkGraph(graph, where) {
+  if (!isInterval(graph.domain)) {
+    problems.push(`${where}: graph domain must be [low, high]`)
+  }
+  if (graph.range !== undefined && !isInterval(graph.range)) {
+    problems.push(`${where}: graph range must be [low, high]`)
+  }
+  for (const [index, curve] of (graph.curves ?? []).entries()) {
+    const at = `${where} curve ${index + 1}`
+    if (!Array.isArray(curve?.poly) || curve.poly.length === 0 || curve.poly.some((n) => typeof n !== 'number')) {
+      problems.push(`${at}: poly must be a list of coefficients`)
+    }
+    if (curve?.color !== undefined && !HIGHLIGHTS.includes(curve.color)) {
+      problems.push(`${at}: color must be one of ${HIGHLIGHTS.join(', ')}`)
+    }
+    if (curve?.domain !== undefined && !isInterval(curve.domain)) {
+      problems.push(`${at}: domain must be [low, high]`)
+    }
+    if (typeof curve?.label === 'string' && curve.label.includes('$')) {
+      problems.push(`${at}: labels are plain text, not notation`)
+    }
+  }
+  for (const [index, point] of (graph.points ?? []).entries()) {
+    const at = `${where} point ${index + 1}`
+    if (!Array.isArray(point?.at) || point.at.length !== 2 || point.at.some((n) => typeof n !== 'number')) {
+      problems.push(`${at}: at must be [x, y]`)
+    }
+    if (point?.color !== undefined && !HIGHLIGHTS.includes(point.color)) {
+      problems.push(`${at}: color must be one of ${HIGHLIGHTS.join(', ')}`)
+    }
+    if (typeof point?.label === 'string' && point.label.includes('$')) {
+      problems.push(`${at}: labels are plain text, not notation`)
+    }
+  }
+  for (const ticks of [graph.xticks, graph.yticks]) {
+    if (ticks !== undefined && (!Array.isArray(ticks) || ticks.some((n) => typeof n !== 'number'))) {
+      problems.push(`${where}: ticks must be numbers`)
+    }
+  }
+}
+
 /** Compiles the display maths and the inline maths of one line of working. */
 function checkStep(step, where) {
-  if (!step?.math && !step?.note) {
+  if (!step?.math && !step?.note && !step?.graph) {
     problems.push(`${where}: empty`)
     return
+  }
+  if (step?.graph) {
+    counted.sketch++
+    checkGraph(step.graph, where)
   }
   const sources = [
     ...(step.math ? [[step.math, true]] : []),
@@ -147,7 +205,7 @@ function checkPractice(practice, where) {
     if (!GRADES.includes(question.grade)) {
       problems.push(`${asked}: grade must be one of ${GRADES.join(', ')}`)
     }
-    checkStep({ math: question.math, note: question.ask }, asked)
+    checkStep({ math: question.math, note: question.ask, graph: question.graph }, asked)
 
     if (!Array.isArray(question.working) || question.working.length === 0) {
       problems.push(`${asked}: no working`)
@@ -185,7 +243,7 @@ for (const problem of problems) console.error(`  ${problem}`)
 console.log(
   `${counted.figure} figures, ${counted.practice} practice sets, ` +
     `${counted.question} questions, ${counted.fragment} fragments in prose, ` +
-    `${expressions} expressions, ` +
+    `${counted.sketch} sketches, ${expressions} expressions, ` +
     `${problems.length} problem${problems.length === 1 ? '' : 's'}`,
 )
 process.exit(problems.length === 0 ? 0 : 1)
