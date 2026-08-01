@@ -118,6 +118,59 @@ const STRUCTURE: readonly SubjectSpec[] = [
       },
     ],
   },
+  {
+    id: 'calculus',
+    title: 'Calculus',
+    standard: 'AS91262',
+    assessment: 'external',
+    modules: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blurb:
+          'What the standard covers, how the three modules build on each other, ' +
+          'and a list of everything in it.',
+        files: ['calculus/c-intro.md', 'calculus/c-contents.md'],
+      },
+      {
+        id: 'differentiation',
+        title: 'Module A—Differentiation',
+        blurb:
+          'Every function has a gradient function, telling you how steep the ' +
+          'curve is at each point. Finding it, reading it at a point, and ' +
+          'drawing it.',
+        files: [
+          'calculus/a1-the-gradient-function.md',
+          'calculus/a2-tangents.md',
+          'calculus/a3-gradient-graphs.md',
+        ],
+      },
+      {
+        id: 'turning-points',
+        title: 'Module B—Turning points',
+        blurb:
+          'Where the gradient is zero the curve turns, and the largest or ' +
+          'smallest value of something lives at a turning point. Finding them, ' +
+          'classifying them, and building the polynomial to optimise.',
+        files: [
+          'calculus/b1-turning-points.md',
+          'calculus/b2-maximum-and-minimum-problems.md',
+        ],
+      },
+      {
+        id: 'anti-differentiation',
+        title: 'Module C—Anti-differentiation',
+        blurb:
+          'Differentiation run backwards: from the gradient function to the ' +
+          'function it came from, and from acceleration to velocity to ' +
+          'distance.',
+        files: [
+          'calculus/c1-anti-differentiation.md',
+          'calculus/c2-rates-of-change-and-kinematics.md',
+        ],
+      },
+    ],
+  },
 ]
 
 const SOURCES = import.meta.glob('../../content/**/*.md', {

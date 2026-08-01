@@ -1,7 +1,7 @@
 # Working on this repository
 
 Study material for one Year 12 (NCEA Level 2) student in New Zealand, covering
-Algebra (AS91261) and Trigonometry (AS91259), with Calculus (AS91262) to follow.
+Algebra (AS91261), Calculus (AS91262) and Trigonometry (AS91259).
 The output is a static site of lesson pages: written explanation with worked
 figures alongside.
 

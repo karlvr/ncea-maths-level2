@@ -1,6 +1,6 @@
 # NCEA Level 2 Maths — Study Brief
 
-**Purpose:** A working reference for building short audio lessons + written examples for a Year 12 (NCEA Level 2) student in New Zealand. Covers **Algebra (AS91261)** and **Trigonometry (AS91259)**.
+**Purpose:** A working reference for building short audio lessons + written examples for a Year 12 (NCEA Level 2) student in New Zealand. Covers **Algebra (AS91261)**, **Trigonometry (AS91259)** and **Calculus (AS91262)**.
 
 **Source:** Official NZQA achievement standards, Version 3 (published 19 November 2015, 2019 reprint). Content below is a paraphrase of the "Methods" and criteria sections of each standard.
 
@@ -159,13 +159,85 @@ Derived from Level 7 of the New Zealand Curriculum, against the objective: apply
 
 ---
 
+# 3. CALCULUS — AS91262
+
+The published NCEA standard: https://www.nzqa.govt.nz/nqfdocs/ncea-resource/achievements/2015/as91262.pdf
+
+> **"Apply calculus methods in solving problems"**
+> Mathematics and Statistics 2.7 · Level 2 · **5 credits** · **EXTERNAL (exam)** · Domain: Calculus
+
+Derived from Level 7 of the New Zealand Curriculum, against these objectives:
+- Sketch the graphs of functions and their gradient functions, and describe the relationship between these graphs
+- Apply differentiation and anti-differentiation techniques to polynomials
+
+**This one is examined**, worth the most credits of the three standards, and shares the November paper sitting (and the L2–MATHF formulae sheet) with Algebra. Both central rules — the derivative of $x^n$ and its anti-derivative — are printed on that sheet.
+
+## The official method list (7 items)
+
+1. Derivatives and anti-derivatives of polynomials given in expanded form
+2. Gradient functions
+3. Gradient at a point
+4. Equation of a tangent
+5. Turning points where f ′(x) = 0 and their nature
+6. Function from a derived function
+7. Rate of change problems (such as kinematics)
+
+The 2026 assessment specification adds three concrete requirements: drawing the graph of the gradient of a function given the graph of the function (or vice versa), justifying the nature of maximum and minimum points (second derivative, testing points around the turning point, or an annotated sketch), and forming polynomials from a variety of contexts.
+
+## Proposed module / topic structure
+
+### Module A — Differentiation
+
+*Key framing: a function and its gradient function are a pair. Differentiation takes you from the function to its gradient function; anti-differentiation is the same road walked backwards. Everything in the standard is one direction or the other.*
+
+| # | Topic | Notes for the script |
+|---|---|---|
+| A1 | The gradient function | What the derivative is — the gradient of the curve, read at any point. The power rule for polynomials. Gradient at a point. Notation: f ′(x) and dy/dx. |
+| A2 | Tangents | The equation of the tangent at a point, and the reverse question: find the point where the gradient takes a given value. Straight-line skills from Level 1 carry the second half. |
+| A3 | The graph of the gradient function | Sketching f ′ from the graph of f and f from the graph of f ′. Named explicitly in the 2026 specification, and a guaranteed question — one appears in every recent paper. |
+
+### Module B — Turning points
+
+| # | Topic | Notes for the script |
+|---|---|---|
+| B1 | Turning points and their nature | Solve f ′(x) = 0, then justify maximum or minimum — sign test, second derivative, or annotated sketch; the specification accepts all three. Increasing and decreasing regions belong here too. |
+| B2 | Maximum and minimum problems | The long modelling parts that close each exam question: form a polynomial from a context, optimise it, prove the result is what it claims to be. This is where "form polynomials from a variety of contexts" lives. |
+
+### Module C — Anti-differentiation
+
+| # | Topic | Notes for the script |
+|---|---|---|
+| C1 | Anti-differentiation | Reversing the power rule. The constant of integration, and recovering it — a function from its derived function through a known point. |
+| C2 | Rates of change and kinematics | The derivative as a rate of change in context, and the distance–velocity–acceleration ladder in both directions. The capstone: every earlier topic gets used. |
+
+## Source documents
+
+Local copies in `./docs/calculus/`. All from the NZQA page for
+[standard 91262](https://www.nzqa.govt.nz/ncea/assessment/view-detailed.do?standardNumber=91262).
+
+### Past exam papers
+
+| Year | Paper | Marking schedule | Examiner's report |
+|---|---|---|---|
+| 2025 | [paper](./docs/calculus/91262-exm-2025.pdf) | [schedule](./docs/calculus/91262-ass-2025.pdf) | [report](./docs/calculus/91262-report-2025.pdf) |
+| 2024 | [paper](./docs/calculus/91262-exm-2024.pdf) | [schedule](./docs/calculus/91262-ass-2024.pdf) | [report](./docs/calculus/91262-report-2024.pdf) |
+| 2023 | [paper](./docs/calculus/91262-exm-2023.pdf) | [schedule](./docs/calculus/91262-ass-2023.pdf) | [report](./docs/calculus/91262-report-2023.pdf) |
+
+### Reference
+
+- [2026 assessment specification](./docs/calculus/91262-spc-2026.pdf) — the same document as Algebra's; the 91262 section is one page.
+- [Achievement standard AS91262](./docs/calculus/as91262.pdf) — the standard itself, source of the seven methods above.
+- The formulae sheet is shared across the Level 2 standards — the local copy sits with Algebra at [91261-frm-2025.pdf](./docs/algebra/91261-frm-2025.pdf).
+
+---
+
 # Open items / next steps
 
 - [ ] Download past exam papers and the Formulae Resource for **91261** from NZQA
 - [ ] Confirm which standards his school is actually offering (schools pick from ~14 available at Level 2)
 - [ ] Check whether segment area is covered in his trigonometry unit
 - [ ] Have him try a past paper and flag which questions are *"I don't know where to start"* vs *"I know what it wants but not how"* — that distinction tells us where to aim the scripts
-- [ ] Pull the **Calculus (AS91262)** standard when he reaches that unit — 5 credits, external
+- [x] Pull the **Calculus (AS91262)** standard when he reaches that unit — 5 credits, external
 - [ ] Decide on a local text-to-speech tool for voice cloning (privacy-preserving, runs offline)
 - [ ] Note for TTS: mathematical notation and acronyms will need phonetic spelling in the scripts (e.g. write "SOH-CAH-TOA", "b squared minus four a c")
 
