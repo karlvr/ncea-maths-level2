@@ -50,24 +50,32 @@ There is an equals sign now, so there is something to find.
 
 - rearranging to isolate the unknown
 - the unknown appearing on both sides
+- expanding brackets and clearing fractions
+- making a letter the subject of a formula
 - naming the unknown in a word problem
 - writing down the equation you formed
 - checking the answer against the original wording
+- two equations in two unknowns
 
 **B2—Solving quadratic equations.** Three routes to the same answer, and the skill is choosing between them.
 
+- taking the equation to standard form
 - solving by factorising
 - completing the square
 - the quadratic formula
 - choosing which of the three to use
 - discarding a solution the context does not allow
+- building an equation from its roots
+- completing a model whose form you have been given
 
 **B3—Exponential equations and logarithms.** Equations where the unknown sits up in the power.
 
 - rewriting both sides to a common base
 - what a logarithm is
 - the logarithm rules
+- solving a logarithmic equation
 - solving when there is no common base
+- a quadratic hidden inside an exponential equation
 - growth and decay in context
 
 ---
@@ -84,7 +92,7 @@ There is an equals sign now, so there is something to find.
 
 ## How much of it is really new
 
-Seven topics and about thirty skills, but there is a lot of cross-over between the topics, and that makes the subject smaller than the count suggests.
+Seven topics and close to fifty skills, but there is a lot of cross-over between the topics, and that makes the subject smaller than the count suggests.
 
 Three of them are one quadratic asked about in three ways.
 

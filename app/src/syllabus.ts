@@ -95,6 +95,19 @@ const STRUCTURE: readonly SubjectSpec[] = [
           'algebra/a3-exponents.md',
         ],
       },
+      {
+        id: 'equations',
+        title: 'Module B—Equations',
+        blurb:
+          'Linear equations, quadratic equations, and equations where the ' +
+          'unknown is in the power. The difficulty is not the solving—' +
+          'it is turning a paragraph of words into an equation.',
+        files: [
+          'algebra/b1-linear-equations.md',
+          'algebra/b2-quadratic-equations.md',
+          'algebra/b3-exponential-equations.md',
+        ],
+      },
     ],
   },
 ]
