@@ -359,6 +359,8 @@ steps:
     note: Matching the two lines term by term.
 ```
 
+Two roots that are opposites, such as $3$ and $-3$, add to zero, so an equation whose roots are opposites has no term in $x$. Setting the coefficient of $x$ to zero is the whole method, however complicated the equation the coefficients came from. Where that equation arrives as two fractions set equal, cross-multiply—multiply both sides by both denominators—and expand every product before collecting; the 2024 report names candidates who cross-multiplied but did not expand correctly.
+
 ```practice
 caption: working backwards from the roots
 questions:
@@ -406,6 +408,20 @@ questions:
       - math: a^2 + b^2 = (-p)^2 - 2q
         note: Substitute both into the identity the question supplies.
       - math: p^2 - 2q
+  - ask: Find the value of $k$ for which the equation has two roots that are numerically equal but with opposite signs, such as $3$ and $-3$.
+    math: \dfrac{x^2 - 3x}{5x - 2} = \dfrac{k-1}{k+1}
+    grade: excellence
+    from: "2024"
+    working:
+      - math: (x^2 - 3x)(k+1) = (k-1)(5x-2)
+        note: Cross-multiply, which is multiplying both sides by both denominators.
+      - math: kx^2 + x^2 - 3kx - 3x = 5kx - 2k - 5x + 2
+        note: Expand both sides in full before collecting anything.
+      - math: (k+1)x^2 + (2 - 8k)x + 2(k-1) = 0
+        note: Everything to one side, collected by powers of $x$. The coefficients carry $k$, and that is expected.
+      - math: 2 - 8k = 0
+        note: Roots of $r$ and $-r$ give $(x-r)(x+r)$, which has no term in $x$—so the coefficient of $x$ is zero.
+      - math: k = \dfrac{1}{4}
 ```
 
 ---
