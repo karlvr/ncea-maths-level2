@@ -1,0 +1,7 @@
+# rehype-katex declares katex ^0.16, but the stylesheet the site imports is
+# katex 0.18's, and 0.18 renamed the CSS classes that size superscripts and
+# subscripts — markup from 0.16 renders exponents at full text size. Forcing
+# one katex everywhere keeps the markup and the stylesheet from the same
+# version.
+overrides:
+  katex: ^0.18.1

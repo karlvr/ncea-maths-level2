@@ -21,6 +21,9 @@
     "remark-math": "^6.0.0",
     "yaml": "^2.9.0"
   },
+  "overrides": {
+    "katex": "^0.18.1"
+  },
   "devDependencies": {
     "@types/node": "^24.13.2",
     "@types/react": "^19.2.17",
