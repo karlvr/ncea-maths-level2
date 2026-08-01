@@ -57,7 +57,7 @@ steps:
     note: "Differentiating takes a function to its gradient function. Anti-differentiating takes a gradient function back to the function it came from."
 ```
 
-Everything in this standard is one of those two moves, applied and then interpreted. A question that gives you a function and asks how fast it changes, or where it turns, or what its largest value is, is asking you to differentiate. A question that gives you the rate at which something changes and asks for the thing itself is asking you to anti-differentiate. Reading the question to decide the direction is the first step of every answer, and the 2025 report names its absence among candidates not achieving: they *"were unable to decide when differentiation or integration was required"*.
+Everything in this standard is one of those two moves, applied and then interpreted. A question that gives you a function and asks how fast it changes, or where it turns, or what its largest value is, is asking you to differentiate. A question that gives you the rate at which something changes and asks for the thing itself is asking you to anti-differentiate. Reading the question to decide the direction is the first step of every answer, and the 2025 report names its absence among candidates not achieving: they *"were unable to decide when differentiation or integration was required"*. *Integration* is the other name for anti-differentiation.
 
 ---
 

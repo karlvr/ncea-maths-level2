@@ -71,6 +71,7 @@ The same road, walked backwards.
 
 **C1—Anti-differentiation.** From the gradient function to the family it came from.
 
+- anti-differentiation and integration as two names for one operation
 - the reverse rule: raise the power by one, divide by the new power
 - the constant $c$, and the family of curves it stands for
 - checking by differentiating the answer back

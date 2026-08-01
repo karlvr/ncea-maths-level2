@@ -17,6 +17,8 @@ steps:
     note: "Raise the power by one, then divide by the new power. The $+\\,c$ is part of the rule, not an afterthought."
 ```
 
+The operation has two names, and you will meet both. The standard calls it **anti-differentiation**, and these lessons follow it. Most textbooks also call the same operation **integration**, and use the two words interchangeably.
+
 Differentiation multiplied by the power and then lowered it; coming back, the power rises first and the division undoes the multiplication that differentiating would do. Applied to $x^2$: the power rises to $3$, and the term is divided by $3$.
 
 ```figure
@@ -87,7 +89,7 @@ steps:
     note: "Three of the curves whose gradient function is $2x$. The sketching lesson met this family by eye; $+\\,c$ is the same freedom written as algebra."
 ```
 
-The marking schedules treat the $c$ as part of the anti-derivative, not a refinement of it — the 2024 schedule's grade step reads *"Correct anti derivative with $+c$"*. An anti-derivative written without it is incomplete on the page, whatever was meant.
+The constant's proper name is the **constant of integration**—it keeps the operation's other word even when the working around it says anti-differentiate, and it is the name the reports use when they list its omission. The marking schedules treat the $c$ as part of the anti-derivative, not a refinement of it—the 2024 schedule's grade step reads *"Correct anti derivative with $+c$"*. An anti-derivative written without it is incomplete on the page, whatever was meant.
 
 ---
 
