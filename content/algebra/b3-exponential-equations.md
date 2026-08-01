@@ -48,15 +48,15 @@ Once both sides are written over the same base, the power of a power law collaps
 id: b3-rewrite
 caption: Rewriting both sides over one base
 steps:
-  - math: 9^{2x+3} = \left(\dfrac{1}{27}\right)^{x}
+  - math: 27^{2x+1} = \left(\dfrac{1}{9}\right)^{x}
     note: Nine and twenty-seven are both powers of three.
-  - math: \big(3^{\ca{2}}\big)^{2x+3} = \big(3^{\cb{-3}}\big)^{x}
-    note: A reciprocal is a negative exponent, so one over twenty-seven is $3^{-3}$.
-  - math: 3^{4x+6} = 3^{-3x}
+  - math: \big(3^{\ca{3}}\big)^{2x+1} = \big(3^{\cb{-2}}\big)^{x}
+    note: A reciprocal is a negative exponent, so one over nine is $3^{-2}$.
+  - math: 3^{6x+3} = 3^{-2x}
     note: A power of a power multiplies, on both sides.
-  - math: 4x + 6 = -3x
+  - math: 6x + 3 = -2x
     note: The bases match, so the exponents can be equated.
-  - math: x = -\dfrac{6}{7}
+  - math: x = -\dfrac{3}{8}
 ```
 
 ```practice
@@ -115,9 +115,9 @@ steps:
     note: The power that two must be raised to in order to give thirty-two is five. Same fact.
 ```
 
-So reading a logarithmic equation means turning it into index form. $x = \log_5 625$ asks for a power, so write $5^x = 625$, and the answer is $4$. In $\log_x 81 = 4$ the unknown is the base instead, so write $x^4 = 81$, and the answer is $3$.
+So reading a logarithmic equation means turning it into index form. $x = \log_3 243$ asks for a power, so write $3^x = 243$, and the answer is $5$. In $\log_x 81 = 4$ the unknown is the base instead, so write $x^4 = 81$, and the answer is $3$.
 
-A base has to be positive, and it cannot be $1$. That rules out roots which the algebra otherwise allows: $\log_x 64 = 2$ gives $x^2 = 64$, so $x$ is $8$ or $-8$, and $-8$ is rejected because no logarithm has a negative base. The 2023 marking schedule awards the higher grade only where that rejection is shown.
+A base has to be positive, and it cannot be $1$. That rules out roots which the algebra otherwise allows: $\log_x 36 = 2$ gives $x^2 = 36$, so $x$ is $6$ or $-6$, and $-6$ is rejected because no logarithm has a negative base. The 2023 marking schedule awards the higher grade only where that rejection is shown.
 
 You also cannot take the logarithm of zero or of a negative number, because no power of a positive base produces one. That fact does most of the discarding later in this topic.
 
@@ -132,11 +132,11 @@ questions:
         note: Read the notation as a question about a power.
       - math: "3"
   - ask: Solve.
-    math: x = \log_5 625
+    math: x = \log_4 256
     grade: achieved
     from: "2024"
     working:
-      - math: 5^x = 625
+      - math: 4^x = 256
         note: Write it in index form, where the unknown is in an ordinary position.
       - math: x = 4
   - ask: Evaluate.
@@ -228,14 +228,14 @@ questions:
         note: A coefficient in front goes back up as a power.
       - math: \log\!\left(\dfrac{x^2}{y}\right)
         note: A difference of logarithms is the logarithm of a quotient.
-  - ask: If $p = \log_a 2$ and $q = \log_a 5$, write $\log_a 50$ in terms of $p$ and $q$.
+  - ask: If $p = \log_a 3$ and $q = \log_a 7$, write $\log_a 63$ in terms of $p$ and $q$.
     grade: merit
     from: "2025"
     working:
-      - math: \log_a\!\left(2 \times 5^2\right)
-        note: Split fifty into the factors the question has given values for.
-      - math: \log_a 2 + 2\log_a 5
-      - math: p + 2q
+      - math: \log_a\!\left(3^2 \times 7\right)
+        note: Split sixty-three into the factors the question has given values for.
+      - math: 2\log_a 3 + \log_a 7
+      - math: 2p + q
   - ask: Evaluate.
     math: 4 + \log_b\!\left(b^{-2}\right) + \log_b \sqrt{b}
     grade: merit
@@ -296,17 +296,17 @@ questions:
       - math: x = 4
         note: At $x=-2$ both logarithms would be of negative numbers, so that root is rejected.
   - ask: Solve.
-    math: 2\log_5(x + 6) - \log_5 x = 2
+    math: 2\log_5(x + 4) - \log_5 x = 2
     grade: merit
     from: "2025"
     working:
-      - math: \log_5\!\left(\dfrac{(x+6)^2}{x}\right) = 2
+      - math: \log_5\!\left(\dfrac{(x+4)^2}{x}\right) = 2
         note: Power rule first, then quotient rule.
-      - math: (x+6)^2 = 25x
+      - math: (x+4)^2 = 25x
         note: Convert to index form and multiply both sides by $x$.
-      - math: x^2 - 13x + 36 = 0
+      - math: x^2 - 17x + 16 = 0
         note: Expand the square, then take everything to one side.
-      - math: x = 9 \quad\textsf{or}\quad x = 4
+      - math: x = 16 \quad\textsf{or}\quad x = 1
 ```
 
 ---

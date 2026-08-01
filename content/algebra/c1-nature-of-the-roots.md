@@ -56,17 +56,17 @@ Take the equation to $ax^2 + bx + c = 0$ before reading off the three coefficien
 id: c1-calculating
 caption: Calculating a discriminant
 steps:
-  - math: 3x^2 + 2 = 5x
+  - math: 3x^2 + 4 = 7x
     note: Not yet in standard form, so the coefficients cannot be read off it.
-  - math: 3x^2 - 5x + 2 = 0
-    note: Now $a=3$, $b=-5$ and $c=2$.
-  - math: \Delta = (\ca{-5})^2 - 4(3)(2)
-    note: Each coefficient is substituted inside brackets, so the minus is squared along with the five.
-  - math: \Delta = 25 - 24 = 1
+  - math: 3x^2 - 7x + 4 = 0
+    note: Now $a=3$, $b=-7$ and $c=4$.
+  - math: \Delta = (\ca{-7})^2 - 4(3)(4)
+    note: Each coefficient is substituted inside brackets, so the minus is squared along with the seven.
+  - math: \Delta = 49 - 48 = 1
     note: Positive, so the equation has two distinct real roots.
 ```
 
-Squaring $-5$ without the bracket gives $-25$, which turns a positive discriminant into a negative one and reverses the answer. The 2025 examiner's report gives dealing incorrectly with negative numbers and substituting incorrectly as separate reasons candidates did not achieve.
+Squaring $-7$ without the bracket gives $-49$, which turns a positive discriminant into a negative one and reverses the answer. The 2025 examiner's report gives dealing incorrectly with negative numbers and substituting incorrectly as separate reasons candidates did not achieve.
 
 ```practice
 caption: calculating a discriminant
@@ -223,15 +223,15 @@ questions:
         note: A square root gives two values, which is where the second answer comes from.
       - math: k = 5 \quad\textsf{or}\quad k = -3
   - ask: The graph does not cross the $x$-axis. Find the possible values of $p$.
-    math: y = 3x^2 + 12x + p
+    math: y = 5x^2 + 10x + p
     grade: merit
     from: "2023"
     working:
-      - math: 144 - 12p < 0
+      - math: 100 - 20p < 0
         note: Not crossing the axis means no real roots, so the discriminant is negative.
-      - math: 144 < 12p
-      - math: p > 12
-        note: An inequality, not a single value. The answer is every $p$ above twelve.
+      - math: 100 < 20p
+      - math: p > 5
+        note: An inequality, not a single value. The answer is every $p$ above five.
   - ask: Find the values of $k$ for which the equation has two distinct real roots.
     math: kx^2 + 6x + 3 = 0
     grade: excellence
@@ -328,14 +328,14 @@ Work these on paper before revealing anything. They are ordered easiest first, a
 ```practice
 questions:
   - ask: Find the discriminant of the quadratic equation.
-    math: 3x^2 + 2 = 5x
+    math: 4x^2 + 3 = 8x
     grade: achieved
     from: "2024"
     working:
-      - math: 3x^2 - 5x + 2 = 0
+      - math: 4x^2 - 8x + 3 = 0
         note: The instruction says find the discriminant, so the equation is not to be solved.
-      - math: \Delta = (-5)^2 - 4(3)(2)
-      - math: \Delta = 1
+      - math: \Delta = (-8)^2 - 4(4)(3)
+      - math: \Delta = 16
   - ask: State the number of real roots.
     math: x^2 + 2x + 5 = 0
     grade: achieved

@@ -2,7 +2,7 @@
 
 ---
 
-A quadratic equation is one in which the highest power of the unknown is two. $x^2 + 7x + 12 = 0$ is quadratic, and so is $3x - 14 = \dfrac{5}{x}$ once both sides are multiplied by $x$.
+A quadratic equation is one in which the highest power of the unknown is two. $x^2 + 7x + 12 = 0$ is quadratic, and so is $2x + 3 = \dfrac{7}{x}$ once both sides are multiplied by $x$.
 
 A linear equation has one solution. A quadratic has two, or one, or none, and its solutions are called its **roots**.
 
@@ -17,12 +17,12 @@ Every method needs the equation written as $ax^2 + bx + c = 0$, with zero on one
 ```figure
 caption: Getting to standard form
 steps:
-  - math: 3x^2 + 2 = 5x
+  - math: 3x^2 + 4 = 7x
     note: Not yet in a form any method can use.
-  - math: 3x^2 - 5x + 2 = 0
-    note: Take the $5x$ across, and the whole of the left side is now over zero.
-  - math: a = 3, \quad b = \ca{-5}, \quad c = 2
-    note: The sign in front of a term belongs to that term, so $b$ is $-5$.
+  - math: 3x^2 - 7x + 4 = 0
+    note: Take the $7x$ across, and the whole of the left side is now over zero.
+  - math: a = 3, \quad b = \ca{-7}, \quad c = 4
+    note: The sign in front of a term belongs to that term, so $b$ is $-7$.
 ```
 
 Never divide both sides by the unknown. $x^2 = 5x$ has two roots, $0$ and $5$. Dividing both sides by $x$ leaves $x = 5$ and loses the other one, because dividing by $x$ assumes $x$ is not zero, and in an equation you are solving that is exactly what is not yet known.
@@ -198,16 +198,16 @@ questions:
       - math: x = -2 \pm \sqrt{10}
         note: Exact was asked for, so the surd stays.
   - ask: Solve, giving exact answers.
-    math: \dfrac{12}{(2x-1)^2} = 4
+    math: \dfrac{15}{(2x+1)^2} = 3
     grade: merit
     from: "2025"
     working:
-      - math: 12 = 4(2x-1)^2
+      - math: 15 = 3(2x+1)^2
         note: Multiply both sides by the squared bracket.
-      - math: (2x-1)^2 = 3
-      - math: 2x - 1 = \pm\sqrt{3}
-        note: Two answers, because both roots of $3$ square back to $3$.
-      - math: x = \dfrac{1 \pm \sqrt{3}}{2}
+      - math: (2x+1)^2 = 5
+      - math: 2x + 1 = \pm\sqrt{5}
+        note: Two answers, because both roots of $5$ square back to $5$.
+      - math: x = \dfrac{-1 \pm \sqrt{5}}{2}
 ```
 
 ---
@@ -223,21 +223,21 @@ steps:
     note: The plus-or-minus is where the two roots come from.
 ```
 
-Substitute $a$, $b$ and $c$ inside brackets, as A1 required of every substitution. A negative $b$ is where this goes wrong: $-b$ becomes $-(-5)$, which is $+5$, and $b^2$ becomes $(-5)^2$, which is $+25$.
+Substitute $a$, $b$ and $c$ inside brackets, as A1 required of every substitution. A negative $b$ is where this goes wrong: $-b$ becomes $-(-7)$, which is $+7$, and $b^2$ becomes $(-7)^2$, which is $+49$.
 
 ```figure
 id: b2-formula
 caption: Substituting into the formula
 steps:
-  - math: 3x^2 - 5x + 2 = 0
-    note: Standard form, so $a=3$, $b=-5$ and $c=2$.
-  - math: x = \dfrac{-(\ca{-5}) \pm \sqrt{(\ca{-5})^2 - 4(3)(2)}}{2(3)}
+  - math: 3x^2 - 7x + 4 = 0
+    note: Standard form, so $a=3$, $b=-7$ and $c=4$.
+  - math: x = \dfrac{-(\ca{-7}) \pm \sqrt{(\ca{-7})^2 - 4(3)(4)}}{2(3)}
     note: Every one of the three goes in inside its own bracket.
-  - math: x = \dfrac{5 \pm \sqrt{25 - 24}}{6}
-    note: Minus a negative five is plus five, and a negative squared is positive.
-  - math: x = \dfrac{5 \pm 1}{6}
-  - math: x = 1 \quad\textsf{or}\quad x = \dfrac{2}{3}
-    note: The two signs are worked out separately, giving $\frac{6}{6}$ and $\frac{4}{6}$.
+  - math: x = \dfrac{7 \pm \sqrt{49 - 48}}{6}
+    note: Minus a negative seven is plus seven, and a negative squared is positive.
+  - math: x = \dfrac{7 \pm 1}{6}
+  - math: x = \dfrac{4}{3} \quad\textsf{or}\quad x = 1
+    note: The two signs are worked out separately, giving $\frac{8}{6}$ and $\frac{6}{6}$.
 ```
 
 What comes out under the root sign is often not a whole number, and it is left as a surd where the question asks for exact answers and turned into a decimal where it does not. Where letters rather than numbers go in, the surd may simplify: $\sqrt{36k^2 - 32k^2}$ is $\sqrt{4k^2}$, which is $2k$.
@@ -326,19 +326,19 @@ steps:
 
 If the roots are $p$ and $q$, then $(x - p)(x - q) = 0$ is an equation having exactly those roots, and expanding it puts that equation in standard form.
 
-Fractional roots are cleared by multiplying each bracket up. The root $\dfrac{1}{5}$ gives the bracket $\left(x - \dfrac{1}{5}\right)$, and multiplying that bracket by $5$ turns it into $(5x - 1)$—which has the same root, because the value making $5x-1$ zero is still one fifth.
+Fractional roots are cleared by multiplying each bracket up. The root $\dfrac{2}{5}$ gives the bracket $\left(x - \dfrac{2}{5}\right)$, and multiplying that bracket by $5$ turns it into $(5x - 2)$—which has the same root, because the value making $5x-2$ zero is still two fifths.
 
 ```figure
 id: b2-from-roots
 caption: Building an equation from its roots
 steps:
-  - math: x = \dfrac{1}{5} \quad\textsf{or}\quad x = -\dfrac{2}{3}
+  - math: x = \dfrac{2}{5} \quad\textsf{or}\quad x = -\dfrac{1}{2}
     note: Each root has to become a bracket that is zero at that value.
-  - math: \left(x - \dfrac{1}{5}\right)\left(x + \dfrac{2}{3}\right) = 0
+  - math: \left(x - \dfrac{2}{5}\right)\left(x + \dfrac{1}{2}\right) = 0
     note: The sign reverses on the way into the bracket.
-  - math: (5x - 1)(3x + 2) = 0
-    note: Multiply the first bracket by $5$ and the second by $3$, which clears both fractions.
-  - math: 15x^2 + 7x - 2 = 0
+  - math: (5x - 2)(2x + 1) = 0
+    note: Multiply the first bracket by $5$ and the second by $2$, which clears both fractions.
+  - math: 10x^2 + x - 2 = 0
     note: Expanding gives whole-number coefficients, which is what such a question asks for.
 ```
 
@@ -491,14 +491,14 @@ questions:
         note: Multiply to $-15$ and add to $2$.
       - math: x = -5 \quad\textsf{or}\quad x = 3
   - ask: Write in the form $(x + p)^2 - q$.
-    math: x^2 + 8x - 5
+    math: x^2 + 12x - 7
     grade: achieved
     from: "2024"
     working:
-      - math: (x+4)^2 = x^2 + 8x + 16
-        note: Half of $8$ is $4$.
-      - math: (x+4)^2 - 16 - 5
-      - math: (x+4)^2 - 21
+      - math: (x+6)^2 = x^2 + 12x + 36
+        note: Half of $12$ is $6$.
+      - math: (x+6)^2 - 36 - 7
+      - math: (x+6)^2 - 43
   - ask: Solve.
     math: (x + 2)(x - 1) = 10
     grade: merit

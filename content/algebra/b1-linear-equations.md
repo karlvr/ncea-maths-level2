@@ -160,7 +160,7 @@ steps:
 
 The bracket in the third step is what keeps the subtraction correct, and it is there because the numerator $x-4$ was a single quantity before the multiplication and has to stay one afterwards.
 
-When the unknown is in a denominator, multiplying through still clears it, but what is left may not be linear. Multiplying $3x - 14 = \dfrac{5}{x}$ through by $x$ gives $3x^2 - 14x = 5$, which has an $x^2$ in it. That is a quadratic, and B2 solves it.
+When the unknown is in a denominator, multiplying through still clears it, but what is left may not be linear. Multiplying $2x + 3 = \dfrac{7}{x}$ through by $x$ gives $2x^2 + 3x = 7$, which has an $x^2$ in it. That is a quadratic, and B2 solves it.
 
 ```practice
 caption: brackets and fractions
@@ -220,13 +220,13 @@ A root is undone by raising both sides to the matching power, and the side witho
 id: b1-undo-root
 caption: Undoing a root
 steps:
-  - math: 2y = \sqrt[3]{7x - 5}
-    note: The whole of $7x-5$ sits under a cube root.
-  - math: (\ca{2y})^3 = 7x - 5
+  - math: 2y = \sqrt[3]{5x - 9}
+    note: The whole of $5x-9$ sits under a cube root.
+  - math: (\ca{2y})^3 = 5x - 9
     note: Cube both sides. The left side is all of $2y$, so the bracket goes round all of it.
-  - math: 8y^3 = 7x - 5
+  - math: 8y^3 = 5x - 9
     note: The cube reaches the $2$ as well as the $y$.
-  - math: x = \dfrac{8y^3 + 5}{7}
+  - math: x = \dfrac{8y^3 + 9}{5}
 ```
 
 The 2025 examiner's report gives expanding $(2y)^3$ as $2y^3$ rather than $8y^3$ as a reason candidates did not achieve, and it is the same bracket rule that A1 applied to $\pi(2x)^2$.
