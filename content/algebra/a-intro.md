@@ -61,9 +61,11 @@ The recurring difficulty in this module is not the solving. It is turning a para
 
 ## How this standard is assessed
 
-Four credits, and it is **external**—sat in the November exam, not marked internally. Past papers therefore matter a great deal, and the examiner's report each year says exactly which mistakes cost people marks.
+Four credits, and it is **external**—sat in the November exam, not marked internally. Past papers therefore matter a great deal.
 
 The exam is three questions, each with several parts, and word problems appear throughout.
+
+After each year's examination is marked, the examiners publish a report on it: what candidates at each grade could commonly do, and what those who were not awarded the standard commonly got wrong. These lessons quote those reports wherever a finding touches the topic in hand. Every mistake quoted cost candidates marks in a real examination, and it is quoted so that you can get it right in your year.
 
 > Three instructions from the specification are worth taking literally, because each one is a way of losing marks you had otherwise earned:
 >
