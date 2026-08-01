@@ -435,7 +435,7 @@ steps:
     note: Take the common bracket out, and what is left is the other one.
 ```
 
-The 2023 and 2025 papers both hide one of these inside a rational expression—$\dfrac{3x^2 - 10x + 8}{9x^2 - 16}$ in 2023—where the middle term has to be split before anything in the question can cancel.
+The 2023 and 2025 papers both hide one of these inside a rational expression, $\dfrac{3x^2 - 10x + 8}{9x^2 - 16}$ in 2023, where the middle term has to be split before anything in the question can cancel.
 
 ```practice
 caption: quadratic trinomials

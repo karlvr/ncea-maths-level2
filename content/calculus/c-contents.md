@@ -37,7 +37,7 @@ From a function to its gradient function.
 - the degree dropping by one, so the shape is known in advance
 - sketching $f'$ from the graph of $f$
 - sketching $f$ from the graph of $f'$, with a point to anchor it
-- what a gradient graph cannot say — how high the curve sits
+- what a gradient graph cannot say—how high the curve sits
 
 ---
 
@@ -76,7 +76,7 @@ The same road, walked backwards.
 - the constant $c$, and the family of curves it stands for
 - checking by differentiating the answer back
 - the constant found from a given point
-- the constant found from a feature — the value at a maximum or minimum
+- the constant found from a feature—the value at a maximum or minimum
 
 **C2—Rates of change and kinematics.** Both directions, in the standard's own context.
 
@@ -118,4 +118,4 @@ steps:
 
 The second idea is the turning point: where the gradient is zero, the quantity is at its largest or smallest. B1 finds and classifies them; B2 builds the function whose turning point is worth finding. The tangent, in A2, is the pair read at a single point.
 
-Two ideas, then — and the algebra to serve them, which is the earlier standard's work. Start at Module A and work down. Every later topic depends on an earlier one, and none of them depends on a topic further down the list.
+Two ideas, then—and the algebra to serve them, which is the earlier standard's work. Start at Module A and work down. Every later topic depends on an earlier one, and none of them depends on a topic further down the list.

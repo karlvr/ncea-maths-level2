@@ -2,7 +2,7 @@
 
 ---
 
-Module A turned functions into gradient functions. From here the standard runs the other way: the gradient function is what the question hands over, and the function it came from is what the question wants. The sketching lesson already walked this direction by eye and met its one obstacle — a gradient graph cannot say how high the curve sits. This lesson does the same journey by formula, and the obstacle becomes a letter: $c$.
+Module A turned functions into gradient functions. From here the standard runs the other way: the gradient function is what the question hands over, and the function it came from is what the question wants. The sketching lesson already walked this direction by eye and met its one obstacle—a gradient graph cannot say how high the curve sits. This lesson does the same journey by formula, and the obstacle becomes a letter: $c$.
 
 ---
 
@@ -40,10 +40,10 @@ steps:
   - math: f(x) = \dfrac{6x^3}{3} - \dfrac{4x^2}{2} + 5x + c
     note: "Each new power divides its own term. Simplify the fractions before anything else happens."
   - math: f(x) = 2x^3 - 2x^2 + 5x + c
-    note: "Differentiate this back: $6x^2 - 4x + 5$. Correct — and one $c$ covers the whole function, not one per term."
+    note: "Differentiate this back: $6x^2 - 4x + 5$. Correct—and one $c$ covers the whole function, not one per term."
 ```
 
-A long gradient function is anti-differentiated the same way, and the length is itself the hazard: the 2025 report lists candidates who *"missed a term when integrating long functions"*. Count the terms before starting, and count them again in the answer — every term of $f'$ produces exactly one term of $f$, plus the $c$.
+A long gradient function is anti-differentiated the same way, and the length is itself the hazard: the 2025 report lists candidates who *"missed a term when integrating long functions"*. Count the terms before starting, and count them again in the answer—every term of $f'$ produces exactly one term of $f$, plus the $c$.
 
 ```practice
 caption: reversing the rule
@@ -59,7 +59,7 @@ questions:
     working:
       - math: f(x) = \dfrac{8x^4}{4} - \dfrac{6x^2}{2} + x + c
       - math: f(x) = 2x^4 - 3x^2 + x + c
-        note: "The $+\\,c$ is part of the answer — the 2025 report lists *omitted the constant of integration* among candidates not achieving."
+        note: "The $+\\,c$ is part of the answer—the 2025 report lists *omitted the constant of integration* among candidates not achieving."
   - ask: Find $y$.
     math: \dfrac{dy}{dx} = 3x^2 - x + 4
     grade: achieved
@@ -72,7 +72,7 @@ questions:
 
 ## Why the c is there
 
-Differentiating erases constants — the $+7$ in $x^2 + 7$ contributes no gradient, so $f'(x) = 2x$ keeps no memory of it. Coming back, that memory cannot be reinvented: every curve of the form $x^2 + \textsf{constant}$ has the gradient function $2x$, and the anti-derivative has to stand for all of them at once. The $c$ is how it does.
+Differentiating erases constants—the $+7$ in $x^2 + 7$ contributes no gradient, so $f'(x) = 2x$ keeps no memory of it. Coming back, that memory cannot be reinvented: every curve of the form $x^2 + \textsf{constant}$ has the gradient function $2x$, and the anti-derivative has to stand for all of them at once. The $c$ is how it does.
 
 ```figure
 caption: One gradient function, a family of curves
@@ -95,7 +95,7 @@ The constant's proper name is the **constant of integration**—it keeps the ope
 
 ## Finding the constant
 
-A question that wants one particular curve supplies one more fact — usually a point the curve passes through. Anti-differentiate first, with the $c$ in place; then substitute the point, and the $c$ is the only unknown left standing.
+A question that wants one particular curve supplies one more fact—usually a point the curve passes through. Anti-differentiate first, with the $c$ in place; then substitute the point, and the $c$ is the only unknown left standing.
 
 ```figure
 caption: Pinning down the curve
@@ -139,7 +139,7 @@ questions:
     working:
       - math: f(x) = \dfrac{x^2}{2} - 2x + c
       - math: f(0) = c = 1
-        note: "A point on the $y$-axis hands over the $c$ directly. This is the curve the sketching lesson could only draw the shape of — the same question, now answered exactly."
+        note: "A point on the $y$-axis hands over the $c$ directly. This is the curve the sketching lesson could only draw the shape of—the same question, now answered exactly."
       - math: f(x) = \dfrac{x^2}{2} - 2x + 1
 ```
 
@@ -147,7 +147,7 @@ questions:
 
 ## When the point is hidden
 
-The hardest version supplies no point outright. Instead it names a feature — *the $y$-value of the local minimum is $-40$* — and the point has to be found before it can be used. The minimum is a turning point, so its $x$ solves $f'(x) = 0$; that is Module B working inside a Module C question, and it is how the 2025 paper built its Excellence part on this topic.
+The hardest version supplies no point outright. Instead it names a feature—*the $y$-value of the local minimum is $-40$*—and the point has to be found before it can be used. The minimum is a turning point, so its $x$ solves $f'(x) = 0$; that is Module B working inside a Module C question, and it is how the 2025 paper built its Excellence part on this topic.
 
 ```practice
 caption: a hidden point
@@ -220,8 +220,8 @@ questions:
 
 Anti-differentiation reverses the rule: raise the power by one, divide by the new power, and write $+\,c$. Coefficients stay, terms go one at a time, and a constant gradient becomes a multiple of $x$. Every answer can be checked by differentiating it back.
 
-The $c$ stands for the whole family of curves sharing one gradient function — the vertical freedom the sketching lesson found. The schedules count the anti-derivative as correct only with the $c$ written.
+The $c$ stands for the whole family of curves sharing one gradient function—the vertical freedom the sketching lesson found. The schedules count the anti-derivative as correct only with the $c$ written.
 
-One extra fact picks out one curve: substitute the given point, solve for $c$, and write the finished function. When the fact is a feature — the value at a minimum — locate the feature first with $f'(x) = 0$ and a justification of its nature.
+One extra fact picks out one curve: substitute the given point, solve for $c$, and write the finished function. When the fact is a feature—the value at a minimum—locate the feature first with $f'(x) = 0$ and a justification of its nature.
 
 The final lesson takes both directions of the whole subject into the one context the standard names outright: distance, velocity and acceleration, where differentiating and anti-differentiating are steps down and up a single ladder.

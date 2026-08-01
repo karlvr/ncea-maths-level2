@@ -2,7 +2,7 @@
 
 ---
 
-The first lesson found $f'$ by formula. This lesson finds it by eye: given the graph of a function, draw the graph of its gradient function — and given the graph of a gradient function, recover the shape of the function it came from. One of the two appears in every recent paper, with no equation printed; the graph is all you get, so the reading has to be done from shape alone.
+The first lesson found $f'$ by formula. This lesson finds it by eye: given the graph of a function, draw the graph of its gradient function—and given the graph of a gradient function, recover the shape of the function it came from. One of the two appears in every recent paper, with no equation printed; the graph is all you get, so the reading has to be done from shape alone.
 
 ---
 
@@ -12,7 +12,7 @@ Stand at a point on the curve and ask one question: climbing, falling, or flat? 
 
 - Where $f$ **climbs**, its gradient is positive, so $f'$ sits **above** the $x$-axis.
 - Where $f$ **falls**, its gradient is negative, so $f'$ sits **below** the $x$-axis.
-- Where $f$ is **flat** — at a turning point — its gradient is zero, so $f'$ **crosses** the $x$-axis.
+- Where $f$ is **flat**—at a turning point—its gradient is zero, so $f'$ **crosses** the $x$-axis.
 
 ```figure
 caption: The three answers
@@ -100,9 +100,9 @@ steps:
     note: "A cubic's gradient function is a parabola. It crosses at $x = -1$ and $x = 1$, dips below the axis between the crossings where $f$ falls, and is positive outside them where $f$ climbs."
 ```
 
-The marking is by checklist. For the 2025 sketch the schedule awards Achieved for two of three — *"cubic shape, positive, roots correct"* — and Merit for all three. Shape, sign, crossings: the three answers to the three-zone question, and nothing else is being marked. The height of a peak or the depth of a dip in a sketch of $f'$ carries no marks, because no scale is printed on the $y$-axis.
+The marking is by checklist. For the 2025 sketch the schedule awards Achieved for two of three—*"cubic shape, positive, roots correct"*—and Merit for all three. Shape, sign, crossings: the three answers to the three-zone question, and nothing else is being marked. The height of a peak or the depth of a dip in a sketch of $f'$ carries no marks, because no scale is printed on the $y$-axis.
 
-The drawing itself is part of the answer. The 2024 report is specific about what a parabola must look like to be awarded: *"symmetrical, nicely shaped, and with no feathering (a single curve)"* — one smooth stroke, not a bundle of tentative ones. The 2023 report adds that candidates who could sketch *"would often lack labelling of their axes"*; label the axes and the $x$-values of the crossings, because the crossings are two of the three things being marked.
+The drawing itself is part of the answer. The 2024 report is specific about what a parabola must look like to be awarded: *"symmetrical, nicely shaped, and with no feathering (a single curve)"*—one smooth stroke, not a bundle of tentative ones. The 2023 report adds that candidates who could sketch *"would often lack labelling of their axes"*; label the axes and the $x$-values of the crossings, because the crossings are two of the three things being marked.
 
 ```practice
 caption: sketching f ′
@@ -153,16 +153,16 @@ questions:
             - at: [2, 0]
               color: b
           xticks: [0, 2]
-        note: "A cubic's gradient function is a parabola, crossing under each turning point. $f$ climbs, falls, climbs — so $f'$ runs positive, negative, positive, and the parabola opens upwards."
+        note: "A cubic's gradient function is a parabola, crossing under each turning point. $f$ climbs, falls, climbs—so $f'$ runs positive, negative, positive, and the parabola opens upwards."
 ```
 
 ---
 
 ## Recovering the function from its gradient graph
 
-The reverse reading uses the same three zones, walked in the other direction: where $f'$ is above the axis, draw $f$ climbing; where below, falling; where $f'$ crosses, $f$ turns. The degree goes up by one — handed a straight line, draw a parabola; handed a parabola, draw a cubic.
+The reverse reading uses the same three zones, walked in the other direction: where $f'$ is above the axis, draw $f$ climbing; where below, falling; where $f'$ crosses, $f$ turns. The degree goes up by one—handed a straight line, draw a parabola; handed a parabola, draw a cubic.
 
-Which way the turn goes is read off the crossing. Where $f'$ passes from below the axis to above it, $f$ stops falling and starts climbing — a minimum. From above to below, a maximum.
+Which way the turn goes is read off the crossing. Where $f'$ passes from below the axis to above it, $f$ stops falling and starts climbing—a minimum. From above to below, a maximum.
 
 ```figure
 caption: From f ′ back to f
@@ -177,7 +177,7 @@ steps:
         - at: [2, 0]
           color: b
       xticks: [2]
-    note: "The given graph is the gradient function. It is negative before $x = 2$, zero at it, positive after — so the function falls, turns, climbs."
+    note: "The given graph is the gradient function. It is negative before $x = 2$, zero at it, positive after—so the function falls, turns, climbs."
   - graph:
       domain: [-1, 5]
       curves:
@@ -208,7 +208,7 @@ steps:
     note: "Three curves, one gradient function. Nothing on the gradient graph separates them, so a question that wants one particular curve must pin it with a point."
 ```
 
-A question that needs one particular curve supplies a point for it to pass through — the 2024 paper gives the gradient graph and asks for the function *which passes through $(1, 0)$*. Recovering that function exactly, rather than sketching its shape, is anti-differentiation, and Module C does it by formula. Here the point only anchors the sketch vertically.
+A question that needs one particular curve supplies a point for it to pass through—the 2024 paper gives the gradient graph and asks for the function *which passes through $(1, 0)$*. Recovering that function exactly, rather than sketching its shape, is anti-differentiation, and Module C does it by formula. Here the point only anchors the sketch vertically.
 
 ```practice
 caption: sketching f
@@ -274,7 +274,7 @@ questions:
             - at: [1, 0]
               color: b
           xticks: [-1, 1]
-        note: "This cubic falls, climbs, falls — so its parabola runs negative, positive, negative, and opens downwards. Crossings under the turning points, shape one degree down, sign matching the climb."
+        note: "This cubic falls, climbs, falls—so its parabola runs negative, positive, negative, and opens downwards. Crossings under the turning points, shape one degree down, sign matching the climb."
   - ask: The graph of $f(x)$ is shown, with turning points at $x = -1$, $x = 0$ and $x = 1$. Sketch the graph of $f'(x)$.
     graph:
       domain: [-1.6, 1.6]
@@ -303,7 +303,7 @@ questions:
             - at: [1, 0]
               color: b
           xticks: [-1, 1]
-        note: "A quartic's gradient function is a cubic, and three turning points mean three crossings. Falling, climbing, falling, climbing reads as negative, positive, negative, positive — below, above, below, above the axis in turn."
+        note: "A quartic's gradient function is a cubic, and three turning points mean three crossings. Falling, climbing, falling, climbing reads as negative, positive, negative, positive—below, above, below, above the axis in turn."
   - ask: The graph of the gradient function $f'(x)$ is shown. Sketch a possible graph of $f(x)$, marking the $x$-values of its turning points.
     graph:
       domain: [-3, 3]
@@ -331,7 +331,7 @@ questions:
             - at: [1, -0.67]
               color: a
           xticks: [-1, 1]
-        note: "A parabola as the gradient function makes $f$ a cubic. At $x = -1$, $f'$ crosses from positive to negative, so $f$ has a maximum; at $x = 1$ it crosses back, a minimum. Any vertical position is correct, because no point was given — the word *possible* is in the question for that reason."
+        note: "A parabola as the gradient function makes $f$ a cubic. At $x = -1$, $f'$ crosses from positive to negative, so $f$ has a maximum; at $x = 1$ it crosses back, a minimum. Any vertical position is correct, because no point was given—the word *possible* is in the question for that reason."
 ```
 
 ---
@@ -342,6 +342,6 @@ One question does all the work in both directions: climbing, falling, or flat? C
 
 The shape is known in advance: differentiating drops the degree by one, so the answer is one shape down the line–parabola–cubic ladder when sketching $f'$, and one shape up when sketching $f$.
 
-Three things earn the marks — shape, sign, and crossings in the right places. Heights do not, because a sketch has no scale.
+Three things earn the marks—shape, sign, and crossings in the right places. Heights do not, because a sketch has no scale.
 
-Reading $f'$ back to $f$ meets the one thing a gradient graph cannot say: how high the curve sits. A supplied point pins it. Module C turns that observation into a formula — anti-differentiation, with its constant $c$ standing for exactly the vertical freedom seen here. Before that, Module B takes the crossings of $f'$ — the turning points — and makes them the answer to a question of their own.
+Reading $f'$ back to $f$ meets the one thing a gradient graph cannot say: how high the curve sits. A supplied point pins it. Module C turns that observation into a formula—anti-differentiation, with its constant $c$ standing for exactly the vertical freedom seen here. Before that, Module B takes the crossings of $f'$, the turning points, and makes them the answer to a question of their own.
