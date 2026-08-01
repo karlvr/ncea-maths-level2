@@ -65,17 +65,17 @@ Four credits, and it is **external**—sat in the November exam, not marked inte
 
 The exam is three questions, each with several parts, and word problems appear throughout.
 
-Three instructions from the specification are worth taking literally, because each one is a way of losing marks you had otherwise earned:
-
-- **Any equation you form must be written down.** Not just used.
-- **Show the algebra.** A correct answer with no working is marked *Correct Answer Only*, and that is worth an Achieved tick at best. It cannot reach Merit or Excellence however right the answer is.
-- **Give answers in their simplest algebraic form.**
-
-Three more, from the examiner's reports rather than the specification:
-
-- **Attempt every part of every question.** The parts are not ordered by difficulty, and one part can carry marks at more than one level, so a part further down the page may be easier than the part above it.
-- **Cross out any working you have abandoned.** Where two answers are left standing, the reports ask candidates to make clear which one is to be marked, and a crossing-out is how you do that.
-- **Do what the instruction says.** *Simplify*, *solve*, *factorise* and *calculate the discriminant* ask for four different things. The 2024 report lists not following the instruction as a reason candidates did not achieve.
+> Three instructions from the specification are worth taking literally, because each one is a way of losing marks you had otherwise earned:
+>
+> - **Any equation you form must be written down.** Not just used.
+> - **Show the algebra.** A correct answer with no working is marked *Correct Answer Only*, and that is worth an Achieved tick at best. It cannot reach Merit or Excellence however right the answer is.
+> - **Give answers in their simplest algebraic form.**
+>
+> Three more, from the examiner's reports rather than the specification:
+>
+> - **Attempt every part of every question.** The parts are not ordered by difficulty, and one part can carry marks at more than one level, so a part further down the page may be easier than the part above it.
+> - **Cross out any working you have abandoned.** Where two answers are left standing, the reports ask candidates to make clear which one is to be marked, and a crossing-out is how you do that.
+> - **Do what the instruction says.** *Simplify*, *solve*, *factorise* and *calculate the discriminant* ask for four different things. The 2024 report lists not following the instruction as a reason candidates did not achieve.
 
 ---
 

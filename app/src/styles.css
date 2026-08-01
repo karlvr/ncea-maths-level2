@@ -352,6 +352,22 @@ main {
   margin: 0.3rem 0;
 }
 
+/* Instructions for sitting the exam, rather than teaching about the
+   mathematics: what the specification requires and what the examiner's reports
+   say candidates lose marks for. A left rule and a tint set the passage apart
+   without the border and corner radius that would make it read as a figure. */
+.prose blockquote {
+  margin: 1.75rem 0;
+  padding: 0.9rem 1.25rem;
+  background: var(--raised);
+  border-left: 3px solid var(--muted);
+  border-radius: 0 6px 6px 0;
+}
+
+.prose blockquote > :last-child {
+  margin-bottom: 0;
+}
+
 /* A section break is the largest pause on the page, and the one thing that
    reaches out of the text column. The space above it is greater than the space
    below so that the rule arrives with the heading it introduces rather than
