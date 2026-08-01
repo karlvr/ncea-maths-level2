@@ -24,19 +24,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Reads the pnpm version from package.json's packageManager key.
+      - uses: pnpm/action-setup@v4
+        with:
+          package_json_file: app/package.json
+
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-          cache: npm
-          cache-dependency-path: app/package-lock.json
+          cache: pnpm
+          cache-dependency-path: app/pnpm-lock.yaml
 
-      - run: npm ci
+      - run: pnpm install --frozen-lockfile
 
       # Figures are only rendered in the browser, so invalid LaTeX would
       # otherwise reach the published site rather than failing here.
-      - run: npm run check
+      - run: pnpm check
 
-      - run: npm run build
+      - run: pnpm build
 
       - uses: actions/configure-pages@v5
 

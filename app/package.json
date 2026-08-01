@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "packageManager": "pnpm@11.0.8",
   "scripts": {
     "dev": "vite --host",
     "build": "tsc -b && vite build",
@@ -20,9 +21,6 @@
     "remark-gfm": "^4.0.1",
     "remark-math": "^6.0.0",
     "yaml": "^2.9.0"
-  },
-  "overrides": {
-    "katex": "^0.18.1"
   },
   "devDependencies": {
     "@types/node": "^24.13.2",
