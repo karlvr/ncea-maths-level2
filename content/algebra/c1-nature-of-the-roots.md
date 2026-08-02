@@ -207,6 +207,19 @@ steps:
   - math: p > 12
 ```
 
+Collecting the unknown on the side that leaves its coefficient positive, as above, avoids the reversal altogether. Dividing by a negative coefficient instead reaches the same answer, provided the sign is turned.
+
+```figure
+caption: Dividing an inequality by a negative
+steps:
+  - math: 144 - 12p < 0
+    note: The same inequality, taken the other way.
+  - math: -12p < -144
+    note: Subtract $144$ from both sides, which leaves a negative coefficient on the $p$.
+  - math: p > 12
+    note: Dividing both sides by $-12$ reverses the inequality, and the answer matches the one above.
+```
+
 Where the unknown is the coefficient of $x^2$, one more case has to be checked. If that coefficient can be zero, the equation is not a quadratic at all, it has no discriminant, and it is treated separately.
 
 ```practice

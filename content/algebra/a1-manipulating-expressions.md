@@ -81,7 +81,7 @@ questions:
       - math: (\ca{1}+3)(\ca{1}-3) = -8
         note: Now the same number into the answer being tested.
       - math: \textsf{Not correct}
-        note: The two disagree, so the factorising is wrong. The bracket that agrees is $(x-3)^2$.
+        note: The two disagree, so the factorising is wrong.
 ```
 
 ---
@@ -416,6 +416,22 @@ steps:
 
 The 2023 and 2025 papers both hide one of these inside a rational expression, $\dfrac{3x^2 - 10x + 8}{9x^2 - 16}$ in 2023, where the middle term has to be split before anything in the question can cancel.
 
+A trinomial is sometimes a perfect square: the square of a single bracket. The method finds it without any change, because the two numbers come out equal. $x^2 + 6x + 9$ needs two numbers multiplying to $9$ and adding to $6$, and both of them are $3$, so the factorisation is $(x+3)(x+3)$, which is written $(x+3)^2$.
+
+Expanding $(x+a)^2$ gives $x^2 + 2ax + a^2$, which is the same trinomial seen from the other side. The first and last terms are squares, and the middle term is twice the product of the two terms in the bracket. Those two conditions recognise a perfect square without searching for a pair of numbers at all, and they hold with a coefficient on the $x^2$ as well.
+
+```figure
+caption: A trinomial that is a square
+steps:
+  - math: 4x^2 + 20x + 25
+    note: The first and last terms are both squares.
+  - math: (\ca{2x})^2 + 20x + (\cb{5})^2
+    note: The two things being squared are $2x$ and $5$. Is the middle term twice their product?
+  - math: 2 \times \ca{2x} \times \cb{5} = 20x
+    note: It is, so both conditions hold.
+  - math: (\ca{2x}+\cb{5})^2
+```
+
 ```practice
 caption: quadratic trinomials
 questions:
@@ -433,6 +449,14 @@ questions:
       - math: \cc{-7} \times \cd{4} = -28 \qquad \cc{-7} + \cd{4} = -3
         note: A negative constant means one of each sign, and the larger carries the middle sign.
       - math: (x-7)(x+4)
+  - ask: Factorise.
+    math: x^2 + 14x + 49
+    grade: achieved
+    working:
+      - math: \cc{7} \times \cd{7} = 49 \qquad \cc{7} + \cd{7} = 14
+        note: The two numbers turn out to be the same number.
+      - math: (x+7)^2
+        note: $(x+7)(x+7)$ is written as a square.
   - ask: Factorise.
     math: 3x^2 + 11x + 6
     grade: merit

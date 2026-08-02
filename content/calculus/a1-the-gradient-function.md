@@ -77,14 +77,16 @@ caption: A polynomial, term by term
 steps:
   - math: f(x) = 4x^3 + x^2 - 5x + 8
     note: "Four terms. Take them one at a time."
-  - math: f'(x) = \ca{12x^2} + x^2 - 5x + 8
-    note: "$4x^3$ becomes $4 \\times 3x^2$."
-  - math: f'(x) = 12x^2 + \ca{2x} - 5x + 8
-    note: "$x^2$ becomes $2x$. Its coefficient is $1$, so there is nothing else to multiply."
-  - math: f'(x) = 12x^2 + 2x - \ca{5} + 8
+  - math: \dfrac{d}{dx}\left(4x^3\right) = 12x^2
+    note: "Multiply by the power, then lower the power."
+  - math: \dfrac{d}{dx}\left(x^2\right) = 2x
+    note: "Its coefficient is $1$, so there is nothing else to multiply."
+  - math: \dfrac{d}{dx}\left(-5x\right) = -5
     note: "$-5x$ is a line of gradient $-5$, and that is its derivative."
+  - math: \dfrac{d}{dx}\left(8\right) = 0
+    note: "The constant contributes no gradient at all."
   - math: f'(x) = 12x^2 + 2x - 5
-    note: "The constant $8$ contributes no gradient at all, so it goes. The derivative of a cubic is a quadratic—differentiating always lowers every power by one."
+    note: "The four derivatives, collected. The derivative of a cubic is a quadratic—differentiating always lowers every power by one."
 ```
 
 A coefficient written as a fraction behaves like any other coefficient. The derivative of $\dfrac{x^2}{2}$ is $\dfrac{2x}{2}$, which is $x$, and the derivative of $\dfrac{x}{2}$ is $\dfrac{1}{2}$. The 2025 report lists candidates who *"failed to differentiate when a fraction was involved in an expression"* among those not achieving—the fraction changes nothing about the rule.

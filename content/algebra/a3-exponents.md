@@ -196,6 +196,18 @@ So $x^{-2}$ is $\dfrac{1}{x^2}$. **A negative exponent means a reciprocal.** It 
 
 The rule also runs in reverse, and you will need it in that direction. $\dfrac{1}{x^3}$ is $x^{-3}$. Moving a power from the bottom of a fraction to the top flips the sign of its exponent.
 
+A negative exponent on a whole fraction means the same thing, and what it does there is turn the fraction over.
+
+```figure
+caption: A negative exponent on a fraction
+steps:
+  - math: \left(\dfrac{a}{b}\right)^{-n}
+    note: A negative exponent still means one over.
+  - math: \dfrac{1}{\left(\dfrac{a}{b}\right)^{n}}
+    note: And one over a fraction is that fraction turned over.
+  - math: \left(\dfrac{b}{a}\right)^{n}
+```
+
 ### Fractional
 
 $x^{\frac{1}{2}} \cdot x^{\frac{1}{2}}$. Add the exponents: a half plus a half is one, so the answer is $x$. Something which, multiplied by itself, gives $x$—that is the square root of $x$.

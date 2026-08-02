@@ -105,7 +105,7 @@ steps:
 
 ### The second derivative
 
-Differentiating the gradient function gives the **second derivative**, written $f''(x)$ and read *f double dashed*—the gradient of the gradient. At a maximum the gradient is falling through zero, so $f''$ is negative there; at a minimum it is rising through zero, so $f''$ is positive.
+Differentiating the gradient function gives the **second derivative**, written $f''(x)$ and read *f double dashed*—the gradient of the gradient. Where the function was given as an equation in $y$, it is written $\dfrac{d^2y}{dx^2}$, in the same way that the first derivative is written $\dfrac{dy}{dx}$. At a maximum the gradient is falling through zero, so $f''$ is negative there; at a minimum it is rising through zero, so $f''$ is positive.
 
 ```figure
 caption: The second derivative test
