@@ -50,39 +50,65 @@ export function MathsBlock({ tex }: { tex: string }) {
 }
 
 const INLINE_MATHS = /\$([^$]+)\$/g
+const EMPHASIS = /\*([^*]+)\*/g
 
-/**
- * A line of prose which may contain inline maths delimited by `$…$`.
- *
- * Use this for short author-written lines rather than for arbitrary Markdown —
- * it handles maths and nothing else, and does not interpret emphasis, links or
- * lists.
- */
-export function Annotated({ text }: { text: string }) {
-  const parts = useMemo(() => {
-    const out: Array<{ maths: boolean; value: string }> = []
-    let cursor = 0
-    for (const match of text.matchAll(INLINE_MATHS)) {
-      if (match.index > cursor) {
-        out.push({ maths: false, value: text.slice(cursor, match.index) })
-      }
-      out.push({ maths: true, value: match[1] })
-      cursor = match.index + match[0].length
+/** Splits a line on a delimiter pattern, marking what fell inside a pair. */
+function split(
+  text: string,
+  pattern: RegExp,
+): Array<{ inside: boolean; value: string }> {
+  const out: Array<{ inside: boolean; value: string }> = []
+  let cursor = 0
+  for (const match of text.matchAll(pattern)) {
+    if (match.index > cursor) {
+      out.push({ inside: false, value: text.slice(cursor, match.index) })
     }
-    if (cursor < text.length) out.push({ maths: false, value: text.slice(cursor) })
-    return out
-  }, [text])
+    out.push({ inside: true, value: match[1] })
+    cursor = match.index + match[0].length
+  }
+  if (cursor < text.length) out.push({ inside: false, value: text.slice(cursor) })
+  return out
+}
 
+/** A run of prose which may contain inline maths delimited by `$…$`. */
+function ProseWithMaths({ text }: { text: string }) {
+  const parts = useMemo(() => split(text, INLINE_MATHS), [text])
   return (
     <>
       {parts.map((part, index) =>
-        part.maths ? (
+        part.inside ? (
           <span
             key={index}
             dangerouslySetInnerHTML={{ __html: render(part.value, false) }}
           />
         ) : (
           <span key={index}>{part.value}</span>
+        ),
+      )}
+    </>
+  )
+}
+
+/**
+ * A line of prose which may contain inline maths delimited by `$…$` and
+ * emphasis delimited by `*…*`. An emphasised span may itself contain maths,
+ * so emphasis is resolved before the maths within each span. An unpaired
+ * asterisk stays literal.
+ *
+ * Use this for short author-written lines rather than for arbitrary Markdown —
+ * it interprets these two forms and nothing else: no links, no lists.
+ */
+export function Annotated({ text }: { text: string }) {
+  const runs = useMemo(() => split(text, EMPHASIS), [text])
+  return (
+    <>
+      {runs.map((run, index) =>
+        run.inside ? (
+          <em key={index}>
+            <ProseWithMaths text={run.value} />
+          </em>
+        ) : (
+          <ProseWithMaths key={index} text={run.value} />
         ),
       )}
     </>
