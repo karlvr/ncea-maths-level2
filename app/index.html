@@ -11,6 +11,13 @@
       content="Study notes and worked figures for NCEA Level 2 Mathematics."
     />
     <title>NCEA Level 2 Maths</title>
+    <script>
+      /* A chosen colour scheme is applied here, before anything is painted, so
+         that the page never appears in the other one first. The name of the key
+         and of the attribute belong to src/colour-scheme.ts. */
+      var scheme = localStorage.getItem('colour-scheme')
+      if (scheme) document.documentElement.dataset.scheme = scheme
+    </script>
   </head>
   <body>
     <div id="root"></div>

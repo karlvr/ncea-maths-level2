@@ -5,25 +5,30 @@
  */
 
 :root {
-  --page: #fdfcfa;
-  --raised: #f5f2ec;
-  --ink: #1e1c1a;
-  --muted: #6b6660;
-  --rule: #e2ddd4;
-  --link: #1a5fb4;
-  --focus: #1a5fb4;
+  /* Both schemes are declared together, one colour at a time: `light-dark()`
+     picks between the pair according to `color-scheme`, which follows the
+     device until the reader chooses otherwise. */
+  color-scheme: light dark;
+
+  --page: light-dark(#fdfcfa, #17161a);
+  --raised: light-dark(#f5f2ec, #201e24);
+  --ink: light-dark(#1e1c1a, #e7e4df);
+  --muted: light-dark(#6b6660, #9b958c);
+  --rule: light-dark(#e2ddd4, #322f37);
+  --link: light-dark(#1a5fb4, #7fb3f5);
+  --focus: light-dark(#1a5fb4, #7fb3f5);
 
   /* Four hues that stay distinguishable from each other at the size
      mathematics is set, which rules out anything close to the blue. */
-  --c-a: #0b62c4;
-  --c-b: #b34a12;
-  --c-c: #2f7d1f;
-  --c-d: #8b2fa8;
+  --c-a: light-dark(#0b62c4, #6fb3ff);
+  --c-b: light-dark(#b34a12, #ffab6b);
+  --c-c: light-dark(#2f7d1f, #86e070);
+  --c-d: light-dark(#8b2fa8, #dfa0f2);
 
   /* One hue per grade band, climbing in temperature with the demand. */
-  --achieved: #2f7d1f;
-  --merit: #b06a00;
-  --excellence: #a3306f;
+  --achieved: light-dark(#2f7d1f, #7fc96c);
+  --merit: light-dark(#b06a00, #eaa54a);
+  --excellence: light-dark(#a3306f, #e78bbd);
 
   --serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
   --sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -55,25 +60,14 @@
   --trail: 2.4rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --page: #17161a;
-    --raised: #201e24;
-    --ink: #e7e4df;
-    --muted: #9b958c;
-    --rule: #322f37;
-    --link: #7fb3f5;
-    --focus: #7fb3f5;
+/* A scheme held against the device's own setting. Every colour above is stated
+   as a pair, so naming which half of the pair applies is the whole override. */
+:root[data-scheme='light'] {
+  color-scheme: light;
+}
 
-    --c-a: #6fb3ff;
-    --c-b: #ffab6b;
-    --c-c: #86e070;
-    --c-d: #dfa0f2;
-
-    --achieved: #7fc96c;
-    --merit: #eaa54a;
-    --excellence: #e78bbd;
-  }
+:root[data-scheme='dark'] {
+  color-scheme: dark;
 }
 
 * {
@@ -247,6 +241,49 @@ main {
   margin-top: 2rem;
   font-size: 0.75rem;
   color: var(--muted);
+}
+
+/* Three joined buttons rather than a switch, because following the device is a
+   setting of its own and not the absence of the other two. */
+.scheme-choice {
+  display: flex;
+  width: fit-content;
+  margin-top: 0.6rem;
+  border: 1px solid var(--rule);
+  border-radius: 5px;
+}
+
+.scheme-choice button {
+  font: inherit;
+  font-size: 0.72rem;
+  padding: 0.2rem 0.6rem;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.scheme-choice button + button {
+  border-left: 1px solid var(--rule);
+}
+
+.scheme-choice button:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.scheme-choice button:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+.scheme-choice button:hover {
+  color: var(--ink);
+}
+
+/* The setting in force is filled as well as inked, so that which of the three
+   is chosen can be read without comparing it against the other two. */
+.scheme-choice button[aria-pressed='true'] {
+  background: var(--raised);
+  color: var(--ink);
 }
 
 /* --------------------------------------------------------------- lesson -- */
@@ -829,6 +866,13 @@ main {
 /* --------------------------------------------------------------- print -- */
 
 @media print {
+  /* Paper is white whatever the screen was set to, so the dark half of every
+     pair would print as pale ink on it. */
+  :root,
+  :root[data-scheme] {
+    color-scheme: light;
+  }
+
   .sidebar,
   .menu-toggle,
   .section-trail,

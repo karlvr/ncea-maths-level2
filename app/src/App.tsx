@@ -6,6 +6,7 @@
  */
 import { useEffect, useState } from 'react'
 import { HashRouter, Link, Navigate, Route, Routes, useParams } from 'react-router-dom'
+import { ColourSchemeChoice } from './components/ColourSchemeChoice'
 import { Contents } from './components/Contents'
 import { Lesson } from './components/Lesson'
 import { SUBJECTS, TOPIC_ORDER, findTopic } from './syllabus'
@@ -71,6 +72,7 @@ export default function App() {
           <p className="topic-count">
             {TOPIC_ORDER.length} {TOPIC_ORDER.length === 1 ? 'topic' : 'topics'}
           </p>
+          <ColourSchemeChoice />
         </aside>
         <main>
           <Routes>
