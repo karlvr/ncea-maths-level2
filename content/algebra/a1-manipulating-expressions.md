@@ -159,18 +159,7 @@ steps:
 
 Three brackets are expanded the same way, two at a time: expand any two of them, then multiply that result by the bracket left over. The 2024 report describes candidates who identified three correct factors and then could not expand them.
 
-**Factorising** converts a sum of terms into a product. Starting from $x^2 + 7x + 10$, you recover $(x+2)(x+5)$.
-
-```figure
-caption: Factorising—the same figure, read upwards
-steps:
-  - math: x^2 + 7x + 10
-    note: Start from the sum of terms.
-  - math: x^2 + \ca{5x} + \cb{2x} + 10
-    note: $7x$ came from somewhere. Split it back apart.
-  - math: (\ca{x}+\cb{2})(\cc{x}+\cd{5})
-    note: And you are back at the product you started with.
-```
+**Factorising** converts a sum of terms into a product. Starting from $x^2 + 7x + 10$, you recover $(x+2)(x+5)$. How you recover it is the subject of most of this lesson.
 
 Expanding and factorising differ in difficulty. Expanding is mechanical and always possible. Factorising is a search—you are working out what must have been multiplied together to produce the result—and not every expression factorises. That is why factorising is where the marks are.
 
@@ -273,17 +262,7 @@ steps:
 
 Verify by expanding it back. Three $x$ times two $x$ is six $x$ squared. Three $x$ times three is nine $x$. Correct.
 
-Take out common factors first in every case. It frequently converts an unfamiliar expression into a standard one. $2x^2 - 18$ is not a recognised form. Take out the $2$ and it becomes $2(x^2 - 9)$—and $x^2 - 9$ can be factorised as a difference of two squares.
-
-```figure
-caption: Why the common factor comes first
-steps:
-  - math: 2x^2 - 18
-    note: Not a form you recognise.
-  - math: 2(\ca{x^2 - 9})
-    note: Take out the $2$—and now the bracket is a difference of two squares.
-  - math: 2(x+3)(x-3)
-```
+Take out common factors first in every case, before trying anything else. Whatever is left inside the bracket is simpler than the expression you started with, and it is what the other two methods are then applied to.
 
 ```practice
 caption: common factor
