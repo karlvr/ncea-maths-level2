@@ -36,6 +36,19 @@ lesson gives complete working.
 uses. It runs in CI before deployment, because a figure that fails to parse
 would otherwise only show up on the published page.
 
+## Icons
+
+The mark is $x^2$ set in Iowan Old Style, the serif the lessons set their
+mathematics in: an italic `x` with a roman `2`, paper on ink. `public/` holds
+the three forms a browser asks for — an SVG for the tab, an ICO for the
+browsers that will not take one, and a 180px PNG for an iOS home screen.
+
+They are cut from the font's own outlines by
+[`scripts/make-icons.py`](scripts/make-icons.py), which needs `fonttools` and
+`rsvg-convert` and reads the font from its macOS path. The results are
+committed, so neither is needed to build the site; run the script only to
+change the mark.
+
 ## Deployment
 
 Pushing to `main` builds and publishes to GitHub Pages
