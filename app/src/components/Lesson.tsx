@@ -12,11 +12,10 @@
  */
 import { useEffect, useMemo, type ReactNode } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import Markdown from 'react-markdown'
+import Markdown, { type Options } from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
-import type { PluggableList } from 'unified'
 import { sectionId, splitLesson } from '../lesson-body'
 import { neighbours, type TopicLocation } from '../syllabus'
 import { KATEX_OPTIONS } from './Maths'
@@ -26,8 +25,8 @@ import { WorkedFigure } from './WorkedFigure'
 
 // Variables are written as `$x$` in the prose so they are set as mathematics
 // rather than as a stray letter, and match the figures describing them.
-const REMARK_PLUGINS: PluggableList = [remarkGfm, remarkMath]
-const REHYPE_PLUGINS: PluggableList = [[rehypeKatex, KATEX_OPTIONS]]
+const REMARK_PLUGINS: NonNullable<Options['remarkPlugins']> = [remarkGfm, remarkMath]
+const REHYPE_PLUGINS: NonNullable<Options['rehypePlugins']> = [[rehypeKatex, KATEX_OPTIONS]]
 
 /** The text of a heading, for deriving its anchor. */
 function textOf(node: ReactNode): string {
