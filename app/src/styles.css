@@ -135,37 +135,54 @@ main {
 .masthead {
   display: block;
   font-weight: 600;
-  font-size: 0.95rem;
-  letter-spacing: 0.01em;
+  font-size: 1.2rem;
+  letter-spacing: -0.01em;
   color: var(--ink);
   text-decoration: none;
   margin-bottom: 2rem;
 }
 
+/* Four levels sit in this list — subject, module, topic, section — and each has
+   to be told apart from the one above it at a glance. A subject is a break in
+   the document and is set as one: full ink, ruled off, with air around it. A
+   module is only a label over the topics beneath it, so it is set small and
+   quiet, below its own topics in weight. */
 .contents h2 {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--muted);
-  margin: 1.5rem 0 0.25rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 0.5rem;
   display: flex;
   flex-direction: column;
-  gap: 0.1rem;
+  gap: 0.05rem;
 }
 
+.contents section + section {
+  margin-top: 2.25rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 1.5rem;
+}
+
+/* The standard's number belongs to the subject above it, so it is set as that
+   heading's second line and not as a label of its own — small caps here would
+   read as another module. */
 .contents .standard {
-  text-transform: none;
-  letter-spacing: 0;
   font-size: 0.75rem;
   font-weight: 400;
-  opacity: 0.75;
+  color: var(--muted);
 }
 
 .contents h3 {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
   color: var(--muted);
-  margin: 1rem 0 0.35rem;
+  margin: 1.5rem 0 0.4rem;
+}
+
+.contents .contents-module:first-of-type h3 {
+  margin-top: 1rem;
 }
 
 .contents ul {
