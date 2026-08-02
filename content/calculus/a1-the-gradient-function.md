@@ -45,7 +45,7 @@ Measuring a tangent by eye is guesswork, and guesswork is not calculus. The grad
 
 ## The rule
 
-The formulae sheet states it:
+The formulae sheet states the rule.
 
 ```figure
 caption: The rule, as the sheet prints it
@@ -70,7 +70,7 @@ Three extensions turn the rule into a method for any polynomial, and each is a c
 
 **Terms differentiate one at a time.** A polynomial is differentiated term by term, each term keeping its sign.
 
-**A constant differentiates to zero.** The graph of $y = 7$ is a flat line. Its gradient is zero everywhere, so the $7$ contributes nothing to the gradient function. For the same reason the derivative of $3x$ is just $3$: the graph of $3x$ is a line of gradient three. The rule says the same thing, because $3x^1$ becomes $3x^0$, and $x^0$ is $1$.
+**A constant differentiates to zero.** The graph of $y = 7$ is a flat line. Its gradient is zero everywhere, so the $7$ contributes nothing to the gradient function. For the same reason the derivative of $3x$ is just $3$: the graph of $3x$ is a line of gradient $3$. The rule says the same thing, because $3x^1$ becomes $3x^0$, and $x^0$ is $1$.
 
 ```figure
 caption: A polynomial, term by term

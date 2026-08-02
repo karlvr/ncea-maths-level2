@@ -4,7 +4,7 @@
 
 In $2^x = 32$ the unknown is in the power. Nothing in B1 or B2 reaches it, because $x$ is not being added to anything and not being multiplied by anything—it is counting how many twos are multiplied together.
 
-Two ways in. Write both sides as powers of the same base, and then the powers themselves must be equal. Or use a logarithm, which is the operation that brings a power down to where the earlier methods can work on it.
+Write both sides as powers of the same base, and then the powers themselves must be equal. Or use a logarithm, which is the operation that brings a power down to where the earlier methods can work on it.
 
 The logarithm rules are on the formulae sheet handed out with the examination. The index laws are not, and everything here rests on them, so A3 is the topic to have straight before this one.
 
@@ -115,9 +115,9 @@ steps:
     note: The power that two must be raised to in order to give thirty-two is five. Same fact.
 ```
 
-So reading a logarithmic equation means turning it into index form. $x = \log_3 243$ asks for a power, so write $3^x = 243$, and the answer is $5$. In $\log_x 81 = 4$ the unknown is the base instead, so write $x^4 = 81$, and the answer is $3$.
+So reading a logarithmic equation means turning it into index form. $x = \log_3 243$ asks for a power, so write $3^x = 243$, and the answer is $5$. In $\log_x 81 = 4$ the unknown is the base instead, so write $x^4 = 81$. The algebra gives $3$ and $-3$, and only $3$ is the answer.
 
-A base has to be positive, and it cannot be $1$. That rules out roots which the algebra otherwise allows: $\log_x 36 = 2$ gives $x^2 = 36$, so $x$ is $6$ or $-6$, and $-6$ is rejected because no logarithm has a negative base. The 2023 marking schedule awards the higher grade only where that rejection is shown.
+A base has to be positive, and it cannot be $1$. That is what rejected the $-3$: no logarithm has a negative base, and the rejection is written down, not made silently. The same discard appears in $\log_x 36 = 2$, which gives $x^2 = 36$, so $x$ is $6$ or $-6$, and $-6$ is rejected. The 2023 marking schedule awards the higher grade only where that rejection is shown.
 
 You also cannot take the logarithm of zero or of a negative number, because no power of a positive base produces one. That fact does most of the discarding later in this topic.
 
@@ -238,7 +238,7 @@ questions:
       - math: 2p + q
   - ask: Evaluate.
     math: 4 + \log_b\!\left(b^{-2}\right) + \log_b \sqrt{b}
-    grade: merit
+    grade: excellence
     from: "2023"
     working:
       - math: 4 - 2\log_b b + \tfrac{1}{2}\log_b b
@@ -297,7 +297,7 @@ questions:
         note: At $x=-2$ both logarithms would be of negative numbers, so that root is rejected.
   - ask: Solve.
     math: 2\log_5(x + 4) - \log_5 x = 2
-    grade: merit
+    grade: excellence
     from: "2025"
     working:
       - math: \log_5\!\left(\dfrac{(x+4)^2}{x}\right) = 2

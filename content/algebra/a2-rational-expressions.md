@@ -52,9 +52,9 @@ id: a2-simplify
 caption: Factorise, then cancel
 steps:
   - math: \dfrac{x^2 - 9}{x^2 + 7x + 12}
-    note: Nothing can be cancelled yet. The $x^2$ terms are terms, not factors. So we factorise…
+    note: Nothing can be cancelled yet. The $x^2$ terms are terms, not factors.
   - math: \dfrac{(x+3)(x-3)}{x^2 + 7x + 12}
-    note: The top is a difference of two squares. Next the denominator…
+    note: The top is a difference of two squares.
   - math: \dfrac{(x+3)(x-3)}{(x+3)(x+4)}
     note: The bottom needs two numbers multiplying to $12$ and adding to $7$.
   - math: \dfrac{\ca{\cancel{(x+3)}}(x-3)}{\ca{\cancel{(x+3)}}(x+4)}
@@ -108,9 +108,9 @@ steps:
   - math: \dfrac{x+3}{x^2-4} \times \dfrac{x-2}{x+3}
     note: Two fractions to be multiplied, with nothing expanded.
   - math: \dfrac{x+3}{(x+2)(x-2)} \times \dfrac{x-2}{x+3}
-    note: Factorise whatever will factorise, and matching brackets appear. Now multiply…
+    note: Factorise whatever will factorise, and matching brackets appear.
   - math: \dfrac{\ca{(x+3)}\,\cb{(x-2)}}{(x+2)\,\cb{(x-2)}\,\ca{(x+3)}}
-    note: Multiply tops together and bottoms together. Now cancel the pairs…
+    note: Multiply tops together and bottoms together.
   - math: \dfrac{\ca{\cancel{(x+3)}}\,\cb{\cancel{(x-2)}}}{(x+2)\,\cb{\cancel{(x-2)}}\,\ca{\cancel{(x+3)}}}
     note: Both the factors on the top have a match underneath. What’s left?
   - math: \dfrac{1}{x+2}
@@ -240,7 +240,7 @@ questions:
         note: Take each fraction up to the common denominator one at a time.
       - math: \dfrac{8t + 4t - 12 - t}{4t^2}
       - math: \dfrac{11t - 12}{4t^2}
-        note: The examiner's report singles out fractions like this one as where marks are lost.
+        note: The 2025 report names expressions involving fractions as where a lack of basic algebra skills was particularly evident.
 ```
 
 ---
@@ -322,7 +322,7 @@ questions:
         note: Either this or the expanded numerator is accepted.
   - ask: The expression can be written as $A + \dfrac{B}{x}$, where $A$ and $B$ are integers. Find $A$ and $B$.
     math: \dfrac{12x^2 - 14x + 4}{3x^2 - 2x}
-    grade: excellence
+    grade: merit
     from: "2023"
     working:
       - math: \dfrac{2(6x^2 - 7x + 2)}{x(3x-2)}

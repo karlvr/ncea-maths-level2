@@ -114,9 +114,9 @@ steps:
     note: "Differentiate once more."
   - math: f''(x) = 6x - 6
   - math: f''(-1) = -12 < 0 \qquad\therefore\;\textsf{maximum}
-    note: "Negative second derivative—the curve is shaped like a frown there."
+    note: "Negative second derivative: the gradient is falling through zero there."
   - math: f''(3) = 12 > 0 \qquad\therefore\;\textsf{minimum}
-    note: "Positive—shaped like a cup. One substitution per point, and the conclusion written beside each."
+    note: "Positive: the gradient is rising through zero. One substitution per point, and the conclusion written beside each."
 ```
 
 The test is the fastest of the three, with one blind spot: if $f''$ comes out to be zero it says nothing at all, and one of the other two justifications has to speak instead.
@@ -266,18 +266,6 @@ questions:
       - math: x^2 = 9 \qquad x = 3 \;\textsf{ or }\; x = -3
       - math: f(3) = 27 - 81 = -54 \qquad f(-3) = 54
       - math: (3, -54) \;\textsf{ and }\; (-3, 54)
-  - ask: Using calculus methods, find the $x$-coordinate of the local minimum of the curve, and explain how you know it is a minimum.
-    math: y = 2x^3 - 6x^2 - 18x + 5
-    grade: excellence
-    from: "2024"
-    working:
-      - math: \dfrac{dy}{dx} = 6x^2 - 12x - 18 = 0
-      - math: 6(x - 3)(x + 1) = 0
-      - math: x = 3 \;\textsf{ or }\; x = -1
-        note: "Two stationary points, and the question wants the minimum—so the nature must be decided, not assumed."
-      - math: \dfrac{d^2y}{dx^2} = 12x - 12
-      - math: 12(3) - 12 = 24 > 0 \qquad\therefore\;\textsf{minimum at } x = 3
-        note: "Testing points either side of $x = 3$, or an annotated sketch of an upward cubic, would justify it equally well."
   - ask: Use calculus to find the values of $x$ for which the function is increasing.
     math: f(x) = x^3 - 3x^2 - 24x + 1
     grade: merit
@@ -300,6 +288,18 @@ questions:
       - math: x = -2, \;\; 0, \;\; 2
       - math: f(\pm 2) = 16 - 32 = -16 \qquad f(0) = 0
       - math: (-2, -16), \;\; (0, 0) \;\textsf{ and }\; (2, -16)
+  - ask: Using calculus methods, find the $x$-coordinate of the local minimum of the curve, and explain how you know it is a minimum.
+    math: y = 2x^3 - 6x^2 - 18x + 5
+    grade: excellence
+    from: "2024"
+    working:
+      - math: \dfrac{dy}{dx} = 6x^2 - 12x - 18 = 0
+      - math: 6(x - 3)(x + 1) = 0
+      - math: x = 3 \;\textsf{ or }\; x = -1
+        note: "Two stationary points, and the question wants the minimum—so the nature must be decided, not assumed."
+      - math: \dfrac{d^2y}{dx^2} = 12x - 12
+      - math: 12(3) - 12 = 24 > 0 \qquad\therefore\;\textsf{minimum at } x = 3
+        note: "Testing points either side of $x = 3$, or an annotated sketch of an upward cubic, would justify it equally well."
   - ask: The curve $y = x^2 + bx + c$ has a minimum at $(3, -4)$. Find the values of $b$ and $c$.
     grade: excellence
     working:

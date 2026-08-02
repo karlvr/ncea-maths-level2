@@ -28,7 +28,7 @@ From a function to its gradient function.
 - assembling the line with $y - y_1 = m(x - x_1)$, which is not on the formulae sheet
 - the point given as coordinates, or as an $x$-value only
 - a tangent parallel to a given line
-- a horizontal tangent, as the door into Module B
+- a horizontal tangent, leading into Module B
 
 **A3—The graph of the gradient function.** The same relationship, drawn instead of computed.
 

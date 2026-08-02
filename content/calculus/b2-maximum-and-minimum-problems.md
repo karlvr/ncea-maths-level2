@@ -63,7 +63,7 @@ Setting the derivative to zero produces an equation, and its solutions need two 
 
 **Reject what the situation cannot contain.** Lengths cannot be negative, and a side of zero leaves no shape at all. The 2025 schedule does this in one breath—*"$x = 0.6$ m or $-0.6$ (reject as $-$ve)"*—and the rejection is written down, not done silently.
 
-**Then answer the question that was asked.** The turning point's $x$ is where the best design lives; it is rarely the answer itself. *Find the maximum volume* wants the volume; *calculate the dimensions* wants every dimension, which means going back through the constraint for the variables that were substituted away. Ending at $x$ when the question asked for cubic metres leaves the final step—and its mark—on the table.
+**Then answer the question that was asked.** The turning point's $x$ is where the best design lives; it is rarely the answer itself. *Find the maximum volume* wants the volume; *calculate the dimensions* wants every dimension, which means going back through the constraint for the variables that were substituted away. Ending at $x$ when the question asked for cubic metres loses the final step and its mark.
 
 ---
 
@@ -71,7 +71,7 @@ Setting the derivative to zero produces an equation, and its solutions need two 
 
 The word *maximum* in the question is a claim, and the exam asks for it to be proved: the 2025 paper's container part instructs, *"prove that the volume is a maximum using calculus"*. Everything from the previous lesson's nature section applies unchanged—second derivative, test points either side, annotated sketch—and the conclusion is stated in the context's terms: *$V'' = -12h$ is negative for any positive height, so the volume is a maximum*.
 
-The proof is not decoration. In the schedules it is the step that separates Excellence from Merit on these parts, and it is one substitution plus one sentence.
+In the schedules the proof is the step that separates Excellence from Merit on these parts, and it is one substitution plus one sentence.
 
 ```practice
 caption: a full problem

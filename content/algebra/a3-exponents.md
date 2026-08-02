@@ -139,7 +139,7 @@ questions:
       - math: \ca{8y^3} \times \cb{9y^4}
         note: $2^3$ is $8$ and $3^2$ is $9$. Neither number is left alone.
       - math: 72y^7
-        note: The examiner's report names writing $2y^3$ for the first of these as a common failure.
+        note: The 2025 report names writing $2y^3$ for the first of these as a common failure.
   - ask: Expand.
     math: (x+2y)^2
     grade: merit
@@ -245,7 +245,7 @@ steps:
     note: Underneath a one as well, so the exponent turns negative.
 ```
 
-Convert first, then apply the laws. The examiner's report has this skill on both of its lists: converting from surd form to index form is on the list of what candidates awarded Achieved could do, and failing to manipulate expressions involving surds is on the list of why candidates did not achieve.
+Convert first, then apply the laws. The 2025 report has this skill on both of its lists: converting from surd form to index form is on the list of what candidates awarded Achieved could do, and failing to manipulate expressions involving surds is on the list of why candidates did not achieve.
 
 ```practice
 caption: surd form and index form
@@ -357,7 +357,7 @@ questions:
     from: "2025"
     working:
       - math: \sqrt{\dfrac{y^6}{25}} = \dfrac{y^3}{5}
-        note: A square root is the power $\frac{1}{2}$, and it reaches the top and the bottom.
+        note: A square root is the power $\dfrac{1}{2}$, and it reaches the top and the bottom.
       - math: 4y \times \dfrac{y^3}{5}
       - math: \dfrac{4y^4}{5}
   - ask: Simplify, leaving your answer with positive exponents.
@@ -372,7 +372,7 @@ questions:
         note: Positive exponents were asked for, so the answer cannot be left at the line above.
   - ask: Simplify.
     math: \left(\dfrac{n^4}{25n^8}\right)^{-0.5}
-    grade: merit
+    grade: achieved
     from: "2023"
     working:
       - math: \dfrac{n^4}{25n^8} = \dfrac{1}{25n^4}

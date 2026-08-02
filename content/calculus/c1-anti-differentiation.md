@@ -8,7 +8,7 @@ Module A turned functions into gradient functions. From here the standard runs t
 
 ## Reversing the rule
 
-The formulae sheet states the reverse rule next to the forward one:
+The formulae sheet states the reverse rule beside the forward one.
 
 ```figure
 caption: The rule, as the sheet prints it
@@ -152,7 +152,8 @@ The hardest version supplies no point outright. Instead it names a feature—*th
 ```practice
 caption: a hidden point
 questions:
-  - ask: The gradient function is given by $f'(x) = 2x^2 - 2x - 12$. Find the equation of the original function $f(x)$, given that the $y$-value of the local minimum is equal to $-40$.
+  - ask: Find the equation of the original function $f(x)$, given that the $y$-value of the local minimum is equal to $-40$.
+    math: f'(x) = 2x^2 - 2x - 12
     grade: excellence
     from: "2025"
     working:
@@ -195,7 +196,8 @@ questions:
       - math: 9 - 15 + c = 10
       - math: c = 16
       - math: y = x^2 - 5x + 16
-  - ask: The gradient function of a curve is $f'(x) = 3x^2 + 4x$, and the curve meets the $x$-axis at $x = 1$. Find the equation of the curve.
+  - ask: The curve meets the $x$-axis at $x = 1$. Find the equation of the curve.
+    math: f'(x) = 3x^2 + 4x
     grade: merit
     working:
       - math: f(x) = x^3 + 2x^2 + c
@@ -203,7 +205,8 @@ questions:
         note: "Meeting the $x$-axis at $x = 1$ is the point $(1, 0)$, worded without brackets."
       - math: c = -3
       - math: f(x) = x^3 + 2x^2 - 3
-  - ask: The gradient function is $f'(x) = 3x^2 - 6x$, and the $y$-value of the local maximum of $f$ is $7$. Find the equation of the function $f(x)$.
+  - ask: The $y$-value of the local maximum of $f$ is $7$. Find the equation of the function $f(x)$.
+    math: f'(x) = 3x^2 - 6x
     grade: excellence
     working:
       - math: f(x) = x^3 - 3x^2 + c

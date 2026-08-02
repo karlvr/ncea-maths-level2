@@ -130,7 +130,7 @@ steps:
   - math: y = 2x - 12
 ```
 
-A tangent described as **horizontal** has gradient zero, so its touching point solves $f'(x) = 0$. A point where that happens is a turning point of the curve, and finding and classifying them is the whole of Module B—this question shape is the door into it.
+A tangent described as **horizontal** has gradient zero, so its touching point solves $f'(x) = 0$. A point where that happens is a turning point of the curve, and finding and classifying them is the whole of Module B—this question shape is where that work begins.
 
 ```practice
 caption: stated gradient

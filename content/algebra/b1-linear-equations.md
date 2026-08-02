@@ -158,7 +158,7 @@ steps:
   - math: x = 6
 ```
 
-The bracket in the third step is what keeps the subtraction correct, and it is there because the numerator $x-4$ was a single quantity before the multiplication and has to stay one afterwards.
+The bracket around $x-4$ is what keeps the subtraction correct, and it is there because that numerator was a single quantity before the multiplication and has to stay one afterwards.
 
 When the unknown is in a denominator, multiplying through still clears it, but what is left may not be linear. Multiplying $2x + 3 = \dfrac{7}{x}$ through by $x$ gives $2x^2 + 3x = 7$, which has an $x^2$ in it. That is a quadratic, and B2 solves it.
 
@@ -601,7 +601,8 @@ questions:
       - math: x^2 + 3x + k = x^2 + 3x - 10
         note: Expand the right side. The first two terms match, which is what makes a value of $k$ possible.
       - math: k = -10
-  - ask: A cylinder of radius $r$ and height $h$ has surface area $2\pi r^2 + 2\pi rh$. A second container with the same radius and height has surface area $5r^2 + 10rh$. The two surface areas are equal. Find $h$ in terms of $r$.
+  - ask: A cylinder of radius $r$ and height $h$, and a second container with the same radius and height, have the surface areas below—the cylinder's first. The two surface areas are equal. Find $h$ in terms of $r$.
+    math: '2\pi r^2 + 2\pi rh \qquad\textsf{ and }\qquad 5r^2 + 10rh'
     grade: excellence
     from: "2023"
     working:

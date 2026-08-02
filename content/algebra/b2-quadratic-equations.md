@@ -92,7 +92,7 @@ questions:
       - math: x = -7 \quad\textsf{or}\quad x = 7
   - ask: Solve.
     math: 2x - 9 = \dfrac{5}{x}
-    grade: merit
+    grade: achieved
     from: "2024"
     working:
       - math: 2x^2 - 9x = 5
@@ -237,7 +237,7 @@ steps:
     note: Minus a negative seven is plus seven, and a negative squared is positive.
   - math: x = \dfrac{7 \pm 1}{6}
   - math: x = \dfrac{4}{3} \quad\textsf{or}\quad x = 1
-    note: The two signs are worked out separately, giving $\frac{8}{6}$ and $\frac{6}{6}$.
+    note: The two signs are worked out separately, giving $\dfrac{8}{6}$ and $\dfrac{6}{6}$.
 ```
 
 What comes out under the root sign is often not a whole number, and it is left as a surd where the question asks for exact answers and turned into a decimal where it does not. Where letters rather than numbers go in, the surd may simplify: $\sqrt{36k^2 - 32k^2}$ is $\sqrt{4k^2}$, which is $2k$.
@@ -272,7 +272,7 @@ questions:
       - math: x = \dfrac{6k \pm 2k}{4}
         note: $\sqrt{4k^2}$ is $2k$, so the surd disappears altogether.
       - math: x = 2k \quad\textsf{or}\quad x = k
-        note: The two signs are taken separately, giving $\frac{8k}{4}$ and $\frac{4k}{4}$.
+        note: The two signs are taken separately, giving $\dfrac{8k}{4}$ and $\dfrac{4k}{4}$.
 ```
 
 ---
@@ -371,14 +371,14 @@ questions:
         note: The sign reverses between the root and its bracket.
       - math: x^2 + 2x - 15 = 0
   - ask: Find a quadratic equation with integer coefficients whose roots are $\dfrac{1}{2}$ and $-3$.
-    grade: merit
+    grade: achieved
     working:
       - math: \left(x - \dfrac{1}{2}\right)(x + 3) = 0
       - math: (2x - 1)(x + 3) = 0
         note: Multiply the fractional bracket by $2$, which leaves its root unchanged.
       - math: 2x^2 + 5x - 3 = 0
   - ask: A quadratic equation $ax^2 + bx + c = 0$ has solutions $\dfrac{1}{4}$ and $-\dfrac{2}{3}$. Find integer values of $a$, $b$ and $c$.
-    grade: merit
+    grade: achieved
     from: "2025"
     working:
       - math: (4x - 1)(3x + 2) = 0
@@ -448,7 +448,7 @@ steps:
     note: The model is complete, and any height along the flight can now be calculated from it.
 ```
 
-Reading a value out of a finished model is substitution and nothing more. At $x = 35$, the height is $-0.02(15)^2 + 8$, which is $3.5$ m.
+Reading a value out of a finished model is substitution and nothing more: the completed model $y = -0.02(x - 20)^2 + 8$ gives a height of $-0.02(15)^2 + 8$ at $x = 35$, which is $3.5$ m.
 
 ```practice
 caption: forming a quadratic

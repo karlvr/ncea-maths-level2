@@ -13,12 +13,12 @@ The gradient function was introduced as steepness, but steepness is itself a rat
 ```figure
 caption: A rate, read from a model
 steps:
-  - math: C(t) = \dfrac{t^3}{75} - 2t^2 + 96t + 180
-    note: "A concentration in µg/L, $t$ in minutes. *How fast is it changing at $t = 50$?* is a gradient question."
-  - math: C'(t) = \dfrac{t^2}{25} - 4t + 96
+  - math: C(t) = \dfrac{t^3}{12} - 5t^2 + 84t + 40
+    note: "A concentration in µg/L, $t$ in minutes. *How fast is it changing at $t = 20$?* is a gradient question."
+  - math: C'(t) = \dfrac{t^2}{4} - 10t + 84
     note: "Differentiate as always—the letters changed, the rule did not."
-  - math: C'(50) = 100 - 200 + 96 = -4
-    note: "Negative, so the concentration is falling: it is decreasing by $4$ µg/L per minute at that moment."
+  - math: C'(20) = 100 - 200 + 84 = -16
+    note: "Negative, so the concentration is falling: it is decreasing by $16$ µg/L per minute at that moment."
 ```
 
 The variables need not involve time at all. The 2025 paper asks for the rate of change of a triangle's area *with respect to its height*—the answer is $\dfrac{dA}{dh}$, the same differentiation with $h$ standing where $x$ usually does, and its unit is area per unit of height.
@@ -26,6 +26,15 @@ The variables need not involve time at all. The 2025 paper asks for the rate of 
 ```practice
 caption: rates in context
 questions:
+  - ask: The concentration of a drug in the bloodstream is modelled by the function below, where $C$ is in µg/L and $t$ is in minutes. Show that the rate of change of concentration is $-4$ µg/L per minute when $t = 50$.
+    math: C(t) = \dfrac{t^3}{75} - 2t^2 + 96t + 180
+    grade: achieved
+    from: "2025"
+    working:
+      - math: C'(t) = \dfrac{t^2}{25} - 4t + 96
+      - math: C'(50) = \dfrac{2500}{25} - 200 + 96
+      - math: C'(50) = 100 - 200 + 96 = -4
+        note: "A *show that* answer ends by stating what was shown: the rate of change at $t = 50$ is $-4$ µg/L per minute."
   - ask: A triangle's base is always three times its perpendicular height $h$. Find the rate of change of its area with respect to its height when the area is $96$ cm$^2$.
     grade: merit
     from: "2025"
@@ -36,15 +45,8 @@ questions:
       - math: \dfrac{3h^2}{2} = 96 \qquad\Rightarrow\qquad h^2 = 64 \qquad h = 8 \;\;\textsf{(reject } -8\textsf{)}
         note: "The question names the moment by the area, so the height at that moment has to be recovered from it."
       - math: \dfrac{dA}{dh} = 3(8) = 24 \;\textsf{cm}^2\textsf{ per cm}
-  - ask: The concentration of a drug in the bloodstream is modelled by $C(t) = \dfrac{t^3}{75} - 2t^2 + 96t + 180$, where $C$ is in µg/L and $t$ is in minutes. Show that the rate of change of concentration is $-4$ µg/L per minute when $t = 50$.
-    grade: merit
-    from: "2025"
-    working:
-      - math: C'(t) = \dfrac{t^2}{25} - 4t + 96
-      - math: C'(50) = \dfrac{2500}{25} - 200 + 96
-      - math: C'(50) = 100 - 200 + 96 = -4
-        note: "A *show that* answer ends by stating what was shown: the rate of change at $t = 50$ is $-4$ µg/L per minute."
-  - ask: For the drug model in the previous question, use calculus to find the time at which the concentration is greatest, and justify that it is a maximum.
+  - ask: For the drug concentration model below, use calculus to find the time at which the concentration is greatest, and justify that it is a maximum.
+    math: C(t) = \dfrac{t^3}{75} - 2t^2 + 96t + 180
     grade: excellence
     from: "2025"
     working:
@@ -98,6 +100,29 @@ steps:
     note: "One more step down the ladder gives the acceleration, if the question wants it."
 ```
 
+```practice
+caption: down the ladder
+questions:
+  - ask: The distance travelled by a particle is given by $s(t) = 2t^3 - 5t^2 + 4t$ metres after $t$ seconds. Find the particle's velocity and acceleration when $t = 2$.
+    grade: achieved
+    working:
+      - math: v(t) = s'(t) = 6t^2 - 10t + 4
+      - math: v(2) = 24 - 20 + 4 = 8 \;\textsf{m/s}
+      - math: a(t) = v'(t) = 12t - 10
+      - math: a(2) = 14 \;\textsf{m/s}^2
+        note: "Velocity is one step down the ladder from distance; acceleration is one more."
+  - ask: A particle's distance from its starting point is given by the function below, in metres after $t$ seconds. Use calculus to find the times at which the particle is at rest, and its acceleration at each of those times.
+    math: s(t) = t^3 - 12t^2 + 36t
+    grade: merit
+    working:
+      - math: v(t) = 3t^2 - 24t + 36 = 3(t - 2)(t - 6)
+        note: "At rest converts to velocity zero."
+      - math: v(t) = 0 \qquad\Rightarrow\qquad t = 2 \;\textsf{ or }\; t = 6
+      - math: a(t) = v'(t) = 6t - 24
+      - math: a(2) = -12 \;\textsf{m/s}^2 \qquad a(6) = 12 \;\textsf{m/s}^2
+        note: "The particle is momentarily at rest both times, but the acceleration says what happens next—slowing into the first stop, speeding away from the second."
+```
+
 ---
 
 ## Up the ladder
@@ -110,7 +135,7 @@ steps:
   - math: a(t) = 0.8
     note: "A truck accelerates from rest at $0.8$ m/s². How far has it gone when it reaches $20$ m/s?"
   - math: v(t) = 0.8t + c
-    note: "Anti-differentiate. The constant is not decoration—it is the starting velocity."
+    note: "Anti-differentiate. The constant is the starting velocity."
   - math: v(0) = 0 \;\Rightarrow\; c = 0 \qquad v(t) = 0.8t
     note: "*From rest* means the velocity at $t = 0$ is zero. The evidence for $c = 0$ is written, not assumed—the 2024 schedule awards the step *with evidence that $c = 0$*."
   - math: 0.8t = 20 \qquad\Rightarrow\qquad t = 25
@@ -126,16 +151,16 @@ The two constants are the working. A schedule step is reserved for each: evidenc
 Physics offers formulas for this situation, such as $v = u + at$ and its relatives, and they must stay in the physics exam. The 2024 report is blunt: *"many candidates reverted to physics for this question, which involves no use of calculus so is not considered for any grade"*. The question says *use calculus*, and the anti-differentiation on the page is what gets marked; a correct distance produced from a memorised physics formula earns nothing at all.
 
 ```practice
-caption: along the ladder
+caption: up the ladder
 questions:
-  - ask: The distance travelled by a particle is given by $s(t) = 2t^3 - 5t^2 + 4t$ metres after $t$ seconds. Find the particle's velocity and acceleration when $t = 2$.
+  - ask: A train leaves a station from rest, accelerating at a constant $0.4$ m/s². Use calculus to find how far the train travels in the first $30$ seconds.
     grade: achieved
     working:
-      - math: v(t) = s'(t) = 6t^2 - 10t + 4
-      - math: v(2) = 24 - 20 + 4 = 8 \;\textsf{m/s}
-      - math: a(t) = v'(t) = 12t - 10
-      - math: a(2) = 14 \;\textsf{m/s}^2
-        note: "Velocity is one step down the ladder from distance; acceleration is one more."
+      - math: a(t) = 0.4
+      - math: v(t) = 0.4t + c \qquad c = 0 \;\textsf{ since the train starts from rest}
+      - math: s(t) = 0.2t^2 + c \qquad c = 0 \;\textsf{ since distance is measured from the station}
+        note: "Each constant carries its sentence of evidence, even when both turn out to be zero."
+      - math: s(30) = 0.2(900) = 180 \;\textsf{m}
   - ask: A car accelerates from rest at a constant $0.75$ m/s² until it reaches its top speed of $30$ m/s. Use calculus to find the distance the car travels until it reaches its top speed.
     grade: merit
     from: "2024"
@@ -180,9 +205,9 @@ questions:
     grade: excellence
     from: "2025"
     working:
-      - math: \textsf{Ferry:}\quad v(t) = 6 \qquad s(t) = 6t + 240
+      - math: '\textsf{Ferry:}\quad v(t) = 6 \qquad s(t) = 6t + 240'
         note: "Constant speed anti-differentiates to $6t + c$, and the ferry's $240$ m head start is its constant. Measuring both distances from the wharf, from the moment the boat launches, is the decision that makes the two equations comparable."
-      - math: \textsf{Boat:}\quad a(t) = 0.6 \qquad v(t) = 0.6t \qquad s(t) = 0.3t^2
+      - math: '\textsf{Boat:}\quad a(t) = 0.6 \qquad v(t) = 0.6t \qquad s(t) = 0.3t^2'
         note: "From rest at the wharf, both constants are zero—stated with their evidence."
       - math: 0.3t^2 = 6t + 240
         note: "Catching up means the two distances are equal."

@@ -187,7 +187,7 @@ steps:
   - math: k^2 - 36 = 0
     note: An equation in $k$, and it is itself a quadratic.
   - math: k = 6 \quad\textsf{or}\quad k = -6
-    note: Two values, and both are answers. Only the positive one is a common way to lose half the marks.
+    note: Two values, and both are answers. Giving only the positive one is a common way to lose half the marks.
 ```
 
 The equation in $k$ is solved by the methods of B2, and its own discriminant is of no interest—it is a quadratic like any other, and the discriminant belonged to the original equation in $x$.

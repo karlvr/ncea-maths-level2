@@ -322,13 +322,13 @@ questions:
       - graph:
           domain: [-3, 3]
           curves:
-            - poly: [0.33, 0, -1, 0]
+            - poly: [0.333333, 0, -1, 0]
               color: a
               label: f
           points:
-            - at: [-1, 0.67]
+            - at: [-1, 0.666667]
               color: a
-            - at: [1, -0.67]
+            - at: [1, -0.666667]
               color: a
           xticks: [-1, 1]
         note: "A parabola as the gradient function makes $f$ a cubic. At $x = -1$, $f'$ crosses from positive to negative, so $f$ has a maximum; at $x = 1$ it crosses back, a minimum. Any vertical position is correct, because no point was given—the word *possible* is in the question for that reason."

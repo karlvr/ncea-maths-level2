@@ -30,7 +30,7 @@ steps:
 
 ### Substituting needs brackets
 
-When substituting $x$ for a number, write the number inside brackets before doing any arithmetic. The brackets keep the number attached to whatever was being done to $x$.
+When substituting a number for $x$, write the number inside brackets before doing any arithmetic. The brackets keep the number attached to whatever was being done to $x$.
 
 Substitute $-3$ for $x$ in $x^2$. With brackets, the whole of $-3$ is squared, and the answer is $9$. Without them, only the $3$ is squared and the minus is left sitting outside, which gives $-9$, which is incorrect.
 
@@ -45,7 +45,7 @@ steps:
     note: Without them, only the $3$ is squared, and the minus stays outside it.
 ```
 
-The expression $-x^2$ means square $x$ and then make the result negative. $(-x)^2$ means square the whole of $-x$ (which becomes positive). The examiner's reports list substituting incorrectly and mishandling negative numbers as separate reasons candidates did not achieve.
+The expression $-x^2$ means square $x$ and then make the result negative. $(-x)^2$ means square the whole of $-x$ (which becomes positive). The 2025 report lists substituting incorrectly and mishandling negative numbers as separate reasons candidates did not achieve.
 
 What you substitute is often an expression rather than a number, and the brackets matter more there, because there is more inside them for the operation to reach. If the radius of a circle is $2x$, the area is $\pi(2x)^2$, which is $4\pi x^2$. Leave the brackets off and the square reaches the $x$ but not the $2$, and every line after that is wrong. The 2024 report names that error exactly: candidates who formed a correct expression and then did not put brackets around the radius.
 
@@ -157,7 +157,7 @@ steps:
   - math: x^2 + 7x + 10
 ```
 
-Three brackets are expanded the same way, two at a time: expand any two of them, then multiply that result by the bracket left over. The 2024 report describes candidates who identified three correct factors and then could not expand them, so the expansion is worth practising on its own.
+Three brackets are expanded the same way, two at a time: expand any two of them, then multiply that result by the bracket left over. The 2024 report describes candidates who identified three correct factors and then could not expand them.
 
 **Factorising** converts a sum of terms into a product. Starting from $x^2 + 7x + 10$, you recover $(x+2)(x+5)$.
 
@@ -326,7 +326,7 @@ Two conditions must both hold. The two terms, $a^2$ and $b^2$, are both perfect 
 
 A perfect square is an expression that is the square of another expression, with no surd left over (a surd is a $\sqrt{\phantom{x}}$ that cannot be simplified away). $16$ is a perfect square because it is $4^2$, and $9x^2$ is one because it is $(3x)^2$. $5$ is not, because its square root is $\sqrt{5}$.
 
-An easy one:
+$x^2 - 9$ factorises at sight.
 
 ```figure
 steps:
@@ -335,7 +335,7 @@ steps:
     note: $9$ is $3^2$.
 ```
 
-A less obvious one:
+$4x^2 - 25$ takes one step more, because each term has to be recognised as a square first.
 
 ```figure
 steps:
@@ -381,7 +381,7 @@ questions:
       - math: 2(25x^2 - 4)
         note: Take out the common factor first, and the bracket can now use difference of two squares. The “fully” in the question means keep going after this first factorisation.
       - math: 2(5x+2)(5x-2)
-        note: Now fully factorised. The $2$ we took out in the first step is one of the factors; be careful not to lose it.
+        note: Now fully factorised. The $2$ taken out in the first step is one of the factors, and it stays in the answer.
 ```
 
 ### Method 3—quadratic trinomials
@@ -540,7 +540,7 @@ questions:
       - math: 2(2x+5)(2x-5)
   - ask: Find the value of $k$ for which the expression is a perfect square.
     math: 25x^2 - 40x + k
-    grade: merit
+    grade: achieved
     from: "2025"
     working:
       - math: (\ca{5x} + \cb{?})^2
