@@ -35,6 +35,14 @@ questions:
       - math: C'(50) = \dfrac{2500}{25} - 200 + 96
       - math: C'(50) = 100 - 200 + 96 = -4
         note: "A *show that* answer ends by stating what was shown: the rate of change at $t = 50$ is $-4$ µg/L per minute."
+  - ask: The concentration of a drug in the bloodstream is modelled by the function below, where $C$ is in µg/L and $t$ is in minutes. Show that the rate of change of concentration is $50$ µg/L per minute when $t = 25$.
+    math: C(t) = \dfrac{t^3}{75} - 2.5t^2 + 150t + 200
+    grade: achieved
+    working:
+      - math: C'(t) = \dfrac{t^2}{25} - 5t + 150
+      - math: C'(25) = \dfrac{625}{25} - 125 + 150
+      - math: C'(25) = 25 - 125 + 150 = 50
+        note: "A *show that* answer ends by stating what was shown: the rate of change at $t = 25$ is $50$ µg/L per minute."
   - ask: A triangle's base is always three times its perpendicular height $h$. Find the rate of change of its area with respect to its height when the area is $96$ cm$^2$.
     grade: merit
     from: "2025"
@@ -45,6 +53,15 @@ questions:
       - math: \dfrac{3h^2}{2} = 96 \qquad\Rightarrow\qquad h^2 = 64 \qquad h = 8 \;\;\textsf{(reject } -8\textsf{)}
         note: "The question names the moment by the area, so the height at that moment has to be recovered from it."
       - math: \dfrac{dA}{dh} = 3(8) = 24 \;\textsf{cm}^2\textsf{ per cm}
+  - ask: A triangle's base is always four times its perpendicular height $h$. Find the rate of change of its area with respect to its height when the area is $128$ cm$^2$.
+    grade: merit
+    working:
+      - math: A = \dfrac{1}{2} \cdot 4h \cdot h = 2h^2
+        note: "Form the polynomial first, in the one variable the rate is measured against."
+      - math: \dfrac{dA}{dh} = 4h
+      - math: 2h^2 = 128 \qquad\Rightarrow\qquad h^2 = 64 \qquad h = 8 \;\;\textsf{(reject } -8\textsf{)}
+        note: "The question names the moment by the area, so the height at that moment has to be recovered from it."
+      - math: \dfrac{dA}{dh} = 4(8) = 32 \;\textsf{cm}^2\textsf{ per cm}
   - ask: For the drug concentration model below, use calculus to find the time at which the concentration is greatest, and justify that it is a maximum.
     math: C(t) = \dfrac{t^3}{75} - 2t^2 + 96t + 180
     grade: excellence
@@ -57,6 +74,18 @@ questions:
       - math: (t - 40)(t - 60) = 0 \qquad t = 40 \;\textsf{ or }\; t = 60
       - math: C''(t) = \dfrac{2t}{25} - 4 \qquad C''(40) = -0.8 < 0
       - math: \therefore\;\textsf{the concentration is greatest at } t = 40 \textsf{ minutes}
+        note: "Two candidates, one justified choice—and the conclusion is given in the words of the model, not just as an $x$-value."
+  - ask: For the drug concentration model below, use calculus to find the time at which the concentration is greatest, and justify that it is a maximum.
+    math: C(t) = \dfrac{t^3}{75} - 2.5t^2 + 150t + 200
+    grade: excellence
+    working:
+      - math: C'(t) = \dfrac{t^2}{25} - 5t + 150 = 0
+        note: "Greatest means a maximum, and a maximum is a turning point of $C$."
+      - math: t^2 - 125t + 3750 = 0
+        note: "Multiplying through by $25$ clears the fraction before factorising."
+      - math: (t - 50)(t - 75) = 0 \qquad t = 50 \;\textsf{ or }\; t = 75
+      - math: C''(t) = \dfrac{2t}{25} - 5 \qquad C''(50) = -1 < 0
+      - math: \therefore\;\textsf{the concentration is greatest at } t = 50 \textsf{ minutes}
         note: "Two candidates, one justified choice—and the conclusion is given in the words of the model, not just as an $x$-value."
 ```
 
@@ -111,6 +140,14 @@ questions:
       - math: a(t) = v'(t) = 12t - 10
       - math: a(2) = 14 \;\textsf{m/s}^2
         note: "Velocity is one step down the ladder from distance; acceleration is one more."
+  - ask: The distance travelled by a particle is given by $s(t) = 3t^3 - 4t^2 + 2t$ metres after $t$ seconds. Find the particle's velocity and acceleration when $t = 2$.
+    grade: achieved
+    working:
+      - math: v(t) = s'(t) = 9t^2 - 8t + 2
+      - math: v(2) = 36 - 16 + 2 = 22 \;\textsf{m/s}
+      - math: a(t) = v'(t) = 18t - 8
+      - math: a(2) = 28 \;\textsf{m/s}^2
+        note: "Velocity is one step down the ladder from distance; acceleration is one more."
   - ask: A particle's distance from its starting point is given by the function below, in metres after $t$ seconds. Use calculus to find the times at which the particle is at rest, and its acceleration at each of those times.
     math: s(t) = t^3 - 12t^2 + 36t
     grade: merit
@@ -120,6 +157,16 @@ questions:
       - math: v(t) = 0 \qquad\Rightarrow\qquad t = 2 \;\textsf{ or }\; t = 6
       - math: a(t) = v'(t) = 6t - 24
       - math: a(2) = -12 \;\textsf{m/s}^2 \qquad a(6) = 12 \;\textsf{m/s}^2
+        note: "The particle is momentarily at rest both times, but the acceleration says what happens next—slowing into the first stop, speeding away from the second."
+  - ask: A particle's distance from its starting point is given by the function below, in metres after $t$ seconds. Use calculus to find the times at which the particle is at rest, and its acceleration at each of those times.
+    math: s(t) = t^3 - 9t^2 + 24t
+    grade: merit
+    working:
+      - math: v(t) = 3t^2 - 18t + 24 = 3(t - 2)(t - 4)
+        note: "At rest converts to velocity zero."
+      - math: v(t) = 0 \qquad\Rightarrow\qquad t = 2 \;\textsf{ or }\; t = 4
+      - math: a(t) = v'(t) = 6t - 18
+      - math: a(2) = -6 \;\textsf{m/s}^2 \qquad a(4) = 6 \;\textsf{m/s}^2
         note: "The particle is momentarily at rest both times, but the acceleration says what happens next—slowing into the first stop, speeding away from the second."
 ```
 
@@ -161,6 +208,14 @@ questions:
       - math: s(t) = 0.2t^2 + c \qquad c = 0 \;\textsf{ since distance is measured from the station}
         note: "Each constant carries its sentence of evidence, even when both turn out to be zero."
       - math: s(30) = 0.2(900) = 180 \;\textsf{m}
+  - ask: A tram leaves a stop from rest, accelerating at a constant $0.5$ m/s². Use calculus to find how far the tram travels in the first $20$ seconds.
+    grade: achieved
+    working:
+      - math: a(t) = 0.5
+      - math: v(t) = 0.5t + c \qquad c = 0 \;\textsf{ since the tram starts from rest}
+      - math: s(t) = 0.25t^2 + c \qquad c = 0 \;\textsf{ since distance is measured from the stop}
+        note: "Each constant carries its sentence of evidence, even when both turn out to be zero."
+      - math: s(20) = 0.25(400) = 100 \;\textsf{m}
   - ask: A car accelerates from rest at a constant $0.75$ m/s² until it reaches its top speed of $30$ m/s. Use calculus to find the distance the car travels until it reaches its top speed.
     grade: merit
     from: "2024"
@@ -171,6 +226,15 @@ questions:
       - math: s(t) = 0.375t^2 + c \qquad c = 0 \;\textsf{ since distance is measured from the start}
         note: "Each anti-differentiation brings its own constant, and each constant gets its own sentence of evidence."
       - math: s(40) = 0.375(1600) = 600 \;\textsf{m}
+  - ask: A boat accelerates from rest at a constant $0.8$ m/s² until it reaches its top speed of $24$ m/s. Use calculus to find the distance the boat travels until it reaches its top speed.
+    grade: merit
+    working:
+      - math: a(t) = 0.8
+      - math: v(t) = 0.8t + c \qquad c = 0 \;\textsf{ since the boat starts from rest}
+      - math: 0.8t = 24 \qquad\Rightarrow\qquad t = 30 \;\textsf{s}
+      - math: s(t) = 0.4t^2 + c \qquad c = 0 \;\textsf{ since distance is measured from the start}
+        note: "Each anti-differentiation brings its own constant, and each constant gets its own sentence of evidence."
+      - math: s(30) = 0.4(900) = 360 \;\textsf{m}
 ```
 
 ---
@@ -189,6 +253,14 @@ questions:
       - math: t = 6 \;\textsf{s}
       - math: s(6) = 72 - 36 = 36 \;\textsf{m}
         note: "The distance comes from $s$, one rung up from where the time was found."
+  - ask: A ball rolls so that its distance from its starting point is $s(t) = 16t - 2t^2$ metres after $t$ seconds. Use calculus to find when the ball is at rest, and how far it has rolled by then.
+    grade: merit
+    working:
+      - math: v(t) = 16 - 4t = 0
+        note: "At rest converts to velocity zero."
+      - math: t = 4 \;\textsf{s}
+      - math: s(4) = 64 - 32 = 32 \;\textsf{m}
+        note: "The distance comes from $s$, one rung up from where the time was found."
   - ask: A car is travelling at $25$ m/s when the driver brakes, decelerating at a constant $2.5$ m/s² until the car stops. Use calculus to find how far the car travels while braking.
     grade: merit
     from: "2023"
@@ -201,6 +273,17 @@ questions:
         note: "Stopping means velocity zero."
       - math: s(t) = -1.25t^2 + 25t \qquad\textsf{measuring distance from where braking began}
       - math: s(10) = -125 + 250 = 125 \;\textsf{m}
+  - ask: A van is travelling at $30$ m/s when the driver brakes, decelerating at a constant $2$ m/s² until the van stops. Use calculus to find how far the van travels while braking.
+    grade: merit
+    working:
+      - math: a(t) = -2
+        note: "Deceleration is negative acceleration, and the sign has to survive into the equation."
+      - math: v(t) = -2t + c \qquad c = 30 \;\textsf{ since the van is doing } 30 \textsf{ m/s when braking begins}
+        note: "This time the starting state is not rest, so the constant is not zero—it is the initial speed."
+      - math: 30 - 2t = 0 \qquad\Rightarrow\qquad t = 15 \;\textsf{s}
+        note: "Stopping means velocity zero."
+      - math: s(t) = -t^2 + 30t \qquad\textsf{measuring distance from where braking began}
+      - math: s(15) = -225 + 450 = 225 \;\textsf{m}
   - ask: A ferry leaves a wharf at a constant speed of $6$ m/s. When the ferry is $240$ m from the wharf, a police boat sets off after it from the wharf, accelerating at a constant $0.6$ m/s². Use calculus to find the distance from the wharf at which the police boat catches the ferry.
     grade: excellence
     from: "2025"
@@ -214,6 +297,18 @@ questions:
       - math: t^2 - 20t - 800 = 0 \qquad\Rightarrow\qquad (t - 40)(t + 20) = 0
       - math: t = 40 \;\textsf{s} \;\;\textsf{(reject } t = -20\textsf{)}
       - math: s(40) = 0.3(1600) = 480 \;\textsf{m from the wharf}
+  - ask: A cyclist rides away from a gate at a constant speed of $8$ m/s. When the cyclist is $420$ m from the gate, a motorbike sets off after the cyclist from the gate, accelerating at a constant $0.4$ m/s². Use calculus to find the distance from the gate at which the motorbike catches the cyclist.
+    grade: excellence
+    working:
+      - math: '\textsf{Cyclist:}\quad v(t) = 8 \qquad s(t) = 8t + 420'
+        note: "Constant speed anti-differentiates to $8t + c$, and the cyclist's $420$ m head start is its constant. Measuring both distances from the gate, from the moment the motorbike sets off, is the decision that makes the two equations comparable."
+      - math: '\textsf{Motorbike:}\quad a(t) = 0.4 \qquad v(t) = 0.4t \qquad s(t) = 0.2t^2'
+        note: "From rest at the gate, both constants are zero—stated with their evidence."
+      - math: 0.2t^2 = 8t + 420
+        note: "Catching up means the two distances are equal."
+      - math: t^2 - 40t - 2100 = 0 \qquad\Rightarrow\qquad (t - 70)(t + 30) = 0
+      - math: t = 70 \;\textsf{s} \;\;\textsf{(reject } t = -30\textsf{)}
+      - math: s(70) = 0.2(4900) = 980 \;\textsf{m from the gate}
 ```
 
 ---

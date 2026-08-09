@@ -77,6 +77,12 @@ questions:
         note: Work left to right, one law at a time.
       - math: x^{11-3} = x^8
   - ask: Simplify.
+    math: x^5 \times x^6 \div x^4
+    grade: achieved
+    working:
+      - math: x^{5+6} = x^{11}
+      - math: x^{11-4} = x^7
+  - ask: Simplify.
     math: (y^4)^3 \times y^2
     grade: achieved
     working:
@@ -84,6 +90,12 @@ questions:
         note: A power of a power multiplies. Do that before the multiplication outside it.
       - math: y^{12} \times y^2 = y^{14}
         note: The two exponents are combined by adding, not by multiplying again.
+  - ask: Simplify.
+    math: (y^5)^2 \times y^3
+    grade: achieved
+    working:
+      - math: y^{5 \times 2} \times y^3
+      - math: y^{10} \times y^3 = y^{13}
   - ask: Simplify.
     math: \dfrac{12a^5b^3}{4a^2b^3}
     grade: merit
@@ -93,6 +105,14 @@ questions:
       - math: 3 \times a^{5-2} \times b^{3-3}
       - math: 3a^3
         note: $b^0$ is $1$, so the $b$ leaves altogether rather than staying as $b$.
+  - ask: Simplify.
+    math: \dfrac{20a^6b^4}{5a^2b^4}
+    grade: merit
+    working:
+      - math: \dfrac{20}{5} \times \dfrac{a^6}{a^2} \times \dfrac{b^4}{b^4}
+        note: Split it by base. The numbers are their own base and divide as numbers.
+      - math: 4 \times a^{6-2} \times b^{4-4}
+      - math: 4a^4
 ```
 
 ---
@@ -133,6 +153,20 @@ questions:
         note: The power reaches the $3$ as well as the $x$.
       - math: 9x^8
   - ask: Simplify.
+    math: (2x^5)^3
+    grade: achieved
+    working:
+      - math: \ca{2^3} \times \cb{(x^5)^3}
+        note: The power reaches the $2$ as well as the $x$.
+      - math: 8x^{15}
+  - ask: Simplify.
+    math: \left(\dfrac{x^4}{3}\right)^2
+    grade: achieved
+    working:
+      - math: \dfrac{(x^4)^2}{3^2}
+        note: The power reaches the top and the bottom.
+      - math: \dfrac{x^8}{9}
+  - ask: Simplify.
     math: (2y)^3 \times (3y^2)^2
     grade: merit
     working:
@@ -140,6 +174,13 @@ questions:
         note: $2^3$ is $8$ and $3^2$ is $9$. Neither number is left alone.
       - math: 72y^7
         note: The 2025 report names writing $2y^3$ for the first of these as a common failure.
+  - ask: Simplify.
+    math: (3y)^2 \times (2y^3)^3
+    grade: merit
+    working:
+      - math: \ca{9y^2} \times \cb{8y^9}
+        note: $3^2$ is $9$ and $2^3$ is $8$. Neither number is left alone.
+      - math: 72y^{11}
   - ask: Expand.
     math: (x+2y)^2
     grade: merit
@@ -148,6 +189,14 @@ questions:
         note: A sum inside a bracket has to be written out, not distributed over.
       - math: x^2 + 2xy + 2xy + 4y^2
       - math: x^2 + 4xy + 4y^2
+  - ask: Expand.
+    math: (2x+3y)^2
+    grade: merit
+    working:
+      - math: (2x+3y)(2x+3y)
+        note: A sum inside a bracket has to be written out, not distributed over.
+      - math: 4x^2 + 6xy + 6xy + 9y^2
+      - math: 4x^2 + 12xy + 9y^2
 ```
 
 ---
@@ -269,6 +318,18 @@ questions:
       - math: x^{\frac{3}{4}}
         note: The $3$ and the $4$ do not swap. The root is always the denominator.
   - ask: Write in index form.
+    math: \sqrt[5]{x^2}
+    grade: achieved
+    working:
+      - math: x^{\frac{2}{5}}
+        note: The root is the denominator, and the power the numerator sat under it.
+  - ask: Write in surd form.
+    math: x^{\frac{5}{3}}
+    grade: achieved
+    working:
+      - math: \sqrt[3]{x^5}
+        note: The denominator becomes the root and the numerator the power, which is the same rule read backwards.
+  - ask: Write in index form.
     math: \dfrac{2}{\sqrt[3]{x}}
     grade: achieved
     working:
@@ -276,6 +337,13 @@ questions:
         note: The $2$ is not under the root sign, so the root does not reach it.
       - math: 2x^{-\frac{1}{3}}
         note: Only the power moves up out of the denominator. The $2$ stays where it is.
+  - ask: Write in index form.
+    math: \dfrac{5}{\sqrt{x}}
+    grade: achieved
+    working:
+      - math: \dfrac{5}{x^{\frac{1}{2}}}
+        note: A square root is the power $\dfrac{1}{2}$, with no number written under the sign.
+      - math: 5x^{-\frac{1}{2}}
   - ask: Simplify, giving your answer in index form.
     math: \sqrt{x} \times \sqrt[3]{x}
     grade: merit
@@ -286,6 +354,14 @@ questions:
         note: The same base now, so the exponents add.
       - math: x^{\frac{5}{6}}
         note: A half and a third go over a common denominator of $6$.
+  - ask: Simplify, giving your answer in index form.
+    math: \sqrt{x} \times \sqrt[4]{x}
+    grade: merit
+    working:
+      - math: x^{\frac{1}{2}} \times x^{\frac{1}{4}}
+        note: Two different roots cannot be combined as roots. Convert them both first.
+      - math: x^{\frac{1}{2} + \frac{1}{4}}
+      - math: x^{\frac{3}{4}}
 ```
 
 ```practice
@@ -298,6 +374,26 @@ questions:
       - math: \big(\sqrt{16}\big)^3
         note: The $2$ underneath is the root, so the root is a square root.
       - math: 4^3 = 64
+  - ask: Evaluate.
+    math: 27^{\frac{2}{3}}
+    grade: achieved
+    working:
+      - math: \big(\sqrt[3]{27}\big)^2
+        note: The $3$ underneath is the root, so the root is a cube root.
+      - math: 3^2 = 9
+  - ask: Simplify.
+    math: 4x^0
+    grade: achieved
+    working:
+      - math: 4 \times 1
+        note: The exponent belongs to the $x$ alone, so only the $x$ becomes $1$.
+      - math: "4"
+  - ask: Simplify.
+    math: (4x)^0
+    grade: achieved
+    working:
+      - math: "1"
+        note: The bracket puts the $4$ under the exponent as well, and anything to the power $0$ is $1$.
   - ask: Write without a negative exponent.
     math: 5x^{-3}
     grade: achieved
@@ -305,6 +401,12 @@ questions:
       - math: 5 \times \dfrac{1}{x^3}
         note: The exponent belongs to the $x$ alone, so the $5$ does not move.
       - math: \dfrac{5}{x^3}
+  - ask: Write without a negative exponent.
+    math: 7x^{-2}
+    grade: achieved
+    working:
+      - math: 7 \times \dfrac{1}{x^2}
+      - math: \dfrac{7}{x^2}
   - ask: Simplify, leaving your answer with positive exponents.
     math: \dfrac{6x^{-2}y^4}{9x^3y^{-1}}
     grade: merit
@@ -314,6 +416,14 @@ questions:
       - math: \tfrac{2}{3}x^{-5}y^5
       - math: \dfrac{2y^5}{3x^5}
         note: A negative exponent on top becomes a positive one underneath.
+  - ask: Simplify, leaving your answer with positive exponents.
+    math: \dfrac{8x^{-1}y^5}{12x^3y^{-2}}
+    grade: merit
+    working:
+      - math: \dfrac{8}{12} \times x^{-1-3} \times y^{5-(-2)}
+        note: Subtract the exponents by base. Subtracting $-2$ adds $2$.
+      - math: \tfrac{2}{3}x^{-4}y^7
+      - math: \dfrac{2y^7}{3x^4}
   - ask: Evaluate.
     math: \left(\dfrac{27}{8}\right)^{-\frac{2}{3}}
     grade: merit
@@ -323,6 +433,15 @@ questions:
       - math: \left(\sqrt[3]{\dfrac{8}{27}}\right)^2 = \left(\dfrac{2}{3}\right)^2
         note: Root first, top and bottom.
       - math: \dfrac{4}{9}
+  - ask: Evaluate.
+    math: \left(\dfrac{16}{9}\right)^{-\frac{3}{2}}
+    grade: merit
+    working:
+      - math: \left(\dfrac{9}{16}\right)^{\frac{3}{2}}
+        note: A negative exponent on a fraction turns the fraction over.
+      - math: \left(\sqrt{\dfrac{9}{16}}\right)^3 = \left(\dfrac{3}{4}\right)^3
+        note: Root first, top and bottom.
+      - math: \dfrac{27}{64}
 ```
 
 ---
@@ -372,6 +491,14 @@ questions:
         note: A square root is the power $\dfrac{1}{2}$, and it reaches the top and the bottom.
       - math: 4y \times \dfrac{y^3}{5}
       - math: \dfrac{4y^4}{5}
+  - ask: Simplify.
+    math: 3y \times \sqrt{\dfrac{y^4}{49}}
+    grade: achieved
+    working:
+      - math: \sqrt{\dfrac{y^4}{49}} = \dfrac{y^2}{7}
+        note: A square root is the power $\dfrac{1}{2}$, and it reaches the top and the bottom.
+      - math: 3y \times \dfrac{y^2}{7}
+      - math: \dfrac{3y^3}{7}
   - ask: Simplify, leaving your answer with positive exponents.
     math: \dfrac{9(3n)^2}{n^5}
     grade: achieved
@@ -382,6 +509,14 @@ questions:
       - math: \dfrac{81n^2}{n^5} = 81n^{-3}
       - math: \dfrac{81}{n^3}
         note: Positive exponents were asked for, so the answer cannot be left at the line above.
+  - ask: Simplify, leaving your answer with positive exponents.
+    math: \dfrac{4(2n)^3}{n^7}
+    grade: achieved
+    working:
+      - math: \dfrac{4 \times \ca{8n^3}}{n^7}
+        note: The cube reaches the $2$ inside the bracket as well as the $n$.
+      - math: \dfrac{32n^3}{n^7} = 32n^{-4}
+      - math: \dfrac{32}{n^4}
   - ask: Simplify.
     math: \left(\dfrac{n^4}{25n^8}\right)^{-0.5}
     grade: achieved
@@ -394,6 +529,14 @@ questions:
       - math: 5n^2
         note: $-0.5$ is a fractional exponent written as a decimal.
   - ask: Simplify.
+    math: \left(\dfrac{n^3}{16n^7}\right)^{-0.5}
+    grade: achieved
+    working:
+      - math: \dfrac{n^3}{16n^7} = \dfrac{1}{16n^4}
+        note: Simplify inside the bracket first. There is much less to do afterwards.
+      - math: \big(16n^4\big)^{0.5}
+      - math: 4n^2
+  - ask: Simplify.
     math: \big(16x^8\big)^{\frac{3}{4}}
     grade: merit
     working:
@@ -402,6 +545,15 @@ questions:
       - math: \ca{16^{\frac{3}{4}}} = \big(\sqrt[4]{16}\big)^3 = 2^3 = \ca{8}
       - math: \cb{\big(x^8\big)^{\frac{3}{4}}} = x^{8 \times \frac{3}{4}} = \cb{x^6}
       - math: 8x^6
+  - ask: Simplify.
+    math: \big(8x^9\big)^{\frac{2}{3}}
+    grade: merit
+    working:
+      - math: \ca{8^{\frac{2}{3}}} \times \cb{\big(x^9\big)^{\frac{2}{3}}}
+        note: One factor at a time.
+      - math: \ca{8^{\frac{2}{3}}} = \big(\sqrt[3]{8}\big)^2 = 2^2 = \ca{4}
+      - math: \cb{\big(x^9\big)^{\frac{2}{3}}} = x^{9 \times \frac{2}{3}} = \cb{x^6}
+      - math: 4x^6
   - ask: Show that the expression simplifies to $\dfrac{x-1}{x(x+1)}$.
     math: \dfrac{\left(x^{\frac{3}{2}} - x^{\frac{1}{2}}\right)\left(x^{\frac{1}{2}} + x^{-\frac{1}{2}}\right)}{\left(x^{\frac{3}{2}} + x^{\frac{1}{2}}\right)^2}
     grade: excellence
@@ -416,6 +568,18 @@ questions:
       - math: \dfrac{(x+1)(x-1)}{x(x+1)^2}
         note: Both parts are now ordinary algebra. The exponents were only ever the disguise.
       - math: \dfrac{x-1}{x(x+1)}
+  - ask: Show that the expression simplifies to $\dfrac{x(x-1)}{x+1}$.
+    math: \dfrac{x^{\frac{3}{2}} - x^{\frac{1}{2}}}{x^{\frac{1}{2}} + x^{-\frac{1}{2}}}
+    grade: excellence
+    working:
+      - math: x^{\frac{1}{2}}\big(x - 1\big)
+        note: Take the smaller power out of the numerator as a common factor. What is left has no fractional exponents in it.
+      - math: x^{-\frac{1}{2}}\big(x + 1\big)
+        note: The same move underneath, where the smaller power is the negative one.
+      - math: \dfrac{x^{\frac{1}{2}}(x-1)}{x^{-\frac{1}{2}}(x+1)}
+      - math: x^{\frac{1}{2} - \left(-\frac{1}{2}\right)} = x^1
+        note: The two powers divide, and subtracting the negative one adds a half.
+      - math: \dfrac{x(x-1)}{x+1}
 ```
 
 ---

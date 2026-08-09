@@ -44,6 +44,14 @@ questions:
       - math: A = xw = x(18 - x)
       - math: A = 18x - x^2
         note: "A *show that* answer finishes at the statement it was asked to show."
+  - ask: A rectangle has a perimeter of 40 cm, and one side has length $x$. Show that its area is given by $A = 20x - x^2$.
+    grade: achieved
+    working:
+      - math: 2x + 2w = 40 \qquad\Rightarrow\qquad w = 20 - x
+        note: "The perimeter is the constraint, solved for the other side."
+      - math: A = xw = x(20 - x)
+      - math: A = 20x - x^2
+        note: "A *show that* answer finishes at the statement it was asked to show."
   - ask: Two numbers add to 20. Use calculus to find the largest possible value of their product.
     grade: merit
     working:
@@ -53,6 +61,15 @@ questions:
       - math: x = 10
       - math: P = 10 \times 10 = 100
         note: "The question asked for the product, so the answer is $100$, not $10$."
+  - ask: Two numbers add to 30. Use calculus to find the largest possible value of their product.
+    grade: merit
+    working:
+      - math: P = x(30 - x) = 30x - x^2
+        note: "If one number is $x$, the sum makes the other $30 - x$."
+      - math: P' = 30 - 2x = 0
+      - math: x = 15
+      - math: P = 15 \times 15 = 225
+        note: "The question asked for the product, so the answer is $225$, not $15$."
 ```
 
 ---
@@ -89,6 +106,20 @@ questions:
         note: "Two cuts of fifteen leave no base at all. The rejection is written, with its reason."
       - math: V = 5(30 - 10)^2 = 2000 \;\textsf{cm}^3
       - math: V'' = -240 + 24x \qquad V''(5) = -120 < 0
+      - math: \therefore\;\textsf{the volume is a maximum}
+  - ask: An open-topped box is made from a square sheet of card 24 cm on each side, by cutting a square of side $x$ from each corner and folding up the sides. Use calculus to find the maximum volume of the box, and prove that the volume is a maximum.
+    grade: excellence
+    working:
+      - math: V = x(24 - 2x)^2
+        note: "The base is the sheet minus two cuts on each side, and the height is the cut. One variable already, so no constraint is needed."
+      - math: V = 576x - 96x^2 + 4x^3
+        note: "Expanded, so the rule can reach it."
+      - math: V' = 576 - 192x + 12x^2 = 0
+      - math: 12(x - 4)(x - 12) = 0
+      - math: "x = 4 \\;\\textsf{ or }\\; x = 12 \\;\\;\\textsf{(reject: a 24 cm sheet cannot lose 24 cm)}"
+        note: "Two cuts of twelve leave no base at all. The rejection is written, with its reason."
+      - math: V = 4(24 - 8)^2 = 1024 \;\textsf{cm}^3
+      - math: V'' = -192 + 24x \qquad V''(4) = -96 < 0
       - math: \therefore\;\textsf{the volume is a maximum}
 ```
 
@@ -130,6 +161,19 @@ questions:
         note: "Multiply through by $r^2$ to clear the fraction, then isolate the cube."
       - math: r = 3.74 \;\textsf{cm} \qquad h = \dfrac{330}{\pi r^2} = 7.49 \;\textsf{cm}
         note: "The question asked for both dimensions, so the constraint is used once more to recover $h$, with the unrounded $r$, so the rounding error is not squared."
+  - ask: A closed cylindrical can must hold $500$ cm$^3$. Use calculus to find the radius and height that use the least material, given that the surface area is $S = 2\pi r^2 + 2\pi rh$ and the volume is $V = \pi r^2 h$.
+    grade: excellence
+    working:
+      - math: \pi r^2 h = 500 \qquad\Rightarrow\qquad h = \dfrac{500}{\pi r^2}
+        note: "The volume is the constraint. Solve it for $h$, so the area becomes one-variable."
+      - math: S = 2\pi r^2 + 2\pi r \cdot \dfrac{500}{\pi r^2} = 2\pi r^2 + \dfrac{1000}{r}
+      - math: S = 2\pi r^2 + 1000r^{-1}
+        note: "Index form, so the rule can reach it."
+      - math: S' = 4\pi r - 1000r^{-2} = 0
+      - math: 4\pi r^3 = 1000 \qquad\Rightarrow\qquad r^3 = \dfrac{1000}{4\pi}
+        note: "Multiply through by $r^2$ to clear the fraction, then isolate the cube."
+      - math: r = 4.30 \;\textsf{cm} \qquad h = \dfrac{500}{\pi r^2} = 8.60 \;\textsf{cm}
+        note: "The question asked for both dimensions, so the constraint is used once more to recover $h$, with the unrounded $r$, so the rounding error is not squared."
 ```
 
 ---
@@ -149,6 +193,15 @@ questions:
       - math: x = 15
       - math: A = 15 \times 30 = 450 \;\textsf{m}^2
         note: "The area was asked for, so the working ends at the area."
+  - ask: A farmer has 80 m of fencing for a rectangular pen against an existing wall, which forms one of the long sides. Use calculus to find the largest area the pen can enclose.
+    grade: merit
+    working:
+      - math: A = x(80 - 2x) = 80x - 2x^2
+        note: "Two ends of $x$ each leave $80 - 2x$ for the side opposite the wall."
+      - math: A' = 80 - 4x = 0
+      - math: x = 20
+      - math: A = 20 \times 40 = 800 \;\textsf{m}^2
+        note: "The area was asked for, so the working ends at the area."
   - ask: Rima is designing a lidless rectangular container. Its width must equal twice its height, and it is to be made from at most $3$ m$^2$ of material. Use calculus to find the maximum volume of the container, and prove that the volume is a maximum.
     grade: excellence
     from: "2025"
@@ -165,6 +218,21 @@ questions:
       - math: V = \dfrac{3}{2}\!\left(\dfrac{1}{2}\right) - 2\!\left(\dfrac{1}{8}\right) = \dfrac{1}{2} \;\textsf{m}^3
       - math: V'' = -12h \qquad V''\!\left(\tfrac{1}{2}\right) = -6 < 0 \qquad\therefore\;\textsf{a maximum}
         note: "Height is positive, so $V''$ is negative—the proof the question demanded."
+  - ask: A lidless rectangular container has a width equal to twice its height, and is to be made from at most $12$ m$^2$ of material. Use calculus to find the maximum volume of the container, and prove that the volume is a maximum.
+    grade: excellence
+    working:
+      - math: w = 2h \qquad S = lw + 2lh + 2wh = 2hl + 2lh + 4h^2
+        note: "A lidless box has a base and four sides. With $w = 2h$, every face is written in $h$ and $l$."
+      - math: 4hl + 4h^2 = 12 \qquad\Rightarrow\qquad l = \dfrac{12 - 4h^2}{4h}
+        note: "The material is the constraint, solved for $l$."
+      - math: V = lwh = 2h^2 l = 2h^2 \cdot \dfrac{12 - 4h^2}{4h}
+      - math: V = 6h - 2h^3
+        note: "One variable. Expand, and it is a polynomial after all."
+      - math: V' = 6 - 6h^2 = 0
+      - math: h^2 = 1 \qquad h = 1 \;\;\textsf{(reject } -1\textsf{, a negative height)}
+      - math: V = 6(1) - 2(1) = 4 \;\textsf{m}^3
+      - math: V'' = -12h \qquad V''(1) = -12 < 0 \qquad\therefore\;\textsf{a maximum}
+        note: "Height is positive, so $V''$ is negative—the proof the question demanded."
   - ask: If $y = k - x$, where $k$ is a number, use calculus to show that the minimum value of $x^2 + 3y^2$ is equal to $\dfrac{3k^2}{4}$.
     grade: excellence
     from: "2024"
@@ -179,6 +247,20 @@ questions:
       - math: V = \left(\dfrac{3k}{4}\right)^2 + 3\left(\dfrac{k}{4}\right)^2 = \dfrac{9k^2}{16} + \dfrac{3k^2}{16}
         note: "$y = k - \\dfrac{3k}{4} = \\dfrac{k}{4}$, substituted with its bracket."
       - math: V = \dfrac{12k^2}{16} = \dfrac{3k^2}{4}
+        note: "A *show that* answer ends at the statement it was asked to show."
+  - ask: If $y = k - x$, where $k$ is a number, use calculus to show that the minimum value of $x^2 + y^2$ is equal to $\dfrac{k^2}{2}$.
+    grade: excellence
+    working:
+      - math: V = x^2 + (k - x)^2
+        note: "Substitute the constraint straight away, so the quantity is in one variable. $k$ is a number, not a variable—it rides along."
+      - math: V = x^2 + k^2 - 2kx + x^2 = 2x^2 - 2kx + k^2
+        note: "Expanded, with brackets kept around $k - x$ while it is squared."
+      - math: V' = 4x - 2k = 0 \qquad\Rightarrow\qquad x = \dfrac{k}{2}
+      - math: V'' = 4 > 0 \qquad\therefore\;\textsf{a minimum}
+        note: "The word *minimum* is in the claim, so it is justified before the value is computed."
+      - math: V = \left(\dfrac{k}{2}\right)^2 + \left(\dfrac{k}{2}\right)^2
+        note: "$y = k - \\dfrac{k}{2} = \\dfrac{k}{2}$, so both terms are the same."
+      - math: V = \dfrac{k^2}{2}
         note: "A *show that* answer ends at the statement it was asked to show."
 ```
 

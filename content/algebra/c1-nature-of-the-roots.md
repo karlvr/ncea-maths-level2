@@ -79,12 +79,28 @@ questions:
         note: Standard form first, or the coefficients will be wrong.
       - math: \Delta = (-9)^2 - 4(2)(7)
       - math: \Delta = 81 - 56 = 25
+  - ask: Calculate the discriminant.
+    math: 3x^2 + 4 = 8x
+    grade: achieved
+    working:
+      - math: 3x^2 - 8x + 4 = 0
+        note: Standard form first, or the coefficients will be wrong.
+      - math: \Delta = (-8)^2 - 4(3)(4)
+      - math: \Delta = 64 - 48 = 16
   - ask: Calculate the discriminant, and state the number of real roots.
     math: x^2 - 4x + 7 = 0
     grade: achieved
     working:
       - math: \Delta = (-4)^2 - 4(1)(7)
       - math: \Delta = 16 - 28 = -12
+      - math: \textsf{no real roots}
+        note: The question asked for two things, so both are written down.
+  - ask: Calculate the discriminant, and state the number of real roots.
+    math: x^2 - 6x + 11 = 0
+    grade: achieved
+    working:
+      - math: \Delta = (-6)^2 - 4(1)(11)
+      - math: \Delta = 36 - 44 = -8
       - math: \textsf{no real roots}
         note: The question asked for two things, so both are written down.
   - ask: Calculate the discriminant, and state the number of real roots.
@@ -95,6 +111,14 @@ questions:
       - math: \Delta = 144 - 144 = 0
       - math: \textsf{one repeated root}
         note: The expression is a perfect square, $(2x-3)^2$, which is what a zero discriminant means.
+  - ask: Calculate the discriminant, and state the number of real roots.
+    math: 9x^2 - 24x + 16 = 0
+    grade: achieved
+    working:
+      - math: \Delta = (-24)^2 - 4(9)(16)
+      - math: \Delta = 576 - 576 = 0
+      - math: \textsf{one repeated root}
+        note: The expression is a perfect square, $(3x-4)^2$, which is what a zero discriminant means.
 ```
 
 ---
@@ -161,10 +185,26 @@ questions:
       - math: \textsf{a perfect square, so it factorises}
         note: Forty-nine is $7^2$. The factorisation is $(3x-1)(x+2)$.
   - ask: Use the discriminant to decide whether the equation factorises with whole numbers.
+    math: 2x^2 + 7x - 4 = 0
+    grade: achieved
+    working:
+      - math: \Delta = 7^2 - 4(2)(-4) = 49 + 32 = 81
+        note: The $c$ is negative, so $-4ac$ adds.
+      - math: \textsf{a perfect square, so it factorises}
+        note: Eighty-one is $9^2$. The factorisation is $(2x-1)(x+4)$.
+  - ask: Use the discriminant to decide whether the equation factorises with whole numbers.
     math: x^2 + 6x + 7 = 0
     grade: achieved
     working:
       - math: \Delta = 36 - 28 = 8
+        note: Positive, so there are two roots.
+      - math: \textsf{not a perfect square, so it does not factorise}
+        note: Two roots exist, but both are irrational and only the formula will produce them.
+  - ask: Use the discriminant to decide whether the equation factorises with whole numbers.
+    math: x^2 + 8x + 11 = 0
+    grade: achieved
+    working:
+      - math: \Delta = 64 - 44 = 20
         note: Positive, so there are two roots.
       - math: \textsf{not a perfect square, so it does not factorise}
         note: Two roots exist, but both are irrational and only the formula will produce them.
@@ -235,6 +275,16 @@ questions:
       - math: k - 1 = \pm 4
         note: A square root gives two values, which is where the second answer comes from.
       - math: k = 5 \quad\textsf{or}\quad k = -3
+  - ask: Find the values of $k$ for which the equation has one repeated root.
+    math: x^2 + (k-2)x + 9 = 0
+    grade: merit
+    working:
+      - math: (k-2)^2 - 4(1)(9) = 0
+        note: One repeated root, so the discriminant is set to zero. The whole of $k-2$ is the $b$.
+      - math: (k-2)^2 = 36
+      - math: k - 2 = \pm 6
+        note: A square root gives two values, which is where the second answer comes from.
+      - math: k = 8 \quad\textsf{or}\quad k = -4
   - ask: The graph does not cross the $x$-axis. Find the possible values of $p$.
     math: y = 5x^2 + 10x + p
     grade: merit
@@ -245,6 +295,15 @@ questions:
       - math: 100 < 20p
       - math: p > 5
         note: An inequality, not a single value. The answer is every $p$ above five.
+  - ask: The graph does not cross the $x$-axis. Find the possible values of $p$.
+    math: y = 3x^2 + 12x + p
+    grade: merit
+    working:
+      - math: 144 - 12p < 0
+        note: Not crossing the axis means no real roots, so the discriminant is negative.
+      - math: 144 < 12p
+      - math: p > 12
+        note: An inequality, not a single value. The answer is every $p$ above twelve.
   - ask: Find the values of $k$ for which the equation has two distinct real roots.
     math: kx^2 + 6x + 3 = 0
     grade: excellence
@@ -254,6 +313,16 @@ questions:
       - math: 36 - 12k > 0
       - math: k < 3
       - math: k < 3 \textsf{ and } k \ne 0
+        note: At $k=0$ the equation is linear rather than quadratic, so it is excluded separately.
+  - ask: Find the values of $k$ for which the equation has two distinct real roots.
+    math: kx^2 + 8x + 2 = 0
+    grade: excellence
+    working:
+      - math: 8^2 - 4(k)(2) > 0
+        note: Two distinct roots, so the discriminant is positive.
+      - math: 64 - 8k > 0
+      - math: k < 8
+      - math: k < 8 \textsf{ and } k \ne 0
         note: At $k=0$ the equation is linear rather than quadratic, so it is excluded separately.
 ```
 
@@ -311,6 +380,16 @@ questions:
         note: Everything to one side before the discriminant is calculated.
       - math: (-2)^2 - 4(1)(-c) = 0
       - math: 4 + 4c = 0 \;\Rightarrow\; c = -1
+  - ask: Find the value of $c$ for which the line is a tangent to the curve.
+    math: y = 4x + c \qquad y = x^2
+    grade: merit
+    working:
+      - math: x^2 = 4x + c
+        note: A tangent touches at exactly one point, so the pair has one solution.
+      - math: x^2 - 4x - c = 0
+        note: Everything to one side before the discriminant is calculated.
+      - math: (-4)^2 - 4(1)(-c) = 0
+      - math: 16 + 4c = 0 \;\Rightarrow\; c = -4
   - ask: The values of $x$ and $y$ satisfy both equations, where $k$ is a non-zero constant. Given that there is only one solution, find the value of $k$ and then find the solution.
     math: y - 4x = 20 \qquad x^2 + 2ky = 24k
     grade: excellence
@@ -330,6 +409,24 @@ questions:
         note: Substitute $k$ back to get the quadratic whose repeated root is the solution.
       - math: (-4, \; 4)
         note: $x = -4$, and the line gives $y = 4(-4) + 20 = 4$.
+  - ask: The values of $x$ and $y$ satisfy both equations, where $k$ is a non-zero constant. Given that there is only one solution, find the value of $k$ and then find the solution.
+    math: y - 3x = 12 \qquad x^2 + 2ky = 18k
+    grade: excellence
+    working:
+      - math: y = 3x + 12
+        note: Rearrange the linear equation, because it is the easier of the two to substitute from.
+      - math: x^2 + 2k(3x + 12) = 18k
+      - math: x^2 + 6kx + 6k = 0
+        note: Twenty-four $k$ less eighteen $k$ leaves six $k$.
+      - math: (6k)^2 - 4(1)(6k) = 0
+        note: Only one solution, so the discriminant of this quadratic is zero.
+      - math: 36k^2 - 24k = 0 \;\Rightarrow\; 12k(3k-2) = 0
+      - math: k = \dfrac{2}{3}
+        note: $k$ is given as non-zero, so the other root of this equation is discarded.
+      - math: x^2 + 4x + 4 = 0 \;\Rightarrow\; (x+2)^2 = 0
+        note: Substitute $k$ back to get the quadratic whose repeated root is the solution.
+      - math: (-2, \; 6)
+        note: $x = -2$, and the line gives $y = 3(-2) + 12 = 6$.
 ```
 
 ---
@@ -349,11 +446,25 @@ questions:
         note: The instruction says find the discriminant, so the equation is not to be solved.
       - math: \Delta = (-8)^2 - 4(4)(3)
       - math: \Delta = 16
+  - ask: Find the discriminant of the quadratic equation.
+    math: 2x^2 + 5 = 12x
+    grade: achieved
+    working:
+      - math: 2x^2 - 12x + 5 = 0
+        note: The instruction says find the discriminant, so the equation is not to be solved.
+      - math: \Delta = (-12)^2 - 4(2)(5)
+      - math: \Delta = 104
   - ask: State the number of real roots.
     math: x^2 + 2x + 5 = 0
     grade: achieved
     working:
       - math: \Delta = 4 - 20 = -16
+      - math: \textsf{no real roots}
+  - ask: State the number of real roots.
+    math: x^2 + 4x + 9 = 0
+    grade: achieved
+    working:
+      - math: \Delta = 16 - 36 = -20
       - math: \textsf{no real roots}
   - ask: Find the values of $m$ for which the equation has equal roots.
     math: x^2 - mx + 16 = 0
@@ -364,6 +475,15 @@ questions:
       - math: m^2 = 64
       - math: m = 8 \quad\textsf{or}\quad m = -8
         note: Squaring $-m$ gives $m^2$, so both signs come back at the end.
+  - ask: Find the values of $m$ for which the equation has equal roots.
+    math: x^2 - mx + 25 = 0
+    grade: merit
+    working:
+      - math: (-m)^2 - 4(1)(25) = 0
+        note: Equal roots is another name for one repeated root, so the discriminant is zero.
+      - math: m^2 = 100
+      - math: m = 10 \quad\textsf{or}\quad m = -10
+        note: Squaring $-m$ gives $m^2$, so both signs come back at the end.
   - ask: Show that the equation has two distinct real roots for every non-zero value of $k$.
     math: x^2 + kx - k^2 = 0
     grade: merit
@@ -372,6 +492,15 @@ questions:
         note: Subtracting a negative adds, so both terms end up positive.
       - math: \Delta = k^2 + 4k^2 = 5k^2
       - math: 5k^2 > 0 \textsf{ for every } k \ne 0
+        note: A square is never negative, so the discriminant is positive whenever $k$ is not zero.
+  - ask: Show that the equation has two distinct real roots for every non-zero value of $k$.
+    math: x^2 + 3kx - k^2 = 0
+    grade: merit
+    working:
+      - math: \Delta = (3k)^2 - 4(1)(-k^2)
+        note: The bracket matters, because the $3$ is squared along with the $k$.
+      - math: \Delta = 9k^2 + 4k^2 = 13k^2
+      - math: 13k^2 > 0 \textsf{ for every } k \ne 0
         note: A square is never negative, so the discriminant is positive whenever $k$ is not zero.
   - ask: The parabola touches the $x$-axis at exactly one point, and passes through $(0, 9)$. Find the two possible equations of the parabola.
     math: y = x^2 + bx + c
@@ -384,6 +513,17 @@ questions:
       - math: b^2 = 36 \;\Rightarrow\; b = 6 \quad\textsf{or}\quad b = -6
       - math: y = x^2 + 6x + 9 \quad\textsf{or}\quad y = x^2 - 6x + 9
         note: Two parabolas satisfy both conditions, touching the axis at $-3$ and at $3$.
+  - ask: The parabola touches the $x$-axis at exactly one point, and passes through $(0, 25)$. Find the two possible equations of the parabola.
+    math: y = x^2 + bx + c
+    grade: excellence
+    working:
+      - math: 25 = 0 + 0 + c \;\Rightarrow\; c = 25
+        note: Passing through $(0,25)$ fixes the constant, because the other two terms vanish at $x=0$.
+      - math: b^2 - 4(1)(25) = 0
+        note: Touching at exactly one point means one repeated root.
+      - math: b^2 = 100 \;\Rightarrow\; b = 10 \quad\textsf{or}\quad b = -10
+      - math: y = x^2 + 10x + 25 \quad\textsf{or}\quad y = x^2 - 10x + 25
+        note: Two parabolas satisfy both conditions, touching the axis at $-5$ and at $5$.
 ```
 
 ---

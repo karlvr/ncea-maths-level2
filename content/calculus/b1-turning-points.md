@@ -62,6 +62,14 @@ questions:
       - math: x = 3
       - math: f(3) = 9 - 18 + 11 = 2
       - math: (3, 2)
+  - ask: Find the coordinates of the turning point of the curve.
+    math: f(x) = x^2 - 4x + 9
+    grade: achieved
+    working:
+      - math: f'(x) = 2x - 4 = 0
+      - math: x = 2
+      - math: f(2) = 4 - 8 + 9 = 5
+      - math: (2, 5)
   - ask: Find the coordinates of both turning points of the curve.
     math: f(x) = x^3 - 12x + 3
     grade: merit
@@ -72,6 +80,16 @@ questions:
       - math: f(-2) = -8 + 24 + 3 = 19
         note: "Two points, two heights, each from $f$."
       - math: (2, -13) \;\textsf{ and }\; (-2, 19)
+  - ask: Find the coordinates of both turning points of the curve.
+    math: f(x) = x^3 - 48x + 2
+    grade: merit
+    working:
+      - math: f'(x) = 3x^2 - 48 = 0
+      - math: x^2 = 16 \qquad x = 4 \;\textsf{ or }\; x = -4
+      - math: f(4) = 64 - 192 + 2 = -126
+      - math: f(-4) = -64 + 192 + 2 = 130
+        note: "Two points, two heights, each from $f$."
+      - math: (4, -126) \;\textsf{ and }\; (-4, 130)
 ```
 
 ---
@@ -138,6 +156,14 @@ questions:
       - math: x = 4 \qquad f(4) = 16 - 32 + 3 = -13
       - math: f''(x) = 2 > 0 \qquad\therefore\;(4, -13)\;\textsf{is a minimum}
         note: "For a parabola the second derivative is a constant, so one line settles it—but the line must still be written."
+  - ask: Find the coordinates of the turning point of the curve, and use calculus to show that it is a minimum.
+    math: f(x) = x^2 - 10x + 4
+    grade: merit
+    working:
+      - math: f'(x) = 2x - 10 = 0
+      - math: x = 5 \qquad f(5) = 25 - 50 + 4 = -21
+      - math: f''(x) = 2 > 0 \qquad\therefore\;(5, -21)\;\textsf{is a minimum}
+        note: "For a parabola the second derivative is a constant, so one line settles it—but the line must still be written."
   - ask: The curve has turning points at $x = -2$ and $x = 1$. Use calculus to determine the nature of each.
     math: f(x) = 2x^3 + 3x^2 - 12x + 4
     grade: merit
@@ -147,6 +173,15 @@ questions:
       - math: f''(x) = 12x + 6
       - math: f''(-2) = -18 < 0 \qquad\therefore\;\textsf{maximum at } x = -2
       - math: f''(1) = 18 > 0 \qquad\therefore\;\textsf{minimum at } x = 1
+  - ask: The curve has turning points at $x = -4$ and $x = 1$. Use calculus to determine the nature of each.
+    math: f(x) = 2x^3 + 9x^2 - 24x + 3
+    grade: merit
+    working:
+      - math: f'(x) = 6x^2 + 18x - 24
+        note: "Check the given points first: $f'(-4) = 96 - 72 - 24 = 0$ and $f'(1) = 6 + 18 - 24 = 0$."
+      - math: f''(x) = 12x + 18
+      - math: f''(-4) = -30 < 0 \qquad\therefore\;\textsf{maximum at } x = -4
+      - math: f''(1) = 30 > 0 \qquad\therefore\;\textsf{minimum at } x = 1
 ```
 
 ---
@@ -197,6 +232,27 @@ questions:
       - math: f'(0) = -12 < 0
         note: "One test point between the roots settles the sign of the whole region—an upward parabola is negative only between its roots."
       - math: \textsf{decreasing for}\;\; -1 < x < 2
+  - ask: Use calculus to find the values of $x$ for which the function is decreasing.
+    math: f(x) = 2x^3 - 9x^2 - 24x + 1
+    grade: merit
+    working:
+      - math: f'(x) = 6x^2 - 18x - 24 = 0
+      - math: 6(x - 4)(x + 1) = 0
+      - math: x = 4 \;\textsf{ or }\; x = -1
+      - math: f'(0) = -24 < 0
+        note: "One test point between the roots settles the sign of the whole region—an upward parabola is negative only between its roots."
+      - math: \textsf{decreasing for}\;\; -1 < x < 4
+  - ask: Use calculus to find the values of $x$ for which the function is increasing.
+    math: f(x) = x^3 - 9x^2 + 24x - 3
+    grade: merit
+    working:
+      - math: f'(x) = 3x^2 - 18x + 24 = 0
+      - math: 3(x - 2)(x - 4) = 0
+      - math: x = 2 \;\textsf{ or }\; x = 4
+      - math: f'(3) = 27 - 54 + 24 = -3 < 0
+        note: "Negative between the roots, so positive outside them."
+      - math: \textsf{increasing for}\;\; x < 2 \;\textsf{ and }\; x > 4
+        note: "Increasing happens in two separate regions, and the answer names both."
 ```
 
 ---
@@ -232,6 +288,16 @@ questions:
       - math: p = 3
       - math: f''(x) = 6x + 6 \qquad f''(-2) = -6 < 0
       - math: \therefore\;\textsf{a maximum}
+  - ask: The curve has a stationary point at $x = -4$. Find the value of $p$, and determine the nature of the stationary point.
+    math: f(x) = x^3 + px^2 + 5
+    grade: merit
+    working:
+      - math: f'(x) = 3x^2 + 2px
+      - math: f'(-4) = 48 - 8p = 0
+        note: "The stationary point converts to an equation in $p$."
+      - math: p = 6
+      - math: f''(x) = 6x + 12 \qquad f''(-4) = -12 < 0
+      - math: \therefore\;\textsf{a maximum}
   - ask: The graph of $f(x) = ax^3 + bx^2 - x + 2$, where $a$ and $b$ are constants, meets the $x$-axis at $x = 2$ and has a stationary point at $x = 1$. Use calculus to find the $x$-coordinate of the other stationary point, and determine what type of stationary point it is.
     grade: excellence
     from: "2025"
@@ -247,6 +313,21 @@ questions:
       - math: x = \dfrac{1}{3}
         note: "$x = 1$ was the stationary point given, so the other one is at $x = \\dfrac{1}{3}$."
       - math: f''(x) = -6x + 4 \qquad f''\!\left(\dfrac{1}{3}\right) = 2 > 0
+      - math: \therefore\;\textsf{a local minimum}
+  - ask: The graph of $f(x) = ax^3 + bx^2 - 4x + 4$, where $a$ and $b$ are constants, meets the $x$-axis at $x = 2$ and has a stationary point at $x = 1$. Use calculus to find the $x$-coordinate of the other stationary point, and determine what type of stationary point it is.
+    grade: excellence
+    working:
+      - math: f(2) = 8a + 4b - 8 + 4 = 0
+        note: "Meeting the $x$-axis at $x = 2$ means the height there is zero."
+      - math: 8a + 4b = 4 \qquad\Rightarrow\qquad b = 1 - 2a
+      - math: f'(x) = 3ax^2 + 2bx - 4
+      - math: f'(1) = 3a + 2b - 4 = 0
+        note: "The stationary point gives the second equation. Two facts, two equations."
+      - math: 3a + 2(1 - 2a) - 4 = 0 \qquad\Rightarrow\qquad a = -2, \;\; b = 5
+      - math: f'(x) = -6x^2 + 10x - 4 = -2(3x - 2)(x - 1) = 0
+      - math: x = \dfrac{2}{3}
+        note: "$x = 1$ was the stationary point given, so the other one is at $x = \\dfrac{2}{3}$."
+      - math: f''(x) = -12x + 10 \qquad f''\!\left(\dfrac{2}{3}\right) = 2 > 0
       - math: \therefore\;\textsf{a local minimum}
 ```
 
@@ -266,6 +347,14 @@ questions:
       - math: x^2 = 9 \qquad x = 3 \;\textsf{ or }\; x = -3
       - math: f(3) = 27 - 81 = -54 \qquad f(-3) = 54
       - math: (3, -54) \;\textsf{ and }\; (-3, 54)
+  - ask: Find the coordinates of the turning points of the curve.
+    math: f(x) = x^3 - 75x
+    grade: achieved
+    working:
+      - math: f'(x) = 3x^2 - 75 = 0
+      - math: x^2 = 25 \qquad x = 5 \;\textsf{ or }\; x = -5
+      - math: f(5) = 125 - 375 = -250 \qquad f(-5) = 250
+      - math: (5, -250) \;\textsf{ and }\; (-5, 250)
   - ask: Use calculus to find the values of $x$ for which the function is increasing.
     math: f(x) = x^3 - 3x^2 - 24x + 1
     grade: merit
@@ -276,6 +365,17 @@ questions:
       - math: f'(0) = -24 < 0
         note: "Negative between the roots, so positive outside them."
       - math: \textsf{increasing for}\;\; x < -2 \;\textsf{ and }\; x > 4
+        note: "Increasing happens in two separate regions, and the answer names both."
+  - ask: Use calculus to find the values of $x$ for which the function is increasing.
+    math: f(x) = x^3 - 3x^2 - 45x + 2
+    grade: merit
+    working:
+      - math: f'(x) = 3x^2 - 6x - 45 = 0
+      - math: 3(x - 5)(x + 3) = 0
+      - math: x = 5 \;\textsf{ or }\; x = -3
+      - math: f'(0) = -45 < 0
+        note: "Negative between the roots, so positive outside them."
+      - math: \textsf{increasing for}\;\; x < -3 \;\textsf{ and }\; x > 5
         note: "Increasing happens in two separate regions, and the answer names both."
   - ask: Find the coordinates of the three turning points of the curve.
     math: f(x) = x^4 - 8x^2
@@ -288,6 +388,28 @@ questions:
       - math: x = -2, \;\; 0, \;\; 2
       - math: f(\pm 2) = 16 - 32 = -16 \qquad f(0) = 0
       - math: (-2, -16), \;\; (0, 0) \;\textsf{ and }\; (2, -16)
+  - ask: Find the coordinates of the three turning points of the curve.
+    math: f(x) = x^4 - 18x^2
+    grade: merit
+    working:
+      - math: f'(x) = 4x^3 - 36x = 0
+        note: "A quartic's gradient function is a cubic. Common factor first, as always."
+      - math: 4x(x^2 - 9) = 4x(x - 3)(x + 3) = 0
+        note: "The common factor $4x$ supplies one root itself, and leaves a difference of two squares."
+      - math: x = -3, \;\; 0, \;\; 3
+      - math: f(\pm 3) = 81 - 162 = -81 \qquad f(0) = 0
+      - math: (-3, -81), \;\; (0, 0) \;\textsf{ and }\; (3, -81)
+  - ask: Using calculus methods, find the $x$-coordinate of the local minimum of the curve, and explain how you know it is a minimum.
+    math: y = 2x^3 - 3x^2 - 36x + 4
+    grade: excellence
+    working:
+      - math: \dfrac{dy}{dx} = 6x^2 - 6x - 36 = 0
+      - math: 6(x - 3)(x + 2) = 0
+      - math: x = 3 \;\textsf{ or }\; x = -2
+        note: "Two stationary points, and the question wants the minimum—so the nature must be decided, not assumed."
+      - math: \dfrac{d^2y}{dx^2} = 12x - 6
+      - math: 12(3) - 6 = 30 > 0 \qquad\therefore\;\textsf{minimum at } x = 3
+        note: "Testing points either side of $x = 3$, or an annotated sketch of an upward cubic, would justify it equally well."
   - ask: Using calculus methods, find the $x$-coordinate of the local minimum of the curve, and explain how you know it is a minimum.
     math: y = 2x^3 - 6x^2 - 18x + 5
     grade: excellence
@@ -309,6 +431,15 @@ questions:
       - math: 9 + 3(-6) + c = -4
         note: "The point also lies on the curve, so its coordinates satisfy the equation—the second fact."
       - math: c = 5
+  - ask: The curve $y = x^2 + bx + c$ has a minimum at $(2, -7)$. Find the values of $b$ and $c$.
+    grade: excellence
+    working:
+      - math: \dfrac{dy}{dx} = 2x + b
+      - math: 2(2) + b = 0 \qquad\Rightarrow\qquad b = -4
+        note: "A minimum is a stationary point, so the gradient at $x = 2$ is zero."
+      - math: 4 + 2(-4) + c = -7
+        note: "The point also lies on the curve, so its coordinates satisfy the equation—the second fact."
+      - math: c = -3
 ```
 
 ---

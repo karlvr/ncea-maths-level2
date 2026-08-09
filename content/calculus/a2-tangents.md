@@ -75,6 +75,13 @@ questions:
       - math: f'(x) = 2x - 4
       - math: f'(3) = 2
         note: "The question asks only for the gradient, so the height is never needed."
+  - ask: Find the gradient of the tangent to the curve at $x = 5$.
+    math: f(x) = x^2 - 6x + 5
+    grade: achieved
+    working:
+      - math: f'(x) = 2x - 6
+      - math: f'(5) = 4
+        note: "The question asks only for the gradient, so the height is never needed."
   - ask: Find the equation of the tangent to the curve at $x = 1$.
     math: f(x) = x^2 + 2x - 3
     grade: merit
@@ -86,6 +93,17 @@ questions:
         note: "The gradient: $4$."
       - math: y - 0 = 4(x - 1)
       - math: y = 4x - 4
+  - ask: Find the equation of the tangent to the curve at $x = 1$.
+    math: f(x) = x^2 + 4x - 5
+    grade: merit
+    working:
+      - math: f(1) = 1 + 4 - 5 = 0
+        note: "The point: $(1, 0)$."
+      - math: f'(x) = 2x + 4
+      - math: f'(1) = 6
+        note: "The gradient: $6$."
+      - math: y - 0 = 6(x - 1)
+      - math: y = 6x - 6
   - ask: Find the equation of the tangent to the graph of the function at the point $(-2, 6)$.
     math: f(x) = 4 - 9x + 2x^3
     grade: merit
@@ -96,6 +114,15 @@ questions:
       - math: f'(-2) = -9 + 24 = 15
       - math: y - 6 = 15(x + 2)
       - math: y = 15x + 36
+  - ask: Find the equation of the tangent to the graph of the function at the point $(-2, 5)$.
+    math: f(x) = 3 - 5x + x^3
+    grade: merit
+    working:
+      - math: f'(x) = -5 + 3x^2
+        note: "The point is supplied, so only the gradient has to be found."
+      - math: f'(-2) = -5 + 12 = 7
+      - math: y - 5 = 7(x + 2)
+      - math: y = 7x + 19
   - ask: Find the equation of the tangent to the curve at $x = 3$.
     math: f(x) = -\dfrac{x^3}{3} + x^2 - 2x + 5
     grade: merit
@@ -108,6 +135,17 @@ questions:
       - math: y + 1 = -5(x - 3)
         note: "Subtracting the height $-1$ becomes adding $1$."
       - math: y = -5x + 14
+  - ask: Find the equation of the tangent to the curve at $x = 3$.
+    math: f(x) = -\dfrac{x^3}{3} + 2x^2 - x - 8
+    grade: merit
+    working:
+      - math: f(3) = -9 + 18 - 3 - 8 = -2
+        note: "Only $x$ is supplied, so the height is the first thing to find."
+      - math: f'(x) = -x^2 + 4x - 1
+      - math: f'(3) = -9 + 12 - 1 = 2
+      - math: y + 2 = 2(x - 3)
+        note: "Subtracting the height $-2$ becomes adding $2$."
+      - math: y = 2x - 8
 ```
 
 ---
@@ -145,6 +183,26 @@ questions:
       - math: f(3) = 9 - 6 + 5 = 8
       - math: y - 8 = 4(x - 3)
       - math: y = 4x - 4
+  - ask: Find the equation of the tangent to the curve that is parallel to $y = 6x + 1$.
+    math: f(x) = x^2 - 4x + 7
+    grade: merit
+    working:
+      - math: f'(x) = 2x - 4 = 6
+        note: "Parallel lines share a gradient, so the tangent's gradient is $6$."
+      - math: x = 5
+      - math: f(5) = 25 - 20 + 7 = 12
+      - math: y - 12 = 6(x - 5)
+      - math: y = 6x - 18
+  - ask: Find the equation of the tangent to the curve that is horizontal.
+    math: f(x) = x^2 - 10x + 18
+    grade: merit
+    working:
+      - math: f'(x) = 2x - 10 = 0
+        note: "A horizontal line has gradient zero, so the gradient function is set to zero."
+      - math: x = 5
+      - math: f(5) = 25 - 50 + 18 = -7
+      - math: y = -7
+        note: "A horizontal tangent is a line of constant height, so its equation carries no $x$."
 ```
 
 ---
@@ -161,6 +219,12 @@ questions:
     working:
       - math: f'(x) = 6x - 1
       - math: f'(1) = 5
+  - ask: Find the gradient of the tangent to the curve at $x = 2$.
+    math: f(x) = 4x^2 - x
+    grade: achieved
+    working:
+      - math: f'(x) = 8x - 1
+      - math: f'(2) = 15
   - ask: Find the equation of the tangent to the curve at $x = 0$.
     math: y = x^3 - 4x + 1
     grade: merit
@@ -171,6 +235,15 @@ questions:
       - math: \dfrac{dy}{dx} = -4 \;\textsf{ at }\; x = 0
       - math: y = -4x + 1
         note: "Through $(0, 1)$ the intercept is already known, so the equation assembles directly."
+  - ask: Find the equation of the tangent to the curve at $x = 0$.
+    math: y = x^3 - 5x + 2
+    grade: merit
+    working:
+      - math: y = 2 \;\textsf{ when }\; x = 0
+        note: "The point: $(0, 2)$."
+      - math: \dfrac{dy}{dx} = 3x^2 - 5
+      - math: \dfrac{dy}{dx} = -5 \;\textsf{ at }\; x = 0
+      - math: y = -5x + 2
   - ask: Find the equations of the two tangents to the curve that have gradient $3$.
     math: f(x) = x^3 - 9x
     grade: excellence
@@ -182,6 +255,17 @@ questions:
         note: "Each touching point gets its height from $f$, separately."
       - math: y + 10 = 3(x - 2) \qquad y - 10 = 3(x + 2)
       - math: y = 3x - 16 \qquad y = 3x + 16
+  - ask: Find the equations of the two tangents to the curve that have gradient $15$.
+    math: f(x) = x^3 - 12x
+    grade: excellence
+    working:
+      - math: f'(x) = 3x^2 - 12 = 15
+        note: "A quadratic, so expect two answers—the question said two tangents."
+      - math: x^2 = 9 \qquad x = 3 \;\textsf{ or }\; x = -3
+      - math: f(3) = 27 - 36 = -9 \qquad f(-3) = -27 + 36 = 9
+        note: "Each touching point gets its height from $f$, separately."
+      - math: y + 9 = 15(x - 3) \qquad y - 9 = 15(x + 3)
+      - math: y = 15x - 54 \qquad y = 15x + 54
   - ask: Show that the tangent to the curve $y = x^2$ at the point $(a, a^2)$ meets the $x$-axis at $x = \dfrac{a}{2}$.
     grade: excellence
     working:
@@ -192,6 +276,18 @@ questions:
       - math: y = 2ax - a^2
       - math: 0 = 2ax - a^2 \;\;\textsf{ at the } x\textsf{-axis}
       - math: x = \dfrac{a^2}{2a} = \dfrac{a}{2}
+        note: "Which is what was to be shown, for every point on the curve at once."
+  - ask: Show that the tangent to the curve $y = x^3$ at the point $(a, a^3)$ meets the $x$-axis at $x = \dfrac{2a}{3}$.
+    grade: excellence
+    working:
+      - math: \dfrac{dy}{dx} = 3x^2
+        note: "The point is general, so the working stays in terms of $a$ throughout."
+      - math: y - a^3 = 3a^2(x - a)
+        note: "Point $(a, a^3)$, gradient $3a^2$, into the straight-line equation."
+      - math: y = 3a^2x - 2a^3
+        note: "Three $a^3$ taken off one $a^3$ leaves $-2a^3$."
+      - math: 0 = 3a^2x - 2a^3 \;\;\textsf{ at the } x\textsf{-axis}
+      - math: x = \dfrac{2a^3}{3a^2} = \dfrac{2a}{3}
         note: "Which is what was to be shown, for every point on the curve at once."
 ```
 

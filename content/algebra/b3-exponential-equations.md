@@ -70,11 +70,25 @@ questions:
         note: Eighty-one is three multiplied by itself four times.
       - math: x = 4
   - ask: Solve.
+    math: 2^x = 32
+    grade: achieved
+    working:
+      - math: 2^x = 2^5
+        note: Thirty-two is two multiplied by itself five times.
+      - math: x = 5
+  - ask: Solve.
     math: 2^{x-1} = 16
     grade: achieved
     working:
       - math: 2^{x-1} = 2^4
       - math: x - 1 = 4 \;\Rightarrow\; x = 5
+        note: The whole exponent is equated, not just the letter in it.
+  - ask: Solve.
+    math: 5^{x-1} = 125
+    grade: achieved
+    working:
+      - math: 5^{x-1} = 5^3
+      - math: x - 1 = 3 \;\Rightarrow\; x = 4
         note: The whole exponent is equated, not just the letter in it.
   - ask: Solve.
     math: 8^{x+1} = \dfrac{1}{4}
@@ -84,6 +98,14 @@ questions:
         note: Eight and four are both powers of two, and one over four is a negative exponent.
       - math: 2^{3x+3} = 2^{-2}
       - math: 3x + 3 = -2 \;\Rightarrow\; x = -\dfrac{5}{3}
+  - ask: Solve.
+    math: 9^{x+1} = \dfrac{1}{27}
+    grade: merit
+    working:
+      - math: \big(3^2\big)^{x+1} = 3^{-3}
+        note: Nine and twenty-seven are both powers of three, and one over twenty-seven is a negative exponent.
+      - math: 3^{2x+2} = 3^{-3}
+      - math: 2x + 2 = -3 \;\Rightarrow\; x = -\dfrac{5}{2}
   - ask: Solve.
     math: 4^{3x-1} = \left(\dfrac{1}{8}\right)^{x}
     grade: merit
@@ -95,6 +117,16 @@ questions:
         note: The exponents multiply, and the bracket keeps the $-1$ attached to the $3x$.
       - math: 6x - 2 = -3x
       - math: 9x = 2 \;\Rightarrow\; x = \dfrac{2}{9}
+  - ask: Solve.
+    math: 8^{2x-1} = \left(\dfrac{1}{4}\right)^{x}
+    grade: merit
+    working:
+      - math: \big(2^3\big)^{2x-1} = \big(2^{-2}\big)^{x}
+        note: Base two reaches both sides. Base eight or base four would reach only one.
+      - math: 2^{6x-3} = 2^{-2x}
+        note: The exponents multiply, and the bracket keeps the $-1$ attached to the $2x$.
+      - math: 6x - 3 = -2x
+      - math: 8x = 3 \;\Rightarrow\; x = \dfrac{3}{8}
 ```
 
 ---
@@ -131,6 +163,13 @@ questions:
       - math: 3^{?} = 27
         note: Read the notation as a question about a power.
       - math: "3"
+  - ask: Evaluate.
+    math: \log_2 64
+    grade: achieved
+    working:
+      - math: 2^{?} = 64
+        note: Read the notation as a question about a power.
+      - math: "6"
   - ask: Solve.
     math: x = \log_4 256
     grade: achieved
@@ -139,12 +178,26 @@ questions:
       - math: 4^x = 256
         note: Write it in index form, where the unknown is in an ordinary position.
       - math: x = 4
+  - ask: Solve.
+    math: x = \log_3 243
+    grade: achieved
+    working:
+      - math: 3^x = 243
+        note: Write it in index form, where the unknown is in an ordinary position.
+      - math: x = 5
   - ask: Evaluate.
     math: \log_4 \dfrac{1}{16}
     grade: merit
     working:
       - math: 4^{?} = \dfrac{1}{16}
       - math: "-2"
+        note: A reciprocal comes from a negative exponent, so the answer is negative rather than a fraction.
+  - ask: Evaluate.
+    math: \log_2 \dfrac{1}{8}
+    grade: merit
+    working:
+      - math: 2^{?} = \dfrac{1}{8}
+      - math: "-3"
         note: A reciprocal comes from a negative exponent, so the answer is negative rather than a fraction.
   - ask: Solve.
     math: \log_x 49 = 2
@@ -157,6 +210,16 @@ questions:
         note: Taking a square root gives two values.
       - math: x = 7
         note: A logarithm cannot have a negative base, so $-7$ is rejected. Writing that down is required.
+  - ask: Solve.
+    math: \log_x 64 = 2
+    grade: merit
+    working:
+      - math: x^2 = 64
+        note: The unknown is the base this time.
+      - math: x = 8 \quad\textsf{or}\quad x = -8
+        note: Taking a square root gives two values.
+      - math: x = 8
+        note: A logarithm cannot have a negative base, so $-8$ is rejected. Writing that down is required.
 ```
 
 ---
@@ -221,12 +284,26 @@ questions:
       - math: \log(5 \times 4) = \log 20
         note: A sum of logarithms is the logarithm of a product.
   - ask: Write as a single logarithm.
+    math: \log 6 + \log 5
+    grade: achieved
+    working:
+      - math: \log(6 \times 5) = \log 30
+        note: A sum of logarithms is the logarithm of a product.
+  - ask: Write as a single logarithm.
     math: 2\log x - \log y
     grade: achieved
     working:
       - math: \log x^2 - \log y
         note: A coefficient in front goes back up as a power.
       - math: \log\!\left(\dfrac{x^2}{y}\right)
+        note: A difference of logarithms is the logarithm of a quotient.
+  - ask: Write as a single logarithm.
+    math: 3\log x - \log y
+    grade: achieved
+    working:
+      - math: \log x^3 - \log y
+        note: A coefficient in front goes back up as a power.
+      - math: \log\!\left(\dfrac{x^3}{y}\right)
         note: A difference of logarithms is the logarithm of a quotient.
   - ask: If $p = \log_a 3$ and $q = \log_a 7$, write $\log_a 63$ in terms of $p$ and $q$.
     grade: merit
@@ -236,6 +313,13 @@ questions:
         note: Split sixty-three into the factors the question has given values for.
       - math: 2\log_a 3 + \log_a 7
       - math: 2p + q
+  - ask: If $p = \log_a 2$ and $q = \log_a 5$, write $\log_a 200$ in terms of $p$ and $q$.
+    grade: merit
+    working:
+      - math: \log_a\!\left(2^3 \times 5^2\right)
+        note: Split two hundred into the factors the question has given values for.
+      - math: 3\log_a 2 + 2\log_a 5
+      - math: 3p + 2q
   - ask: Evaluate.
     math: 4 + \log_b\!\left(b^{-2}\right) + \log_b \sqrt{b}
     grade: excellence
@@ -246,6 +330,15 @@ questions:
       - math: 4 - 2 + \tfrac{1}{2}
         note: $\log_b b$ is $1$, whatever the base is.
       - math: \tfrac{5}{2}
+  - ask: Evaluate.
+    math: 6 + \log_b\!\left(b^{-3}\right) + \log_b \sqrt[3]{b}
+    grade: excellence
+    working:
+      - math: 6 - 3\log_b b + \tfrac{1}{3}\log_b b
+        note: Convert the surd to $b^{\frac{1}{3}}$, then bring both exponents down in front.
+      - math: 6 - 3 + \tfrac{1}{3}
+        note: $\log_b b$ is $1$, whatever the base is.
+      - math: \tfrac{10}{3}
 ```
 
 ---
@@ -286,6 +379,14 @@ questions:
       - math: 4x = 3^2 = 9
       - math: x = \dfrac{9}{4}
   - ask: Solve.
+    math: \log_2 x + \log_2 3 = 4
+    grade: achieved
+    working:
+      - math: \log_2 3x = 4
+        note: Combine the two logarithms into one before converting.
+      - math: 3x = 2^4 = 16
+      - math: x = \dfrac{16}{3}
+  - ask: Solve.
     math: \log_2 x + \log_2 (x - 2) = 3
     grade: merit
     working:
@@ -295,6 +396,16 @@ questions:
       - math: (x - 4)(x + 2) = 0
       - math: x = 4
         note: At $x=-2$ both logarithms would be of negative numbers, so that root is rejected.
+  - ask: Solve.
+    math: \log_3 x + \log_3 (x - 2) = 1
+    grade: merit
+    working:
+      - math: \log_3 x(x-2) = 1
+      - math: x^2 - 2x = 3
+        note: Index form, with $3^1$ on the right.
+      - math: (x - 3)(x + 1) = 0
+      - math: x = 3
+        note: At $x=-1$ both logarithms would be of negative numbers, so that root is rejected.
   - ask: Solve.
     math: 2\log_5(x + 4) - \log_5 x = 2
     grade: excellence
@@ -307,6 +418,17 @@ questions:
       - math: x^2 - 17x + 16 = 0
         note: Expand the square, then take everything to one side.
       - math: x = 16 \quad\textsf{or}\quad x = 1
+  - ask: Solve.
+    math: 2\log_4(x + 3) - \log_4 x = 2
+    grade: excellence
+    working:
+      - math: \log_4\!\left(\dfrac{(x+3)^2}{x}\right) = 2
+        note: Power rule first, then quotient rule.
+      - math: (x+3)^2 = 16x
+        note: Convert to index form and multiply both sides by $x$.
+      - math: x^2 - 10x + 9 = 0
+        note: Expand the square, then take everything to one side.
+      - math: x = 9 \quad\textsf{or}\quad x = 1
 ```
 
 ---
@@ -342,6 +464,13 @@ questions:
         note: Twenty is not a power of three, so the bases cannot be matched.
       - math: x = \dfrac{\log 20}{\log 3} = 2.73
   - ask: Solve, to three significant figures.
+    math: 2^x = 30
+    grade: achieved
+    working:
+      - math: x\log 2 = \log 30
+        note: Thirty is not a power of two, so the bases cannot be matched.
+      - math: x = \dfrac{\log 30}{\log 2} = 4.91
+  - ask: Solve, to three significant figures.
     math: 2^{x+1} = 45
     grade: merit
     working:
@@ -350,12 +479,27 @@ questions:
       - math: x + 1 = 5.4919
       - math: x = 4.49
   - ask: Solve, to three significant figures.
+    math: 3^{x+1} = 50
+    grade: merit
+    working:
+      - math: (x+1)\log 3 = \log 50
+        note: The whole exponent comes down, so it needs a bracket.
+      - math: x + 1 = 3.5609
+      - math: x = 2.56
+  - ask: Solve, to three significant figures.
     math: 5 \times 4^x = 90
     grade: merit
     working:
       - math: 4^x = 18
         note: Divide by the $5$ first. The power rule reaches an exponent, not a coefficient.
       - math: x = \dfrac{\log 18}{\log 4} = 2.08
+  - ask: Solve, to three significant figures.
+    math: 3 \times 5^x = 120
+    grade: merit
+    working:
+      - math: 5^x = 40
+        note: Divide by the $3$ first. The power rule reaches an exponent, not a coefficient.
+      - math: x = \dfrac{\log 40}{\log 5} = 2.29
 ```
 
 ---
@@ -401,6 +545,16 @@ questions:
         note: Both values are positive, so neither is rejected.
       - math: x = 0 \quad\textsf{or}\quad x = 1
   - ask: Solve.
+    math: 4^x - 5 \times 2^x + 4 = 0
+    grade: merit
+    working:
+      - math: \left(2^x\right)^2 - 5\left(2^x\right) + 4 = 0
+        note: Four is $2^2$, so $4^x$ is $2^x$ squared.
+      - math: (u - 1)(u - 4) = 0 \qquad \textsf{where } u = 2^x
+      - math: 2^x = 1 \quad\textsf{or}\quad 2^x = 4
+        note: Both values are positive, so neither is rejected.
+      - math: x = 0 \quad\textsf{or}\quad x = 2
+  - ask: Solve.
     math: 4^{2x} - 3 \times 4^x - 4 = 0
     grade: merit
     from: "2023"
@@ -410,6 +564,15 @@ questions:
       - math: 4^x = 4 \quad\textsf{or}\quad 4^x = -1
       - math: x = 1
         note: No power of four is negative, so only the first value gives a solution.
+  - ask: Solve.
+    math: 9^{2x} - 2 \times 9^x - 3 = 0
+    grade: merit
+    working:
+      - math: u^2 - 2u - 3 = 0 \qquad \textsf{where } u = 9^x
+      - math: (u - 3)(u + 1) = 0
+      - math: 9^x = 3 \quad\textsf{or}\quad 9^x = -1
+      - math: x = \dfrac{1}{2}
+        note: No power of nine is negative, so only the first value gives a solution, and $9^{\frac{1}{2}}$ is $3$.
   - ask: Solve, to three significant figures.
     math: 3^{2x+1} - 54 = 3^{x+2}
     grade: excellence
@@ -425,6 +588,20 @@ questions:
       - math: 3^x = 6
         note: $3^x = -3$ is impossible, so it is discarded.
       - math: x = \dfrac{\log 6}{\log 3} = 1.63
+  - ask: Solve, to three significant figures.
+    math: 3^{2x+1} - 30 = 3^{x+2}
+    grade: excellence
+    working:
+      - math: 3\left(3^x\right)^2 - 30 = 9\left(3^x\right)
+        note: Split the extra terms off each exponent, so both sides are built from $3^x$ alone.
+      - math: 3u^2 - 9u - 30 = 0 \qquad \textsf{where } u = 3^x
+        note: Everything to one side, as B2 requires before any method is applied.
+      - math: u^2 - 3u - 10 = 0
+        note: Divide through by $3$, which is allowed because $3$ is a number and not the unknown.
+      - math: (u - 5)(u + 2) = 0
+      - math: 3^x = 5
+        note: $3^x = -2$ is impossible, so it is discarded.
+      - math: x = \dfrac{\log 5}{\log 3} = 1.46
 ```
 
 ---
@@ -466,6 +643,12 @@ questions:
       - math: V = 5000 \times 1.06^{\,4}
         note: Six per cent added each year means multiplying by $1.06$ once a year.
       - math: V = 6312.38
+  - ask: 8000 dollars is invested at 5 per cent a year, compounding annually. Find the value of the investment after 6 years.
+    grade: achieved
+    working:
+      - math: V = 8000 \times 1.05^{\,6}
+        note: Five per cent added each year means multiplying by $1.05$ once a year.
+      - math: V = 10720.77
   - ask: 5000 dollars is invested at 6 per cent a year, compounding annually. Find the number of whole years before the investment is worth more than 8000 dollars.
     grade: merit
     working:
@@ -473,6 +656,16 @@ questions:
         note: Write the equation down before solving it.
       - math: 1.06^{\,n} = 1.6
       - math: n = \dfrac{\log 1.6}{\log 1.06} = 8.07
+        note: No common base, so take logarithms of both sides.
+      - math: 9 \textsf{ years}
+        note: Eight whole years is not yet enough, so the answer rounds up rather than to the nearest.
+  - ask: 8000 dollars is invested at 5 per cent a year, compounding annually. Find the number of whole years before the investment is worth more than 12000 dollars.
+    grade: merit
+    working:
+      - math: 8000 \times 1.05^{\,n} = 12000
+        note: Write the equation down before solving it.
+      - math: 1.05^{\,n} = 1.5
+      - math: n = \dfrac{\log 1.5}{\log 1.05} = 8.31
         note: No common base, so take logarithms of both sides.
       - math: 9 \textsf{ years}
         note: Eight whole years is not yet enough, so the answer rounds up rather than to the nearest.
@@ -490,6 +683,19 @@ questions:
       - math: -0.4t = \ln 0.2917
         note: Take the natural logarithm of both sides, because the base here is $e$.
       - math: t = 3.08 \textsf{ years}
+  - ask: The value $V$ of a machine in dollars is modelled by $V = 80 + ke^{-0.3t}$, where $t$ is the time in years since it was bought and $k$ is a constant. The machine cost 1580 dollars. Find $k$, and find when the machine is worth 500 dollars.
+    grade: excellence
+    working:
+      - math: 1580 = 80 + ke^{0}
+        note: It cost 1580 dollars when it was bought, so that is the value at $t = 0$.
+      - math: k = 1500
+        note: Anything to the power zero is one, so the whole exponential term is $k$ at that moment.
+      - math: 500 = 80 + 1500e^{-0.3t}
+        note: Now the model is complete, the second question is an equation in $t$ alone.
+      - math: e^{-0.3t} = 0.28
+      - math: -0.3t = \ln 0.28
+        note: Take the natural logarithm of both sides, because the base here is $e$.
+      - math: t = 4.24 \textsf{ years}
 ```
 
 ---
@@ -506,6 +712,12 @@ questions:
     working:
       - math: 2^{3x} = 2^6
       - math: 3x = 6 \;\Rightarrow\; x = 2
+  - ask: Solve.
+    math: 3^{2x} = 729
+    grade: achieved
+    working:
+      - math: 3^{2x} = 3^6
+      - math: 2x = 6 \;\Rightarrow\; x = 3
   - ask: Evaluate.
     math: \log_2 32 - \log_2 4
     grade: achieved
@@ -513,6 +725,13 @@ questions:
       - math: \log_2\!\left(\dfrac{32}{4}\right) = \log_2 8
         note: Reading each logarithm separately gives $5-2$ and the same answer.
       - math: "3"
+  - ask: Evaluate.
+    math: \log_2 64 - \log_2 4
+    grade: achieved
+    working:
+      - math: \log_2\!\left(\dfrac{64}{4}\right) = \log_2 16
+        note: Reading each logarithm separately gives $6-2$ and the same answer.
+      - math: "4"
   - ask: Find an expression for $p$ in terms of $x$.
     math: \dfrac{5^{4x+3}}{5^{-x}} = 5^{3p}
     grade: merit
@@ -523,6 +742,15 @@ questions:
       - math: 5^{5x+3} = 5^{3p}
       - math: 5x + 3 = 3p
       - math: p = \dfrac{5x+3}{3}
+  - ask: Find an expression for $p$ in terms of $x$.
+    math: \dfrac{7^{3x+2}}{7^{-2x}} = 7^{5p}
+    grade: merit
+    working:
+      - math: 7^{3x+2-(-2x)} = 7^{5p}
+        note: Dividing powers of the same base subtracts the exponents, and subtracting a negative adds.
+      - math: 7^{5x+2} = 7^{5p}
+      - math: 5x + 2 = 5p
+      - math: p = \dfrac{5x+2}{5}
   - ask: If $\log_b x = 3$ and $\log_{2b} y = 3$, write $y$ in terms of $x$.
     grade: merit
     from: "2024"
@@ -534,6 +762,16 @@ questions:
         note: The cube reaches the $2$ as well as the $b$.
       - math: y = 8x
         note: $b^3$ is $x$, so the whole of $8b^3$ is $8x$.
+  - ask: If $\log_b x = 2$ and $\log_{3b} y = 2$, write $y$ in terms of $x$.
+    grade: merit
+    working:
+      - math: b^2 = x
+        note: Put each statement into index form, where the base is visible.
+      - math: (3b)^2 = y
+      - math: 9b^2 = y
+        note: The square reaches the $3$ as well as the $b$.
+      - math: y = 9x
+        note: $b^2$ is $x$, so the whole of $9b^2$ is $9x$.
   - ask: The magnitude $M$ of an earthquake is given by $M = \log_{10}\!\left(\dfrac{I}{I_0}\right)$, where $I$ is its intensity and $I_0$ is a fixed reference intensity. Show that an earthquake of magnitude 6.2 is more than 15 times as intense as one of magnitude 5.0.
     grade: excellence
     from: "2024"
@@ -546,6 +784,17 @@ questions:
         note: The reference cancels, and dividing powers of the same base subtracts the exponents.
       - math: 10^{1.2} = 15.85 > 15
         note: The question said show, so the comparison with fifteen has to be stated.
+  - ask: The sound level $L$ in decibels is given by $L = 10\log_{10}\!\left(\dfrac{I}{I_0}\right)$, where $I$ is the intensity of the sound and $I_0$ is a fixed reference intensity. Show that a sound of 85 decibels is more than 30 times as intense as one of 70 decibels.
+    grade: excellence
+    working:
+      - math: 85 = 10\log_{10}\!\left(\dfrac{I_1}{I_0}\right) \;\Rightarrow\; I_1 = 10^{8.5}I_0
+        note: Divide by the $10$ before converting, then convert to index form.
+      - math: I_2 = 10^{7.0}I_0
+        note: The same step for the second sound, with the same reference intensity.
+      - math: \dfrac{I_1}{I_2} = \dfrac{10^{8.5}I_0}{10^{7.0}I_0} = 10^{1.5}
+        note: The reference cancels, and dividing powers of the same base subtracts the exponents.
+      - math: 10^{1.5} = 31.6 > 30
+        note: The question said show, so the comparison with thirty has to be stated.
 ```
 
 ---

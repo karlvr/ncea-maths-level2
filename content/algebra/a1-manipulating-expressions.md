@@ -72,6 +72,22 @@ questions:
       - math: 2(9) + 15
         note: A negative squared is positive, and subtracting a negative adds.
       - math: "33"
+  - ask: Evaluate the expression when $x = -2$.
+    math: 3x^2 - 4x
+    grade: achieved
+    working:
+      - math: 3(\ca{-2})^2 - 4(\ca{-2})
+      - math: 3(4) + 8
+      - math: "20"
+  - ask: Evaluate the expression when $x = -4$.
+    math: -x^2 + 3x
+    grade: achieved
+    working:
+      - math: -(\ca{-4})^2 + 3(\ca{-4})
+        note: The minus in front of $x^2$ is not part of what gets squared.
+      - math: -16 - 12
+        note: $(-4)^2$ is $16$, and the minus in front of it makes the term $-16$.
+      - math: "-28"
   - ask: A student factorised the expression as $(x+3)(x-3)$. Decide by substitution whether that is correct.
     math: x^2 - 6x + 9
     grade: achieved
@@ -82,6 +98,29 @@ questions:
         note: Now the same number into the answer being tested.
       - math: \textsf{Not correct}
         note: The two disagree, so the factorising is wrong.
+  - ask: A student factorised the expression as $(x+5)(x-3)$. Decide by substitution whether that is correct.
+    math: x^2 + 2x - 15
+    grade: achieved
+    working:
+      - math: (\ca{1})^2 + 2(\ca{1}) - 15 = -12
+        note: Choose any number and put it into the expression you were given.
+      - math: (\ca{1}+5)(\ca{1}-3) = -12
+        note: The same number into the answer being tested. The two agree, but agreement at one number does not prove the factorising correct.
+      - math: (\cb{2})^2 + 2(\cb{2}) - 15 = -7 \qquad (\cb{2}+5)(\cb{2}-3) = -7
+        note: A second number, and the two calculations agree again.
+      - math: \textsf{Correct}
+  - ask: The side of a square is $3x$. Write an expression for its area.
+    grade: achieved
+    working:
+      - math: A = (\ca{3x})^2
+        note: Brackets around the whole side length, so the square reaches the $3$ as well as the $x$.
+      - math: A = 9x^2
+  - ask: The radius of a circle is $4x$. Write an expression for its area.
+    grade: achieved
+    working:
+      - math: A = \pi(\ca{4x})^2
+      - math: A = 16\pi x^2
+        note: Without the brackets the $4$ is never squared, and every line after that is wrong.
 ```
 
 ---
@@ -174,12 +213,31 @@ questions:
         note: Four products, one for each pairing of terms.
       - math: x^2 + 10x + 21
   - ask: Expand and simplify.
+    math: (x+2)(x+9)
+    grade: achieved
+    working:
+      - math: x^2 + 9x + 2x + 18
+      - math: x^2 + 11x + 18
+  - ask: Expand and simplify.
     math: (2x-5)(x+4)
     grade: achieved
     working:
       - math: 2x^2 + 8x - 5x - 20
         note: The $-5$ carries its sign into both of its products.
       - math: 2x^2 + 3x - 20
+  - ask: Expand and simplify.
+    math: (3x-2)(x+5)
+    grade: achieved
+    working:
+      - math: 3x^2 + 15x - 2x - 10
+      - math: 3x^2 + 13x - 10
+  - ask: Expand and simplify.
+    math: (x+5)(x-5)
+    grade: achieved
+    working:
+      - math: x^2 - 5x + 5x - 25
+        note: The two middle products are equal and opposite.
+      - math: x^2 - 25
   - ask: Expand and simplify.
     math: (3x-2)^2
     grade: achieved
@@ -190,6 +248,13 @@ questions:
       - math: 9x^2 - 12x + 4
         note: The middle term is the one that disappears if you square term by term.
   - ask: Expand and simplify.
+    math: (4x+3)^2
+    grade: achieved
+    working:
+      - math: (4x+3)(4x+3)
+      - math: 16x^2 + 12x + 12x + 9
+      - math: 16x^2 + 24x + 9
+  - ask: Expand and simplify.
     math: (x-1)(x+2)(x-3)
     grade: merit
     working:
@@ -198,6 +263,14 @@ questions:
       - math: x^3 - 3x^2 + x^2 - 3x - 2x + 6
         note: Six products this time, because three terms are multiplied by two.
       - math: x^3 - 2x^2 - 5x + 6
+  - ask: Expand and simplify.
+    math: (x+1)(x-2)(x+4)
+    grade: merit
+    working:
+      - math: (\ca{x^2 - x - 2})(x+4)
+        note: Any two of the three brackets may be taken first.
+      - math: x^3 + 4x^2 - x^2 - 4x - 2x - 8
+      - math: x^3 + 3x^2 - 6x - 8
 ```
 
 ---
@@ -274,12 +347,30 @@ questions:
       - math: \ca{6}\!\cdot\!2\!\cdot\!\cb{x}\!\cdot\!x \;+\; \ca{6}\!\cdot\!3\!\cdot\!\cb{x}
         note: Take the largest number that divides both, not just any number that does.
       - math: 6x(2x+3)
+  - ask: Factorise.
+    math: 20x^2 + 15x
+    grade: achieved
+    working:
+      - math: \ca{5}\!\cdot\!4\!\cdot\!\cb{x}\!\cdot\!x \;+\; \ca{5}\!\cdot\!3\!\cdot\!\cb{x}
+      - math: 5x(4x+3)
   - ask: Take out the highest common factor.
     math: 5x^3 - 20x^2 + 15x
     grade: achieved
     working:
       - math: 5x(x^2 - 4x + 3)
         note: Every term has a $5$ and at least one $x$. The signs stay with their terms.
+  - ask: Take out the highest common factor.
+    math: 6x^3 - 9x^2 + 12x
+    grade: achieved
+    working:
+      - math: 3x(2x^2 - 3x + 4)
+        note: The largest number dividing $6$, $9$ and $12$ is $3$, and only one $x$ is shared.
+  - ask: Factorise.
+    math: 4x^2 + 4x
+    grade: achieved
+    working:
+      - math: 4x(x+1)
+        note: The second term is entirely taken out, and what it leaves behind is $1$. The $1$ must be written, because an empty space inside the bracket is not a term.
   - ask: Factorise. The common factor here is not a number.
     math: 3x(x-2) + 5(x-2)
     grade: merit
@@ -288,6 +379,13 @@ questions:
         note: A whole bracket can be a common factor, in the same way a number can.
       - math: (x-2)(3x+5)
         note: This move is the last step of the hardest factorising in the lesson.
+  - ask: Factorise. The common factor here is not a number.
+    math: 4x(x+3) - 7(x+3)
+    grade: merit
+    working:
+      - math: 4x\ca{(x+3)} - 7\ca{(x+3)}
+      - math: (x+3)(4x-7)
+        note: The minus belongs to the $7$, so it goes inside the second bracket with it.
 ```
 
 ### Method 2—difference of two squares
@@ -345,12 +443,32 @@ questions:
         note: Both terms are squares, and a minus separates them.
       - math: (x+7)(x-7)
   - ask: Factorise.
+    math: x^2 - 121
+    grade: achieved
+    working:
+      - math: (x)^2 - (11)^2
+      - math: (x+11)(x-11)
+  - ask: Factorise if possible.
+    math: x^2 + 16
+    grade: achieved
+    working:
+      - math: x^2 + 16
+        note: Both terms are squares, but they are separated by a plus.
+      - math: \textsf{Does not factorise}
+        note: Difference of two squares needs a minus. A sum of two squares has no pair of brackets that produces it.
+  - ask: Factorise.
     math: 9x^2 - 64
     grade: achieved
     working:
       - math: (\ca{3x})^2 - (\cb{8})^2
         note: $9x^2$ is a square, because it is $(3x)^2$.
       - math: (\ca{3x}+\cb{8})(\ca{3x}-\cb{8})
+  - ask: Factorise.
+    math: 25x^2 - 36
+    grade: achieved
+    working:
+      - math: (\ca{5x})^2 - (\cb{6})^2
+      - math: (\ca{5x}+\cb{6})(\ca{5x}-\cb{6})
   - ask: Factorise fully.
     math: 50x^2 - 8
     grade: merit
@@ -361,6 +479,13 @@ questions:
         note: Take out the common factor first, and the bracket can now use difference of two squares. The “fully” in the question means keep going after this first factorisation.
       - math: 2(5x+2)(5x-2)
         note: Now fully factorised. The $2$ taken out in the first step is one of the factors, and it stays in the answer.
+  - ask: Factorise fully.
+    math: 18x^2 - 32
+    grade: merit
+    working:
+      - math: 2(9x^2 - 16)
+        note: Common factor first, and the bracket it leaves is a difference of two squares.
+      - math: 2(3x+4)(3x-4)
 ```
 
 ### Method 3—quadratic trinomials
@@ -443,12 +568,31 @@ questions:
         note: Multiply to the constant, add to the coefficient of $x$.
       - math: (x+4)(x+5)
   - ask: Factorise.
+    math: x^2 + 8x + 15
+    grade: achieved
+    working:
+      - math: \cc{3} \times \cd{5} = 15 \qquad \cc{3} + \cd{5} = 8
+      - math: (x+3)(x+5)
+  - ask: Factorise.
+    math: x^2 - 9x + 20
+    grade: achieved
+    working:
+      - math: \cc{-4} \times \cd{-5} = 20 \qquad \cc{-4} + \cd{-5} = -9
+        note: A positive constant with a negative middle term means both numbers are negative.
+      - math: (x-4)(x-5)
+  - ask: Factorise.
     math: x^2 - 3x - 28
     grade: achieved
     working:
       - math: \cc{-7} \times \cd{4} = -28 \qquad \cc{-7} + \cd{4} = -3
         note: A negative constant means one of each sign, and the larger carries the middle sign.
       - math: (x-7)(x+4)
+  - ask: Factorise.
+    math: x^2 - 2x - 24
+    grade: achieved
+    working:
+      - math: \cc{-6} \times \cd{4} = -24 \qquad \cc{-6} + \cd{4} = -2
+      - math: (x-6)(x+4)
   - ask: Factorise.
     math: x^2 + 14x + 49
     grade: achieved
@@ -457,6 +601,13 @@ questions:
         note: The two numbers turn out to be the same number.
       - math: (x+7)^2
         note: $(x+7)(x+7)$ is written as a square.
+  - ask: Factorise.
+    math: x^2 - 12x + 36
+    grade: achieved
+    working:
+      - math: \cc{-6} \times \cd{-6} = 36 \qquad \cc{-6} + \cd{-6} = -12
+      - math: (x-6)^2
+        note: The middle term's sign is what puts the minus inside the bracket.
   - ask: Factorise.
     math: 3x^2 + 11x + 6
     grade: merit
@@ -469,6 +620,15 @@ questions:
       - math: 3x(x+3) + 2(x+3)
         note: Factorise the two pairs separately.
       - math: (x+3)(3x+2)
+  - ask: Factorise.
+    math: 2x^2 + 11x + 12
+    grade: merit
+    working:
+      - math: \ca{2} \times \cb{12} = 24
+      - math: \cc{8} \times \cd{3} = 24 \qquad \cc{8} + \cd{3} = 11
+      - math: 2x^2 + \cc{8x} + \cd{3x} + 12
+      - math: 2x(x+4) + 3(x+4)
+      - math: (x+4)(2x+3)
   - ask: Factorise fully.
     math: 4x^3 - 4x^2 - 24x
     grade: merit
@@ -478,6 +638,14 @@ questions:
       - math: \cc{-3} \times \cd{2} = -6 \qquad \cc{-3} + \cd{2} = -1
       - math: 4x(x-3)(x+2)
         note: Three factors. Each method applied in turn produces one more.
+  - ask: Factorise fully.
+    math: 2x^3 + 2x^2 - 12x
+    grade: merit
+    working:
+      - math: 2x(x^2 + x - 6)
+        note: Common factor first, which leaves a trinomial with no coefficient on the $x^2$.
+      - math: \cc{3} \times \cd{-2} = -6 \qquad \cc{3} + \cd{-2} = 1
+      - math: 2x(x+3)(x-2)
 ```
 
 ---
@@ -514,6 +682,13 @@ questions:
         note: Collect each letter part with its own kind before adding anything.
       - math: 3x^2 + 11x
         note: Two terms, and they will not reduce to one.
+  - ask: Simplify.
+    math: 7x^2 - 2x - 4x^2 + 9x
+    grade: achieved
+    working:
+      - math: (7\ca{x^2} - 4\ca{x^2}) + (-2\cb{x} + 9\cb{x})
+        note: The sign in front of a term travels with it.
+      - math: 3x^2 + 7x
   - ask: Expand and simplify.
     math: (x+4)(x-1) - (x-3)(x+2)
     grade: merit
@@ -524,6 +699,15 @@ questions:
         note: The minus reaches every term inside that bracket, so two signs flip.
       - math: 4x + 2
         note: The $x^2$ terms cancel, which is the sign the signs were handled correctly.
+  - ask: Expand and simplify.
+    math: (x+5)(x-2) - (x-1)(x+3)
+    grade: merit
+    working:
+      - math: (x^2 + 3x - 10) - \ca{(x^2 + 2x - 3)}
+        note: Expand each product first, and keep the second one in a bracket.
+      - math: x^2 + 3x - 10 - x^2 \ca{-} 2x \ca{+} 3
+        note: Every sign inside that bracket flips, including the one that was already positive.
+      - math: x - 7
 ```
 
 ---
@@ -541,6 +725,12 @@ questions:
       - math: 2(4x^2 - 25)
         note: Common factor first. Neither original term is a square.
       - math: 2(2x+5)(2x-5)
+  - ask: Factorise fully.
+    math: 27x^2 - 12
+    grade: achieved
+    working:
+      - math: 3(9x^2 - 4)
+      - math: 3(3x+2)(3x-2)
   - ask: Find the value of $k$ for which the expression is a perfect square.
     math: 25x^2 - 40x + k
     grade: achieved
@@ -551,6 +741,15 @@ questions:
       - math: (5x-4)^2 = 25x^2 - 40x + 16
         note: The middle term is twice the product of the two, so the second term is $-4$.
       - math: k = 16
+  - ask: Find the value of $k$ for which the expression is a perfect square.
+    math: 9x^2 + 30x + k
+    grade: achieved
+    working:
+      - math: (\ca{3x} + \cb{?})^2
+        note: $9x^2$ is $(3x)^2$, so the first term of the bracket is fixed.
+      - math: 2 \times \ca{3x} \times \cb{5} = 30x
+        note: The middle term is twice the product of the two terms in the bracket, and that is what fixes the second one.
+      - math: k = 25
   - ask: Factorise fully.
     math: 6x^2 - 7x - 3
     grade: merit
@@ -562,6 +761,15 @@ questions:
         note: The second pair has no common factor other than $1$, and the $1$ must be written.
       - math: (2x-3)(3x+1)
   - ask: Factorise fully.
+    math: 4x^2 - 4x - 15
+    grade: merit
+    working:
+      - math: \ca{4} \times \cb{-15} = -60
+      - math: \cc{-10} \times \cd{6} = -60 \qquad \cc{-10} + \cd{6} = -4
+      - math: 4x^2 - 10x + 6x - 15
+      - math: 2x(2x-5) + 3(2x-5)
+      - math: (2x-5)(2x+3)
+  - ask: Factorise fully.
     math: x^4 - 16
     grade: excellence
     working:
@@ -571,6 +779,14 @@ questions:
         note: One of these two brackets is itself a difference of two squares.
       - math: (x^2+4)(x+2)(x-2)
         note: $x^2 + 4$ is a sum of squares, so it stops there.
+  - ask: Factorise fully.
+    math: x^4 - 81
+    grade: excellence
+    working:
+      - math: (x^2)^2 - (9)^2
+      - math: (x^2+9)(x^2-9)
+        note: The word “fully” is what says this line is not the answer.
+      - math: (x^2+9)(x+3)(x-3)
   - ask: Factorise fully.
     math: (x+3)^2 - (x-2)^2
     grade: excellence
@@ -582,6 +798,15 @@ questions:
         note: The second bracket collapses, because subtracting $-2$ adds $2$.
       - math: 5(2x+1)
         note: Expanding both squares first gets the same answer with far more work.
+  - ask: Factorise fully.
+    math: (x+4)^2 - (x-1)^2
+    grade: excellence
+    working:
+      - math: \big(\ca{(x+4)}\big)^2 - \big(\cb{(x-1)}\big)^2
+      - math: \big[\ca{(x+4)} + \cb{(x-1)}\big]\big[\ca{(x+4)} - \cb{(x-1)}\big]
+      - math: (2x+3)(5)
+        note: Subtracting $-1$ adds $1$, so the $x$ terms cancel in the second bracket.
+      - math: 5(2x+3)
 ```
 
 ---

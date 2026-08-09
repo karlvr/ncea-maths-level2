@@ -128,6 +128,28 @@ questions:
             - at: [0, 0]
               color: b
         note: "A parabola's gradient function is a straight line. It crosses under the turning point at $x = 0$: negative while $f$ falls, positive while $f$ climbs."
+  - ask: The graph of $f(x)$ is shown, with a turning point at $x = 1$. Sketch the graph of the gradient function $f'(x)$.
+    graph:
+      domain: [-2, 4]
+      curves:
+        - poly: [1, -2, 0]
+          label: f
+      points:
+        - at: [1, -1]
+      xticks: [1]
+    grade: achieved
+    working:
+      - graph:
+          domain: [-2, 4]
+          curves:
+            - poly: [2, -2]
+              color: b
+              label: f ′
+          points:
+            - at: [1, 0]
+              color: b
+          xticks: [1]
+        note: "A parabola's gradient function is a straight line, crossing the axis under the turning point—here at $x = 1$ rather than at the origin."
   - ask: The graph of $f(x)$ is shown, with turning points at $x = 0$ and $x = 2$. Sketch the graph of the gradient function $f'(x)$.
     graph:
       domain: [-1.5, 3.5]
@@ -153,6 +175,31 @@ questions:
             - at: [2, 0]
               color: b
           xticks: [0, 2]
+        note: "A cubic's gradient function is a parabola, crossing under each turning point. $f$ climbs, falls, climbs—so $f'$ runs positive, negative, positive, and the parabola opens upwards."
+  - ask: The graph of $f(x)$ is shown, with turning points at $x = -2$ and $x = 0$. Sketch the graph of the gradient function $f'(x)$.
+    graph:
+      domain: [-3.5, 1.5]
+      curves:
+        - poly: [1, 3, 0, 0]
+          label: f
+      points:
+        - at: [-2, 4]
+        - at: [0, 0]
+      xticks: [-2, 0]
+    grade: merit
+    working:
+      - graph:
+          domain: [-3.5, 1.5]
+          curves:
+            - poly: [3, 6, 0]
+              color: b
+              label: f ′
+          points:
+            - at: [-2, 0]
+              color: b
+            - at: [0, 0]
+              color: b
+          xticks: [-2, 0]
         note: "A cubic's gradient function is a parabola, crossing under each turning point. $f$ climbs, falls, climbs—so $f'$ runs positive, negative, positive, and the parabola opens upwards."
 ```
 
@@ -240,6 +287,32 @@ questions:
               guides: true
           xticks: [2]
         note: "A straight-line gradient function makes $f$ a parabola. $f'$ crosses from negative to positive at $x = 2$, so the parabola has its minimum there, and the sketch is slid vertically until it passes through $(0, 1)$."
+  - ask: The graph of the gradient function $f'(x)$ is shown. The function passes through $(0, 2)$. Sketch the graph of $f(x)$.
+    graph:
+      domain: [-4, 2]
+      curves:
+        - poly: [1, 1]
+          color: b
+          label: f ′
+      points:
+        - at: [-1, 0]
+          color: b
+      xticks: [-1]
+    grade: merit
+    working:
+      - graph:
+          domain: [-4, 2]
+          curves:
+            - poly: [0.5, 1, 2]
+              color: a
+              label: f
+          points:
+            - at: [0, 2]
+            - at: [-1, 1.5]
+              color: a
+              guides: true
+          xticks: [-1]
+        note: "A straight-line gradient function makes $f$ a parabola. $f'$ crosses from negative to positive at $x = -1$, so the parabola has its minimum there, and the sketch is slid vertically until it passes through $(0, 2)$."
 ```
 
 ---
@@ -275,6 +348,31 @@ questions:
               color: b
           xticks: [-1, 1]
         note: "This cubic falls, climbs, falls—so its parabola runs negative, positive, negative, and opens downwards. Crossings under the turning points, shape one degree down, sign matching the climb."
+  - ask: The graph of $f(x)$ is shown, with turning points at $x = -2$ and $x = 2$. Sketch the graph of $f'(x)$.
+    graph:
+      domain: [-3.2, 3.2]
+      curves:
+        - poly: [-1, 0, 12, 0]
+          label: f
+      points:
+        - at: [-2, -16]
+        - at: [2, 16]
+      xticks: [-2, 2]
+    grade: merit
+    working:
+      - graph:
+          domain: [-3.2, 3.2]
+          curves:
+            - poly: [-3, 0, 12]
+              color: b
+              label: f ′
+          points:
+            - at: [-2, 0]
+              color: b
+            - at: [2, 0]
+              color: b
+          xticks: [-2, 2]
+        note: "This cubic falls, climbs, falls—so its parabola runs negative, positive, negative, and opens downwards. Crossings under the turning points, shape one degree down, sign matching the climb."
   - ask: The graph of $f(x)$ is shown, with turning points at $x = -1$, $x = 0$ and $x = 1$. Sketch the graph of $f'(x)$.
     graph:
       domain: [-1.6, 1.6]
@@ -304,6 +402,34 @@ questions:
               color: b
           xticks: [-1, 1]
         note: "A quartic's gradient function is a cubic, and three turning points mean three crossings. Falling, climbing, falling, climbing reads as negative, positive, negative, positive—below, above, below, above the axis in turn."
+  - ask: The graph of $f(x)$ is shown, with turning points at $x = -2$, $x = 0$ and $x = 2$. Sketch the graph of $f'(x)$.
+    graph:
+      domain: [-2.8, 2.8]
+      curves:
+        - poly: [1, 0, -8, 0, 0]
+          label: f
+      points:
+        - at: [-2, -16]
+        - at: [0, 0]
+        - at: [2, -16]
+      xticks: [-2, 2]
+    grade: merit
+    working:
+      - graph:
+          domain: [-2.8, 2.8]
+          curves:
+            - poly: [4, 0, -16, 0]
+              color: b
+              label: f ′
+          points:
+            - at: [-2, 0]
+              color: b
+            - at: [0, 0]
+              color: b
+            - at: [2, 0]
+              color: b
+          xticks: [-2, 2]
+        note: "A quartic's gradient function is a cubic, and three turning points mean three crossings. Falling, climbing, falling, climbing reads as negative, positive, negative, positive—below, above, below, above the axis in turn."
   - ask: The graph of the gradient function $f'(x)$ is shown. Sketch a possible graph of $f(x)$, marking the $x$-values of its turning points.
     graph:
       domain: [-3, 3]
@@ -332,6 +458,34 @@ questions:
               color: a
           xticks: [-1, 1]
         note: "A parabola as the gradient function makes $f$ a cubic. At $x = -1$, $f'$ crosses from positive to negative, so $f$ has a maximum; at $x = 1$ it crosses back, a minimum. Any vertical position is correct, because no point was given—the word *possible* is in the question for that reason."
+  - ask: The graph of the gradient function $f'(x)$ is shown. Sketch a possible graph of $f(x)$, marking the $x$-values of its turning points.
+    graph:
+      domain: [-4, 4]
+      curves:
+        - poly: [1, 0, -4]
+          color: b
+          label: f ′
+      points:
+        - at: [-2, 0]
+          color: b
+        - at: [2, 0]
+          color: b
+      xticks: [-2, 2]
+    grade: excellence
+    working:
+      - graph:
+          domain: [-4, 4]
+          curves:
+            - poly: [0.333333, 0, -4, 0]
+              color: a
+              label: f
+          points:
+            - at: [-2, 5.333333]
+              color: a
+            - at: [2, -5.333333]
+              color: a
+          xticks: [-2, 2]
+        note: "A parabola as the gradient function makes $f$ a cubic. At $x = -2$, $f'$ crosses from positive to negative, so $f$ has a maximum; at $x = 2$ it crosses back, a minimum. Any vertical position is correct, because no point was given."
 ```
 
 ---

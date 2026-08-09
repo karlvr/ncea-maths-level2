@@ -66,6 +66,14 @@ steps:
 caption: cancelling
 questions:
   - ask: Simplify.
+    math: \dfrac{3x + 12}{3}
+    grade: achieved
+    working:
+      - math: \dfrac{\ca{3}x}{\ca{3}} + \dfrac{12}{\ca{3}}
+        note: Dividing by $3$ has to reach both terms, not only the one with a $3$ in front of it.
+      - math: x + 4
+        note: Cancelling the two threes that catch the eye would leave $x + 12$, and the $12$ would never have been divided.
+  - ask: Simplify.
     math: \dfrac{4x^2 + 6x}{2x}
     grade: achieved
     working:
@@ -73,6 +81,12 @@ questions:
         note: The numerator has a common factor, and it is the denominator.
       - math: 2x+3
         note: Cancelling only the $6$ against the $2$ would leave the $4x^2$ undivided.
+  - ask: Simplify.
+    math: \dfrac{9x^2 + 12x}{3x}
+    grade: achieved
+    working:
+      - math: \dfrac{\ca{3x}(3x+4)}{\ca{3x}}
+      - math: 3x+4
   - ask: Simplify.
     math: \dfrac{x^2 - 25}{x^2 + 3x - 10}
     grade: achieved
@@ -82,6 +96,22 @@ questions:
       - math: \dfrac{(x+5)(x-5)}{(x+5)(x-2)}
         note: Multiply to $-10$, add to $3$.
       - math: \dfrac{x-5}{x-2}
+  - ask: Simplify.
+    math: \dfrac{x^2 - 36}{x^2 + 2x - 24}
+    grade: achieved
+    working:
+      - math: \dfrac{(x+6)(x-6)}{x^2 + 2x - 24}
+      - math: \dfrac{(x+6)(x-6)}{(x+6)(x-4)}
+        note: Multiply to $-24$, add to $2$.
+      - math: \dfrac{x-6}{x-4}
+  - ask: Simplify, or state that the expression is already in its simplest form.
+    math: \dfrac{x+3}{x^2 + 5x + 4}
+    grade: achieved
+    working:
+      - math: \dfrac{x+3}{(x+1)(x+4)}
+        note: Factorise the denominator before deciding anything.
+      - math: \textsf{Already in simplest form}
+        note: Neither factor underneath matches the numerator, so nothing cancels. Cancelling the $3$ against the $4$ would be cancelling terms.
   - ask: Simplify fully.
     math: \dfrac{2x^2 - 18}{x^2 + 6x + 9}
     grade: merit
@@ -92,6 +122,14 @@ questions:
         note: The two numbers for the denominator turn out to be the same number.
       - math: \dfrac{2(x-3)}{x+3}
         note: One $(x+3)$ cancels. The other stays, because only one appeared on top.
+  - ask: Simplify fully.
+    math: \dfrac{3x^2 - 12}{x^2 + 4x + 4}
+    grade: merit
+    working:
+      - math: \dfrac{3(x^2-4)}{x^2+4x+4}
+        note: A common factor on top before anything else.
+      - math: \dfrac{3(x+2)(x-2)}{(x+2)(x+2)}
+      - math: \dfrac{3(x-2)}{x+2}
 ```
 
 ---
@@ -135,6 +173,14 @@ questions:
       - math: \dfrac{1}{3x}
         note: Both pairs cancel. One $3x$ is left underneath, because the bottom had two of them.
   - ask: Simplify.
+    math: \dfrac{5x}{x-2} \times \dfrac{x-2}{25x^2}
+    grade: achieved
+    working:
+      - math: \dfrac{5x}{x-2} \times \dfrac{x-2}{(5x)^2}
+        note: $25x^2$ is $(5x)^2$.
+      - math: \dfrac{\cb{5x}\,\ca{(x-2)}}{\ca{(x-2)}\,(\cb{5x})^2}
+      - math: \dfrac{1}{5x}
+  - ask: Simplify.
     math: \dfrac{6x^2}{x+3} \div \dfrac{2x}{x+3}
     grade: achieved
     working:
@@ -147,6 +193,15 @@ questions:
       - math: 3x
         note: Both pairs cancel, and the $3x$ is what is left.
   - ask: Simplify.
+    math: \dfrac{10x^2}{x-1} \div \dfrac{5x}{x-1}
+    grade: achieved
+    working:
+      - math: \dfrac{10x^2}{x-1} \times \dfrac{x-1}{5x}
+        note: The divide becomes a multiply, with the second fraction turned over.
+      - math: \dfrac{\cb{5x} \cdot 2x\,\ca{(x-1)}}{\ca{(x-1)}\,\cb{5x}}
+        note: $10x^2$ is $5x$ times $2x$, which puts a $5x$ on the top to match the one underneath.
+      - math: 2x
+  - ask: Simplify.
     math: \dfrac{x+2}{x-4} \times \dfrac{x^2-16}{x^2-4}
     grade: merit
     working:
@@ -154,6 +209,14 @@ questions:
         note: Factorise both fractions before combining them.
       - math: \dfrac{\ca{(x+2)}\,(x+4)\,\cb{(x-4)}}{\cb{(x-4)}\,\ca{(x+2)}\,(x-2)}
       - math: \dfrac{x+4}{x-2}
+  - ask: Simplify.
+    math: \dfrac{x+3}{x-5} \times \dfrac{x^2-25}{x^2-9}
+    grade: merit
+    working:
+      - math: \dfrac{x+3}{x-5} \times \dfrac{(x+5)(x-5)}{(x+3)(x-3)}
+        note: Factorise both fractions before combining them.
+      - math: \dfrac{\ca{(x+3)}\,(x+5)\,\cb{(x-5)}}{\cb{(x-5)}\,\ca{(x+3)}\,(x-3)}
+      - math: \dfrac{x+5}{x-3}
   - ask: Simplify.
     math: \dfrac{x^2+5x}{x^2-9} \div \dfrac{x+5}{x-3}
     grade: merit
@@ -163,6 +226,15 @@ questions:
       - math: \dfrac{x(x+5)}{(x+3)(x-3)} \times \dfrac{x-3}{x+5}
       - math: \dfrac{x\,\ca{(x+5)}\,\cb{(x-3)}}{(x+3)\,\cb{(x-3)}\,\ca{(x+5)}}
       - math: \dfrac{x}{x+3}
+  - ask: Simplify.
+    math: \dfrac{x^2+4x}{x^2-25} \div \dfrac{x+4}{x-5}
+    grade: merit
+    working:
+      - math: \dfrac{x^2+4x}{x^2-25} \times \dfrac{x-5}{x+4}
+        note: Turn the second fraction over, and the division becomes a multiplication.
+      - math: \dfrac{x(x+4)}{(x+5)(x-5)} \times \dfrac{x-5}{x+4}
+      - math: \dfrac{x\,\ca{(x+4)}\,\cb{(x-5)}}{(x+5)\,\cb{(x-5)}\,\ca{(x+4)}}
+      - math: \dfrac{x}{x+5}
 ```
 
 ---
@@ -221,6 +293,23 @@ questions:
       - math: \dfrac{7x+2}{x(x+1)}
         note: The denominator stays in factors.
   - ask: Write as a single fraction.
+    math: \dfrac{3}{x} + \dfrac{4}{x+2}
+    grade: achieved
+    working:
+      - math: \dfrac{3\ca{(x+2)}}{x\,\ca{(x+2)}} + \dfrac{4\cb{x}}{\cb{x}\,(x+2)}
+      - math: \dfrac{3(x+2) + 4x}{x(x+2)}
+      - math: \dfrac{7x+6}{x(x+2)}
+  - ask: Simplify fully.
+    math: \dfrac{6x+1}{4} - \dfrac{2x-3}{4}
+    grade: achieved
+    working:
+      - math: \dfrac{(6x+1) - \ca{(2x-3)}}{4}
+        note: The denominators already match, so write the second numerator in brackets and subtract it whole.
+      - math: \dfrac{6x + 1 - 2x \ca{+} 3}{4}
+        note: Minus a $-3$ is $+3$.
+      - math: \dfrac{\cb{4}(x+1)}{\cb{4}} \;=\; x+1
+        note: A common factor appears in the numerator, so it cancels.
+  - ask: Write as a single fraction.
     math: \dfrac{4}{x-2} - \dfrac{3}{x+1}
     grade: merit
     working:
@@ -229,6 +318,14 @@ questions:
       - math: \dfrac{4x + 4 - 3x \ca{+} 6}{(x-2)(x+1)}
         note: $-3$ times $-2$ is $+6$.
       - math: \dfrac{x+10}{(x-2)(x+1)}
+  - ask: Write as a single fraction.
+    math: \dfrac{5}{x-3} - \dfrac{2}{x+4}
+    grade: merit
+    working:
+      - math: \dfrac{5(x+4) - \ca{2(x-3)}}{(x-3)(x+4)}
+        note: A subtraction, so the second numerator needs a bracket around it.
+      - math: \dfrac{5x + 20 - 2x \ca{+} 6}{(x-3)(x+4)}
+      - math: \dfrac{3x+26}{(x-3)(x+4)}
   - ask: Write as a single fraction.
     math: \dfrac{2}{t} + \dfrac{t-3}{t^2} - \dfrac{1}{4t}
     grade: merit
@@ -241,6 +338,16 @@ questions:
       - math: \dfrac{8t + 4t - 12 - t}{4t^2}
       - math: \dfrac{11t - 12}{4t^2}
         note: The 2025 report names expressions involving fractions as where a lack of basic algebra skills was particularly evident.
+  - ask: Write as a single fraction.
+    math: \dfrac{3}{t} + \dfrac{t-2}{t^2} - \dfrac{1}{2t}
+    grade: merit
+    working:
+      - math: 2t^2
+        note: Each denominator divides into this one, and nothing smaller will do.
+      - math: \dfrac{6t}{2t^2} + \dfrac{2(t-2)}{2t^2} - \dfrac{t}{2t^2}
+        note: Take each fraction up to the common denominator one at a time.
+      - math: \dfrac{6t + 2t - 4 - t}{2t^2}
+      - math: \dfrac{7t - 4}{2t^2}
 ```
 
 ---
@@ -265,6 +372,15 @@ A subtraction written the other way round is what produces such a pair, and a di
 caption: brackets that differ only by a sign
 questions:
   - ask: Simplify.
+    math: \dfrac{2-x}{x-2}
+    grade: achieved
+    working:
+      - math: \dfrac{\ca{2-x}}{\cb{x-2}}
+        note: These are not the same bracket, so nothing cancels yet.
+      - math: \dfrac{-1(\cb{x-2})}{\cb{x-2}}
+        note: Take a $-1$ out of the numerator, and the brackets match.
+      - math: "-1"
+  - ask: Simplify.
     math: \dfrac{x^2-16}{4-x}
     grade: merit
     working:
@@ -273,6 +389,14 @@ questions:
       - math: \dfrac{(x+4)\ca{(x-4)}}{-1\,\ca{(x-4)}}
         note: Take a $-1$ out of the denominator to make the brackets match.
       - math: -(x+4)
+  - ask: Simplify.
+    math: \dfrac{x^2-25}{5-x}
+    grade: merit
+    working:
+      - math: \dfrac{(x+5)\ca{(x-5)}}{\cb{5-x}}
+        note: The two brackets are not the same, so nothing cancels yet.
+      - math: \dfrac{(x+5)\ca{(x-5)}}{-1\,\ca{(x-5)}}
+      - math: -(x+5)
   - ask: Simplify fully.
     math: \dfrac{9-x^2}{x^2+2x-15}
     grade: merit
@@ -282,6 +406,15 @@ questions:
       - math: \dfrac{(x+3)\big(\!-\!1\big)\ca{(x-3)}}{(x+5)\ca{(x-3)}}
         note: $3-x$ is $-1(x-3)$.
       - math: \dfrac{-(x+3)}{x+5}
+  - ask: Simplify fully.
+    math: \dfrac{16-x^2}{x^2+x-20}
+    grade: merit
+    working:
+      - math: \dfrac{(4+x)(4-x)}{(x+5)(x-4)}
+        note: Difference of two squares on top, trinomial underneath.
+      - math: \dfrac{(x+4)\big(\!-\!1\big)\ca{(x-4)}}{(x+5)\ca{(x-4)}}
+        note: $4-x$ is $-1(x-4)$.
+      - math: \dfrac{-(x+4)}{x+5}
 ```
 
 ---
@@ -299,6 +432,13 @@ questions:
       - math: \dfrac{(x+5)(x+2)}{(x+2)(x-2)}
         note: A trinomial on top, a difference of two squares underneath.
       - math: \dfrac{x+5}{x-2}
+  - ask: Simplify fully.
+    math: \dfrac{x^2 + 8x + 15}{x^2 - 9}
+    grade: achieved
+    working:
+      - math: \dfrac{(x+5)(x+3)}{(x+3)(x-3)}
+        note: A trinomial on top, a difference of two squares underneath.
+      - math: \dfrac{x+5}{x-3}
   - ask: Simplify.
     math: \dfrac{4x^2 + 20x + 25}{2x^2 + 5x}
     grade: merit
@@ -309,6 +449,15 @@ questions:
       - math: \dfrac{(2x+5)^2}{x(2x+5)}
         note: The numerator is a perfect square, which the denominator has just hinted at.
       - math: \dfrac{2x+5}{x}
+  - ask: Simplify.
+    math: \dfrac{9x^2 + 24x + 16}{3x^2 + 4x}
+    grade: merit
+    working:
+      - math: \dfrac{9x^2 + 24x + 16}{x(3x+4)}
+        note: Start with the denominator, where the common factor is easy to see.
+      - math: \dfrac{(3x+4)^2}{x(3x+4)}
+        note: The first and last terms of the numerator are squares, and the middle term is twice the product of their roots.
+      - math: \dfrac{3x+4}{x}
   - ask: Simplify fully.
     math: \dfrac{4x^3 + 14x^2 - 8x}{3x^2 + 10x - 8}
     grade: merit
@@ -320,6 +469,15 @@ questions:
         note: Both are trinomials with a coefficient on the $x^2$, so split the middle term.
       - math: \dfrac{2x(2x-1)}{3x-2}
         note: Either this or the expanded numerator is accepted.
+  - ask: Simplify fully.
+    math: \dfrac{4x^3 + 10x^2 - 6x}{3x^2 + 7x - 6}
+    grade: merit
+    working:
+      - math: \dfrac{2x(2x^2 + 5x - 3)}{3x^2 + 7x - 6}
+        note: A common factor of $2x$ drops the numerator to a quadratic.
+      - math: \dfrac{2x(2x-1)\ca{(x+3)}}{(3x-2)\ca{(x+3)}}
+        note: Both are trinomials with a coefficient on the $x^2$, so split the middle term.
+      - math: \dfrac{2x(2x-1)}{3x-2}
   - ask: The expression can be written as $A + \dfrac{B}{x}$, where $A$ and $B$ are integers. Find $A$ and $B$.
     math: \dfrac{12x^2 - 14x + 4}{3x^2 - 2x}
     grade: merit
@@ -334,6 +492,18 @@ questions:
         note: Split the numerator term by term over the denominator.
       - math: A = 4, \quad B = -2
         note: $B$ is negative, and the form given has a plus in it. Both facts have to hold at once.
+  - ask: The expression can be written as $A + \dfrac{B}{x}$, where $A$ and $B$ are integers. Find $A$ and $B$.
+    math: \dfrac{12x^2 + 12x - 9}{2x^2 + 3x}
+    grade: merit
+    working:
+      - math: \dfrac{3(4x^2 + 4x - 3)}{x(2x+3)}
+        note: Common factor out of each, top and bottom.
+      - math: \dfrac{3(2x-1)\ca{(2x+3)}}{x\,\ca{(2x+3)}}
+      - math: \dfrac{3(2x-1)}{x} = \dfrac{6x-3}{x}
+        note: Simplify first. The required form only becomes reachable once this has cancelled.
+      - math: \dfrac{6x}{x} - \dfrac{3}{x} = 6 - \dfrac{3}{x}
+        note: Split the numerator term by term over the denominator.
+      - math: A = 6, \quad B = -3
   - ask: Simplify fully.
     math: \dfrac{1}{x-3} - \dfrac{6}{x^2-9}
     grade: excellence
@@ -347,6 +517,18 @@ questions:
       - math: \dfrac{\ca{x-3}}{(x+3)\ca{(x-3)}}
         note: The numerator has become a copy of one of the factors underneath.
       - math: \dfrac{1}{x+3}
+  - ask: Simplify fully.
+    math: \dfrac{1}{x-2} - \dfrac{4}{x^2-4}
+    grade: excellence
+    working:
+      - math: \dfrac{1}{x-2} - \dfrac{4}{(x+2)(x-2)}
+        note: Factorise the denominators before looking for a common one.
+      - math: (x+2)(x-2)
+        note: The second denominator already contains the first, so it is the common denominator.
+      - math: \dfrac{(x+2) - 4}{(x+2)(x-2)}
+        note: Only the first fraction needs taking up.
+      - math: \dfrac{\ca{x-2}}{(x+2)\ca{(x-2)}}
+      - math: \dfrac{1}{x+2}
 ```
 
 ---

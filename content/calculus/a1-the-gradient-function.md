@@ -101,11 +101,22 @@ questions:
       - math: f'(x) = 3 \times 4x^3 = 12x^3
         note: "The coefficient stays and multiplies the power."
   - ask: Differentiate.
+    math: f(x) = 5x^3
+    grade: achieved
+    working:
+      - math: f'(x) = 5 \times 3x^2 = 15x^2
+  - ask: Differentiate.
     math: f(x) = x^5 - 4x^3 + 2x - 9
     grade: achieved
     working:
       - math: f'(x) = 5x^4 - 12x^2 + 2
         note: "Term by term. The $2x$ becomes $2$, and the constant becomes nothing."
+  - ask: Differentiate.
+    math: f(x) = x^4 - 3x^2 + 5x - 6
+    grade: achieved
+    working:
+      - math: f'(x) = 4x^3 - 6x + 5
+        note: "Term by term. The $5x$ becomes $5$, and the constant becomes nothing."
   - ask: Find the gradient function.
     math: f(x) = \dfrac{x^6}{3} + \dfrac{x^2}{2} - 10
     grade: achieved
@@ -113,6 +124,13 @@ questions:
       - math: f'(x) = \dfrac{6x^5}{3} + \dfrac{2x}{2}
         note: "The fractions are coefficients, so they stay and multiply."
       - math: f'(x) = 2x^5 + x
+  - ask: Find the gradient function.
+    math: f(x) = \dfrac{x^4}{2} + \dfrac{x^3}{3} - 7
+    grade: achieved
+    working:
+      - math: f'(x) = \dfrac{4x^3}{2} + \dfrac{3x^2}{3}
+        note: "The fractions are coefficients, so they stay and multiply."
+      - math: f'(x) = 2x^3 + x^2
 ```
 
 ---
@@ -167,11 +185,24 @@ questions:
         note: "Expand first—differentiating each bracket separately gives a wrong answer."
       - math: f'(x) = 4x + 5
   - ask: Differentiate.
+    math: f(x) = (3x+2)(x-4)
+    grade: merit
+    working:
+      - math: f(x) = 3x^2 - 10x - 8
+        note: "Expand first—differentiating each bracket separately gives a wrong answer."
+      - math: f'(x) = 6x - 10
+  - ask: Differentiate.
     math: y = x^2(x - 6)
     grade: merit
     working:
       - math: y = x^3 - 6x^2
       - math: \dfrac{dy}{dx} = 3x^2 - 12x
+  - ask: Differentiate.
+    math: y = x^2(2x - 5)
+    grade: merit
+    working:
+      - math: y = 2x^3 - 5x^2
+      - math: \dfrac{dy}{dx} = 6x^2 - 10x
 ```
 
 ---
@@ -208,6 +239,14 @@ questions:
         note: "Differentiate the whole function before substituting anything."
       - math: f'(2) = 6(2)^2 - 10(2) + 3
       - math: f'(2) = 24 - 20 + 3 = 7
+  - ask: Use calculus to find the gradient of the function at the point where $x = 2$.
+    math: f(x) = 3x^3 - 4x^2 + 2x - 1
+    grade: achieved
+    working:
+      - math: f'(x) = 9x^2 - 8x + 2
+        note: "Differentiate the whole function before substituting anything."
+      - math: f'(2) = 9(2)^2 - 8(2) + 2
+      - math: f'(2) = 36 - 16 + 2 = 22
   - ask: Use calculus to find the gradient of the function at the point where $x = -\dfrac{1}{2}$.
     math: f(x) = 2x^3 + 3x^2 + \dfrac{x}{2} - 4
     grade: achieved
@@ -218,6 +257,15 @@ questions:
       - math: f'\!\left(-\dfrac{1}{2}\right) = 6\left(-\dfrac{1}{2}\right)^2 + 6\left(-\dfrac{1}{2}\right) + \dfrac{1}{2}
         note: "Brackets around the substituted value, so the square keeps the sign right."
       - math: f'\!\left(-\dfrac{1}{2}\right) = \dfrac{3}{2} - 3 + \dfrac{1}{2} = -1
+  - ask: Use calculus to find the gradient of the function at the point where $x = -\dfrac{1}{2}$.
+    math: f(x) = 4x^3 + 2x^2 + \dfrac{x}{3} - 5
+    grade: achieved
+    working:
+      - math: f'(x) = 12x^2 + 4x + \dfrac{1}{3}
+        note: "The $\\dfrac{x}{3}$ is the term to watch—its derivative is its coefficient, $\\dfrac{1}{3}$."
+      - math: f'\!\left(-\dfrac{1}{2}\right) = 12\left(-\dfrac{1}{2}\right)^2 + 4\left(-\dfrac{1}{2}\right) + \dfrac{1}{3}
+        note: "Brackets around the substituted value, so the square keeps the sign right."
+      - math: f'\!\left(-\dfrac{1}{2}\right) = 3 - 2 + \dfrac{1}{3} = \dfrac{4}{3}
 ```
 
 ---
@@ -256,6 +304,16 @@ questions:
       - math: f(3) = 2(3)^2 - 9(3) - 5 = -14
         note: "The $y$-value comes from $f$, because the point lies on the curve."
       - math: (3, -14)
+  - ask: Find the coordinates of the point on the curve where the gradient of $f(x)$ is equal to $4$.
+    math: f(x) = 3x^2 - 8x + 1
+    grade: achieved
+    working:
+      - math: f'(x) = 6x - 8 = 4
+        note: "Gradient function, set equal to the gradient given."
+      - math: x = 2
+      - math: f(2) = 3(2)^2 - 8(2) + 1 = -3
+        note: "The $y$-value comes from $f$, because the point lies on the curve."
+      - math: (2, -3)
   - ask: Find the value of $a$, given that the gradient of the curve at $x = 1$ is $6$.
     math: f(x) = ax^3 - 3x^2 + 2
     grade: merit
@@ -264,6 +322,14 @@ questions:
         note: "$a$ is a constant, so it rides along like any coefficient."
       - math: f'(1) = 3a - 6 = 6
       - math: a = 4
+  - ask: Find the value of $a$, given that the gradient of the curve at $x = 1$ is $7$.
+    math: f(x) = ax^3 - 4x^2 + 1
+    grade: merit
+    working:
+      - math: f'(x) = 3ax^2 - 8x
+        note: "$a$ is a constant, so it rides along like any coefficient."
+      - math: f'(1) = 3a - 8 = 7
+      - math: a = 5
 ```
 
 ---
@@ -279,6 +345,11 @@ questions:
     grade: achieved
     working:
       - math: f'(x) = 4x^3 - 12x + 11
+  - ask: Differentiate.
+    math: f(x) = x^4 - 5x^2 + 7x - 2
+    grade: achieved
+    working:
+      - math: f'(x) = 4x^3 - 10x + 7
   - ask: Use calculus to find the gradient of the function at the point where $x = -1$.
     math: y = \dfrac{x^4}{2} + 3x^3 - x
     grade: achieved
@@ -287,6 +358,14 @@ questions:
       - math: 2(-1)^3 + 9(-1)^2 - 1
         note: "An odd power keeps the minus; an even power loses it."
       - math: -2 + 9 - 1 = 6
+  - ask: Use calculus to find the gradient of the function at the point where $x = -1$.
+    math: y = \dfrac{x^4}{4} + 2x^3 - x
+    grade: achieved
+    working:
+      - math: \dfrac{dy}{dx} = x^3 + 6x^2 - 1
+      - math: (-1)^3 + 6(-1)^2 - 1
+        note: "An odd power keeps the minus; an even power loses it."
+      - math: -1 + 6 - 1 = 4
   - ask: Find the coordinates of the point on the curve where the gradient is $-2$.
     math: f(x) = x^2 - 8x + 3
     grade: achieved
@@ -295,6 +374,14 @@ questions:
       - math: x = 3
       - math: f(3) = 9 - 24 + 3 = -12
       - math: (3, -12)
+  - ask: Find the coordinates of the point on the curve where the gradient is $-2$.
+    math: f(x) = x^2 - 6x + 5
+    grade: achieved
+    working:
+      - math: f'(x) = 2x - 6 = -2
+      - math: x = 2
+      - math: f(2) = 4 - 12 + 5 = -3
+      - math: (2, -3)
   - ask: Differentiate.
     math: f(x) = (x-4)(x^2+2x)
     grade: merit
@@ -302,6 +389,13 @@ questions:
       - math: f(x) = x^3 - 2x^2 - 8x
         note: "Expand before the rule can be used."
       - math: f'(x) = 3x^2 - 4x - 8
+  - ask: Differentiate.
+    math: f(x) = (x-3)(x^2+4x)
+    grade: merit
+    working:
+      - math: f(x) = x^3 + x^2 - 12x
+        note: "Expand before the rule can be used."
+      - math: f'(x) = 3x^2 + 2x - 12
   - ask: The gradient of the curve at $x = 2$ is $17$. Find $b$.
     math: f(x) = x^3 + bx^2 + x
     grade: merit
@@ -309,6 +403,13 @@ questions:
       - math: f'(x) = 3x^2 + 2bx + 1
       - math: f'(2) = 12 + 4b + 1 = 17
       - math: b = 1
+  - ask: The gradient of the curve at $x = 3$ is $41$. Find $b$.
+    math: f(x) = x^3 + bx^2 + 2x
+    grade: merit
+    working:
+      - math: f'(x) = 3x^2 + 2bx + 2
+      - math: f'(3) = 27 + 6b + 2 = 41
+      - math: b = 2
   - ask: Show that the gradient of the curve is smallest at $x = 0$.
     math: f(x) = x^3 + 5x
     grade: excellence
@@ -319,6 +420,16 @@ questions:
       - math: 3x^2 \ge 0 \;\textsf{ for every } x \textsf{, so } f'(x) \ge 5
         note: "A square is never negative, and that carries the whole argument."
       - math: \textsf{The gradient is never less than } 5 \textsf{, its value at } x=0.
+  - ask: Show that the gradient of the curve is smallest at $x = 0$.
+    math: f(x) = 2x^3 + 3x
+    grade: excellence
+    working:
+      - math: f'(x) = 6x^2 + 3
+        note: "The claim is about gradients, so the working lives entirely in the gradient function."
+      - math: f'(0) = 3
+      - math: 6x^2 \ge 0 \;\textsf{ for every } x \textsf{, so } f'(x) \ge 3
+        note: "A square is never negative, and that carries the whole argument."
+      - math: \textsf{The gradient is never less than } 3 \textsf{, its value at } x=0.
 ```
 
 ---

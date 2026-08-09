@@ -53,6 +53,11 @@ questions:
     grade: achieved
     working:
       - math: f(x) = \dfrac{x^4}{4} + c
+  - ask: Anti-differentiate.
+    math: f'(x) = x^5
+    grade: achieved
+    working:
+      - math: f(x) = \dfrac{x^6}{6} + c
   - ask: Find $f(x)$.
     math: f'(x) = 8x^3 - 6x + 1
     grade: achieved
@@ -60,11 +65,24 @@ questions:
       - math: f(x) = \dfrac{8x^4}{4} - \dfrac{6x^2}{2} + x + c
       - math: f(x) = 2x^4 - 3x^2 + x + c
         note: "The $+\\,c$ is part of the answer—the 2025 report lists *omitted the constant of integration* among candidates not achieving."
+  - ask: Find $f(x)$.
+    math: f'(x) = 6x^2 - 10x + 3
+    grade: achieved
+    working:
+      - math: f(x) = \dfrac{6x^3}{3} - \dfrac{10x^2}{2} + 3x + c
+      - math: f(x) = 2x^3 - 5x^2 + 3x + c
+        note: "The $+\\,c$ is part of the answer, and it is what makes this a family of curves rather than one."
   - ask: Find $y$.
     math: \dfrac{dy}{dx} = 3x^2 - x + 4
     grade: achieved
     working:
       - math: y = x^3 - \dfrac{x^2}{2} + 4x + c
+        note: "The middle term's coefficient is $1$, so the division by $2$ simply stays."
+  - ask: Find $y$.
+    math: \dfrac{dy}{dx} = 4x^3 - x + 2
+    grade: achieved
+    working:
+      - math: y = x^4 - \dfrac{x^2}{2} + 2x + c
         note: "The middle term's coefficient is $1$, so the division by $2$ simply stays."
 ```
 
@@ -124,6 +142,15 @@ questions:
       - math: f(2) = 24 - 12 + 16 + c = 25
       - math: c = -3
       - math: f(x) = 12x - 3x^2 + 2x^3 - 3
+  - ask: The graph of $f(x)$ passes through the point $(2, 25)$. Find the equation of the function $f$.
+    math: f'(x) = 10 - 4x + 3x^2
+    grade: merit
+    working:
+      - math: f(x) = 10x - 2x^2 + x^3 + c
+        note: "Anti-differentiate every term, and carry the $c$ from this line onwards."
+      - math: f(2) = 20 - 8 + 8 + c = 25
+      - math: c = 5
+      - math: f(x) = 10x - 2x^2 + x^3 + 5
   - ask: The graph of $f(x)$ passes through $(2, 3)$. Find the equation of the function $f$.
     math: f'(x) = 2x^3 - 6x^2 + 4x - 1
     grade: merit
@@ -134,6 +161,15 @@ questions:
       - math: f(2) = 8 - 16 + 8 - 2 + c = 3
       - math: c = 5
       - math: f(x) = \dfrac{x^4}{2} - 2x^3 + 2x^2 - x + 5
+  - ask: The graph of $f(x)$ passes through $(2, 5)$. Find the equation of the function $f$.
+    math: f'(x) = 4x^3 - 6x^2 + 2x - 1
+    grade: merit
+    working:
+      - math: f(x) = x^4 - 2x^3 + x^2 - x + c
+        note: "$\\dfrac{4x^4}{4}$ simplifies to $x^4$."
+      - math: f(2) = 16 - 16 + 4 - 2 + c = 5
+      - math: c = 3
+      - math: f(x) = x^4 - 2x^3 + x^2 - x + 3
   - ask: The gradient function of a curve is $f'(x) = x - 2$, and the curve passes through $(0, 1)$. Find the equation of the curve.
     grade: merit
     working:
@@ -141,6 +177,13 @@ questions:
       - math: f(0) = c = 1
         note: "A point on the $y$-axis hands over the $c$ directly. This is the curve the sketching lesson could only draw the shape of—the same question, now answered exactly."
       - math: f(x) = \dfrac{x^2}{2} - 2x + 1
+  - ask: The gradient function of a curve is $f'(x) = x + 3$, and the curve passes through $(0, 4)$. Find the equation of the curve.
+    grade: merit
+    working:
+      - math: f(x) = \dfrac{x^2}{2} + 3x + c
+      - math: f(0) = c = 4
+        note: "A point on the $y$-axis hands over the $c$ directly."
+      - math: f(x) = \dfrac{x^2}{2} + 3x + 4
 ```
 
 ---
@@ -167,6 +210,20 @@ questions:
       - math: f(3) = 18 - 9 - 36 + c = -40
       - math: c = -13
       - math: f(x) = \dfrac{2x^3}{3} - x^2 - 12x - 13
+  - ask: Find the equation of the original function $f(x)$, given that the $y$-value of the local minimum is equal to $-50$.
+    math: f'(x) = 3x^2 - 6x - 24
+    grade: excellence
+    working:
+      - math: f(x) = x^3 - 3x^2 - 24x + c
+        note: "The family first. The given $y$-value belongs to a point not yet located."
+      - math: 3x^2 - 6x - 24 = 0 \qquad\Rightarrow\qquad 3(x - 4)(x + 2) = 0
+        note: "The minimum is a turning point, so it sits where the gradient function is zero."
+      - math: x = 4 \;\textsf{ or }\; x = -2
+      - math: f''(x) = 6x - 6 \qquad f''(4) = 18 > 0 \qquad\therefore\;\textsf{minimum at } x = 4
+        note: "Two candidates, and the question said *minimum*, so the choice is justified, not assumed."
+      - math: f(4) = 64 - 48 - 96 + c = -50
+      - math: c = 30
+      - math: f(x) = x^3 - 3x^2 - 24x + 30
 ```
 
 ---
@@ -182,12 +239,23 @@ questions:
     grade: achieved
     working:
       - math: f(x) = 2x^2 - 7x + c
+  - ask: Find $f(x)$.
+    math: f'(x) = 6x - 5
+    grade: achieved
+    working:
+      - math: f(x) = 3x^2 - 5x + c
   - ask: Find $y$.
     math: \dfrac{dy}{dx} = x^2 - \dfrac{x}{2} + 3
     grade: achieved
     working:
       - math: y = \dfrac{x^3}{3} - \dfrac{x^2}{4} + 3x + c
         note: "The middle term is $\\dfrac{1}{2} \\cdot \\dfrac{x^2}{2}$, which is $\\dfrac{x^2}{4}$."
+  - ask: Find $y$.
+    math: \dfrac{dy}{dx} = x^2 - \dfrac{x}{3} + 2
+    grade: achieved
+    working:
+      - math: y = \dfrac{x^3}{3} - \dfrac{x^2}{6} + 2x + c
+        note: "The middle term is $\\dfrac{1}{3} \\cdot \\dfrac{x^2}{2}$, which is $\\dfrac{x^2}{6}$."
   - ask: The curve passes through $(3, 10)$. Find the equation of the curve.
     math: \dfrac{dy}{dx} = 2x - 5
     grade: merit
@@ -196,6 +264,14 @@ questions:
       - math: 9 - 15 + c = 10
       - math: c = 16
       - math: y = x^2 - 5x + 16
+  - ask: The curve passes through $(2, 7)$. Find the equation of the curve.
+    math: \dfrac{dy}{dx} = 2x - 3
+    grade: merit
+    working:
+      - math: y = x^2 - 3x + c
+      - math: 4 - 6 + c = 7
+      - math: c = 9
+      - math: y = x^2 - 3x + 9
   - ask: The curve meets the $x$-axis at $x = 1$. Find the equation of the curve.
     math: f'(x) = 3x^2 + 4x
     grade: merit
@@ -205,6 +281,15 @@ questions:
         note: "Meeting the $x$-axis at $x = 1$ is the point $(1, 0)$, worded without brackets."
       - math: c = -3
       - math: f(x) = x^3 + 2x^2 - 3
+  - ask: The curve meets the $x$-axis at $x = 2$. Find the equation of the curve.
+    math: f'(x) = 3x^2 + 2x
+    grade: merit
+    working:
+      - math: f(x) = x^3 + x^2 + c
+      - math: f(2) = 8 + 4 + c = 0
+        note: "Meeting the $x$-axis at $x = 2$ is the point $(2, 0)$, worded without brackets."
+      - math: c = -12
+      - math: f(x) = x^3 + x^2 - 12
   - ask: The $y$-value of the local maximum of $f$ is $7$. Find the equation of the function $f(x)$.
     math: f'(x) = 3x^2 - 6x
     grade: excellence
@@ -215,6 +300,16 @@ questions:
       - math: f''(x) = 6x - 6 \qquad f''(0) = -6 < 0 \qquad\therefore\;\textsf{maximum at } x = 0
       - math: f(0) = c = 7
       - math: f(x) = x^3 - 3x^2 + 7
+  - ask: The $y$-value of the local maximum of $f$ is $12$. Find the equation of the function $f(x)$.
+    math: f'(x) = 3x^2 - 12x
+    grade: excellence
+    working:
+      - math: f(x) = x^3 - 6x^2 + c
+      - math: 3x^2 - 12x = 0 \qquad\Rightarrow\qquad 3x(x - 4) = 0
+      - math: x = 0 \;\textsf{ or }\; x = 4
+      - math: f''(x) = 6x - 12 \qquad f''(0) = -12 < 0 \qquad\therefore\;\textsf{maximum at } x = 0
+      - math: f(0) = c = 12
+      - math: f(x) = x^3 - 6x^2 + 12
 ```
 
 ---

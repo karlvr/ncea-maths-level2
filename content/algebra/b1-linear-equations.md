@@ -49,12 +49,27 @@ questions:
         note: Undo the subtraction first, by adding $7$ to both sides.
       - math: x = 7
   - ask: Solve.
+    math: 6x - 9 = 27
+    grade: achieved
+    working:
+      - math: 6x = 36
+        note: Undo the subtraction first, by adding $9$ to both sides.
+      - math: x = 6
+  - ask: Solve.
     math: \dfrac{x}{5} + 3 = 11
     grade: achieved
     working:
       - math: \dfrac{x}{5} = 8
         note: The $x$ was divided by $5$ and then $3$ was added, so the addition is undone first.
       - math: x = 40
+        note: Undo a division by multiplying both sides.
+  - ask: Solve.
+    math: \dfrac{x}{4} + 6 = 10
+    grade: achieved
+    working:
+      - math: \dfrac{x}{4} = 4
+        note: Undo the addition first.
+      - math: x = 16
         note: Undo a division by multiplying both sides.
   - ask: Solve.
     math: 7 - 2x = 19
@@ -64,6 +79,13 @@ questions:
         note: Subtract $7$ from both sides. The term in $x$ keeps the minus that was in front of it.
       - math: x = -6
         note: Dividing both sides by $-2$ changes the sign of both.
+  - ask: Solve.
+    math: 5 - 3x = 20
+    grade: achieved
+    working:
+      - math: "-3x = 15"
+        note: Subtract $5$ from both sides. The term in $x$ keeps the minus that was in front of it.
+      - math: x = -5
 ```
 
 ---
@@ -101,6 +123,14 @@ questions:
       - math: 4x = 20
       - math: x = 5
   - ask: Solve.
+    math: 6x - 5 = 2x + 19
+    grade: achieved
+    working:
+      - math: 4x - 5 = 19
+        note: Subtract $2x$ from both sides.
+      - math: 4x = 24
+      - math: x = 6
+  - ask: Solve.
     math: 2 - 5x = 3x - 22
     grade: achieved
     working:
@@ -108,6 +138,14 @@ questions:
         note: Add $5x$ to both sides, so that the term in $x$ ends up positive.
       - math: 24 = 8x
       - math: x = 3
+  - ask: Solve.
+    math: 6 - 2x = 3x - 14
+    grade: achieved
+    working:
+      - math: 6 = 5x - 14
+        note: Add $2x$ to both sides, so that the term in $x$ ends up positive.
+      - math: 20 = 5x
+      - math: x = 4
   - ask: Solve.
     math: 9 - x = 4x + 24
     grade: achieved
@@ -117,6 +155,14 @@ questions:
       - math: "-15 = 5x"
       - math: x = -3
         note: A negative solution is an ordinary answer, not a sign that something has gone wrong.
+  - ask: Solve.
+    math: 5 - x = 2x + 17
+    grade: achieved
+    working:
+      - math: 5 = 3x + 17
+        note: Add $x$ to both sides.
+      - math: "-12 = 3x"
+      - math: x = -4
 ```
 
 ---
@@ -173,6 +219,13 @@ questions:
         note: Expanding is one way. Dividing both sides by $3$ first is another, and is quicker here.
       - math: x = 10
   - ask: Solve.
+    math: 4(x - 3) = 20
+    grade: achieved
+    working:
+      - math: x - 3 = 5
+        note: Both sides divide by $4$ exactly, so expanding the bracket is not needed.
+      - math: x = 8
+  - ask: Solve.
     math: 2(x + 5) = 3(x - 1)
     grade: achieved
     working:
@@ -180,12 +233,26 @@ questions:
         note: Expand both sides before collecting anything.
       - math: 13 = x
   - ask: Solve.
+    math: 3(x + 4) = 4(x - 2)
+    grade: achieved
+    working:
+      - math: 3x + 12 = 4x - 8
+        note: Expand both sides before collecting anything.
+      - math: 20 = x
+  - ask: Solve.
     math: \dfrac{x}{4} + \dfrac{x}{6} = 5
     grade: achieved
     working:
       - math: 3x + 2x = 60
         note: The lowest common denominator of $4$ and $6$ is $12$, not $24$.
       - math: x = 12
+  - ask: Solve.
+    math: \dfrac{x}{3} + \dfrac{x}{6} = 4
+    grade: achieved
+    working:
+      - math: 2x + x = 24
+        note: The lowest common denominator of $3$ and $6$ is $6$, because $3$ already divides into $6$.
+      - math: x = 8
   - ask: Solve.
     math: \dfrac{x+2}{3} - \dfrac{x-1}{4} = 1
     grade: merit
@@ -195,6 +262,15 @@ questions:
       - math: 4x + 8 - 3x \ca{+} 3 = 12
         note: Minus three times minus one is plus three.
       - math: x = 1
+  - ask: Solve.
+    math: \dfrac{x+3}{2} - \dfrac{x-2}{5} = 4
+    grade: merit
+    working:
+      - math: 5(x+3) - 2\ca{(x-2)} = 40
+        note: Multiply every term by $10$. The subtracted numerator needs its bracket.
+      - math: 5x + 15 - 2x \ca{+} 4 = 40
+        note: Minus two times minus two is plus four.
+      - math: 3x = 21 \;\Rightarrow\; x = 7
 ```
 
 ---
@@ -262,6 +338,15 @@ questions:
       - math: 27y^3 = 2x + 7
         note: The cube reaches the $3$, so it becomes $27$.
       - math: x = \dfrac{27y^3 - 7}{2}
+  - ask: Make $x$ the subject.
+    math: 2y = \sqrt{3x - 5}
+    grade: achieved
+    working:
+      - math: (2y)^2 = 3x - 5
+        note: Square both sides, with a bracket round the whole of the left side.
+      - math: 4y^2 = 3x - 5
+        note: The square reaches the $2$, so it becomes $4$.
+      - math: x = \dfrac{4y^2 + 5}{3}
   - ask: Make $r$ the subject.
     math: V = \dfrac{4}{3}\pi r^3
     grade: merit
@@ -270,6 +355,14 @@ questions:
         note: Multiply both sides by $3$ to clear the fraction.
       - math: r^3 = \dfrac{3V}{4\pi}
       - math: r = \sqrt[3]{\dfrac{3V}{4\pi}}
+  - ask: Make $r$ the subject.
+    math: A = \dfrac{1}{2}\pi r^2
+    grade: merit
+    working:
+      - math: 2A = \pi r^2
+        note: Multiply both sides by $2$ to clear the fraction.
+      - math: r^2 = \dfrac{2A}{\pi}
+      - math: r = \sqrt{\dfrac{2A}{\pi}}
   - ask: Make $h$ the subject.
     math: S = 2\pi r h + 2\pi r^2
     grade: merit
@@ -278,6 +371,14 @@ questions:
         note: Only one term contains $h$, so move the other one across.
       - math: h = \dfrac{S - 2\pi r^2}{2\pi r}
         note: Divide both sides by everything that multiplies $h$.
+  - ask: Make $y$ the subject.
+    math: T = 4xy + 4x^2
+    grade: merit
+    working:
+      - math: T - 4x^2 = 4xy
+        note: Only one term contains $y$, so move the other one across.
+      - math: y = \dfrac{T - 4x^2}{4x}
+        note: Divide both sides by everything that multiplies $y$.
 ```
 
 ---
@@ -338,6 +439,14 @@ questions:
         note: The call-out fee is paid once, so it is not multiplied by anything.
       - math: 45h = 180
       - math: h = 4 \textsf{ hours}
+  - ask: An electrician charges a call-out fee of 50 dollars, and 65 dollars for each hour of work. A job cost 375 dollars in total. Find how many hours the electrician worked.
+    grade: achieved
+    working:
+      - math: \textsf{let } h = \textsf{ the number of hours worked}
+      - math: 50 + 65h = 375
+        note: The call-out fee is paid once, so it is not multiplied by anything.
+      - math: 65h = 325
+      - math: h = 5 \textsf{ hours}
   - ask: A rope 15 m long is cut into two pieces, one of them 3 m longer than the other. Find the length of the longer piece.
     grade: achieved
     working:
@@ -349,6 +458,16 @@ questions:
       - math: x = 6
       - math: \textsf{longer piece} = 9 \textsf{ m}
         note: The question asked for the longer piece, so the answer is $x+3$ and not $x$.
+  - ask: A ribbon 20 m long is cut into two pieces, one of them 4 m longer than the other. Find the length of the longer piece.
+    grade: achieved
+    working:
+      - math: \textsf{let } x = \textsf{ the length of the shorter piece, in metres}
+        note: Naming the shorter piece makes the other one $x+4$ rather than $x-4$.
+      - math: x + (x + 4) = 20
+      - math: 2x + 4 = 20
+      - math: x = 8
+      - math: \textsf{longer piece} = 12 \textsf{ m}
+        note: The question asked for the longer piece, so the answer is $x+4$ and not $x$.
   - ask: Three consecutive whole numbers add to 84. Find the three numbers.
     grade: achieved
     working:
@@ -359,6 +478,15 @@ questions:
       - math: n = 27
       - math: 27, \; 28, \; 29
         note: The question asked for the three numbers, not for $n$.
+  - ask: Three consecutive whole numbers add to 96. Find the three numbers.
+    grade: achieved
+    working:
+      - math: \textsf{let } n = \textsf{ the smallest of the three}
+      - math: n + (n+1) + (n+2) = 96
+      - math: 3n + 3 = 96
+      - math: n = 31
+      - math: 31, \; 32, \; 33
+        note: The question asked for the three numbers, not for $n$.
   - ask: The three angles of a triangle are $x$, $2x$ and $x + 20$ degrees. Find the size of the largest angle.
     grade: merit
     working:
@@ -368,6 +496,15 @@ questions:
       - math: x = 40
       - math: \textsf{largest angle} = 80^\circ
         note: The three angles are $40^\circ$, $80^\circ$ and $60^\circ$, so the largest of them is $2x$.
+  - ask: The three angles of a triangle are $x$, $3x$ and $x + 40$ degrees. Find the size of the largest angle.
+    grade: merit
+    working:
+      - math: x + 3x + (x + 40) = 180
+        note: The three angles of a triangle add to 180 degrees, and that fact is what supplies the equation.
+      - math: 5x + 40 = 180
+      - math: x = 28
+      - math: \textsf{largest angle} = 84^\circ
+        note: The three angles are $28^\circ$, $84^\circ$ and $68^\circ$, so the largest of them is $3x$.
   - ask: A rectangle is twice as long as it is wide, and its perimeter is 42 cm. Find its area.
     grade: merit
     working:
@@ -377,6 +514,15 @@ questions:
       - math: 6w = 42 \;\Rightarrow\; w = 7
       - math: \textsf{area} = 7 \times 14 = 98 \textsf{ cm}^2
         note: The unit of an area is a square centimetre, and stating it is part of answering.
+  - ask: A rectangle is three times as long as it is wide, and its perimeter is 48 cm. Find its area.
+    grade: merit
+    working:
+      - math: \textsf{let } w = \textsf{ the width, in centimetres}
+      - math: 2w + 2(3w) = 48
+        note: The length is $3w$, and the perimeter counts each side twice.
+      - math: 8w = 48 \;\Rightarrow\; w = 6
+      - math: \textsf{area} = 6 \times 18 = 108 \textsf{ cm}^2
+        note: The question asked for the area, so the width alone does not answer it.
   - ask: A shop sells pens for 3 dollars each and notebooks for 7 dollars each. In one day it sold 40 items altogether, taking 184 dollars. Find how many pens it sold.
     grade: merit
     working:
@@ -388,6 +534,16 @@ questions:
       - math: 3p + 280 - 7p = 184
       - math: -4p = -96 \;\Rightarrow\; p = 24
         note: Both sides are negative, and dividing by $-4$ makes both positive.
+  - ask: A shop sells caps for 5 dollars each and shirts for 9 dollars each. In one day it sold 30 items altogether, taking 214 dollars. Find how many caps it sold.
+    grade: merit
+    working:
+      - math: \textsf{let } c = \textsf{ the number of caps sold}
+      - math: \textsf{shirts sold} = 30 - c
+        note: The two counts add to $30$, so naming one of them names the other. A second letter is not needed.
+      - math: 5c + 9(30 - c) = 214
+        note: Each count is multiplied by its own price, and the two amounts add to the takings.
+      - math: 5c + 270 - 9c = 214
+      - math: -4c = -56 \;\Rightarrow\; c = 14
   - ask: One phone plan charges 30 dollars a month plus 20 cents for each text. Another charges 18 dollars a month plus 35 cents for each text. Find the number of texts for which the two plans cost the same.
     grade: merit
     working:
@@ -397,6 +553,15 @@ questions:
       - math: 12 = 0.15n
         note: Both amounts are in dollars. Mixing dollars on one side with cents on the other is the error here.
       - math: n = 80
+  - ask: One phone plan charges 25 dollars a month plus 30 cents for each text. Another charges 15 dollars a month plus 50 cents for each text. Find the number of texts for which the two plans cost the same.
+    grade: merit
+    working:
+      - math: \textsf{let } n = \textsf{ the number of texts in a month}
+      - math: 25 + 0.30n = 15 + 0.50n
+        note: One expression for each plan, and the words say the two are equal.
+      - math: 10 = 0.20n
+        note: Both amounts are in dollars. Mixing dollars on one side with cents on the other is the error here.
+      - math: n = 50
   - ask: A journey of 240 km is driven in two parts, the first at 80 km/h and the second at 60 km/h. The whole journey takes 3.5 hours. Find the distance driven at 80 km/h.
     grade: excellence
     working:
@@ -411,6 +576,20 @@ questions:
       - math: 3d + 960 - 4d = 840
       - math: d = 120 \textsf{ km}
         note: Check against the wording. 120 km at 80 km/h is 1.5 hours, 120 km at 60 km/h is 2 hours, and those add to 3.5.
+  - ask: A journey of 300 km is driven in two parts, the first at 90 km/h and the second at 50 km/h. The whole journey takes 4 hours. Find the distance driven at 90 km/h.
+    grade: excellence
+    working:
+      - math: \textsf{let } d = \textsf{ the distance driven at 90 km/h, in kilometres}
+        note: Neither part's distance is given, so one of them has to be named before anything can be written.
+      - math: \textsf{second part} = 300 - d
+        note: The two distances add to the whole journey.
+      - math: \dfrac{d}{90} + \dfrac{300 - d}{50} = 4
+        note: A time is a distance divided by a speed, and the two times add to the time given.
+      - math: 5d + 9(300 - d) = 1800
+        note: Multiply every term by $450$, which is the lowest common denominator of $90$ and $50$.
+      - math: 5d + 2700 - 9d = 1800
+      - math: d = 225 \textsf{ km}
+        note: Check against the wording. 225 km at 90 km/h is 2.5 hours, 75 km at 50 km/h is 1.5 hours, and those add to 4.
 ```
 
 ---
@@ -492,6 +671,13 @@ questions:
       - math: 2x = 12
         note: Adding the two equations removes the $y$.
       - math: x = 6, \quad y = 4
+  - ask: Solve the pair of equations.
+    math: x + y = 12 \qquad x - y = 4
+    grade: achieved
+    working:
+      - math: 2x = 16
+        note: Adding the two equations removes the $y$.
+      - math: x = 8, \quad y = 4
   - ask: Solve the pair of equations by substitution.
     math: y = 2x - 1 \qquad 3x + y = 14
     grade: achieved
@@ -501,6 +687,16 @@ questions:
       - math: 5x - 1 = 14
       - math: x = 3
       - math: y = 2(3) - 1 = 5
+        note: Put the value back into the equation that was already rearranged.
+  - ask: Solve the pair of equations by substitution.
+    math: y = 3x - 2 \qquad 2x + y = 23
+    grade: achieved
+    working:
+      - math: 2x + \ca{(3x - 2)} = 23
+        note: The first equation already gives $y$ on its own, so it goes straight into the second.
+      - math: 5x - 2 = 23
+      - math: x = 5
+      - math: y = 3(5) - 2 = 13
         note: Put the value back into the equation that was already rearranged.
   - ask: Solve the pair of equations.
     math: x + y = 4 \qquad 3x - 2y = 7
@@ -515,6 +711,18 @@ questions:
       - math: 5x = 15 \;\Rightarrow\; x = 3
       - math: y = 4 - 3 = 1
   - ask: Solve the pair of equations.
+    math: x + y = 5 \qquad 2x - 3y = 5
+    grade: merit
+    working:
+      - math: y = 5 - x
+        note: Neither equation gives a letter on its own, but the first one rearranges in a single step.
+      - math: 2x - 3\ca{(5 - x)} = 5
+        note: The expression goes in inside a bracket, because a minus is about to reach it.
+      - math: 2x - 15 + 3x = 5
+        note: Minus three times minus $x$ is plus three $x$, so the terms in $x$ add rather than cancel.
+      - math: 5x = 20 \;\Rightarrow\; x = 4
+      - math: y = 5 - 4 = 1
+  - ask: Solve the pair of equations.
     math: 3x + 2y = 16 \qquad x - y = 2
     grade: merit
     working:
@@ -522,6 +730,14 @@ questions:
         note: Multiply the first equation by $2$ and the second by $4$, so the $y$ terms match.
       - math: 10x = 40
       - math: x = 4, \quad y = 2
+  - ask: Solve the pair of equations.
+    math: 2x + 3y = 19 \qquad x - y = 2
+    grade: merit
+    working:
+      - math: 2x + 3y = 19 \qquad 3x - 3y = 6
+        note: Multiply the second equation by $3$, so the $y$ terms match.
+      - math: 5x = 25
+      - math: x = 5, \quad y = 3
   - ask: Three coffees and two teas cost 21 dollars. One coffee and four teas cost 17 dollars. Find the price of a coffee and the price of a tea.
     grade: merit
     working:
@@ -535,6 +751,19 @@ questions:
       - math: -10t = -30 \;\Rightarrow\; t = 3
       - math: c = 17 - 4(3) = 5
         note: Check both sentences, not only the one substituted into last. Three coffees and two teas do come to 21 dollars.
+  - ask: Two pies and three drinks cost 26 dollars. One pie and five drinks cost 27 dollars. Find the price of a pie and the price of a drink.
+    grade: merit
+    working:
+      - math: \textsf{let } p = \textsf{ the price of a pie and } d = \textsf{ that of a drink, in dollars}
+      - math: 2p + 3d = 26 \qquad p + 5d = 27
+        note: One equation for each sentence, and both of them have to be written down.
+      - math: p = 27 - 5d
+        note: The second equation carries a single $p$, which is the signal to substitute rather than eliminate.
+      - math: 2(27 - 5d) + 3d = 26
+      - math: 54 - 10d + 3d = 26
+      - math: -7d = -28 \;\Rightarrow\; d = 4
+      - math: p = 27 - 5(4) = 7
+        note: Check both sentences, not only the one substituted into last. Two pies and three drinks do come to 26 dollars.
   - ask: The graph of $y = 2x^2 + ax + b$ crosses the $x$-axis at $(3,0)$, and passes through $(-1,-8)$. Find the values of $a$ and $b$.
     grade: merit
     from: "2025"
@@ -546,6 +775,16 @@ questions:
       - math: 4a = -8
         note: Subtract the second equation from the first.
       - math: a = -2, \quad b = -12
+  - ask: The graph of $y = 3x^2 + ax + b$ crosses the $x$-axis at $(2,0)$, and passes through $(-1,12)$. Find the values of $a$ and $b$.
+    grade: merit
+    working:
+      - math: 0 = 3(2)^2 + 2a + b \;\Rightarrow\; 2a + b = -12
+        note: Substitute the first point, and evaluate every number before going on.
+      - math: 12 = 3(-1)^2 - a + b \;\Rightarrow\; -a + b = 9
+        note: Squaring $-1$ gives $+1$, so the first term is $3$ and not $-3$.
+      - math: 3a = -21
+        note: Subtract the second equation from the first.
+      - math: a = -7, \quad b = 2
 ```
 
 ---
@@ -563,6 +802,13 @@ questions:
       - math: 5x - 15 = 2x + 6
       - math: 3x = 21
       - math: x = 7
+  - ask: Solve.
+    math: 4(x - 2) = x + 10
+    grade: achieved
+    working:
+      - math: 4x - 8 = x + 10
+      - math: 3x = 18
+      - math: x = 6
   - ask: Make $x$ the subject.
     math: y = \dfrac{x - 4}{3}
     grade: achieved
@@ -570,6 +816,13 @@ questions:
       - math: 3y = x - 4
         note: Multiply both sides by $3$ first, which clears the fraction in one step.
       - math: x = 3y + 4
+  - ask: Make $x$ the subject.
+    math: y = \dfrac{x + 5}{2}
+    grade: achieved
+    working:
+      - math: 2y = x + 5
+        note: Multiply both sides by $2$ first, which clears the fraction in one step.
+      - math: x = 2y - 5
   - ask: Solve.
     math: \dfrac{3x-1}{4} - \dfrac{x}{3} = 1
     grade: merit
@@ -578,6 +831,14 @@ questions:
         note: Multiply every term by $12$. The numerator with two terms keeps its bracket.
       - math: 9x - 3 - 4x = 12
       - math: 5x = 15 \;\Rightarrow\; x = 3
+  - ask: Solve.
+    math: \dfrac{2x+1}{3} - \dfrac{x}{4} = 2
+    grade: merit
+    working:
+      - math: 4(2x+1) - 3x = 24
+        note: Multiply every term by $12$. The numerator with two terms keeps its bracket.
+      - math: 8x + 4 - 3x = 24
+      - math: 5x = 20 \;\Rightarrow\; x = 4
   - ask: Ana is three times as old as her nephew. In six years she will be twice as old as he is then. Find both of their ages now.
     grade: merit
     working:
@@ -589,6 +850,17 @@ questions:
       - math: n = 6
       - math: \textsf{nephew } 6, \quad \textsf{Ana } 18
         note: Check against the wording. In six years they are $12$ and $24$, and $24$ is twice $12$.
+  - ask: Sam is four times as old as his niece. In three years he will be three times as old as she is then. Find both of their ages now.
+    grade: merit
+    working:
+      - math: \textsf{let } n = \textsf{ the niece's age now, in years}
+        note: Name the younger one, so that the other age is a multiple rather than a fraction.
+      - math: 4n + 3 = 3(n + 3)
+        note: In three years both ages go up by three, and the words say one is then three times the other.
+      - math: 4n + 3 = 3n + 9
+      - math: n = 6
+      - math: \textsf{niece } 6, \quad \textsf{Sam } 24
+        note: Check against the wording. In three years they are $9$ and $27$, and $27$ is three times $9$.
   - ask: Find the value of $k$ for which the equation holds for every value of $x$.
     math: \dfrac{x^2 + 3x + k}{(x+5)(x+1)} = \dfrac{x-2}{x+1}
     grade: merit
@@ -601,6 +873,17 @@ questions:
       - math: x^2 + 3x + k = x^2 + 3x - 10
         note: Expand the right side. The first two terms match, which is what makes a value of $k$ possible.
       - math: k = -10
+  - ask: Find the value of $k$ for which the equation holds for every value of $x$.
+    math: \dfrac{x^2 + 4x + k}{(x+7)(x+2)} = \dfrac{x-3}{x+2}
+    grade: merit
+    working:
+      - math: (x^2 + 4x + k)(x+2) = (x-3)(x+7)(x+2)
+        note: Cross-multiply, which is multiplying both sides by both denominators.
+      - math: x^2 + 4x + k = (x-3)(x+7)
+        note: The factor $(x+2)$ appears on both sides and divides out.
+      - math: x^2 + 4x + k = x^2 + 4x - 21
+        note: Expand the right side. The first two terms match, which is what makes a value of $k$ possible.
+      - math: k = -21
   - ask: A cylinder of radius $r$ and height $h$, and a second container with the same radius and height, have the surface areas below—the cylinder's first. The two surface areas are equal. Find $h$ in terms of $r$.
     math: '2\pi r^2 + 2\pi rh \qquad\textsf{ and }\qquad 5r^2 + 10rh'
     grade: excellence
@@ -613,6 +896,18 @@ questions:
       - math: rh(2\pi - 10) = r^2(5 - 2\pi)
         note: Take $h$ out as a common factor on the left, and $r^2$ out on the right.
       - math: h = \dfrac{r(5 - 2\pi)}{2\pi - 10}
+        note: One $r$ cancels from top and bottom. Both brackets are negative, so $h$ is positive.
+  - ask: Two containers of radius $r$ and height $h$ have the surface areas below. The two surface areas are equal. Find $h$ in terms of $r$.
+    math: '3\pi r^2 + 3\pi rh \qquad\textsf{ and }\qquad 4r^2 + 12rh'
+    grade: excellence
+    working:
+      - math: 3\pi r^2 + 3\pi rh = 4r^2 + 12rh
+        note: Write the equation down before rearranging it. That line is required in its own right.
+      - math: 3\pi rh - 12rh = 4r^2 - 3\pi r^2
+        note: Collect every term containing $h$ on one side and everything else on the other.
+      - math: rh(3\pi - 12) = r^2(4 - 3\pi)
+        note: Take $h$ out as a common factor on the left, and $r^2$ out on the right.
+      - math: h = \dfrac{r(4 - 3\pi)}{3\pi - 12}
         note: One $r$ cancels from top and bottom. Both brackets are negative, so $h$ is positive.
 ```
 
