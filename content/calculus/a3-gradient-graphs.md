@@ -2,13 +2,13 @@
 
 ---
 
-The first lesson found $f'$ by formula. This lesson finds it by eye: given the graph of a function, draw the graph of its gradient function—and given the graph of a gradient function, recover the shape of the function it came from. One of the two appears in every recent paper, with no equation printed; the graph is all you get, so the reading has to be done from shape alone.
+The first lesson found $f'$ by formula. This lesson finds it by eye: given the graph of a function, draw the graph of its gradient function—and given the graph of a gradient function, recover the shape of the function it came from. One of the two appears in every recent paper, with no equation printed, so the reading is done from shape alone.
 
 ---
 
 ## Reading a graph for its gradient
 
-Stand at a point on the curve and ask one question: climbing, falling, or flat? The answer places the gradient function above, below, or on the $x$-axis at that same $x$.
+At each point on the curve, ask one question: climbing, falling, or flat? The answer places the gradient function above, below, or on the $x$-axis at that same $x$.
 
 - Where $f$ **climbs**, its gradient is positive, so $f'$ sits **above** the $x$-axis.
 - Where $f$ **falls**, its gradient is negative, so $f'$ sits **below** the $x$-axis.
@@ -28,7 +28,7 @@ steps:
           color: a
           guides: true
       xticks: [1]
-    note: "This curve climbs until $x = 1$, is flat there, and falls afterwards. That sentence is the whole input; the gradient function is drawn from it."
+    note: "This curve climbs until $x = 1$, is flat there, and falls afterwards. That is everything needed to draw the gradient function."
   - graph:
       domain: [-2, 4]
       curves:
@@ -45,7 +45,7 @@ steps:
     note: "$\\cb{f'}$ is above the axis while $\\ca{f}$ climbs, crosses zero under the turning point, and is below the axis while $\\ca{f}$ falls."
 ```
 
-The turning points carry the alignment: **every turning point of $f$ sits directly above or below an $x$-intercept of $f'$**. Mark those crossings first, and the rest of the sketch is filled in by the climbing-or-falling question between them.
+**Every turning point of $f$ sits directly above or below an $x$-intercept of $f'$.** Mark those crossings first, then fill in the rest of the sketch with the climbing-or-falling question between them.
 
 The shape of the answer is known before any reading starts, because differentiating lowers every power by one. A parabola's gradient function is a straight line; a cubic's is a parabola; a quartic's is a cubic. If the curve in front of you is a cubic and your sketch of $f'$ is not a parabola, one of the two is wrong.
 
@@ -100,9 +100,9 @@ steps:
     note: "A cubic's gradient function is a parabola. It crosses at $x = -1$ and $x = 1$, dips below the axis between the crossings where $f$ falls, and is positive outside them where $f$ climbs."
 ```
 
-The marking is by checklist. For the 2025 sketch the schedule awards Achieved for two of three—*"cubic shape, positive, roots correct"*—and Merit for all three. Shape, sign, crossings: the three answers to the three-zone question, and nothing else is being marked. The height of a peak or the depth of a dip in a sketch of $f'$ carries no marks, because no scale is printed on the $y$-axis.
+The marking is by checklist. For the 2025 sketch the schedule awards Achieved for two of three—*"cubic shape, positive, roots correct"*—and Merit for all three. Shape, sign and crossings are marked, and nothing else. The height of a peak or the depth of a dip in a sketch of $f'$ carries no marks, because no scale is printed on the $y$-axis.
 
-The drawing itself is part of the answer. The 2024 report is specific about what a parabola must look like to be awarded: *"symmetrical, nicely shaped, and with no feathering (a single curve)"*—one smooth stroke, not a bundle of tentative ones. The 2023 report adds that candidates who could sketch *"would often lack labelling of their axes"*; label the axes and the $x$-values of the crossings, because the crossings are two of the three things being marked.
+The drawing itself is part of the answer. The 2024 report is specific about what a parabola must look like to be awarded: *"symmetrical, nicely shaped, and with no feathering (a single curve)"*—one smooth stroke, not many light strokes. The 2023 report adds that candidates who could sketch *"would often lack labelling of their axes"*; label the axes and the $x$-values of the crossings, because the crossings are two of the three things being marked.
 
 ```practice
 caption: sketching f ′
@@ -207,7 +207,7 @@ questions:
 
 ## Recovering the function from its gradient graph
 
-The reverse reading uses the same three zones, walked in the other direction: where $f'$ is above the axis, draw $f$ climbing; where below, falling; where $f'$ crosses, $f$ turns. The degree goes up by one—handed a straight line, draw a parabola; handed a parabola, draw a cubic.
+The reverse reading uses the same three zones in the other direction: where $f'$ is above the axis, draw $f$ climbing; where below, falling; where $f'$ crosses, $f$ turns. The degree goes up by one—given a straight line, draw a parabola; given a parabola, draw a cubic.
 
 Which way the turn goes is read off the crossing. Where $f'$ passes from below the axis to above it, $f$ stops falling and starts climbing—a minimum. From above to below, a maximum.
 
@@ -319,7 +319,7 @@ questions:
 
 ## Practice
 
-Work these on paper before revealing anything. They are ordered easiest first, and the band each one is pitched at is the band the marker would award for doing it well.
+Work these on paper before revealing anything. They are ordered easiest first, and each one's band is what the marker would award for doing it well.
 
 ```practice
 questions:
@@ -494,8 +494,8 @@ questions:
 
 One question does all the work in both directions: climbing, falling, or flat? Climbing puts $f'$ above the axis, falling puts it below, and a turning point of $f$ sits exactly above or below a crossing of $f'$.
 
-The shape is known in advance: differentiating drops the degree by one, so the answer is one shape down the line–parabola–cubic ladder when sketching $f'$, and one shape up when sketching $f$.
+The shape is known in advance: differentiating drops the degree by one, so sketching $f'$ moves one shape down the sequence line, parabola, cubic, and sketching $f$ moves one shape up.
 
 Three things earn the marks—shape, sign, and crossings in the right places. Heights do not, because a sketch has no scale.
 
-Reading $f'$ back to $f$ meets the one thing a gradient graph cannot say: how high the curve sits. A supplied point pins it. Module C turns that observation into a formula—anti-differentiation, with its constant $c$ standing for exactly the vertical freedom seen here. Before that, Module B takes the crossings of $f'$, the turning points, and makes them the answer to a question of their own.
+A gradient graph cannot say how high the curve sits, so recovering $f$ needs a supplied point to fix the height. Module C turns that into a formula: anti-differentiation, with its constant $c$ standing for the same vertical freedom. Before that, Module B takes the crossings of $f'$—the turning points—as its own subject.

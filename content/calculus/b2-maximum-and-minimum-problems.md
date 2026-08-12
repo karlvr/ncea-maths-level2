@@ -2,7 +2,7 @@
 
 ---
 
-The previous lesson found turning points of curves that were handed over ready-made. The examination's closing parts hand over a situation instead—a container to design, a paddock to fence, an area that must be as large as the material allows—and the curve has to be built before any calculus can touch it. The specification calls this *forming polynomials from a variety of contexts*, and it is where each paper keeps its Excellence.
+The previous lesson found turning points of curves that were given. The examination's closing parts give a situation instead—a container to design, a paddock to fence, an area that must be as large as the material allows—and the curve has to be built before the calculus can start. The specification calls this *forming polynomials from a variety of contexts*, and it is where each paper puts its Excellence.
 
 ---
 
@@ -31,7 +31,7 @@ steps:
     note: "The ends are ten metres, the long side twenty, and the area is $200$ m$^2$. The answer states the quantity the question asked for, with its unit."
 ```
 
-The first two lines are where this question is won. The 2024 schedule's first grade step for its container part is *"Sets up area equation in terms of 1 variable AND differentiates"*—forming the polynomial is itself the assessed skill, before any turning point is found. Write the constraint down, write the quantity down, and show the substitution that merges them; an expression that appears from nowhere earns nothing if it is wrong, and less than it should even when right, because the equation you form must be stated.
+The first two lines carry the marks. The 2024 schedule's first grade step for its container part is *"Sets up area equation in terms of 1 variable AND differentiates"*—forming the polynomial is itself the assessed skill, before any turning point is found. Write the constraint down, write the quantity down, and show the substitution that combines them; an expression written down without working earns nothing if it is wrong, and less than full marks even when right, because the equation you form must be stated.
 
 ```practice
 caption: forming
@@ -78,9 +78,9 @@ questions:
 
 Setting the derivative to zero produces an equation, and its solutions need two checks before any of them becomes the answer.
 
-**Reject what the situation cannot contain.** Lengths cannot be negative, and a side of zero leaves no shape at all. The 2025 schedule does this in one breath—*"$x = 0.6$ m or $-0.6$ (reject as $-$ve)"*—and the rejection is written down, not done silently.
+**Reject what the situation cannot contain.** Lengths cannot be negative, and a side of zero leaves no shape at all. The 2025 schedule shows the form: *"$x = 0.6$ m or $-0.6$ (reject as $-$ve)"*. The rejection is written down, not done silently.
 
-**Then answer the question that was asked.** The turning point's $x$ is where the best design lives; it is rarely the answer itself. *Find the maximum volume* wants the volume; *calculate the dimensions* wants every dimension, which means going back through the constraint for the variables that were substituted away. Ending at $x$ when the question asked for cubic metres loses the final step and its mark.
+**Then answer the question that was asked.** The turning point's $x$ locates the best design; it is rarely the answer itself. *Find the maximum volume* wants the volume; *calculate the dimensions* wants every dimension, which means going back through the constraint for the variables that were substituted away. Ending at $x$ when the question asked for cubic metres loses the final step and its mark.
 
 ---
 
@@ -127,7 +127,7 @@ questions:
 
 ## A power in the denominator
 
-One recent question forms a function that is not a polynomial. Eliminating $h$ from a cylinder's surface area leaves a term like $\dfrac{1000}{r}$, and the reflex from algebra's Module A applies: rewrite it in index form, $1000r^{-1}$, and the differentiation rule works exactly as it always has—multiply by the power, lower the power by one.
+One recent question forms a function that is not a polynomial. Eliminating $h$ from a cylinder's surface area leaves a term like $\dfrac{1000}{r}$, and the fix comes from algebra's Module A: rewrite it in index form, $1000r^{-1}$, and the differentiation rule works exactly as it always has—multiply by the power, lower the power by one.
 
 ```figure
 caption: The rule reaches a negative power
@@ -217,7 +217,7 @@ questions:
       - math: h^2 = \dfrac{1}{4} \qquad h = \dfrac{1}{2} \;\;\textsf{(reject } -\tfrac{1}{2}\textsf{, a negative height)}
       - math: V = \dfrac{3}{2}\!\left(\dfrac{1}{2}\right) - 2\!\left(\dfrac{1}{8}\right) = \dfrac{1}{2} \;\textsf{m}^3
       - math: V'' = -12h \qquad V''\!\left(\tfrac{1}{2}\right) = -6 < 0 \qquad\therefore\;\textsf{a maximum}
-        note: "Height is positive, so $V''$ is negative—the proof the question demanded."
+        note: "Height is positive, so $V''$ is negative—the proof the question asked for."
   - ask: A lidless rectangular container has a width equal to twice its height, and is to be made from at most $12$ m$^2$ of material. Use calculus to find the maximum volume of the container, and prove that the volume is a maximum.
     grade: excellence
     working:
@@ -232,13 +232,13 @@ questions:
       - math: h^2 = 1 \qquad h = 1 \;\;\textsf{(reject } -1\textsf{, a negative height)}
       - math: V = 6(1) - 2(1) = 4 \;\textsf{m}^3
       - math: V'' = -12h \qquad V''(1) = -12 < 0 \qquad\therefore\;\textsf{a maximum}
-        note: "Height is positive, so $V''$ is negative—the proof the question demanded."
+        note: "Height is positive, so $V''$ is negative—the proof the question asked for."
   - ask: If $y = k - x$, where $k$ is a number, use calculus to show that the minimum value of $x^2 + 3y^2$ is equal to $\dfrac{3k^2}{4}$.
     grade: excellence
     from: "2024"
     working:
       - math: V = x^2 + 3(k - x)^2
-        note: "Substitute the constraint straight away, so the quantity is in one variable. $k$ is a number, not a variable—it rides along."
+        note: "Substitute the constraint straight away, so the quantity is in one variable. $k$ is a number, not a variable—it is carried through."
       - math: V = x^2 + 3k^2 - 6kx + 3x^2 = 4x^2 - 6kx + 3k^2
         note: "Expanded, with brackets kept around $k - x$ while it is squared."
       - math: V' = 8x - 6k = 0 \qquad\Rightarrow\qquad x = \dfrac{3k}{4}
@@ -252,7 +252,7 @@ questions:
     grade: excellence
     working:
       - math: V = x^2 + (k - x)^2
-        note: "Substitute the constraint straight away, so the quantity is in one variable. $k$ is a number, not a variable—it rides along."
+        note: "Substitute the constraint straight away, so the quantity is in one variable. $k$ is a number, not a variable—it is carried through."
       - math: V = x^2 + k^2 - 2kx + x^2 = 2x^2 - 2kx + k^2
         note: "Expanded, with brackets kept around $k - x$ while it is squared."
       - math: V' = 4x - 2k = 0 \qquad\Rightarrow\qquad x = \dfrac{k}{2}
@@ -276,4 +276,4 @@ Prove the maximum or minimum with any of the three justifications, concluded in 
 
 A constraint substitution can leave a power of $x$ underneath a fraction. Index form from algebra puts it back in reach of the rule.
 
-This closes the differentiation half of the standard. Module C turns around: from the gradient function back to the function, which is the direction the remaining exam questions run.
+This closes the differentiation half of the standard. Module C runs the other way: from the gradient function back to the function, which is the direction the remaining exam questions run.

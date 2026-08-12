@@ -2,17 +2,17 @@
 
 ---
 
-A quadratic equation has two roots, or one, or none. Which of the three it is can be settled without solving the equation, from a single number calculated out of $a$, $b$ and $c$.
+A quadratic equation has two roots, or one, or none. Which of the three it is can be decided without solving the equation, from a single number calculated from $a$, $b$ and $c$.
 
-That number is the **discriminant**. It is written $\Delta$, it equals $b^2 - 4ac$, and it is on the formulae sheet beside the quadratic formula it comes out of.
+That number is the **discriminant**. It is written $\Delta$, it equals $b^2 - 4ac$, and it is on the formulae sheet beside the quadratic formula it comes from.
 
-This is the whole of Module C. It is one idea, and the examination spends most of its time running it backwards—stating how many roots there are and asking for a coefficient.
+This is the whole of Module C. It is one idea, and the examination mostly runs it backwards: stating how many roots there are and asking for a coefficient.
 
 ---
 
 ## Where the discriminant comes from
 
-The quadratic formula is $x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}$. Everything in it is fixed once $a$, $b$ and $c$ are known, and the only part whose behaviour changes is what sits under the square root sign.
+The quadratic formula is $x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}$. Everything in it is fixed once $a$, $b$ and $c$ are known, and the only part that changes what happens is the part under the square root sign.
 
 ```figure
 id: c1-from-the-formula
@@ -34,7 +34,7 @@ The discriminant is therefore not a rule to be memorised separately. It is the p
 
 ## The three cases
 
-Three signs, and each one names a different answer to the question of how many roots there are.
+Three signs, and each one means a different number of roots.
 
 ```figure
 caption: What the discriminant tells you
@@ -125,7 +125,7 @@ questions:
 
 ## What it looks like on a graph
 
-The roots of $ax^2 + bx + c = 0$ are the values of $x$ at which the graph of $y = ax^2 + bx + c$ meets the $x$-axis, because meeting that axis is what $y = 0$ describes.
+The roots of $ax^2 + bx + c = 0$ are the values of $x$ at which the graph of $y = ax^2 + bx + c$ meets the $x$-axis, because the $x$-axis is where $y = 0$.
 
 ```figure
 caption: The three cases as three graphs
@@ -171,7 +171,7 @@ steps:
     note: Both roots carry a surd, so no pair of whole-number brackets produces this equation.
 ```
 
-So the discriminant also answers *will this factorise?*, which is worth a few seconds before beginning a search that cannot succeed.
+So the discriminant also answers whether a quadratic factorises, which is worth checking before starting a search that cannot succeed.
 
 ```practice
 caption: what kind of roots
@@ -232,7 +232,7 @@ steps:
 
 The equation in $k$ is solved by the methods of B2, and its own discriminant is of no interest—it is a quadratic like any other, and the discriminant belonged to the original equation in $x$.
 
-An inequality is handled the same way, with one extra care: multiplying or dividing an inequality by a negative number reverses it.
+An inequality is handled the same way, with one extra rule: multiplying or dividing an inequality by a negative number reverses it.
 
 ```figure
 caption: When the wording gives an inequality
@@ -247,7 +247,7 @@ steps:
   - math: p > 12
 ```
 
-Collecting the unknown on the side that leaves its coefficient positive, as above, avoids the reversal altogether. Dividing by a negative coefficient instead reaches the same answer, provided the sign is turned.
+Collecting the unknown on the side that leaves its coefficient positive, as above, avoids the reversal altogether. Dividing by a negative coefficient instead reaches the same answer, provided the inequality is reversed.
 
 ```figure
 caption: Dividing an inequality by a negative
@@ -433,7 +433,7 @@ questions:
 
 ## Practice
 
-Work these on paper before revealing anything. They are ordered easiest first, and the band each one is pitched at is the band the marker would award for doing it well.
+Work these on paper before revealing anything. They are ordered easiest first, and each is labelled with the band the marker would award for doing it well.
 
 ```practice
 questions:

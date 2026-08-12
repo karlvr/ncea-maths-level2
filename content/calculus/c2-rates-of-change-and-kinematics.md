@@ -2,13 +2,13 @@
 
 ---
 
-The standard names one context in its own method list: *rate of change problems (such as kinematics)*. This closing lesson is that context, and it uses everything—differentiating, turning points, anti-differentiating, and the constant—in the one setting where the exam asks for them all together: things that move and quantities that grow.
+The standard names one context in its own method list: *rate of change problems (such as kinematics)*. This closing lesson is that context, and it uses everything—differentiating, turning points, anti-differentiating, and the constant—in the one setting where the exam asks for them all together: moving objects and changing quantities.
 
 ---
 
 ## A gradient is a rate
 
-The gradient function was introduced as steepness, but steepness is itself a rate: how much $y$ changes per unit of $x$. When $x$ is time, $f'$ says how fast the quantity is changing right now—and that reading works for any pair of variables, whatever letters they wear. If $C(t)$ is a concentration at time $t$, then $C'(t)$ is the rate the concentration is rising, in concentration units per time unit. A negative rate means the quantity is falling, and saying so in words is part of the answer: the 2024 schedule's model answer reads *"132 bacteria per day are dying on day 10"*, not just $-132$.
+The gradient function was introduced as steepness, but steepness is itself a rate: how much $y$ changes per unit of $x$. When $x$ is time, $f'$ says how fast the quantity is changing right now—and that reading works for any pair of variables, whatever the letters. If $C(t)$ is a concentration at time $t$, then $C'(t)$ is the rate the concentration is rising, in concentration units per time unit. A negative rate means the quantity is falling, and saying so in words is part of the answer: the 2024 schedule's model answer reads *"132 bacteria per day are dying on day 10"*, not just $-132$.
 
 ```figure
 caption: A rate, read from a model
@@ -174,7 +174,7 @@ questions:
 
 ## Up the ladder
 
-Given acceleration, anti-differentiate for velocity, and again for distance—two anti-differentiations, each with its own constant, and each constant is found from what the object was doing at the start. This is where the exam's kinematics lives: a vehicle accelerating from rest at a constant rate.
+Given acceleration, anti-differentiate for velocity, and again for distance—two anti-differentiations, each with its own constant, and each constant is found from what the object was doing at the start. The exam's kinematics takes this form: a vehicle accelerating from rest at a constant rate.
 
 ```figure
 caption: Acceleration to velocity to distance
@@ -193,9 +193,9 @@ steps:
     note: "The truck travels $250$ m while reaching top speed."
 ```
 
-The two constants are the working. A schedule step is reserved for each: evidence for the $c$ in $v$, and evidence for the $c$ in $s$. The two sentences cost a moment each: *$c = 0$ because the truck starts from rest; $c = 0$ because distance is measured from the start line*. The 2025 report says it directly: *"including the '+ c' term, and showing how it is calculated is necessary for higher-level achievement"*.
+The two constants are the working. A schedule step is reserved for each: evidence for the $c$ in $v$, and evidence for the $c$ in $s$. The two sentences are short: *$c = 0$ because the truck starts from rest; $c = 0$ because distance is measured from the start line*. The 2025 report says it directly: *"including the '+ c' term, and showing how it is calculated is necessary for higher-level achievement"*.
 
-Physics offers formulas for this situation, such as $v = u + at$ and its relatives, and they must stay in the physics exam. The 2024 report is blunt: *"many candidates reverted to physics for this question, which involves no use of calculus so is not considered for any grade"*. The question says *use calculus*, and the anti-differentiation on the page is what gets marked; a correct distance produced from a memorised physics formula earns nothing at all.
+Physics has formulas for this situation, such as $v = u + at$, and they earn nothing here: the 2024 report says *"many candidates reverted to physics for this question, which involves no use of calculus so is not considered for any grade"*. The question says *use calculus*, and the anti-differentiation on the page is what gets marked; a correct distance produced from a memorised physics formula earns nothing at all.
 
 ```practice
 caption: up the ladder
@@ -315,7 +315,7 @@ questions:
 
 ## Summary
 
-A derivative is a rate: how much the quantity changes per unit of whatever sits beneath it, in whatever letters the model uses. A negative rate is a quantity falling, and the interpretation is written in the model's own words and units.
+A derivative is a rate: how much the quantity changes per unit of the other variable, in whatever letters the model uses. A negative rate is a quantity falling, and the interpretation is written in the model's own words and units.
 
 Kinematics is the ladder: distance, velocity, acceleration, each the derivative of the one before. Differentiate to descend, anti-differentiate to climb, and let the wording choose the direction—*at rest*, *constant speed* and *from rest* are equations in disguise.
 

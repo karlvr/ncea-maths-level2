@@ -61,11 +61,11 @@ The recurring difficulty in this module is not the solving. It is turning a para
 
 ## How this standard is assessed
 
-Four credits, and it is **external**—sat in the November exam, not marked internally. Past papers therefore matter a great deal.
+Four credits, and it is **external**—sat in the November exam, not marked internally. Past papers therefore matter.
 
 The exam is three questions, each with several parts, and word problems appear throughout.
 
-After each year's examination is marked, the examiners publish a report on it: what candidates at each grade could commonly do, and what those who were not awarded the standard commonly got wrong. These lessons quote those reports wherever a finding touches the topic in hand. Every mistake quoted cost candidates marks in a real examination, and it is quoted so that you can get it right in your year.
+After each year's examination is marked, the examiners publish a report on it: what candidates at each grade could commonly do, and what those who were not awarded the standard commonly got wrong. These lessons quote those reports wherever a finding touches the topic in hand. Every mistake quoted cost candidates marks in a real examination.
 
 > Three instructions from the specification are worth taking literally, because each one is a way of losing marks you had otherwise earned:
 >
@@ -77,13 +77,13 @@ After each year's examination is marked, the examiners publish a report on it: w
 >
 > - **Attempt every part of every question.** The parts are not ordered by difficulty, and one part can carry marks at more than one level, so a part further down the page may be easier than the part above it.
 > - **Cross out any working you have abandoned.** Where two answers are left standing, the reports ask candidates to make clear which one is to be marked, and a crossing-out is how you do that.
-> - **End a *show that* answer with the statement it asked for.** The destination is printed on the page, so the marks are entirely in the steps that reach it, and the last line says that what was asked for has been shown. The 2024 report's Excellence list names candidates who were able to start and finish a proof using clear mathematical communication.
+> - **End a *show that* answer with the statement it asked for.** The statement is printed on the page, so the marks are entirely in the steps that reach it, and the last line says that what was asked for has been shown. The 2024 report's Excellence list names candidates who were able to start and finish a proof using clear mathematical communication.
 > - **Do what the instruction says.** *Simplify*, *solve*, *factorise* and *calculate the discriminant* ask for four different things. The 2024 report lists not following the instruction as a reason candidates did not achieve.
 
 ---
 
 ## What you do not have to memorise
 
-A formulae sheet is handed out with the exam and you may keep it. It carries the quadratic formula, the discriminant, and the logarithm rules—so none of those need to be in your head.
+A formulae sheet is handed out with the exam and you may keep it. It carries the quadratic formula, the discriminant, and the logarithm rules—so none of those need to be memorised.
 
 It does **not** carry the index laws. Those you either know or rebuild from what a power means, which is the subject of the third topic in Module A.

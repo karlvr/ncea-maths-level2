@@ -2,7 +2,7 @@
 
 ---
 
-This page is the whole of Level 2 calculus in one list: three modules, seven topics, and the skills inside each topic. Nothing is taught here. The purpose is to show you the size of the subject before you start on it, because a textbook shows one page at a time and never states how much there is altogether.
+This page is the whole of Level 2 calculus in one list: three modules, seven topics, and the skills inside each topic. Nothing is taught here. It shows the size of the subject before you start on it, because a textbook shows one page at a time and never states how much there is altogether.
 
 Read the list now, and again before the exam. In between, treat it as a checklist and mark the skills you can already do.
 
@@ -43,7 +43,7 @@ From a function to its gradient function.
 
 ## Module B—Turning points
 
-Where the gradient is zero, and what that place is worth.
+Where the gradient is zero, and the largest or smallest value found there.
 
 **B1—Turning points and their nature.** Finding them, and saying which kind each is.
 
@@ -67,7 +67,7 @@ Where the gradient is zero, and what that place is worth.
 
 ## Module C—Anti-differentiation
 
-The same road, walked backwards.
+The same rule, run backwards.
 
 **C1—Anti-differentiation.** From the gradient function to the family it came from.
 
@@ -111,11 +111,11 @@ steps:
           label: f ′
     note: A3 asks you to make the same move by eye, in either direction.
   - math: f'(x) = 2x \quad\longrightarrow\quad f(x) = x^2 + c
-    note: C1 asks for the move backwards, and the $c$ is the price of the return trip.
+    note: C1 asks for the move backwards, and reversing is what introduces the $c$.
   - math: s(t) = t^2 \quad\longrightarrow\quad v(t) = 2t
-    note: C2 asks the same again, wearing kinematics letters.
+    note: C2 asks the same again, in kinematics letters.
 ```
 
 The second idea is the turning point: where the gradient is zero, the quantity is at its largest or smallest. B1 finds and classifies them; B2 builds the function whose turning point is worth finding. The tangent, in A2, is the pair read at a single point.
 
-Two ideas, then—and the algebra to serve them, which is the earlier standard's work. Start at Module A and work down. Every later topic depends on an earlier one, and none of them depends on a topic further down the list.
+Two ideas, and the algebra to serve them, which is the earlier standard's work. Start at Module A and work down. Every later topic depends on an earlier one, and none of them depends on a topic further down the list.

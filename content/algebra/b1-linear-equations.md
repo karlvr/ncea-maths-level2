@@ -6,11 +6,11 @@ An equation states that two things are equal. Solving it means finding the value
 
 An equation is **linear** when the unknown appears only to the first power. $3x + 5 = 20$ is linear. $x^2 + 3x = 20$ is not, because of the $x^2$, and it is solved by the methods in the next topic.
 
-Equations contain equals signs, unlike the expressions of Module A. The equals sign brings one new permission with it: you may do anything you like to an equation, provided you do it to both sides. Both sides name the same number, so an operation applied to both of them leaves two sides that still name the same number.
+Equations contain equals signs, unlike the expressions of Module A. The equals sign brings one new permission: you may do anything to an equation, provided you do it to both sides. Both sides name the same number, so an operation applied to both of them leaves two sides that still name the same number.
 
 That permission does not extend to an expression. Multiplying an expression by three gives an expression three times as large, which is a different expression. Multiplying both sides of an equation by three leaves the two sides equal to each other, and leaves the same values of the unknown making the statement true.
 
-The examination puts the difficulty in **forming** the equation—turning a paragraph of words into a statement with an equals sign in it—not in solving it once you have it. The specification is explicit that any equation you form must be stated as part of solving a problem, so the equation is not only a step towards the answer, it is part of the answer.
+The examination puts the difficulty in **forming** the equation—turning a paragraph of words into a statement with an equals sign—not in solving it once you have it. The specification is explicit that any equation you form must be stated as part of solving a problem, so the equation is not only a step towards the answer, it is part of the answer.
 
 ---
 
@@ -34,7 +34,7 @@ steps:
   - math: x = 5
 ```
 
-Substituting the answer back into the equation you were given checks it, and the check here is exact rather than approximate. A solution makes the two sides equal and a wrong answer does not, so putting $5$ in for $x$ must produce $20$ on the left as well as on the right.
+Substituting the answer back into the equation you were given checks it, and the check is exact: a solution makes the two sides equal and a wrong answer does not, so putting $5$ in for $x$ must produce $20$ on the left as well as on the right.
 
 Dividing both sides by a negative number is allowed, and it changes the sign on both sides. From $-2x = 12$, dividing both sides by $-2$ gives $x = -6$.
 
@@ -94,7 +94,7 @@ questions:
 
 When the unknown appears on both sides, collect the terms containing it on one side and the numbers on the other.
 
-Which side is free to choose, and choosing the side that leaves a positive number in front of the unknown avoids carrying a minus through every line that follows.
+Either side works, and choosing the side that leaves a positive number in front of the unknown avoids carrying a minus through every line that follows.
 
 ```figure
 caption: Collecting the unknown on one side
@@ -188,7 +188,7 @@ steps:
 
 A fraction in an equation is cleared by multiplying every term on both sides by the lowest common denominator. The common denominator is found exactly as it was in A2: factorise the denominators, and take each distinct factor as many times as it appears in any one of them.
 
-Here is where an equation and an expression part company. In A2 a fraction had to stay a fraction, because multiplying an expression by six gives an expression six times as large. An equation may be multiplied through, because both sides are multiplied and neither side changes relative to the other.
+This is where an equation and an expression differ. In A2 a fraction had to stay a fraction, because multiplying an expression by six gives an expression six times as large. An equation may be multiplied through, because both sides are multiplied and neither side changes relative to the other.
 
 ```figure
 id: b1-clear-fractions
@@ -204,7 +204,7 @@ steps:
   - math: x = 6
 ```
 
-The bracket around $x-4$ is what keeps the subtraction correct, and it is there because that numerator was a single quantity before the multiplication and has to stay one afterwards.
+The bracket around $x-4$ keeps the subtraction correct: that numerator was a single quantity before the multiplication and has to stay one afterwards.
 
 When the unknown is in a denominator, multiplying through still clears it, but what is left may not be linear. Multiplying $2x + 3 = \dfrac{7}{x}$ through by $x$ gives $2x^2 + 3x = 7$, which has an $x^2$ in it. That is a quadratic, and B2 solves it.
 
@@ -415,7 +415,7 @@ steps:
   - math: 4w + 6 = 34
   - math: w = 7
   - math: \textsf{area} = 7 \times 10 = 70
-    note: The question asked for the area. Stopping at $w$ answers a question nobody asked.
+    note: The question asked for the area, so stopping at $w$ does not answer it.
 ```
 
 ### Write the equation down
@@ -424,7 +424,7 @@ The specification says that any equation you form must be stated as part of solv
 
 ### Check against the wording, not against your equation
 
-Substituting your answer into the equation you formed tests only whether you solved that equation correctly. It cannot tell you whether the equation was the right one to write, because an equation built wrongly accepts a wrong answer without complaint.
+Substituting your answer into the equation you formed tests only whether you solved that equation correctly. It cannot tell you whether the equation was the right one to write, because an equation built wrongly accepts a wrong answer.
 
 Read the answer back into the original sentences instead. A width of seven and a length of ten give a perimeter of thirty-four, and ten is three more than seven, so both of the facts in the question hold.
 
@@ -598,7 +598,7 @@ questions:
 
 One equation with two unknowns has many solutions: $x + y = 10$ is satisfied by $x=1$ and $y=9$, and by $x=2$ and $y=8$, and by every other pair adding to ten. Two equations that must both be true at once usually pin down a single pair.
 
-Two methods do it, and both reach the same pair. The pair $2x + y = 11$ and $3x - y = 9$ is worked below by each of them in turn.
+Two methods do it, and both reach the same answer. Each is worked below on the same pair of equations: $2x + y = 11$ and $3x - y = 9$.
 
 ### Substitution
 
@@ -641,7 +641,7 @@ steps:
 
 Where the coefficients do not match, multiply one equation through by whatever makes them match. That is the same permission used to clear fractions above.
 
-Reach for substitution when one equation already gives a letter on its own, and when one of the two equations is not linear—which is how a line meets a curve in C1, where elimination has nothing to cancel against. Elimination is quicker when both equations are in the same tidy form.
+Use substitution when one equation already gives a letter on its own, and when one of the two equations is not linear—which is how a line meets a curve in C1, where elimination has nothing to cancel against. Elimination is quicker when both equations are in the same form.
 
 A curve of known form passing through known points gives one equation for each point. In $y = 3x^2 + ax + b$ the unknowns are $a$ and $b$, and each point supplies a value for $x$ and a value for $y$—which leaves an equation with $a$ and $b$ in it, and neither of them squared.
 
@@ -791,7 +791,7 @@ questions:
 
 ## Practice
 
-Work these on paper before revealing anything. They are ordered easiest first, and the band each one is pitched at is the band the marker would award for doing it well.
+Work these on paper before revealing anything. They are ordered easiest first, and the band on each question is the band the marker would award for doing it well.
 
 ```practice
 questions:

@@ -2,13 +2,13 @@
 
 ---
 
-The introduction promised that every function has a gradient function. This lesson is the rule that finds it, and what the result says.
+The introduction said that every function has a gradient function. This lesson is the rule that finds it, and what the result says.
 
 ---
 
 ## The gradient at a point
 
-The gradient of a curve at a point is the gradient of the **tangent** at that point: the straight line that touches the curve there and has the same steepness as the curve does at the moment of touching.
+The gradient of a curve at a point is the gradient of the **tangent** at that point: the straight line that touches the curve at that point and matches its steepness there.
 
 ```figure
 caption: The tangent carries the gradient
@@ -39,7 +39,7 @@ steps:
 
 Zoom in far enough on any point of a polynomial's graph and the curve becomes indistinguishable from its tangent. That is why a single number can describe the steepness at a point, even though the curve keeps bending either side of it.
 
-Measuring a tangent by eye is guesswork, and guesswork is not calculus. The gradient function replaces the guessing: it is a formula that returns the gradient at every point at once, and it is found by a rule.
+Measuring a tangent by eye is guesswork. The gradient function replaces the guessing: a formula that returns the gradient at every point at once, found by a rule.
 
 ---
 
@@ -172,7 +172,7 @@ steps:
   - math: f'(x) = 2x - 3
 ```
 
-The standard promises polynomials *given in expanded form*, so the expanding you have to do yourself mostly arises where a question asks you to build the function—the area or volume questions of Module B. The habit belongs here all the same: the rule applies to expanded form only.
+The standard states that polynomials are *given in expanded form*, so the expanding you do yourself mostly arises where a question asks you to build the function—the area or volume questions of Module B. The habit belongs here all the same: the rule applies to expanded form only.
 
 ```practice
 caption: expand first
@@ -225,7 +225,7 @@ steps:
 
 Substituting into the wrong formula is the error to guard against here. $f(3)$ is the *height* of the curve at $x = 3$; $f'(3)$ is its *steepness* there. The two numbers answer different questions, and a question about gradient wants $f'$.
 
-The substitution itself carries the other danger. The 2025 report's not-achieved list has both *"substituted values incorrectly into the given function or derivative"* and *"misinterpreted expressions such as $-x^2$"*—the same bracket discipline as algebra: the value goes in wrapped in brackets, so that an even power squares the sign away and an odd power keeps it.
+The substitution itself is the other danger. The 2025 report's not-achieved list has both *"substituted values incorrectly into the given function or derivative"* and *"misinterpreted expressions such as $-x^2$"*—the same bracket discipline as algebra: the value goes in wrapped in brackets, so that an even power squares the sign away and an odd power keeps it.
 
 ```practice
 caption: gradient at a point
@@ -272,7 +272,7 @@ questions:
 
 ## Reading the gradient function backwards
 
-The same formula answers the reverse question: *at which point does the curve have gradient three?* Set the gradient function equal to the given gradient and solve for $x$. The 2025 report names the wrong turn candidates take here: *"substituting the gradient value into the original function"*—the given number is a gradient, so the equation it belongs in is $f'(x) = \textsf{gradient}$, and it is never an input to $f$. Where the question asks for the point rather than just the $x$-value, finish by substituting that $x$ into the original function for its $y$-value—the point sits on the curve, so its height comes from $f$, not from $f'$.
+The same formula answers the reverse question: *at which point does the curve have gradient three?* Set the gradient function equal to the given gradient and solve for $x$. The 2025 report names the error candidates make here: *"substituting the gradient value into the original function"*—the given number is a gradient, so the equation it belongs in is $f'(x) = \textsf{gradient}$, and it is never an input to $f$. Where the question asks for the point rather than just the $x$-value, finish by substituting that $x$ into the original function for its $y$-value—the point sits on the curve, so its height comes from $f$, not from $f'$.
 
 ```figure
 caption: From a gradient to a point
@@ -288,7 +288,7 @@ steps:
     note: "Height comes from the original function. The point is $(2, -12)$."
 ```
 
-One equation used twice: $f'$ finds *where*, $f$ finds *how high*. Keeping the two jobs separate is most of the mark in this question shape.
+One equation used twice: $f'$ finds *where*, $f$ finds *how high*. Keeping the two jobs separate is most of the mark in this kind of question.
 
 ```practice
 caption: backwards
@@ -319,7 +319,7 @@ questions:
     grade: merit
     working:
       - math: f'(x) = 3ax^2 - 6x
-        note: "$a$ is a constant, so it rides along like any coefficient."
+        note: "$a$ is a constant, so it behaves like any coefficient."
       - math: f'(1) = 3a - 6 = 6
       - math: a = 4
   - ask: Find the value of $a$, given that the gradient of the curve at $x = 1$ is $7$.
@@ -327,7 +327,7 @@ questions:
     grade: merit
     working:
       - math: f'(x) = 3ax^2 - 8x
-        note: "$a$ is a constant, so it rides along like any coefficient."
+        note: "$a$ is a constant, so it behaves like any coefficient."
       - math: f'(1) = 3a - 8 = 7
       - math: a = 5
 ```
@@ -336,7 +336,7 @@ questions:
 
 ## Practice
 
-Work these on paper before revealing anything. They are ordered easiest first, and the band each one is pitched at is the band the marker would award for doing it well.
+Work these on paper before revealing anything. They are ordered easiest first, and each one's band is what the marker would award for doing it well.
 
 ```practice
 questions:
@@ -415,7 +415,7 @@ questions:
     grade: excellence
     working:
       - math: f'(x) = 3x^2 + 5
-        note: "The claim is about gradients, so the working lives entirely in the gradient function."
+        note: "The claim is about gradients, so the working stays entirely in the gradient function."
       - math: f'(0) = 5
       - math: 3x^2 \ge 0 \;\textsf{ for every } x \textsf{, so } f'(x) \ge 5
         note: "A square is never negative, and that carries the whole argument."
@@ -425,7 +425,7 @@ questions:
     grade: excellence
     working:
       - math: f'(x) = 6x^2 + 3
-        note: "The claim is about gradients, so the working lives entirely in the gradient function."
+        note: "The claim is about gradients, so the working stays entirely in the gradient function."
       - math: f'(0) = 3
       - math: 6x^2 \ge 0 \;\textsf{ for every } x \textsf{, so } f'(x) \ge 3
         note: "A square is never negative, and that carries the whole argument."
@@ -444,4 +444,4 @@ The rule applies to a sum of terms only, so expand any product first.
 
 For a gradient at a point, substitute into $f'$, never into $f$: height and steepness are different numbers. For the point with a given gradient, solve $f'(x) = \textsf{gradient}$, then take the height from $f$.
 
-The next lesson puts $f'(a)$ to work: it is the $m$ in the equation of the tangent line. The lesson after that draws the gradient function whole, as a graph beside the graph of $f$.
+The next lesson uses $f'(a)$ as the $m$ in the equation of the tangent line. The lesson after that draws the graph of the gradient function beside the graph of $f$.

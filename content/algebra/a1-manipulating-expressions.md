@@ -2,7 +2,7 @@
 
 ---
 
-Every question asks the same thing: here is an expression, write it more *simply*.
+Every question asks the same thing: write the given expression more simply.
 
 ---
 
@@ -12,7 +12,7 @@ One rule governs all work with expressions: the value of the expression must not
 
 You may rewrite an expression in any form you like, provided that substituting a number for $x$ gives the same answer before and after.
 
-That rule also allows you to check your work. Choose a number, substitute it into the original expression and into your simplified expression, then calculate and compare the two. If the answers differ, there is an error in the working.
+That rule also allows you to check your work. Choose a number, substitute it into the original expression and into your simplified expression, then calculate and compare the two answers. If the answers differ, there is an error in the working.
 
 ```figure
 caption: Checking by substitution
@@ -32,7 +32,7 @@ steps:
 
 When substituting a number for $x$, write the number inside brackets before doing any arithmetic. The brackets keep the number attached to whatever was being done to $x$.
 
-Substitute $-3$ for $x$ in $x^2$. With brackets, the whole of $-3$ is squared, and the answer is $9$. Without them, only the $3$ is squared and the minus is left sitting outside, which gives $-9$, which is incorrect.
+Substitute $-3$ for $x$ in $x^2$. With brackets, the whole of $-3$ is squared, and the answer is $9$. Without them, only the $3$ is squared and the minus stays outside, which gives $-9$, and that is incorrect.
 
 ```figure
 caption: Substituting a negative number
@@ -68,7 +68,7 @@ questions:
     grade: achieved
     working:
       - math: 2(\ca{-3})^2 - 5(\ca{-3})
-        note: Brackets in first, arithmetic afterwards. Doing it in that order is what keeps the signs right.
+        note: Brackets in first, arithmetic afterwards. That order keeps the signs right.
       - math: 2(9) + 15
         note: A negative squared is positive, and subtracting a negative adds.
       - math: "33"
@@ -129,7 +129,7 @@ questions:
 
 The value must not change, and your working is where you show that it did not. Each line is another form of the same expression, equal to the line above it, so the value carries unchanged from the first line to the last.
 
-The examination specification requires algebraic technique to be shown, not just a correct answer. An answer with no working is marked *Correct Answer Only*, which is worth an Achieved tick at best and cannot reach Merit or Excellence however right the answer is. So every step gets written down, including the ones that look too small to be worth it.
+The examination specification requires algebraic technique to be shown, not just a correct answer. An answer with no working is marked *Correct Answer Only*, which is worth Achieved at best and cannot reach Merit or Excellence however right the answer is. So write down every step, including the ones that look too small to matter.
 
 ---
 
@@ -150,7 +150,7 @@ steps:
 
 **Factors** are the parts that are multiplied. $3x(x+3)$ has two factors: the $3x$, and the bracket.
 
-Which of the two words applies depends on the form in front of you. A sum is made up of terms. A product is made up of factors. The same expression can be written either way, and moving between those two forms is called expanding and factorising.
+Which of the two words applies depends on how the expression is written. A sum is made up of terms. A product is made up of factors. The same expression can be written either way, and moving between those two forms is called expanding and factorising.
 
 ```figure
 caption: The same expression, two ways
@@ -171,7 +171,7 @@ Which of the two a part is decides what may be done to it. A factor can be cance
 
 ## Expanding and factorising
 
-Two operations, and they are opposites of each other.
+Two operations, and they are opposites.
 
 ```figure
 caption: Two directions
@@ -295,7 +295,7 @@ steps:
     note: Which is how a quadratic gets solved. Neither move works on a sum of terms.
 ```
 
-Factorising is the step that makes both of those available.
+Factorising makes both moves available.
 
 ---
 
@@ -335,7 +335,7 @@ steps:
 
 Verify by expanding it back. Three $x$ times two $x$ is six $x$ squared. Three $x$ times three is nine $x$. Correct.
 
-Take out common factors first in every case, before trying anything else. Whatever is left inside the bracket is simpler than the expression you started with, and it is what the other two methods are then applied to.
+Take out common factors first, before trying anything else. Whatever is left inside the bracket is simpler than the expression you started with, and it is what the other two methods are then applied to.
 
 ```practice
 caption: common factor
@@ -543,7 +543,7 @@ The 2023 and 2025 papers both hide one of these inside a rational expression, $\
 
 A trinomial is sometimes a perfect square: the square of a single bracket. The method finds it without any change, because the two numbers come out equal. $x^2 + 6x + 9$ needs two numbers multiplying to $9$ and adding to $6$, and both of them are $3$, so the factorisation is $(x+3)(x+3)$, which is written $(x+3)^2$.
 
-Expanding $(x+a)^2$ gives $x^2 + 2ax + a^2$, which is the same trinomial seen from the other side. The first and last terms are squares, and the middle term is twice the product of the two terms in the bracket. Those two conditions recognise a perfect square without searching for a pair of numbers at all, and they hold with a coefficient on the $x^2$ as well.
+Expanding $(x+a)^2$ gives $x^2 + 2ax + a^2$. The first and last terms are squares, and the middle term is twice the product of the two terms in the bracket. Those two conditions recognise a perfect square without searching for a pair of numbers, and they hold with a coefficient on the $x^2$ as well.
 
 ```figure
 caption: A trinomial that is a square
@@ -654,7 +654,7 @@ questions:
 
 Terms are **like** when their letter parts are identical—same letters, same powers.
 
-$3x^2$ and $5x^2$ are like terms. They add to $8x^2$. $3x^2$ and $5x$ are not like terms. They stay separate, and no amount of work will combine them.
+$3x^2$ and $5x^2$ are like terms. They add to $8x^2$. $3x^2$ and $5x$ are not like terms. They stay separate and cannot be combined.
 
 ```figure
 caption: Like and unlike
@@ -698,7 +698,7 @@ questions:
       - math: x^2 + 3x - 4 - x^2 \ca{+} x \ca{+} 6
         note: The minus reaches every term inside that bracket, so two signs flip.
       - math: 4x + 2
-        note: The $x^2$ terms cancel, which is the sign the signs were handled correctly.
+        note: The $x^2$ terms cancel, which shows the signs were handled correctly.
   - ask: Expand and simplify.
     math: (x+5)(x-2) - (x-1)(x+3)
     grade: merit
@@ -714,7 +714,7 @@ questions:
 
 ## Practice
 
-Work these on paper before revealing anything. They are ordered easiest first, and the band each one is pitched at is the band the marker would award for doing it well.
+Work these on paper before revealing anything. They are ordered easiest first, and each is labelled with the band the marker would award for doing it well.
 
 ```practice
 questions:
@@ -823,4 +823,4 @@ Factorise in a fixed order: common factor, then difference of two squares, then 
 
 Check factorising by expanding it back. Check simplifying by substituting a number, and write whatever you substitute inside brackets, so that a negative keeps its sign and a coefficient gets squared along with its letter.
 
-Answers must be given in their simplest form, and algebraic technique must be shown. So when you practise, state the reason for each step out loud—common factor first, which left a difference of two squares. Being able to say it is what lets you write it down, and writing it down is what takes you past Achieved.
+Answers must be given in their simplest form, and algebraic technique must be shown. So when you practise, state the reason for each step out loud—common factor first, which left a difference of two squares. Being able to say the reason is what lets you write it down, and writing it down is what takes you past Achieved.

@@ -4,7 +4,7 @@
 
 An exponent is shorthand for repeated multiplication. $x^5$ means $x$ times $x$ times $x$ times $x$ times $x$—five of them multiplied together. The $x$ is the **base**. The $5$ is the **exponent**, also called the index or the power.
 
-That definition is the whole topic. Every index law is a consequence of that definition, and if you forget a law you can rebuild the law by writing out the multiplication. That is the approach worth taking here, because the index laws are **not** on the formulae sheet supplied in the exam. The quadratic formula is there, the discriminant is there, the log rules are there. The index laws are not. You either know them or you reconstruct them.
+That definition is the whole topic. Every index law is a consequence of it, and a forgotten law can be rebuilt by writing out the multiplication. Rebuilding matters because the index laws are **not** on the formulae sheet supplied in the examination: the quadratic formula, the discriminant and the logarithm rules are there, and the index laws are not.
 
 ---
 
@@ -62,9 +62,9 @@ Multiply the exponents.
 
 ### All three need the same base
 
-Every one of those laws requires the **same base**. $2^3 \cdot 3^2$ cannot be combined, because one is built from twos and the other from threes. There is nothing to combine.
+Every one of those laws requires the **same base**. $2^3 \cdot 3^2$ cannot be combined, because one is built from twos and the other from threes.
 
-That condition matters later. In Module B, solving exponential equations depends on rewriting both sides so that they have the same base. The same-base condition is the reason that rewriting step is necessary.
+The condition returns in Module B, where solving an exponential equation depends on rewriting both sides so that they have the same base.
 
 ```practice
 caption: the three laws
@@ -123,7 +123,7 @@ A power applied to a product applies to every factor.
 
 $(2x)^3$ means $2x$ times $2x$ times $2x$. That is two times two times two, which is $8$, and $x$ times $x$ times $x$, which is $x^3$. So $8x^3$.
 
-Now the trap, and it is the same trap as in the last lesson. A power does **not** distribute over addition.
+The trap is the same as in the last lesson: a power does **not** distribute over addition.
 
 $(x+y)^2$ is not $x^2 + y^2$. Expand it properly: $(x+y)(x+y)$, which gives $x^2 + 2xy + y^2$. There is a middle term. Check that with numbers—put in $x = 3$ and $y = 4$. Then $(3+4)^2$ is $49$, and $3^2 + 4^2$ is $25$. Not the same.
 
@@ -140,7 +140,7 @@ steps:
     note: Not the same, and the gap is the missing $2xy$—which is $24$.
 ```
 
-This is worth pairing with the cancelling rule from the last lesson, because the two are one idea appearing in two places. **Multiplication distributes. Addition does not.** Cancelling reaches every factor but not every term; a power reaches every factor but not every term.
+The cancelling rule from the last lesson is the same idea in another place. **Multiplication distributes. Addition does not.** Cancelling reaches every factor but not every term; a power reaches every factor but not every term.
 
 ```practice
 caption: powers over products
@@ -232,7 +232,7 @@ $\dfrac{x^3}{x^5}$. Cancelling three $x$'s from the top and bottom leaves two $x
 caption: Why a negative exponent is a reciprocal
 steps:
   - math: \dfrac{x^3}{x^5}
-    note: The same trick—work it out twice.
+    note: The same method—work it out twice.
   - math: \dfrac{\cancel{x \cdot x \cdot x}}{\cancel{x \cdot x \cdot x} \cdot x \cdot x} = \dfrac{1}{x^2}
     note: Cancel three from each, and two are left underneath.
   - math: x^{3-5} = x^{-2}
@@ -245,7 +245,7 @@ So $x^{-2}$ is $\dfrac{1}{x^2}$. **A negative exponent means a reciprocal.** It 
 
 The rule also runs in reverse, and you will need it in that direction. $\dfrac{1}{x^3}$ is $x^{-3}$. Moving a power from the bottom of a fraction to the top flips the sign of its exponent.
 
-A negative exponent on a whole fraction means the same thing, and what it does there is turn the fraction over.
+A negative exponent on a whole fraction means the same thing: it turns the fraction over.
 
 ```figure
 caption: A negative exponent on a fraction
@@ -291,7 +291,7 @@ steps:
 
 ### Surd form and index form
 
-A **surd** is a root written with a root sign. The rule connecting roots and fractional exponents runs in both directions, and the direction you will need most often is surd into index, because the index laws apply to powers and there is nothing they can do with a root sign.
+A **surd** is a root written with a root sign. The rule connecting roots and fractional exponents runs in both directions, and the direction you will need most often is surd into index, because the index laws apply to powers and can do nothing with a root sign.
 
 $\sqrt{x}$ is $x^{\frac{1}{2}}$. And $\sqrt[3]{x^2}$ is $x^{\frac{2}{3}}$—the root goes underneath, the power inside goes on top. $\dfrac{1}{\sqrt{x}}$ is $x^{-\frac{1}{2}}$, because being underneath a one turns the exponent negative as well.
 
@@ -472,7 +472,7 @@ steps:
   - math: \ca{4}\cb{x^4}
 ```
 
-Nothing in that is new. Each factor met one of the laws above, and the only new thing is that they arrived in the same expression.
+Nothing in that is new. Each factor used one of the laws above, and the only new thing is that they appear in the same expression.
 
 ---
 
@@ -586,7 +586,7 @@ questions:
 
 ## Summary
 
-An exponent is repeated multiplication. Every law follows from that, so reconstruct rather than memorise—and you do have to know them, because they are not on the formulae sheet.
+An exponent is repeated multiplication. Every law follows from that, so a forgotten law can be rebuilt—and the laws have to be known, because they are not on the formulae sheet.
 
 Multiplying adds the exponents. Dividing subtracts them. A power of a power multiplies them. All three require the same base.
 

@@ -2,11 +2,11 @@
 
 ---
 
-In $2^x = 32$ the unknown is in the power. Nothing in B1 or B2 reaches it, because $x$ is not being added to anything and not being multiplied by anything—it is counting how many twos are multiplied together.
+In $2^x = 32$ the unknown is in the power. Nothing in B1 or B2 reaches it, because $x$ is not added to anything or multiplied by anything—it is counting how many twos are multiplied together.
 
-Write both sides as powers of the same base, and then the powers themselves must be equal. Or use a logarithm, which is the operation that brings a power down to where the earlier methods can work on it.
+Write both sides as powers of the same base, and then the powers themselves must be equal. Or use a logarithm, the operation that brings a power down to where the earlier methods can work on it.
 
-The logarithm rules are on the formulae sheet handed out with the examination. The index laws are not, and everything here rests on them, so A3 is the topic to have straight before this one.
+The logarithm rules are on the formulae sheet handed out with the examination. The index laws are not, and everything here rests on them, so know A3 before starting this topic.
 
 ---
 
@@ -27,7 +27,7 @@ steps:
   - math: x = 4
 ```
 
-Getting there means rewriting one side or both, and the rewriting is A3 in full: a number as a power, a reciprocal as a negative exponent, a root as a fractional one.
+Getting there means rewriting one side or both, using the rules from A3: a number as a power, a reciprocal as a negative exponent, a root as a fractional one.
 
 ```figure
 caption: Rewriting a side as a power
@@ -39,7 +39,7 @@ steps:
       \sqrt{5} & = & 5^{\frac{1}{2}} \\[10pt]
       \dfrac{1}{\sqrt[3]{2}} & = & 2^{-\frac{1}{3}}
       \end{array}
-    note: Each of these is a line of A3, and every one of them turns up in an exponential equation.
+    note: Each of these is from A3, and each turns up in exponential equations.
 ```
 
 Once both sides are written over the same base, the power of a power law collapses each side to a single exponent.
@@ -135,7 +135,7 @@ questions:
 
 $\log_b y$ is the power that $b$ has to be raised to in order to give $y$. The formulae sheet states it as a pair: if $y = b^x$ then $x = \log_b y$.
 
-The two lines carry one fact in two notations, and moving between them is most of what a logarithm question asks for.
+The two lines are one fact in two notations, and moving between them is most of what a logarithm question asks for.
 
 ```figure
 id: b3-two-notations
@@ -149,7 +149,7 @@ steps:
 
 So reading a logarithmic equation means turning it into index form. $x = \log_3 243$ asks for a power, so write $3^x = 243$, and the answer is $5$. In $\log_x 81 = 4$ the unknown is the base instead, so write $x^4 = 81$. The algebra gives $3$ and $-3$, and only $3$ is the answer.
 
-A base has to be positive, and it cannot be $1$. That is what rejected the $-3$: no logarithm has a negative base, and the rejection is written down, not made silently. The same discard appears in $\log_x 36 = 2$, which gives $x^2 = 36$, so $x$ is $6$ or $-6$, and $-6$ is rejected. The 2023 marking schedule awards the higher grade only where that rejection is shown.
+A base has to be positive, and it cannot be $1$. That is what rejected the $-3$: no logarithm has a negative base, and the rejection must be written down. The same discard appears in $\log_x 36 = 2$, which gives $x^2 = 36$, so $x$ is $6$ or $-6$, and $-6$ is rejected. The 2023 marking schedule awards the higher grade only where that rejection is shown.
 
 You also cannot take the logarithm of zero or of a negative number, because no power of a positive base produces one. That fact does most of the discarding later in this topic.
 
@@ -253,7 +253,7 @@ steps:
     note: Writing $x$ for $b^m$ and $y$ for $b^n$ gives the rule as the formulae sheet states it.
 ```
 
-Two values are worth knowing and are not on the sheet. $\log_b b = 1$, because $b^1 = b$. $\log_b 1 = 0$, because $b^0 = 1$.
+Two values are not on the sheet. $\log_b b = 1$, because $b^1 = b$. $\log_b 1 = 0$, because $b^0 = 1$.
 
 The rules are about products, quotients and powers. $\log(x + y)$ is not $\log x + \log y$, and nothing turns a sum inside a logarithm into anything simpler—which is the same boundary A2 drew around cancelling and A3 drew around powers.
 
@@ -527,7 +527,7 @@ steps:
     note: A power of a positive base is never negative, so $2^x = -2$ has no solution.
 ```
 
-A positive base raised to any power is positive, so $2^x = -2$ has no solution and the second value of $u$ leads nowhere. The 2025 marking schedule gives excluding the negative value as part of what the highest grade on that question requires, so the rejection is written down rather than passed over.
+A positive base raised to any power is positive, so $2^x = -2$ has no solution and the second value of $u$ leads nowhere. The 2025 marking schedule gives excluding the negative value as part of what the highest grade on that question requires, so write the rejection down.
 
 The powers do not always line up as neatly as $2^{2x}$ and $2^x$. In $3^{2x+1}$ the exponent has an extra $1$ in it, and the multiplying law splits it off: $3^{2x+1} = 3 \cdot 3^{2x} = 3\left(3^x\right)^2$. Likewise $3^{x+2} = 3^2 \cdot 3^x = 9 \cdot 3^x$. Both become multiples of the quantity being named.
 
@@ -632,7 +632,7 @@ steps:
 
 Compound interest is the same equation with a factor above one: an amount $P$ at $6\%$ a year is worth $P \times 1.06^{\,n}$ after $n$ years.
 
-Some models use the base $e$ rather than a decimal. It behaves like any other base, and $\ln$ is its logarithm—the formulae sheet gives $\ln y = \log_e y$. A model given in that form usually has an unknown constant in it, found by substituting the starting values before anything else is attempted.
+Some models use the base $e$ rather than a decimal. It behaves like any other base, and $\ln$ is its logarithm—the formulae sheet gives $\ln y = \log_e y$. A model given in that form usually has an unknown constant in it, found by substituting the starting values first.
 
 ```practice
 caption: growth and decay
@@ -801,7 +801,7 @@ questions:
 
 ## Summary
 
-An exponential equation has the unknown in the power, and there are two ways at it.
+An exponential equation has the unknown in the power, and there are two ways to solve it.
 
 Write both sides as powers of one base, and then the exponents are equal. Getting there uses every rewriting rule from A3—a number as a power, a reciprocal as a negative exponent, a root as a fractional one.
 
@@ -811,6 +811,6 @@ The three logarithm rules are on the formulae sheet and are the index laws in an
 
 Where no common base exists, take logarithms of both sides and let the power rule bring the exponent down.
 
-Where one power of a base is the square of another, name the smaller one and a quadratic appears. Solve it by B2's methods, then reject any value that would need a positive base raised to a power to come out negative.
+Where one power of a base is the square of another, name the smaller one and a quadratic appears. Solve it by B2's methods, then reject any value that would make a power of a positive base negative.
 
 Growth and decay are the same equation with a multiplier either side of one, and the specification names them as contexts the examination may use.

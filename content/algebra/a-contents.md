@@ -2,7 +2,7 @@
 
 ---
 
-This page is the whole of Level 2 algebra in one list: three modules, seven topics, and the skills inside each topic. Nothing is taught here. The purpose is to show you the size of the subject before you start on it, because a textbook shows one page at a time and never states how much there is altogether.
+This page is the whole of Level 2 algebra in one list: three modules, seven topics, and the skills inside each topic. Nothing is taught here. The list shows the size of the subject before you start on it, because a textbook shows one page at a time and never states how much there is altogether.
 
 Read the list now, and again before the exam. In between, treat it as a checklist and mark the skills you can already do. Several of them are Level 1 work carried one step further, so the list starts partly marked.
 
@@ -57,7 +57,7 @@ There is an equals sign now, so there is something to find.
 - checking the answer against the original wording
 - two equations in two unknowns
 
-**B2—Solving quadratic equations.** Three routes to the same answer, and the skill is choosing between them.
+**B2—Solving quadratic equations.** Three methods for the same answer, and the skill is choosing between them.
 
 - taking the equation to standard form
 - solving by factorising
@@ -68,7 +68,7 @@ There is an equals sign now, so there is something to find.
 - building an equation from its roots
 - completing a model whose form you have been given
 
-**B3—Exponential equations and logarithms.** Equations where the unknown sits up in the power.
+**B3—Exponential equations and logarithms.** Equations where the unknown is in the power.
 
 - rewriting both sides to a common base
 - what a logarithm is
@@ -95,7 +95,7 @@ There is an equals sign now, so there is something to find.
 
 ## How much of it is really new
 
-Seven topics and close to fifty skills, but there is a lot of cross-over between the topics, and that makes the subject smaller than the count suggests.
+Seven topics and close to fifty skills, but the topics overlap, and that makes the subject smaller than the count suggests.
 
 Three of them are one quadratic asked about in three ways.
 
@@ -118,9 +118,9 @@ steps:
   - math: (x^3)^2 \cdot x^4
     note: A3 asks you to write this with a single exponent.
   - math: 2^{x+1} = 32
-    note: B3 asks for the value of $x$, and getting started means writing thirty-two as a power of two.
+    note: B3 asks for the value of $x$, and the first step is writing thirty-two as a power of two.
 ```
 
-That leaves algebraic fractions and linear equations. Four ideas, then, and most of them are asked about in two or three of the seven topics. The repetition is why the list above is longer than the subject it describes.
+That leaves algebraic fractions and linear equations. Four ideas in all, and most of them are asked about in two or three of the seven topics. That repetition is why the list above is longer than the subject it describes.
 
 Start at Module A and work down. Every later topic depends on an earlier one, and none of them depends on a topic further down the list.

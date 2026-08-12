@@ -2,7 +2,7 @@
 
 ---
 
-Module A ended twice at the same place: a horizontal tangent has gradient zero, and a sketch of $f$ turns exactly where $f'$ crosses the axis. This lesson makes that place the subject. Finding where $f'(x) = 0$, and saying what kind of point lives there, is the centre of the standard—and the word problems of the next lesson are this lesson wearing a story.
+Module A ended twice at the same fact: a horizontal tangent has gradient zero, and a sketch of $f$ turns exactly where $f'$ crosses the axis. This lesson is about that point. Finding where $f'(x) = 0$, and saying what kind of point it is, is the centre of the standard—and the next lesson's word problems are the same work in context.
 
 ---
 
@@ -19,14 +19,14 @@ steps:
     note: "Differentiate, and set the result equal to zero—flat means gradient zero."
   - math: 3x^2 - 6x - 9 = 0
   - math: 3(x - 3)(x + 1) = 0
-    note: "Common factor out, then factorise the trinomial. The quadratic formula does the same job when the factors will not come."
+    note: "Common factor out, then factorise the trinomial. The quadratic formula does the same job when the factors are hard to find."
   - math: x = 3 \quad\textsf{or}\quad x = -1
     note: "Two flat points, located along the $x$-axis. Their heights are still missing."
   - math: f(-1) = 7 \qquad f(3) = -25
     note: "Heights from the original function, as always. The turning points are $(-1, 7)$ and $(3, -25)$."
 ```
 
-Solving $f'(x) = 0$ is a quadratic equation, so everything from algebra's Module B applies: factorise if the factors come quickly, otherwise use the quadratic formula from the sheet. The calculus in this question is one line; the marks after it are algebra.
+Solving $f'(x) = 0$ is a quadratic equation, so everything from algebra's Module B applies: factorise if the factors are easy to find, otherwise use the quadratic formula from the sheet. The calculus in this question is one line; the marks after it are algebra.
 
 The heights follow the Module A rule: $f$ for height, $f'$ for steepness. A turning point named in an answer is a point, and a point has both coordinates.
 
@@ -137,13 +137,13 @@ steps:
     note: "Positive: the gradient is rising through zero. One substitution per point, and the conclusion written beside each."
 ```
 
-The test is the fastest of the three, with one blind spot: if $f''$ comes out to be zero it says nothing at all, and one of the other two justifications has to speak instead.
+The test is the fastest of the three, with one gap: if $f''$ comes out to be zero it says nothing, and one of the other two justifications must be used instead.
 
 ### An annotated sketch
 
 The shape argument: a cubic with a positive $x^3$ term climbs from the lower left and climbs away to the upper right, so of its two turning points the first must be the maximum and the second the minimum. Drawn small and labelled, with the reasoning written beside it, this is a complete justification—the word *annotated* is what makes it one. A bare sketch with no words claims nothing.
 
-Whichever of the three is used, the conclusion has to be stated: *therefore $(3, -25)$ is a minimum*. The 2024 schedule's Excellence column requires the minimum to be *stated* as such and the choice *justified*—the sentence is part of the working, not a flourish after it.
+Whichever of the three is used, the conclusion has to be stated: *therefore $(3, -25)$ is a minimum*. The 2024 schedule's Excellence column requires the minimum to be *stated* as such and the choice *justified*—the sentence is part of the working.
 
 ```practice
 caption: nature
@@ -188,7 +188,7 @@ questions:
 
 ## Increasing and decreasing
 
-Between its turning points a curve does one thing: climbs throughout or falls throughout. A question that asks where the function is **increasing** or **decreasing** is asking for those regions, and the turning points are the fences between them.
+Between its turning points a curve does one thing: climbs throughout or falls throughout. A question that asks where the function is **increasing** or **decreasing** is asking for those regions, and the turning points are the boundaries between them.
 
 Find where $f'(x) = 0$, then read the sign of $f'$ in each region—from a test point, or from the shape of the graph of $f'$.
 
@@ -217,7 +217,7 @@ steps:
     note: "The curve falls exactly between its two turning points."
 ```
 
-The answer to this question is an interval of $x$-values. Writing the turning points and stopping earns the finding marks but not the question—the region is what was asked for.
+The answer to this question is an interval of $x$-values. Writing the turning points and stopping earns the marks for finding them but does not answer the question—the region is what was asked for.
 
 ```practice
 caption: increasing and decreasing
@@ -259,7 +259,7 @@ questions:
 
 ## Working backwards to a coefficient
 
-A question can hold back a coefficient and hand over a fact about the curve instead. Each fact converts to an equation by the same two formulas as everything above: *has a stationary point at $x = a$* means $f'(a) = 0$; *passes through a point* or *meets the $x$-axis at $x = a$* means $f(a)$ equals the height named. Convert every fact, then solve what results.
+A question can leave a coefficient unknown and give a fact about the curve instead. Each fact converts to an equation by the same two formulas as everything above: *has a stationary point at $x = a$* means $f'(a) = 0$; *passes through a point* or *meets the $x$-axis at $x = a$* means $f(a)$ equals the height named. Convert every fact, then solve what results.
 
 ```figure
 caption: A fact becomes an equation
@@ -273,7 +273,7 @@ steps:
   - math: k = -3
 ```
 
-With two unknown coefficients, two facts arrive, and converting both gives simultaneous equations—algebra's Module B again. The 2025 paper's hardest turning-point part is built this way: a cubic with coefficients $a$ and $b$, one $x$-intercept and one stationary point given, and everything else follows once the two equations are written.
+With two unknown coefficients the question gives two facts, and converting both gives simultaneous equations—algebra's Module B again. The 2025 paper's hardest turning-point part is built this way: a cubic with coefficients $a$ and $b$, one $x$-intercept and one stationary point given, and everything else follows once the two equations are written.
 
 ```practice
 caption: unknown coefficients
@@ -448,10 +448,10 @@ questions:
 
 A turning point is where the gradient is zero: solve $f'(x) = 0$, then take heights from $f$. The solving is a quadratic equation, so the marks around the calculus are algebra.
 
-The nature is a separate question with its own working. Three justifications are accepted—second derivative, test points either side, annotated sketch—and the conclusion must be stated in words whichever is used. $f''$ negative means maximum, positive means minimum, zero means the test is silent and another justification must be used.
+The nature is a separate question with its own working. Three justifications are accepted—second derivative, test points either side, annotated sketch—and the conclusion must be stated in words whichever is used. $f''$ negative means maximum, positive means minimum, zero means the test decides nothing and another justification must be used.
 
-Between turning points a curve climbs throughout or falls throughout, so *increasing* and *decreasing* questions are answered with intervals fenced by the turning points.
+Between turning points a curve climbs throughout or falls throughout, so *increasing* and *decreasing* questions are answered with intervals bounded by the turning points.
 
 Facts about a curve convert to equations: on the curve means $f(a)$ equals the height, stationary means $f'(a) = 0$. Two unknowns need two facts.
 
-The next lesson sends all of this into word problems: the turning point stops being a feature of a curve and becomes the largest volume, the least material, the greatest area—the question the whole standard is named after.
+The next lesson uses all of this in word problems: the turning point becomes the largest volume, the least material, the greatest area—the question the whole standard is named after.

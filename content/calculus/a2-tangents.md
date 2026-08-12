@@ -8,10 +8,10 @@ The previous lesson produced $f'(a)$: the gradient of the curve at one chosen po
 
 ## Two ingredients
 
-The tangent at $x = a$ is a straight line, and a straight line is pinned down by a point and a gradient. Both come from the curve, and each from a different formula.
+The tangent at $x = a$ is a straight line, and a straight line is fixed by a point and a gradient. Both come from the curve, and each from a different formula.
 
 - **The point.** The tangent touches the curve at $x = a$, so the point is $\big(a, f(a)\big)$: the height comes from the original function.
-- **The gradient.** The tangent's gradient is the curve's gradient at the touch, which is $f'(a)$, from the gradient function.
+- **The gradient.** The tangent's gradient is the curve's gradient at the touching point, which is $f'(a)$, from the gradient function.
 
 ```figure
 caption: What the tangent needs
@@ -59,11 +59,11 @@ steps:
   - math: y = -3x + 3
 ```
 
-The two substitutions are the place errors live. $f(a)$ is the height and $f'(a)$ is the gradient; swap them and every line after is wrong, though the working looks tidy. Say what each number is as you find it—*the point is $(1, 0)$, the gradient is $-3$*—and the swap cannot happen silently.
+The two substitutions are where the errors happen. $f(a)$ is the height and $f'(a)$ is the gradient; swap them and every line after is wrong, though the working looks tidy. Say what each number is as you find it—*the point is $(1, 0)$, the gradient is $-3$*—and the swap cannot happen silently.
 
-The 2024 marking schedule accepts the unsimplified form—its note reads "Candidate does not need to simplify to $y = mx + c$"—so $y - 0 = -3(x-1)$ already earns the mark. Simplifying anyway costs a line and buys a form that is easier to check: substitute the touching point into the finished equation, and the two sides must agree.
+The 2024 marking schedule accepts the unsimplified form—its note reads "Candidate does not need to simplify to $y = mx + c$"—so $y - 0 = -3(x-1)$ already earns the mark. Simplifying anyway gives a form that is easier to check: substitute the touching point into the finished equation, and the two sides must agree.
 
-Some questions supply the point ready-made—*find the tangent at $(-2, 6)$*—and then $f(a)$ is not needed; the height is on the page. Some supply only $x = a$, and then finding $f(a)$ is the first step. Read which one you have been given before starting.
+Some questions supply the point—*find the tangent at $(-2, 6)$*—and then $f(a)$ is not needed. Some supply only $x = a$, and then finding $f(a)$ is the first step. Read which one you have been given before starting.
 
 ```practice
 caption: tangents
@@ -209,7 +209,7 @@ questions:
 
 ## Practice
 
-Work these on paper before revealing anything. They are ordered easiest first, and the band each one is pitched at is the band the marker would award for doing it well.
+Work these on paper before revealing anything. They are ordered easiest first, and each one's band is what the marker would award for doing it well.
 
 ```practice
 questions:
@@ -295,10 +295,10 @@ questions:
 
 ## Summary
 
-A tangent is a straight line, so it needs a point and a gradient, and the curve supplies both: the point is $\big(a, f(a)\big)$ and the gradient is $f'(a)$. Height from $f$, steepness from $f'$: the same division of labour as the whole of Module A.
+A tangent is a straight line, so it needs a point and a gradient, and the curve supplies both: the point is $\big(a, f(a)\big)$ and the gradient is $f'(a)$. Height from $f$, steepness from $f'$, as everywhere in Module A.
 
 Assemble with $y - y_1 = m(x - x_1)$, which is not on the formulae sheet. Either form of the answer is accepted; the simplified form is the one you can check by substituting the touching point back in.
 
-Where the gradient is stated instead of the point—parallel to a given line, or horizontal—solve $f'(x) = \textsf{gradient}$ to find the touch, then proceed as before.
+Where the gradient is stated instead of the point—parallel to a given line, or horizontal—solve $f'(x) = \textsf{gradient}$ to find the touching point, then proceed as before.
 
-A horizontal tangent marks a turning point of the curve, and turning points are Module B's subject. Before that, the next lesson finishes Module A by drawing the gradient function whole—the graph of $f'$ beside the graph of $f$.
+A horizontal tangent marks a turning point of the curve, and turning points are Module B's subject. Before that, the next lesson finishes Module A by drawing the graph of $f'$ beside the graph of $f$.

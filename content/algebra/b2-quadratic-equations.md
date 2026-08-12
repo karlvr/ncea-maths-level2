@@ -6,7 +6,7 @@ A quadratic equation is one in which the highest power of the unknown is two. $x
 
 A linear equation has one solution. A quadratic has two, or one, or none, and its solutions are called its **roots**.
 
-Three methods find them: factorising, completing the square, and the quadratic formula. All three answer the same question, and the skill being assessed is choosing which one to reach for.
+Three methods find them: factorising, completing the square, and the quadratic formula. All three answer the same question, and the skill being assessed is choosing which one to use.
 
 ---
 
@@ -20,12 +20,12 @@ steps:
   - math: 3x^2 + 4 = 7x
     note: Not yet in a form any method can use.
   - math: 3x^2 - 7x + 4 = 0
-    note: Take the $7x$ across, and the whole of the left side is now over zero.
+    note: Take the $7x$ across, so the right side is zero.
   - math: a = 3, \quad b = \ca{-7}, \quad c = 4
     note: The sign in front of a term belongs to that term, so $b$ is $-7$.
 ```
 
-Never divide both sides by the unknown. $x^2 = 5x$ has two roots, $0$ and $5$. Dividing both sides by $x$ leaves $x = 5$ and loses the other one, because dividing by $x$ assumes $x$ is not zero, and in an equation you are solving that is exactly what is not yet known.
+Never divide both sides by the unknown. $x^2 = 5x$ has two roots, $0$ and $5$. Dividing both sides by $x$ leaves $x = 5$ and loses the other one, because dividing by $x$ assumes $x$ is not zero, which is not yet known.
 
 ```figure
 caption: Why dividing by the unknown loses a root
@@ -45,7 +45,7 @@ steps:
 
 ## Solving by factorising
 
-A1 established that if a product is zero, at least one of its factors is zero. That statement is the whole of this method: get the equation to standard form, factorise the side that is not zero, and set each factor to zero in turn.
+A1 established that if a product is zero, at least one of its factors is zero. That statement is the whole method: get the equation to standard form, factorise the side that is not zero, and set each factor to zero in turn.
 
 ```figure
 id: b2-factorising
@@ -140,7 +140,7 @@ questions:
 
 ## Completing the square
 
-Every quadratic can be written as a bracket squared, plus or minus a number. Take the coefficient of $x$ and halve it, and that halved number is what goes inside the bracket. Squaring the bracket produces that number squared as well, so subtract it back off.
+Every quadratic can be written as a bracket squared, plus or minus a number. Halve the coefficient of $x$: the halved number goes inside the bracket. Squaring the bracket also produces that number squared, so subtract it back off.
 
 ```figure
 id: b2-completing
@@ -169,9 +169,9 @@ steps:
     note: Exact answers. A decimal is only wanted where the question asks for one.
 ```
 
-**The plus-or-minus is not optional.** Taking the square root of both sides of an equation produces two answers, and writing only the positive one loses a root in exactly the way that dividing by $x$ did.
+**The plus-or-minus is not optional.** Taking the square root of both sides of an equation produces two answers, and writing only the positive one loses a root, just as dividing by $x$ did.
 
-An equation that arrives as a square already needs only those last two steps, whatever is wrapped around it.
+An equation that already contains a squared bracket needs only those last two steps, whatever else is around it.
 
 ```figure
 caption: When the square is already there
@@ -200,7 +200,7 @@ steps:
   - math: 2(x+3)^2 - 13
 ```
 
-Completing the square also hands you the vertex of the parabola. The graph of $y = (x+p)^2 + q$ has its lowest point where the bracket is zero, at $x = -p$, and the value there is $q$—so the vertex is at $(-p, q)$, read straight off the completed form without any calculation.
+Completing the square also gives the vertex of the parabola. The graph of $y = (x+p)^2 + q$ has its lowest point where the bracket is zero, at $x = -p$, and the value there is $q$—so the vertex is at $(-p, q)$, read straight off the completed form.
 
 ```practice
 caption: completing the square
@@ -306,7 +306,7 @@ steps:
     note: The two signs are worked out separately, giving $\dfrac{8}{6}$ and $\dfrac{6}{6}$.
 ```
 
-What comes out under the root sign is often not a whole number, and it is left as a surd where the question asks for exact answers and turned into a decimal where it does not. Where letters rather than numbers go in, the surd may simplify: $\sqrt{36k^2 - 32k^2}$ is $\sqrt{4k^2}$, which is $2k$.
+The square root is often not a whole number. It is left as a surd where the question asks for exact answers, and turned into a decimal where it does not. Where letters rather than numbers go in, the surd may simplify: $\sqrt{36k^2 - 32k^2}$ is $\sqrt{4k^2}$, which is $2k$.
 
 ```practice
 caption: the quadratic formula
@@ -396,7 +396,7 @@ Read the instruction before choosing. *Solve*, *factorise*, *write in the form* 
 
 ## Answers the context rules out
 
-When a quadratic comes from a situation rather than from a page of algebra, one of its two roots is often impossible. A length cannot be negative. A number of people cannot be a fraction. A time measured from the start cannot be before it.
+When a quadratic comes from a context, one of its two roots is often impossible. A length cannot be negative. A number of people cannot be a fraction. A time measured from the start cannot be before it.
 
 Discard the impossible root, and write down that you have discarded it and why. The discarding is part of the answer, not tidying up afterwards.
 
@@ -417,7 +417,7 @@ steps:
 
 ## Working backwards from the roots
 
-If the roots are $p$ and $q$, then $(x - p)(x - q) = 0$ is an equation having exactly those roots, and expanding it puts that equation in standard form.
+If the roots are $p$ and $q$, then $(x - p)(x - q) = 0$ is an equation with exactly those roots, and expanding it puts that equation in standard form.
 
 Fractional roots are cleared by multiplying each bracket up. The root $\dfrac{2}{5}$ gives the bracket $\left(x - \dfrac{2}{5}\right)$, and multiplying that bracket by $5$ turns it into $(5x - 2)$—which has the same root, because the value making $5x-2$ zero is still two fifths.
 
@@ -452,7 +452,7 @@ steps:
     note: Matching the two lines term by term.
 ```
 
-Two roots that are opposites, such as $3$ and $-3$, add to zero, so an equation whose roots are opposites has no term in $x$. Setting the coefficient of $x$ to zero is the whole method, however complicated the equation the coefficients came from. Where that equation arrives as two fractions set equal, cross-multiply—multiply both sides by both denominators—and expand every product before collecting; the 2024 report names candidates who cross-multiplied but did not expand correctly.
+Two roots that are opposites, such as $3$ and $-3$, add to zero, so an equation whose roots are opposites has no term in $x$. Setting the coefficient of $x$ to zero is the whole method, however complicated the equation the coefficients came from. Where that equation is given as two fractions set equal, cross-multiply—multiply both sides by both denominators—and expand every product before collecting; the 2024 report names candidates who cross-multiplied but did not expand correctly.
 
 ```practice
 caption: working backwards from the roots
@@ -595,7 +595,7 @@ steps:
     note: The model is complete, and any height along the flight can now be calculated from it.
 ```
 
-Reading a value out of a finished model is substitution and nothing more: the completed model $y = -0.02(x - 20)^2 + 8$ gives a height of $-0.02(15)^2 + 8$ at $x = 35$, which is $3.5$ m.
+Reading a value out of a finished model is substitution: the completed model $y = -0.02(x - 20)^2 + 8$ gives a height of $-0.02(15)^2 + 8$ at $x = 35$, which is $3.5$ m.
 
 ```practice
 caption: forming a quadratic
@@ -785,8 +785,8 @@ Factorising works because a product is zero only when one of its factors is zero
 
 Completing the square halves the coefficient of $x$ and subtracts back the square that the bracket brings with it. It solves any quadratic, and the completed form gives the vertex of the parabola without further work.
 
-The quadratic formula is on the formulae sheet, works always, and is where a negative $b$ costs marks. Substitute inside brackets.
+The quadratic formula is on the formulae sheet, always works, and is where a negative $b$ costs marks. Substitute inside brackets.
 
 Where a quadratic comes from a context, reject the root the context forbids and say why. Where the roots are given instead, build the equation from $(x-p)(x-q) = 0$ and multiply fractional brackets up to whole numbers.
 
-Two of the methods above hand on directly. B3 solves exponential equations by finding a quadratic hidden inside them and factorising it. C1 takes the $b^2 - 4ac$ from under the square root sign in the formula and asks what its sign alone can tell you.
+Two of the methods above are used again. B3 solves exponential equations by finding a quadratic hidden inside them and factorising it. C1 takes the $b^2 - 4ac$ from under the square root sign in the formula and asks what its sign alone can tell you.

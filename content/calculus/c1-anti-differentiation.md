@@ -2,7 +2,7 @@
 
 ---
 
-Module A turned functions into gradient functions. From here the standard runs the other way: the gradient function is what the question hands over, and the function it came from is what the question wants. The sketching lesson already walked this direction by eye and met its one obstacle—a gradient graph cannot say how high the curve sits. This lesson does the same journey by formula, and the obstacle becomes a letter: $c$.
+Module A turned functions into gradient functions. From here the standard runs the other way: the question gives the gradient function and wants the function it came from. The sketching lesson already went this way by eye and met the one obstacle—a gradient graph cannot say how high the curve sits. This lesson goes the same way by formula, and the obstacle becomes the constant $c$.
 
 ---
 
@@ -30,7 +30,7 @@ steps:
     note: "Check by differentiating the answer: the $3$ comes down, cancels the division, and $x^2$ returns. Every anti-derivative can be checked this way, and the check is free."
 ```
 
-Coefficients and terms behave exactly as they did in Module A: a coefficient stays and multiplies, and terms are handled one at a time. A constant term is a gradient of so-much-per-unit, so it becomes that multiple of $x$: anti-differentiating $5$ gives $5x$.
+Coefficients and terms behave exactly as they did in Module A: a coefficient stays and multiplies, and terms are handled one at a time. A constant term is a constant gradient, so it becomes that multiple of $x$: anti-differentiating $5$ gives $5x$.
 
 ```figure
 caption: A gradient function, term by term
@@ -43,7 +43,7 @@ steps:
     note: "Differentiate this back: $6x^2 - 4x + 5$. Correct—and one $c$ covers the whole function, not one per term."
 ```
 
-A long gradient function is anti-differentiated the same way, and the length is itself the hazard: the 2025 report lists candidates who *"missed a term when integrating long functions"*. Count the terms before starting, and count them again in the answer—every term of $f'$ produces exactly one term of $f$, plus the $c$.
+A long gradient function is anti-differentiated the same way. The 2025 report lists candidates who *"missed a term when integrating long functions"*: count the terms before starting, and count them again in the answer—every term of $f'$ produces exactly one term of $f$, plus the $c$.
 
 ```practice
 caption: reversing the rule
@@ -90,7 +90,7 @@ questions:
 
 ## Why the c is there
 
-Differentiating erases constants—the $+7$ in $x^2 + 7$ contributes no gradient, so $f'(x) = 2x$ keeps no memory of it. Coming back, that memory cannot be reinvented: every curve of the form $x^2 + \textsf{constant}$ has the gradient function $2x$, and the anti-derivative has to stand for all of them at once. The $c$ is how it does.
+Differentiating erases constants: the $+7$ in $x^2 + 7$ contributes no gradient, so $f'(x) = 2x$ carries no trace of it. Coming back, the erased constant cannot be recovered: every curve of the form $x^2 + \textsf{constant}$ has the gradient function $2x$, and the anti-derivative has to stand for all of them at once. The $c$ is how it does.
 
 ```figure
 caption: One gradient function, a family of curves
@@ -107,13 +107,13 @@ steps:
     note: "Three of the curves whose gradient function is $2x$. The sketching lesson met this family by eye; $+\\,c$ is the same freedom written as algebra."
 ```
 
-The constant's proper name is the **constant of integration**—it keeps the operation's other word even when the working around it says anti-differentiate, and it is the name the reports use when they list its omission. The marking schedules treat the $c$ as part of the anti-derivative, not a refinement of it—the 2024 schedule's grade step reads *"Correct anti derivative with $+c$"*. An anti-derivative written without it is incomplete on the page, whatever was meant.
+The constant's proper name is the **constant of integration**—it keeps the operation's other word even when the working around it says anti-differentiate, and it is the name the reports use when they list its omission. The marking schedules treat the $c$ as part of the anti-derivative, not a refinement of it—the 2024 schedule's grade step reads *"Correct anti derivative with $+c$"*. An anti-derivative written without it is incomplete.
 
 ---
 
 ## Finding the constant
 
-A question that wants one particular curve supplies one more fact—usually a point the curve passes through. Anti-differentiate first, with the $c$ in place; then substitute the point, and the $c$ is the only unknown left standing.
+A question that wants one particular curve supplies one more fact—usually a point the curve passes through. Anti-differentiate first, with the $c$ in place; then substitute the point, and the $c$ is the only unknown left.
 
 ```figure
 caption: Pinning down the curve
@@ -175,14 +175,14 @@ questions:
     working:
       - math: f(x) = \dfrac{x^2}{2} - 2x + c
       - math: f(0) = c = 1
-        note: "A point on the $y$-axis hands over the $c$ directly. This is the curve the sketching lesson could only draw the shape of—the same question, now answered exactly."
+        note: "A point on the $y$-axis gives the $c$ directly. This is the curve the sketching lesson could only draw the shape of, now answered exactly."
       - math: f(x) = \dfrac{x^2}{2} - 2x + 1
   - ask: The gradient function of a curve is $f'(x) = x + 3$, and the curve passes through $(0, 4)$. Find the equation of the curve.
     grade: merit
     working:
       - math: f(x) = \dfrac{x^2}{2} + 3x + c
       - math: f(0) = c = 4
-        note: "A point on the $y$-axis hands over the $c$ directly."
+        note: "A point on the $y$-axis gives the $c$ directly."
       - math: f(x) = \dfrac{x^2}{2} + 3x + 4
 ```
 
@@ -190,7 +190,7 @@ questions:
 
 ## When the point is hidden
 
-The hardest version supplies no point outright. Instead it names a feature—*the $y$-value of the local minimum is $-40$*—and the point has to be found before it can be used. The minimum is a turning point, so its $x$ solves $f'(x) = 0$; that is Module B working inside a Module C question, and it is how the 2025 paper built its Excellence part on this topic.
+The hardest version gives no point directly. Instead it names a feature—*the $y$-value of the local minimum is $-40$*—and the point has to be found before it can be used. The minimum is a turning point, so its $x$ solves $f'(x) = 0$; that is Module B working inside a Module C question, and it is how the 2025 paper built its Excellence part on this topic.
 
 ```practice
 caption: a hidden point

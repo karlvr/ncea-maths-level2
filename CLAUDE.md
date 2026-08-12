@@ -66,6 +66,13 @@ everywhere, not just where he touched.
    "this one is worth deliberate practice" ask for effort instead of teaching.
    Where such a sentence carries a claim, keep the claim and drop the
    instruction wrapped around it.
+8. **Fewer words, plainer verbs.** A figurative verb gives way to the plain
+   one: "gives the vertex", not "hands you the vertex"; "locates the best
+   design", not "is where the best design lives". A construction that circles
+   its point gets shortened: "Halve the coefficient of $x$", not "Take the
+   coefficient of $x$ and halve it, and that halved number is". Vocabulary a
+   lesson uses consistently as a teaching device — the ladder in calculus
+   Module C — is established terminology, not a flourish, and stays.
 
 **Mathematics in prose is written as notation**, inline: `$2x^2 - 18$`, not "two
 $x$ squared minus eighteen". It sets in the same serif as the figures, so a

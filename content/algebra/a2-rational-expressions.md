@@ -32,7 +32,7 @@ steps:
   - math: x + 3
 ```
 
-Now the error. It is tempting to look at the $2$ on the bottom and the $2$ in front of the $x$ on the top, cancel that pair, and write $x + 6$. That is wrong, because the $6$ was never divided. The $6$ is a separate term, and the division has to reach the $6$ as well.
+It is tempting to look at the $2$ on the bottom and the $2$ in front of the $x$ on the top, cancel that pair, and write $x + 6$. That is wrong, because the $6$ was never divided. The $6$ is a separate term, and the division has to reach the $6$ as well.
 
 ```figure
 caption: The error to avoid
@@ -40,7 +40,7 @@ steps:
   - math: \dfrac{\ca{2}x + 6}{\ca{2}}
     note: Cancelling only the twos that catch the eye.
   - math: x + 6 \qquad \color{red}{\times}
-    note: The $6$ was never divided. Substitute $x = 1$—the original is $4$, this is $7$.
+    note: The $6$ was never divided. Substitute $x = 1$—the original expression is $4$, this is $7$.
 ```
 
 The safe version of the rule: **you can only cancel something that is multiplying the entire numerator and multiplying the entire denominator.** Anything that is added or subtracted is a term, and a term cannot be cancelled.
@@ -241,7 +241,7 @@ questions:
 
 ## Adding and subtracting
 
-Here you need a common denominator, and the same rule applies as with numbers: you cannot add fractions until you’ve made the bottoms match.
+Here you need a common denominator, and the same rule applies as with numbers: you cannot add fractions until the bottoms match.
 
 Factorise the denominators first. The lowest common denominator is then built from the factors you find—take each distinct factor, and include it as many times as it appears in any single denominator.
 
@@ -278,7 +278,7 @@ steps:
     note: A common factor appears, so it cancels.
 ```
 
-The reliable defence is to write brackets around the second numerator before you do anything else, and expand the minus deliberately. The reports put this skill on both of their lists: the 2025 report gives dealing incorrectly with negative numbers as a reason candidates did not achieve, and the 2024 report gives working with negative terms without error as something candidates awarded Merit could do.
+Write brackets around the second numerator before doing anything else, and expand the minus deliberately. The reports put this skill on both of their lists: the 2025 report gives dealing incorrectly with negative numbers as a reason candidates did not achieve, and the 2024 report gives working with negative terms without error as something candidates awarded Merit could do.
 
 ```practice
 caption: adding and subtracting
@@ -366,7 +366,7 @@ steps:
   - math: "-1"
 ```
 
-A subtraction written the other way round is what produces such a pair, and a difference of two squares is where that happens most: $9-x^2$ factorises to $(3+x)(3-x)$, while $x^2-9$ gives $(x+3)(x-3)$. Before deciding that nothing cancels, check whether taking out a $-1$ would make two brackets match.
+A subtraction written the other way round produces such a pair, most often in a difference of two squares: $9-x^2$ factorises to $(3+x)(3-x)$, while $x^2-9$ gives $(x+3)(x-3)$. Before deciding that nothing cancels, check whether taking out a $-1$ would make two brackets match.
 
 ```practice
 caption: brackets that differ only by a sign
@@ -447,7 +447,7 @@ questions:
       - math: \dfrac{4x^2 + 20x + 25}{x(2x+5)}
         note: Start with the denominator, where the common factor is easy to see.
       - math: \dfrac{(2x+5)^2}{x(2x+5)}
-        note: The numerator is a perfect square, which the denominator has just hinted at.
+        note: The numerator is the square of the bracket already found in the denominator.
       - math: \dfrac{2x+5}{x}
   - ask: Simplify.
     math: \dfrac{9x^2 + 24x + 16}{3x^2 + 4x}
