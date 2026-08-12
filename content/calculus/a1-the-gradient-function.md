@@ -152,7 +152,7 @@ steps:
     note: "The left column and the right column say exactly the same thing."
 ```
 
-$\dfrac{dy}{dx}$ looks like a fraction and is not one—at this level it is a single symbol, and nothing may cancel inside it. The result of differentiating, whichever way it is written, is called the **derivative**; *gradient function* and *derivative* name the same object.
+$\dfrac{dy}{dx}$ looks like a fraction and is not one—at this level it is a single symbol, and nothing may cancel inside it. The result of differentiating, whichever way it is written, is called the **derivative**; *gradient function* and *derivative* are the same thing.
 
 ---
 
