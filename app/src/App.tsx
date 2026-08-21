@@ -9,7 +9,13 @@ import { HashRouter, Link, Navigate, Route, Routes, useParams } from 'react-rout
 import { ColourSchemeChoice } from './components/ColourSchemeChoice'
 import { Contents } from './components/Contents'
 import { Lesson } from './components/Lesson'
-import { SUBJECTS, TOPIC_ORDER, findTopic } from './syllabus'
+import { Worksheet, lessonSheet, moduleSheet } from './components/Worksheet'
+import { SUBJECTS, TOPIC_ORDER, findModule, findTopic, type Module } from './syllabus'
+
+/** Whether a module has any questions to gather onto a sheet of its own. */
+function hasPractice(module: Module): boolean {
+  return module.topics.some((topic) => topic.practice.length > 0)
+}
 
 function Home() {
   useEffect(() => {
@@ -38,6 +44,13 @@ function Home() {
                   </li>
                 ))}
               </ul>
+              {hasPractice(module) && (
+                <p className="module-sheet">
+                  <Link to={`/practice/${subject.id}/${module.id}`}>
+                    Practice sheet for this module
+                  </Link>
+                </p>
+              )}
             </div>
           ))}
         </section>
@@ -51,6 +64,20 @@ function LessonRoute() {
   const location = topicId ? findTopic(topicId) : undefined
   if (!location) return <Navigate to="/" replace />
   return <Lesson location={location} />
+}
+
+function LessonSheetRoute() {
+  const { topicId } = useParams()
+  const location = topicId ? findTopic(topicId) : undefined
+  if (!location) return <Navigate to="/" replace />
+  return <Worksheet sheet={lessonSheet(location)} />
+}
+
+function ModuleSheetRoute() {
+  const { subjectId, moduleId } = useParams()
+  const location = subjectId && moduleId ? findModule(subjectId, moduleId) : undefined
+  if (!location) return <Navigate to="/" replace />
+  return <Worksheet sheet={moduleSheet(location)} />
 }
 
 export default function App() {
@@ -77,6 +104,8 @@ export default function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/practice/:topicId" element={<LessonSheetRoute />} />
+            <Route path="/practice/:subjectId/:moduleId" element={<ModuleSheetRoute />} />
             <Route path="/:topicId" element={<LessonRoute />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>

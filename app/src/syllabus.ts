@@ -9,7 +9,7 @@
  * Use this when you need the course as navigable data: a table of contents, a
  * lesson looked up by id, or the topic that comes next.
  */
-import { sections, type Section } from './lesson-body'
+import { practiceSheet, sections, type PracticeGroup, type Section } from './lesson-body'
 
 export type { Section }
 
@@ -23,6 +23,8 @@ export interface Topic {
   readonly markdown: string
   /** The lesson's own headings, for navigating within a long page. */
   readonly sections: readonly Section[]
+  /** The lesson's practice sets, each under the headings it was written beneath. */
+  readonly practice: readonly PracticeGroup[]
 }
 
 /** A group of related topics within a subject. */
@@ -43,6 +45,12 @@ export interface Subject {
   /** Whether the standard is sat as an exam or assessed internally. */
   readonly assessment: 'external' | 'internal'
   readonly modules: readonly Module[]
+}
+
+/** A module together with the subject it sits in. */
+export interface ModuleLocation {
+  readonly subject: Subject
+  readonly module: Module
 }
 
 /** A topic together with the module and subject it sits in. */
@@ -204,6 +212,7 @@ function readTopic(file: string): Topic {
     subtitle: subtitle?.[1].trim(),
     markdown,
     sections: sections(markdown),
+    practice: practiceSheet(markdown),
   }
 }
 
@@ -227,6 +236,17 @@ export const TOPIC_ORDER: readonly TopicLocation[] = SUBJECTS.flatMap((subject) 
 /** Locates a topic by id, or returns undefined if no such topic exists. */
 export function findTopic(id: string): TopicLocation | undefined {
   return TOPIC_ORDER.find((entry) => entry.topic.id === id)
+}
+
+/**
+ * Locates a module by its subject and its own id, or returns undefined if there
+ * is no such module. Module ids are unique only within a subject, so both are
+ * needed to name one.
+ */
+export function findModule(subjectId: string, moduleId: string): ModuleLocation | undefined {
+  const subject = SUBJECTS.find((entry) => entry.id === subjectId)
+  const module = subject?.modules.find((entry) => entry.id === moduleId)
+  return subject && module ? { subject, module } : undefined
 }
 
 /**

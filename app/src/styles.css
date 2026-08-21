@@ -863,6 +863,130 @@ main {
   }
 }
 
+/* ----------------------------------------------------------- worksheet -- */
+
+/* A worksheet is the questions of a lesson or a module with the reading taken
+   away, to be printed and worked on paper. It reuses the question styling of a
+   practice set, so a question looks the same wherever it is met, and adds the
+   one thing paper needs: room to write. */
+.lesson-tools,
+.sheet-tools {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  margin: 0.9rem 0 0;
+}
+
+.sheet-print {
+  font: inherit;
+  padding: 0.28rem 0.7rem;
+  border: 1px solid var(--rule);
+  border-radius: 5px;
+  background: var(--page);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.sheet-print:hover {
+  border-color: var(--muted);
+}
+
+/* Numbering runs through the whole sheet rather than restarting at each set, so
+   that a question can be named by its number alone. */
+.worksheet {
+  counter-reset: question;
+}
+
+.sheet-lesson + .sheet-lesson {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--rule);
+  /* Each lesson of a module sheet starts its own page. */
+  break-before: page;
+}
+
+.sheet-lesson-title,
+.sheet-heading {
+  font-family: var(--serif);
+  line-height: 1.3;
+  margin: 2rem 0 0.5rem;
+}
+
+.sheet-lesson-title {
+  font-size: 1.45rem;
+  margin-top: 0;
+}
+
+h2.sheet-heading {
+  font-size: 1.25rem;
+}
+
+h3.sheet-heading {
+  font-size: 1.05rem;
+}
+
+h4.sheet-heading {
+  font-size: 0.98rem;
+}
+
+.sheet-caption {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--muted);
+  margin: 0.9rem 0 0;
+}
+
+/* Set to the left, under the question it belongs to, rather than centred as it
+   is in a lesson: on a sheet the expression is part of the question and not a
+   display of its own. */
+.worksheet .maths-block .katex-display > .katex {
+  text-align: left;
+}
+
+.sheet-questions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sheet-question {
+  counter-increment: question;
+  padding: 0.9rem 0;
+  break-inside: avoid;
+}
+
+/* The space is empty paper rather than a ruled box: it belongs to the question
+   above it, and a border around it would only say so twice. It is held open
+   here so that a question with no room left beneath it moves whole to the next
+   page. Achieved questions are answered in a line or two; an Excellence
+   question needs the depth to work down. */
+.sheet-space {
+  min-height: 22mm;
+  margin-top: 0.7rem;
+}
+
+.sheet-question[data-grade='merit'] .sheet-space {
+  min-height: 32mm;
+}
+
+.sheet-question[data-grade='excellence'] .sheet-space {
+  min-height: 45mm;
+}
+
+.sheet-empty {
+  color: var(--muted);
+}
+
+.module-sheet {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+}
+
 /* --------------------------------------------------------------- print -- */
 
 @media print {
@@ -878,6 +1002,8 @@ main {
   .section-trail,
   .worked-controls,
   .practice-reveal,
+  .lesson-tools,
+  .sheet-tools,
   .lesson-onward {
     display: none;
   }
@@ -910,5 +1036,15 @@ main {
 
   .practice-working {
     background: none;
+  }
+
+  /* A sheet takes the width of the paper. Nothing on it is running prose to be
+     held to a measure, and the space to write in is worth every millimetre. */
+  .worksheet {
+    max-width: none;
+  }
+
+  .worksheet .sheet-question {
+    padding: 0.5rem 0;
   }
 }

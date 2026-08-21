@@ -327,6 +327,9 @@ Structure worth knowing before changing it:
 - [`src/components/Working.tsx`](app/src/components/Working.tsx) — the stepper.
   A figure and a practice answer are the same thing behind it, which is why
   they behave identically.
+- [`src/components/Worksheet.tsx`](app/src/components/Worksheet.tsx) — the
+  questions of a lesson or a module with the reading taken away, to print and
+  work on paper. Nothing is authored for it; it reads the same scripts.
 - [`src/components/Maths.tsx`](app/src/components/Maths.tsx) — the single set of
   KaTeX options. Prose, notes and figures all render through it, so a fragment
   looks identical wherever it appears. Change it in one place.

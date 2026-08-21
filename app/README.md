@@ -36,6 +36,17 @@ lesson gives complete working.
 uses. It runs in CI before deployment, because a figure that fails to parse
 would otherwise only show up on the published page.
 
+## Practice sheets
+
+Every lesson has a sheet of its own at `#/practice/<lesson>`, and every module
+one at `#/practice/<subject>/<module>`: the questions with the reading taken
+away, each still under the heading it was written beneath, numbered through the
+sheet, with space to write in and no working at all. Nothing is authored for
+it — `practiceSheet` in [`src/lesson-body.ts`](src/lesson-body.ts) reads the
+sets out of the same scripts, and
+[`src/components/Worksheet.tsx`](src/components/Worksheet.tsx) lays them out.
+The space beneath a question is sized by the band it is pitched at.
+
 ## Icons
 
 The mark is $x^2$ set in Iowan Old Style, the serif the lessons set their

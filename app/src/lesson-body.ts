@@ -225,3 +225,36 @@ export function sections(markdown: string): readonly Section[] {
     return { id: sectionId(title), title, level: match[1].length as 2 | 3 }
   })
 }
+
+/**
+ * A practice set together with the headings it sits beneath: the section, and
+ * the subsection within it where the set was written under one. Outermost
+ * first, and empty for a set appearing before any heading.
+ */
+export interface PracticeGroup {
+  readonly headings: readonly Section[]
+  readonly practice: Practice
+}
+
+/**
+ * The practice sets of a script in document order, each carrying the headings
+ * in force where it appears.
+ *
+ * Use this to present a script's questions apart from the script: the prose and
+ * the figures are dropped, and what is left keeps the shape the lesson gave it.
+ */
+export function practiceSheet(markdown: string): readonly PracticeGroup[] {
+  const groups: PracticeGroup[] = []
+  let headings: readonly Section[] = []
+
+  for (const block of splitLesson(markdown)) {
+    if (block.kind === 'prose') {
+      for (const heading of sections(block.markdown)) {
+        headings = heading.level === 2 ? [heading] : [...headings.slice(0, 1), heading]
+      }
+    } else if (block.kind === 'practice') {
+      groups.push({ headings, practice: block.practice })
+    }
+  }
+  return groups
+}

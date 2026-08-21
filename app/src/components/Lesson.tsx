@@ -71,6 +71,11 @@ export function Lesson({ location }: { location: TopicLocation }) {
         </p>
         <h1>{topic.title}</h1>
         {topic.subtitle && <p className="lesson-subtitle">{topic.subtitle}</p>}
+        {topic.practice.length > 0 && (
+          <p className="lesson-tools">
+            <Link to={`/practice/${topic.id}`}>Practice sheet</Link>
+          </p>
+        )}
       </header>
 
       {blocks.map((block, index) => {
