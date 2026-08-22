@@ -6,7 +6,7 @@
 
 A straight line has one gradient. Rise over run gives the same answer wherever on the line you measure it, so the gradient of a line is a single number: $y = 3x + 1$ has gradient $3$ everywhere.
 
-A curve does not. The graph of $y = x^2$ falls on the left, is flat at the bottom, and climbs on the right—more steeply the further it goes. Ask for *the* gradient of a curve and the question is incomplete, because the answer depends on where you ask.
+A curve does not. The graph of $y = x^2$ falls on the left, is flat at the bottom, and climbs on the right — more steeply the further it goes. Ask for *the* gradient of a curve and the question is incomplete, because the answer depends on where you ask.
 
 ```figure
 caption: One gradient, then many
@@ -73,21 +73,21 @@ Everything in this standard is one of those two moves, applied and then interpre
 
 ## Where algebra is used
 
-Differentiating is the easy part of every question—one rule, applied term by term. The marks around it are algebra. Expressions are expanded before they are differentiated. Setting the gradient function to zero produces a quadratic equation, solved by factorising or by the quadratic formula. A question that withholds two coefficients produces two equations in two unknowns.
+Differentiating is the easy part of every question — one rule, applied term by term. The marks around it are algebra. Expressions are expanded before they are differentiated. Setting the gradient function to zero produces a quadratic equation, solved by factorising or by the quadratic formula. A question that withholds two coefficients produces two equations in two unknowns.
 
-All of that is Module A and Module B of the algebra standard, and this subject assumes it. If factorising a trinomial or solving a pair of simultaneous equations is not fluent yet, revise those topics first—a calculus answer is usually lost in its algebra, not in its calculus.
+All of that is Module A and Module B of the algebra standard, and this subject assumes it. If factorising a trinomial or solving a pair of simultaneous equations is not fluent yet, revise those topics first — a calculus answer is usually lost in its algebra, not in its calculus.
 
 ---
 
 ## How this standard is assessed
 
-Five credits, the most of the three standards here, and it is **external**—sat in the November exam, in the same session as algebra. The exam is three questions, each with several parts, and word problems appear throughout.
+Five credits, the most of the three standards here, and it is **external** — sat in the November exam, in the same session as algebra. The exam is three questions, each with several parts, and word problems appear throughout.
 
 After each year's examination is marked, the examiners publish a report on it: what candidates at each grade could commonly do, and what those who were not awarded the standard commonly got wrong. These lessons quote those reports wherever a finding touches the topic in hand. Every mistake quoted cost candidates marks in a real examination.
 
 > Four things the specification and the papers say to expect, each one a way of losing marks on otherwise correct work:
 >
-> - **Where a question says *use calculus*, the working must show the calculus.** The marking schedules give the first grade step for *evidence of correct calculus*, and the 2025 report warns that answers *"given without sufficient method are likely to be awarded Correct Answer Only, even if the final answer is correct"*—worth Achieved at best.
+> - **Where a question says *use calculus*, the working must show the calculus.** The marking schedules give the first grade step for *evidence of correct calculus*, and the 2025 report warns that answers *"given without sufficient method are likely to be awarded Correct Answer Only, even if the final answer is correct"* — worth Achieved at best.
 > - **You may be asked to draw the graph of the gradient function from the graph of the function, or the reverse.** One of the two appears in every recent paper.
 > - **A maximum or minimum must be justified.** The specification accepts three ways: the second derivative, testing points either side of the turning point, or an annotated sketch of the shape of the curve. Stating *it is a minimum* with no reason is not a justification.
 > - **Know the formulae for common 2D and 3D shapes.** The specification expects them to be applied in solving problems. Some papers print the formula beside the question and some do not.

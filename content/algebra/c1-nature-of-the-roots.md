@@ -21,9 +21,9 @@ steps:
   - math: x = \dfrac{-b \pm \sqrt{\ca{b^2 - 4ac}}}{2a}
     note: The rest of the formula is arithmetic. Only the part under the root sign can change what happens.
   - math: \ca{b^2 - 4ac} > 0
-    note: A positive number has a real square root, and the plus-or-minus adds and subtracts it—two different answers.
+    note: A positive number has a real square root, and the plus-or-minus adds and subtracts it — two different answers.
   - math: \ca{b^2 - 4ac} = 0
-    note: The square root is zero, so adding and subtracting it give the same thing—one answer.
+    note: The square root is zero, so adding and subtracting it give the same thing — one answer.
   - math: \ca{b^2 - 4ac} < 0
     note: No real number squares to give a negative, so the formula produces nothing.
 ```
@@ -230,7 +230,7 @@ steps:
     note: Two values, and both are answers. Giving only the positive one is a common way to lose half the marks.
 ```
 
-The equation in $k$ is solved by the methods of B2, and its own discriminant is of no interest—it is a quadratic like any other, and the discriminant belonged to the original equation in $x$.
+The equation in $k$ is solved by the methods of B2, and its own discriminant is of no interest — it is a quadratic like any other, and the discriminant belonged to the original equation in $x$.
 
 An inequality is handled the same way, with one extra rule: multiplying or dividing an inequality by a negative number reverses it.
 

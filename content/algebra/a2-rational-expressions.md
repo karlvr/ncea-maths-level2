@@ -2,11 +2,11 @@
 
 ---
 
-A **rational expression** is a fraction with algebra in it. Rational means ratio—one thing divided by another. $\dfrac{x+2}{x-3}$ is a rational expression.
+A **rational expression** is a fraction with algebra in it. Rational means ratio — one thing divided by another. $\dfrac{x+2}{x-3}$ is a rational expression.
 
 You already know how to handle rational expressions. Every rule for ordinary number fractions applies. To multiply, multiply the tops and multiply the bottoms. To divide, turn the second fraction upside down and multiply. To add, put both fractions over a common denominator first. To cancel, remove a factor that appears top and bottom.
 
-The difficulty is that with numbers you can see the factors immediately—with $\dfrac{6}{9}$, the $3$ is obvious. With algebra the factors are hidden inside the expression, and you have to create the factors before you can use them.
+The difficulty is that with numbers you can see the factors immediately — with $\dfrac{6}{9}$, the $3$ is obvious. With algebra the factors are hidden inside the expression, and you have to create the factors before you can use them.
 
 This is the topic the examiner's reports are hardest on. The 2025 report says a lack of basic algebra skills limited candidates across all three papers of Level 2 maths, and that it was most evident when they were asked to work with expressions involving fractions.
 
@@ -16,11 +16,11 @@ The first move in almost every one of these questions is **factorise everything 
 
 ## Cancelling: factors only, never terms
 
-Cancelling is division. When you cancel, you are dividing the numerator and the denominator—the top and the bottom—by the same thing, which leaves the value unchanged.
+Cancelling is division. When you cancel, you are dividing the numerator and the denominator — the top and the bottom — by the same thing, which leaves the value unchanged.
 
 Cancelling works on a product. It does not work on a sum.
 
-You can still divide, if you divide every term. Take $\dfrac{2x+6}{2}$. Dividing by $2$ means dividing the whole numerator by $2$—every term of it. $2x$ becomes $x$, and $6$ becomes $3$. The answer is $x + 3$.
+You can still divide, if you divide every term. Take $\dfrac{2x+6}{2}$. Dividing by $2$ means dividing the whole numerator by $2$ — every term of it. $2x$ becomes $x$, and $6$ becomes $3$. The answer is $x + 3$.
 
 ```figure
 caption: Dividing has to reach every term
@@ -40,7 +40,7 @@ steps:
   - math: \dfrac{\ca{2}x + 6}{\ca{2}}
     note: Cancelling only the twos that catch the eye.
   - math: x + 6 \qquad \color{red}{\times}
-    note: The $6$ was never divided. Substitute $x = 1$—the original expression is $4$, this is $7$.
+    note: The $6$ was never divided. Substitute $x = 1$ — the original expression is $4$, this is $7$.
 ```
 
 The safe version of the rule: **you can only cancel something that is multiplying the entire numerator and multiplying the entire denominator.** Anything that is added or subtracted is a term, and a term cannot be cancelled.
@@ -155,7 +155,7 @@ steps:
     note: Nothing is left on the top, so a $1$ stands there.
 ```
 
-Dividing is multiplication by the reciprocal. Turn the second fraction upside down, change the divide into a multiply, and continue as above. Turn over the second fraction and not the first—the second fraction is the one being divided by.
+Dividing is multiplication by the reciprocal. Turn the second fraction upside down, change the divide into a multiply, and continue as above. Turn over the second fraction and not the first — the second fraction is the one being divided by.
 
 So the order is the same for multiplying and for dividing: factorise, multiply into one fraction, then cancel. Once it is one fraction, a factor on the top cancels against a match anywhere underneath, whichever fraction it arrived in.
 
@@ -243,7 +243,7 @@ questions:
 
 Here you need a common denominator, and the same rule applies as with numbers: you cannot add fractions until the bottoms match.
 
-Factorise the denominators first. The lowest common denominator is then built from the factors you find—take each distinct factor, and include it as many times as it appears in any single denominator.
+Factorise the denominators first. The lowest common denominator is then built from the factors you find — take each distinct factor, and include it as many times as it appears in any single denominator.
 
 ```figure
 caption: Adding over a common denominator
@@ -543,6 +543,6 @@ Cancel factors, never terms. A factor multiplies the whole numerator and the who
 
 To multiply, factorise and cancel before combining. To divide, flip the second fraction. To add or subtract, factorise the denominators to find the common denominator, and put brackets around a numerator you are subtracting.
 
-Leave your answer factorised. Expanding it out is not simplifying—the specification asks for the simplest algebraic form, and factorised is simplest.
+Leave your answer factorised. Expanding it out is not simplifying — the specification asks for the simplest algebraic form, and factorised is simplest.
 
-The common denominator comes back in Module B. An equation with fractions in it is cleared by multiplying every term by the lowest common denominator, found exactly as it is found here—with the difference that an equation may be multiplied through and an expression may not.
+The common denominator comes back in Module B. An equation with fractions in it is cleared by multiplying every term by the lowest common denominator, found exactly as it is found here — with the difference that an equation may be multiplied through and an expression may not.

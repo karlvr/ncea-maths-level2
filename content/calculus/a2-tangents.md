@@ -2,7 +2,7 @@
 
 ---
 
-The previous lesson produced $f'(a)$: the gradient of the curve at one chosen point. A straight line through a known point with a known gradient is Level 1 work. Put the two together and you can write the equation of the tangent—the question this lesson is about, and one that appears in every recent paper.
+The previous lesson produced $f'(a)$: the gradient of the curve at one chosen point. A straight line through a known point with a known gradient is Level 1 work. Put the two together and you can write the equation of the tangent — the question this lesson is about, and one that appears in every recent paper.
 
 ---
 
@@ -30,14 +30,14 @@ steps:
           color: a
           guides: true
       xticks: [3]
-    note: "One curve, one marked point, one line through it. The line's two ingredients—where it passes and how steeply—are $f(3)$ and $f'(3)$."
+    note: "One curve, one marked point, one line through it. The line's two ingredients — where it passes and how steeply — are $f(3)$ and $f'(3)$."
 ```
 
 With the point and the gradient found, the line is assembled with
 
 $$y - y_1 = m(x - x_1)$$
 
-This equation is **not on the formulae sheet**. The sheet carries the differentiation rule; the straight-line equation it assumes you know. The 2024 report lists *"could not write the equation of a straight line"* among the reasons candidates did not achieve—the calculus in the question was never reached, because the Level 1 line equation was missing.
+This equation is **not on the formulae sheet**. The sheet carries the differentiation rule; the straight-line equation it assumes you know. The 2024 report lists *"could not write the equation of a straight line"* among the reasons candidates did not achieve — the calculus in the question was never reached, because the Level 1 line equation was missing.
 
 ---
 
@@ -59,11 +59,11 @@ steps:
   - math: y = -3x + 3
 ```
 
-The two substitutions are where the errors happen. $f(a)$ is the height and $f'(a)$ is the gradient; swap them and every line after is wrong, though the working looks tidy. Say what each number is as you find it—*the point is $(1, 0)$, the gradient is $-3$*—and the swap cannot happen silently.
+The two substitutions are where the errors happen. $f(a)$ is the height and $f'(a)$ is the gradient; swap them and every line after is wrong, though the working looks tidy. Say what each number is as you find it — *the point is $(1, 0)$, the gradient is $-3$* — and the swap cannot happen silently.
 
-The 2024 marking schedule accepts the unsimplified form—its note reads "Candidate does not need to simplify to $y = mx + c$"—so $y - 0 = -3(x-1)$ already earns the mark. Simplifying anyway gives a form that is easier to check: substitute the touching point into the finished equation, and the two sides must agree.
+The 2024 marking schedule accepts the unsimplified form — its note reads "Candidate does not need to simplify to $y = mx + c$" — so $y - 0 = -3(x-1)$ already earns the mark. Simplifying anyway gives a form that is easier to check: substitute the touching point into the finished equation, and the two sides must agree.
 
-Some questions supply the point—*find the tangent at $(-2, 6)$*—and then $f(a)$ is not needed. Some supply only $x = a$, and then finding $f(a)$ is the first step. Read which one you have been given before starting.
+Some questions supply the point — *find the tangent at $(-2, 6)$* — and then $f(a)$ is not needed. Some supply only $x = a$, and then finding $f(a)$ is the first step. Read which one you have been given before starting.
 
 ```practice
 caption: tangents
@@ -152,7 +152,7 @@ questions:
 
 ## A tangent with a stated gradient
 
-The question can run the other way: instead of naming the touching point, it names the gradient—*find the tangent parallel to $y = 2x + 1$*. Parallel lines share a gradient, so the tangent's gradient is $2$, and the unknown is where it touches. That is the backwards question from the previous lesson: solve $f'(x) = 2$, take the height from $f$, and assemble the line as before.
+The question can run the other way: instead of naming the touching point, it names the gradient — *find the tangent parallel to $y = 2x + 1$*. Parallel lines share a gradient, so the tangent's gradient is $2$, and the unknown is where it touches. That is the backwards question from the previous lesson: solve $f'(x) = 2$, take the height from $f$, and assemble the line as before.
 
 ```figure
 caption: From gradient to tangent
@@ -168,7 +168,7 @@ steps:
   - math: y = 2x - 12
 ```
 
-A tangent described as **horizontal** has gradient zero, so its touching point solves $f'(x) = 0$. A point where that happens is a turning point of the curve, and finding and classifying them is the whole of Module B—this question shape is where that work begins.
+A tangent described as **horizontal** has gradient zero, so its touching point solves $f'(x) = 0$. A point where that happens is a turning point of the curve, and finding and classifying them is the whole of Module B — this question shape is where that work begins.
 
 ```practice
 caption: stated gradient
@@ -249,7 +249,7 @@ questions:
     grade: excellence
     working:
       - math: f'(x) = 3x^2 - 9 = 3
-        note: "A quadratic, so expect two answers—the question said two tangents."
+        note: "A quadratic, so expect two answers — the question said two tangents."
       - math: x^2 = 4 \qquad x = 2 \;\textsf{ or }\; x = -2
       - math: f(2) = 8 - 18 = -10 \qquad f(-2) = -8 + 18 = 10
         note: "Each touching point gets its height from $f$, separately."
@@ -260,7 +260,7 @@ questions:
     grade: excellence
     working:
       - math: f'(x) = 3x^2 - 12 = 15
-        note: "A quadratic, so expect two answers—the question said two tangents."
+        note: "A quadratic, so expect two answers — the question said two tangents."
       - math: x^2 = 9 \qquad x = 3 \;\textsf{ or }\; x = -3
       - math: f(3) = 27 - 36 = -9 \qquad f(-3) = -27 + 36 = 9
         note: "Each touching point gets its height from $f$, separately."
@@ -299,6 +299,6 @@ A tangent is a straight line, so it needs a point and a gradient, and the curve 
 
 Assemble with $y - y_1 = m(x - x_1)$, which is not on the formulae sheet. Either form of the answer is accepted; the simplified form is the one you can check by substituting the touching point back in.
 
-Where the gradient is stated instead of the point—parallel to a given line, or horizontal—solve $f'(x) = \textsf{gradient}$ to find the touching point, then proceed as before.
+Where the gradient is stated instead of the point — parallel to a given line, or horizontal — solve $f'(x) = \textsf{gradient}$ to find the touching point, then proceed as before.
 
 A horizontal tangent marks a turning point of the curve, and turning points are Module B's subject. Before that, the next lesson finishes Module A by drawing the graph of $f'$ beside the graph of $f$.

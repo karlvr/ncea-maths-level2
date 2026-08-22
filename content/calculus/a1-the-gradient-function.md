@@ -34,7 +34,7 @@ steps:
       points:
         - at: [1, 1]
           color: a
-    note: "The tangent touches at the marked point and matches the curve's steepness there. Its gradient is a number—rise over run—and that number is the gradient of the curve at the point."
+    note: "The tangent touches at the marked point and matches the curve's steepness there. Its gradient is a number — rise over run — and that number is the gradient of the curve at the point."
 ```
 
 Zoom in far enough on any point of a polynomial's graph and the curve becomes indistinguishable from its tangent. That is why a single number can describe the steepness at a point, even though the curve keeps bending either side of it.
@@ -86,10 +86,10 @@ steps:
   - math: \dfrac{d}{dx}\left(8\right) = 0
     note: "The constant contributes no gradient at all."
   - math: f'(x) = 12x^2 + 2x - 5
-    note: "The four derivatives, collected. The derivative of a cubic is a quadratic—differentiating always lowers every power by one."
+    note: "The four derivatives, collected. The derivative of a cubic is a quadratic — differentiating always lowers every power by one."
 ```
 
-A coefficient written as a fraction behaves like any other coefficient. The derivative of $\dfrac{x^2}{2}$ is $\dfrac{2x}{2}$, which is $x$, and the derivative of $\dfrac{x}{2}$ is $\dfrac{1}{2}$. The 2025 report lists candidates who *"failed to differentiate when a fraction was involved in an expression"* among those not achieving—the fraction changes nothing about the rule.
+A coefficient written as a fraction behaves like any other coefficient. The derivative of $\dfrac{x^2}{2}$ is $\dfrac{2x}{2}$, which is $x$, and the derivative of $\dfrac{x}{2}$ is $\dfrac{1}{2}$. The 2025 report lists candidates who *"failed to differentiate when a fraction was involved in an expression"* among those not achieving — the fraction changes nothing about the rule.
 
 ```practice
 caption: the rule
@@ -152,7 +152,7 @@ steps:
     note: "The left column and the right column say exactly the same thing."
 ```
 
-$\dfrac{dy}{dx}$ looks like a fraction and is not one—at this level it is a single symbol, and nothing may cancel inside it. The result of differentiating, whichever way it is written, is called the **derivative**; *gradient function* and *derivative* are the same thing.
+$\dfrac{dy}{dx}$ looks like a fraction and is not one — at this level it is a single symbol, and nothing may cancel inside it. The result of differentiating, whichever way it is written, is called the **derivative**; *gradient function* and *derivative* are the same thing.
 
 ---
 
@@ -172,7 +172,7 @@ steps:
   - math: f'(x) = 2x - 3
 ```
 
-The standard states that polynomials are *given in expanded form*, so the expanding you do yourself mostly arises where a question asks you to build the function—the area or volume questions of Module B. The habit belongs here all the same: the rule applies to expanded form only.
+The standard states that polynomials are *given in expanded form*, so the expanding you do yourself mostly arises where a question asks you to build the function — the area or volume questions of Module B. The habit belongs here all the same: the rule applies to expanded form only.
 
 ```practice
 caption: expand first
@@ -182,14 +182,14 @@ questions:
     grade: merit
     working:
       - math: f(x) = 2x^2 + 5x - 3
-        note: "Expand first—differentiating each bracket separately gives a wrong answer."
+        note: "Expand first — differentiating each bracket separately gives a wrong answer."
       - math: f'(x) = 4x + 5
   - ask: Differentiate.
     math: f(x) = (3x+2)(x-4)
     grade: merit
     working:
       - math: f(x) = 3x^2 - 10x - 8
-        note: "Expand first—differentiating each bracket separately gives a wrong answer."
+        note: "Expand first — differentiating each bracket separately gives a wrong answer."
       - math: f'(x) = 6x - 10
   - ask: Differentiate.
     math: y = x^2(x - 6)
@@ -225,7 +225,7 @@ steps:
 
 Substituting into the wrong formula is the error to guard against here. $f(3)$ is the *height* of the curve at $x = 3$; $f'(3)$ is its *steepness* there. The two numbers answer different questions, and a question about gradient wants $f'$.
 
-The substitution itself is the other danger. The 2025 report's not-achieved list has both *"substituted values incorrectly into the given function or derivative"* and *"misinterpreted expressions such as $-x^2$"*—the same bracket discipline as algebra: the value goes in wrapped in brackets, so that an even power squares the sign away and an odd power keeps it.
+The substitution itself is the other danger. The 2025 report's not-achieved list has both *"substituted values incorrectly into the given function or derivative"* and *"misinterpreted expressions such as $-x^2$"* — the same bracket discipline as algebra: the value goes in wrapped in brackets, so that an even power squares the sign away and an odd power keeps it.
 
 ```practice
 caption: gradient at a point
@@ -253,7 +253,7 @@ questions:
     from: "2025"
     working:
       - math: f'(x) = 6x^2 + 6x + \dfrac{1}{2}
-        note: "The $\\dfrac{x}{2}$ is the term to watch—its derivative is its coefficient, $\\dfrac{1}{2}$."
+        note: "The $\\dfrac{x}{2}$ is the term to watch — its derivative is its coefficient, $\\dfrac{1}{2}$."
       - math: f'\!\left(-\dfrac{1}{2}\right) = 6\left(-\dfrac{1}{2}\right)^2 + 6\left(-\dfrac{1}{2}\right) + \dfrac{1}{2}
         note: "Brackets around the substituted value, so the square keeps the sign right."
       - math: f'\!\left(-\dfrac{1}{2}\right) = \dfrac{3}{2} - 3 + \dfrac{1}{2} = -1
@@ -262,7 +262,7 @@ questions:
     grade: achieved
     working:
       - math: f'(x) = 12x^2 + 4x + \dfrac{1}{3}
-        note: "The $\\dfrac{x}{3}$ is the term to watch—its derivative is its coefficient, $\\dfrac{1}{3}$."
+        note: "The $\\dfrac{x}{3}$ is the term to watch — its derivative is its coefficient, $\\dfrac{1}{3}$."
       - math: f'\!\left(-\dfrac{1}{2}\right) = 12\left(-\dfrac{1}{2}\right)^2 + 4\left(-\dfrac{1}{2}\right) + \dfrac{1}{3}
         note: "Brackets around the substituted value, so the square keeps the sign right."
       - math: f'\!\left(-\dfrac{1}{2}\right) = 3 - 2 + \dfrac{1}{3} = \dfrac{4}{3}
@@ -272,7 +272,7 @@ questions:
 
 ## Reading the gradient function backwards
 
-The same formula answers the reverse question: *at which point does the curve have gradient three?* Set the gradient function equal to the given gradient and solve for $x$. The 2025 report names the error candidates make here: *"substituting the gradient value into the original function"*—the given number is a gradient, so the equation it belongs in is $f'(x) = \textsf{gradient}$, and it is never an input to $f$. Where the question asks for the point rather than just the $x$-value, finish by substituting that $x$ into the original function for its $y$-value—the point sits on the curve, so its height comes from $f$, not from $f'$.
+The same formula answers the reverse question: *at which point does the curve have gradient three?* Set the gradient function equal to the given gradient and solve for $x$. The 2025 report names the error candidates make here: *"substituting the gradient value into the original function"* — the given number is a gradient, so the equation it belongs in is $f'(x) = \textsf{gradient}$, and it is never an input to $f$. Where the question asks for the point rather than just the $x$-value, finish by substituting that $x$ into the original function for its $y$-value — the point sits on the curve, so its height comes from $f$, not from $f'$.
 
 ```figure
 caption: From a gradient to a point

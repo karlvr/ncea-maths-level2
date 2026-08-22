@@ -61,7 +61,7 @@ The recurring difficulty in this module is not the solving. It is turning a para
 
 ## How this standard is assessed
 
-Four credits, and it is **external**—sat in the November exam, not marked internally. Past papers therefore matter.
+Four credits, and it is **external** — sat in the November exam, not marked internally. Past papers therefore matter.
 
 The exam is three questions, each with several parts, and word problems appear throughout.
 
@@ -84,6 +84,6 @@ After each year's examination is marked, the examiners publish a report on it: w
 
 ## What you do not have to memorise
 
-A formulae sheet is handed out with the exam and you may keep it. It carries the quadratic formula, the discriminant, and the logarithm rules—so none of those need to be memorised.
+A formulae sheet is handed out with the exam and you may keep it. It carries the quadratic formula, the discriminant, and the logarithm rules — so none of those need to be memorised.
 
 It does **not** carry the index laws. Those you either know or rebuild from what a power means, which is the subject of the third topic in Module A.

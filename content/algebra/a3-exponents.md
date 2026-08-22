@@ -2,7 +2,7 @@
 
 ---
 
-An exponent is shorthand for repeated multiplication. $x^5$ means $x$ times $x$ times $x$ times $x$ times $x$—five of them multiplied together. The $x$ is the **base**. The $5$ is the **exponent**, also called the index or the power.
+An exponent is shorthand for repeated multiplication. $x^5$ means $x$ times $x$ times $x$ times $x$ times $x$ — five of them multiplied together. The $x$ is the **base**. The $5$ is the **exponent**, also called the index or the power.
 
 That definition is the whole topic. Every index law is a consequence of it, and a forgotten law can be rebuilt by writing out the multiplication. Rebuilding matters because the index laws are **not** on the formulae sheet supplied in the examination: the quadratic formula, the discriminant and the logarithm rules are there, and the index laws are not.
 
@@ -15,7 +15,7 @@ That definition is the whole topic. Every index law is a consequence of it, and 
 $x^3 \cdot x^2$. Write it out: $x$ times $x$ times $x$, then $x$ times $x$. Five $x$'s multiplied together. So the answer is $x^5$.
 
 ```figure
-caption: Multiplying—add the exponents
+caption: Multiplying — add the exponents
 steps:
   - math: x^3 \cdot x^2
   - math: (\ca{x \cdot x \cdot x})(\cb{x \cdot x})
@@ -32,7 +32,7 @@ You added $3$ and $2$. That is the law: when you multiply powers of the same bas
 $\dfrac{x^5}{x^2}$. Five $x$'s on top, two on the bottom. Two of the $x$'s on top cancel with the two underneath, leaving three $x$'s. So the answer is $x^3$.
 
 ```figure
-caption: Dividing—subtract the exponents
+caption: Dividing — subtract the exponents
 steps:
   - math: \dfrac{x^5}{x^2}
   - math: \dfrac{x \cdot x \cdot x \cdot \ca{x \cdot x}}{\ca{x \cdot x}}
@@ -46,10 +46,10 @@ Subtract the exponents.
 
 ### A power of a power: multiply the exponents
 
-$(x^2)^3$. That means $x^2$ times $x^2$ times $x^2$—three copies. Each copy is two $x$'s, so six altogether. $x^6$.
+$(x^2)^3$. That means $x^2$ times $x^2$ times $x^2$ — three copies. Each copy is two $x$'s, so six altogether. $x^6$.
 
 ```figure
-caption: A power of a power—multiply the exponents
+caption: A power of a power — multiply the exponents
 steps:
   - math: (x^2)^3
   - math: \ca{x^2} \cdot \ca{x^2} \cdot \ca{x^2}
@@ -125,7 +125,7 @@ $(2x)^3$ means $2x$ times $2x$ times $2x$. That is two times two times two, whic
 
 The trap is the same as in the last lesson: a power does **not** distribute over addition.
 
-$(x+y)^2$ is not $x^2 + y^2$. Expand it properly: $(x+y)(x+y)$, which gives $x^2 + 2xy + y^2$. There is a middle term. Check that with numbers—put in $x = 3$ and $y = 4$. Then $(3+4)^2$ is $49$, and $3^2 + 4^2$ is $25$. Not the same.
+$(x+y)^2$ is not $x^2 + y^2$. Expand it properly: $(x+y)(x+y)$, which gives $x^2 + 2xy + y^2$. There is a middle term. Check that with numbers — put in $x = 3$ and $y = 4$. Then $(3+4)^2$ is $49$, and $3^2 + 4^2$ is $25$. Not the same.
 
 ```figure
 caption: A power does not distribute over addition
@@ -137,7 +137,7 @@ steps:
   - math: (\cb{3}+\cc{4})^2 = 7^2 = 49
     note: Check it with numbers.
   - math: \cb{3}^2 + \cc{4}^2 = 9 + 16 = 25
-    note: Not the same, and the gap is the missing $2xy$—which is $24$.
+    note: Not the same, and the gap is the missing $2xy$ — which is $24$.
 ```
 
 The cancelling rule from the last lesson is the same idea in another place. **Multiplication distributes. Addition does not.** Cancelling reaches every factor but not every term; a power reaches every factor but not every term.
@@ -232,7 +232,7 @@ $\dfrac{x^3}{x^5}$. Cancelling three $x$'s from the top and bottom leaves two $x
 caption: Why a negative exponent is a reciprocal
 steps:
   - math: \dfrac{x^3}{x^5}
-    note: The same method—work it out twice.
+    note: The same method — work it out twice.
   - math: \dfrac{\cancel{x \cdot x \cdot x}}{\cancel{x \cdot x \cdot x} \cdot x \cdot x} = \dfrac{1}{x^2}
     note: Cancel three from each, and two are left underneath.
   - math: x^{3-5} = x^{-2}
@@ -241,7 +241,7 @@ steps:
     note: So a minus sign in the exponent means “one over”, not “negative”.
 ```
 
-So $x^{-2}$ is $\dfrac{1}{x^2}$. **A negative exponent means a reciprocal.** It does not mean a negative number. $2^{-3}$ is $\dfrac{1}{8}$—a small positive number, not $-8$.
+So $x^{-2}$ is $\dfrac{1}{x^2}$. **A negative exponent means a reciprocal.** It does not mean a negative number. $2^{-3}$ is $\dfrac{1}{8}$ — a small positive number, not $-8$.
 
 The rule also runs in reverse, and you will need it in that direction. $\dfrac{1}{x^3}$ is $x^{-3}$. Moving a power from the bottom of a fraction to the top flips the sign of its exponent.
 
@@ -259,7 +259,7 @@ steps:
 
 ### Fractional
 
-$x^{\frac{1}{2}} \cdot x^{\frac{1}{2}}$. Add the exponents: a half plus a half is one, so the answer is $x$. Something which, multiplied by itself, gives $x$—that is the square root of $x$.
+$x^{\frac{1}{2}} \cdot x^{\frac{1}{2}}$. Add the exponents: a half plus a half is one, so the answer is $x$. Something which, multiplied by itself, gives $x$ — that is the square root of $x$.
 
 ```figure
 caption: Why a fractional exponent is a root
@@ -293,7 +293,7 @@ steps:
 
 A **surd** is a root written with a root sign. The rule connecting roots and fractional exponents runs in both directions, and the direction you will need most often is surd into index, because the index laws apply to powers and can do nothing with a root sign.
 
-$\sqrt{x}$ is $x^{\frac{1}{2}}$. And $\sqrt[3]{x^2}$ is $x^{\frac{2}{3}}$—the root goes underneath, the power inside goes on top. $\dfrac{1}{\sqrt{x}}$ is $x^{-\frac{1}{2}}$, because being underneath a one turns the exponent negative as well.
+$\sqrt{x}$ is $x^{\frac{1}{2}}$. And $\sqrt[3]{x^2}$ is $x^{\frac{2}{3}}$ — the root goes underneath, the power inside goes on top. $\dfrac{1}{\sqrt{x}}$ is $x^{-\frac{1}{2}}$, because being underneath a one turns the exponent negative as well.
 
 ```figure
 caption: Surd form to index form
@@ -586,13 +586,13 @@ questions:
 
 ## Summary
 
-An exponent is repeated multiplication. Every law follows from that, so a forgotten law can be rebuilt—and the laws have to be known, because they are not on the formulae sheet.
+An exponent is repeated multiplication. Every law follows from that, so a forgotten law can be rebuilt — and the laws have to be known, because they are not on the formulae sheet.
 
 Multiplying adds the exponents. Dividing subtracts them. A power of a power multiplies them. All three require the same base.
 
 A power applies to every factor in a product, and never distributes over addition. $(x+y)^2$ has a middle term.
 
-Zero exponent gives one. A negative exponent means a reciprocal, not a negative value. A fractional exponent is a root—denominator is the root, numerator is the power, and take the root first.
+Zero exponent gives one. A negative exponent means a reciprocal, not a negative value. A fractional exponent is a root — denominator is the root, numerator is the power, and take the root first.
 
 A root sign is an exponent in another notation. Convert it to an exponent before you try to do anything with it, because the laws above are the only laws there are.
 

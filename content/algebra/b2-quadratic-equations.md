@@ -200,7 +200,7 @@ steps:
   - math: 2(x+3)^2 - 13
 ```
 
-Completing the square also gives the vertex of the parabola. The graph of $y = (x+p)^2 + q$ has its lowest point where the bracket is zero, at $x = -p$, and the value there is $q$—so the vertex is at $(-p, q)$, read straight off the completed form.
+Completing the square also gives the vertex of the parabola. The graph of $y = (x+p)^2 + q$ has its lowest point where the bracket is zero, at $x = -p$, and the value there is $q$ — so the vertex is at $(-p, q)$, read straight off the completed form.
 
 ```practice
 caption: completing the square
@@ -419,7 +419,7 @@ steps:
 
 If the roots are $p$ and $q$, then $(x - p)(x - q) = 0$ is an equation with exactly those roots, and expanding it puts that equation in standard form.
 
-Fractional roots are cleared by multiplying each bracket up. The root $\dfrac{2}{5}$ gives the bracket $\left(x - \dfrac{2}{5}\right)$, and multiplying that bracket by $5$ turns it into $(5x - 2)$—which has the same root, because the value making $5x-2$ zero is still two fifths.
+Fractional roots are cleared by multiplying each bracket up. The root $\dfrac{2}{5}$ gives the bracket $\left(x - \dfrac{2}{5}\right)$, and multiplying that bracket by $5$ turns it into $(5x - 2)$ — which has the same root, because the value making $5x-2$ zero is still two fifths.
 
 ```figure
 id: b2-from-roots
@@ -452,7 +452,7 @@ steps:
     note: Matching the two lines term by term.
 ```
 
-Two roots that are opposites, such as $3$ and $-3$, add to zero, so an equation whose roots are opposites has no term in $x$. Setting the coefficient of $x$ to zero is the whole method, however complicated the equation the coefficients came from. Where that equation is given as two fractions set equal, cross-multiply—multiply both sides by both denominators—and expand every product before collecting; the 2024 report names candidates who cross-multiplied but did not expand correctly.
+Two roots that are opposites, such as $3$ and $-3$, add to zero, so an equation whose roots are opposites has no term in $x$. Setting the coefficient of $x$ to zero is the whole method, however complicated the equation the coefficients came from. Where that equation is given as two fractions set equal, cross-multiply — multiply both sides by both denominators — and expand every product before collecting; the 2024 report names candidates who cross-multiplied but did not expand correctly.
 
 ```practice
 caption: working backwards from the roots
@@ -554,7 +554,7 @@ questions:
       - math: (k+1)x^2 + (2 - 8k)x + 2(k-1) = 0
         note: Everything to one side, collected by powers of $x$. The coefficients carry $k$, and that is expected.
       - math: 2 - 8k = 0
-        note: Roots of $r$ and $-r$ give $(x-r)(x+r)$, which has no term in $x$—so the coefficient of $x$ is zero.
+        note: Roots of $r$ and $-r$ give $(x-r)(x+r)$, which has no term in $x$ — so the coefficient of $x$ is zero.
       - math: k = \dfrac{1}{4}
   - ask: Find the value of $k$ for which the equation has two roots that are numerically equal but with opposite signs, such as $3$ and $-3$.
     math: \dfrac{x^2 - 2x}{4x - 3} = \dfrac{k-2}{k+2}
@@ -567,7 +567,7 @@ questions:
       - math: (k+2)x^2 + (4 - 6k)x + 3(k-2) = 0
         note: Everything to one side, collected by powers of $x$. The coefficients carry $k$, and that is expected.
       - math: 4 - 6k = 0
-        note: Roots of $r$ and $-r$ give $(x-r)(x+r)$, which has no term in $x$—so the coefficient of $x$ is zero.
+        note: Roots of $r$ and $-r$ give $(x-r)(x+r)$, which has no term in $x$ — so the coefficient of $x$ is zero.
       - math: k = \dfrac{2}{3}
 ```
 
@@ -575,7 +575,7 @@ questions:
 
 ## Forming a quadratic from a context
 
-Naming the unknown works as it did in B1. What changes is that the relationship produces an $x^2$—usually because an area is involved, or because two quantities that both depend on the unknown are multiplied together.
+Naming the unknown works as it did in B1. What changes is that the relationship produces an $x^2$ — usually because an area is involved, or because two quantities that both depend on the unknown are multiplied together.
 
 Where the question supplies the form of a model, the work is to complete it from the information given. A parabola with its vertex at $(h, k)$ can be written $y = a(x - h)^2 + k$, and one further point on the curve fixes $a$.
 

@@ -2,13 +2,13 @@
 
 ---
 
-The standard names one context in its own method list: *rate of change problems (such as kinematics)*. This closing lesson is that context, and it uses everything—differentiating, turning points, anti-differentiating, and the constant—in the one setting where the exam asks for them all together: moving objects and changing quantities.
+The standard names one context in its own method list: *rate of change problems (such as kinematics)*. This closing lesson is that context, and it uses everything — differentiating, turning points, anti-differentiating, and the constant — in the one setting where the exam asks for them all together: moving objects and changing quantities.
 
 ---
 
 ## A gradient is a rate
 
-The gradient function was introduced as steepness, but steepness is itself a rate: how much $y$ changes per unit of $x$. When $x$ is time, $f'$ says how fast the quantity is changing right now—and that reading works for any pair of variables, whatever the letters. If $C(t)$ is a concentration at time $t$, then $C'(t)$ is the rate the concentration is rising, in concentration units per time unit. A negative rate means the quantity is falling, and saying so in words is part of the answer: the 2024 schedule's model answer reads *"132 bacteria per day are dying on day 10"*, not just $-132$.
+The gradient function was introduced as steepness, but steepness is itself a rate: how much $y$ changes per unit of $x$. When $x$ is time, $f'$ says how fast the quantity is changing right now — and that reading works for any pair of variables, whatever the letters. If $C(t)$ is a concentration at time $t$, then $C'(t)$ is the rate the concentration is rising, in concentration units per time unit. A negative rate means the quantity is falling, and saying so in words is part of the answer: the 2024 schedule's model answer reads *"132 bacteria per day are dying on day 10"*, not just $-132$.
 
 ```figure
 caption: A rate, read from a model
@@ -16,12 +16,12 @@ steps:
   - math: C(t) = \dfrac{t^3}{12} - 5t^2 + 84t + 40
     note: "A concentration in µg/L, $t$ in minutes. *How fast is it changing at $t = 20$?* is a gradient question."
   - math: C'(t) = \dfrac{t^2}{4} - 10t + 84
-    note: "Differentiate as always—the letters changed, the rule did not."
+    note: "Differentiate as always — the letters changed, the rule did not."
   - math: C'(20) = 100 - 200 + 84 = -16
     note: "Negative, so the concentration is falling: it is decreasing by $16$ µg/L per minute at that moment."
 ```
 
-The variables need not involve time at all. The 2025 paper asks for the rate of change of a triangle's area *with respect to its height*—the answer is $\dfrac{dA}{dh}$, the same differentiation with $h$ standing where $x$ usually does, and its unit is area per unit of height.
+The variables need not involve time at all. The 2025 paper asks for the rate of change of a triangle's area *with respect to its height* — the answer is $\dfrac{dA}{dh}$, the same differentiation with $h$ standing where $x$ usually does, and its unit is area per unit of height.
 
 ```practice
 caption: rates in context
@@ -74,7 +74,7 @@ questions:
       - math: (t - 40)(t - 60) = 0 \qquad t = 40 \;\textsf{ or }\; t = 60
       - math: C''(t) = \dfrac{2t}{25} - 4 \qquad C''(40) = -0.8 < 0
       - math: \therefore\;\textsf{the concentration is greatest at } t = 40 \textsf{ minutes}
-        note: "Two candidates, one justified choice—and the conclusion is given in the words of the model, not just as an $x$-value."
+        note: "Two candidates, one justified choice — and the conclusion is given in the words of the model, not just as an $x$-value."
   - ask: For the drug concentration model below, use calculus to find the time at which the concentration is greatest, and justify that it is a maximum.
     math: C(t) = \dfrac{t^3}{75} - 2.5t^2 + 150t + 200
     grade: excellence
@@ -86,7 +86,7 @@ questions:
       - math: (t - 50)(t - 75) = 0 \qquad t = 50 \;\textsf{ or }\; t = 75
       - math: C''(t) = \dfrac{2t}{25} - 5 \qquad C''(50) = -1 < 0
       - math: \therefore\;\textsf{the concentration is greatest at } t = 50 \textsf{ minutes}
-        note: "Two candidates, one justified choice—and the conclusion is given in the words of the model, not just as an $x$-value."
+        note: "Two candidates, one justified choice — and the conclusion is given in the words of the model, not just as an $x$-value."
 ```
 
 ---
@@ -95,9 +95,9 @@ questions:
 
 Kinematics is the special case the standard names. Three functions describe a moving object, and each is the derivative of the one before:
 
-- $s(t)$—**distance** from a fixed point, in metres
-- $v(t)$—**velocity**, the rate the distance changes, in m/s
-- $a(t)$—**acceleration**, the rate the velocity changes, in m/s²
+- $s(t)$ — **distance** from a fixed point, in metres
+- $v(t)$ — **velocity**, the rate the distance changes, in m/s
+- $a(t)$ — **acceleration**, the rate the velocity changes, in m/s²
 
 ```figure
 caption: The kinematics ladder
@@ -122,7 +122,7 @@ steps:
     note: "Distance in metres, time in seconds. *When is the object at rest?* is a question about $v$."
   - math: v(t) = s'(t) = 3t^2 - 12t + 9
   - math: 3t^2 - 12t + 9 = 0 \qquad\Rightarrow\qquad 3(t - 1)(t - 3) = 0
-    note: "At rest means the velocity is zero—the phrase is an equation."
+    note: "At rest means the velocity is zero — the phrase is an equation."
   - math: t = 1 \;\textsf{ or }\; t = 3
     note: "The object stops twice: momentarily at one second, and again at three."
   - math: a(t) = v'(t) = 6t - 12
@@ -157,7 +157,7 @@ questions:
       - math: v(t) = 0 \qquad\Rightarrow\qquad t = 2 \;\textsf{ or }\; t = 6
       - math: a(t) = v'(t) = 6t - 24
       - math: a(2) = -12 \;\textsf{m/s}^2 \qquad a(6) = 12 \;\textsf{m/s}^2
-        note: "The particle is momentarily at rest both times, but the acceleration says what happens next—slowing into the first stop, speeding away from the second."
+        note: "The particle is momentarily at rest both times, but the acceleration says what happens next — slowing into the first stop, speeding away from the second."
   - ask: A particle's distance from its starting point is given by the function below, in metres after $t$ seconds. Use calculus to find the times at which the particle is at rest, and its acceleration at each of those times.
     math: s(t) = t^3 - 9t^2 + 24t
     grade: merit
@@ -167,14 +167,14 @@ questions:
       - math: v(t) = 0 \qquad\Rightarrow\qquad t = 2 \;\textsf{ or }\; t = 4
       - math: a(t) = v'(t) = 6t - 18
       - math: a(2) = -6 \;\textsf{m/s}^2 \qquad a(4) = 6 \;\textsf{m/s}^2
-        note: "The particle is momentarily at rest both times, but the acceleration says what happens next—slowing into the first stop, speeding away from the second."
+        note: "The particle is momentarily at rest both times, but the acceleration says what happens next — slowing into the first stop, speeding away from the second."
 ```
 
 ---
 
 ## Up the ladder
 
-Given acceleration, anti-differentiate for velocity, and again for distance—two anti-differentiations, each with its own constant, and each constant is found from what the object was doing at the start. The exam's kinematics takes this form: a vehicle accelerating from rest at a constant rate.
+Given acceleration, anti-differentiate for velocity, and again for distance — two anti-differentiations, each with its own constant, and each constant is found from what the object was doing at the start. The exam's kinematics takes this form: a vehicle accelerating from rest at a constant rate.
 
 ```figure
 caption: Acceleration to velocity to distance
@@ -184,7 +184,7 @@ steps:
   - math: v(t) = 0.8t + c
     note: "Anti-differentiate. The constant is the starting velocity."
   - math: v(0) = 0 \;\Rightarrow\; c = 0 \qquad v(t) = 0.8t
-    note: "*From rest* means the velocity at $t = 0$ is zero. The evidence for $c = 0$ is written, not assumed—the 2024 schedule awards the step *with evidence that $c = 0$*."
+    note: "*From rest* means the velocity at $t = 0$ is zero. The evidence for $c = 0$ is written, not assumed — the 2024 schedule awards the step *with evidence that $c = 0$*."
   - math: 0.8t = 20 \qquad\Rightarrow\qquad t = 25
     note: "The moment the target speed is reached."
   - math: s(t) = 0.4t^2 + c \qquad s(0) = 0 \;\Rightarrow\; c = 0
@@ -268,7 +268,7 @@ questions:
       - math: a(t) = -2.5
         note: "Deceleration is negative acceleration, and the sign has to survive into the equation."
       - math: v(t) = -2.5t + c \qquad c = 25 \;\textsf{ since the car is doing } 25 \textsf{ m/s when braking begins}
-        note: "This time the starting state is not rest, so the constant is not zero—it is the initial speed."
+        note: "This time the starting state is not rest, so the constant is not zero — it is the initial speed."
       - math: 25 - 2.5t = 0 \qquad\Rightarrow\qquad t = 10 \;\textsf{s}
         note: "Stopping means velocity zero."
       - math: s(t) = -1.25t^2 + 25t \qquad\textsf{measuring distance from where braking began}
@@ -279,7 +279,7 @@ questions:
       - math: a(t) = -2
         note: "Deceleration is negative acceleration, and the sign has to survive into the equation."
       - math: v(t) = -2t + c \qquad c = 30 \;\textsf{ since the van is doing } 30 \textsf{ m/s when braking begins}
-        note: "This time the starting state is not rest, so the constant is not zero—it is the initial speed."
+        note: "This time the starting state is not rest, so the constant is not zero — it is the initial speed."
       - math: 30 - 2t = 0 \qquad\Rightarrow\qquad t = 15 \;\textsf{s}
         note: "Stopping means velocity zero."
       - math: s(t) = -t^2 + 30t \qquad\textsf{measuring distance from where braking began}
@@ -291,7 +291,7 @@ questions:
       - math: '\textsf{Ferry:}\quad v(t) = 6 \qquad s(t) = 6t + 240'
         note: "Constant speed anti-differentiates to $6t + c$, and the ferry's $240$ m head start is its constant. Measuring both distances from the wharf, from the moment the boat launches, is the decision that makes the two equations comparable."
       - math: '\textsf{Boat:}\quad a(t) = 0.6 \qquad v(t) = 0.6t \qquad s(t) = 0.3t^2'
-        note: "From rest at the wharf, both constants are zero—stated with their evidence."
+        note: "From rest at the wharf, both constants are zero — stated with their evidence."
       - math: 0.3t^2 = 6t + 240
         note: "Catching up means the two distances are equal."
       - math: t^2 - 20t - 800 = 0 \qquad\Rightarrow\qquad (t - 40)(t + 20) = 0
@@ -303,7 +303,7 @@ questions:
       - math: '\textsf{Cyclist:}\quad v(t) = 8 \qquad s(t) = 8t + 420'
         note: "Constant speed anti-differentiates to $8t + c$, and the cyclist's $420$ m head start is its constant. Measuring both distances from the gate, from the moment the motorbike sets off, is the decision that makes the two equations comparable."
       - math: '\textsf{Motorbike:}\quad a(t) = 0.4 \qquad v(t) = 0.4t \qquad s(t) = 0.2t^2'
-        note: "From rest at the gate, both constants are zero—stated with their evidence."
+        note: "From rest at the gate, both constants are zero — stated with their evidence."
       - math: 0.2t^2 = 8t + 420
         note: "Catching up means the two distances are equal."
       - math: t^2 - 40t - 2100 = 0 \qquad\Rightarrow\qquad (t - 70)(t + 30) = 0
@@ -317,7 +317,7 @@ questions:
 
 A derivative is a rate: how much the quantity changes per unit of the other variable, in whatever letters the model uses. A negative rate is a quantity falling, and the interpretation is written in the model's own words and units.
 
-Kinematics is the ladder: distance, velocity, acceleration, each the derivative of the one before. Differentiate to descend, anti-differentiate to climb, and let the wording choose the direction—*at rest*, *constant speed* and *from rest* are equations in disguise.
+Kinematics is the ladder: distance, velocity, acceleration, each the derivative of the one before. Differentiate to descend, anti-differentiate to climb, and let the wording choose the direction — *at rest*, *constant speed* and *from rest* are equations in disguise.
 
 Climbing the ladder brings a constant at every step, and the start of the motion supplies each one. The evidence is a written sentence per constant, and the schedules reserve marks for exactly that.
 

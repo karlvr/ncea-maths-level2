@@ -10,7 +10,7 @@ Equations contain equals signs, unlike the expressions of Module A. The equals s
 
 That permission does not extend to an expression. Multiplying an expression by three gives an expression three times as large, which is a different expression. Multiplying both sides of an equation by three leaves the two sides equal to each other, and leaves the same values of the unknown making the statement true.
 
-The examination puts the difficulty in **forming** the equation—turning a paragraph of words into a statement with an equals sign—not in solving it once you have it. The specification is explicit that any equation you form must be stated as part of solving a problem, so the equation is not only a step towards the answer, it is part of the answer.
+The examination puts the difficulty in **forming** the equation — turning a paragraph of words into a statement with an equals sign — not in solving it once you have it. The specification is explicit that any equation you form must be stated as part of solving a problem, so the equation is not only a step towards the answer, it is part of the answer.
 
 ---
 
@@ -641,9 +641,9 @@ steps:
 
 Where the coefficients do not match, multiply one equation through by whatever makes them match. That is the same permission used to clear fractions above.
 
-Use substitution when one equation already gives a letter on its own, and when one of the two equations is not linear—which is how a line meets a curve in C1, where elimination has nothing to cancel against. Elimination is quicker when both equations are in the same form.
+Use substitution when one equation already gives a letter on its own, and when one of the two equations is not linear — which is how a line meets a curve in C1, where elimination has nothing to cancel against. Elimination is quicker when both equations are in the same form.
 
-A curve of known form passing through known points gives one equation for each point. In $y = 3x^2 + ax + b$ the unknowns are $a$ and $b$, and each point supplies a value for $x$ and a value for $y$—which leaves an equation with $a$ and $b$ in it, and neither of them squared.
+A curve of known form passing through known points gives one equation for each point. In $y = 3x^2 + ax + b$ the unknowns are $a$ and $b$, and each point supplies a value for $x$ and a value for $y$ — which leaves an equation with $a$ and $b$ in it, and neither of them squared.
 
 ```figure
 id: b1-two-points
@@ -884,7 +884,7 @@ questions:
       - math: x^2 + 4x + k = x^2 + 4x - 21
         note: Expand the right side. The first two terms match, which is what makes a value of $k$ possible.
       - math: k = -21
-  - ask: A cylinder of radius $r$ and height $h$, and a second container with the same radius and height, have the surface areas below—the cylinder's first. The two surface areas are equal. Find $h$ in terms of $r$.
+  - ask: A cylinder of radius $r$ and height $h$, and a second container with the same radius and height, have the surface areas below — the cylinder's first. The two surface areas are equal. Find $h$ in terms of $r$.
     math: '2\pi r^2 + 2\pi rh \qquad\textsf{ and }\qquad 5r^2 + 10rh'
     grade: excellence
     from: "2023"
@@ -923,7 +923,7 @@ Expand brackets before solving, and clear fractions by multiplying every term on
 
 Making a letter the subject is the same work with an expression as the answer. Where that letter appears more than once, collect its terms on one side and take it out as a common factor.
 
-Name the unknown and say what it measures, write each quantity in terms of it, and write the equation down before solving—the specification requires that any equation you form is stated. Check the answer against the original wording rather than against the equation you formed, and answer the question that was asked.
+Name the unknown and say what it measures, write each quantity in terms of it, and write the equation down before solving — the specification requires that any equation you form is stated. Check the answer against the original wording rather than against the equation you formed, and answer the question that was asked.
 
 Two unknowns need two equations, and one is eliminated by adding or subtracting the pair.
 

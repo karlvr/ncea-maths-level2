@@ -2,7 +2,7 @@
 
 ---
 
-In $2^x = 32$ the unknown is in the power. Nothing in B1 or B2 reaches it, because $x$ is not added to anything or multiplied by anything—it is counting how many twos are multiplied together.
+In $2^x = 32$ the unknown is in the power. Nothing in B1 or B2 reaches it, because $x$ is not added to anything or multiplied by anything — it is counting how many twos are multiplied together.
 
 Write both sides as powers of the same base, and then the powers themselves must be equal. Or use a logarithm, the operation that brings a power down to where the earlier methods can work on it.
 
@@ -240,7 +240,7 @@ steps:
     note: A product becomes a sum, a quotient becomes a difference, and a power becomes a coefficient.
 ```
 
-They are the index laws in the other notation. A logarithm is an exponent, and multiplying powers of the same base adds the exponents—so the logarithm of a product is the sum of the logarithms.
+They are the index laws in the other notation. A logarithm is an exponent, and multiplying powers of the same base adds the exponents — so the logarithm of a product is the sum of the logarithms.
 
 ```figure
 caption: Why the product rule holds
@@ -255,7 +255,7 @@ steps:
 
 Two values are not on the sheet. $\log_b b = 1$, because $b^1 = b$. $\log_b 1 = 0$, because $b^0 = 1$.
 
-The rules are about products, quotients and powers. $\log(x + y)$ is not $\log x + \log y$, and nothing turns a sum inside a logarithm into anything simpler—which is the same boundary A2 drew around cancelling and A3 drew around powers.
+The rules are about products, quotients and powers. $\log(x + y)$ is not $\log x + \log y$, and nothing turns a sum inside a logarithm into anything simpler — which is the same boundary A2 drew around cancelling and A3 drew around powers.
 
 Splitting a number into factors is what makes the rules usable. Where $p = \log_a 2$ and $q = \log_a 5$, the value of $\log_a 50$ follows from writing fifty as $2 \times 5^2$.
 
@@ -632,7 +632,7 @@ steps:
 
 Compound interest is the same equation with a factor above one: an amount $P$ at $6\%$ a year is worth $P \times 1.06^{\,n}$ after $n$ years.
 
-Some models use the base $e$ rather than a decimal. It behaves like any other base, and $\ln$ is its logarithm—the formulae sheet gives $\ln y = \log_e y$. A model given in that form usually has an unknown constant in it, found by substituting the starting values first.
+Some models use the base $e$ rather than a decimal. It behaves like any other base, and $\ln$ is its logarithm — the formulae sheet gives $\ln y = \log_e y$. A model given in that form usually has an unknown constant in it, found by substituting the starting values first.
 
 ```practice
 caption: growth and decay
@@ -803,7 +803,7 @@ questions:
 
 An exponential equation has the unknown in the power, and there are two ways to solve it.
 
-Write both sides as powers of one base, and then the exponents are equal. Getting there uses every rewriting rule from A3—a number as a power, a reciprocal as a negative exponent, a root as a fractional one.
+Write both sides as powers of one base, and then the exponents are equal. Getting there uses every rewriting rule from A3 — a number as a power, a reciprocal as a negative exponent, a root as a fractional one.
 
 A logarithm is a power. $\log_b y$ is the power that $b$ is raised to in order to give $y$, and turning a logarithmic statement into index form is the first move in almost every question about one.
 

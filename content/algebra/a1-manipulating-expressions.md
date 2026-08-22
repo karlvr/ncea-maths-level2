@@ -429,7 +429,7 @@ $a^2 + b^2$ does not factorise. The **plus** is what rules it out: there is no p
 caption: The one that does not work
 steps:
   - math: x^2 + 9
-    note: A sum of two squares. There is no pair of brackets that produces this—check any pair you try by expanding it.
+    note: A sum of two squares. There is no pair of brackets that produces this — check any pair you try by expanding it.
 ```
 
 ```practice
@@ -652,7 +652,7 @@ questions:
 
 ## Collecting like terms
 
-Terms are **like** when their letter parts are identical—same letters, same powers.
+Terms are **like** when their letter parts are identical — same letters, same powers.
 
 $3x^2$ and $5x^2$ are like terms. They add to $8x^2$. $3x^2$ and $5x$ are not like terms. They stay separate and cannot be combined.
 
@@ -823,4 +823,4 @@ Factorise in a fixed order: common factor, then difference of two squares, then 
 
 Check factorising by expanding it back. Check simplifying by substituting a number, and write whatever you substitute inside brackets, so that a negative keeps its sign and a coefficient gets squared along with its letter.
 
-Answers must be given in their simplest form, and algebraic technique must be shown. So when you practise, state the reason for each step out loud—common factor first, which left a difference of two squares. Being able to say the reason is what lets you write it down, and writing it down is what takes you past Achieved.
+Answers must be given in their simplest form, and algebraic technique must be shown. So when you practise, state the reason for each step out loud — common factor first, which left a difference of two squares. Being able to say the reason is what lets you write it down, and writing it down is what takes you past Achieved.
