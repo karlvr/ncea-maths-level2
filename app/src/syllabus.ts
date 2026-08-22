@@ -179,6 +179,53 @@ const STRUCTURE: readonly SubjectSpec[] = [
       },
     ],
   },
+  {
+    id: 'trigonometry',
+    title: 'Trigonometry',
+    standard: 'AS91259',
+    assessment: 'internal',
+    modules: [
+      {
+        id: 'introduction',
+        title: 'Introduction',
+        blurb:
+          'What the standard covers, how internal assessment works, ' +
+          'and a list of everything in it.',
+        files: ['trigonometry/t-intro.md', 'trigonometry/t-contents.md'],
+      },
+      {
+        id: 'triangles',
+        title: 'Module A—Triangles',
+        blurb:
+          'The sine rule, the cosine rule, and the area formula: finding any ' +
+          'side or angle of any triangle, without needing a right angle.',
+        files: [
+          'trigonometry/a1-the-sine-rule.md',
+          'trigonometry/a2-the-cosine-rule.md',
+          'trigonometry/a3-area-and-choosing-the-rule.md',
+        ],
+      },
+      {
+        id: 'circles',
+        title: 'Module B—Circles',
+        blurb:
+          'A sector is a fraction of its circle, and the angle at the centre ' +
+          'states the fraction. Arc length, sector area, and the segment.',
+        files: ['trigonometry/b1-arcs-and-sectors.md'],
+      },
+      {
+        id: 'problems',
+        title: 'Module C—Solving problems',
+        blurb:
+          'The assessed skill: one extended problem, split into triangles and ' +
+          'sectors, solved and written up — in the plane and on solids.',
+        files: [
+          'trigonometry/c1-composite-figures.md',
+          'trigonometry/c2-three-dimensions.md',
+        ],
+      },
+    ],
+  },
 ]
 
 const SOURCES = import.meta.glob('../../content/**/*.md', {

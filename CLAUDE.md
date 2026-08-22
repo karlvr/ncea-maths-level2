@@ -7,7 +7,8 @@ figures alongside.
 
 ```
 content/          the lessons — Markdown, the source of truth
-docs/             NZQA PDFs: standards, past papers, marking schedules
+docs/             NZQA documents: standards, past papers, marking schedules,
+                  and the internal-assessment resources for trigonometry
 app/              the site that renders content/ — React, TypeScript, Vite
 BRIEF.md          the subject-matter brief and syllabus plan
 ```
@@ -199,6 +200,10 @@ steps:
   the next line is the point; do not put step three's answer in step two's note.
 - **Colour, never arrows.** `\ca` `\cb` `\cc` `\cd` mean "this came from that",
   within one figure only. Use them sparingly.
+- A step may carry a `graph` (a sketch of polynomial curves) or a `diagram`
+  (a labelled shape — triangle, sector, solid) instead of its `math`. Both are
+  specified in FIGURE-NOTATION.md, and their labels are plain text, never
+  `$…$`.
 - The block is YAML: quote anything with a colon, and anything YAML would read
   as a number (`math: "-1"`).
 - A note that restates the maths above it, or that describes something
@@ -296,6 +301,31 @@ To see which parts have been mined already, and from which year:
 ```sh
 grep -rn 'from:' content/
 ```
+
+### Trigonometry is internal, and its workflow differs
+
+AS91259 has no exam papers, no marking schedules and no examiner's reports —
+do not go looking for them, and do not run a report sweep for this subject.
+The calibration documents are in `docs/trigonometry/`:
+
+- `as91259.pdf` — the standard; explanatory note 4 is the method list.
+- `91259-clarification.md` — NZQA's moderation clarification, captured as
+  Markdown because the page blocks download. It defines what each grade
+  requires of the write-up.
+- `91259-exemplar.pdf` — annotated student work at six grade boundaries.
+- `91259-task-2-4a.doc`, `91259-task-2-4d.doc` — TKI assessment tasks with
+  their assessment schedules. Read a `.doc` with
+  `textutil -convert txt -stdout <file>`.
+- `91259-tekura-booklet.pdf` — Te Kura's task, whose formulae list fixes the
+  degree forms of the arc and sector formulae. Radians are not at this level.
+
+The assessment schedules are the grade calibration: they state per band what
+the marker accepts, and the ladder is thinking and communication — a method
+used correctly with its answer named is Achieved; methods chained and linked
+to context, with units, is Merit; a strategy devised and clearly communicated
+is Excellence. Trigonometry questions carry no `from:` field, because the
+convention records an exam year and there are no exams; adapt the task shapes
+freely but change the figures.
 
 ---
 

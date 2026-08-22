@@ -128,34 +128,47 @@ Derived from Level 7 of the New Zealand Curriculum, against the objective: apply
 4. Cosine rule
 5. Area of a triangle
 
-**Two things to note:**
+**Three things to note:**
 - **Trigonometric equations are NOT in this standard.** Some commercial workbooks bundle them in; the official method list does not include them. Park that unless his teacher says otherwise.
-- **"Two and three dimensions"** — expect problems on solids, not just flat triangles. Worth a dedicated topic.
+- **"Two and three dimensions"** — problems on solids can appear, though every published assessment task is 2D (composite plane figures). One topic covers it.
+- **Degrees, not radians.** The Te Kura task's formulae list gives arc length as θ/360 × 2πr and sector area as θ/360 × πr² — degree form. Radians are Level 3 and are not taught here.
 
 *Assumed prior knowledge: SOH-CAH-TOA and right-angled triangle work from Year 11. He is solid on this.*
 
-## Proposed module / topic structure
+## Module / topic structure (as built)
+
+The grade ladder for this standard is thinking and communication, not harder
+techniques — every method is Achieved-level on its own; Merit chains methods in
+context, Excellence devises a strategy and communicates it. So the structure is
+five methods in two modules, then a module on the assessed skill itself.
 
 ### Module A — Triangles
 
-| # | Topic | Notes for the script |
+| # | Topic | Notes |
 |---|---|---|
-| A1 | Why we need new rules | The bridge topic. SOH-CAH-TOA only works when there's a right angle, because it needs a hypotenuse. The sine and cosine rules work for *any* triangle. Short lesson, high value. |
-| A2 | The sine rule | a/sin A = b/sin B = c/sin C. Side over the sine of the angle *opposite* it. Use when you have a side and its opposite angle, plus one more piece. Mention the ambiguous case (two possible answers) at least briefly. |
-| A3 | The cosine rule | c² = a² + b² − 2ab·cos C. Use when you have two sides and the angle *between* them, or all three sides and want an angle. Frame it as Pythagoras with a correction term. |
-| A4 | Choosing between them | Possibly the most useful lesson of the set. A decision flowchart: what do I have, therefore what do I use. This is the Merit skill. |
-| A5 | Area of a triangle | Area = ½ab·sin C. Two sides and the included angle. |
-| A6 | Three-dimensional problems | Finding the right triangle inside a solid, then applying the rules. Pyramids, boxes, diagonal lengths. |
+| A1 | The sine rule | Opens with why new rules: SOH-CAH-TOA needs a hypotenuse. a/sin A = b/sin B = c/sin C; needs a side–opposite-angle pair. The ambiguous case, briefly. |
+| A2 | The cosine rule | Two sides and the included angle, or three sides. Pythagoras with a correction term. |
+| A3 | The area of a triangle, and choosing the rule | Area = ½ab·sin C, then the module's closing decision: what you have determines what you use. |
 
 ### Module B — Circles
 
-| # | Topic | Notes for the script |
+| # | Topic | Notes |
 |---|---|---|
-| B1 | Radians | Prerequisite for everything else in this module. What a radian actually is, and converting to and from degrees. |
-| B2 | Arc length | s = rθ, with θ in radians. Clean and simple once radians make sense. |
-| B3 | Area of a sector | A = ½r²θ, with θ in radians. |
+| B1 | Arcs and sectors | Both formulae as fractions of the circle, in degrees. Sector perimeter (the logo task's edging). Segment area = sector − triangle, the bridge into composites. |
 
-> **To verify with his teacher:** *segment* area (sector minus triangle) appears in several commercial workbooks but is not named in the official method list. It's a natural combination of B3 and A5, so it may well show up in a school task.
+### Module C — Solving problems
+
+| # | Topic | Notes |
+|---|---|---|
+| C1 | Composite figures | Splitting quadrilaterals and logos into triangles and sectors; the write-up ladder from the clarification and exemplars. The heart of the internal. |
+| C2 | Three dimensions | Finding the flat triangle inside a solid, redrawing it, applying Module A. |
+
+### Sources
+
+No exam papers exist for an internal standard. The calibration documents live
+in `docs/trigonometry/`: the standard, NZQA's clarification, the annotated
+exemplars at six grade boundaries, two TKI tasks with their assessment
+schedules, and Te Kura's assessment activity with its formulae list.
 
 ---
 
