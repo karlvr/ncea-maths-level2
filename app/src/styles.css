@@ -850,8 +850,23 @@ main {
     max-height: none;
   }
 
+  /* Opened from the toolbar, which is held at the top of the viewport however
+     far the page has been scrolled, so the contents are held there too. Laid
+     out in the flow they would render at the top of the document, where a
+     reader who had scrolled could not see what the button had just opened. */
   .is-menu-open .sidebar {
     display: block;
+    position: fixed;
+    /* The shell is a grid, and the alignment of a track reaches its child even
+       once the child is out of flow: aligned to the start it would take the
+       height of its own contents and the offsets below would do nothing. */
+    align-self: stretch;
+    inset: var(--toolbar) 0 0;
+    z-index: 2;
+    background: var(--page);
+    border-bottom: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
   }
 
   main {
