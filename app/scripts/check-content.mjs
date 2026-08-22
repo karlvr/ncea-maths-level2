@@ -56,7 +56,7 @@ function* markdownFiles(directory) {
 }
 
 const problems = []
-const counted = { figure: 0, practice: 0, question: 0, fragment: 0, sketch: 0 }
+const counted = { figure: 0, practice: 0, question: 0, fragment: 0, sketch: 0, diagram: 0 }
 let expressions = 0
 
 /**
@@ -153,15 +153,79 @@ function checkGraph(graph, where) {
   }
 }
 
+const isPoint = (pair) =>
+  Array.isArray(pair) && pair.length === 2 && pair.every((n) => typeof n === 'number')
+
+/** A diagram label is plain text; notation in one would render as its source. */
+function checkDiagramLabel(label, at) {
+  if (typeof label === 'string' && label.includes('$')) {
+    problems.push(`${at}: labels are plain text, not notation`)
+  }
+}
+
+/**
+ * Validates the shape of a diagram: named points in coordinate pairs, and
+ * every edge, angle and arc referring to points that exist.
+ */
+function checkDiagram(diagram, where) {
+  const points = diagram.points ?? {}
+  if (typeof points !== 'object' || Array.isArray(points) || Object.keys(points).length < 2) {
+    problems.push(`${where}: diagram needs at least two named points`)
+    return
+  }
+  for (const [name, point] of Object.entries(points)) {
+    if (!isPoint(point)) problems.push(`${where}: point ${name} must be [x, y]`)
+  }
+  const named = (name, at) => {
+    if (typeof name !== 'string' || !(name in points)) {
+      problems.push(`${at}: no point named ${JSON.stringify(name)}`)
+    }
+  }
+  for (const [index, edge] of (diagram.edges ?? []).entries()) {
+    const at = `${where} edge ${index + 1}`
+    const [from, to] = Array.isArray(edge) ? edge : [edge?.from, edge?.to]
+    named(from, at)
+    named(to, at)
+    checkDiagramLabel(edge?.label, at)
+    if (edge?.color !== undefined && !HIGHLIGHTS.includes(edge.color)) {
+      problems.push(`${at}: color must be one of ${HIGHLIGHTS.join(', ')}`)
+    }
+  }
+  for (const [index, angle] of (diagram.angles ?? []).entries()) {
+    const at = `${where} angle ${index + 1}`
+    named(angle?.at, at)
+    named(angle?.from, at)
+    named(angle?.to, at)
+    checkDiagramLabel(angle?.label, at)
+    if (angle?.color !== undefined && !HIGHLIGHTS.includes(angle.color)) {
+      problems.push(`${at}: color must be one of ${HIGHLIGHTS.join(', ')}`)
+    }
+  }
+  for (const [index, arc] of (diagram.arcs ?? []).entries()) {
+    const at = `${where} arc ${index + 1}`
+    named(arc?.center, at)
+    named(arc?.from, at)
+    named(arc?.to, at)
+    checkDiagramLabel(arc?.label, at)
+    if (arc?.color !== undefined && !HIGHLIGHTS.includes(arc.color)) {
+      problems.push(`${at}: color must be one of ${HIGHLIGHTS.join(', ')}`)
+    }
+  }
+}
+
 /** Compiles the display maths and the inline maths of one line of working. */
 function checkStep(step, where) {
-  if (!step?.math && !step?.note && !step?.graph) {
+  if (!step?.math && !step?.note && !step?.graph && !step?.diagram) {
     problems.push(`${where}: empty`)
     return
   }
   if (step?.graph) {
     counted.sketch++
     checkGraph(step.graph, where)
+  }
+  if (step?.diagram) {
+    counted.diagram++
+    checkDiagram(step.diagram, where)
   }
   const sources = [
     ...(step.math ? [[step.math, true]] : []),
@@ -205,7 +269,10 @@ function checkPractice(practice, where) {
     if (!GRADES.includes(question.grade)) {
       problems.push(`${asked}: grade must be one of ${GRADES.join(', ')}`)
     }
-    checkStep({ math: question.math, note: question.ask, graph: question.graph }, asked)
+    checkStep(
+      { math: question.math, note: question.ask, graph: question.graph, diagram: question.diagram },
+      asked,
+    )
 
     if (!Array.isArray(question.working) || question.working.length === 0) {
       problems.push(`${asked}: no working`)
@@ -243,7 +310,7 @@ for (const problem of problems) console.error(`  ${problem}`)
 console.log(
   `${counted.figure} figures, ${counted.practice} practice sets, ` +
     `${counted.question} questions, ${counted.fragment} fragments in prose, ` +
-    `${counted.sketch} sketches, ${expressions} expressions, ` +
+    `${counted.sketch} sketches, ${counted.diagram} diagrams, ${expressions} expressions, ` +
     `${problems.length} problem${problems.length === 1 ? '' : 's'}`,
 )
 process.exit(problems.length === 0 ? 0 : 1)

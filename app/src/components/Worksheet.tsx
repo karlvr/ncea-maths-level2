@@ -14,6 +14,7 @@ import { Link } from 'react-router-dom'
 import type { PracticeGroup, Question, Section } from '../lesson-body'
 import type { ModuleLocation, TopicLocation } from '../syllabus'
 import { Annotated, MathsBlock } from './Maths'
+import { Diagram } from './Diagram'
 import { Sketch } from './Sketch'
 
 /** One lesson's questions, under the title of the lesson they came from. */
@@ -78,6 +79,7 @@ function SheetQuestion({ question }: { question: Question }) {
         <Annotated text={question.ask} />
       </p>
       {question.graph && <Sketch graph={question.graph} />}
+      {question.diagram && <Diagram diagram={question.diagram} />}
       {question.math && <MathsBlock tex={question.math} />}
 
       <div className="sheet-space" aria-hidden="true" />

@@ -608,6 +608,62 @@ main {
 .sketch .sketch-label.c-c { fill: var(--c-c); }
 .sketch .sketch-label.c-d { fill: var(--c-d); }
 
+/* -------------------------------------------------------------- diagram -- */
+
+.diagram {
+  display: block;
+  margin: 0.35rem auto;
+  width: min(23rem, 100%);
+  height: auto;
+}
+
+.diagram-edge {
+  stroke: var(--ink);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.diagram-edge.is-dashed {
+  stroke-dasharray: 6 5;
+}
+
+.diagram-angle,
+.diagram-arc {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+}
+
+.diagram-arc {
+  stroke-width: 2;
+}
+
+.diagram-edge.c-a, .diagram-angle.c-a, .diagram-arc.c-a { stroke: var(--c-a); }
+.diagram-edge.c-b, .diagram-angle.c-b, .diagram-arc.c-b { stroke: var(--c-b); }
+.diagram-edge.c-c, .diagram-angle.c-c, .diagram-arc.c-c { stroke: var(--c-c); }
+.diagram-edge.c-d, .diagram-angle.c-d, .diagram-arc.c-d { stroke: var(--c-d); }
+
+.diagram text {
+  font-family: var(--serif);
+  font-size: 15px;
+  fill: var(--ink);
+}
+
+.diagram .diagram-label {
+  font-size: 14px;
+}
+
+.diagram .diagram-label.is-variable,
+.diagram .diagram-name {
+  font-style: italic;
+}
+
+.diagram .diagram-label.c-a { fill: var(--c-a); }
+.diagram .diagram-label.c-b { fill: var(--c-b); }
+.diagram .diagram-label.c-c { fill: var(--c-c); }
+.diagram .diagram-label.c-d { fill: var(--c-d); }
+
 .worked-controls {
   display: flex;
   align-items: center;

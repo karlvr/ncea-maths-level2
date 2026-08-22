@@ -64,12 +64,66 @@ export interface Graph {
   readonly ylabel?: string
 }
 
+/** One edge of a diagram, between two named points. */
+export interface DiagramEdge {
+  readonly from: string
+  readonly to: string
+  /** Label for the edge — a length, or a letter — set beside its midpoint. */
+  readonly label?: string
+  readonly color?: Highlight
+  /** Dashed is how a hidden edge of a solid, or an added line, is drawn. */
+  readonly dashed?: boolean
+}
+
+/** An angle mark: an arc at a vertex, between two rays. */
+export interface DiagramAngle {
+  /** The vertex the angle sits at. */
+  readonly at: string
+  /** The points the two rays head toward. */
+  readonly from: string
+  readonly to: string
+  readonly label?: string
+  readonly color?: Highlight
+  /** Draw the right-angle square instead of an arc. */
+  readonly right?: boolean
+  /** Mark the larger of the two angles between the rays. */
+  readonly reflex?: boolean
+}
+
+/** A circular arc through two points, for drawing sectors. */
+export interface DiagramArc {
+  readonly center: string
+  /** Points on the circle the arc runs between. */
+  readonly from: string
+  readonly to: string
+  readonly label?: string
+  readonly color?: Highlight
+  /** Draw the major arc rather than the minor one. */
+  readonly reflex?: boolean
+}
+
+/**
+ * A labelled geometric figure: named points joined by edges, with angles and
+ * circular arcs marked. Drawn the way an examination draws one — not to scale,
+ * with the given measurements carried by labels rather than by the drawing.
+ */
+export interface Diagram {
+  /** Named vertices: name to `[x, y]`, y upward. Only proportions matter. */
+  readonly points: Readonly<Record<string, readonly [number, number]>>
+  /** Edges, each `[from, to]` or a {@link DiagramEdge}. */
+  readonly edges?: readonly (readonly [string, string] | DiagramEdge)[]
+  readonly angles?: readonly DiagramAngle[]
+  readonly arcs?: readonly DiagramArc[]
+}
+
 /** One line of working: what is on the page at this point in a derivation. */
 export interface WorkingStep {
   /** LaTeX for the expression as it stands. Not delimited — the field is maths. */
   readonly math?: string
   /** A sketch shown at this step, above any expression. */
   readonly graph?: Graph
+  /** A labelled diagram shown at this step, above any expression. */
+  readonly diagram?: Diagram
   /** A line explaining this step, in prose, with inline maths in `$…$`. */
   readonly note?: string
 }
@@ -101,6 +155,8 @@ export interface Question {
   readonly math?: string
   /** The sketch the question is about, where the question shows a graph. */
   readonly graph?: Graph
+  /** The diagram the question is about, where the question shows a figure. */
+  readonly diagram?: Diagram
   /** The band the question is pitched at. */
   readonly grade: Grade
   /** The examination year the question was adapted from, where there is one. */

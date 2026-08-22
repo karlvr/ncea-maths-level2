@@ -123,6 +123,64 @@ not `$f'(x)$`. A sketch is qualitative: pick a domain that shows the shape, mark
 the values the point of the figure depends on, and leave the rest of the axes
 bare.
 
+---
+
+## Diagrams
+
+A step may carry a `diagram` instead of its `math`: a labelled geometric figure
+— a triangle with its sides and angles marked, a quadrilateral split by a
+diagonal, a sector, a solid drawn with its hidden edges dashed. Where a sketch
+answers *what shape is this function*, a diagram answers *what is given and
+what is wanted*.
+
+````markdown
+```figure
+caption: Two sides and the angle between them
+steps:
+  - diagram:
+      points:
+        A: [0, 0]
+        B: [20, 36]
+        C: [55, 36]
+        D: [50, -14]
+      edges:
+        - [A, B]
+        - [B, C]
+        - [C, D]
+        - from: D
+          to: A
+          label: 40 m
+        - from: A
+          to: C
+          label: 45.8 m
+          color: a
+          dashed: true
+      angles:
+        - at: D
+          from: A
+          to: C
+          label: 60°
+    note: The diagonal splits the quadrilateral into two triangles.
+```
+````
+
+| Field | Meaning |
+|---|---|
+| `points` | Named vertices: `A: [x, y]`, y upward. Coordinates are unitless and only their proportions matter — the diagram scales to fit. Every point is labelled with its name. |
+| `edges` | Each is `[P, Q]`, or an object with `from` and `to` and optionally `label` (set beside the edge's midpoint), `color` (`a`–`d`), and `dashed` — dashed is how a hidden edge of a solid, or a line added to the figure, is drawn. |
+| `angles` | An arc marking the angle at vertex `at`, between the rays toward `from` and toward `to`, with an optional `label` and `color`. `right: true` draws the right-angle square instead of an arc. The smaller of the two angles is marked; `reflex: true` marks the other. |
+| `arcs` | A circular arc for sectors: `center`, `from` and `to` (points on the circle), and optionally `label` and `color`. The minor arc is drawn; `reflex: true` draws the major one. |
+
+Labels are plain text, exactly as for a sketch: `60°` with the degree sign,
+`45.8 m` with its unit, `x` as a bare letter. A diagram is *not to scale* in the
+examination's sense — place the points so the figure reads clearly, not so the
+measurements are true, and never rely on the drawing to carry a value that the
+labels do not state.
+
+A solid is drawn as a flat projection: choose coordinates that suggest the
+depth, and dash every edge a solid would hide. The triangle being solved inside
+the solid is picked out with `color` on its edges.
+
 The figure shows the mathematics; the prose explains it. They should not duplicate each other. If a note simply restates the sentence beneath it, delete the note.
 
 Prefer one expression changing over several expressions side by side. The exception is a deliberate comparison, where two things have to be visible at once for the point to land — use a LaTeX `array` for that.
