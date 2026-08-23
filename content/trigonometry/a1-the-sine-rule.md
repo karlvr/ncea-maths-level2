@@ -2,7 +2,7 @@
 
 ---
 
-Year 11 solved triangles with SOH-CAH-TOA and Pythagoras, and both need a right angle: SOH-CAH-TOA divides two of a triangle's sides by its hypotenuse, and Pythagoras states a relationship that only holds when one angle is $90°$. Most triangles the world hands you do not have one — a surveyed boundary, a roof truss, a sail cut to a curve. This module's three methods work on any triangle, with a right angle or without.
+Year 11 solved triangles with SOH-CAH-TOA and Pythagoras, and both need a right angle: SOH-CAH-TOA divides two of a triangle's sides by its hypotenuse, and Pythagoras states a relationship that only holds when one angle is $90°$. Most triangles that need solving do not have one — a surveyed boundary, a roof truss, a sail cut to a curve. This module's three methods work on any triangle, with a right angle or without.
 
 ---
 
@@ -287,7 +287,7 @@ questions:
 
 ## The third angle
 
-The angles of a triangle sum to $180°$, and that fact often has to be used before the sine rule can reach the side actually wanted. Where two angles are given and the side wanted is opposite the third, find the third angle first: $C = 180° - A - B$.
+The angles of a triangle sum to $180°$, and the angle sum often has to be used before the sine rule can reach the side wanted. Where two angles are given and the side wanted is opposite the third, find the third angle first: $C = 180° - A - B$.
 
 ```figure
 caption: The third angle, found before the side
@@ -391,7 +391,7 @@ questions:
 
 ## The ambiguous case
 
-$\sin^{-1}$ always returns an acute angle, but an obtuse angle can have the same sine: $\sin 130° = \sin 50°$, because the two are supplementary. When the side opposite the angle being found is longer than the side opposite the given angle, the triangle can be obtuse at that vertex, and the calculator's answer is only one of the two possibilities. The diagram settles it: where it shows the angle obtuse, subtract the calculator's answer from $180°$.
+$\sin^{-1}$ always returns an acute angle, but an obtuse angle can have the same sine: $\sin 130° = \sin 50°$, because the two are supplementary. When the side opposite the angle being found is longer than the side opposite the given angle, the triangle can be obtuse at that vertex, and the calculator's answer is only one of the two possibilities. The diagram decides between the two: where it shows the angle obtuse, subtract the calculator's answer from $180°$.
 
 ```figure
 caption: The other branch of $\sin^{-1}$

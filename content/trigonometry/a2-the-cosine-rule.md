@@ -10,7 +10,7 @@ The sine rule needs an opposite pair: a side and the angle directly across the t
 
 The cosine rule reaches a side from two sides and the angle between them: $a^2 = b^2 + c^2 - 2bc\cos A$, where $A$ is the angle between sides $b$ and $c$, opposite the side $a$ being found.
 
-At $A = 90°$, $\cos A = 0$ and the last term disappears, leaving $a^2 = b^2 + c^2$ — Pythagoras exactly. Away from a right angle, the term $2bc\cos A$ corrects for it: below $90°$, cosine is positive and the term subtracts, pulling $a$ in tighter than Pythagoras alone would give; above $90°$, cosine is negative and the term adds, stretching $a$ out further.
+At $A = 90°$, $\cos A = 0$ and the last term disappears, leaving $a^2 = b^2 + c^2$ — Pythagoras exactly. Away from a right angle, the term $2bc\cos A$ corrects for it: below $90°$, cosine is positive and the term subtracts, making $a$ shorter than Pythagoras alone would give; above $90°$, cosine is negative and the term adds, making $a$ longer.
 
 ```figure
 caption: A side from two sides and the angle between them
@@ -104,7 +104,7 @@ questions:
 
 ## The rule for an angle
 
-Three sides give no opposite pair either, so the sine rule cannot start there. The cosine rule rearranges to reach an angle instead: $\cos A = \dfrac{b^2 + c^2 - a^2}{2bc}$. The rearrangement is printed on the task's formulae list, so it does not have to be produced from memory under pressure — but knowing where it comes from, the earlier rule swapped around and solved for $\cos A$, avoids substitution slips about which side stands alone.
+Three sides give no opposite pair either, so the sine rule cannot start there. The cosine rule rearranges to reach an angle instead: $\cos A = \dfrac{b^2 + c^2 - a^2}{2bc}$. The rearrangement is printed on the task's formulae list, so it does not have to be produced from memory — but knowing where it comes from, the earlier rule swapped around and solved for $\cos A$, avoids substitution slips about which side stands alone.
 
 Unlike $\sin^{-1}$, $\cos^{-1}$ tells an obtuse angle from an acute one on its own: cosine is positive for an acute angle and negative for an obtuse one, and $\cos^{-1}$ returns the matching angle either way. There is no second branch to choose between, and no diagram needed to decide it.
 
@@ -200,13 +200,13 @@ questions:
 
 ## Order of operations
 
-The rule's most common slip is grouping the wrong way: computing $(b^2 + c^2 - 2bc)\cos A$ instead of $b^2 + c^2 - 2bc\cos A$. Only the $2bc$ term is multiplied by $\cos A$ — $b^2$ and $c^2$ stand outside it, added and subtracted before the cosine ever comes in.
+The common slip is grouping the wrong way: computing $(b^2 + c^2 - 2bc)\cos A$ instead of $b^2 + c^2 - 2bc\cos A$. Only the $2bc$ term is multiplied by $\cos A$: $b^2$ and $c^2$ stand outside it, added and subtracted before the cosine ever comes in.
 
 ```figure
 caption: Only $2bc$ is scaled by $\cos A$
 steps:
   - math: a^2 = 8^2 + 6^2 - 2(8)(6)\cos 60°
-    note: The same triangle as the opening figure — $b = 8$, $c = 6$, $A = 60°$.
+    note: "The same triangle as the opening figure: $b = 8$, $c = 6$, $A = 60°$."
   - math: a^2 = 64 + 36 - 48 = 52 \qquad\checkmark
     note: $2(8)(6)\cos 60° = 96 \times 0.5 = 48$, the product $2bc$, scaled by $\cos A$ on its own.
   - math: a^2 \neq (64 + 36 - 96)(0.5) = 2
@@ -217,7 +217,7 @@ steps:
 
 ## Practice
 
-Work these on paper before revealing anything. They are ordered easiest first, and the band each one is pitched at is the band the marker would award for doing it well. NZQA's clarification for this standard says that at Merit, *"students need to clearly indicate what they are calculating and their solutions need to be linked to the context"* — the sentence that finishes a context question is not decoration; it is where those marks sit.
+Work these on paper before revealing anything. They are ordered easiest first, and the band each one is pitched at is the band the marker would award for doing it well. NZQA's clarification for this standard says that at Merit, *"students need to clearly indicate what they are calculating and their solutions need to be linked to the context"* — the sentence that finishes a context question is where those marks sit.
 
 ```practice
 questions:
@@ -274,7 +274,7 @@ questions:
       - math: c^2 = 10^2 + 6^2 - 2(10)(6)\cos 100°
       - math: c^2 = 136 - 120\cos 100° = 156.8\ldots
       - math: c = \sqrt{156.8\ldots} = 12.5 \;\textsf{m}
-  - ask: A hiking course runs in three straight legs — $11$ km from the start to a turn point, $13$ km from there to a second point, and a final $19$ km leg directly back to the start. Find the angle of the turn, between the first two legs.
+  - ask: "A hiking course runs in three straight legs: $11$ km from the start to a turn point, $13$ km from there to a second point, and a final $19$ km leg directly back to the start. Find the angle of the turn, between the first two legs."
     diagram:
       points:
         A: [18, 0]
@@ -301,7 +301,7 @@ questions:
         note: The return leg, $19$ km, is opposite the turn angle and is the side that is squared and subtracted.
       - math: \cos A = \dfrac{-71}{286} = -0.2483\ldots
       - math: A = \cos^{-1}(-0.2483\ldots) = 104.4°
-  - ask: A hiking course runs in three straight legs — $10$ km from the start to a turn point, $12$ km from there to a second point, and a final $17$ km leg directly back to the start. Find the angle of the turn, between the first two legs.
+  - ask: "A hiking course runs in three straight legs: $10$ km from the start to a turn point, $12$ km from there to a second point, and a final $17$ km leg directly back to the start. Find the angle of the turn, between the first two legs."
     diagram:
       points:
         A: [15, 0]
@@ -382,7 +382,7 @@ questions:
       - math: c^2 = 72.04 - 67.2\cos 53° = 31.60\ldots
       - math: c = \sqrt{31.60\ldots} = 5.6 \;\textsf{km}
         note: The two hikers are $5.6$ km apart.
-  - ask: A delivery drone flies three straight legs to check a farm's paddocks — $150$ m, then $180$ m, then a final $240$ m leg directly back to the start. Find the angle of the turn between the first two legs, and state, with your reasoning, whether that turn is acute or obtuse.
+  - ask: "A delivery drone flies three straight legs to check a farm's paddocks: $150$ m, then $180$ m, then a final $240$ m leg directly back to the start. Find the angle of the turn between the first two legs, and state, with your reasoning, whether that turn is acute or obtuse."
     diagram:
       points:
         A: [4, 0]
@@ -411,7 +411,7 @@ questions:
         note: The value is negative, so the angle is already known to be obtuse before $\cos^{-1}$ is taken — no separate check is needed the way the sine rule would require one.
       - math: A = \cos^{-1}(-0.05) = 92.9°
         note: An obtuse turn of $92.9°$, only just past a right angle.
-  - ask: A delivery drone flies three straight legs to check a farm's paddocks — $140$ m, then $160$ m, then a final $220$ m leg directly back to the start. Find the angle of the turn between the first two legs, and state, with your reasoning, whether that turn is acute or obtuse.
+  - ask: "A delivery drone flies three straight legs to check a farm's paddocks: $140$ m, then $160$ m, then a final $220$ m leg directly back to the start. Find the angle of the turn between the first two legs, and state, with your reasoning, whether that turn is acute or obtuse."
     diagram:
       points:
         A: [6, 0]
@@ -447,6 +447,6 @@ questions:
 
 The cosine rule covers what the sine rule cannot reach: $a^2 = b^2 + c^2 - 2bc\cos A$ finds a side from two sides and the angle between them, and it reduces to Pythagoras exactly when that angle is $90°$. Rearranged, $\cos A = \dfrac{b^2 + c^2 - a^2}{2bc}$ finds an angle from three sides, and its sign settles acute or obtuse without any second case to consider.
 
-The rule's one common trap is grouping: only $2bc$ is multiplied by $\cos A$, and $b^2 + c^2$ stand outside that product.
+The rule's trap is grouping: only $2bc$ is multiplied by $\cos A$, and $b^2 + c^2$ stand outside that product.
 
 Between them, the sine rule and the cosine rule find any missing side or angle a triangle offers. The module's last lesson adds a third quantity, the triangle's area, and the question of which of the three tools fits a given piece of information.

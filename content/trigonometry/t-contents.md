@@ -78,7 +78,7 @@ The methods above, chosen and chained rather than named for you. This is what th
 
 Six topics, and only five formulae between them, each one line long and each doing one job. Module A carries three — the sine rule, the cosine rule, the area of a triangle — and Module B carries the other two, arc length and sector area, which are one idea applied twice: a fraction of the whole circle, set by the angle at the centre.
 
-The remaining two topics teach no formula at all, and they are the ones the standard is assessed on. The assessment task's figure is never a labelled triangle or a labelled sector; it is a plot of land, a logo, a solid — and the work is finding the triangles and sectors hiding inside it.
+The remaining two topics teach no formula at all, and they are the ones the standard is assessed on. The assessment task's figure is never a labelled triangle or a labelled sector; it is a plot of land, a logo, a solid — and the work is finding the triangles and sectors inside it.
 
 ```figure
 caption: What the five methods are for

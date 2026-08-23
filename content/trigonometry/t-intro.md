@@ -4,7 +4,7 @@
 
 ## Triangles with no right angle
 
-At Year 11 every triangle you solved had a right angle, because SOH-CAH-TOA needs one — the ratios are defined against a hypotenuse, and a triangle with no right angle has no hypotenuse to name. A surveyed boundary, a roof truss and a sail rarely oblige: the triangles the world hands you are usually the general kind.
+At Year 11 every triangle you solved had a right angle, because SOH-CAH-TOA needs one — the ratios are defined against a hypotenuse, and a triangle with no right angle has no hypotenuse to name. A surveyed boundary, a roof truss and a sail rarely include one: most triangles that need solving are the general kind.
 
 ```figure
 caption: A hypotenuse, and then none
@@ -52,11 +52,11 @@ This standard adds five methods to what SOH-CAH-TOA and Pythagoras already do: t
 
 ## How this standard is assessed
 
-Three credits, and it is **internal** — marked by the school through an assessment task, not sat in the November exam. There are no past papers and no examiner's reports for this standard. What follows is quoted from the standard's explanatory notes and from NZQA's moderation clarification for it.
+Three credits, and it is **internal** — marked by the school through an assessment task, not sat in the November exam. There are no past papers and no examiner's reports for this standard.
 
 Explanatory Note 4 of the standard says methods include a selection from those related to "length of an arc of a circle, area of a sector of a circle, sine rule, cosine rule, area of a triangle." That list is the whole subject; nothing outside it is assessed.
 
-The task is one extended problem, not a set of separate skill questions. NZQA's clarification for this standard says a task "with a number of discrete questions based on skills and straightforward calculations is not appropriate," and that where a task "has a series of instructions that lead students through a step or a sequence of steps towards the solution, it is likely that the opportunity for students to demonstrate all levels of thinking will be compromised." The task hands over a situation — a paddock, a subdivision, a logo — and leaves the choice of method to you.
+The task is one extended problem, not a set of separate skill questions. NZQA's clarification for this standard says a task "with a number of discrete questions based on skills and straightforward calculations is not appropriate," and that where a task "has a series of instructions that lead students through a step or a sequence of steps towards the solution, it is likely that the opportunity for students to demonstrate all levels of thinking will be compromised." The task sets a situation — a paddock, a subdivision, a logo — and leaves the choice of method to you.
 
 The standard's own achievement criteria set the ladder: Achieved is to "apply trigonometric relationships in solving problems"; Merit adds "using relational thinking"; Excellence adds "using extended abstract thinking." The clarification says what that means for the write-up at each grade.
 
@@ -72,10 +72,10 @@ Units follow the same ladder. The assessment schedule for the TKI task *School S
 
 ## What you do not have to memorise
 
-Of the three standards here, this is the one with no exam, so there is no exam formulae sheet. Instead the assessment task itself prints the formulae — Te Kura's assessment activity for this standard hands out exactly this reference list, and both TKI tasks instruct the teacher to provide a formulae sheet with the task.
+Of the three standards here, this is the one with no exam, so there is no exam formulae sheet. Instead the assessment task itself prints the formulae — Te Kura's assessment activity for this standard carries exactly this reference list, and both TKI tasks instruct the teacher to provide a formulae sheet with the task.
 
 ```figure
-caption: What the task hands you
+caption: What the task supplies
 steps:
   - math: |
       \dfrac{a}{\sin A} = \dfrac{b}{\sin B} = \dfrac{c}{\sin C}

@@ -71,7 +71,7 @@ questions:
       - math: L = \dfrac{72}{360} \times 2\pi(10)
       - math: L = 12.6 \;\textsf{m}
         note: The arc is $12.6$ m long.
-  - ask: A sector has a radius of 18 m and an angle of 50 degrees at the centre. Find the length of its arc.
+  - ask: A sector has a radius of $18$ m and an angle of $50°$ at the centre. Find the length of its arc.
     grade: achieved
     working:
       - math: L = \dfrac{50}{360} \times 2\pi(18)
@@ -83,7 +83,7 @@ questions:
 
 ## Sector area
 
-The area of a whole circle is $\pi r^2$. A sector's area is the same $\dfrac{\theta}{360}$ fraction of it, so $\textsf{Area} = \dfrac{\theta}{360} \times \pi r^2$ — the identical idea from the previous section, run against the area instead of the circumference.
+The area of a whole circle is $\pi r^2$. A sector's area is the same $\dfrac{\theta}{360}$ fraction of it, so $\textsf{Area} = \dfrac{\theta}{360} \times \pi r^2$ — the identical idea from the previous section, applied to the area instead of the circumference.
 
 ```figure
 caption: Sector area
@@ -144,7 +144,7 @@ questions:
     working:
       - math: \textsf{Area} = \dfrac{150}{360} \times \pi(6)^2
       - math: \textsf{Area} = 47.1 \;\textsf{m}^2
-  - ask: A sector has a radius of 14 cm and an angle of 45 degrees at the centre. Find its area.
+  - ask: A sector has a radius of $14$ cm and an angle of $45°$ at the centre. Find its area.
     grade: achieved
     working:
       - math: \textsf{Area} = \dfrac{45}{360} \times \pi(14)^2
@@ -221,7 +221,7 @@ questions:
         note: The arc first, on its own.
       - math: \textsf{Perimeter} = 12.2 + 5 + 5 = 22.2 \;\textsf{cm}
         note: Both radii added, with the unit carried through.
-  - ask: A sector has a radius of 11 m and an angle of 65 degrees at the centre. Find its perimeter.
+  - ask: A sector has a radius of $11$ m and an angle of $65°$ at the centre. Find its perimeter.
     grade: achieved
     working:
       - math: L = \dfrac{65}{360} \times 2\pi(11) = 12.5 \;\textsf{m}
@@ -234,7 +234,7 @@ questions:
 
 ## Working backwards
 
-Both formulae run the other way. Given the arc length and the radius, the fraction $\dfrac{\theta}{360}$ can be found and multiplied out to $\theta$; given the area and the angle, the same rearrangement isolates $r^2$ and a square root finishes it. Te Kura's farmer's field task lays a quad bike track around the paddock as "an arc of a circle," and hands over neither its radius nor the angle it turns through directly — a task built this way needs the formula run backward before the forward formula has anything to compute with.
+Both formulae run the other way. Given the arc length and the radius, the fraction $\dfrac{\theta}{360}$ can be found and multiplied out to $\theta$; given the area and the angle, the same rearrangement isolates $r^2$ and a square root finishes it. Te Kura's farmer's field task lays a quad bike track around the paddock as "an arc of a circle," and gives neither its radius nor the angle it turns through directly — a task built this way needs the formula run backward before the forward formula has anything to compute with.
 
 ```figure
 caption: Finding the angle from the arc
@@ -270,17 +270,17 @@ steps:
 ```practice
 caption: working backwards
 questions:
-  - ask: A sector has a radius of 9 m, and its arc is 14.8 m long. Find the size of the angle $\theta$ at the centre.
+  - ask: A sector has a radius of $9$ m, and its arc is $14.8$ m long. Find the size of the angle $\theta$ at the centre.
     grade: merit
     working:
       - math: \dfrac{\theta}{360} = \dfrac{14.8}{2\pi(9)}
       - math: \theta = \dfrac{14.8}{2\pi(9)} \times 360 = 94.2°
-  - ask: A sector has a radius of 16 m, and its arc is 20.5 m long. Find the size of the angle $\theta$ at the centre.
+  - ask: A sector has a radius of $16$ m, and its arc is $20.5$ m long. Find the size of the angle $\theta$ at the centre.
     grade: merit
     working:
       - math: \dfrac{\theta}{360} = \dfrac{20.5}{2\pi(16)}
       - math: \theta = \dfrac{20.5}{2\pi(16)} \times 360 = 73.4°
-  - ask: A sector has an angle of 72 degrees at the centre and an area of 141.4 cm². Find its radius $r$.
+  - ask: A sector has an angle of $72°$ at the centre and an area of $141.4$ cm². Find its radius $r$.
     grade: merit
     working:
       - math: 141.4 = \dfrac{72}{360} \times \pi r^2
@@ -288,7 +288,7 @@ questions:
       - math: r^2 = \dfrac{141.4 \times 360}{72\pi}
       - math: r = 15.0 \;\textsf{cm}
         note: The square root undoes the square last, once $r^2$ stands alone.
-  - ask: A sector has an angle of 54 degrees at the centre and an area of 47.1 cm². Find its radius $r$.
+  - ask: A sector has an angle of $54°$ at the centre and an area of $47.1$ cm². Find its radius $r$.
     grade: merit
     working:
       - math: 47.1 = \dfrac{54}{360} \times \pi r^2
@@ -372,7 +372,7 @@ questions:
       - math: \textsf{Sector} = \dfrac{80}{360} \times \pi(12)^2 = 100.5 \;\textsf{cm}^2
       - math: \textsf{Triangle} = \dfrac{1}{2}(12)(12)\sin 80° = 70.9 \;\textsf{cm}^2
       - math: \textsf{Segment} = 100.5 - 70.9 = 29.6 \;\textsf{cm}^2
-  - ask: A sector of radius 9 cm and angle 60 degrees is cut by the chord joining the two ends of its arc, into a triangle and a segment. Find the area of the segment, the part beyond the chord.
+  - ask: A sector of radius $9$ cm and angle $60°$ is cut by the chord joining the two ends of its arc, into a triangle and a segment. Find the area of the segment, the part beyond the chord.
     grade: merit
     working:
       - math: \textsf{Sector} = \dfrac{60}{360} \times \pi(9)^2 = 42.4 \;\textsf{cm}^2
@@ -388,57 +388,57 @@ Work these on paper before revealing anything. They are ordered easiest first, a
 
 ```practice
 questions:
-  - ask: A garden sprinkler sits at the centre of a circular lawn and oscillates through an angle of 80 degrees each pass, watering out to a radius of 6 m. Find the length of the arc the water reaches.
+  - ask: A garden sprinkler sits at the centre of a circular lawn and oscillates through an angle of $80°$ each pass, watering out to a radius of $6$ m. Find the length of the arc the water reaches.
     grade: achieved
     working:
       - math: L = \dfrac{80}{360} \times 2\pi(6)
       - math: L = 8.4 \;\textsf{m}
         note: The arc watered is $8.4$ m long.
-  - ask: A garden sprinkler sits at the centre of a circular lawn and oscillates through an angle of 100 degrees each pass, watering out to a radius of 9 m. Find the length of the arc the water reaches.
+  - ask: A garden sprinkler sits at the centre of a circular lawn and oscillates through an angle of $100°$ each pass, watering out to a radius of $9$ m. Find the length of the arc the water reaches.
     grade: achieved
     working:
       - math: L = \dfrac{100}{360} \times 2\pi(9)
       - math: L = 15.7 \;\textsf{m}
         note: The arc watered is $15.7$ m long.
-  - ask: A round pizza of radius 20 cm is cut into slices, each with an angle of 36 degrees at the centre. Find the area of one slice.
+  - ask: A round pizza of radius $20$ cm is cut into slices, each with an angle of $36°$ at the centre. Find the area of one slice.
     grade: achieved
     working:
       - math: \textsf{Area} = \dfrac{36}{360} \times \pi(20)^2
       - math: \textsf{Area} = 125.7 \;\textsf{cm}^2
-  - ask: A round pizza of radius 16 cm is cut into slices, each with an angle of 45 degrees at the centre. Find the area of one slice.
+  - ask: A round pizza of radius $16$ cm is cut into slices, each with an angle of $45°$ at the centre. Find the area of one slice.
     grade: achieved
     working:
       - math: \textsf{Area} = \dfrac{45}{360} \times \pi(16)^2
       - math: \textsf{Area} = 100.5 \;\textsf{cm}^2
-  - ask: A company's logo is a sector of radius 1.2 m and angle 130 degrees, edged in black paint. The company has 4.5 m of black paint. Find the length of edging the logo needs, and state whether the paint is enough.
+  - ask: A company's logo is a sector of radius $1.2$ m and angle $130°$, edged in black paint. The company has $4.5$ m of black paint. Find the length of edging the logo needs, and state whether the paint is enough.
     grade: merit
     working:
       - math: L = \dfrac{130}{360} \times 2\pi(1.2) = 2.7 \;\textsf{m}
         note: The arc, before the two radii are added.
       - math: \textsf{Perimeter} = 2.7 + 1.2 + 1.2 = 5.1 \;\textsf{m}
         note: The logo needs $5.1$ m of edging, which is more than the $4.5$ m of paint the company has — not enough.
-  - ask: A company's logo is a sector of radius 0.9 m and angle 150 degrees, edged in black paint. The company has 4.5 m of black paint. Find the length of edging the logo needs, and state whether the paint is enough.
+  - ask: A company's logo is a sector of radius $0.9$ m and angle $150°$, edged in black paint. The company has $4.5$ m of black paint. Find the length of edging the logo needs, and state whether the paint is enough.
     grade: merit
     working:
       - math: L = \dfrac{150}{360} \times 2\pi(0.9) = 2.4 \;\textsf{m}
         note: The arc, before the two radii are added.
       - math: \textsf{Perimeter} = 2.4 + 0.9 + 0.9 = 4.2 \;\textsf{m}
         note: The logo needs $4.2$ m of edging, which is within the $4.5$ m of paint the company has — enough, with $0.3$ m to spare.
-  - ask: A farm has a quad-bike track laid out as an arc of a circle, of radius 30 m. The track sweeps out an arc 47.1 m long before rejoining the boundary fence. Find the angle the track turns through, at the centre of the circle it follows.
+  - ask: A farm has a quad-bike track laid out as an arc of a circle, of radius $30$ m. The track sweeps out an arc $47.1$ m long before rejoining the boundary fence. Find the angle the track turns through, at the centre of the circle it follows.
     grade: merit
     working:
       - math: \dfrac{\theta}{360} = \dfrac{47.1}{2\pi(30)}
         note: The radius and the arc are both known this time, so the angle is what the rearranged formula finds.
       - math: \theta = \dfrac{47.1}{2\pi(30)} \times 360 = 90.0°
         note: The track turns through $90.0°$.
-  - ask: A farm has a quad-bike track laid out as an arc of a circle, of radius 25 m. The track sweeps out an arc 39.3 m long before rejoining the boundary fence. Find the angle the track turns through, at the centre of the circle it follows.
+  - ask: A farm has a quad-bike track laid out as an arc of a circle, of radius $25$ m. The track sweeps out an arc $39.3$ m long before rejoining the boundary fence. Find the angle the track turns through, at the centre of the circle it follows.
     grade: merit
     working:
       - math: \dfrac{\theta}{360} = \dfrac{39.3}{2\pi(25)}
         note: The radius and the arc are both known this time, so the angle is what the rearranged formula finds.
       - math: \theta = \dfrac{39.3}{2\pi(25)} \times 360 = 90.1°
         note: The track turns through $90.1°$.
-  - ask: A stained-glass panel is shaped as a sector of radius 40 cm and angle 100 degrees. A straight board replaces the piece below the chord, and glass fills the curved section above it. Find the area of glass needed.
+  - ask: A stained-glass panel is shaped as a sector of radius $40$ cm and angle $100°$. A straight board replaces the piece below the chord, and glass fills the curved section above it. Find the area of glass needed.
     grade: excellence
     working:
       - math: \textsf{Sector} = \dfrac{100}{360} \times \pi(40)^2 = 1396.26 \;\textsf{cm}^2
@@ -446,7 +446,7 @@ questions:
       - math: \textsf{Triangle} = \dfrac{1}{2}(40)(40)\sin 100° = 787.85 \;\textsf{cm}^2
       - math: \textsf{Glass needed} = 1396.26 - 787.85 = 608.4 \;\textsf{cm}^2
         note: The panel needs $608.4$ cm$^2$ of glass — the answer stated in the terms the question asked for, with its unit.
-  - ask: A stained-glass panel is shaped as a sector of radius 30 cm and angle 130 degrees. A straight board replaces the piece below the chord, and glass fills the curved section above it. Find the area of glass needed.
+  - ask: A stained-glass panel is shaped as a sector of radius $30$ cm and angle $130°$. A straight board replaces the piece below the chord, and glass fills the curved section above it. Find the area of glass needed.
     grade: excellence
     working:
       - math: \textsf{Sector} = \dfrac{130}{360} \times \pi(30)^2 = 1021.0 \;\textsf{cm}^2

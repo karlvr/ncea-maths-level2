@@ -2,7 +2,7 @@
 
 ---
 
-A quadrilateral has no rule of its own. Neither does a house-shaped plot, a company sign, or a paddock with an odd corner cut off. Every rule so far — the sine rule, the cosine rule, the area formula, arc length, sector area — works on a triangle or a sector, and most of what an assessment task hands over is neither. NZQA's clarification for this standard gives the example directly: the calculations must have a purpose, "for example determining a total area that will be subdivided." A composite figure gets a rule applied to it by being cut into pieces that already have one. The cut is the student's first decision, and this lesson is about making it and using what it produces.
+A quadrilateral has no rule of its own. Neither does a house-shaped plot, a company sign, or a paddock with an odd corner cut off. Every rule so far — the sine rule, the cosine rule, the area formula, arc length, sector area — works on a triangle or a sector, and most of what an assessment task sets is neither. NZQA's clarification for this standard gives the example directly: the calculations must have a purpose, "for example determining a total area that will be subdivided." A composite figure gets a rule applied to it by being cut into pieces that already have one. The cut is the first decision.
 
 ---
 
@@ -72,10 +72,10 @@ steps:
   - math: AC^2 \approx 1317.6 \qquad AC \approx 36.3\ \textsf{m}
     note: "Round the length for the answer, but keep the squared value, $1317.6$, for the next triangle. Squaring the rounded $36.3$ instead would carry a small error forward."
   - math: \textsf{Area of } \triangle ACD = \tfrac12(34)(27)\sin 72° \approx 436.5\ \textsf{m}^2
-    note: "Two sides and the angle between them is exactly the area formula's own shape, so this comes free once the diagonal is drawn."
+    note: "Two sides and the angle between them is exactly the area formula's own shape, so the area uses the same given information as the diagonal did."
 ```
 
-The area formula and the cosine rule both start from the same given information — two sides and the angle between them — which is why triangle $ACD$ answers to both without any extra work. Triangle $ABC$ does not have that shape yet: it has two known sides, $AB$ and $BC$, and a third side, $AC$, that has just been found.
+The area formula and the cosine rule both start from the same given information — two sides and the angle between them — which is why triangle $ACD$ gives both without any extra work. Triangle $ABC$ does not have that shape yet: it has two known sides, $AB$ and $BC$, and a third side, $AC$, that has just been found.
 
 ```practice
 caption: splitting a quadrilateral
@@ -102,7 +102,7 @@ questions:
 
 ## Carrying the shared side forward
 
-The diagonal just found is the bridge between the two triangles: a value computed inside one becomes a given inside the other. Once it is there, triangle $ABC$ has three known sides, and the cosine rule finds an angle.
+The diagonal just found is shared by the two triangles: a value computed inside one becomes a given inside the other. Once it is there, triangle $ABC$ has three known sides, and the cosine rule finds an angle.
 
 ```figure
 caption: The second triangle, drawn on its own
@@ -215,7 +215,7 @@ steps:
   - math: \textsf{Red paint area} = 100.5 - 31.0 = 69.5\ \textsf{cm}^2
     note: "The red area is what remains of the sector once the emblem is cut out."
   - math: \textsf{Black edging} = \dfrac{80}{360}\times2\pi\times12 \;+\; 2(12) \approx 40.8\ \textsf{cm}
-    note: "The 2.4D task states the rule for this edge directly: \"the black outline goes around the outer edges of the sector.\" That is the arc and the two straight sides — leaving out the two radii is the easiest way to under-order the trim."
+    note: "The 2.4D task states the rule for this edge directly: \"the black outline goes around the outer edges of the sector.\" That is the arc and the two straight sides — leaving out the two radii is the easiest way to order too little trim."
 ```
 
 ```practice
@@ -251,7 +251,7 @@ At Achieved, "the result of a numerical calculation only is insufficient, workin
 
 At Merit, "students need to clearly indicate what they are calculating and their solutions need to be linked to the context" — so each stage of the chain says what it is finding before it finds it, and the final figure carries a unit and a sentence connecting it back to what was asked. The 2.4A assessment schedule adds a practical relief alongside this: "any appropriate and correct rounding is acceptable (including truncation) and does not need to be stated." The number of decimal places is not being marked; the statement of what the number is and the units it carries are.
 
-At Excellence, "the response needs to be clearly communicated with correct mathematical statements, and students need to explain any decisions they make in the solution of the problem." A decision worth explaining is exactly what appears in the next section: which cut to make, and why it satisfies the condition asked for.
+At Excellence, "the response needs to be clearly communicated with correct mathematical statements, and students need to explain any decisions they make in the solution of the problem." In this standard's tasks, the decision worth explaining is the cut: which one to make, and why it satisfies the condition asked for.
 
 ---
 
@@ -267,7 +267,7 @@ $\triangle ACD$ already stands alone as one section, at $436.5$ m² — well cle
 
 $$\tfrac12 \cdot BM \cdot BN \cdot \sin B = \tfrac14\left(\tfrac12 \cdot BA \cdot BC \cdot \sin B\right) = \tfrac14 \times 634.6 \approx 158.6\ \textsf{m}^2,$$
 
-one quarter of $\triangle ABC$, because halving both sides that meet at $B$ quarters the area between them. The remaining piece, quadrilateral $AMNC$, takes the other three-quarters: about $475.9$ m². Three sections result — $436.5$ m², $158.6$ m², and $475.9$ m² — every one of them above $150$ m², and $AMNC$ is not a triangle, so the condition is met.
+one quarter of $\triangle ABC$, because halving both sides that meet at $B$ quarters the area between them. The remaining piece, quadrilateral $AMNC$, takes the other three-quarters: about $475.9$ m². Three sections result: $436.5$ m², $158.6$ m² and $475.9$ m². Every one of them is above $150$ m², and $AMNC$ is not a triangle, so the condition is met.
 
 This is the shape the exemplar rewards at Excellence: a strategy "devised to investigate the situation," with a concrete subdivision "not all of which are triangles." Its commentary at the Excellence boundary also names what separates a secure Excellence from a borderline one — "finding and stating clearly the dimensions of the four subsections," not just the areas. A subdivision is not finished at the areas that satisfy the condition; the lengths that would let someone else mark it out on the ground belong in the answer too.
 

@@ -111,7 +111,7 @@ steps:
     note: "A second right triangle: $AC$, the vertical edge $CG$, and the diagonal $AG$, with the right angle where the vertical edge meets the base."
 ```
 
-Two applications of Pythagoras, chained: the base diagonal is a right triangle inside a rectangle you already have, and the full diagonal is a right triangle built from that base diagonal and a vertical edge. Nothing here is new mathematics — Pythagoras and SOH-CAH-TOA are the right-angle specialists from Year 11, and a box's edges hand them a right angle at every corner.
+Two applications of Pythagoras, chained: the base diagonal is a right triangle inside a rectangle you already have, and the full diagonal is a right triangle built from that base diagonal and a vertical edge. Nothing here is new mathematics — Pythagoras and SOH-CAH-TOA are the right-angle methods from Year 11, and every corner of a box gives them one.
 
 ```practice
 caption: the diagonal of a box
@@ -211,7 +211,7 @@ questions:
 
 ## Pyramids: a triangle that is not a right angle
 
-A box hands you a right angle at every corner. A pyramid does not — its slant edges meet the base at an angle that is not $90°$, and two of its slant edges meet each other at the apex in a triangle with no right angle anywhere in it. Both triangles still come from the solid the same way: find them, draw them flat, and solve them.
+A box has a right angle at every corner. A pyramid does not — its slant edges meet the base at an angle that is not $90°$, and two of its slant edges meet each other at the apex in a triangle with no right angle anywhere in it. Both triangles still come from the solid the same way: find them, draw them flat, and solve them.
 
 ```figure
 caption: The height of a pyramid
@@ -336,7 +336,7 @@ questions:
 
 ## Redraw the triangle
 
-Every worked figure in this lesson has done the same thing before any number was substituted: pulled one triangle out of the solid and drawn it on its own, with only its own three sides and angles labelled. That drawing is not a diagram added for this page — it is the method. A solid holds several triangles at once, sharing edges and vertices with each other, and reading a rule's three pieces of information off a crowded 3D sketch is where a correct method most often turns into a wrong substitution. Redrawn flat, a triangle carries nothing that does not belong to it.
+Every worked figure in this lesson has done the same thing before any number was substituted: pulled one triangle out of the solid and drawn it on its own, with only its own three sides and angles labelled. That drawing is not a diagram added for this page — it is the method. A solid holds several triangles at once, sharing edges and vertices with each other, and reading a rule's three pieces of information off a crowded 3D sketch is where a correct method turns into a wrong substitution. Redrawn flat, a triangle carries nothing that does not belong to it.
 
 The redrawn triangle is also the working NZQA's clarification asks for. A response that jumps from a solid's dimensions to a substituted formula, with no drawing in between, has nowhere to show which triangle the numbers came from — and at Excellence, where "correct mathematical statements" and an explained strategy are what the grade is judging, the triangle drawn on its own is one of those statements.
 
@@ -406,7 +406,7 @@ questions:
       - math: "\\textsf{dist}^2 = d_1^2 + d_2^2 - 2d_1d_2\\cos75° = 252 + 576 - 2(15.9)(24)\\cos75°"
         note: "$d_1$, $d_2$ and the angle between them lie flat on the ground — a triangle with no right angle in it, so the cosine rule is what reaches the distance between the anchors. Its two sides are the unrounded $252$ and $576$."
       - math: \textsf{dist} \approx 25.1\ \textsf{m}
-        note: "The two anchor points are $25.1$ m apart — two right triangles found the ground distances, and one flat triangle at ground level connected them, the strategy this question needed devised rather than instructed."
+        note: "The two anchor points are $25.1$ m apart. Two right triangles found the ground distances, and one flat triangle at ground level connected them — the strategy devised rather than set out by the question."
   - ask: A vertical mast stands $15$ m tall. Two straight wires run from its top to two anchor points on level ground, one wire $20$ m long and the other $25$ m long. Looking straight down on the mast, the angle between the two wires' ground directions, measured at the foot of the mast, is $68°$. Calculate the distance between the two anchor points.
     grade: excellence
     working:
@@ -426,4 +426,4 @@ questions:
 
 Three dimensions add no sixth method. A box, a pyramid or a mast holds several flat triangles at once — right-angled, where an edge meets a face square on, and oblique, where two sloping edges meet without one. Finding either kind is the same first move every time: identify the triangle, draw it on its own with only its own labels, and solve it with whichever of the five methods its given information matches.
 
-That is the whole standard, seen from its far end. Length of an arc, area of a sector, the sine rule, the cosine rule, the area of a triangle — five methods, each one Achieved on its own. A figure with no rule of its own is cut into pieces that have one, in two dimensions or projected out of three. What the grades measure beyond that is the write-up: a method used and its answer named, a chain of them linked to the context with units, or a strategy devised and explained in correct mathematical statements. The task itself is one extended problem, not a list of these skills in turn, and everything in this subject is what it draws from.
+That is the whole standard. Length of an arc, area of a sector, the sine rule, the cosine rule, the area of a triangle — five methods, each one Achieved on its own. A figure with no rule of its own is cut into pieces that have one, in two dimensions or projected out of three. What the grades measure beyond that is the write-up: a method used and its answer named, a chain of them linked to the context with units, or a strategy devised and explained in correct mathematical statements. The task itself is one extended problem, not a list of these skills in turn, and everything in this subject is what it draws from.

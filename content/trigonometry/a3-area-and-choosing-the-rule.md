@@ -92,7 +92,7 @@ questions:
 
 ## Finding the angle first
 
-Where the included angle is not part of the given information, find it first, then use the area formula on the two sides it sits between. Which method supplies it depends on what else is given: the angle sum where two other angles are known, the sine rule where an opposite pair is available, or the cosine rule where three sides are given and nothing else. Three sides is the shape most worth drilling, because it is the one the area formula cannot start from directly.
+Where the included angle is not part of the given information, find it first, then use the area formula on the two sides it sits between. Which method supplies it depends on what else is given: the angle sum where two other angles are known, the sine rule where an opposite pair is available, or the cosine rule where three sides are given and nothing else. Three sides is the only shape of given information with no angle in it at all.
 
 ```figure
 caption: An angle found before the area
@@ -114,7 +114,7 @@ steps:
           label: 8 m
     note: Three sides, no angle — the area formula needs an angle between two of them, so one has to be found first.
   - math: \cos A = \dfrac{9^2 + 8^2 - 12^2}{2(9)(8)}
-    note: The cosine rule reaches angle $A$, between the two sides — $b = 9$ and $c = 8$ — that will carry the area formula.
+    note: The cosine rule reaches angle $A$, between the two sides, $b = 9$ and $c = 8$, that will carry the area formula.
   - math: \cos A = \dfrac{1}{144} = 0.0069\ldots
   - math: A = \cos^{-1}(0.0069\ldots) = 89.6°
   - math: \textsf{Area} = \dfrac{1}{2}(9)(8)\sin 89.6°
@@ -505,7 +505,7 @@ questions:
     working:
       - math: c^2 = 4.2^2 + 3.6^2 - 2(4.2)(3.6)\cos 110°
       - math: c^2 = 30.60 - 30.24\cos 110° = 40.94\ldots
-        note: $\cos 110°$ is negative, so subtracting it adds to the total — the angle is obtuse, and the foot is stretched out longer than either edge given.
+        note: $\cos 110°$ is negative, so subtracting it adds to the total — the angle is obtuse, and the foot is longer than either of the given edges.
       - math: c = \sqrt{40.94\ldots} = 6.4 \;\textsf{m}
         note: The sail's foot is $6.4$ m long.
   - ask: A triangular sail has two edges of length $5.0$ m and $3.8$ m, with an angle of $115°$ between them. Find the length of the sail's third edge, its foot.
