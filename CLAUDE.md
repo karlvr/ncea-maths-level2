@@ -178,6 +178,39 @@ candidates may be required to do.
 
 ---
 
+## Working starts from the formulae sheet
+
+`docs/algebra/91261-frm-2025.pdf` is the one sheet the candidate carries into
+the 91261, 91262 and 91267 papers. It is thin. It gives the quadratic formula
+and the discriminant, the four logarithm laws, and the standard normal table.
+Everything else — every differentiation rule, every integration rule — the
+candidate has to know. Trigonometry is internal and has no sheet at all; Te
+Kura's booklet fixes its formulae instead.
+
+**Where the sheet carries a relationship, a step that states it alone, before
+any numbers, states it as the sheet prints it.** Where the answer needs a
+different subject, the rearrangement follows on the same step, after
+`\quad\Rightarrow\quad`:
+
+```figure
+steps:
+  - math: \Delta = b^2 - 4ac
+  - math: \Delta = 5^2 - 4 \times 2 \times 3 = 1
+```
+
+A step that names a relationship and substitutes into it on one line may keep
+the sheet's own form, or an obvious one-symbol rearrangement of it. The numbers
+are the evidence there, and an arrow would only lengthen the line. A form the
+sheet does not carry at all still opens with its arrow, even when it
+substitutes.
+
+Where the sheet gives nothing — the whole of calculus — the lesson's own
+derived rule is the starting point instead. Derive it once, in a figure of its
+own, then use it. Say in the prose that the sheet does not carry it, so the
+student knows it has to be remembered.
+
+---
+
 ## Figures
 
 Full notation: [`content/FIGURE-NOTATION.md`](content/FIGURE-NOTATION.md). In
