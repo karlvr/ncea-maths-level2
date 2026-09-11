@@ -93,6 +93,40 @@ be calculated before". Keep every hedge: "may have failed" must not become
    write it as "the sign, positive or negative", or define it: "The sign of a
    number is whether it is positive or negative." "Minus sign", "the sign of
    the discriminant" and "differ by a sign" are clear as they are.
+11. **Negate the verb, not the noun.** "Does not change the gradient", not
+   "changes no gradient". "Does not earn marks", not "earns nothing". A
+   sentence whose subject is "nothing" is usually plainer turned round: "a sum
+   inside a logarithm cannot be made simpler", not "nothing turns a sum inside
+   a logarithm into anything simpler". "There is no", "has no" and "no real
+   roots" are ordinary English and stay.
+
+### The register
+
+The reader is a 17-year-old student of mathematics who has come to a section
+to fill a gap in their understanding. Write for that reader, in the structural
+discipline of Simplified Technical English: the `asd-ste100` skill in its
+STE-flavoured mode, with the lexical rules as a direction only. The register
+applies to prose, to `note` and `ask` text, and to captions. It does not apply
+inside `math:` or to quoted text.
+
+- **One idea per sentence, and at most about 25 words.** A sentence that joins
+  two ideas with a dash or a semicolon is two sentences. No semicolons.
+- **Active voice where the actor is the student or a named thing.** "You read
+  the gradient off the sketch", not "the gradient is read off the sketch". A
+  passive stays where the actor is the examiner or is unknown: "the crossings
+  are marked".
+- **Plain verbs, and no phrasal verbs.** "Draw the rest", not "fill in the
+  rest". A phrasal verb that is the mathematical term, "take out a common
+  factor", stays.
+- **Common words.** Where a rarer word and a common word mean the same thing,
+  use the common one. A technical word is defined at its first use in the
+  lesson.
+- **Keep the subject, the verb and the article.** "The gradient function of a
+  cubic is a parabola", not "a cubic's is a parabola".
+- **Keep every hedge.** "Usually", "often" and "may" carry a claim about the
+  examination, and a shorter sentence that drops one is a different claim.
+- **Referring to an earlier section is fine.** "The same triangle as the
+  opening figure" is allowed. The section still defines its own terms.
 
 **Mathematics in prose is written as notation**, inline: `$2x^2 - 18$`, not "two
 $x$ squared minus eighteen". It sets in the same serif as the figures, so a
