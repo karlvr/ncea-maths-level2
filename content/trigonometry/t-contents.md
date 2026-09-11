@@ -2,7 +2,7 @@
 
 ---
 
-This page is the whole of Level 2 trigonometry in one list: three modules, six topics, and the skills inside each topic. Nothing is taught here. It shows the size of the subject before you start on it, because a textbook shows one page at a time and never states how much there is altogether.
+This page is the whole of Level 2 trigonometry in one list: three modules, six topics, and the skills inside each topic. Nothing is taught here. It shows the size of the subject before you start on it. That matters because a textbook shows one page at a time and never states how much there is altogether.
 
 Read the list now, and again before the assessment task. In between, treat it as a checklist and mark the skills you can already do.
 
@@ -33,7 +33,7 @@ Any triangle, not only the right-angled kind.
 
 - area $= \dfrac{1}{2}ab\sin C$, from two sides and the angle between them
 - finding the missing angle first, where the area formula needs one it has not been given
-- choosing the rule a triangle's given information calls for: an opposite pair to the sine rule, two sides and the included angle to the cosine rule or the area formula, three sides to the cosine rule for an angle
+- choosing the rule the given information of a triangle needs: an opposite pair to the sine rule, two sides and the included angle to the cosine rule or the area formula, three sides to the cosine rule for an angle
 
 ---
 
@@ -69,16 +69,16 @@ The methods above, chosen and chained rather than named for you. This is what th
 - finding the flat triangle a three-dimensional question is really asking about, and redrawing it on its own
 - the diagonal of a box, as two right-angled triangles chained together
 - the angle between a sloping edge and the base, read from the right triangle it sits in
-- a pyramid's non-right triangles, solved with the sine rule and the cosine rule once redrawn flat
+- the non-right triangles of a pyramid, solved with the sine rule and the cosine rule once redrawn flat
 - the redrawn triangle itself, labelled with only what belongs to it, as part of the communication the grades reward
 
 ---
 
 ## How much of it is really new
 
-Six topics, and only five formulae between them, each one line long and each doing one job. Module A carries three — the sine rule, the cosine rule, the area of a triangle — and Module B carries the other two, arc length and sector area, which are one idea applied twice: a fraction of the whole circle, set by the angle at the centre.
+Six topics, and only five formulae between them, each one line long and each doing one job. Module A carries three: the sine rule, the cosine rule and the area of a triangle. Module B carries the other two, arc length and sector area. Those two are one idea applied twice: a fraction of the whole circle, set by the angle at the centre.
 
-The remaining two topics teach no formula at all, and they are the ones the standard is assessed on. The assessment task's figure is never a labelled triangle or a labelled sector; it is a plot of land, a logo, a solid — and the work is finding the triangles and sectors inside it.
+The remaining two topics teach no formula at all, and they are the ones the standard is assessed on. The figure in the assessment task is never a labelled triangle or a labelled sector. It is a plot of land, a logo or a solid, and the work is finding the triangles and sectors inside it.
 
 ```figure
 caption: What the five methods are for
@@ -94,7 +94,7 @@ steps:
         - [B, C]
         - [C, D]
         - [D, A]
-    note: The task's figure has no rule of its own — no formula in the list answers a quadrilateral.
+    note: The figure in the task has no rule of its own. No formula in the list answers a quadrilateral.
   - diagram:
       points:
         A: [0, 0]
@@ -113,4 +113,4 @@ steps:
     note: One added line splits it into two triangles, and every method in Module A reaches them. Module C teaches the splitting.
 ```
 
-What is new in this subject is not the formulae, which A1 through B1 teach one at a time on a figure drawn on its own. What Module C adds is deciding — which line to draw, which rule each piece calls for, in what order the pieces reach the answer — and writing the chain up so a marker can follow it. That is where the standard's grades are earned: not in a harder formula, but in a longer chain of the same five.
+What is new in this subject is not the formulae, which A1 through B1 teach one at a time on a figure drawn on its own. Module C adds the decisions: which line to draw, which rule each piece needs, and in what order the pieces reach the answer. It also adds the write-up of the chain, so that a marker can follow it. That is where the grades of the standard are earned: not in a harder formula, but in a longer chain of the same five.

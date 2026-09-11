@@ -2,15 +2,15 @@
 
 ---
 
-Module A solved triangles: three sides, three angles, any shape at all. The two methods left on the standard's list leave triangles behind for a different figure — the slice of a circle cut out by two radii and the arc between them, called a **sector**. This lesson finds the length of a sector's arc and the area of the sector, and both come from one fraction of the whole circle.
+Module A solved triangles: three sides, three angles, any shape at all. The two methods left on the standard's list apply to a different figure. A **sector** is the slice of a circle cut out by two radii and the arc between them. This lesson finds the length of the arc of a sector and the area of the sector. Both come from one fraction of the whole circle.
 
 ---
 
 ## Arc length
 
-A sector is a fraction of its circle, and the angle at the centre gives the fraction: an angle of $\theta$ degrees is $\dfrac{\theta}{360}$ of the full turn, because $360°$ is one complete revolution.
+A sector is a fraction of its circle, and the angle at the centre gives the fraction. An angle of $\theta$ degrees is $\dfrac{\theta}{360}$ of the full turn, because $360°$ is one complete revolution.
 
-The circumference of a whole circle is $2\pi r$, carried over from Year 11 unchanged. An arc is that same fraction of the circumference, so its length is $\dfrac{\theta}{360} \times 2\pi r$. Te Kura's assessment booklet for this standard prints the same relationship as one fraction, $\dfrac{\theta \times 2\pi r}{360}$ — algebraically identical, the parts grouped differently on the page.
+The circumference of a whole circle is $2\pi r$, unchanged from Year 11. An arc is that same fraction of the circumference, so its length is $\dfrac{\theta}{360} \times 2\pi r$. Te Kura's assessment booklet for this standard prints the same relationship as one fraction, $\dfrac{\theta \times 2\pi r}{360}$. The two forms are algebraically identical, with the parts grouped differently on the page.
 
 ```figure
 caption: Arc length
@@ -38,9 +38,9 @@ steps:
           to: B
     note: The radius and the angle at the centre are given. The arc is the $\dfrac{40}{360}$ fraction of the full circumference.
   - math: L = \dfrac{40}{360} \times 2\pi(15)
-    note: Substitute into the formula — the fraction of the circle, times the full circumference.
+    note: "Substitute into the formula: the fraction of the circle, times the full circumference."
   - math: L = 10.5 \;\textsf{m}
-    note: The arc is $10.5$ m long. At Achieved, a number on its own is not enough — the answer has to say what it is a length of.
+    note: The arc is $10.5$ m long. At Achieved, a number on its own is not enough. The answer has to say what it is a length of.
 ```
 
 ```practice
@@ -85,7 +85,7 @@ questions:
 
 ## Sector area
 
-The area of a whole circle is $\pi r^2$. A sector's area is the same $\dfrac{\theta}{360}$ fraction of it, so $\textsf{Area} = \dfrac{\theta}{360} \times \pi r^2$ — the identical idea from the previous section, applied to the area instead of the circumference.
+The area of a whole circle is $\pi r^2$. The area of a sector is the same $\dfrac{\theta}{360}$ fraction of it, so $\textsf{Area} = \dfrac{\theta}{360} \times \pi r^2$. It is the same idea as the previous section, applied to the area instead of the circumference.
 
 ```figure
 caption: Sector area
@@ -111,9 +111,9 @@ steps:
         - center: O
           from: A
           to: B
-    note: The same two facts as before — a radius and the angle at the centre — but now the fraction is taken of the area.
+    note: The same two facts as before, a radius and the angle at the centre. Now the fraction is taken of the area.
   - math: \textsf{Area} = \dfrac{110}{360} \times \pi(9)^2
-    note: The radius is squared before the fraction is taken, because it is the area formula being scaled down, not the radius.
+    note: Square the radius before you take the fraction, because the fraction scales the area formula, not the radius.
   - math: \textsf{Area} = 77.8 \;\textsf{cm}^2
 ```
 
@@ -157,7 +157,7 @@ questions:
 
 ## The perimeter of a sector
 
-A sector's boundary is not the arc alone. Three pieces close the shape: the arc, and the two straight radii on either side of it. The perimeter is all three added together — the trap is stopping at the arc, because the arc is the only piece the two formulae above ever compute, and the two radii are easy to forget precisely because they need no formula at all, only the value already given.
+The boundary of a sector is not the arc alone. Three pieces close the shape: the arc, and the two straight radii on either side of it. The perimeter is all three added together. The trap is stopping at the arc, because the arc is the only piece the two formulae above ever compute. The two radii are easy to forget precisely because they need no formula at all, only the value already given.
 
 ```figure
 caption: The perimeter of a sector
@@ -185,12 +185,12 @@ steps:
           to: B
     note: A radius and the angle at the centre, as before.
   - math: L = \dfrac{95}{360} \times 2\pi(8) = 13.3 \;\textsf{m}
-    note: The arc alone — and the answer a question asking only for arc length would stop at.
+    note: The arc alone. A question asking only for arc length would stop here.
   - math: \textsf{Perimeter} = 13.3 + 8 + 8 = 29.3 \;\textsf{m}
-    note: The perimeter adds the two radii the diagram already gave — three parts, not one.
+    note: "The perimeter adds the two radii the diagram already gave: three parts, not one."
 ```
 
-Units are part of the answer, not a label added afterward. The TKI task *Signing our name* asks for the length of black paint needed to edge a sector-shaped company logo, and its instructions describe the logo as "edged in black," where "the black outline goes around the outer edges of the sector" — the arc and both straight sides. That task's assessment schedule accepts "any correct rounding/truncation" at every grade, but requires "some evidence of correct units" even at Achieved, rising to "correct units are required" at Merit and Excellence.
+Units are part of the answer, not a label added afterward. The TKI task *Signing our name* asks for the length of black paint needed to edge a sector-shaped company logo. Its instructions describe the logo as "edged in black," where "the black outline goes around the outer edges of the sector". That outline is the arc and both straight sides. That task's assessment schedule accepts "any correct rounding/truncation" at every grade. But it requires "some evidence of correct units" even at Achieved, and at Merit and Excellence it states that "correct units are required".
 
 ```practice
 caption: perimeter
@@ -236,7 +236,7 @@ questions:
 
 ## Working backwards
 
-Both formulae run the other way. Given the arc length and the radius, the fraction $\dfrac{\theta}{360}$ can be found and multiplied out to $\theta$; given the area and the angle, the same rearrangement isolates $r^2$ and a square root finishes it. Te Kura's farmer's field task lays a quad bike track around the paddock as "an arc of a circle," and gives neither its radius nor the angle it turns through directly — a task built this way needs the formula run backward before the forward formula has anything to compute with.
+Both formulae run the other way. Given the arc length and the radius, you can find the fraction $\dfrac{\theta}{360}$ and multiply it by $360$ to reach $\theta$. Given the area and the angle, the same rearrangement isolates $r^2$, and a square root finishes it. Te Kura's farmer's field task lays a quad bike track around the paddock as "an arc of a circle." It gives neither the radius of the track nor the angle it turns through directly. A task built this way needs the formula run backward before the forward formula has anything to compute with.
 
 ```figure
 caption: Finding the angle from the arc
@@ -263,7 +263,7 @@ steps:
           from: A
           to: B
           label: 23.0 m
-    note: The radius and the arc are given this time; the angle is wanted.
+    note: The radius and the arc are given this time. The angle is wanted.
   - math: L = \dfrac{\theta}{360} \times 2\pi r \quad\Rightarrow\quad \dfrac{\theta}{360} = \dfrac{23.0}{2\pi(12)}
     note: The same formula, rearranged so that the fraction sits on its own.
   - math: \theta = \dfrac{23.0}{2\pi(12)} \times 360 = 109.8°
@@ -303,7 +303,7 @@ questions:
 
 ## The segment
 
-A chord — a straight line joining two points on the circle — cuts a sector into two pieces: the triangle formed by the chord and the two radii, and the curved piece beyond it, called the **segment**. The triangle has two sides equal to the radius and the angle $\theta$ between them, so its area is the area-of-a-triangle formula with both sides set to $r$: $\dfrac{1}{2}(r)(r)\sin\theta = \dfrac{1}{2}r^2\sin\theta$. The segment is what the sector leaves over once that triangle is taken out.
+A chord is a straight line joining two points on the circle. A chord cuts a sector into two pieces: the triangle formed by the chord and the two radii, and the curved piece beyond it. The curved piece is called the **segment**. The triangle has two sides equal to the radius and the angle $\theta$ between them. Its area is the area-of-a-triangle formula with both sides set to $r$: $\dfrac{1}{2}(r)(r)\sin\theta = \dfrac{1}{2}r^2\sin\theta$. The segment is what remains of the sector once that triangle is removed.
 
 ```figure
 caption: The segment
@@ -337,7 +337,7 @@ steps:
   - math: \textsf{Sector} = \dfrac{70}{360} \times \pi(10)^2 = 61.1 \;\textsf{cm}^2
   - math: \textsf{Triangle} = \dfrac{1}{2}(10)(10)\sin 70° = 47.0 \;\textsf{cm}^2
   - math: \textsf{Segment} = 61.1 - 47.0 = 14.1 \;\textsf{cm}^2
-    note: Two areas found by two different methods, then one subtracted from the other — the first genuine chain in this module.
+    note: Two areas found by two different methods, then one subtracted from the other. This is the first genuine chain in this module.
 ```
 
 ```practice
@@ -418,14 +418,14 @@ questions:
       - math: L = \dfrac{130}{360} \times 2\pi(1.2) = 2.7 \;\textsf{m}
         note: The arc, before the two radii are added.
       - math: \textsf{Perimeter} = 2.7 + 1.2 + 1.2 = 5.1 \;\textsf{m}
-        note: The logo needs $5.1$ m of edging, which is more than the $4.5$ m of paint the company has — not enough.
+        note: The logo needs $5.1$ m of edging. That is more than the $4.5$ m of paint the company has, so the paint is not enough.
   - ask: A company's logo is a sector of radius $0.9$ m and angle $150°$, edged in black paint. The company has $4.5$ m of black paint. Find the length of edging the logo needs, and state whether the paint is enough.
     grade: merit
     working:
       - math: L = \dfrac{150}{360} \times 2\pi(0.9) = 2.4 \;\textsf{m}
         note: The arc, before the two radii are added.
       - math: \textsf{Perimeter} = 2.4 + 0.9 + 0.9 = 4.2 \;\textsf{m}
-        note: The logo needs $4.2$ m of edging, which is within the $4.5$ m of paint the company has — enough, with $0.3$ m to spare.
+        note: The logo needs $4.2$ m of edging. That is within the $4.5$ m of paint the company has, so the paint is enough, with $0.3$ m to spare.
   - ask: A farm has a quad-bike track laid out as an arc of a circle, of radius $30$ m. The track sweeps out an arc $47.1$ m long before rejoining the boundary fence. Find the angle the track turns through, at the centre of the circle it follows.
     grade: merit
     working:
@@ -444,15 +444,15 @@ questions:
     grade: excellence
     working:
       - math: \textsf{Sector} = \dfrac{100}{360} \times \pi(40)^2 = 1396.26 \;\textsf{cm}^2
-        note: The strategy is the decision that makes this a segment problem rather than a sector problem — the board's straight edge is the chord, so the sector's area is only the starting point.
+        note: The strategy is the decision that makes this a segment problem rather than a sector problem. The straight edge of the board is the chord, so the area of the sector is only the starting point.
       - math: \textsf{Triangle} = \dfrac{1}{2}(40)(40)\sin 100° = 787.85 \;\textsf{cm}^2
       - math: \textsf{Glass needed} = 1396.26 - 787.85 = 608.4 \;\textsf{cm}^2
-        note: The panel needs $608.4$ cm$^2$ of glass — the answer stated in the terms the question asked for, with its unit.
+        note: The panel needs $608.4$ cm$^2$ of glass. The answer is stated in the terms the question asked for, with its unit.
   - ask: A stained-glass panel is shaped as a sector of radius $30$ cm and angle $130°$. A straight board replaces the piece below the chord, and glass fills the curved section above it. Find the area of glass needed.
     grade: excellence
     working:
       - math: \textsf{Sector} = \dfrac{130}{360} \times \pi(30)^2 = 1021.0 \;\textsf{cm}^2
-        note: The board's straight edge is the chord, so the sector's area is only the starting point.
+        note: The straight edge of the board is the chord, so the area of the sector is only the starting point.
       - math: \textsf{Triangle} = \dfrac{1}{2}(30)(30)\sin 130° = 344.7 \;\textsf{cm}^2
       - math: \textsf{Glass needed} = 1021.0 - 344.7 = 676.3 \;\textsf{cm}^2
         note: The panel needs $676.3$ cm$^2$ of glass.
@@ -462,6 +462,6 @@ questions:
 
 ## Summary
 
-A sector is a fraction of its circle, $\dfrac{\theta}{360}$, set by the angle at the centre. Applied to the circumference, that fraction gives arc length; applied to the area, it gives sector area — one idea, twice. The perimeter of a sector is the arc plus both radii, not the arc alone. Both formulae rearrange to run backward, from a given arc length or area to the angle or the radius that produced it. A chord cuts a sector into a triangle and a segment, and the segment's area is the sector's area with the triangle's subtracted — the sector formula, the triangle formula, and a subtraction, chained.
+A sector is a fraction of its circle, $\dfrac{\theta}{360}$, set by the angle at the centre. Applied to the circumference, that fraction gives arc length. Applied to the area, it gives sector area. It is one idea, used twice. The perimeter of a sector is the arc plus both radii, not the arc alone. Both formulae rearrange to run backward, from a given arc length or area to the angle or the radius that produced it. A chord cuts a sector into a triangle and a segment. The area of the segment is the area of the sector with the area of the triangle subtracted. That is the sector formula, the triangle formula, and a subtraction, chained.
 
-Between the sine rule, the cosine rule, the area of a triangle, arc length and sector area, every method the standard names is now in hand. Module C is where the standard is actually assessed: a real figure rarely arrives as a labelled triangle or a labelled sector, and the work is finding which of these five methods a given piece of it calls for, then chaining the results together.
+With the sine rule, the cosine rule, the area of a triangle, arc length and sector area, you now have every method the standard names. Module C is where the standard is actually assessed. A real figure rarely arrives as a labelled triangle or a labelled sector. The work is finding which of these five methods each piece of it needs, then chaining the results together.

@@ -2,7 +2,7 @@
 
 ---
 
-Year 11 solved triangles with SOH-CAH-TOA and Pythagoras, and both need a right angle: SOH-CAH-TOA divides two of a triangle's sides by its hypotenuse, and Pythagoras states a relationship that only holds when one angle is $90°$. Most triangles that need solving do not have one — a surveyed boundary, a roof truss, a sail cut to a curve. This module's three methods work on any triangle, with a right angle or without.
+Year 11 solved triangles with SOH-CAH-TOA and Pythagoras, and both need a right angle. SOH-CAH-TOA divides two sides of a triangle by its hypotenuse. Pythagoras states a relationship that only holds when one angle is $90°$. Most triangles that need solving do not have a right angle: a surveyed boundary, a roof truss, a sail cut to a curve. The three methods in this module work on any triangle, with a right angle or without.
 
 ---
 
@@ -33,10 +33,10 @@ steps:
           from: C
           to: A
           label: 65°
-    note: No angle here is $90°$, so SOH-CAH-TOA has nothing to divide by and Pythagoras has no relationship to use. Two angles and a side are known — what can still be found?
+    note: No angle here is $90°$. SOH-CAH-TOA has nothing to divide by, and Pythagoras has no relationship to use. Two angles and a side are known. What can you still find?
 ```
 
-Every side in this subject is named by the lower-case letter of the angle it sits opposite: side $a$ is opposite angle $A$, side $b$ opposite angle $B$, side $c$ opposite angle $C$. The convention holds for every triangle in every lesson from here on.
+Every side in this subject takes the lower-case letter of the angle opposite it. Side $a$ is opposite angle $A$, side $b$ is opposite angle $B$, and side $c$ is opposite angle $C$. The convention holds for every triangle in every lesson from here on.
 
 ```figure
 caption: Sides and angles, named
@@ -78,7 +78,7 @@ steps:
 
 For any triangle, each side divided by the sine of its opposite angle gives the same value: $\dfrac{a}{\sin A} = \dfrac{b}{\sin B} = \dfrac{c}{\sin C}$.
 
-The rule applies whenever the given information contains an **opposite pair** — a side and the angle directly across the triangle from it — plus one more piece. The opposite pair gives the ratio; the extra angle unlocks a second side.
+An **opposite pair** is a side and the angle directly across the triangle from it. The rule applies whenever the given information contains an opposite pair plus one more piece. The opposite pair gives the ratio. The extra angle gives a second side.
 
 ```figure
 caption: Finding a side from an opposite pair
@@ -105,7 +105,7 @@ steps:
           from: C
           to: A
           label: 75°
-    note: Side $a$ and angle $A$ are the opposite pair. Angle $B$ is the extra piece that unlocks side $b$.
+    note: Side $a$ and angle $A$ are the opposite pair. Angle $B$ is the extra piece that gives side $b$.
   - math: \dfrac{b}{\sin 75°} = \dfrac{10}{\sin 40°}
     note: Set the ratio for the side wanted equal to the ratio already known, from the opposite pair.
   - math: b = \dfrac{10 \sin 75°}{\sin 40°}
@@ -113,7 +113,7 @@ steps:
   - math: b = 15.0 \;\textsf{m}
 ```
 
-The unknown side sits on top of its own fraction before the cross-multiplication, whichever side is wanted — writing the rule with $b$ already on top saves a rearrangement.
+The unknown side sits on top of its own fraction before the cross-multiplication, whichever side is wanted. Writing the rule with $b$ already on top saves a rearrangement.
 
 ```practice
 caption: finding a side
@@ -144,7 +144,7 @@ questions:
     grade: achieved
     working:
       - math: \dfrac{b}{\sin 70°} = \dfrac{9}{\sin 35°}
-        note: The opposite pair is $a = 9$ and $A = 35°$; angle $B$ is the extra piece.
+        note: The opposite pair is $a = 9$ and $A = 35°$. Angle $B$ is the extra piece.
       - math: b = \dfrac{9 \sin 70°}{\sin 35°}
       - math: b = 14.7 \;\textsf{m}
   - ask: Find the length of side $b$.
@@ -208,7 +208,7 @@ steps:
           from: C
           to: A
           label: B
-    note: Side $a = 10$ and angle $A = 50°$ are the opposite pair. Side $b = 8$ is the extra piece that unlocks angle $B$.
+    note: Side $a = 10$ and angle $A = 50°$ are the opposite pair. Side $b = 8$ is the extra piece that gives angle $B$.
   - math: \dfrac{a}{\sin A} = \dfrac{b}{\sin B} \quad\Rightarrow\quad \dfrac{\sin B}{8} = \dfrac{\sin 50°}{10}
     note: The rule as the task prints it, then turned over so that the sines sit on top.
   - math: \sin B = \dfrac{8 \sin 50°}{10}
@@ -217,7 +217,7 @@ steps:
   - math: B = 37.8°
 ```
 
-$\sin^{-1}$ on a calculator always returns an angle between $0°$ and $90°$. That is correct here because side $b$ is shorter than side $a$, so angle $B$ must be smaller than the $50°$ angle opposite the longer side — an acute angle is the only possibility.
+$\sin^{-1}$ on a calculator always returns an angle between $0°$ and $90°$. That is correct here because side $b$ is shorter than side $a$. Angle $B$ must therefore be smaller than the $50°$ angle opposite the longer side, so an acute angle is the only possibility.
 
 ```practice
 caption: finding an angle
@@ -287,7 +287,7 @@ questions:
 
 ## The third angle
 
-The angles of a triangle sum to $180°$, and the angle sum often has to be used before the sine rule can reach the side wanted. Where two angles are given and the side wanted is opposite the third, find the third angle first: $C = 180° - A - B$.
+The angles of a triangle sum to $180°$. You often have to use the angle sum before the sine rule can reach the side wanted. Where two angles are given and the side wanted is opposite the third, find the third angle first: $C = 180° - A - B$.
 
 ```figure
 caption: The third angle, found before the side
@@ -316,7 +316,7 @@ steps:
           label: 67°
     note: Side $c$ is opposite angle $C$, and $C$ is not given directly.
   - math: C = 180° - 48° - 67° = 65°
-    note: The third angle, before anything else is attempted.
+    note: The third angle comes first, before any other step.
   - math: \dfrac{c}{\sin 65°} = \dfrac{9}{\sin 48°}
     note: Now $c$ has an opposite angle to work with, and the opposite pair $a = 9$, $A = 48°$ is still the known ratio.
   - math: c = \dfrac{9 \sin 65°}{\sin 48°}
@@ -352,7 +352,7 @@ questions:
     grade: merit
     working:
       - math: C = 180° - 52° - 61° = 67°
-        note: Side $c$ is opposite $C$, so $C$ has to be found before the rule reaches $c$.
+        note: Side $c$ is opposite $C$, so $C$ comes first, before the rule can reach $c$.
       - math: \dfrac{c}{\sin 67°} = \dfrac{8}{\sin 52°}
       - math: c = \dfrac{8 \sin 67°}{\sin 52°}
       - math: c = 9.3 \;\textsf{m}
@@ -391,7 +391,7 @@ questions:
 
 ## The ambiguous case
 
-$\sin^{-1}$ always returns an acute angle, but an obtuse angle can have the same sine: $\sin 130° = \sin 50°$, because the two are supplementary. When the side opposite the angle being found is longer than the side opposite the given angle, the triangle can be obtuse at that vertex, and the calculator's answer is only one of the two possibilities. The diagram tells you which of the two applies: where it shows the angle obtuse, subtract the calculator's answer from $180°$.
+$\sin^{-1}$ always returns an acute angle, but an obtuse angle can have the same sine. $\sin 130° = \sin 50°$, because the two angles are supplementary. If the side opposite the angle you are finding is longer than the side opposite the given angle, the triangle can be obtuse at that vertex. The calculator's answer is then only one of the two possibilities. The diagram tells you which of the two applies. Where it shows the angle obtuse, subtract the calculator's answer from $180°$.
 
 ```figure
 caption: The other branch of $\sin^{-1}$
@@ -424,7 +424,7 @@ steps:
   - math: \sin^{-1}(0.8604\ldots) = 59.4°
     note: The calculator's answer is always the acute one.
   - math: B = 180° - 59.4° = 120.6°
-    note: The diagram shows $B$ obtuse, so the other branch is the one wanted. $\sin 120.6° = \sin 59.4°$, so both satisfy the equation — only the diagram shows which is correct here.
+    note: The diagram shows $B$ obtuse, so the other branch is the one wanted. $\sin 120.6° = \sin 59.4°$, so both angles satisfy the equation. Only the diagram shows which is correct here.
 ```
 
 ```practice
@@ -457,7 +457,7 @@ questions:
     working:
       - math: \dfrac{a}{\sin A} = \dfrac{b}{\sin B} \quad\Rightarrow\quad \sin B = \dfrac{9 \sin 28°}{5} = 0.8450\ldots
       - math: \sin^{-1}(0.8450\ldots) = 57.7°
-        note: The acute branch — but the diagram shows $B$ obtuse.
+        note: The acute branch, but the diagram shows $B$ obtuse.
       - math: B = 180° - 57.7° = 122.3°
   - ask: Find the size of angle $B$.
     diagram:
@@ -609,7 +609,7 @@ questions:
       - math: \dfrac{a}{\sin A} = \dfrac{b}{\sin B} \quad\Rightarrow\quad \sin B = \dfrac{8 \sin 47°}{10} = 0.5851\ldots
       - math: B = \sin^{-1}(0.5851\ldots)
       - math: B = 35.8°
-  - ask: A yacht's stay wire runs from the top of the mast, $A$, to a fitting on the deck, $B$. From a second deck fitting $C$, $14$ m from $B$, the angle of sight up to the masthead, $\angle ACB$, is $73°$, and the angle at $B$ between the deck and the stay wire, $\angle ABC$, is $58°$. Find the length of the stay wire $AB$, stating what it represents.
+  - ask: A yacht's stay wire runs from the top of the mast, $A$, to a fitting on the deck, $B$. A second deck fitting $C$ is $14$ m from $B$. From $C$ the angle of sight up to the masthead, $\angle ACB$, is $73°$. The angle at $B$ between the deck and the stay wire, $\angle ABC$, is $58°$. Find the length of the stay wire $AB$, stating what it represents.
     diagram:
       points:
         A: [50, 80]
@@ -637,13 +637,13 @@ questions:
     grade: merit
     working:
       - math: \angle BAC = 180° - 58° - 73° = 49°
-        note: The angle at the masthead is not given directly, and it is the third angle — found first, as before.
+        note: The angle at the masthead is not given directly. It is the third angle, found first, as before.
       - math: \dfrac{AB}{\sin 73°} = \dfrac{14}{\sin 49°}
         note: The opposite pair is the given side $BC = 14$ and its opposite angle, $49°$, at the masthead. $AB$ is opposite the $73°$ angle at $C$.
       - math: AB = \dfrac{14 \sin 73°}{\sin 49°}
       - math: AB = 17.7 \;\textsf{m}
         note: The stay wire $AB$ is $17.7$ m long.
-  - ask: A yacht's stay wire runs from the top of the mast, $A$, to a fitting on the deck, $B$. From a second deck fitting $C$, $18$ m from $B$, the angle of sight up to the masthead, $\angle ACB$, is $69°$, and the angle at $B$ between the deck and the stay wire, $\angle ABC$, is $64°$. Find the length of the stay wire $AB$, stating what it represents.
+  - ask: A yacht's stay wire runs from the top of the mast, $A$, to a fitting on the deck, $B$. A second deck fitting $C$ is $18$ m from $B$. From $C$ the angle of sight up to the masthead, $\angle ACB$, is $69°$. The angle at $B$ between the deck and the stay wire, $\angle ABC$, is $64°$. Find the length of the stay wire $AB$, stating what it represents.
     diagram:
       points:
         A: [39, 80]
@@ -699,11 +699,11 @@ questions:
     grade: excellence
     working:
       - math: \dfrac{a}{\sin A} = \dfrac{b}{\sin B} \quad\Rightarrow\quad \sin(\angle PDQ) = \dfrac{13 \sin 30°}{8} = 0.8125
-        note: The known pair is $QD = 8$ opposite the $30°$ angle at $P$; $PQ = 13$ sits opposite the angle wanted at $D$, so the sine rule reaches $\angle PDQ$ directly.
+        note: The known pair is $QD = 8$ opposite the $30°$ angle at $P$. $PQ = 13$ sits opposite the angle wanted at $D$, so the sine rule reaches $\angle PDQ$ directly.
       - math: \sin^{-1}(0.8125) = 54.3°
         note: The calculator's acute answer, and not yet the one wanted.
       - math: \angle PDQ = 180° - 54.3° = 125.7°
-        note: Stated as obtuse, because the diagram rules the acute branch out — the decision is written down, not left implicit.
+        note: Stated as obtuse, because the diagram excludes the acute branch. The decision is written down, not left implicit.
       - math: \angle PQD = 180° - 30° - 125.7° = 24.3°
         note: The third angle, needed because $PD$ is opposite it.
       - math: \dfrac{PD}{\sin 24.3°} = \dfrac{8}{\sin 30°}
@@ -738,7 +738,7 @@ questions:
       - math: \sin^{-1}(0.8558\ldots) = 58.9°
         note: The calculator's acute answer, and not yet the one wanted.
       - math: \angle PDQ = 180° - 58.9° = 121.1°
-        note: Stated as obtuse, because the diagram rules the acute branch out.
+        note: Stated as obtuse, because the diagram excludes the acute branch.
       - math: \angle PQD = 180° - 33° - 121.1° = 25.9°
       - math: \dfrac{PD}{\sin 25.9°} = \dfrac{7}{\sin 33°}
       - math: PD = \dfrac{7 \sin 25.9°}{\sin 33°}
@@ -750,8 +750,8 @@ questions:
 
 ## Summary
 
-The sine rule, $\dfrac{a}{\sin A} = \dfrac{b}{\sin B} = \dfrac{c}{\sin C}$, needs an opposite pair — a side and the angle directly across the triangle from it — plus one more piece. That extra piece is a second angle to reach a second side, or a second side to reach a second angle; where the missing angle is the third one, the angle sum $180°$ supplies it first.
+The sine rule, $\dfrac{a}{\sin A} = \dfrac{b}{\sin B} = \dfrac{c}{\sin C}$, needs an opposite pair plus one more piece. An opposite pair is a side and the angle directly across the triangle from it. The extra piece is a second angle to reach a second side, or a second side to reach a second angle. Where the missing angle is the third one, the angle sum $180°$ supplies it first.
 
-Solving for an angle can return either of two supplementary values, because $\sin 130° = \sin 50°$. The calculator's $\sin^{-1}$ always gives the acute one; where the diagram shows the angle obtuse, subtract from $180°$.
+Solving for an angle can return either of two supplementary values, because $\sin 130° = \sin 50°$. The calculator's $\sin^{-1}$ always gives the acute one. Where the diagram shows the angle obtuse, subtract from $180°$.
 
-Not every triangle offers an opposite pair. The next lesson covers what to do with two sides and the angle between them, or three sides and no angle at all — information with no opposite pair anywhere for the sine rule to start from.
+Not every triangle offers an opposite pair. The next lesson covers what to do with two sides and the angle between them, or three sides and no angle at all. That information has no opposite pair anywhere for the sine rule to start from.

@@ -2,15 +2,15 @@
 
 ---
 
-The sine rule needs an opposite pair: a side and the angle directly across the triangle from it. Two sides and the angle between them offer no such pair — the angle sits between the two known sides, not opposite either — and three sides offer no angle at all. Both shapes of given information are common, in construction and in surveying, and neither can start the sine rule.
+The sine rule needs an opposite pair: a side and the angle directly across the triangle from it. Two sides and the angle between them offer no such pair, because the angle sits between the two known sides, not opposite either. Three sides offer no angle at all. Both shapes of given information are common, in construction and in surveying, and neither can start the sine rule.
 
 ---
 
 ## The rule for a side
 
-The cosine rule reaches a side from two sides and the angle between them: $a^2 = b^2 + c^2 - 2bc\cos A$, where $A$ is the angle between sides $b$ and $c$, opposite the side $a$ being found.
+The cosine rule reaches a side from two sides and the angle between them: $a^2 = b^2 + c^2 - 2bc\cos A$. Here $A$ is the angle between sides $b$ and $c$, and it is opposite the side $a$ wanted.
 
-At $A = 90°$, $\cos A = 0$ and the last term disappears, leaving $a^2 = b^2 + c^2$ — Pythagoras exactly. Away from a right angle, the term $2bc\cos A$ corrects for it: below $90°$, cosine is positive and the term subtracts, making $a$ shorter than Pythagoras alone would give; above $90°$, cosine is negative and the term adds, making $a$ longer.
+At $A = 90°$, $\cos A = 0$ and the last term disappears, leaving $a^2 = b^2 + c^2$, which is Pythagoras exactly. Away from a right angle, the term $2bc\cos A$ corrects for the angle. Below $90°$, cosine is positive and the term subtracts, so $a$ is shorter than Pythagoras alone would give. Above $90°$, cosine is negative and the term adds, so $a$ is longer.
 
 ```figure
 caption: A side from two sides and the angle between them
@@ -35,7 +35,7 @@ steps:
           from: B
           to: C
           label: 60°
-    note: Two sides and the angle between them — no opposite pair, so the sine rule cannot reach $a$.
+    note: Two sides and the angle between them. There is no opposite pair, so the sine rule cannot reach $a$.
   - math: a^2 = 8^2 + 6^2 - 2(8)(6)\cos 60°
     note: Substitute directly. The angle between the two given sides is the one that goes in.
   - math: a^2 = 100 - 48 = 52
@@ -104,9 +104,9 @@ questions:
 
 ## The rule for an angle
 
-Three sides give no opposite pair either, so the sine rule cannot start there. The cosine rule rearranges to reach an angle instead: $\cos A = \dfrac{b^2 + c^2 - a^2}{2bc}$. The rearrangement is printed on the task's formulae list, so it does not have to be produced from memory — but knowing where it comes from, the earlier rule swapped around and solved for $\cos A$, avoids substitution slips about which side stands alone.
+Three sides give no opposite pair either, so the sine rule cannot start there. The cosine rule rearranges to reach an angle instead: $\cos A = \dfrac{b^2 + c^2 - a^2}{2bc}$. The rearrangement is printed on the task's formulae list, so you do not have to produce it from memory. But it is the earlier rule, rearranged and solved for $\cos A$. Knowing that avoids substitution slips about which side stands alone.
 
-Unlike $\sin^{-1}$, $\cos^{-1}$ tells an obtuse angle from an acute one on its own: cosine is positive for an acute angle and negative for an obtuse one, and $\cos^{-1}$ returns the matching angle either way. There is no second branch to choose between, and no diagram needed to decide it.
+Unlike $\sin^{-1}$, $\cos^{-1}$ tells an obtuse angle from an acute one on its own. Cosine is positive for an acute angle and negative for an obtuse one, and $\cos^{-1}$ returns the matching angle either way. There is no second branch to choose between, and you do not need a diagram to decide it.
 
 ```figure
 caption: An angle from three sides
@@ -131,7 +131,7 @@ steps:
           from: B
           to: C
           label: A
-    note: Three sides, no angle — no opposite pair for the sine rule to use.
+    note: Three sides and no angle. There is no opposite pair for the sine rule to use.
   - math: \cos A = \dfrac{8^2 + 7^2 - 13^2}{2(8)(7)}
     note: The side opposite the angle wanted, $a = 13$, is the one that is squared and subtracted.
   - math: \cos A = \dfrac{-56}{112} = -0.5
@@ -200,7 +200,7 @@ questions:
 
 ## Order of operations
 
-The common slip is grouping the wrong way: computing $(b^2 + c^2 - 2bc)\cos A$ instead of $b^2 + c^2 - 2bc\cos A$. Only the $2bc$ term is multiplied by $\cos A$: $b^2$ and $c^2$ stand outside it, added and subtracted before the cosine ever comes in.
+The common slip is grouping the wrong way: computing $(b^2 + c^2 - 2bc)\cos A$ instead of $b^2 + c^2 - 2bc\cos A$. Only the $2bc$ term is multiplied by $\cos A$. $b^2$ and $c^2$ stand outside it, added and subtracted before the cosine ever comes in.
 
 ```figure
 caption: Only $2bc$ is scaled by $\cos A$
@@ -210,14 +210,14 @@ steps:
   - math: a^2 = 64 + 36 - 48 = 52 \qquad\checkmark
     note: $2(8)(6)\cos 60° = 96 \times 0.5 = 48$, the product $2bc$, scaled by $\cos A$ on its own.
   - math: a^2 \neq (64 + 36 - 96)(0.5) = 2
-    note: The wrong grouping treats $b^2 + c^2 - 2bc$ as one bracket and scales all of it. The result, a side barely longer than $1$, is obviously too short beside sides of $8$ and $6$ — the error is easy to catch once it is checked against the picture.
+    note: The wrong grouping treats $b^2 + c^2 - 2bc$ as one bracket and scales all of it. The result, a side barely longer than $1$, is obviously too short beside sides of $8$ and $6$. The error is easy to catch once you check it against the picture.
 ```
 
 ---
 
 ## Practice
 
-Work these on paper before revealing anything. They are ordered easiest first, and the band each one is pitched at is the band the marker would award for doing it well. NZQA's clarification for this standard says that at Merit, *"students need to clearly indicate what they are calculating and their solutions need to be linked to the context"* — the sentence that finishes a context question is where those marks sit.
+Work these on paper before revealing anything. They are ordered easiest first, and the band each one is pitched at is the band the marker would award for doing it well. The sentence that finishes a context question is where the Merit marks sit. NZQA's clarification for this standard says that at Merit, *"students need to clearly indicate what they are calculating and their solutions need to be linked to the context"*.
 
 ```practice
 questions:
@@ -245,7 +245,7 @@ questions:
     grade: achieved
     working:
       - math: c^2 = 9^2 + 7^2 - 2(9)(7)\cos 105°
-        note: $b^2$ and $c^2$ are added first, then only $2bc$ is scaled by $\cos 105°$ — not the whole bracket.
+        note: $b^2$ and $c^2$ are added first. Then only $2bc$ is scaled by $\cos 105°$, not the whole bracket.
       - math: c^2 = 130 - 126\cos 105° = 162.6\ldots
       - math: c = \sqrt{162.6\ldots} = 12.8 \;\textsf{m}
   - ask: Find the length of side $c$.
@@ -408,7 +408,7 @@ questions:
       - math: \cos A = \dfrac{150^2 + 180^2 - 240^2}{2(150)(180)}
         note: The closing leg, $240$ m, is opposite the turn and is the side that is squared and subtracted.
       - math: \cos A = \dfrac{-2700}{54000} = -0.05
-        note: The value is negative, so the angle is already known to be obtuse before $\cos^{-1}$ is taken — no separate check is needed the way the sine rule would require one.
+        note: The value is negative, so you already know the angle is obtuse before $\cos^{-1}$ is taken. The sine rule would need a separate check here, and the cosine rule does not.
       - math: A = \cos^{-1}(-0.05) = 92.9°
         note: An obtuse turn of $92.9°$, only just past a right angle.
   - ask: "A delivery drone flies three straight legs to check a farm's paddocks: $140$ m, then $160$ m, then a final $220$ m leg directly back to the start. Find the angle of the turn between the first two legs, and state, with your reasoning, whether that turn is acute or obtuse."
@@ -445,8 +445,8 @@ questions:
 
 ## Summary
 
-The cosine rule covers what the sine rule cannot reach: $a^2 = b^2 + c^2 - 2bc\cos A$ finds a side from two sides and the angle between them, and it reduces to Pythagoras exactly when that angle is $90°$. Rearranged, $\cos A = \dfrac{b^2 + c^2 - a^2}{2bc}$ finds an angle from three sides, and a negative result means the angle is obtuse, with no second case to consider.
+The cosine rule covers what the sine rule cannot reach. $a^2 = b^2 + c^2 - 2bc\cos A$ finds a side from two sides and the angle between them. It reduces to Pythagoras exactly when that angle is $90°$. Rearranged, $\cos A = \dfrac{b^2 + c^2 - a^2}{2bc}$ finds an angle from three sides. A negative result means the angle is obtuse, with no second case to consider.
 
 The rule's trap is grouping: only $2bc$ is multiplied by $\cos A$, and $b^2 + c^2$ stand outside that product.
 
-Between them, the sine rule and the cosine rule find any missing side or angle a triangle offers. The module's last lesson adds a third quantity, the triangle's area, and the question of which of the three tools fits a given piece of information.
+Between them, the sine rule and the cosine rule find any missing side or angle a triangle offers. The last lesson of the module adds a third quantity, the area of the triangle. It also adds the question of which of the three tools fits a given piece of information.
