@@ -26,7 +26,7 @@ steps:
     note: Try $x = -2$. The statement is true. Finding the values that do this is what solving means.
 ```
 
-The two are handled differently. An expression is **simplified**: rewritten to be tidier, while meaning exactly the same thing. An equation is **solved**: you find the values of $x$ that make the statement true.
+The two need different work. You **simplify** an expression: you rewrite it to be tidier, and it still means exactly the same thing. You **solve** an equation: you find the values of $x$ that make the statement true.
 
 ```figure
 caption: Two different jobs
@@ -47,43 +47,43 @@ steps:
 
 The standard divides into three, and they build on each other.
 
-**Module A—Expressions.** You are given an expression and asked to rewrite it: expand it, factorise it, cancel it down, tidy up its powers.
+**Module A—Expressions.** You are given an expression and asked to rewrite it: expand it, factorise it, cancel it, simplify its powers.
 
-This is the module everything else stands on. The 2025 examiner's report says a lack of basic algebra skills limited candidates across all three papers of Level 2 maths, and that it showed most clearly on expressions involving fractions.
+This is the module that every other module depends on. The 2025 examiner's report says a lack of basic algebra skills limited candidates across all three papers of Level 2 maths. It says the lack showed most clearly on expressions involving fractions.
 
 **Module B—Equations.** Linear equations, quadratic equations, and equations where the unknown is in the power.
 
 The recurring difficulty in this module is not the solving. It is turning a paragraph of words into an equation.
 
-**Module C—Quadratic properties.** Finding how many solutions a quadratic equation has, or being given the number of solutions and working out the unknown coefficient.
+**Module C—Quadratic properties.** Finding how many solutions a quadratic equation has, or being given the number of solutions and finding the unknown coefficient.
 
 ---
 
 ## How this standard is assessed
 
-Four credits, and it is **external** — sat in the November exam, not marked internally. Past papers therefore matter.
+The standard is four credits, and it is **external**: you sit it in the November exam, and it is not marked internally. Past papers therefore matter.
 
 The exam is three questions, each with several parts, and word problems appear throughout.
 
-After each year's examination is marked, the examiners publish a report on it: what candidates at each grade could commonly do, and what those who were not awarded the standard commonly got wrong. These lessons quote those reports wherever a finding touches the topic in hand. Every mistake quoted cost candidates marks in a real examination.
+After each year's examination is marked, the examiners publish a report on it. The report says what candidates at each grade could commonly do, and what candidates who were not awarded the standard commonly got wrong. These lessons quote those reports wherever a finding is about the topic of the lesson. Every mistake quoted cost candidates marks in a real examination.
 
-> Three instructions from the specification are worth taking literally, because each one is a way of losing marks you had otherwise earned:
+> The specification gives three instructions. Take each one literally, because each one is a way to lose marks you had otherwise earned:
 >
-> - **Any equation you form must be written down.** Not just used.
+> - **Write every equation you form.** Do not just use it.
 > - **Show the algebra.** A correct answer with no working is marked *Correct Answer Only*, and that is worth an Achieved tick at best. It cannot reach Merit or Excellence however right the answer is.
 > - **Give answers in their simplest algebraic form.**
 >
 > Four more, from the examiner's reports rather than the specification:
 >
-> - **Attempt every part of every question.** The parts are not ordered by difficulty, and one part can carry marks at more than one level, so a part further down the page may be easier than the part above it.
-> - **Cross out any working you have abandoned.** Where two answers are left standing, the reports ask candidates to make clear which one is to be marked, and a crossing-out is how you do that.
-> - **End a *show that* answer with the statement it asked for.** The statement is printed on the page, so the marks are entirely in the steps that reach it, and the last line says that what was asked for has been shown. The 2024 report's Excellence list names candidates who were able to start and finish a proof using clear mathematical communication.
+> - **Attempt every part of every question.** The parts are not ordered by difficulty, and one part can carry marks at more than one level. So a part further down the page may be easier than the part above it.
+> - **Cross out any working you abandoned.** Where you leave two answers standing, the reports ask candidates to make clear which one is to be marked. A crossing-out is how you do that.
+> - **End a *show that* answer with the statement it asked for.** The statement is printed on the page, so the marks are entirely in the steps that reach it. The last line says that the statement is shown. The 2024 report's Excellence list names candidates who were able to start and finish a proof using clear mathematical communication.
 > - **Do what the instruction says.** *Simplify*, *solve*, *factorise* and *calculate the discriminant* ask for four different things. The 2024 report lists not following the instruction as a reason candidates did not achieve.
 
 ---
 
 ## What you do not have to memorise
 
-A formulae sheet is handed out with the exam and you may keep it. It carries the quadratic formula, the discriminant, and the logarithm rules — so none of those need to be memorised.
+You are given a formulae sheet with the exam, and you may keep it. It carries the quadratic formula, the discriminant, and the logarithm rules, so you do not need to memorise any of those.
 
-It does **not** carry the index laws. Those you either know or rebuild from what a power means, which is the subject of the third topic in Module A.
+It does **not** carry the index laws. You either know the index laws or rebuild them from what a power means. That is the subject of the third topic in Module A.

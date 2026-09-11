@@ -2,13 +2,13 @@
 
 ---
 
-A **rational expression** is a fraction with algebra in it. Rational means ratio — one thing divided by another. $\dfrac{x+2}{x-3}$ is a rational expression.
+A **rational expression** is a fraction with algebra in it. Rational means ratio: one thing divided by another. $\dfrac{x+2}{x-3}$ is a rational expression.
 
 You already know how to handle rational expressions. Every rule for ordinary number fractions applies. To multiply, multiply the tops and multiply the bottoms. To divide, turn the second fraction upside down and multiply. To add, put both fractions over a common denominator first. To cancel, remove a factor that appears top and bottom.
 
-The difficulty is that with numbers you can see the factors immediately — with $\dfrac{6}{9}$, the $3$ is obvious. With algebra the factors are hidden inside the expression, and you have to create the factors before you can use them.
+The difficulty is that with numbers you can see the factors immediately. In $\dfrac{6}{9}$, the $3$ is obvious. With algebra the factors are hidden inside the expression, and you have to create the factors before you can use them.
 
-This is the topic the examiner's reports are hardest on. The 2025 report says a lack of basic algebra skills limited candidates across all three papers of Level 2 maths, and that it was most evident when they were asked to work with expressions involving fractions.
+This is the topic the examiner's reports are hardest on. The 2025 report says a lack of basic algebra skills limited candidates across all three papers of Level 2 maths. It says the lack was most evident when candidates were asked to work with expressions involving fractions.
 
 The first move in almost every one of these questions is **factorise everything you can see.**
 
@@ -16,11 +16,11 @@ The first move in almost every one of these questions is **factorise everything 
 
 ## Cancelling: factors only, never terms
 
-Cancelling is division. When you cancel, you are dividing the numerator and the denominator — the top and the bottom — by the same thing, which leaves the value unchanged.
+Cancelling is division. When you cancel, you divide the numerator and the denominator, the top and the bottom, by the same thing. That leaves the value unchanged.
 
 Cancelling works on a product. It does not work on a sum.
 
-You can still divide, if you divide every term. Take $\dfrac{2x+6}{2}$. Dividing by $2$ means dividing the whole numerator by $2$ — every term of it. $2x$ becomes $x$, and $6$ becomes $3$. The answer is $x + 3$.
+You can still divide, if you divide every term. Take $\dfrac{2x+6}{2}$. Dividing by $2$ means dividing the whole numerator by $2$, every term of it. $2x$ becomes $x$, and $6$ becomes $3$. The answer is $x + 3$.
 
 ```figure
 caption: Dividing has to reach every term
@@ -32,18 +32,18 @@ steps:
   - math: x + 3
 ```
 
-It is tempting to look at the $2$ on the bottom and the $2$ in front of the $x$ on the top, cancel that pair, and write $x + 6$. That is wrong, because the $6$ was never divided. The $6$ is a separate term, and the division has to reach the $6$ as well.
+The temptation is to cancel the $2$ on the bottom against the $2$ in front of the $x$ on the top, and write $x + 6$. That is wrong, because you never divided the $6$. The $6$ is a separate term, and the division has to reach the $6$ as well.
 
 ```figure
 caption: The error to avoid
 steps:
   - math: \dfrac{\ca{2}x + 6}{\ca{2}}
-    note: Cancelling only the twos that catch the eye.
+    note: Cancelling only the twos that are easy to see.
   - math: x + 6 \qquad \color{red}{\times}
-    note: The $6$ was never divided. Substitute $x = 1$ — the original expression is $4$, this is $7$.
+    note: You never divided the $6$. Substitute $x = 1$. The original expression is $4$, and this one is $7$.
 ```
 
-The safe version of the rule: **you can only cancel something that is multiplying the entire numerator and multiplying the entire denominator.** Anything that is added or subtracted is a term, and a term cannot be cancelled.
+The safe version of the rule: **you can only cancel something that is multiplying the entire numerator and multiplying the entire denominator.** Anything that is added or subtracted is a term, and you cannot cancel a term.
 
 So the procedure is fixed. Factorise the numerator completely. Factorise the denominator completely. Only then cancel, and only cancel whole brackets.
 
@@ -52,7 +52,7 @@ id: a2-simplify
 caption: Factorise, then cancel
 steps:
   - math: \dfrac{x^2 - 9}{x^2 + 7x + 12}
-    note: Nothing can be cancelled yet. The $x^2$ terms are terms, not factors.
+    note: You cannot cancel anything yet. The $x^2$ terms are terms, not factors.
   - math: \dfrac{(x+3)(x-3)}{x^2 + 7x + 12}
     note: The top is a difference of two squares.
   - math: \dfrac{(x+3)(x-3)}{(x+3)(x+4)}
@@ -72,7 +72,7 @@ questions:
       - math: \dfrac{\ca{3}x}{\ca{3}} + \dfrac{12}{\ca{3}}
         note: Dividing by $3$ has to reach both terms, not only the one with a $3$ in front of it.
       - math: x + 4
-        note: Cancelling the two threes that catch the eye would leave $x + 12$, and the $12$ would never have been divided.
+        note: Cancelling only the two threes that are easy to see would leave $x + 12$, and you would never divide the $12$.
   - ask: Simplify.
     math: \dfrac{4x^2 + 6x}{2x}
     grade: achieved
@@ -109,7 +109,7 @@ questions:
     grade: achieved
     working:
       - math: \dfrac{x+3}{(x+1)(x+4)}
-        note: Factorise the denominator before deciding anything.
+        note: Factorise the denominator before you decide anything.
       - math: \textsf{Already in simplest form}
         note: Neither factor underneath matches the numerator, so nothing cancels. Cancelling the $3$ against the $4$ would be cancelling terms.
   - ask: Simplify fully.
@@ -119,7 +119,7 @@ questions:
       - math: \dfrac{2(x^2-9)}{x^2+6x+9}
         note: A common factor on top before anything else.
       - math: \dfrac{2(x+3)(x-3)}{(x+3)(x+3)}
-        note: The two numbers for the denominator turn out to be the same number.
+        note: The two numbers for the denominator are the same number.
       - math: \dfrac{2(x-3)}{x+3}
         note: One $(x+3)$ cancels. The other stays, because only one appeared on top.
   - ask: Simplify fully.
@@ -138,7 +138,7 @@ questions:
 
 Multiplying is straightforward: tops together, bottoms together.
 
-But do not multiply the brackets out first. Factorise everything first, cancel anything common across the whole fraction, and only then combine what is left. If you expand first you produce large expressions that you will have to factorise again.
+But do not expand the brackets first. Factorise everything first, cancel anything common across the whole fraction, and only then combine what is left. If you expand first you produce large expressions that you will have to factorise again.
 
 ```figure
 caption: Cancel before combining
@@ -150,14 +150,14 @@ steps:
   - math: \dfrac{\ca{(x+3)}\,\cb{(x-2)}}{(x+2)\,\cb{(x-2)}\,\ca{(x+3)}}
     note: Multiply tops together and bottoms together.
   - math: \dfrac{\ca{\cancel{(x+3)}}\,\cb{\cancel{(x-2)}}}{(x+2)\,\cb{\cancel{(x-2)}}\,\ca{\cancel{(x+3)}}}
-    note: Both the factors on the top have a match underneath. What’s left?
+    note: Both the factors on the top have a match underneath. What is left?
   - math: \dfrac{1}{x+2}
     note: Nothing is left on the top, so a $1$ stands there.
 ```
 
-Dividing is multiplication by the reciprocal. Turn the second fraction upside down, change the divide into a multiply, and continue as above. Turn over the second fraction and not the first — the second fraction is the one being divided by.
+Dividing is multiplication by the reciprocal. Turn the second fraction upside down, change the divide into a multiply, and continue as above. Turn over the second fraction and not the first, because the second fraction is the one you are dividing by.
 
-So the order is the same for multiplying and for dividing: factorise, multiply into one fraction, then cancel. Once it is one fraction, a factor on the top cancels against a match anywhere underneath, whichever fraction it arrived in.
+So the order is the same for multiplying and for dividing: factorise, multiply into one fraction, then cancel. Once the expression is one fraction, a factor on the top cancels against a match anywhere underneath, whichever fraction it arrived in.
 
 ```practice
 caption: multiplying and dividing
@@ -243,17 +243,17 @@ questions:
 
 Here you need a common denominator, and the same rule applies as with numbers: you cannot add fractions until the bottoms match.
 
-Factorise the denominators first. The lowest common denominator is then built from the factors you find — take each distinct factor, and include it as many times as it appears in any single denominator.
+Factorise the denominators first. You then build the lowest common denominator from the factors you find. Take each distinct factor, and include it as many times as it appears in any single denominator.
 
 ```figure
 caption: Adding over a common denominator
 steps:
   - math: \dfrac{1}{x+2} + \dfrac{3}{x-1}
-    note: The denominators share nothing, so the common denominator is their product.
+    note: The denominators share no factor, so the common denominator is their product.
   - math: \dfrac{1 \cdot \ca{(x-1)}}{(x+2)\ca{(x-1)}} + \dfrac{3 \cdot \cb{(x+2)}}{\cb{(x+2)}(x-1)}
     note: Multiply each fraction top and bottom by what the other one is missing.
   - math: \dfrac{(x-1) + 3(x+2)}{(x+2)(x-1)}
-    note: Same denominator now, so the numerators can be added.
+    note: Same denominator now, so you can add the numerators.
   - math: \dfrac{x - 1 + 3x + 6}{(x+2)(x-1)}
   - math: \dfrac{4x + 5}{(x+2)(x-1)}
     note: Leave the denominator in factors. Expanding it would hide anything that cancels.
@@ -269,7 +269,7 @@ When you subtract, the minus applies to the entire numerator of the second fract
 caption: The minus reaches the whole numerator
 steps:
   - math: \dfrac{7x+2}{5} - \dfrac{2x-3}{5}
-    note: Write the second numerator in brackets before doing anything else.
+    note: Write the second numerator in brackets before you do anything else.
   - math: \dfrac{(7x+2) - \ca{(2x-3)}}{5}
   - math: \dfrac{7x + 2 - 2x \ca{+} 3}{5}
     note: Minus a $-3$ is $+3$. This sign is the one that costs marks.
@@ -278,7 +278,7 @@ steps:
     note: A common factor appears, so it cancels.
 ```
 
-Write brackets around the second numerator before doing anything else, and expand the minus deliberately. The reports put this skill on both of their lists: the 2025 report gives dealing incorrectly with negative numbers as a reason candidates did not achieve, and the 2024 report gives working with negative terms without error as something candidates awarded Merit could do.
+Write brackets around the second numerator before you do anything else, and expand the minus deliberately. The reports put this skill on both of their lists. The 2025 report gives dealing incorrectly with negative numbers as a reason candidates did not achieve. The 2024 report gives working with negative terms without error as something candidates awarded Merit could do.
 
 ```practice
 caption: adding and subtracting
@@ -354,7 +354,7 @@ questions:
 
 ## Brackets that differ only by a sign
 
-Sometimes two factors do not match because one is the negative of the other. $3-x$ and $x-3$ are not the same factor, but they differ only by a sign. Take a $-1$ out of $3-x$, and it becomes $-1(x-3)$. Now the brackets match and can cancel.
+Sometimes two factors do not match because one is the negative of the other. $3-x$ and $x-3$ are not the same factor, but they differ only by a sign. Take a $-1$ out of $3-x$, and it becomes $-1(x-3)$. Now the brackets match, and you can cancel them.
 
 ```figure
 caption: Brackets that differ only by a sign
@@ -366,7 +366,7 @@ steps:
   - math: "-1"
 ```
 
-A subtraction written the other way round produces such a pair, most often in a difference of two squares: $9-x^2$ factorises to $(3+x)(3-x)$, while $x^2-9$ gives $(x+3)(x-3)$. Before deciding that nothing cancels, check whether taking out a $-1$ would make two brackets match.
+A subtraction written the other way round produces such a pair, most often in a difference of two squares. $9-x^2$ factorises to $(3+x)(3-x)$, while $x^2-9$ gives $(x+3)(x-3)$. Before you decide that nothing cancels, check whether taking out a $-1$ would make two brackets match.
 
 ```practice
 caption: brackets that differ only by a sign
@@ -487,7 +487,7 @@ questions:
         note: Common factor out of each, top and bottom.
       - math: \dfrac{2(3x-2)(2x-1)}{x(3x-2)}
       - math: \dfrac{2(2x-1)}{x} = \dfrac{4x-2}{x}
-        note: Simplify first. The required form only becomes reachable once this has cancelled.
+        note: Simplify first. You can reach the required form only after this cancels.
       - math: \dfrac{4x}{x} - \dfrac{2}{x} = 4 - \dfrac{2}{x}
         note: Split the numerator term by term over the denominator.
       - math: A = 4, \quad B = -2
@@ -500,7 +500,7 @@ questions:
         note: Common factor out of each, top and bottom.
       - math: \dfrac{3(2x-1)\ca{(2x+3)}}{x\,\ca{(2x+3)}}
       - math: \dfrac{3(2x-1)}{x} = \dfrac{6x-3}{x}
-        note: Simplify first. The required form only becomes reachable once this has cancelled.
+        note: Simplify first. You can reach the required form only after this cancels.
       - math: \dfrac{6x}{x} - \dfrac{3}{x} = 6 - \dfrac{3}{x}
         note: Split the numerator term by term over the denominator.
       - math: A = 6, \quad B = -3
@@ -509,20 +509,20 @@ questions:
     grade: excellence
     working:
       - math: \dfrac{1}{x-3} - \dfrac{6}{(x+3)(x-3)}
-        note: Factorise the denominators before looking for a common one.
+        note: Factorise the denominators before you look for a common one.
       - math: (x+3)(x-3)
         note: The second denominator already contains the first, so it is the common denominator.
       - math: \dfrac{(x+3) - 6}{(x+3)(x-3)}
         note: Only the first fraction needs taking up.
       - math: \dfrac{\ca{x-3}}{(x+3)\ca{(x-3)}}
-        note: The numerator has become a copy of one of the factors underneath.
+        note: The numerator is now a copy of one of the factors underneath.
       - math: \dfrac{1}{x+3}
   - ask: Simplify fully.
     math: \dfrac{1}{x-2} - \dfrac{4}{x^2-4}
     grade: excellence
     working:
       - math: \dfrac{1}{x-2} - \dfrac{4}{(x+2)(x-2)}
-        note: Factorise the denominators before looking for a common one.
+        note: Factorise the denominators before you look for a common one.
       - math: (x+2)(x-2)
         note: The second denominator already contains the first, so it is the common denominator.
       - math: \dfrac{(x+2) - 4}{(x+2)(x-2)}
@@ -539,10 +539,10 @@ A rational expression is a fraction with algebra in it, and every rule you know 
 
 Factorise first. Always. It is the step that makes everything else possible.
 
-Cancel factors, never terms. A factor multiplies the whole numerator and the whole denominator. Anything that is added or subtracted is a term and cannot be cancelled.
+Cancel factors, never terms. A factor multiplies the whole numerator and the whole denominator. Anything that is added or subtracted is a term, and you cannot cancel it.
 
-To multiply, factorise and cancel before combining. To divide, flip the second fraction. To add or subtract, factorise the denominators to find the common denominator, and put brackets around a numerator you are subtracting.
+To multiply, factorise and cancel before combining. To divide, turn the second fraction over. To add or subtract, factorise the denominators to find the common denominator, and put brackets around a numerator you are subtracting.
 
-Leave your answer factorised. Expanding it out is not simplifying — the specification asks for the simplest algebraic form, and factorised is simplest.
+Leave your answer factorised. Expanding it is not simplifying. The specification asks for the simplest algebraic form, and factorised is simplest.
 
-The common denominator comes back in Module B. An equation with fractions in it is cleared by multiplying every term by the lowest common denominator, found exactly as it is found here — with the difference that an equation may be multiplied through and an expression may not.
+The common denominator comes back in Module B. You clear an equation with fractions in it by multiplying every term by the lowest common denominator. You find that denominator exactly as you find it here. The difference is that you may multiply an equation through, and you may not multiply an expression through.

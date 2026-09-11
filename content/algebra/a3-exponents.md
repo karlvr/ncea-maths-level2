@@ -2,9 +2,9 @@
 
 ---
 
-An exponent is shorthand for repeated multiplication. $x^5$ means $x$ times $x$ times $x$ times $x$ times $x$ — five of them multiplied together. The $x$ is the **base**. The $5$ is the **exponent**, also called the index or the power.
+An exponent is shorthand for repeated multiplication. $x^5$ means $x$ times $x$ times $x$ times $x$ times $x$, five copies of $x$ multiplied together. The $x$ is the **base**. The $5$ is the **exponent**, also called the index or the power.
 
-That definition is the whole topic. Every index law is a consequence of it, and a forgotten law can be rebuilt by writing out the multiplication. Rebuilding matters because the index laws are **not** on the formulae sheet supplied in the examination: the quadratic formula, the discriminant and the logarithm rules are there, and the index laws are not.
+That definition is the whole topic. Every index law is a consequence of it, and you can rebuild a forgotten law by writing the multiplication in full. Rebuilding matters because the index laws are **not** on the formulae sheet supplied in the examination. The quadratic formula, the discriminant and the logarithm rules are there, and the index laws are not.
 
 ---
 
@@ -12,14 +12,14 @@ That definition is the whole topic. Every index law is a consequence of it, and 
 
 ### Multiplying: add the exponents
 
-$x^3 \cdot x^2$. Write it out: $x$ times $x$ times $x$, then $x$ times $x$. Five $x$'s multiplied together. So the answer is $x^5$.
+$x^3 \cdot x^2$. Write it in full: $x$ times $x$ times $x$, then $x$ times $x$. Five $x$'s multiplied together. So the answer is $x^5$.
 
 ```figure
-caption: Multiplying — add the exponents
+caption: "Multiplying: add the exponents"
 steps:
   - math: x^3 \cdot x^2
   - math: (\ca{x \cdot x \cdot x})(\cb{x \cdot x})
-    note: Write out what the notation means.
+    note: Write what the notation means, in full.
   - math: x \cdot x \cdot x \cdot x \cdot x
     note: Five of them, multiplied together.
   - math: x^5 \qquad \text{since } \ca{3} + \cb{2} = 5
@@ -32,7 +32,7 @@ You added $3$ and $2$. That is the law: when you multiply powers of the same bas
 $\dfrac{x^5}{x^2}$. Five $x$'s on top, two on the bottom. Two of the $x$'s on top cancel with the two underneath, leaving three $x$'s. So the answer is $x^3$.
 
 ```figure
-caption: Dividing — subtract the exponents
+caption: "Dividing: subtract the exponents"
 steps:
   - math: \dfrac{x^5}{x^2}
   - math: \dfrac{x \cdot x \cdot x \cdot \ca{x \cdot x}}{\ca{x \cdot x}}
@@ -46,10 +46,10 @@ Subtract the exponents.
 
 ### A power of a power: multiply the exponents
 
-$(x^2)^3$. That means $x^2$ times $x^2$ times $x^2$ — three copies. Each copy is two $x$'s, so six altogether. $x^6$.
+$(x^2)^3$. That means $x^2$ times $x^2$ times $x^2$, three copies. Each copy is two $x$'s, so six altogether. $x^6$.
 
 ```figure
-caption: A power of a power — multiply the exponents
+caption: "A power of a power: multiply the exponents"
 steps:
   - math: (x^2)^3
   - math: \ca{x^2} \cdot \ca{x^2} \cdot \ca{x^2}
@@ -62,9 +62,9 @@ Multiply the exponents.
 
 ### All three need the same base
 
-Every one of those laws requires the **same base**. $2^3 \cdot 3^2$ cannot be combined, because one is built from twos and the other from threes.
+Every one of those laws requires the **same base**. You cannot combine $2^3 \cdot 3^2$, because one power is built from twos and the other from threes.
 
-The condition returns in exponential equations, which are solved by rewriting both sides so that they have the same base.
+The condition returns in exponential equations. You solve those by rewriting both sides so that they have the same base.
 
 ```practice
 caption: the three laws
@@ -89,7 +89,7 @@ questions:
       - math: y^{4 \times 3} \times y^2
         note: A power of a power multiplies. Do that before the multiplication outside it.
       - math: y^{12} \times y^2 = y^{14}
-        note: The two exponents are combined by adding, not by multiplying again.
+        note: You combine the two exponents by adding, not by multiplying again.
   - ask: Simplify.
     math: (y^5)^2 \times y^3
     grade: achieved
@@ -104,7 +104,7 @@ questions:
         note: Split it by base. The numbers are their own base and divide as numbers.
       - math: 3 \times a^{5-2} \times b^{3-3}
       - math: 3a^3
-        note: $b^0$ is $1$, so the $b$ leaves altogether rather than staying as $b$.
+        note: $b^0$ is $1$, so the $b$ disappears altogether rather than staying as $b$.
   - ask: Simplify.
     math: \dfrac{20a^6b^4}{5a^2b^4}
     grade: merit
@@ -125,7 +125,7 @@ $(2x)^3$ means $2x$ times $2x$ times $2x$. That is two times two times two, whic
 
 The trap is the same as in the last lesson: a power does **not** distribute over addition.
 
-$(x+y)^2$ is not $x^2 + y^2$. Expand it properly: $(x+y)(x+y)$, which gives $x^2 + 2xy + y^2$. There is a middle term. Check that with numbers — put in $x = 3$ and $y = 4$. Then $(3+4)^2$ is $49$, and $3^2 + 4^2$ is $25$. Not the same.
+$(x+y)^2$ is not $x^2 + y^2$. Expand it properly: $(x+y)(x+y)$, which gives $x^2 + 2xy + y^2$. There is a middle term. Check that with numbers. Substitute $x = 3$ and $y = 4$. Then $(3+4)^2$ is $49$, and $3^2 + 4^2$ is $25$. Not the same.
 
 ```figure
 caption: A power does not distribute over addition
@@ -137,10 +137,10 @@ steps:
   - math: (\cb{3}+\cc{4})^2 = 7^2 = 49
     note: Check it with numbers.
   - math: \cb{3}^2 + \cc{4}^2 = 9 + 16 = 25
-    note: Not the same, and the gap is the missing $2xy$ — which is $24$.
+    note: Not the same, and the gap is the missing $2xy$, which is $24$.
 ```
 
-The cancelling rule from the last lesson is the same idea in another place. **Multiplication distributes. Addition does not.** Cancelling reaches every factor but not every term; a power reaches every factor but not every term.
+The cancelling rule from the last lesson is the same idea in another place. **Multiplication distributes. Addition does not.** Cancelling reaches every factor but not every term. A power reaches every factor but not every term.
 
 ```practice
 caption: powers over products
@@ -173,7 +173,7 @@ questions:
       - math: \ca{8y^3} \times \cb{9y^4}
         note: $2^3$ is $8$ and $3^2$ is $9$. Neither number is left alone.
       - math: 72y^7
-        note: The 2025 report names writing $2y^3$ for the first of these as a common failure.
+        note: The 2025 report names writing $2y^3$ for the first bracket as a common failure.
   - ask: Simplify.
     math: (3y)^2 \times (2y^3)^3
     grade: merit
@@ -186,7 +186,7 @@ questions:
     grade: merit
     working:
       - math: (x+2y)(x+2y)
-        note: A sum inside a bracket has to be written out, not distributed over.
+        note: You have to expand a sum inside a bracket. You cannot distribute the power over it.
       - math: x^2 + 2xy + 2xy + 4y^2
       - math: x^2 + 4xy + 4y^2
   - ask: Expand.
@@ -194,7 +194,7 @@ questions:
     grade: merit
     working:
       - math: (2x+3y)(2x+3y)
-        note: A sum inside a bracket has to be written out, not distributed over.
+        note: You have to expand a sum inside a bracket. You cannot distribute the power over it.
       - math: 4x^2 + 6xy + 6xy + 9y^2
       - math: 4x^2 + 12xy + 9y^2
 ```
@@ -213,7 +213,7 @@ $\dfrac{x^3}{x^3}$ is $1$, since anything divided by itself is one. But the divi
 caption: Why anything to the power zero is one
 steps:
   - math: \dfrac{x^3}{x^3}
-    note: Two ways of working this out, both correct.
+    note: Two ways to calculate this, both correct.
   - math: \dfrac{x^3}{x^3} = 1
     note: Anything divided by itself is one.
   - math: \dfrac{x^3}{x^3} = x^{3-3} = x^0
@@ -232,7 +232,7 @@ $\dfrac{x^3}{x^5}$. Cancelling three $x$'s from the top and bottom leaves two $x
 caption: Why a negative exponent is a reciprocal
 steps:
   - math: \dfrac{x^3}{x^5}
-    note: The same method — work it out twice.
+    note: "The same method: calculate it twice."
   - math: \dfrac{\cancel{x \cdot x \cdot x}}{\cancel{x \cdot x \cdot x} \cdot x \cdot x} = \dfrac{1}{x^2}
     note: Cancel three from each, and two are left underneath.
   - math: x^{3-5} = x^{-2}
@@ -241,7 +241,7 @@ steps:
     note: So a minus sign in the exponent means “one over”, not “negative”.
 ```
 
-So $x^{-2}$ is $\dfrac{1}{x^2}$. **A negative exponent means a reciprocal.** It does not mean a negative number. $2^{-3}$ is $\dfrac{1}{8}$ — a small positive number, not $-8$.
+So $x^{-2}$ is $\dfrac{1}{x^2}$. **A negative exponent means a reciprocal.** It does not mean a negative number. $2^{-3}$ is $\dfrac{1}{8}$, a small positive number, not $-8$.
 
 The rule also runs in reverse, and you will need it in that direction. $\dfrac{1}{x^3}$ is $x^{-3}$. Moving a power from the bottom of a fraction to the top flips the sign of its exponent.
 
@@ -259,7 +259,7 @@ steps:
 
 ### Fractional
 
-$x^{\frac{1}{2}} \cdot x^{\frac{1}{2}}$. Add the exponents: a half plus a half is one, so the answer is $x$. Something which, multiplied by itself, gives $x$ — that is the square root of $x$.
+$x^{\frac{1}{2}} \cdot x^{\frac{1}{2}}$. Add the exponents: a half plus a half is one, so the answer is $x$. Something which, multiplied by itself, gives $x$, is the square root of $x$.
 
 ```figure
 caption: Why a fractional exponent is a root
@@ -274,15 +274,15 @@ steps:
 
 So $x^{\frac{1}{2}}$ is the square root of $x$. In general, **the denominator of a fractional exponent is the root**. $x^{\frac{1}{3}}$ is the cube root of $x$.
 
-Now combine the root rule with the power-of-a-power law, for a fraction like two thirds. $x^{\frac{2}{3}}$ is $\big(\sqrt[3]{x}\big)^2$. The denominator gives the root, the numerator gives the power.
+Now combine the root rule with the power-of-a-power law, for a fraction like two thirds. $x^{\frac{2}{3}}$ is $\big(\sqrt[3]{x}\big)^2$. The denominator gives the root, and the numerator gives the power.
 
-**Do the root first.** It keeps the numbers small. For $8^{\frac{2}{3}}$, take the cube root of $8$ first, which is $2$, then square it, which is $4$. Going the other way means squaring $8$ to get $64$ and then finding the cube root of $64$, which is more work for the same answer.
+**Do the root first.** It keeps the numbers small. For $8^{\frac{2}{3}}$, take the cube root of $8$ first, which is $2$, then square it, which is $4$. Going the other way means squaring $8$ to get $64$ and then finding the cube root of $64$. That is more work for the same answer.
 
 ```figure
 caption: Root first, then power
 steps:
   - math: 8^{\frac{2}{3}}
-    note: The $\ca{3}$ on the bottom is the root; the $\cb{2}$ on top is the power.
+    note: The $\ca{3}$ on the bottom is the root, and the $\cb{2}$ on top is the power.
   - math: \big(\sqrt[3]{8}\big)^{\cb{2}} = 2^{\cb{2}} = 4
     note: Root first. The numbers stay small.
   - math: \sqrt[\ca{3}]{8^{\cb{2}}} = \sqrt[3]{64} = 4
@@ -291,9 +291,9 @@ steps:
 
 ### Surd form and index form
 
-A **surd** is a root written with a root sign. The rule connecting roots and fractional exponents runs in both directions, and the direction you will need most often is surd into index, because the index laws apply to powers and can do nothing with a root sign.
+A **surd** is a root written with a root sign. The rule connecting roots and fractional exponents runs in both directions. The direction you will need most often is surd into index, because the index laws apply to powers and do not apply to a root sign.
 
-$\sqrt{x}$ is $x^{\frac{1}{2}}$. And $\sqrt[3]{x^2}$ is $x^{\frac{2}{3}}$ — the root goes underneath, the power inside goes on top. $\dfrac{1}{\sqrt{x}}$ is $x^{-\frac{1}{2}}$, because being underneath a one turns the exponent negative as well.
+$\sqrt{x}$ is $x^{\frac{1}{2}}$. And $\sqrt[3]{x^2}$ is $x^{\frac{2}{3}}$: the root goes underneath, and the power inside goes on top. $\dfrac{1}{\sqrt{x}}$ is $x^{-\frac{1}{2}}$, because being underneath a one turns the exponent negative as well.
 
 ```figure
 caption: Surd form to index form
@@ -301,12 +301,12 @@ steps:
   - math: \sqrt{x} \;=\; x^{\frac{1}{2}}
     note: The root becomes the denominator of the exponent.
   - math: \sqrt[\ca{3}]{x^{\cb{2}}} \;=\; x^{\frac{\cb{2}}{\ca{3}}}
-    note: The root goes underneath, the power inside goes on top.
+    note: The root goes underneath, and the power inside goes on top.
   - math: \dfrac{1}{\sqrt{x}} \;=\; \dfrac{1}{x^{\frac{1}{2}}} \;=\; x^{-\frac{1}{2}}
     note: Underneath a one as well, so the exponent turns negative.
 ```
 
-Convert first, then apply the laws. The 2025 report has this skill on both of its lists: converting from surd form to index form is on the list of what candidates awarded Achieved could do, and failing to manipulate expressions involving surds is on the list of why candidates did not achieve.
+Convert first, then apply the laws. The 2025 report has this skill on both of its lists. Converting from surd form to index form is on the list of what candidates awarded Achieved could do. Failing to manipulate expressions involving surds is on the list of why candidates did not achieve.
 
 ```practice
 caption: surd form and index form
@@ -322,13 +322,13 @@ questions:
     grade: achieved
     working:
       - math: x^{\frac{2}{5}}
-        note: The root is the denominator, and the power the numerator sat under it.
+        note: The root is the denominator, and the power that sat under the root sign is the numerator.
   - ask: Write in surd form.
     math: x^{\frac{5}{3}}
     grade: achieved
     working:
       - math: \sqrt[3]{x^5}
-        note: The denominator becomes the root and the numerator the power, which is the same rule read backwards.
+        note: The denominator becomes the root, and the numerator becomes the power. That is the same rule read backwards.
   - ask: Write in index form.
     math: \dfrac{2}{\sqrt[3]{x}}
     grade: achieved
@@ -349,7 +349,7 @@ questions:
     grade: merit
     working:
       - math: x^{\frac{1}{2}} \times x^{\frac{1}{3}}
-        note: Two different roots cannot be combined as roots. Convert them both first.
+        note: You cannot combine two different roots as roots. Convert them both first.
       - math: x^{\frac{1}{2} + \frac{1}{3}}
         note: The same base now, so the exponents add.
       - math: x^{\frac{5}{6}}
@@ -359,7 +359,7 @@ questions:
     grade: merit
     working:
       - math: x^{\frac{1}{2}} \times x^{\frac{1}{4}}
-        note: Two different roots cannot be combined as roots. Convert them both first.
+        note: You cannot combine two different roots as roots. Convert them both first.
       - math: x^{\frac{1}{2} + \frac{1}{4}}
       - math: x^{\frac{3}{4}}
 ```
@@ -472,7 +472,7 @@ steps:
   - math: \ca{4}\cb{x^4}
 ```
 
-Nothing in that is new. Each factor used one of the laws above, and the only new thing is that they appear in the same expression.
+There is nothing new in that. Each factor used one of the laws above, and the only new thing is that the laws appear in the same expression.
 
 ---
 
@@ -508,7 +508,7 @@ questions:
         note: The square reaches the $3$ inside the bracket as well as the $n$.
       - math: \dfrac{81n^2}{n^5} = 81n^{-3}
       - math: \dfrac{81}{n^3}
-        note: Positive exponents were asked for, so the answer cannot be left at the line above.
+        note: The question asked for positive exponents, so you cannot leave the answer at the line above.
   - ask: Simplify, leaving your answer with positive exponents.
     math: \dfrac{4(2n)^3}{n^7}
     grade: achieved
@@ -525,7 +525,7 @@ questions:
       - math: \dfrac{n^4}{25n^8} = \dfrac{1}{25n^4}
         note: Simplify inside the bracket first. There is much less to do afterwards.
       - math: \big(25n^4\big)^{0.5}
-        note: The minus means turn it over, and then the half is taken.
+        note: The minus means turn the fraction over. Then apply the half.
       - math: 5n^2
         note: $-0.5$ is a fractional exponent written as a decimal.
   - ask: Simplify.
@@ -566,7 +566,7 @@ questions:
       - math: \left(x^{\frac{1}{2}}(x+1)\right)^2 = x(x+1)^2
         note: Take a factor of $x^{\frac{1}{2}}$ out of the denominator before squaring it.
       - math: \dfrac{(x+1)(x-1)}{x(x+1)^2}
-        note: Both parts are now ordinary algebra. The exponents were only ever the disguise.
+        note: Both parts are now ordinary algebra. The exponents only hid that.
       - math: \dfrac{x-1}{x(x+1)}
   - ask: Show that the expression simplifies to $\dfrac{x(x-1)}{x+1}$.
     math: \dfrac{x^{\frac{3}{2}} - x^{\frac{1}{2}}}{x^{\frac{1}{2}} + x^{-\frac{1}{2}}}
@@ -586,13 +586,13 @@ questions:
 
 ## Summary
 
-An exponent is repeated multiplication. Every law follows from that, so a forgotten law can be rebuilt — and the laws have to be known, because they are not on the formulae sheet.
+An exponent is repeated multiplication. Every law follows from that, so you can rebuild a forgotten law. You have to know the laws, because they are not on the formulae sheet.
 
 Multiplying adds the exponents. Dividing subtracts them. A power of a power multiplies them. All three require the same base, and that condition is what makes an exponential equation solvable in B3.
 
 A power applies to every factor in a product, and never distributes over addition. $(x+y)^2$ has a middle term.
 
-Zero exponent gives one. A negative exponent means a reciprocal, not a negative value. A fractional exponent is a root — denominator is the root, numerator is the power, and take the root first.
+Zero exponent gives one. A negative exponent means a reciprocal, not a negative value. A fractional exponent is a root: the denominator is the root, the numerator is the power, and you take the root first.
 
 A root sign is an exponent in another notation. Convert it to an exponent before you try to do anything with it, because the laws above are the only laws there are.
 

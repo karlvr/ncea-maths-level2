@@ -2,15 +2,15 @@
 
 ---
 
-This page is the whole of Level 2 algebra in one list: three modules, seven topics, and the skills inside each topic. Nothing is taught here. The list shows the size of the subject before you start on it, because a textbook shows one page at a time and never states how much there is altogether.
+This page is the whole of Level 2 algebra in one list: three modules, seven topics, and the skills inside each topic. This page does not teach anything. The list shows the size of the subject before you start on it. A textbook does not, because it shows one page at a time and never states how much there is altogether.
 
-Read the list now, and again before the exam. In between, treat it as a checklist and mark the skills you can already do. Several of them are Level 1 work carried one step further, so the list starts partly marked.
+Read the list now, and again before the exam. In between, treat it as a checklist and mark the skills you can already do. Several of the skills are Level 1 work carried one step further, so the list starts partly marked.
 
 ---
 
 ## Module A—Expressions
 
-Rewriting. There is no equals sign anywhere in this module, so nothing in it is solved.
+Rewriting. There is no equals sign anywhere in this module, so you do not solve anything in it.
 
 **A1—Manipulating algebraic expressions.** The general moves: turning products into sums, and sums back into products.
 
@@ -97,7 +97,7 @@ There is an equals sign now, so there is something to find.
 
 Seven topics and close to fifty skills, but the topics overlap, and that makes the subject smaller than the count suggests.
 
-Three of them are one quadratic asked about in three ways.
+Three of the topics are one quadratic asked about in three ways.
 
 ```figure
 caption: One quadratic, three questions
@@ -110,7 +110,7 @@ steps:
     note: C1 asks how many such values exist, without finding them.
 ```
 
-Two more are one set of laws, learned in the first and applied in the second.
+Two more topics are one set of laws. You learn the laws in the first topic and apply them in the second.
 
 ```figure
 caption: One set of laws, two questions
