@@ -2,17 +2,17 @@
 
 ---
 
-In $2^x = 32$ the unknown is in the power. Nothing in B1 or B2 reaches it, because $x$ is not added to anything or multiplied by anything — it is counting how many twos are multiplied together.
+In $2^x = 32$ the unknown is in the power. No method in B1 or B2 reaches it, because $x$ is not added to anything or multiplied by anything. It counts how many twos are multiplied together.
 
 Write both sides as powers of the same base, and then the powers themselves must be equal. Or use a logarithm, the operation that brings a power down to where the earlier methods can work on it.
 
-The logarithm rules are on the formulae sheet handed out with the examination. The index laws are not, and everything here rests on them, so know A3 before starting this topic.
+The logarithm rules are on the formulae sheet given with the examination. The index laws are not, and everything here rests on them, so know A3 before starting this topic.
 
 ---
 
 ## Making the bases match
 
-If two powers of the same base are equal, their exponents are equal. That is the whole method, and it needs the same base on both sides for the same reason the index laws do: a power of two and a power of three have nothing in common to compare.
+If two powers of the same base are equal, their exponents are equal. That is the whole method. It needs the same base on both sides for the same reason the index laws do. A power of two and a power of three have nothing in common to compare.
 
 ```figure
 id: b3-same-base
@@ -27,7 +27,7 @@ steps:
   - math: x = 4
 ```
 
-Getting there means rewriting one side or both, using the index laws: a number as a power, a reciprocal as a negative exponent, a root as a fractional one.
+To reach that form, rewrite one side or both using the index laws. Write a number as a power, a reciprocal as a negative exponent, and a root as a fractional one.
 
 ```figure
 caption: Rewriting a side as a power
@@ -42,7 +42,7 @@ steps:
     note: Each of these is an index law, and each turns up in exponential equations.
 ```
 
-Once both sides are written over the same base, the power of a power law collapses each side to a single exponent.
+Once you write both sides over the same base, the power of a power law collapses each side to a single exponent.
 
 ```figure
 id: b3-rewrite
@@ -55,7 +55,7 @@ steps:
   - math: 3^{6x+3} = 3^{-2x}
     note: A power of a power multiplies, on both sides.
   - math: 6x + 3 = -2x
-    note: The bases match, so the exponents can be equated.
+    note: The bases match, so you can equate the exponents.
   - math: x = -\dfrac{3}{8}
 ```
 
@@ -82,14 +82,14 @@ questions:
     working:
       - math: 2^{x-1} = 2^4
       - math: x - 1 = 4 \;\Rightarrow\; x = 5
-        note: The whole exponent is equated, not just the letter in it.
+        note: Equate the whole exponent, not just the letter in it.
   - ask: Solve.
     math: 5^{x-1} = 125
     grade: achieved
     working:
       - math: 5^{x-1} = 5^3
       - math: x - 1 = 3 \;\Rightarrow\; x = 4
-        note: The whole exponent is equated, not just the letter in it.
+        note: Equate the whole exponent, not just the letter in it.
   - ask: Solve.
     math: 8^{x+1} = \dfrac{1}{4}
     grade: merit
@@ -149,7 +149,7 @@ steps:
 
 So reading a logarithmic equation means turning it into index form. $x = \log_3 243$ asks for a power, so write $3^x = 243$, and the answer is $5$. In $\log_x 81 = 4$ the unknown is the base instead, so write $x^4 = 81$. The algebra gives $3$ and $-3$, and only $3$ is the answer.
 
-A base has to be positive, and it cannot be $1$. That is what rejected the $-3$: no logarithm has a negative base, and the rejection must be written down. The same discard appears in $\log_x 36 = 2$, which gives $x^2 = 36$, so $x$ is $6$ or $-6$, and $-6$ is rejected. The 2023 marking schedule awards the higher grade only where that rejection is shown.
+A base has to be positive, and it cannot be $1$. That is what rejected the $-3$. No logarithm has a negative base, and you must write the rejection down. The same discard appears in $\log_x 36 = 2$, which gives $x^2 = 36$. So $x$ is $6$ or $-6$, and you reject $-6$. The 2023 marking schedule awards the higher grade only where that rejection is shown.
 
 You also cannot take the logarithm of zero or of a negative number, because no power of a positive base produces one. That fact does most of the discarding later in this topic.
 
@@ -209,7 +209,7 @@ questions:
       - math: x = 7 \quad\textsf{or}\quad x = -7
         note: Taking a square root gives two values.
       - math: x = 7
-        note: A logarithm cannot have a negative base, so $-7$ is rejected. Writing that down is required.
+        note: A logarithm cannot have a negative base, so reject $-7$. Writing that down is required.
   - ask: Solve.
     math: \log_x 64 = 2
     grade: merit
@@ -219,7 +219,7 @@ questions:
       - math: x = 8 \quad\textsf{or}\quad x = -8
         note: Taking a square root gives two values.
       - math: x = 8
-        note: A logarithm cannot have a negative base, so $-8$ is rejected. Writing that down is required.
+        note: A logarithm cannot have a negative base, so reject $-8$. Writing that down is required.
 ```
 
 ---
@@ -240,7 +240,7 @@ steps:
     note: A product becomes a sum, a quotient becomes a difference, and a power becomes a coefficient.
 ```
 
-They are the index laws in the other notation. A logarithm is an exponent, and multiplying powers of the same base adds the exponents — so the logarithm of a product is the sum of the logarithms.
+They are the index laws in the other notation. A logarithm is an exponent, and multiplying powers of the same base adds the exponents. So the logarithm of a product is the sum of the logarithms.
 
 ```figure
 caption: Why the product rule holds
@@ -255,7 +255,7 @@ steps:
 
 Two values are not on the sheet. $\log_b b = 1$, because $b^1 = b$. $\log_b 1 = 0$, because $b^0 = 1$.
 
-The rules are about products, quotients and powers. $\log(x + y)$ is not $\log x + \log y$, and nothing turns a sum inside a logarithm into anything simpler — the same boundary that cancelling and powers have, reaching every factor and never every term.
+The rules are about products, quotients and powers. $\log(x + y)$ is not $\log x + \log y$, and a sum inside a logarithm cannot be made simpler. Cancelling and powers have the same boundary. They reach every factor and never every term.
 
 Splitting a number into factors is what makes the rules usable. Where $p = \log_a 2$ and $q = \log_a 5$, the value of $\log_a 50$ follows from writing fifty as $2 \times 5^2$.
 
@@ -310,14 +310,14 @@ questions:
     from: "2025"
     working:
       - math: \log_a\!\left(3^2 \times 7\right)
-        note: Split sixty-three into the factors the question has given values for.
+        note: Split sixty-three into the factors the question gives values for.
       - math: 2\log_a 3 + \log_a 7
       - math: 2p + q
   - ask: If $p = \log_a 2$ and $q = \log_a 5$, write $\log_a 200$ in terms of $p$ and $q$.
     grade: merit
     working:
       - math: \log_a\!\left(2^3 \times 5^2\right)
-        note: Split two hundred into the factors the question has given values for.
+        note: Split two hundred into the factors the question gives values for.
       - math: 3\log_a 2 + 2\log_a 5
       - math: 3p + 2q
   - ask: Evaluate.
@@ -358,7 +358,7 @@ steps:
   - math: \log_2\!\left(\dfrac{(x+3)^2}{x}\right) = 4
     note: A difference of logarithms is the logarithm of a quotient.
   - math: \dfrac{(x+3)^2}{x} = 2^4
-    note: Now in index form, and the logarithm has gone.
+    note: Now in index form, and the logarithm is gone.
   - math: x^2 + 6x + 9 = 16x
     note: Multiply both sides by $x$, and expand the square rather than distributing over it.
   - math: x^2 - 10x + 9 = 0
@@ -395,7 +395,7 @@ questions:
         note: Index form, with $2^3$ on the right.
       - math: (x - 4)(x + 2) = 0
       - math: x = 4
-        note: At $x=-2$ both logarithms would be of negative numbers, so that root is rejected.
+        note: At $x=-2$ both logarithms would be of negative numbers, so reject that root.
   - ask: Solve.
     math: \log_3 x + \log_3 (x - 2) = 1
     grade: merit
@@ -405,7 +405,7 @@ questions:
         note: Index form, with $3^1$ on the right.
       - math: (x - 3)(x + 1) = 0
       - math: x = 3
-        note: At $x=-1$ both logarithms would be of negative numbers, so that root is rejected.
+        note: At $x=-1$ both logarithms would be of negative numbers, so reject that root.
   - ask: Solve.
     math: 2\log_5(x + 4) - \log_5 x = 2
     grade: excellence
@@ -519,17 +519,17 @@ steps:
   - math: \left(\ca{2^x}\right)^2 - \ca{2^x} - 6 = 0
     note: $2^{2x}$ is $2^x$ squared, by the power of a power law.
   - math: u^2 - u - 6 = 0 \qquad \textsf{where } u = \ca{2^x}
-    note: Naming it makes the shape of the equation visible.
+    note: Naming $2^x$ makes the shape of the equation visible.
   - math: (u - 3)(u + 2) = 0
   - math: 2^x = 3 \quad\textsf{or}\quad 2^x = -2
-    note: Both values of $u$ have to be turned back into statements about $x$.
+    note: Turn both values of $u$ back into statements about $x$.
   - math: x = \dfrac{\log 3}{\log 2} = 1.58
     note: A power of a positive base is never negative, so $2^x = -2$ has no solution.
 ```
 
-A positive base raised to any power is positive, so $2^x = -2$ has no solution and the second value of $u$ leads nowhere. The 2025 marking schedule gives excluding the negative value as part of what the highest grade on that question requires, so write the rejection down.
+A positive base raised to any power is positive, so $2^x = -2$ has no solution. The second value of $u$ gives no value of $x$. Write the rejection down. The 2025 marking schedule gives excluding the negative value as part of what the highest grade on that question requires.
 
-The powers do not always line up as neatly as $2^{2x}$ and $2^x$. In $3^{2x+1}$ the exponent has an extra $1$ in it, and the multiplying law splits it off: $3^{2x+1} = 3 \cdot 3^{2x} = 3\left(3^x\right)^2$. Likewise $3^{x+2} = 3^2 \cdot 3^x = 9 \cdot 3^x$. Both become multiples of the quantity being named.
+The powers do not always match as neatly as $2^{2x}$ and $2^x$. In $3^{2x+1}$ the exponent has an extra $1$ in it, and the multiplying law separates it: $3^{2x+1} = 3 \cdot 3^{2x} = 3\left(3^x\right)^2$. Likewise $3^{x+2} = 3^2 \cdot 3^x = 9 \cdot 3^x$. Both become multiples of the quantity you name.
 
 ```practice
 caption: quadratics in disguise
@@ -579,28 +579,28 @@ questions:
     from: "2025"
     working:
       - math: 3\left(3^x\right)^2 - 54 = 9\left(3^x\right)
-        note: Split the extra terms off each exponent, so both sides are built from $3^x$ alone.
+        note: Separate the extra terms from each exponent, so that both sides are built from $3^x$ alone.
       - math: 3u^2 - 9u - 54 = 0 \qquad \textsf{where } u = 3^x
         note: Everything to one side, as every method for a quadratic requires.
       - math: u^2 - 3u - 18 = 0
         note: Divide through by $3$, which is allowed because $3$ is a number and not the unknown.
       - math: (u - 6)(u + 3) = 0
       - math: 3^x = 6
-        note: $3^x = -3$ is impossible, so it is discarded.
+        note: $3^x = -3$ is impossible, so discard it.
       - math: x = \dfrac{\log 6}{\log 3} = 1.63
   - ask: Solve, to three significant figures.
     math: 3^{2x+1} - 30 = 3^{x+2}
     grade: excellence
     working:
       - math: 3\left(3^x\right)^2 - 30 = 9\left(3^x\right)
-        note: Split the extra terms off each exponent, so both sides are built from $3^x$ alone.
+        note: Separate the extra terms from each exponent, so that both sides are built from $3^x$ alone.
       - math: 3u^2 - 9u - 30 = 0 \qquad \textsf{where } u = 3^x
         note: Everything to one side, as every method for a quadratic requires.
       - math: u^2 - 3u - 10 = 0
         note: Divide through by $3$, which is allowed because $3$ is a number and not the unknown.
       - math: (u - 5)(u + 2) = 0
       - math: 3^x = 5
-        note: $3^x = -2$ is impossible, so it is discarded.
+        note: $3^x = -2$ is impossible, so discard it.
       - math: x = \dfrac{\log 5}{\log 3} = 1.46
 ```
 
@@ -632,7 +632,7 @@ steps:
 
 Compound interest is the same equation with a factor above one: an amount $P$ at $6\%$ a year is worth $P \times 1.06^{\,n}$ after $n$ years.
 
-Some models use the base $e$ rather than a decimal. It behaves like any other base, and $\ln$ is its logarithm — the formulae sheet gives $\ln y = \log_e y$. A model given in that form usually has an unknown constant in it, found by substituting the starting values first.
+Some models use the base $e$ rather than a decimal. It behaves like any other base, and $\ln$ is its logarithm. The formulae sheet gives $\ln y = \log_e y$. A model given in that form usually has an unknown constant in it. Find the constant by substituting the starting values first.
 
 ```practice
 caption: growth and decay
@@ -783,7 +783,7 @@ questions:
       - math: \dfrac{I_1}{I_2} = \dfrac{10^{6.2}I_0}{10^{5.0}I_0} = 10^{1.2}
         note: The reference cancels, and dividing powers of the same base subtracts the exponents.
       - math: 10^{1.2} = 15.85 > 15
-        note: The question said show, so the comparison with fifteen has to be stated.
+        note: The question said show, so state the comparison with fifteen.
   - ask: The sound level $L$ in decibels is given by $L = 10\log_{10}\!\left(\dfrac{I}{I_0}\right)$, where $I$ is the intensity of the sound and $I_0$ is a fixed reference intensity. Show that a sound of 85 decibels is more than 30 times as intense as one of 70 decibels.
     grade: excellence
     working:
@@ -794,7 +794,7 @@ questions:
       - math: \dfrac{I_1}{I_2} = \dfrac{10^{8.5}I_0}{10^{7.0}I_0} = 10^{1.5}
         note: The reference cancels, and dividing powers of the same base subtracts the exponents.
       - math: 10^{1.5} = 31.6 > 30
-        note: The question said show, so the comparison with thirty has to be stated.
+        note: The question said show, so state the comparison with thirty.
 ```
 
 ---
@@ -803,14 +803,14 @@ questions:
 
 An exponential equation has the unknown in the power, and there are two ways to solve it.
 
-Write both sides as powers of one base, and then the exponents are equal. Getting there uses every rewriting rule from A3 — a number as a power, a reciprocal as a negative exponent, a root as a fractional one.
+Write both sides as powers of one base, and then the exponents are equal. Reaching that form uses every rewriting rule from A3: a number as a power, a reciprocal as a negative exponent, a root as a fractional one.
 
-A logarithm is a power. $\log_b y$ is the power that $b$ is raised to in order to give $y$, and turning a logarithmic statement into index form is the first move in almost every question about one.
+A logarithm is a power. $\log_b y$ is the power that $b$ is raised to in order to give $y$. Turning a logarithmic statement into index form is the first move in almost every question about one.
 
 The three logarithm rules are on the formulae sheet and are the index laws in another notation. They apply to products, quotients and powers, and never to a sum inside the logarithm.
 
 Where no common base exists, take logarithms of both sides and let the power rule bring the exponent down.
 
-Where one power of a base is the square of another, name the smaller one and a quadratic appears. Solve it by B2's methods, then reject any value that would make a power of a positive base negative.
+Where one power of a base is the square of another, name the smaller one and a quadratic appears. Solve it by the methods of B2, then reject any value that would make a power of a positive base negative.
 
 Growth and decay are the same equation with a multiplier either side of one, and the specification names them as contexts the examination may use.

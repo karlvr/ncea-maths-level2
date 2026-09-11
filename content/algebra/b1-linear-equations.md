@@ -4,19 +4,19 @@
 
 An equation states that two things are equal. Solving it means finding the values of the unknown that make that statement true.
 
-An equation is **linear** when the unknown appears only to the first power. $3x + 5 = 20$ is linear. $x^2 + 3x = 20$ is not, because of the $x^2$, and it is solved by the methods in the next topic.
+An equation is **linear** when the unknown appears only to the first power. $3x + 5 = 20$ is linear. $x^2 + 3x = 20$ is not, because of the $x^2$. The methods in the next topic solve it.
 
-The examination puts the difficulty in **forming** the equation — turning a paragraph of words into a statement with an equals sign — not in solving it once you have it. The specification is explicit that any equation you form must be stated as part of solving a problem, so the equation is not only a step towards the answer, it is part of the answer.
+The examination puts the difficulty in **forming** the equation, not in solving it once you have it. Forming the equation means turning a paragraph of words into a statement with an equals sign. The specification is explicit that any equation you form must be stated as part of solving a problem. So the equation is not only a step towards the answer. It is part of the answer.
 
 ---
 
 ## Doing the same thing to both sides
 
-An equation has an equals sign, and the equals sign brings one new permission: you may do anything to an equation, provided you do it to both sides. Both sides have the same value, so an operation applied to both of them leaves two sides that still have the same value.
+An equation has an equals sign, and the equals sign brings one new permission. You may do anything to an equation, provided you do it to both sides. Both sides have the same value, so an operation applied to both of them leaves two sides that still have the same value.
 
-That permission does not extend to an expression. Multiplying an expression by three gives an expression three times as large, which is a different expression. Multiplying both sides of an equation by three leaves the two sides equal to each other, and leaves the same values of the unknown making the statement true.
+That permission does not extend to an expression. Multiplying an expression by three gives an expression three times as large, which is a different expression. Multiplying both sides of an equation by three leaves the two sides equal to each other. The same values of the unknown still make the statement true.
 
-To solve a linear equation, get the unknown by itself on one side. Undo whatever has been done to it, in the reverse of the order it was done.
+To solve a linear equation, get the unknown by itself on one side. Undo whatever was done to it, in the reverse of the order it was done.
 
 In $3x + 5 = 20$ the $x$ was multiplied by $3$, and then $5$ was added. So undo the addition first, and the multiplication second.
 
@@ -34,9 +34,9 @@ steps:
   - math: x = 5
 ```
 
-Substituting the answer back into the equation you were given checks it, and the check is exact: a solution makes the two sides equal and a wrong answer does not, so putting $5$ in for $x$ must produce $20$ on the left as well as on the right.
+To check the answer, substitute it back into the equation you were given. The check is exact. A solution makes the two sides equal, and a wrong answer does not. So putting $5$ in for $x$ must produce $20$ on the left as well as on the right.
 
-Dividing both sides by a negative number is allowed, and it changes the sign on both sides. From $-2x = 12$, dividing both sides by $-2$ gives $x = -6$.
+You may divide both sides by a negative number, and it changes the sign on both sides. From $-2x = 12$, dividing both sides by $-2$ gives $x = -6$.
 
 ```practice
 caption: undoing in reverse order
@@ -60,7 +60,7 @@ questions:
     grade: achieved
     working:
       - math: \dfrac{x}{5} = 8
-        note: The $x$ was divided by $5$ and then $3$ was added, so the addition is undone first.
+        note: The $x$ was divided by $5$ and then $3$ was added, so undo the addition first.
       - math: x = 40
         note: Undo a division by multiplying both sides.
   - ask: Solve.
@@ -94,7 +94,7 @@ questions:
 
 When the unknown appears on both sides, collect the terms containing it on one side and the numbers on the other.
 
-Either side works, and choosing the side that leaves a positive number in front of the unknown avoids carrying a minus through every line that follows.
+Either side works. Choosing the side that leaves a positive number in front of the unknown avoids carrying a minus through every line that follows.
 
 ```figure
 caption: Collecting the unknown on one side
@@ -109,7 +109,7 @@ steps:
   - math: x = 5
 ```
 
-In $4 - 3x = 2x - 11$ the term in $x$ is negative on the left and positive on the right. Adding $3x$ to both sides clears the left and leaves $5x$ on the right, giving $4 = 5x - 11$. Subtracting $2x$ instead would have left $-5x$ on the left, which is correct but harder to keep track of.
+In $4 - 3x = 2x - 11$ the term in $x$ is negative on the left and positive on the right. Adding $3x$ to both sides clears the left and leaves $5x$ on the right, giving $4 = 5x - 11$. Subtracting $2x$ instead would have left $-5x$ on the left, which is correct but harder to follow.
 
 ```practice
 caption: the unknown on both sides
@@ -135,7 +135,7 @@ questions:
     grade: achieved
     working:
       - math: 2 = 8x - 22
-        note: Add $5x$ to both sides, so that the term in $x$ ends up positive.
+        note: Add $5x$ to both sides, so that the term in $x$ is positive.
       - math: 24 = 8x
       - math: x = 3
   - ask: Solve.
@@ -143,7 +143,7 @@ questions:
     grade: achieved
     working:
       - math: 6 = 5x - 14
-        note: Add $2x$ to both sides, so that the term in $x$ ends up positive.
+        note: Add $2x$ to both sides, so that the term in $x$ is positive.
       - math: 20 = 5x
       - math: x = 4
   - ask: Solve.
@@ -154,7 +154,7 @@ questions:
         note: Add $x$ to both sides.
       - math: "-15 = 5x"
       - math: x = -3
-        note: A negative solution is an ordinary answer, not evidence that something has gone wrong.
+        note: A negative solution is an ordinary answer, not evidence of an error.
   - ask: Solve.
     math: 5 - x = 2x + 17
     grade: achieved
@@ -171,7 +171,7 @@ questions:
 
 ### Expand the brackets first
 
-A bracket in an equation is expanded exactly as it is in an expression, and a minus in front of one reaches every term inside it.
+Expand a bracket in an equation exactly as you expand one in an expression. A minus in front of a bracket reaches every term inside it.
 
 ```figure
 caption: Expanding before solving
@@ -186,9 +186,9 @@ steps:
 
 ### Multiplying an equation through
 
-A fraction in an equation is cleared by multiplying every term on both sides by the lowest common denominator. The common denominator is found exactly as it is for adding rational expressions: factorise the denominators, and take each distinct factor as many times as it appears in any one of them.
+To clear a fraction in an equation, multiply every term on both sides by the lowest common denominator. Find the common denominator exactly as you find it for adding rational expressions. Factorise the denominators, and take each distinct factor as many times as it appears in any one of them.
 
-This is where an equation and an expression differ. In an expression a fraction had to stay a fraction, because multiplying an expression by six gives an expression six times as large. An equation may be multiplied through, because both sides are multiplied and neither side changes relative to the other.
+This is where an equation and an expression differ. In an expression a fraction had to stay a fraction, because multiplying an expression by six gives an expression six times as large. You may multiply an equation through, because you multiply both sides and neither side changes relative to the other.
 
 ```figure
 id: b1-clear-fractions
@@ -197,14 +197,14 @@ steps:
   - math: \dfrac{2x}{3} - \dfrac{x-4}{2} = 3
     note: The lowest common denominator of $3$ and $2$ is $6$.
   - math: \ca{6} \cdot \dfrac{2x}{3} - \ca{6} \cdot \dfrac{x-4}{2} = \ca{6} \cdot 3
-    note: Multiply every term by it, on both sides.
+    note: Multiply every term on both sides by $6$.
   - math: 4x - 3\ca{(x-4)} = 18
     note: Each denominator divides out. A numerator with two terms in it keeps its bracket.
   - math: 4x - 3x + 12 = 18
   - math: x = 6
 ```
 
-The bracket around $x-4$ keeps the subtraction correct: that numerator was a single quantity before the multiplication and has to stay one afterwards.
+The bracket around $x-4$ keeps the subtraction correct. That numerator was a single quantity before the multiplication, and it has to stay one afterwards.
 
 When the unknown is in a denominator, multiplying through still clears it, but what is left may not be linear. Multiplying $2x + 3 = \dfrac{7}{x}$ through by $x$ gives $2x^2 + 3x = 7$, which has an $x^2$ in it. That is a quadratic, and the next lesson solves it.
 
@@ -223,7 +223,7 @@ questions:
     grade: achieved
     working:
       - math: x - 3 = 5
-        note: Both sides divide by $4$ exactly, so expanding the bracket is not needed.
+        note: Both sides divide by $4$ exactly, so you do not need to expand the bracket.
       - math: x = 8
   - ask: Solve.
     math: 2(x + 5) = 3(x - 1)
@@ -277,7 +277,7 @@ questions:
 
 ## Rearranging a formula
 
-The **subject** of a formula is the letter that stands on its own on one side of it. Making a letter the subject is the same work with an expression as the answer instead of a number. Undo what has been done to that letter, in the reverse of the order it was done, doing each step to both sides.
+The **subject** of a formula is the letter that stands on its own on one side of it. Making a letter the subject is the same work with an expression as the answer instead of a number. Undo what was done to that letter, in the reverse of the order it was done. Do each step to both sides.
 
 ```figure
 caption: Making a letter the subject
@@ -287,10 +287,10 @@ steps:
   - math: \dfrac{A}{\pi} = r^2
     note: Undo the multiplication first. Divide both sides by $\pi$.
   - math: r = \sqrt{\dfrac{A}{\pi}}
-    note: Then take the square root of both sides. A radius is a length, so only the positive root is kept.
+    note: Then take the square root of both sides. A radius is a length, so keep only the positive root.
 ```
 
-A root is undone by raising both sides to the matching power, and the side without the root needs a bracket around all of it.
+To undo a root, raise both sides to the matching power. The side without the root needs a bracket around all of it.
 
 ```figure
 id: b1-undo-root
@@ -305,7 +305,7 @@ steps:
   - math: x = \dfrac{8y^3 + 9}{5}
 ```
 
-The 2025 examiner's report gives expanding $(2y)^3$ as $2y^3$ rather than $8y^3$ as a reason candidates did not achieve, and it is the same bracket rule as $\pi(2x)^2$, where the square reaches the $2$ as well as the $x$.
+The bracket rule is the same as in $\pi(2x)^2$, where the square reaches the $2$ as well as the $x$. The 2025 examiner's report gives expanding $(2y)^3$ as $2y^3$ rather than $8y^3$ as a reason candidates did not achieve.
 
 ### When the letter appears more than once
 
@@ -385,7 +385,7 @@ questions:
 
 ## Forming an equation from words
 
-Nothing on the page is an equation yet. You have to decide what the unknown is, write every quantity in the problem in terms of it, and find the statement in the words that says two of those quantities are equal.
+Nothing on the page is an equation yet. You have to decide what the unknown is, and write every quantity in the problem in terms of it. Then find the statement in the words that says two of those quantities are equal.
 
 ```figure
 caption: Forming an equation
@@ -407,9 +407,9 @@ id: b1-forming
 caption: A rectangle of known perimeter
 steps:
   - math: \textsf{let } \ca{w} = \textsf{ the width, in centimetres}
-    note: Name the unknown, and say what it measures. Without the unit the answer means nothing.
+    note: Name the unknown, and say what it measures. Without the unit the answer has no meaning.
   - math: \textsf{length} = \ca{w} + 3
-    note: Three centimetres longer than the width, so it is written in terms of the width.
+    note: Three centimetres longer than the width, so write it in terms of the width.
   - math: 2\ca{w} + 2(\ca{w} + 3) = 34
     note: The perimeter is the quantity the words give a value for, so the perimeter is the equation.
   - math: 4w + 6 = 34
@@ -420,13 +420,13 @@ steps:
 
 ### Write the equation down
 
-The specification says that any equation you form must be stated as part of solving a problem. An equation that was used but never written earns nothing, however correct the arithmetic that followed it. The line $2w + 2(w+3) = 34$ goes on the page before any solving starts.
+The specification says that any equation you form must be stated as part of solving a problem. An equation that you used but never wrote does not earn marks, however correct the arithmetic that followed it. The line $2w + 2(w+3) = 34$ goes on the page before any solving starts.
 
 ### Check against the wording, not against your equation
 
 Substituting your answer into the equation you formed tests only whether you solved that equation correctly. It cannot tell you whether the equation was the right one to write, because an equation built wrongly accepts a wrong answer.
 
-Read the answer back into the original sentences instead. A width of seven and a length of ten give a perimeter of thirty-four, and ten is three more than seven, so both of the facts in the question hold.
+Read the answer back into the original sentences instead. A width of seven and a length of ten give a perimeter of thirty-four, and ten is three more than seven. So both of the facts in the question hold.
 
 ```practice
 caption: forming an equation
@@ -528,7 +528,7 @@ questions:
     working:
       - math: \textsf{let } p = \textsf{ the number of pens sold}
       - math: \textsf{notebooks sold} = 40 - p
-        note: The two counts add to $40$, so once one of them is named the other follows. A second letter is not needed.
+        note: The two counts add to $40$, so once you name one of them the other follows. You do not need a second letter.
       - math: 3p + 7(40 - p) = 184
         note: Each count is multiplied by its own price, and the two amounts add to the takings.
       - math: 3p + 280 - 7p = 184
@@ -539,7 +539,7 @@ questions:
     working:
       - math: \textsf{let } c = \textsf{ the number of caps sold}
       - math: \textsf{shirts sold} = 30 - c
-        note: The two counts add to $30$, so once one of them is named the other follows. A second letter is not needed.
+        note: The two counts add to $30$, so once you name one of them the other follows. You do not need a second letter.
       - math: 5c + 9(30 - c) = 214
         note: Each count is multiplied by its own price, and the two amounts add to the takings.
       - math: 5c + 270 - 9c = 214
@@ -566,7 +566,7 @@ questions:
     grade: excellence
     working:
       - math: \textsf{let } d = \textsf{ the distance driven at 80 km/h, in kilometres}
-        note: Neither part's distance is given, so one of them has to be named before anything can be written.
+        note: Neither distance is given, so name one of them before you write anything.
       - math: \textsf{second part} = 240 - d
         note: The two distances add to the whole journey.
       - math: \dfrac{d}{80} + \dfrac{240 - d}{60} = 3.5
@@ -580,7 +580,7 @@ questions:
     grade: excellence
     working:
       - math: \textsf{let } d = \textsf{ the distance driven at 90 km/h, in kilometres}
-        note: Neither part's distance is given, so one of them has to be named before anything can be written.
+        note: Neither distance is given, so name one of them before you write anything.
       - math: \textsf{second part} = 300 - d
         note: The two distances add to the whole journey.
       - math: \dfrac{d}{90} + \dfrac{300 - d}{50} = 4
@@ -596,7 +596,7 @@ questions:
 
 ## Two unknowns, two equations
 
-One equation with two unknowns has many solutions: $x + y = 10$ is satisfied by $x=1$ and $y=9$, and by $x=2$ and $y=8$, and by every other pair adding to ten. Two equations that must both be true at once usually pin down a single pair.
+One equation with two unknowns has many solutions. $x + y = 10$ is true for $x=1$ and $y=9$, for $x=2$ and $y=8$, and for every other pair adding to ten. Two equations that must both be true at once usually have only one pair of solutions.
 
 Two methods do it, and both reach the same answer. Each is worked below on the same pair of equations: $2x + y = 11$ and $3x - y = 9$.
 
@@ -641,9 +641,9 @@ steps:
 
 Where the coefficients do not match, multiply one equation through by whatever makes them match. That is the same permission used to clear fractions above.
 
-Use substitution when one equation already gives a letter on its own, and when one of the two equations is not linear — which is how a line meets a curve, where elimination has nothing to cancel against. Elimination is quicker when both equations are in the same form.
+Use substitution when one equation already gives a letter on its own. Use it also when one of the two equations is not linear, which is the case where a line meets a curve. There elimination has nothing to cancel against. Elimination is quicker when both equations are in the same form.
 
-A curve of known form passing through known points gives one equation for each point. In $y = 3x^2 + ax + b$ the unknowns are $a$ and $b$, and each point supplies a value for $x$ and a value for $y$ — which leaves an equation with $a$ and $b$ in it, and neither of them squared.
+A curve of known form passing through known points gives one equation for each point. In $y = 3x^2 + ax + b$ the unknowns are $a$ and $b$. Each point supplies a value for $x$ and a value for $y$. That leaves an equation with $a$ and $b$ in it, and neither of them squared.
 
 ```figure
 id: b1-two-points
@@ -769,7 +769,7 @@ questions:
     from: "2025"
     working:
       - math: 0 = 2(3)^2 + 3a + b \;\Rightarrow\; 3a + b = -18
-        note: Substitute the first point, and evaluate every number before going on.
+        note: Substitute the first point, and evaluate every number before the next step.
       - math: -8 = 2(-1)^2 - a + b \;\Rightarrow\; -a + b = -10
         note: Squaring $-1$ gives $+1$, so the first term is $2$ and not $-2$.
       - math: 4a = -8
@@ -779,7 +779,7 @@ questions:
     grade: merit
     working:
       - math: 0 = 3(2)^2 + 2a + b \;\Rightarrow\; 2a + b = -12
-        note: Substitute the first point, and evaluate every number before going on.
+        note: Substitute the first point, and evaluate every number before the next step.
       - math: 12 = 3(-1)^2 - a + b \;\Rightarrow\; -a + b = 9
         note: Squaring $-1$ gives $+1$, so the first term is $3$ and not $-3$.
       - math: 3a = -21
@@ -845,7 +845,7 @@ questions:
       - math: \textsf{let } n = \textsf{ the nephew's age now, in years}
         note: Name the younger one, so that the other age is a multiple rather than a fraction.
       - math: 3n + 6 = 2(n + 6)
-        note: In six years both ages go up by six, and the words say one is then twice the other.
+        note: In six years both ages increase by six, and the words say one is then twice the other.
       - math: 3n + 6 = 2n + 12
       - math: n = 6
       - math: \textsf{nephew } 6, \quad \textsf{Ana } 18
@@ -856,7 +856,7 @@ questions:
       - math: \textsf{let } n = \textsf{ the niece's age now, in years}
         note: Name the younger one, so that the other age is a multiple rather than a fraction.
       - math: 4n + 3 = 3(n + 3)
-        note: In three years both ages go up by three, and the words say one is then three times the other.
+        note: In three years both ages increase by three, and the words say one is then three times the other.
       - math: 4n + 3 = 3n + 9
       - math: n = 6
       - math: \textsf{niece } 6, \quad \textsf{Sam } 24
@@ -884,7 +884,7 @@ questions:
       - math: x^2 + 4x + k = x^2 + 4x - 21
         note: Expand the right side. The first two terms match, which is what makes a value of $k$ possible.
       - math: k = -21
-  - ask: A cylinder of radius $r$ and height $h$, and a second container with the same radius and height, have the surface areas below — the cylinder's first. The two surface areas are equal. Find $h$ in terms of $r$.
+  - ask: A cylinder of radius $r$ and height $h$, and a second container with the same radius and height, have the surface areas below. The surface area of the cylinder is given first. The two surface areas are equal. Find $h$ in terms of $r$.
     math: '2\pi r^2 + 2\pi rh \qquad\textsf{ and }\qquad 5r^2 + 10rh'
     grade: excellence
     from: "2023"
@@ -915,7 +915,7 @@ questions:
 
 ## Summary
 
-An expression is simplified and an equation is solved. Whatever you do to one side of an equation, do to the other side as well.
+You simplify an expression, and you solve an equation. Whatever you do to one side of an equation, do to the other side as well.
 
 Undo the operations on the unknown in the reverse of the order they were done. When the unknown is on both sides, collect it on the side that leaves its coefficient positive.
 
@@ -923,8 +923,8 @@ Expand brackets before solving, and clear fractions by multiplying every term on
 
 Making a letter the subject is the same work with an expression as the answer. Where that letter appears more than once, collect its terms on one side and take it out as a common factor.
 
-Name the unknown and say what it measures, write each quantity in terms of it, and write the equation down before solving — the specification requires that any equation you form is stated. Check the answer against the original wording rather than against the equation you formed, and answer the question that was asked.
+Name the unknown and say what it measures. Write each quantity in terms of it, and write the equation down before solving. The specification requires that any equation you form is stated. Check the answer against the original wording rather than against the equation you formed, and answer the question that was asked.
 
-Two unknowns need two equations, and one is eliminated by adding or subtracting the pair.
+Two unknowns need two equations. Adding or subtracting the pair eliminates one unknown.
 
 Clearing a fraction whose denominator contains the unknown leaves an $x^2$ behind, and so does substituting a line into a curve. Both land in B2.

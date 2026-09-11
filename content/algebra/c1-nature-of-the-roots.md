@@ -2,7 +2,7 @@
 
 ---
 
-A quadratic equation has two roots, or one, or none. Which of the three it is can be decided without solving the equation, from a single number calculated from $a$, $b$ and $c$.
+A quadratic equation has two roots, or one, or none. You can decide which of the three it is without solving the equation, from a single number calculated from $a$, $b$ and $c$.
 
 That number is the **discriminant**, the part of the quadratic formula under the square root, $b^2 - 4ac$. It is written $\Delta$, and it is on the formulae sheet beside the formula it comes from.
 
@@ -12,7 +12,7 @@ This is the whole of Module C. It is one idea, and the examination mostly runs i
 
 ## Where the discriminant comes from
 
-The quadratic formula is $x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}$. Once $a$, $b$ and $c$ are known, every part of it is a known number, and the only part that changes what happens is the part under the square root sign.
+The quadratic formula is $x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}$. Once $a$, $b$ and $c$ are known, every part of it is a known number. The only part that changes what happens is the part under the square root sign.
 
 ```figure
 id: c1-from-the-formula
@@ -21,14 +21,14 @@ steps:
   - math: x = \dfrac{-b \pm \sqrt{\ca{b^2 - 4ac}}}{2a}
     note: The rest of the formula is arithmetic. Only the part under the root sign can change what happens.
   - math: \ca{b^2 - 4ac} > 0
-    note: A positive number has a real square root, and the plus-or-minus adds and subtracts it — two different answers.
+    note: A positive number has a real square root, and the plus-or-minus adds and subtracts it, which gives two different answers.
   - math: \ca{b^2 - 4ac} = 0
-    note: The square root is zero, so adding and subtracting it give the same thing — one answer.
+    note: The square root is zero, so adding and subtracting it give the same thing, which is one answer.
   - math: \ca{b^2 - 4ac} < 0
-    note: No real number squares to give a negative, so the formula produces nothing.
+    note: No real number squares to give a negative, so the formula produces no answer.
 ```
 
-The discriminant is therefore not a rule to be memorised separately. It is the part of the quadratic formula that the plus-or-minus acts on, so the number of values the formula produces depends on it, and a forgotten discriminant can be recovered by writing out the formula and looking under the root sign.
+The discriminant is therefore not a rule to memorise separately. It is the part of the quadratic formula that the plus-or-minus acts on, so the number of values the formula produces depends on it. If you forget the discriminant, write out the formula and look under the root sign.
 
 ---
 
@@ -57,11 +57,11 @@ id: c1-calculating
 caption: Calculating a discriminant
 steps:
   - math: 3x^2 + 4 = 7x
-    note: Not yet in standard form, so the coefficients cannot be read off it.
+    note: Not yet in standard form, so you cannot read the coefficients off it.
   - math: 3x^2 - 7x + 4 = 0
     note: Now $a=3$, $b=-7$ and $c=4$.
   - math: \Delta = (\ca{-7})^2 - 4(3)(4)
-    note: Each coefficient is substituted inside brackets, so the minus is squared along with the seven.
+    note: Substitute each coefficient inside brackets, so that the minus is squared along with the seven.
   - math: \Delta = 49 - 48 = 1
     note: Positive, so the equation has two distinct real roots.
 ```
@@ -125,7 +125,7 @@ questions:
 
 ## What it looks like on a graph
 
-The roots of $ax^2 + bx + c = 0$ are the values of $x$ at which the graph of $y = ax^2 + bx + c$ meets the $x$-axis, because the $x$-axis is where $y = 0$.
+The roots of $ax^2 + bx + c = 0$ are the values of $x$ at which the graph of $y = ax^2 + bx + c$ meets the $x$-axis. That is because the $x$-axis is where $y = 0$.
 
 ```figure
 caption: The three cases as three graphs
@@ -141,7 +141,7 @@ steps:
     note: A parabola with no real roots lies entirely above the axis or entirely below it.
 ```
 
-A question that says the graph *does not cross the $x$-axis*, or *has no real solutions*, or *never equals zero*, is a discriminant question written in other words. So is one that says a line is a **tangent** to a curve, a line that touches the curve at exactly one point: substituting the line into the curve gives a quadratic, and touching at exactly one point means that quadratic has one repeated root.
+A question may say the graph *does not cross the $x$-axis*, or *has no real solutions*, or *never equals zero*. Each of those is a discriminant question written in other words. So is one that says a line is a **tangent** to a curve. A tangent is a line that touches the curve at exactly one point. Substituting the line into the curve gives a quadratic, and touching at exactly one point means that quadratic has one repeated root.
 
 Whether you need an equation or an inequality depends on the wording. *Exactly one root* gives $\Delta = 0$. *No real roots* gives $\Delta < 0$. *Two distinct roots* gives $\Delta > 0$. *At least one root* gives $\Delta \geq 0$.
 
@@ -149,9 +149,9 @@ Whether you need an equation or an inequality depends on the wording. *Exactly o
 
 ## What the discriminant tells you about the kind of root
 
-The specification says candidates may be required to understand the meaning of rational numbers in regard to the roots of an equation, and the discriminant tells you which.
+The specification says candidates may be required to understand the meaning of rational numbers in regard to the roots of an equation. The discriminant tells you whether the roots are rational.
 
-When $\Delta$ is a perfect square, its square root is a whole number, so both roots come out as one whole number divided by another. Both roots are rational, and the quadratic factorises with whole numbers in the brackets.
+When $\Delta$ is a perfect square, its square root is a whole number, so both roots are one whole number divided by another. Both roots are rational, and the quadratic factorises with whole numbers in the brackets.
 
 When $\Delta$ is positive but not a perfect square, its square root is a surd. The roots are irrational, and no factorisation with whole numbers exists.
 
@@ -171,7 +171,7 @@ steps:
     note: Both roots carry a surd, so no pair of whole-number brackets produces this equation.
 ```
 
-So the discriminant also answers whether a quadratic factorises, which is worth checking before starting a search that cannot succeed.
+So the discriminant also tells you whether a quadratic factorises. That is worth checking before you start a search that cannot succeed.
 
 ```practice
 caption: what kind of roots
@@ -214,7 +214,7 @@ questions:
 
 ## Working backwards
 
-The examination more often gives the number of roots and asks for an unknown coefficient. Calculate the discriminant with the unknown still in it, then set it equal to zero, or greater than zero, or less than zero, according to what the question said. What remains is a linear equation or a quadratic in the unknown coefficient, solved like any other.
+The examination more often gives the number of roots and asks for an unknown coefficient. Calculate the discriminant with the unknown still in it. Then set it equal to zero, or greater than zero, or less than zero, according to what the question said. What remains is a linear equation or a quadratic in the unknown coefficient. Solve it like any other.
 
 ```figure
 id: c1-backwards
@@ -230,9 +230,9 @@ steps:
     note: Two values, and both are answers. Giving only the positive one is a common way to lose half the marks.
 ```
 
-The equation in $k$ is solved like any quadratic, and its own discriminant is of no interest — it is a quadratic like any other, and the discriminant belonged to the original equation in $x$.
+Solve the equation in $k$ like any quadratic. Its own discriminant is of no interest. It is a quadratic like any other, and the discriminant belonged to the original equation in $x$.
 
-An inequality is handled the same way, with one extra rule: multiplying or dividing an inequality by a negative number reverses it.
+Handle an inequality the same way, with one extra rule. Multiplying or dividing an inequality by a negative number reverses it.
 
 ```figure
 caption: When the wording gives an inequality
@@ -247,7 +247,7 @@ steps:
   - math: p > 12
 ```
 
-Collecting the unknown on the side that leaves its coefficient positive, as above, avoids the reversal altogether. Dividing by a negative coefficient instead reaches the same answer, provided the inequality is reversed.
+Collecting the unknown on the side that leaves its coefficient positive, as above, avoids the reversal altogether. Dividing by a negative coefficient instead reaches the same answer, provided you reverse the inequality.
 
 ```figure
 caption: Dividing an inequality by a negative
@@ -260,7 +260,7 @@ steps:
     note: Dividing both sides by $-12$ reverses the inequality, and the answer matches the one above.
 ```
 
-Where the unknown is the coefficient of $x^2$, one more case has to be checked. If that coefficient can be zero, the equation is not a quadratic at all, it has no discriminant, and it is treated separately.
+Where the unknown is the coefficient of $x^2$, check one more case. If that coefficient can be zero, the equation is not a quadratic at all. It has no discriminant, and you treat it separately.
 
 ```practice
 caption: working backwards
@@ -270,7 +270,7 @@ questions:
     grade: merit
     working:
       - math: (k-1)^2 - 4(1)(4) = 0
-        note: One repeated root, so the discriminant is set to zero. The whole of $k-1$ is the $b$.
+        note: One repeated root, so set the discriminant to zero. The whole of $k-1$ is the $b$.
       - math: (k-1)^2 = 16
       - math: k - 1 = \pm 4
         note: A square root gives two values, which is where the second answer comes from.
@@ -280,7 +280,7 @@ questions:
     grade: merit
     working:
       - math: (k-2)^2 - 4(1)(9) = 0
-        note: One repeated root, so the discriminant is set to zero. The whole of $k-2$ is the $b$.
+        note: One repeated root, so set the discriminant to zero. The whole of $k-2$ is the $b$.
       - math: (k-2)^2 = 36
       - math: k - 2 = \pm 6
         note: A square root gives two values, which is where the second answer comes from.
@@ -313,7 +313,7 @@ questions:
       - math: 36 - 12k > 0
       - math: k < 3
       - math: k < 3 \textsf{ and } k \ne 0
-        note: At $k=0$ the equation is linear rather than quadratic, so it is excluded separately.
+        note: At $k=0$ the equation is linear rather than quadratic, so exclude it separately.
   - ask: Find the values of $k$ for which the equation has two distinct real roots.
     math: kx^2 + 8x + 2 = 0
     grade: excellence
@@ -323,14 +323,14 @@ questions:
       - math: 64 - 8k > 0
       - math: k < 8
       - math: k < 8 \textsf{ and } k \ne 0
-        note: At $k=0$ the equation is linear rather than quadratic, so it is excluded separately.
+        note: At $k=0$ the equation is linear rather than quadratic, so exclude it separately.
 ```
 
 ---
 
 ## One solution to a pair of equations
 
-A line and a curve given together are a pair of simultaneous equations, and such a pair is solved by substituting one into the other. When the curve is a quadratic, that substitution leaves a quadratic equation, and the number of solutions the pair has is the number of roots that quadratic has.
+A line and a curve given together are a pair of simultaneous equations. Solve such a pair by substituting one into the other. When the curve is a quadratic, that substitution leaves a quadratic equation. The number of solutions the pair has is the number of roots that quadratic has.
 
 So a question saying there is **only one solution** is saying $\Delta = 0$.
 
@@ -341,7 +341,7 @@ steps:
   - math: y - 3x = 12 \qquad x^2 + 2ky = 15k
     note: A line and a curve, with a constant $k$ in the curve.
   - math: y = 3x + 12
-    note: Rearrange the line, so that one unknown can be substituted into the other equation.
+    note: Rearrange the line, so that you can substitute one unknown into the other equation.
   - math: x^2 + 2k(3x + 12) = 15k
     note: Substitute it into the curve, which leaves an equation in $x$ alone.
   - math: x^2 + 6kx + 9k = 0
@@ -349,7 +349,7 @@ steps:
   - math: (6k)^2 - 4(1)(9k) = 0
     note: Only one solution, so this quadratic has one repeated root.
   - math: 36k(k - 1) = 0 \;\Rightarrow\; k = 1
-    note: The value $k=0$ also satisfies it, and the question rules it out by calling $k$ non-zero.
+    note: The value $k=0$ also satisfies it, and the question excludes it by calling $k$ non-zero.
 ```
 
 Finding $k$ is usually half the question. Putting it back gives the quadratic that has the repeated root, and solving that gives the point where the line and the curve meet.
@@ -377,7 +377,7 @@ questions:
       - math: x^2 = 2x + c
         note: A tangent touches at exactly one point, so the pair has one solution.
       - math: x^2 - 2x - c = 0
-        note: Everything to one side before the discriminant is calculated.
+        note: Everything to one side before you calculate the discriminant.
       - math: (-2)^2 - 4(1)(-c) = 0
       - math: 4 + 4c = 0 \;\Rightarrow\; c = -1
   - ask: Find the value of $c$ for which the line is a tangent to the curve.
@@ -387,7 +387,7 @@ questions:
       - math: x^2 = 4x + c
         note: A tangent touches at exactly one point, so the pair has one solution.
       - math: x^2 - 4x - c = 0
-        note: Everything to one side before the discriminant is calculated.
+        note: Everything to one side before you calculate the discriminant.
       - math: (-4)^2 - 4(1)(-c) = 0
       - math: 16 + 4c = 0 \;\Rightarrow\; c = -4
   - ask: The values of $x$ and $y$ satisfy both equations, where $k$ is a non-zero constant. Given that there is only one solution, find the value of $k$ and then find the solution.
@@ -404,7 +404,7 @@ questions:
         note: Only one solution, so the discriminant of this quadratic is zero.
       - math: 64k^2 - 64k = 0 \;\Rightarrow\; 64k(k-1) = 0
       - math: k = 1
-        note: $k$ is given as non-zero, so the other root of this equation is discarded.
+        note: $k$ is given as non-zero, so discard the other root of this equation.
       - math: x^2 + 8x + 16 = 0 \;\Rightarrow\; (x+4)^2 = 0
         note: Substitute $k$ back to get the quadratic whose repeated root is the solution.
       - math: (-4, \; 4)
@@ -422,7 +422,7 @@ questions:
         note: Only one solution, so the discriminant of this quadratic is zero.
       - math: 36k^2 - 24k = 0 \;\Rightarrow\; 12k(3k-2) = 0
       - math: k = \dfrac{2}{3}
-        note: $k$ is given as non-zero, so the other root of this equation is discarded.
+        note: $k$ is given as non-zero, so discard the other root of this equation.
       - math: x^2 + 4x + 4 = 0 \;\Rightarrow\; (x+2)^2 = 0
         note: Substitute $k$ back to get the quadratic whose repeated root is the solution.
       - math: (-2, \; 6)
@@ -443,7 +443,7 @@ questions:
     from: "2024"
     working:
       - math: 4x^2 - 8x + 3 = 0
-        note: The instruction says find the discriminant, so the equation is not to be solved.
+        note: The instruction says find the discriminant, so do not solve the equation.
       - math: \Delta = (-8)^2 - 4(4)(3)
       - math: \Delta = 16
   - ask: Find the discriminant of the quadratic equation.
@@ -451,7 +451,7 @@ questions:
     grade: achieved
     working:
       - math: 2x^2 - 12x + 5 = 0
-        note: The instruction says find the discriminant, so the equation is not to be solved.
+        note: The instruction says find the discriminant, so do not solve the equation.
       - math: \Delta = (-12)^2 - 4(2)(5)
       - math: \Delta = 104
   - ask: State the number of real roots.
@@ -530,7 +530,7 @@ questions:
 
 ## Summary
 
-The discriminant is $b^2 - 4ac$, it is on the formulae sheet, and it is the part of the quadratic formula that sits under the square root sign. That is why the number of roots depends on it and why nothing about it has to be memorised.
+The discriminant is $b^2 - 4ac$, and it is on the formulae sheet. It is the part of the quadratic formula that sits under the square root sign. That is why the number of roots depends on it, and why you do not have to memorise anything about it.
 
 Positive gives two distinct real roots, zero gives one repeated root, and negative gives none. On a graph those are crossing the $x$-axis twice, touching it once, and never meeting it.
 
@@ -538,6 +538,6 @@ A perfect square discriminant means both roots are rational, which is the same a
 
 Take the equation to $ax^2 + bx + c = 0$ before reading off the coefficients, and substitute each of them inside brackets so that a negative $b$ survives being squared.
 
-Most examination questions run the idea backwards. Read the wording for whether it wants an equation or an inequality, put the unknown coefficient into the discriminant, and solve what results with the methods of B1 and B2.
+Most examination questions run the idea backwards. Read the wording for whether it wants an equation or an inequality. Put the unknown coefficient into the discriminant, and solve what results with the methods of B1 and B2.
 
-A line meeting a curve at exactly one point, a tangent, and a pair of simultaneous equations with only one solution are all the same question: substitute one equation into the other, and set the discriminant of what results to zero.
+A line meeting a curve at exactly one point, a tangent, and a pair of simultaneous equations with only one solution are all the same question. Substitute one equation into the other, and set the discriminant of what results to zero.

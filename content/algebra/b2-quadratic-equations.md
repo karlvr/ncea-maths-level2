@@ -2,11 +2,11 @@
 
 ---
 
-A quadratic equation is one in which the highest power of the unknown is two. $x^2 + 7x + 12 = 0$ is quadratic, and so is $2x + 3 = \dfrac{7}{x}$ once both sides are multiplied by $x$.
+A quadratic equation is one in which the highest power of the unknown is two. $x^2 + 7x + 12 = 0$ is quadratic, and so is $2x + 3 = \dfrac{7}{x}$ once you multiply both sides by $x$.
 
 A linear equation has one solution. A quadratic has two, or one, or none, and its solutions are called its **roots**.
 
-Three methods find them: factorising, completing the square, and the quadratic formula. All three answer the same question, and the skill being assessed is choosing which one to use.
+Three methods find the roots: factorising, completing the square, and the quadratic formula. All three answer the same question, and the skill being assessed is choosing which one to use.
 
 ---
 
@@ -25,15 +25,15 @@ steps:
     note: The sign in front of a term belongs to that term, so $b$ is $-7$.
 ```
 
-Never divide both sides by the unknown. $x^2 = 5x$ has two roots, $0$ and $5$. Dividing both sides by $x$ leaves $x = 5$ and loses the other one, because dividing by $x$ assumes $x$ is not zero, which is not yet known.
+Never divide both sides by the unknown. $x^2 = 5x$ has two roots, $0$ and $5$. Dividing both sides by $x$ leaves $x = 5$ and loses the other root. Dividing by $x$ assumes $x$ is not zero, and that is not yet known.
 
 ```figure
 caption: Why dividing by the unknown loses a root
 steps:
   - math: x^2 = 5x
-    note: The unknown appears on both sides, and it is tempting to divide it out.
+    note: The unknown appears on both sides, and it is tempting to divide both sides by it.
   - math: x = 5 \qquad \color{red}{\times}
-    note: Dividing both sides by $x$ throws away every solution in which $x$ is zero.
+    note: Dividing both sides by $x$ loses every solution in which $x$ is zero.
   - math: x^2 - 5x = 0
     note: Take everything to one side instead.
   - math: x(x - 5) = 0
@@ -45,7 +45,7 @@ steps:
 
 ## Solving by factorising
 
-If a product is zero, at least one of its factors is zero. That statement is the whole method: get the equation to standard form, factorise the side that is not zero, and set each factor to zero in turn.
+If a product is zero, at least one of its factors is zero. That statement is the whole method. Get the equation to standard form, factorise the side that is not zero, and set each factor to zero in turn.
 
 ```figure
 id: b2-factorising
@@ -63,7 +63,7 @@ steps:
 
 The sign reverses between the bracket and the root. A factor of $(x+3)$ gives a root of $-3$, because $-3$ is the value that makes $x+3$ zero. A factor of $(3x+1)$ gives a root of $-\dfrac{1}{3}$ for the same reason.
 
-The zero on the right is what makes the method work, and no other number would do. $(x+3)(x+4) = 2$ tells you nothing about either bracket, because two numbers can multiply to two in unlimited ways. So an equation like $(x+2)(x-1) = 10$ is expanded, collected, and taken back to zero before it is factorised again.
+The zero on the right is what makes the method work, and no other number would do. $(x+3)(x+4) = 2$ tells you nothing about either bracket, because two numbers can multiply to two in unlimited ways. So expand an equation like $(x+2)(x-1) = 10$, collect the terms, and take everything back to zero before you factorise again.
 
 ```practice
 caption: solving by factorising
@@ -140,7 +140,7 @@ questions:
 
 ## Completing the square
 
-**Completing the square** is writing a quadratic as a bracket squared, plus or minus a number, and every quadratic can be written that way. Halve the coefficient of $x$: the halved number goes inside the bracket. Squaring the bracket also produces that number squared, so subtract it back off.
+**Completing the square** is writing a quadratic as a bracket squared, plus or minus a number, and every quadratic can be written that way. Halve the coefficient of $x$. The halved number goes inside the bracket. Squaring the bracket also produces the square of the halved number, so subtract that square.
 
 ```figure
 id: b2-completing
@@ -151,7 +151,7 @@ steps:
   - math: (x + \ca{3})^2 = x^2 + 6x + \cb{9}
     note: The bracket produces the $x^2$ and the $6x$ wanted, and a $9$ that was not.
   - math: (x + \ca{3})^2 - \cb{9} - 2
-    note: Subtract the unwanted $9$, then carry down the $-2$ from the original expression.
+    note: Subtract the unwanted $9$. The $-2$ from the original expression stays.
   - math: (x + 3)^2 - 11
 ```
 
@@ -166,10 +166,10 @@ steps:
   - math: x + 3 = \pm\sqrt{11}
     note: Both $\sqrt{11}$ and $-\sqrt{11}$ square to $11$, so both are solutions.
   - math: x = -3 \pm \sqrt{11}
-    note: Exact answers. A decimal is only wanted where the question asks for one.
+    note: Exact answers. Give a decimal only where the question asks for one.
 ```
 
-**The plus-or-minus is not optional.** Taking the square root of both sides of an equation produces two answers, and writing only the positive one loses a root, just as dividing by $x$ did.
+**The plus-or-minus is not optional.** Taking the square root of both sides of an equation produces two answers. Writing only the positive one loses a root, just as dividing by $x$ did.
 
 An equation that already contains a squared bracket needs only those last two steps, whatever else is around it.
 
@@ -177,14 +177,14 @@ An equation that already contains a squared bracket needs only those last two st
 caption: When the square is already there
 steps:
   - math: \dfrac{12}{(2x-1)^2} = 4
-    note: The bracket is squared, so it is worth clearing everything else before touching it.
+    note: The bracket is squared, so clear everything else before you touch it.
   - math: (2x-1)^2 = 3
     note: Multiply both sides by the bracket and divide both sides by $4$.
   - math: 2x - 1 = \pm\sqrt{3}
   - math: x = \dfrac{1 \pm \sqrt{3}}{2}
 ```
 
-Where there is a coefficient in front of the $x^2$, take it out of the first two terms before halving anything, and multiply it back through at the end.
+Where there is a coefficient in front of the $x^2$, take it out of the first two terms before halving anything. Multiply it back through at the end.
 
 ```figure
 caption: With a coefficient on the x squared
@@ -200,7 +200,7 @@ steps:
   - math: 2(x+3)^2 - 13
 ```
 
-Completing the square also gives the **vertex** of the parabola, the point where the curve turns: its lowest point, or its highest point if the parabola opens downwards. The graph of $y = (x+p)^2 + q$ has its lowest point where the bracket is zero, at $x = -p$, and the value there is $q$ — so the vertex is at $(-p, q)$, read straight off the completed form.
+Completing the square also gives the **vertex** of the parabola, the point where the curve turns. The vertex is the lowest point, or the highest point if the parabola opens downwards. The graph of $y = (x+p)^2 + q$ has its lowest point where the bracket is zero, at $x = -p$, and the value there is $q$. So the vertex is at $(-p, q)$, read straight off the completed form.
 
 ```practice
 caption: completing the square
@@ -240,19 +240,19 @@ questions:
     grade: merit
     working:
       - math: (x+2)^2 - 4 - 6 = 0
-        note: Half of $4$ is $2$, and the bracket brings a $4$ that has to come back off.
+        note: Half of $4$ is $2$, and the bracket brings a $4$, which you subtract again.
       - math: (x+2)^2 = 10
       - math: x = -2 \pm \sqrt{10}
-        note: Exact was asked for, so the surd stays.
+        note: The question asked for exact answers, so the surd stays.
   - ask: Solve, giving exact answers.
     math: x^2 + 6x - 2 = 0
     grade: merit
     working:
       - math: (x+3)^2 - 9 - 2 = 0
-        note: Half of $6$ is $3$, and the bracket brings a $9$ that has to come back off.
+        note: Half of $6$ is $3$, and the bracket brings a $9$, which you subtract again.
       - math: (x+3)^2 = 11
       - math: x = -3 \pm \sqrt{11}
-        note: Exact was asked for, so the surd stays.
+        note: The question asked for exact answers, so the surd stays.
   - ask: Solve, giving exact answers.
     math: \dfrac{15}{(2x+1)^2} = 3
     grade: merit
@@ -280,7 +280,7 @@ questions:
 
 ## The quadratic formula
 
-The formula is on the formulae sheet handed out with the examination, so it does not have to be memorised. It solves any quadratic, including every one that does not factorise.
+The formula is on the formulae sheet given with the examination, so you do not have to memorise it. It solves any quadratic, including every one that does not factorise.
 
 ```figure
 caption: The quadratic formula
@@ -289,7 +289,7 @@ steps:
     note: The plus-or-minus is where the two roots come from.
 ```
 
-Substitute $a$, $b$ and $c$ inside brackets, as every substitution requires. A negative $b$ is where this goes wrong: $-b$ becomes $-(-7)$, which is $+7$, and $b^2$ becomes $(-7)^2$, which is $+49$.
+Substitute $a$, $b$ and $c$ inside brackets, as every substitution requires. A negative $b$ is where errors happen. $-b$ becomes $-(-7)$, which is $+7$, and $b^2$ becomes $(-7)^2$, which is $+49$.
 
 ```figure
 id: b2-formula
@@ -303,10 +303,10 @@ steps:
     note: Minus a negative seven is plus seven, and a negative squared is positive.
   - math: x = \dfrac{7 \pm 1}{6}
   - math: x = \dfrac{4}{3} \quad\textsf{or}\quad x = 1
-    note: The two signs are worked out separately, giving $\dfrac{8}{6}$ and $\dfrac{6}{6}$.
+    note: Work the two signs separately, giving $\dfrac{8}{6}$ and $\dfrac{6}{6}$.
 ```
 
-The square root is often not a whole number. It is left as a surd where the question asks for exact answers, and turned into a decimal where it does not. Where letters rather than numbers go in, the surd may simplify: $\sqrt{36k^2 - 32k^2}$ is $\sqrt{4k^2}$, which is $2k$.
+The square root is often not a whole number. Leave it as a surd where the question asks for exact answers, and turn it into a decimal where it does not. Where letters rather than numbers go in, the surd may simplify. $\sqrt{36k^2 - 32k^2}$ is $\sqrt{4k^2}$, which is $2k$.
 
 ```practice
 caption: the quadratic formula
@@ -354,7 +354,7 @@ questions:
       - math: x = \dfrac{6k \pm 2k}{4}
         note: $\sqrt{4k^2}$ is $2k$, so the surd disappears altogether.
       - math: x = 2k \quad\textsf{or}\quad x = k
-        note: The two signs are taken separately, giving $\dfrac{8k}{4}$ and $\dfrac{4k}{4}$.
+        note: Take the two signs separately, giving $\dfrac{8k}{4}$ and $\dfrac{4k}{4}$.
   - ask: Solve in terms of $k$, giving fully simplified answers.
     math: 3x^2 - 12kx + 9k^2 = 0
     grade: merit
@@ -365,16 +365,16 @@ questions:
       - math: x = \dfrac{12k \pm 6k}{6}
         note: $\sqrt{36k^2}$ is $6k$, so the surd disappears altogether.
       - math: x = 3k \quad\textsf{or}\quad x = k
-        note: The two signs are taken separately, giving $\dfrac{18k}{6}$ and $\dfrac{6k}{6}$.
+        note: Take the two signs separately, giving $\dfrac{18k}{6}$ and $\dfrac{6k}{6}$.
 ```
 
 ---
 
 ## Choosing a method
 
-Try factorising first, and give it up quickly. Two numbers multiplying to $ac$ and adding to $b$ either exist or do not, and finding out takes a few seconds.
+Try factorising first, and abandon it quickly. Two numbers multiplying to $ac$ and adding to $b$ either exist or do not, and finding out takes a few seconds.
 
-Complete the square when the question asks for the completed form, or when the vertex of the parabola is what is wanted.
+Complete the square when the question asks for the completed form, or when the vertex of the parabola is what the question wants.
 
 Use the formula for everything else. It never fails, and its only cost is arithmetic.
 
@@ -390,7 +390,7 @@ steps:
     note: All three give the same roots, so a slow method is never a wrong one.
 ```
 
-Read the instruction before choosing. *Solve*, *factorise*, *write in the form* and *calculate the discriminant* ask for four different things, and the 2024 examiner's report lists not following instructions of that kind as a reason candidates did not achieve.
+Read the instruction before choosing. *Solve*, *factorise*, *write in the form* and *calculate the discriminant* ask for four different things. The 2024 examiner's report lists not following instructions of that kind as a reason candidates did not achieve.
 
 ---
 
@@ -398,7 +398,7 @@ Read the instruction before choosing. *Solve*, *factorise*, *write in the form* 
 
 When a quadratic comes from a context, one of its two roots is often impossible. A length cannot be negative. A number of people cannot be a fraction. A time measured from the start cannot be before it.
 
-Discard the impossible root, and write down that you have discarded it and why. The discarding is part of the answer, not tidying up afterwards.
+Discard the impossible root, and write down that you discarded it and why. The discarding is part of the answer, not tidying afterwards.
 
 ```figure
 caption: Rejecting a root the context forbids
@@ -410,16 +410,16 @@ steps:
   - math: w = -10 \quad\textsf{or}\quad w = 7
     note: Both are roots of the equation. Only one of them is a width.
   - math: w = 7
-    note: A width cannot be negative, so $-10$ is rejected. Saying so is part of the answer.
+    note: A width cannot be negative, so reject $-10$. Saying so is part of the answer.
 ```
 
 ---
 
 ## Working backwards from the roots
 
-If the roots are $p$ and $q$, then $(x - p)(x - q) = 0$ is an equation with exactly those roots, and expanding it puts that equation in standard form.
+If the roots are $p$ and $q$, then $(x - p)(x - q) = 0$ is an equation with exactly those roots. Expanding it puts that equation in standard form.
 
-Fractional roots are cleared by multiplying each bracket up. The root $\dfrac{2}{5}$ gives the bracket $\left(x - \dfrac{2}{5}\right)$, and multiplying that bracket by $5$ turns it into $(5x - 2)$ — which has the same root, because the value making $5x-2$ zero is still two fifths.
+To clear a fractional root, multiply its bracket up. The root $\dfrac{2}{5}$ gives the bracket $\left(x - \dfrac{2}{5}\right)$. Multiplying that bracket by $5$ turns it into $(5x - 2)$, which has the same root, because the value making $5x-2$ zero is still two fifths.
 
 ```figure
 id: b2-from-roots
@@ -435,13 +435,13 @@ steps:
     note: Expanding gives whole-number coefficients, which is what such a question asks for.
 ```
 
-A cubic works the same way with three brackets. Roots of $-2$, $\dfrac{1}{3}$ and $4$ give $(x+2)(3x-1)(x-4) = 0$, and the 2024 examiner's report names candidates who identified the three correct factors and then could not expand them.
+A cubic works the same way with three brackets. Roots of $-2$, $\dfrac{1}{3}$ and $4$ give $(x+2)(3x-1)(x-4) = 0$. The 2024 examiner's report names candidates who identified the three correct factors and then could not expand them.
 
 ### What the coefficients tell you about the roots
 
 Expanding $(x - p)(x - q)$ gives $x^2 - (p+q)x + pq$. Comparing that with $x^2 + bx + c$ shows that the two roots add to $-b$ and multiply to $c$.
 
-That gives the sum and the product of the roots without solving anything, which is enough for questions that ask about the roots rather than for them.
+That gives the sum and the product of the roots without solving anything. It is enough for questions that ask about the roots rather than for them.
 
 ```figure
 caption: The sum and the product of the roots
@@ -452,7 +452,7 @@ steps:
     note: Matching the two lines term by term.
 ```
 
-Two roots that are opposites, such as $3$ and $-3$, add to zero, so an equation whose roots are opposites has no term in $x$. Setting the coefficient of $x$ to zero is the whole method, however complicated the equation the coefficients came from. Where that equation is given as two fractions set equal, cross-multiply — multiply both sides by both denominators — and expand every product before collecting; the 2024 report names candidates who cross-multiplied but did not expand correctly.
+Two roots that are opposites, such as $3$ and $-3$, add to zero, so an equation whose roots are opposites has no term in $x$. Setting the coefficient of $x$ to zero is the whole method, however complicated the equation the coefficients came from. Where that equation is given as two fractions set equal, cross-multiply, which is multiplying both sides by both denominators. Expand every product before collecting. The 2024 report names candidates who cross-multiplied but did not expand correctly.
 
 ```practice
 caption: working backwards from the roots
@@ -526,7 +526,7 @@ questions:
     from: "2025"
     working:
       - math: (x - a)(x - b) = x^2 - (a+b)x + ab
-        note: Write the equation from its roots, which is the only way in.
+        note: Write the equation from its roots, which is the only starting point.
       - math: a + b = -p, \quad ab = q
         note: Match that against $x^2 + px + q$ term by term.
       - math: a^2 + b^2 = (-p)^2 - 2q
@@ -536,7 +536,7 @@ questions:
     grade: excellence
     working:
       - math: (x - a)(x - b) = x^2 - (a+b)x + ab
-        note: Write the equation from its roots, which is the only way in.
+        note: Write the equation from its roots, which is the only starting point.
       - math: a + b = -p, \quad ab = q
         note: Match that against $x^2 + px + q$ term by term.
       - math: \dfrac{1}{a} + \dfrac{1}{b} = \dfrac{b + a}{ab}
@@ -554,7 +554,7 @@ questions:
       - math: (k+1)x^2 + (2 - 8k)x + 2(k-1) = 0
         note: Everything to one side, collected by powers of $x$. The coefficients carry $k$, and that is expected.
       - math: 2 - 8k = 0
-        note: Roots of $r$ and $-r$ give $(x-r)(x+r)$, which has no term in $x$ — so the coefficient of $x$ is zero.
+        note: Roots of $r$ and $-r$ give $(x-r)(x+r)$, which has no term in $x$. So the coefficient of $x$ is zero.
       - math: k = \dfrac{1}{4}
   - ask: Find the value of $k$ for which the equation has two roots that are numerically equal but with opposite signs, such as $3$ and $-3$.
     math: \dfrac{x^2 - 2x}{4x - 3} = \dfrac{k-2}{k+2}
@@ -567,7 +567,7 @@ questions:
       - math: (k+2)x^2 + (4 - 6k)x + 3(k-2) = 0
         note: Everything to one side, collected by powers of $x$. The coefficients carry $k$, and that is expected.
       - math: 4 - 6k = 0
-        note: Roots of $r$ and $-r$ give $(x-r)(x+r)$, which has no term in $x$ — so the coefficient of $x$ is zero.
+        note: Roots of $r$ and $-r$ give $(x-r)(x+r)$, which has no term in $x$. So the coefficient of $x$ is zero.
       - math: k = \dfrac{2}{3}
 ```
 
@@ -575,7 +575,7 @@ questions:
 
 ## Forming a quadratic from a context
 
-Naming the unknown works as it did for a linear equation. What changes is that the relationship produces an $x^2$ — usually because an area is involved, or because two quantities that both depend on the unknown are multiplied together.
+Naming the unknown works as it did for a linear equation. What changes is that the relationship produces an $x^2$. Usually that is because an area is involved, or because two quantities that both depend on the unknown are multiplied together.
 
 Where the question supplies the form of a model, the work is to complete it from the information given. A parabola with its vertex at $(h, k)$ can be written $y = a(x - h)^2 + k$, and one further point on the curve gives $a$.
 
@@ -592,10 +592,10 @@ steps:
   - math: 400a = -8 \;\Rightarrow\; a = -0.02
     note: The value is negative, which is what makes the parabola open downwards.
   - math: y = -0.02(x - 20)^2 + 8
-    note: The model is complete, and any height along the flight can now be calculated from it.
+    note: The model is complete, and you can now calculate any height along the flight from it.
 ```
 
-Reading a value out of a finished model is substitution: the completed model $y = -0.02(x - 20)^2 + 8$ gives a height of $-0.02(15)^2 + 8$ at $x = 35$, which is $3.5$ m.
+Reading a value out of a finished model is substitution. The completed model $y = -0.02(x - 20)^2 + 8$ gives a height of $-0.02(15)^2 + 8$ at $x = 35$, which is $3.5$ m.
 
 ```practice
 caption: forming a quadratic
@@ -609,7 +609,7 @@ questions:
       - math: w^2 + 4w - 45 = 0
       - math: (w + 9)(w - 5) = 0
       - math: w = 5
-        note: A width cannot be $-9$, so that root is rejected.
+        note: A width cannot be $-9$, so reject that root.
   - ask: The length of a rectangle is 3 cm more than its width, and its area is 54 cm². Find the width.
     grade: merit
     working:
@@ -619,7 +619,7 @@ questions:
       - math: w^2 + 3w - 54 = 0
       - math: (w + 9)(w - 6) = 0
       - math: w = 6
-        note: A width cannot be $-9$, so that root is rejected.
+        note: A width cannot be $-9$, so reject that root.
   - ask: A stone is dropped from a bridge. Its height above the water, in metres, is modelled by $h = 30 - 4.9t^2$, where $t$ is the time in seconds. Find how long the stone takes to reach the water.
     grade: merit
     working:
@@ -629,7 +629,7 @@ questions:
       - math: t = \pm 2.47
         note: Taking a square root gives two values.
       - math: t = 2.47 \textsf{ seconds}
-        note: Time is measured from the moment of release, so the negative root is rejected.
+        note: Time is measured from the moment of release, so reject the negative root.
   - ask: A stone is dropped from a cliff. Its height above the sea, in metres, is modelled by $h = 45 - 4.9t^2$, where $t$ is the time in seconds. Find how long the stone takes to reach the sea.
     grade: merit
     working:
@@ -639,7 +639,7 @@ questions:
       - math: t = \pm 3.03
         note: Taking a square root gives two values.
       - math: t = 3.03 \textsf{ seconds}
-        note: Time is measured from the moment of release, so the negative root is rejected.
+        note: Time is measured from the moment of release, so reject the negative root.
 ```
 
 ---
@@ -686,7 +686,7 @@ questions:
     grade: merit
     working:
       - math: x^2 + x - 2 = 10
-        note: The right side is not zero, so nothing can yet be said about either bracket.
+        note: The right side is not zero, so neither bracket tells you anything yet.
       - math: x^2 + x - 12 = 0
         note: Expand, then take everything to one side, then factorise again.
       - math: (x + 4)(x - 3) = 0
@@ -696,7 +696,7 @@ questions:
     grade: merit
     working:
       - math: x^2 + x - 6 = 14
-        note: The right side is not zero, so nothing can yet be said about either bracket.
+        note: The right side is not zero, so neither bracket tells you anything yet.
       - math: x^2 + x - 20 = 0
         note: Expand, then take everything to one side, then factorise again.
       - math: (x + 5)(x - 4) = 0
@@ -777,7 +777,7 @@ questions:
 
 ## Summary
 
-A quadratic equation has zero on one side before any method touches it, and $a$, $b$ and $c$ are read off with their signs.
+A quadratic equation has zero on one side before any method touches it. Read off $a$, $b$ and $c$ with their signs.
 
 Never divide both sides by the unknown. It discards the root where the unknown is zero.
 
@@ -789,4 +789,4 @@ The quadratic formula is on the formulae sheet, always works, and is where a neg
 
 Where a quadratic comes from a context, reject the root the context forbids and say why. Where the roots are given instead, build the equation from $(x-p)(x-q) = 0$ and multiply fractional brackets up to whole numbers.
 
-Two of the methods above are used again. B3 solves exponential equations by finding a quadratic hidden inside them and factorising it. C1 takes the $b^2 - 4ac$ from under the square root sign in the formula and asks what its sign alone can tell you.
+Two of the methods above return in later lessons. B3 solves exponential equations by finding a quadratic hidden inside them and factorising it. C1 takes the $b^2 - 4ac$ from under the square root sign in the formula and asks what its sign alone can tell you.
