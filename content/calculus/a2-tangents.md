@@ -8,7 +8,7 @@ The previous lesson produced $f'(a)$: the gradient of the curve at one chosen po
 
 ## Two ingredients
 
-The tangent at $x = a$ is a straight line, and a straight line is fixed by a point and a gradient. Both come from the curve, and each from a different formula.
+The tangent at $x = a$ is a straight line, and a straight line needs a point and a gradient. Both come from the curve, and each from a different formula.
 
 - **The point.** The tangent touches the curve at $x = a$, so the point is $\big(a, f(a)\big)$: the height comes from the original function.
 - **The gradient.** The tangent's gradient is the curve's gradient at the touching point, which is $f'(a)$, from the gradient function.
@@ -168,7 +168,7 @@ steps:
   - math: y = 2x - 12
 ```
 
-A tangent described as **horizontal** has gradient zero, so its touching point solves $f'(x) = 0$. A point where that happens is a turning point of the curve, and finding and classifying them is the whole of Module B — this question shape is where that work begins.
+A tangent described as **horizontal** has gradient zero, so its touching point solves $f'(x) = 0$. A point where that happens is a turning point of the curve, and finding and classifying them is the subject of the next module — this question shape is where that work begins.
 
 ```practice
 caption: stated gradient

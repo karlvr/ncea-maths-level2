@@ -2,13 +2,15 @@
 
 ---
 
-Module A solved triangles: three sides, three angles, any shape at all. The two methods left on the standard's list leave triangles behind for a different figure — the slice of a circle cut out by two radii and the arc between them, called a **sector**. A sector is a fraction of its circle, and the angle at the centre states the fraction directly: an angle of $\theta$ degrees is $\dfrac{\theta}{360}$ of the full turn, because $360°$ is one complete revolution. Arc length and sector area are that one fraction, applied first to the circle's circumference and then to its area.
+Module A solved triangles: three sides, three angles, any shape at all. The two methods left on the standard's list leave triangles behind for a different figure — the slice of a circle cut out by two radii and the arc between them, called a **sector**. This lesson finds the length of a sector's arc and the area of the sector, and both come from one fraction of the whole circle.
 
 ---
 
 ## Arc length
 
-The circumference of a whole circle is $2\pi r$, carried over from Year 11 unchanged. An arc is a slice of that circumference, the same $\dfrac{\theta}{360}$ fraction that names the slice, so its length is $\dfrac{\theta}{360} \times 2\pi r$. Te Kura's assessment booklet for this standard prints the same relationship as one fraction, $\dfrac{\theta \times 2\pi r}{360}$ — algebraically identical, the parts grouped differently on the page.
+A sector is a fraction of its circle, and the angle at the centre gives the fraction: an angle of $\theta$ degrees is $\dfrac{\theta}{360}$ of the full turn, because $360°$ is one complete revolution.
+
+The circumference of a whole circle is $2\pi r$, carried over from Year 11 unchanged. An arc is that same fraction of the circumference, so its length is $\dfrac{\theta}{360} \times 2\pi r$. Te Kura's assessment booklet for this standard prints the same relationship as one fraction, $\dfrac{\theta \times 2\pi r}{360}$ — algebraically identical, the parts grouped differently on the page.
 
 ```figure
 caption: Arc length
@@ -262,8 +264,8 @@ steps:
           to: B
           label: 23.0 m
     note: The radius and the arc are given this time; the angle is wanted.
-  - math: \dfrac{\theta}{360} = \dfrac{23.0}{2\pi(12)}
-    note: The same formula, rearranged so the fraction sits on its own.
+  - math: L = \dfrac{\theta}{360} \times 2\pi r \quad\Rightarrow\quad \dfrac{\theta}{360} = \dfrac{23.0}{2\pi(12)}
+    note: The same formula, rearranged so that the fraction sits on its own.
   - math: \theta = \dfrac{23.0}{2\pi(12)} \times 360 = 109.8°
 ```
 
@@ -273,12 +275,12 @@ questions:
   - ask: A sector has a radius of $9$ m, and its arc is $14.8$ m long. Find the size of the angle $\theta$ at the centre.
     grade: merit
     working:
-      - math: \dfrac{\theta}{360} = \dfrac{14.8}{2\pi(9)}
+      - math: L = \dfrac{\theta}{360} \times 2\pi r \quad\Rightarrow\quad \dfrac{\theta}{360} = \dfrac{14.8}{2\pi(9)}
       - math: \theta = \dfrac{14.8}{2\pi(9)} \times 360 = 94.2°
   - ask: A sector has a radius of $16$ m, and its arc is $20.5$ m long. Find the size of the angle $\theta$ at the centre.
     grade: merit
     working:
-      - math: \dfrac{\theta}{360} = \dfrac{20.5}{2\pi(16)}
+      - math: L = \dfrac{\theta}{360} \times 2\pi r \quad\Rightarrow\quad \dfrac{\theta}{360} = \dfrac{20.5}{2\pi(16)}
       - math: \theta = \dfrac{20.5}{2\pi(16)} \times 360 = 73.4°
   - ask: A sector has an angle of $72°$ at the centre and an area of $141.4$ cm². Find its radius $r$.
     grade: merit
@@ -427,14 +429,14 @@ questions:
   - ask: A farm has a quad-bike track laid out as an arc of a circle, of radius $30$ m. The track sweeps out an arc $47.1$ m long before rejoining the boundary fence. Find the angle the track turns through, at the centre of the circle it follows.
     grade: merit
     working:
-      - math: \dfrac{\theta}{360} = \dfrac{47.1}{2\pi(30)}
+      - math: L = \dfrac{\theta}{360} \times 2\pi r \quad\Rightarrow\quad \dfrac{\theta}{360} = \dfrac{47.1}{2\pi(30)}
         note: The radius and the arc are both known this time, so the angle is what the rearranged formula finds.
       - math: \theta = \dfrac{47.1}{2\pi(30)} \times 360 = 90.0°
         note: The track turns through $90.0°$.
   - ask: A farm has a quad-bike track laid out as an arc of a circle, of radius $25$ m. The track sweeps out an arc $39.3$ m long before rejoining the boundary fence. Find the angle the track turns through, at the centre of the circle it follows.
     grade: merit
     working:
-      - math: \dfrac{\theta}{360} = \dfrac{39.3}{2\pi(25)}
+      - math: L = \dfrac{\theta}{360} \times 2\pi r \quad\Rightarrow\quad \dfrac{\theta}{360} = \dfrac{39.3}{2\pi(25)}
         note: The radius and the arc are both known this time, so the angle is what the rearranged formula finds.
       - math: \theta = \dfrac{39.3}{2\pi(25)} \times 360 = 90.1°
         note: The track turns through $90.1°$.

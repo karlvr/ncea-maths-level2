@@ -2,7 +2,7 @@
 
 ---
 
-Module A turned functions into gradient functions. From here the standard runs the other way: the question gives the gradient function and wants the function it came from. The sketching lesson already went this way by eye and met the one obstacle — a gradient graph cannot say how high the curve sits. This lesson goes the same way by formula, and the obstacle becomes the constant $c$.
+Module A turned functions into gradient functions. From here the standard runs the other way: the question gives the gradient function and wants the function it came from. The sketching lesson already went this way by eye and met the one obstacle — a gradient graph cannot show how high the curve sits. This lesson goes the same way by formula, and the obstacle becomes the constant $c$.
 
 ---
 
@@ -30,7 +30,7 @@ steps:
     note: "Check by differentiating the answer: the $3$ comes down, cancels the division, and $x^2$ returns. Every anti-derivative can be checked this way, and the check is free."
 ```
 
-Coefficients and terms behave exactly as they did in Module A: a coefficient stays and multiplies, and terms are handled one at a time. A constant term is a constant gradient, so it becomes that multiple of $x$: anti-differentiating $5$ gives $5x$.
+Coefficients and terms behave exactly as they did when differentiating: a coefficient stays and multiplies, and terms are handled one at a time. A constant term is a constant gradient, so it becomes that multiple of $x$: anti-differentiating $5$ gives $5x$.
 
 ```figure
 caption: A gradient function, term by term
@@ -190,7 +190,7 @@ questions:
 
 ## When the point is hidden
 
-The hardest version gives no point directly. Instead it names a feature — *the $y$-value of the local minimum is $-40$* — and the point has to be found before it can be used. The minimum is a turning point, so its $x$ solves $f'(x) = 0$; that is Module B working inside a Module C question, and it is how the 2025 paper built its Excellence part on this topic.
+The hardest version gives no point directly. Instead it names a feature — *the $y$-value of the local minimum is $-40$* — and the point has to be found before it can be used. The minimum is a turning point, so its $x$ solves $f'(x) = 0$; that is turning-point working inside an anti-differentiation question, and it is how the 2025 paper built its Excellence part on this topic.
 
 ```practice
 caption: a hidden point

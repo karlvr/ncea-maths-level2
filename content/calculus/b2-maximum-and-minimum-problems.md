@@ -127,7 +127,7 @@ questions:
 
 ## A power in the denominator
 
-One recent question forms a function that is not a polynomial. Eliminating $h$ from a cylinder's surface area leaves a term like $\dfrac{1000}{r}$, and the fix comes from algebra's Module A: rewrite it in index form, $1000r^{-1}$, and the differentiation rule works exactly as it always has — multiply by the power, lower the power by one.
+One recent question forms a function that is not a polynomial. Eliminating $h$ from a cylinder's surface area leaves a term like $\dfrac{1000}{r}$, and the remedy comes from the index laws: rewrite it in index form, $1000r^{-1}$, and the differentiation rule works exactly as it always has — multiply by the power, lower the power by one.
 
 ```figure
 caption: The rule reaches a negative power

@@ -37,7 +37,7 @@ From a function to its gradient function.
 - the degree dropping by one, so the shape is known in advance
 - sketching $f'$ from the graph of $f$
 - sketching $f$ from the graph of $f'$, with a point to anchor it
-- what a gradient graph cannot say — how high the curve sits
+- what a gradient graph cannot show — how high the curve sits
 
 ---
 

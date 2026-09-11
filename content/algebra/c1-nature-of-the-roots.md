@@ -4,7 +4,7 @@
 
 A quadratic equation has two roots, or one, or none. Which of the three it is can be decided without solving the equation, from a single number calculated from $a$, $b$ and $c$.
 
-That number is the **discriminant**. It is written $\Delta$, it equals $b^2 - 4ac$, and it is on the formulae sheet beside the quadratic formula it comes from.
+That number is the **discriminant**, the part of the quadratic formula under the square root, $b^2 - 4ac$. It is written $\Delta$, and it is on the formulae sheet beside the formula it comes from.
 
 This is the whole of Module C. It is one idea, and the examination mostly runs it backwards: stating how many roots there are and asking for a coefficient.
 
@@ -12,11 +12,11 @@ This is the whole of Module C. It is one idea, and the examination mostly runs i
 
 ## Where the discriminant comes from
 
-The quadratic formula is $x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}$. Everything in it is fixed once $a$, $b$ and $c$ are known, and the only part that changes what happens is the part under the square root sign.
+The quadratic formula is $x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}$. Once $a$, $b$ and $c$ are known, every part of it is a known number, and the only part that changes what happens is the part under the square root sign.
 
 ```figure
 id: c1-from-the-formula
-caption: What decides the number of roots
+caption: Where the number of roots comes from
 steps:
   - math: x = \dfrac{-b \pm \sqrt{\ca{b^2 - 4ac}}}{2a}
     note: The rest of the formula is arithmetic. Only the part under the root sign can change what happens.
@@ -28,7 +28,7 @@ steps:
     note: No real number squares to give a negative, so the formula produces nothing.
 ```
 
-The discriminant is therefore not a rule to be memorised separately. It is the part of the quadratic formula that decides how many values the plus-or-minus can produce, and a forgotten discriminant can be recovered by writing out the formula and looking under the root sign.
+The discriminant is therefore not a rule to be memorised separately. It is the part of the quadratic formula that the plus-or-minus acts on, so the number of values the formula produces depends on it, and a forgotten discriminant can be recovered by writing out the formula and looking under the root sign.
 
 ---
 
@@ -141,15 +141,15 @@ steps:
     note: A parabola with no real roots lies entirely above the axis or entirely below it.
 ```
 
-A question that says the graph *does not cross the $x$-axis*, or *has no real solutions*, or *never equals zero*, is a discriminant question written in other words. So is one that says a line is a **tangent** to a curve: substituting the line into the curve gives a quadratic, and touching at exactly one point means that quadratic has one repeated root.
+A question that says the graph *does not cross the $x$-axis*, or *has no real solutions*, or *never equals zero*, is a discriminant question written in other words. So is one that says a line is a **tangent** to a curve, a line that touches the curve at exactly one point: substituting the line into the curve gives a quadratic, and touching at exactly one point means that quadratic has one repeated root.
 
-The wording decides whether you need an equation or an inequality. *Exactly one root* gives $\Delta = 0$. *No real roots* gives $\Delta < 0$. *Two distinct roots* gives $\Delta > 0$. *At least one root* gives $\Delta \geq 0$.
+Whether you need an equation or an inequality depends on the wording. *Exactly one root* gives $\Delta = 0$. *No real roots* gives $\Delta < 0$. *Two distinct roots* gives $\Delta > 0$. *At least one root* gives $\Delta \geq 0$.
 
 ---
 
-## What the discriminant says about the kind of root
+## What the discriminant tells you about the kind of root
 
-The specification says candidates may be required to understand the meaning of rational numbers in regard to the roots of an equation, and the discriminant is where that is decided.
+The specification says candidates may be required to understand the meaning of rational numbers in regard to the roots of an equation, and the discriminant tells you which.
 
 When $\Delta$ is a perfect square, its square root is a whole number, so both roots come out as one whole number divided by another. Both roots are rational, and the quadratic factorises with whole numbers in the brackets.
 
@@ -214,7 +214,7 @@ questions:
 
 ## Working backwards
 
-The examination more often gives the number of roots and asks for an unknown coefficient. Calculate the discriminant with the unknown still in it, then set it equal to zero, or greater than zero, or less than zero, according to what the question said. Solving what remains is B1 and B2 work.
+The examination more often gives the number of roots and asks for an unknown coefficient. Calculate the discriminant with the unknown still in it, then set it equal to zero, or greater than zero, or less than zero, according to what the question said. What remains is a linear equation or a quadratic in the unknown coefficient, solved like any other.
 
 ```figure
 id: c1-backwards
@@ -230,7 +230,7 @@ steps:
     note: Two values, and both are answers. Giving only the positive one is a common way to lose half the marks.
 ```
 
-The equation in $k$ is solved by the methods of B2, and its own discriminant is of no interest — it is a quadratic like any other, and the discriminant belonged to the original equation in $x$.
+The equation in $k$ is solved like any quadratic, and its own discriminant is of no interest — it is a quadratic like any other, and the discriminant belonged to the original equation in $x$.
 
 An inequality is handled the same way, with one extra rule: multiplying or dividing an inequality by a negative number reverses it.
 
@@ -330,7 +330,7 @@ questions:
 
 ## One solution to a pair of equations
 
-A line and a curve given together are a pair of simultaneous equations, and B1 solved such a pair by substituting one into the other. When the curve is a quadratic, that substitution leaves a quadratic equation, and the number of solutions the pair has is the number of roots that quadratic has.
+A line and a curve given together are a pair of simultaneous equations, and such a pair is solved by substituting one into the other. When the curve is a quadratic, that substitution leaves a quadratic equation, and the number of solutions the pair has is the number of roots that quadratic has.
 
 So a question saying there is **only one solution** is saying $\Delta = 0$.
 
@@ -507,7 +507,7 @@ questions:
     grade: excellence
     working:
       - math: 9 = 0 + 0 + c \;\Rightarrow\; c = 9
-        note: Passing through $(0,9)$ fixes the constant, because the other two terms vanish at $x=0$.
+        note: Passing through $(0,9)$ gives the constant, because the other two terms vanish at $x=0$.
       - math: b^2 - 4(1)(9) = 0
         note: Touching at exactly one point means one repeated root.
       - math: b^2 = 36 \;\Rightarrow\; b = 6 \quad\textsf{or}\quad b = -6
@@ -518,7 +518,7 @@ questions:
     grade: excellence
     working:
       - math: 25 = 0 + 0 + c \;\Rightarrow\; c = 25
-        note: Passing through $(0,25)$ fixes the constant, because the other two terms vanish at $x=0$.
+        note: Passing through $(0,25)$ gives the constant, because the other two terms vanish at $x=0$.
       - math: b^2 - 4(1)(25) = 0
         note: Touching at exactly one point means one repeated root.
       - math: b^2 = 100 \;\Rightarrow\; b = 10 \quad\textsf{or}\quad b = -10
@@ -530,7 +530,7 @@ questions:
 
 ## Summary
 
-The discriminant is $b^2 - 4ac$, it is on the formulae sheet, and it is the part of the quadratic formula that sits under the square root sign. That is why it decides the number of roots and why nothing about it has to be memorised.
+The discriminant is $b^2 - 4ac$, it is on the formulae sheet, and it is the part of the quadratic formula that sits under the square root sign. That is why the number of roots depends on it and why nothing about it has to be memorised.
 
 Positive gives two distinct real roots, zero gives one repeated root, and negative gives none. On a graph those are crossing the $x$-axis twice, touching it once, and never meeting it.
 

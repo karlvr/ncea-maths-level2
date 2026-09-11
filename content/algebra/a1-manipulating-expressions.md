@@ -38,7 +38,7 @@ Substitute $-3$ for $x$ in $x^2$. With brackets, the whole of $-3$ is squared, a
 caption: Substituting a negative number
 steps:
   - math: x^2 \qquad\textsf{where}\qquad x = \ca{-3}
-    note: Substitute a negative number and the brackets decide the answer.
+    note: Substitute a negative number, and the brackets change the answer.
   - math: (\ca{-3})^2 = 9
     note: With brackets, the whole of $-3$ is squared.
   - math: "-3^2 = -9"
@@ -135,7 +135,7 @@ The examination specification requires algebraic technique to be shown, not just
 
 ## Terms and factors
 
-Two words name the parts of an expression, and the difference between them decides what you are allowed to do with those parts.
+The parts of an expression are named in two ways, terms and factors, and what you are allowed to do with a part depends on which of the two it is.
 
 **Terms** are the parts that are added. $3x^2 + 5x - 2$ has three terms. The sign in front of a term belongs to that term, so the third term is $-2$ rather than $2$.
 
@@ -165,7 +165,7 @@ steps:
 
 A term has factors of its own. $6x^2$ is $6 \times x \times x$, so $6$ and $x$ are both factors of it, and searching every term for a factor they all share is the first of the three techniques below. The expression as a whole is different. An expression has factors only once the whole expression is a product. $6x^2 + 9x$ has none, because it is a sum.
 
-Which of the two a part is decides what may be done to it. A factor can be cancelled against a matching factor, and a factor shared by every term can be taken outside a bracket. Neither move is available to a term.
+What may be done to a part depends on which of the two it is. A factor can be cancelled against a matching factor, and a factor shared by every term can be taken outside a bracket. Neither move is available to a term.
 
 ---
 
@@ -534,7 +534,7 @@ steps:
   - math: \ca{2x}(x+3) + \cb{1}(x+3)
     note: Factorise the first pair and the last pair separately.
   - math: 2x(\ca{x+3}) + 1(\ca{x+3})
-    note: The same bracket appears in both. That is the sign it has worked.
+    note: The same bracket appears in both, which shows the split has worked.
   - math: (x+3)(2x+1)
     note: Take the common bracket out, and what is left is the other one.
 ```
@@ -737,7 +737,7 @@ questions:
     from: "2025"
     working:
       - math: (\ca{5x} + \cb{?})^2
-        note: $25x^2$ is $(5x)^2$, so the first term of the bracket is fixed.
+        note: $25x^2$ is $(5x)^2$, so the first term of the bracket is $5x$.
       - math: (5x-4)^2 = 25x^2 - 40x + 16
         note: The middle term is twice the product of the two, so the second term is $-4$.
       - math: k = 16
@@ -746,9 +746,9 @@ questions:
     grade: achieved
     working:
       - math: (\ca{3x} + \cb{?})^2
-        note: $9x^2$ is $(3x)^2$, so the first term of the bracket is fixed.
+        note: $9x^2$ is $(3x)^2$, so the first term of the bracket is $3x$.
       - math: 2 \times \ca{3x} \times \cb{5} = 30x
-        note: The middle term is twice the product of the two terms in the bracket, and that is what fixes the second one.
+        note: The middle term is twice the product of the two terms in the bracket, and that gives the second one.
       - math: k = 25
   - ask: Factorise fully.
     math: 6x^2 - 7x - 3

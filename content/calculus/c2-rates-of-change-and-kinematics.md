@@ -8,7 +8,7 @@ The standard names one context in its own method list: *rate of change problems 
 
 ## A gradient is a rate
 
-The gradient function was introduced as steepness, but steepness is itself a rate: how much $y$ changes per unit of $x$. When $x$ is time, $f'$ says how fast the quantity is changing right now — and that reading works for any pair of variables, whatever the letters. If $C(t)$ is a concentration at time $t$, then $C'(t)$ is the rate the concentration is rising, in concentration units per time unit. A negative rate means the quantity is falling, and saying so in words is part of the answer: the 2024 schedule's model answer reads *"132 bacteria per day are dying on day 10"*, not just $-132$.
+The gradient function was introduced as steepness, but steepness is itself a rate: how much $y$ changes per unit of $x$. When $x$ is time, $f'$ tells you how fast the quantity is changing right now — and that reading works for any pair of variables, whatever the letters. If $C(t)$ is a concentration at time $t$, then $C'(t)$ is the rate the concentration is rising, in concentration units per time unit. A negative rate means the quantity is falling, and saying so in words is part of the answer: the 2024 schedule's model answer reads *"132 bacteria per day are dying on day 10"*, not just $-132$.
 
 ```figure
 caption: A rate, read from a model
@@ -157,7 +157,7 @@ questions:
       - math: v(t) = 0 \qquad\Rightarrow\qquad t = 2 \;\textsf{ or }\; t = 6
       - math: a(t) = v'(t) = 6t - 24
       - math: a(2) = -12 \;\textsf{m/s}^2 \qquad a(6) = 12 \;\textsf{m/s}^2
-        note: "The particle is momentarily at rest both times, but the acceleration says what happens next — slowing into the first stop, speeding away from the second."
+        note: "The particle is momentarily at rest both times, but the acceleration tells you what happens next — slowing into the first stop, speeding away from the second."
   - ask: A particle's distance from its starting point is given by the function below, in metres after $t$ seconds. Use calculus to find the times at which the particle is at rest, and its acceleration at each of those times.
     math: s(t) = t^3 - 9t^2 + 24t
     grade: merit
@@ -167,7 +167,7 @@ questions:
       - math: v(t) = 0 \qquad\Rightarrow\qquad t = 2 \;\textsf{ or }\; t = 4
       - math: a(t) = v'(t) = 6t - 18
       - math: a(2) = -6 \;\textsf{m/s}^2 \qquad a(4) = 6 \;\textsf{m/s}^2
-        note: "The particle is momentarily at rest both times, but the acceleration says what happens next — slowing into the first stop, speeding away from the second."
+        note: "The particle is momentarily at rest both times, but the acceleration tells you what happens next — slowing into the first stop, speeding away from the second."
 ```
 
 ---

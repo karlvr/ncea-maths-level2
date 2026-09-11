@@ -135,7 +135,7 @@ steps:
   - math: \cos A = \dfrac{8^2 + 7^2 - 13^2}{2(8)(7)}
     note: The side opposite the angle wanted, $a = 13$, is the one that is squared and subtracted.
   - math: \cos A = \dfrac{-56}{112} = -0.5
-    note: A negative cosine already says the angle is obtuse, before $\cos^{-1}$ is taken.
+    note: A negative cosine already shows the angle is obtuse, before $\cos^{-1}$ is taken.
   - math: A = \cos^{-1}(-0.5) = 120°
 ```
 
@@ -445,7 +445,7 @@ questions:
 
 ## Summary
 
-The cosine rule covers what the sine rule cannot reach: $a^2 = b^2 + c^2 - 2bc\cos A$ finds a side from two sides and the angle between them, and it reduces to Pythagoras exactly when that angle is $90°$. Rearranged, $\cos A = \dfrac{b^2 + c^2 - a^2}{2bc}$ finds an angle from three sides, and its sign settles acute or obtuse without any second case to consider.
+The cosine rule covers what the sine rule cannot reach: $a^2 = b^2 + c^2 - 2bc\cos A$ finds a side from two sides and the angle between them, and it reduces to Pythagoras exactly when that angle is $90°$. Rearranged, $\cos A = \dfrac{b^2 + c^2 - a^2}{2bc}$ finds an angle from three sides, and a negative result means the angle is obtuse, with no second case to consider.
 
 The rule's trap is grouping: only $2bc$ is multiplied by $\cos A$, and $b^2 + c^2$ stand outside that product.
 

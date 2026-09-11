@@ -6,15 +6,15 @@ An equation states that two things are equal. Solving it means finding the value
 
 An equation is **linear** when the unknown appears only to the first power. $3x + 5 = 20$ is linear. $x^2 + 3x = 20$ is not, because of the $x^2$, and it is solved by the methods in the next topic.
 
-Equations contain equals signs, unlike the expressions of Module A. The equals sign brings one new permission: you may do anything to an equation, provided you do it to both sides. Both sides name the same number, so an operation applied to both of them leaves two sides that still name the same number.
-
-That permission does not extend to an expression. Multiplying an expression by three gives an expression three times as large, which is a different expression. Multiplying both sides of an equation by three leaves the two sides equal to each other, and leaves the same values of the unknown making the statement true.
-
 The examination puts the difficulty in **forming** the equation — turning a paragraph of words into a statement with an equals sign — not in solving it once you have it. The specification is explicit that any equation you form must be stated as part of solving a problem, so the equation is not only a step towards the answer, it is part of the answer.
 
 ---
 
 ## Doing the same thing to both sides
+
+An equation has an equals sign, and the equals sign brings one new permission: you may do anything to an equation, provided you do it to both sides. Both sides have the same value, so an operation applied to both of them leaves two sides that still have the same value.
+
+That permission does not extend to an expression. Multiplying an expression by three gives an expression three times as large, which is a different expression. Multiplying both sides of an equation by three leaves the two sides equal to each other, and leaves the same values of the unknown making the statement true.
 
 To solve a linear equation, get the unknown by itself on one side. Undo whatever has been done to it, in the reverse of the order it was done.
 
@@ -154,7 +154,7 @@ questions:
         note: Add $x$ to both sides.
       - math: "-15 = 5x"
       - math: x = -3
-        note: A negative solution is an ordinary answer, not a sign that something has gone wrong.
+        note: A negative solution is an ordinary answer, not evidence that something has gone wrong.
   - ask: Solve.
     math: 5 - x = 2x + 17
     grade: achieved
@@ -186,9 +186,9 @@ steps:
 
 ### Multiplying an equation through
 
-A fraction in an equation is cleared by multiplying every term on both sides by the lowest common denominator. The common denominator is found exactly as it was in A2: factorise the denominators, and take each distinct factor as many times as it appears in any one of them.
+A fraction in an equation is cleared by multiplying every term on both sides by the lowest common denominator. The common denominator is found exactly as it is for adding rational expressions: factorise the denominators, and take each distinct factor as many times as it appears in any one of them.
 
-This is where an equation and an expression differ. In A2 a fraction had to stay a fraction, because multiplying an expression by six gives an expression six times as large. An equation may be multiplied through, because both sides are multiplied and neither side changes relative to the other.
+This is where an equation and an expression differ. In an expression a fraction had to stay a fraction, because multiplying an expression by six gives an expression six times as large. An equation may be multiplied through, because both sides are multiplied and neither side changes relative to the other.
 
 ```figure
 id: b1-clear-fractions
@@ -206,7 +206,7 @@ steps:
 
 The bracket around $x-4$ keeps the subtraction correct: that numerator was a single quantity before the multiplication and has to stay one afterwards.
 
-When the unknown is in a denominator, multiplying through still clears it, but what is left may not be linear. Multiplying $2x + 3 = \dfrac{7}{x}$ through by $x$ gives $2x^2 + 3x = 7$, which has an $x^2$ in it. That is a quadratic, and B2 solves it.
+When the unknown is in a denominator, multiplying through still clears it, but what is left may not be linear. Multiplying $2x + 3 = \dfrac{7}{x}$ through by $x$ gives $2x^2 + 3x = 7$, which has an $x^2$ in it. That is a quadratic, and the next lesson solves it.
 
 ```practice
 caption: brackets and fractions
@@ -277,7 +277,7 @@ questions:
 
 ## Rearranging a formula
 
-Making a letter the subject of a formula is the same work with an expression as the answer instead of a number. Undo what has been done to that letter, in the reverse of the order it was done, doing each step to both sides.
+The **subject** of a formula is the letter that stands on its own on one side of it. Making a letter the subject is the same work with an expression as the answer instead of a number. Undo what has been done to that letter, in the reverse of the order it was done, doing each step to both sides.
 
 ```figure
 caption: Making a letter the subject
@@ -305,7 +305,7 @@ steps:
   - math: x = \dfrac{8y^3 + 9}{5}
 ```
 
-The 2025 examiner's report gives expanding $(2y)^3$ as $2y^3$ rather than $8y^3$ as a reason candidates did not achieve, and it is the same bracket rule that A1 applied to $\pi(2x)^2$.
+The 2025 examiner's report gives expanding $(2y)^3$ as $2y^3$ rather than $8y^3$ as a reason candidates did not achieve, and it is the same bracket rule as $\pi(2x)^2$, where the square reaches the $2$ as well as the $x$.
 
 ### When the letter appears more than once
 
@@ -320,7 +320,7 @@ steps:
   - math: ax - bx = 4
     note: Collect the terms in $x$ on one side and the numbers on the other.
   - math: x(\ca{a - b}) = 4
-    note: Take $x$ out as a common factor, which is A1's first method of factorising.
+    note: Take $x$ out as a common factor, the first method of factorising.
   - math: x = \dfrac{4}{\ca{a - b}}
     note: Divide both sides by the bracket, and the bracket becomes a denominator.
 ```
@@ -528,7 +528,7 @@ questions:
     working:
       - math: \textsf{let } p = \textsf{ the number of pens sold}
       - math: \textsf{notebooks sold} = 40 - p
-        note: The two counts add to $40$, so naming one of them names the other. A second letter is not needed.
+        note: The two counts add to $40$, so once one of them is named the other follows. A second letter is not needed.
       - math: 3p + 7(40 - p) = 184
         note: Each count is multiplied by its own price, and the two amounts add to the takings.
       - math: 3p + 280 - 7p = 184
@@ -539,7 +539,7 @@ questions:
     working:
       - math: \textsf{let } c = \textsf{ the number of caps sold}
       - math: \textsf{shirts sold} = 30 - c
-        note: The two counts add to $30$, so naming one of them names the other. A second letter is not needed.
+        note: The two counts add to $30$, so once one of them is named the other follows. A second letter is not needed.
       - math: 5c + 9(30 - c) = 214
         note: Each count is multiplied by its own price, and the two amounts add to the takings.
       - math: 5c + 270 - 9c = 214
@@ -641,7 +641,7 @@ steps:
 
 Where the coefficients do not match, multiply one equation through by whatever makes them match. That is the same permission used to clear fractions above.
 
-Use substitution when one equation already gives a letter on its own, and when one of the two equations is not linear — which is how a line meets a curve in C1, where elimination has nothing to cancel against. Elimination is quicker when both equations are in the same form.
+Use substitution when one equation already gives a letter on its own, and when one of the two equations is not linear — which is how a line meets a curve, where elimination has nothing to cancel against. Elimination is quicker when both equations are in the same form.
 
 A curve of known form passing through known points gives one equation for each point. In $y = 3x^2 + ax + b$ the unknowns are $a$ and $b$, and each point supplies a value for $x$ and a value for $y$ — which leaves an equation with $a$ and $b$ in it, and neither of them squared.
 

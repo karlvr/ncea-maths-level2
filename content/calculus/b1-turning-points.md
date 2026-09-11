@@ -26,9 +26,9 @@ steps:
     note: "Heights from the original function, as always. The turning points are $(-1, 7)$ and $(3, -25)$."
 ```
 
-Solving $f'(x) = 0$ is a quadratic equation, so everything from algebra's Module B applies: factorise if the factors are easy to find, otherwise use the quadratic formula from the sheet. The calculus in this question is one line; the marks after it are algebra.
+Solving $f'(x) = 0$ is a quadratic equation, so everything from solving quadratics in algebra applies: factorise if the factors are easy to find, otherwise use the quadratic formula from the sheet. The calculus in this question is one line; the marks after it are algebra.
 
-The heights follow the Module A rule: $f$ for height, $f'$ for steepness. A turning point named in an answer is a point, and a point has both coordinates.
+The heights follow the rule of every earlier lesson: $f$ for height, $f'$ for steepness. A turning point named in an answer is a point, and a point has both coordinates.
 
 ```figure
 caption: The curve, for reference
@@ -46,7 +46,7 @@ steps:
           color: a
           label: (3, −25)
       xticks: [-1, 3]
-    note: "Both turning points, found without drawing anything. The sketch confirms what the algebra said."
+    note: "Both turning points, found without drawing anything. The sketch confirms what the algebra found."
 ```
 
 A point where $f'(x) = 0$ is in general called a **stationary point**. Nearly always at this level it is a turning point, but a paper may use either word, and the method is the same for both.
@@ -96,7 +96,7 @@ questions:
 
 ## The nature of a turning point
 
-*Nature* is the examiner's word for which kind: a **maximum**, where the curve turns from climbing to falling, or a **minimum**, where it turns from falling to climbing. The algebra that found the point does not say which it is, because $f'(x) = 0$ reads the same both ways, so the nature is a second question, answered with its own working.
+*Nature* is the examiner's word for which kind: a **maximum**, where the curve turns from climbing to falling, or a **minimum**, where it turns from falling to climbing. The algebra that found the point does not tell you which it is, because $f'(x) = 0$ reads the same both ways, so the nature is a second question, answered with its own working.
 
 The 2026 specification names three acceptable justifications: *"by using the second derivative, testing points around the turning points, or with an annotated sketch of the shape of the curve"*. Any one of the three is enough; each is shown on the turning points found above.
 
@@ -137,7 +137,7 @@ steps:
     note: "Positive: the gradient is rising through zero. One substitution per point, and the conclusion written beside each."
 ```
 
-The test is the fastest of the three, with one gap: if $f''$ comes out to be zero it says nothing, and one of the other two justifications must be used instead.
+The test is the fastest of the three, with one gap: if $f''$ comes out to be zero it tells you nothing, and one of the other two justifications must be used instead.
 
 ### An annotated sketch
 
@@ -269,11 +269,11 @@ steps:
   - math: f'(x) = 3x^2 + 2kx
     note: "$k$ is a constant, so it differentiates like any coefficient."
   - math: f'(2) = 12 + 4k = 0
-    note: "Stationary at $x = 2$ says exactly this."
+    note: "Stationary at $x = 2$ means exactly this."
   - math: k = -3
 ```
 
-With two unknown coefficients the question gives two facts, and converting both gives simultaneous equations — algebra's Module B again. The 2025 paper's hardest turning-point part is built this way: a cubic with coefficients $a$ and $b$, one $x$-intercept and one stationary point given, and everything else follows once the two equations are written.
+With two unknown coefficients the question gives two facts, and converting both gives a pair of simultaneous equations, solved as in algebra. The 2025 paper's hardest turning-point part is built this way: a cubic with coefficients $a$ and $b$, one $x$-intercept and one stationary point given, and everything else follows once the two equations are written.
 
 ```practice
 caption: unknown coefficients
@@ -448,7 +448,7 @@ questions:
 
 A turning point is where the gradient is zero: solve $f'(x) = 0$, then take heights from $f$. The solving is a quadratic equation, so the marks around the calculus are algebra.
 
-The nature is a separate question with its own working. Three justifications are accepted — second derivative, test points either side, annotated sketch — and the conclusion must be stated in words whichever is used. $f''$ negative means maximum, positive means minimum, zero means the test decides nothing and another justification must be used.
+The nature is a separate question with its own working. Three justifications are accepted — second derivative, test points either side, annotated sketch — and the conclusion must be stated in words whichever is used. $f''$ negative means maximum, positive means minimum, zero means the test tells you nothing and another justification must be used.
 
 Between turning points a curve climbs throughout or falls throughout, so *increasing* and *decreasing* questions are answered with intervals bounded by the turning points.
 

@@ -78,7 +78,7 @@ steps:
 
 For any triangle, each side divided by the sine of its opposite angle gives the same value: $\dfrac{a}{\sin A} = \dfrac{b}{\sin B} = \dfrac{c}{\sin C}$.
 
-The rule applies whenever the given information contains an **opposite pair** — a side and the angle directly across the triangle from it — plus one more piece. The opposite pair fixes the ratio; the extra angle unlocks a second side.
+The rule applies whenever the given information contains an **opposite pair** — a side and the angle directly across the triangle from it — plus one more piece. The opposite pair gives the ratio; the extra angle unlocks a second side.
 
 ```figure
 caption: Finding a side from an opposite pair
@@ -209,8 +209,8 @@ steps:
           to: A
           label: B
     note: Side $a = 10$ and angle $A = 50°$ are the opposite pair. Side $b = 8$ is the extra piece that unlocks angle $B$.
-  - math: \dfrac{\sin B}{8} = \dfrac{\sin 50°}{10}
-    note: The same ratio, written for the angle side of the rule.
+  - math: \dfrac{a}{\sin A} = \dfrac{b}{\sin B} \quad\Rightarrow\quad \dfrac{\sin B}{8} = \dfrac{\sin 50°}{10}
+    note: The rule as the task prints it, then turned over so that the sines sit on top.
   - math: \sin B = \dfrac{8 \sin 50°}{10}
     note: Isolate $\sin B$ before undoing it.
   - math: B = \sin^{-1}(0.6128\ldots)
@@ -247,7 +247,7 @@ questions:
           label: B
     grade: achieved
     working:
-      - math: \dfrac{\sin B}{9} = \dfrac{\sin 42°}{11}
+      - math: \dfrac{a}{\sin A} = \dfrac{b}{\sin B} \quad\Rightarrow\quad \dfrac{\sin B}{9} = \dfrac{\sin 42°}{11}
         note: The opposite pair is $a = 11$ and $A = 42°$.
       - math: \sin B = \dfrac{9 \sin 42°}{11}
       - math: B = \sin^{-1}(0.5475\ldots)
@@ -277,7 +277,7 @@ questions:
           label: B
     grade: achieved
     working:
-      - math: \dfrac{\sin B}{10} = \dfrac{\sin 58°}{13}
+      - math: \dfrac{a}{\sin A} = \dfrac{b}{\sin B} \quad\Rightarrow\quad \dfrac{\sin B}{10} = \dfrac{\sin 58°}{13}
       - math: \sin B = \dfrac{10 \sin 58°}{13}
       - math: B = \sin^{-1}(0.6523\ldots)
       - math: B = 40.7°
@@ -391,7 +391,7 @@ questions:
 
 ## The ambiguous case
 
-$\sin^{-1}$ always returns an acute angle, but an obtuse angle can have the same sine: $\sin 130° = \sin 50°$, because the two are supplementary. When the side opposite the angle being found is longer than the side opposite the given angle, the triangle can be obtuse at that vertex, and the calculator's answer is only one of the two possibilities. The diagram decides between the two: where it shows the angle obtuse, subtract the calculator's answer from $180°$.
+$\sin^{-1}$ always returns an acute angle, but an obtuse angle can have the same sine: $\sin 130° = \sin 50°$, because the two are supplementary. When the side opposite the angle being found is longer than the side opposite the given angle, the triangle can be obtuse at that vertex, and the calculator's answer is only one of the two possibilities. The diagram tells you which of the two applies: where it shows the angle obtuse, subtract the calculator's answer from $180°$.
 
 ```figure
 caption: The other branch of $\sin^{-1}$
@@ -419,12 +419,12 @@ steps:
           to: A
           label: B
     note: Side $b = 9$ is longer than side $a = 6$, and the diagram shows angle $B$ obtuse.
-  - math: \sin B = \dfrac{9 \sin 35°}{6} = 0.8604\ldots
+  - math: \dfrac{a}{\sin A} = \dfrac{b}{\sin B} \quad\Rightarrow\quad \sin B = \dfrac{9 \sin 35°}{6} = 0.8604\ldots
     note: The same substitution as any other opposite pair.
   - math: \sin^{-1}(0.8604\ldots) = 59.4°
     note: The calculator's answer is always the acute one.
   - math: B = 180° - 59.4° = 120.6°
-    note: The diagram shows $B$ obtuse, so the other branch is the one wanted. $\sin 120.6° = \sin 59.4°$, so both satisfy the equation — only the diagram says which is correct here.
+    note: The diagram shows $B$ obtuse, so the other branch is the one wanted. $\sin 120.6° = \sin 59.4°$, so both satisfy the equation — only the diagram shows which is correct here.
 ```
 
 ```practice
@@ -455,7 +455,7 @@ questions:
           label: B
     grade: merit
     working:
-      - math: \sin B = \dfrac{9 \sin 28°}{5} = 0.8450\ldots
+      - math: \dfrac{a}{\sin A} = \dfrac{b}{\sin B} \quad\Rightarrow\quad \sin B = \dfrac{9 \sin 28°}{5} = 0.8450\ldots
       - math: \sin^{-1}(0.8450\ldots) = 57.7°
         note: The acute branch — but the diagram shows $B$ obtuse.
       - math: B = 180° - 57.7° = 122.3°
@@ -484,7 +484,7 @@ questions:
           label: B
     grade: merit
     working:
-      - math: \sin B = \dfrac{8 \sin 25°}{4.5} = 0.7513\ldots
+      - math: \dfrac{a}{\sin A} = \dfrac{b}{\sin B} \quad\Rightarrow\quad \sin B = \dfrac{8 \sin 25°}{4.5} = 0.7513\ldots
       - math: \sin^{-1}(0.7513\ldots) = 48.7°
       - math: B = 180° - 48.7° = 131.3°
 ```
@@ -578,7 +578,7 @@ questions:
           label: B
     grade: achieved
     working:
-      - math: \sin B = \dfrac{11 \sin 63°}{15} = 0.6534\ldots
+      - math: \dfrac{a}{\sin A} = \dfrac{b}{\sin B} \quad\Rightarrow\quad \sin B = \dfrac{11 \sin 63°}{15} = 0.6534\ldots
       - math: B = \sin^{-1}(0.6534\ldots)
       - math: B = 40.8°
   - ask: Find the size of angle $B$.
@@ -606,7 +606,7 @@ questions:
           label: B
     grade: achieved
     working:
-      - math: \sin B = \dfrac{8 \sin 47°}{10} = 0.5851\ldots
+      - math: \dfrac{a}{\sin A} = \dfrac{b}{\sin B} \quad\Rightarrow\quad \sin B = \dfrac{8 \sin 47°}{10} = 0.5851\ldots
       - math: B = \sin^{-1}(0.5851\ldots)
       - math: B = 35.8°
   - ask: A yacht's stay wire runs from the top of the mast, $A$, to a fitting on the deck, $B$. From a second deck fitting $C$, $14$ m from $B$, the angle of sight up to the masthead, $\angle ACB$, is $73°$, and the angle at $B$ between the deck and the stay wire, $\angle ABC$, is $58°$. Find the length of the stay wire $AB$, stating what it represents.
@@ -698,7 +698,7 @@ questions:
           label: 30°
     grade: excellence
     working:
-      - math: \sin(\angle PDQ) = \dfrac{13 \sin 30°}{8} = 0.8125
+      - math: \dfrac{a}{\sin A} = \dfrac{b}{\sin B} \quad\Rightarrow\quad \sin(\angle PDQ) = \dfrac{13 \sin 30°}{8} = 0.8125
         note: The known pair is $QD = 8$ opposite the $30°$ angle at $P$; $PQ = 13$ sits opposite the angle wanted at $D$, so the sine rule reaches $\angle PDQ$ directly.
       - math: \sin^{-1}(0.8125) = 54.3°
         note: The calculator's acute answer, and not yet the one wanted.
@@ -734,7 +734,7 @@ questions:
           label: 33°
     grade: excellence
     working:
-      - math: \sin(\angle PDQ) = \dfrac{11 \sin 33°}{7} = 0.8558\ldots
+      - math: \dfrac{a}{\sin A} = \dfrac{b}{\sin B} \quad\Rightarrow\quad \sin(\angle PDQ) = \dfrac{11 \sin 33°}{7} = 0.8558\ldots
       - math: \sin^{-1}(0.8558\ldots) = 58.9°
         note: The calculator's acute answer, and not yet the one wanted.
       - math: \angle PDQ = 180° - 58.9° = 121.1°

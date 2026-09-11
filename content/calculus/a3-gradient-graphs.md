@@ -238,10 +238,10 @@ steps:
     note: "A straight-line gradient function means $f$ is a parabola, and the crossing from negative to positive makes the turn a minimum, at $x = 2$."
 ```
 
-One thing the gradient graph cannot say is how high the function sits. Raising the whole curve changes no gradient anywhere, so every vertical position of the same shape is a correct answer.
+One thing the gradient graph cannot show is how high the function sits. Raising the whole curve changes no gradient anywhere, so every vertical position of the same shape is a correct answer.
 
 ```figure
-caption: What the gradient graph cannot decide
+caption: What the gradient graph cannot show
 steps:
   - graph:
       domain: [-1, 5]
@@ -255,7 +255,7 @@ steps:
     note: "Three curves, one gradient function. Nothing on the gradient graph separates them, so a question that wants one particular curve must pin it with a point."
 ```
 
-A question that needs one particular curve supplies a point for it to pass through — the 2024 paper gives the gradient graph and asks for the function *which passes through $(1, 0)$*. Recovering that function exactly, rather than sketching its shape, is anti-differentiation, and Module C does it by formula. Here the point only anchors the sketch vertically.
+A question that needs one particular curve supplies a point for it to pass through — the 2024 paper gives the gradient graph and asks for the function *which passes through $(1, 0)$*. Recovering that function exactly, rather than sketching its shape, is anti-differentiation, which a later lesson does by formula. Here the point only anchors the sketch vertically.
 
 ```practice
 caption: sketching f
@@ -498,4 +498,4 @@ The shape is known in advance: differentiating drops the degree by one, so sketc
 
 Three things earn the marks — shape, sign, and crossings in the right places. Heights do not, because a sketch has no scale.
 
-A gradient graph cannot say how high the curve sits, so recovering $f$ needs a supplied point to fix the height. Module C turns that into a formula: anti-differentiation, with its constant $c$ standing for the same vertical freedom. Before that, Module B takes the crossings of $f'$ — the turning points — as its own subject.
+A gradient graph cannot show how high the curve sits, so recovering $f$ needs a supplied point to set the height. Module C turns that into a formula: anti-differentiation, with its constant $c$ standing for the same vertical freedom. Before that, Module B takes the crossings of $f'$ — the turning points — as its own subject.

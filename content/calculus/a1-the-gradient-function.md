@@ -2,7 +2,7 @@
 
 ---
 
-The introduction said that every function has a gradient function. This lesson is the rule that finds it, and what the result says.
+The introduction said that every function has a gradient function. This lesson is the rule that finds it, and what the result tells you.
 
 ---
 
@@ -70,7 +70,7 @@ Three extensions turn the rule into a method for any polynomial, and each is a c
 
 **Terms differentiate one at a time.** A polynomial is differentiated term by term, each term keeping its sign.
 
-**A constant differentiates to zero.** The graph of $y = 7$ is a flat line. Its gradient is zero everywhere, so the $7$ contributes nothing to the gradient function. For the same reason the derivative of $3x$ is just $3$: the graph of $3x$ is a line of gradient $3$. The rule says the same thing, because $3x^1$ becomes $3x^0$, and $x^0$ is $1$.
+**A constant differentiates to zero.** The graph of $y = 7$ is a flat line. Its gradient is zero everywhere, so the $7$ contributes nothing to the gradient function. For the same reason the derivative of $3x$ is just $3$: the graph of $3x$ is a line of gradient $3$. The rule gives the same answer, because $3x^1$ becomes $3x^0$, and $x^0$ is $1$.
 
 ```figure
 caption: A polynomial, term by term
@@ -149,7 +149,7 @@ steps:
       f(x) = x^2 & y = x^2 \\[4pt]
       f'(x) = 2x & \dfrac{dy}{dx} = 2x
       \end{array}
-    note: "The left column and the right column say exactly the same thing."
+    note: "The left column and the right column mean exactly the same thing."
 ```
 
 $\dfrac{dy}{dx}$ looks like a fraction and is not one — at this level it is a single symbol, and nothing may cancel inside it. The result of differentiating, whichever way it is written, is called the **derivative**; *gradient function* and *derivative* are the same thing.
@@ -172,7 +172,7 @@ steps:
   - math: f'(x) = 2x - 3
 ```
 
-The standard states that polynomials are *given in expanded form*, so the expanding you do yourself mostly arises where a question asks you to build the function — the area or volume questions of Module B. The habit belongs here all the same: the rule applies to expanded form only.
+The standard states that polynomials are *given in expanded form*, so the expanding you do yourself mostly arises where a question asks you to build the function, as the maximum and minimum problems do. The habit belongs here all the same: the rule applies to expanded form only.
 
 ```practice
 caption: expand first

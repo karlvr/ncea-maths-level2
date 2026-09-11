@@ -64,7 +64,7 @@ Multiply the exponents.
 
 Every one of those laws requires the **same base**. $2^3 \cdot 3^2$ cannot be combined, because one is built from twos and the other from threes.
 
-The condition returns in Module B, where solving an exponential equation depends on rewriting both sides so that they have the same base.
+The condition returns in exponential equations, which are solved by rewriting both sides so that they have the same base.
 
 ```practice
 caption: the three laws
@@ -588,7 +588,7 @@ questions:
 
 An exponent is repeated multiplication. Every law follows from that, so a forgotten law can be rebuilt — and the laws have to be known, because they are not on the formulae sheet.
 
-Multiplying adds the exponents. Dividing subtracts them. A power of a power multiplies them. All three require the same base.
+Multiplying adds the exponents. Dividing subtracts them. A power of a power multiplies them. All three require the same base, and that condition is what makes an exponential equation solvable in B3.
 
 A power applies to every factor in a product, and never distributes over addition. $(x+y)^2$ has a middle term.
 

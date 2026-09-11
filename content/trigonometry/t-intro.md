@@ -23,7 +23,7 @@ steps:
           from: B
           to: C
           right: true
-    note: The right angle names a hypotenuse — the side SOH-CAH-TOA's ratios are defined against.
+    note: The right angle means there is a hypotenuse — the side SOH-CAH-TOA's ratios are defined against.
   - diagram:
       points:
         A: [0, 0]
@@ -93,4 +93,4 @@ steps:
     note: And the area of a sector. All five methods the standard names are on the list.
 ```
 
-The November exam's formulae sheet, shared between algebra and calculus, carries none of these — this subject supplies its own, on the task. What a printed sheet cannot do is decide which formula the numbers in front of you call for, chain one result into the next, or say in words what an answer represents. Those are what the lessons that follow teach.
+The November exam's formulae sheet, shared between algebra and calculus, carries none of these — this subject supplies its own, on the task. What a printed sheet cannot do is choose which formula the numbers in front of you call for, chain one result into the next, or say in words what an answer represents. Those are what the lessons that follow teach.

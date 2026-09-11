@@ -12,7 +12,7 @@ The logarithm rules are on the formulae sheet handed out with the examination. T
 
 ## Making the bases match
 
-If two powers of the same base are equal, their exponents are equal. That is the whole method, and it needs the same base on both sides for the reason A3 gave: a power of two and a power of three have nothing in common to compare.
+If two powers of the same base are equal, their exponents are equal. That is the whole method, and it needs the same base on both sides for the same reason the index laws do: a power of two and a power of three have nothing in common to compare.
 
 ```figure
 id: b3-same-base
@@ -27,7 +27,7 @@ steps:
   - math: x = 4
 ```
 
-Getting there means rewriting one side or both, using the rules from A3: a number as a power, a reciprocal as a negative exponent, a root as a fractional one.
+Getting there means rewriting one side or both, using the index laws: a number as a power, a reciprocal as a negative exponent, a root as a fractional one.
 
 ```figure
 caption: Rewriting a side as a power
@@ -39,7 +39,7 @@ steps:
       \sqrt{5} & = & 5^{\frac{1}{2}} \\[10pt]
       \dfrac{1}{\sqrt[3]{2}} & = & 2^{-\frac{1}{3}}
       \end{array}
-    note: Each of these is from A3, and each turns up in exponential equations.
+    note: Each of these is an index law, and each turns up in exponential equations.
 ```
 
 Once both sides are written over the same base, the power of a power law collapses each side to a single exponent.
@@ -246,7 +246,7 @@ They are the index laws in the other notation. A logarithm is an exponent, and m
 caption: Why the product rule holds
 steps:
   - math: b^{\ca{m}} \cdot b^{\cb{n}} = b^{\ca{m}+\cb{n}}
-    note: The multiplying law from A3.
+    note: The multiplying law for indices.
   - math: \log_b\!\left(b^{\ca{m}} \cdot b^{\cb{n}}\right) = \ca{m} + \cb{n}
     note: A logarithm returns the exponent, and the exponent on the right is a sum.
   - math: \log_b(xy) = \log_b x + \log_b y
@@ -255,7 +255,7 @@ steps:
 
 Two values are not on the sheet. $\log_b b = 1$, because $b^1 = b$. $\log_b 1 = 0$, because $b^0 = 1$.
 
-The rules are about products, quotients and powers. $\log(x + y)$ is not $\log x + \log y$, and nothing turns a sum inside a logarithm into anything simpler — which is the same boundary A2 drew around cancelling and A3 drew around powers.
+The rules are about products, quotients and powers. $\log(x + y)$ is not $\log x + \log y$, and nothing turns a sum inside a logarithm into anything simpler — the same boundary that cancelling and powers have, reaching every factor and never every term.
 
 Splitting a number into factors is what makes the rules usable. Where $p = \log_a 2$ and $q = \log_a 5$, the value of $\log_a 50$ follows from writing fifty as $2 \times 5^2$.
 
@@ -508,7 +508,7 @@ questions:
 
 An exponential equation carrying two different powers of one base is often a quadratic underneath. $2^{2x}$ is $\left(2^x\right)^2$, so an equation containing both $2^{2x}$ and $2^x$ is an equation in $2^x$ and its square.
 
-Name that quantity, and the equation becomes one B2 can solve.
+Name that quantity, and the equation becomes an ordinary quadratic.
 
 ```figure
 id: b3-hidden-quadratic
@@ -581,7 +581,7 @@ questions:
       - math: 3\left(3^x\right)^2 - 54 = 9\left(3^x\right)
         note: Split the extra terms off each exponent, so both sides are built from $3^x$ alone.
       - math: 3u^2 - 9u - 54 = 0 \qquad \textsf{where } u = 3^x
-        note: Everything to one side, as B2 requires before any method is applied.
+        note: Everything to one side, as every method for a quadratic requires.
       - math: u^2 - 3u - 18 = 0
         note: Divide through by $3$, which is allowed because $3$ is a number and not the unknown.
       - math: (u - 6)(u + 3) = 0
@@ -595,7 +595,7 @@ questions:
       - math: 3\left(3^x\right)^2 - 30 = 9\left(3^x\right)
         note: Split the extra terms off each exponent, so both sides are built from $3^x$ alone.
       - math: 3u^2 - 9u - 30 = 0 \qquad \textsf{where } u = 3^x
-        note: Everything to one side, as B2 requires before any method is applied.
+        note: Everything to one side, as every method for a quadratic requires.
       - math: u^2 - 3u - 10 = 0
         note: Divide through by $3$, which is allowed because $3$ is a number and not the unknown.
       - math: (u - 5)(u + 2) = 0

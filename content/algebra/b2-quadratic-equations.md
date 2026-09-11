@@ -45,7 +45,7 @@ steps:
 
 ## Solving by factorising
 
-A1 established that if a product is zero, at least one of its factors is zero. That statement is the whole method: get the equation to standard form, factorise the side that is not zero, and set each factor to zero in turn.
+If a product is zero, at least one of its factors is zero. That statement is the whole method: get the equation to standard form, factorise the side that is not zero, and set each factor to zero in turn.
 
 ```figure
 id: b2-factorising
@@ -63,7 +63,7 @@ steps:
 
 The sign reverses between the bracket and the root. A factor of $(x+3)$ gives a root of $-3$, because $-3$ is the value that makes $x+3$ zero. A factor of $(3x+1)$ gives a root of $-\dfrac{1}{3}$ for the same reason.
 
-The zero on the right is what makes the method work, and no other number would do. $(x+3)(x+4) = 2$ says nothing about either bracket, because two numbers can multiply to two in unlimited ways. So an equation like $(x+2)(x-1) = 10$ is expanded, collected, and taken back to zero before it is factorised again.
+The zero on the right is what makes the method work, and no other number would do. $(x+3)(x+4) = 2$ tells you nothing about either bracket, because two numbers can multiply to two in unlimited ways. So an equation like $(x+2)(x-1) = 10$ is expanded, collected, and taken back to zero before it is factorised again.
 
 ```practice
 caption: solving by factorising
@@ -140,7 +140,7 @@ questions:
 
 ## Completing the square
 
-Every quadratic can be written as a bracket squared, plus or minus a number. Halve the coefficient of $x$: the halved number goes inside the bracket. Squaring the bracket also produces that number squared, so subtract it back off.
+**Completing the square** is writing a quadratic as a bracket squared, plus or minus a number, and every quadratic can be written that way. Halve the coefficient of $x$: the halved number goes inside the bracket. Squaring the bracket also produces that number squared, so subtract it back off.
 
 ```figure
 id: b2-completing
@@ -200,7 +200,7 @@ steps:
   - math: 2(x+3)^2 - 13
 ```
 
-Completing the square also gives the vertex of the parabola. The graph of $y = (x+p)^2 + q$ has its lowest point where the bracket is zero, at $x = -p$, and the value there is $q$ — so the vertex is at $(-p, q)$, read straight off the completed form.
+Completing the square also gives the **vertex** of the parabola, the point where the curve turns: its lowest point, or its highest point if the parabola opens downwards. The graph of $y = (x+p)^2 + q$ has its lowest point where the bracket is zero, at $x = -p$, and the value there is $q$ — so the vertex is at $(-p, q)$, read straight off the completed form.
 
 ```practice
 caption: completing the square
@@ -289,7 +289,7 @@ steps:
     note: The plus-or-minus is where the two roots come from.
 ```
 
-Substitute $a$, $b$ and $c$ inside brackets, as A1 required of every substitution. A negative $b$ is where this goes wrong: $-b$ becomes $-(-7)$, which is $+7$, and $b^2$ becomes $(-7)^2$, which is $+49$.
+Substitute $a$, $b$ and $c$ inside brackets, as every substitution requires. A negative $b$ is where this goes wrong: $-b$ becomes $-(-7)$, which is $+7$, and $b^2$ becomes $(-7)^2$, which is $+49$.
 
 ```figure
 id: b2-formula
@@ -437,7 +437,7 @@ steps:
 
 A cubic works the same way with three brackets. Roots of $-2$, $\dfrac{1}{3}$ and $4$ give $(x+2)(3x-1)(x-4) = 0$, and the 2024 examiner's report names candidates who identified the three correct factors and then could not expand them.
 
-### What the coefficients say about the roots
+### What the coefficients tell you about the roots
 
 Expanding $(x - p)(x - q)$ gives $x^2 - (p+q)x + pq$. Comparing that with $x^2 + bx + c$ shows that the two roots add to $-b$ and multiply to $c$.
 
@@ -575,9 +575,9 @@ questions:
 
 ## Forming a quadratic from a context
 
-Naming the unknown works as it did in B1. What changes is that the relationship produces an $x^2$ — usually because an area is involved, or because two quantities that both depend on the unknown are multiplied together.
+Naming the unknown works as it did for a linear equation. What changes is that the relationship produces an $x^2$ — usually because an area is involved, or because two quantities that both depend on the unknown are multiplied together.
 
-Where the question supplies the form of a model, the work is to complete it from the information given. A parabola with its vertex at $(h, k)$ can be written $y = a(x - h)^2 + k$, and one further point on the curve fixes $a$.
+Where the question supplies the form of a model, the work is to complete it from the information given. A parabola with its vertex at $(h, k)$ can be written $y = a(x - h)^2 + k$, and one further point on the curve gives $a$.
 
 ```figure
 id: b2-model

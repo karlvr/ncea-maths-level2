@@ -8,7 +8,7 @@ The cosine rule finds a side or an angle. A triangle's area is a third quantity 
 
 ## The area of a triangle
 
-$\textsf{Area} = \dfrac{1}{2}ab\sin C$: two sides and the angle between them, the same shape of given information as the cosine rule, but a different question asked of it.
+$\textsf{Area} = \dfrac{1}{2}bc\sin A$, where $A$ is the angle between sides $b$ and $c$: two sides and the angle between them, the same shape of given information as the cosine rule, but a different question asked of it.
 
 ```figure
 caption: Area from two sides and the angle between them
@@ -178,7 +178,7 @@ questions:
 
 ## Choosing the rule
 
-Four tools now cover any triangle, and what is given decides which one applies.
+Four tools now cover any triangle, and which one applies depends on what is given.
 
 ```figure
 caption: Which rule fits the given information
@@ -194,7 +194,7 @@ steps:
       \end{array}
 ```
 
-The second and third rows start from identical given information: the same two sides and the same included angle can be asked for a side or for the area. The question decides the rule, not the given information on its own.
+The second and third rows start from identical given information: the same two sides and the same included angle can be asked for a side or for the area. The rule depends on what the question asks, not on the given information alone.
 
 ```practice
 caption: choosing and solving
@@ -607,7 +607,7 @@ questions:
           label: 22°
     grade: excellence
     working:
-      - math: \sin R = \dfrac{PQ \sin P}{QR} = \dfrac{70 \sin 22°}{30}
+      - math: \dfrac{a}{\sin A} = \dfrac{b}{\sin B} \quad\Rightarrow\quad \sin R = \dfrac{70 \sin 22°}{30}
         note: "$PQ = 70$ is opposite the angle at $R$; $QR = 30$, opposite $P$, is the known ratio."
       - math: \sin R = 0.8741\ldots
       - math: R = \sin^{-1}(0.8741\ldots) = 60.9° \quad\textsf{or}\quad 180° - 60.9° = 119.1°
@@ -640,7 +640,7 @@ questions:
           label: 20°
     grade: excellence
     working:
-      - math: \sin R = \dfrac{PQ \sin P}{QR} = \dfrac{65 \sin 20°}{25}
+      - math: \dfrac{a}{\sin A} = \dfrac{b}{\sin B} \quad\Rightarrow\quad \sin R = \dfrac{65 \sin 20°}{25}
       - math: \sin R = 0.8893\ldots
       - math: R = \sin^{-1}(0.8893\ldots) = 62.8° \quad\textsf{or}\quad 180° - 62.8° = 117.2°
         note: The diagram shows $R$ obtuse, so the second branch is the one wanted.
@@ -655,8 +655,8 @@ questions:
 
 ## Summary
 
-$\textsf{Area} = \dfrac{1}{2}ab\sin C$ needs the same given information as the cosine rule for a side: two sides and the angle between them. Where that angle is not part of the given information, find it first — from the angle sum, the sine rule, or the cosine rule, whichever the rest of the given information supplies — before the area formula can be used.
+$\textsf{Area} = \dfrac{1}{2}bc\sin A$ needs the same given information as the cosine rule for a side: two sides and the angle between them. Where that angle is not part of the given information, find it first — from the angle sum, the sine rule, or the cosine rule, whichever the rest of the given information supplies — before the area formula can be used.
 
-Choosing which of the four tools fits a question is decided by what is given and what is asked, not by which lesson it happened to appear in: an opposite pair calls for the sine rule; two sides and the angle between them call for the cosine rule if a side is wanted, or the area formula if the area is wanted; three sides call for the cosine rule, rearranged for an angle.
+Which of the four tools fits a question depends on what is given and what is asked, not by which lesson it happened to appear in: an opposite pair calls for the sine rule; two sides and the angle between them call for the cosine rule if a side is wanted, or the area formula if the area is wanted; three sides call for the cosine rule, rearranged for an angle.
 
 Triangles are done. The standard's remaining two methods, arc length and sector area, apply the same idea, a fraction of the whole, to parts of a circle instead.
