@@ -49,6 +49,14 @@ Karl's own edits, and he gives feedback by editing rather than describing — so
 when a script comes back changed, read the changes as rules and apply them
 everywhere, not just where he touched.
 
+**The prose is Simplified Technical English**, in the STE-flavoured mode of
+the `asd-ste100` skill. One idea per sentence, and about 25 words at most.
+Active voice, with the subject, verb and article explicit. No semicolons, and
+no clause joined to the next with an em-dash. A step the student takes is an
+instruction: "First calculate the discriminant", not "the discriminant has to
+be calculated before". Keep every hedge: "may have failed" must not become
+"failed". Maths, identifiers and quoted text stay as they are.
+
 1. **Name the noun; do not point at it.** "the original expression", not "the
    original". "If the answers differ", not "if they differ".
 2. **Spell out the action.** "then calculate and compare", not "and compare".
@@ -74,6 +82,17 @@ everywhere, not just where he touched.
    coefficient of $x$ and halve it, and that halved number is". Vocabulary a
    lesson uses consistently as a teaching device — the ladder in calculus
    Module C — is established terminology, not a flourish, and stays.
+9. **A symbol does not speak.** An expression, a coefficient or a result
+   "tells you" or "shows"; it does not "say", "decide", "name" or "fix". "The
+   discriminant tells you how many solutions the equation has." Where the
+   sentence is about dependence, say so: "The number of solutions depends on
+   the sign of the discriminant." A report, a marking schedule, an answer or
+   the formulae sheet still "says", because it is a text. The voice is "you",
+   never "we".
+10. **A bare "sign" may be ambiguous.** If it reads as a notice or a signal as easily as plus or minus, we should be specific. Where a lesson uses sign as a mathematical word in an ambiguous way,
+   write it as "the sign, positive or negative", or define it: "The sign of a
+   number is whether it is positive or negative." "Minus sign", "the sign of
+   the discriminant" and "differ by a sign" are clear as they are.
 
 **Mathematics in prose is written as notation**, inline: `$2x^2 - 18$`, not "two
 $x$ squared minus eighteen". It sets in the same serif as the figures, so a
@@ -108,18 +127,66 @@ raise the height of the line they sit on, which is the cost of setting a fractio
 in running prose at all; a paragraph that opens with one sits tight under its
 heading.
 
+### Teaching a concept
+
+A student who does not understand a practice question comes back to the
+section that covers it. That section must teach the concept on its own, in
+simple and clear language, to a reader who has not read the earlier lessons
+today. The prose says what a thing **is**, and what it does or where it comes
+from, before it says how to use it in a question.
+
+A rewritten section has this shape:
+
+1. **What it is.** The first sentence or two define the concept in its own
+   terms. Every bold term is defined this way. "The discriminant is the part
+   of the quadratic formula under the square root, $b^2 - 4ac$." Not "The
+   discriminant is a single number the formula produces."
+2. **What it does, or where it comes from.** The picture, in plain words.
+3. **The relationship,** with each symbol named as a quantity.
+4. **How it is used.** The steps a student follows in a question. "First
+   calculate the discriminant. Then read its sign, positive, zero or
+   negative, for the number of solutions."
+
+Habits that break this, all cut from the physics lessons once and not to
+return:
+
+- **Describing a concept by its role in the argument** rather than by what it
+  is. "The value every later step comes from" is a role. Say the thing.
+- **Vague words in a definition.** "Two terms that go together" is not a
+  definition of like terms. "Two terms with the same variable raised to the
+  same power" is.
+- **A condition written as an instruction.** "Measure from the vertex. Then
+  the parabola is symmetric." Write the condition: "If distances are measured
+  from the vertex, the two sides of the parabola match."
+- **Lesson codes as characters.** "The factorising A1 describes", "B2's
+  method". A student cannot hold a map of the course in their head. Name the
+  technique or the idea itself. A lesson code may appear only in a placing
+  sentence at the top of a lesson or in the summary's hand-off, where it
+  points the reader to another page.
+- **A derivation compressed into one sentence.** Three short sentences, one
+  step each, or a figure.
+- **An opener that explains before it places.** The opening paragraphs place
+  the topic and say what the lesson finds. They do not explain the mathematics
+  in the abstract before the sections define it.
+- **A closer in the author's shorthand.** "Gradient and area turn a sketch
+  into numbers." A closer states what the section decides in words a student
+  could repeat, and often the best closer is the steps the student will
+  follow.
+
 ### Placing content
 
 Explain how a thing fits in before explaining the thing. Each lesson should
 place itself against what came before and hand off to what comes after — A1
 closes by saying what factorising unlocks in A2 and B2; A3 flags that the
-same-base condition is what makes exponential equations work in B3.
+same-base condition is what makes exponential equations work in B3. Placing is
+not explaining: the opener says where the topic sits, and the sections teach
+it.
 
 The same applies within a lesson: **close a section on what it decides, not on
 its last mechanical detail.** A section that defines something has to say
-somewhere what the definition buys — which question it answers, which move it
-makes available, what it rules out — and that belongs last, in the section's own
-terms.
+somewhere what the definition is for — which question it answers, which step
+it makes possible, what it rules out — and that belongs last, in plain words a
+student could repeat.
 
 Watch for this when applying rules 6 and 7 above, because cutting a scaffolding
 sentence often takes the payoff with it. The introduction's expressions and
@@ -182,10 +249,11 @@ candidates may be required to do.
 
 `docs/algebra/91261-frm-2025.pdf` is the one sheet the candidate carries into
 the 91261, 91262 and 91267 papers. It is thin. It gives the quadratic formula
-and the discriminant, the four logarithm laws, and the standard normal table.
-Everything else — every differentiation rule, every integration rule — the
-candidate has to know. Trigonometry is internal and has no sheet at all; Te
-Kura's booklet fixes its formulae instead.
+and the discriminant, the four logarithm laws, the two calculus rules — the
+derivative of $x^n$, and the anti-derivative of $x^n$ with its $+c$ — and the
+standard normal table. Everything else the candidate has to know: the index
+laws, the straight-line equation, the formulae for shapes. Trigonometry is
+internal and has no sheet at all; Te Kura's booklet fixes its formulae instead.
 
 **Where the sheet carries a relationship, a step that states it alone, before
 any numbers, states it as the sheet prints it.** Where the answer needs a
@@ -204,10 +272,10 @@ are the evidence there, and an arrow would only lengthen the line. A form the
 sheet does not carry at all still opens with its arrow, even when it
 substitutes.
 
-Where the sheet gives nothing — the whole of calculus — the lesson's own
-derived rule is the starting point instead. Derive it once, in a figure of its
-own, then use it. Say in the prose that the sheet does not carry it, so the
-student knows it has to be remembered.
+Where the sheet gives nothing — the index laws, the equation of a tangent
+line — the lesson's own derived rule is the starting point instead. Derive it
+once, in a figure of its own, then use it. Say in the prose that the sheet does
+not carry it, so the student knows it has to be remembered.
 
 ---
 
