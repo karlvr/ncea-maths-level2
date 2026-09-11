@@ -2,7 +2,7 @@
 
 ---
 
-This page is the whole of Level 2 calculus in one list: three modules, seven topics, and the skills inside each topic. Nothing is taught here. It shows the size of the subject before you start on it, because a textbook shows one page at a time and never states how much there is altogether.
+This page is the whole of Level 2 calculus in one list: three modules, seven topics, and the skills inside each topic. This page does not teach anything. A textbook shows one page at a time, and never states how much there is altogether. This page shows the size of the subject before you start on it.
 
 Read the list now, and again before the exam. In between, treat it as a checklist and mark the skills you can already do.
 
@@ -34,10 +34,10 @@ From a function to its gradient function.
 
 - climbing, falling or flat, read into positive, negative or zero
 - turning points of $f$ placed over the crossings of $f'$
-- the degree dropping by one, so the shape is known in advance
+- the degree dropping by one, so you know the shape in advance
 - sketching $f'$ from the graph of $f$
 - sketching $f$ from the graph of $f'$, with a point to anchor it
-- what a gradient graph cannot show — how high the curve sits
+- what a gradient graph cannot show: how high the curve sits
 
 ---
 
@@ -61,7 +61,7 @@ Where the gradient is zero, and the largest or smallest value found there.
 - rejecting answers the situation cannot contain, in writing
 - answering with the quantity the question asked for, in its units
 - proving the maximum or minimum, concluded in the context's words
-- a power in the denominator, sent through index form
+- a power in the denominator, rewritten in index form
 
 ---
 
@@ -76,7 +76,7 @@ The same rule, run backwards.
 - the constant $c$, and the family of curves it stands for
 - checking by differentiating the answer back
 - the constant found from a given point
-- the constant found from a feature — the value at a maximum or minimum
+- the constant found from a feature: the value at a maximum or minimum
 
 **C2—Rates of change and kinematics.** Both directions, in the standard's own context.
 
@@ -84,7 +84,7 @@ The same rule, run backwards.
 - interpreting a rate in the model's words and units, sign included
 - the ladder: distance, velocity, acceleration
 - at rest, constant speed and from rest, converted to equations
-- climbing the ladder, with a constant found and evidenced at each step
+- climbing the ladder, with a constant found, and its evidence written, at each step
 - two moving objects, met by setting their distances equal
 
 ---
@@ -116,6 +116,6 @@ steps:
     note: C2 asks the same again, in kinematics letters.
 ```
 
-The second idea is the turning point: where the gradient is zero, the quantity is at its largest or smallest. B1 finds and classifies them; B2 builds the function whose turning point is worth finding. The tangent, in A2, is the pair read at a single point.
+The second idea is the turning point: where the gradient is zero, the quantity is at its largest or smallest. B1 finds and classifies them. B2 builds the function whose turning point is worth finding. The tangent, in A2, is the pair read at a single point.
 
-Two ideas, and the algebra to serve them, which is the earlier standard's work. Start at Module A and work down. Every later topic depends on an earlier one, and none of them depends on a topic further down the list.
+Two ideas, and the algebra to serve them, which is the earlier standard's work. Start at Module A and follow the list in order. Every later topic depends on an earlier one, and none of them depends on a topic further down the list.

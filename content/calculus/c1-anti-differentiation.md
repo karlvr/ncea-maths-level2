@@ -2,7 +2,7 @@
 
 ---
 
-Module A turned functions into gradient functions. From here the standard runs the other way: the question gives the gradient function and wants the function it came from. The sketching lesson already went this way by eye and met the one obstacle — a gradient graph cannot show how high the curve sits. This lesson goes the same way by formula, and the obstacle becomes the constant $c$.
+Module A turned functions into gradient functions. From here the standard runs the other way: the question gives the gradient function and wants the function it came from. The sketching lesson already went this way by eye and met the one obstacle: a gradient graph cannot show how high the curve sits. This lesson goes the same way by formula, and the obstacle becomes the constant $c$.
 
 ---
 
@@ -19,7 +19,7 @@ steps:
 
 The operation has two names, and you will meet both. The standard calls it **anti-differentiation**, and these lessons follow it. Most textbooks also call the same operation **integration**, and use the two words interchangeably.
 
-Differentiation multiplied by the power and then lowered it; coming back, the power rises first and the division undoes the multiplication that differentiating would do. Applied to $x^2$: the power rises to $3$, and the term is divided by $3$.
+Differentiation multiplied by the power and then lowered it. Coming back, the power rises first, and the division undoes the multiplication that differentiating would do. Apply it to $x^2$. The power rises to $3$, and you divide the term by $3$.
 
 ```figure
 caption: One power of x, reversed
@@ -27,10 +27,10 @@ steps:
   - math: f'(x) = x^{\ca{2}}
     note: "Raise the power by one, divide by the new power."
   - math: f(x) = \dfrac{x^{\ca{3}}}{\ca{3}} + c
-    note: "Check by differentiating the answer: the $3$ comes down, cancels the division, and $x^2$ returns. Every anti-derivative can be checked this way, and the check is free."
+    note: "Check by differentiating the answer: the $3$ comes down, cancels the division, and $x^2$ returns. You can check every anti-derivative this way, and the check is free."
 ```
 
-Coefficients and terms behave exactly as they did when differentiating: a coefficient stays and multiplies, and terms are handled one at a time. A constant term is a constant gradient, so it becomes that multiple of $x$: anti-differentiating $5$ gives $5x$.
+Coefficients and terms behave exactly as they did when differentiating. A coefficient stays and multiplies, and you take terms one at a time. A constant term is a constant gradient, so it becomes that multiple of $x$. Anti-differentiating $5$ gives $5x$.
 
 ```figure
 caption: A gradient function, term by term
@@ -40,10 +40,10 @@ steps:
   - math: f(x) = \dfrac{6x^3}{3} - \dfrac{4x^2}{2} + 5x + c
     note: "Each new power divides its own term. Simplify the fractions before anything else happens."
   - math: f(x) = 2x^3 - 2x^2 + 5x + c
-    note: "Differentiate this back: $6x^2 - 4x + 5$. Correct — and one $c$ covers the whole function, not one per term."
+    note: "Differentiate this back: $6x^2 - 4x + 5$. Correct. One $c$ covers the whole function, not one per term."
 ```
 
-A long gradient function is anti-differentiated the same way. The 2025 report lists candidates who *"missed a term when integrating long functions"*: count the terms before starting, and count them again in the answer — every term of $f'$ produces exactly one term of $f$, plus the $c$.
+You anti-differentiate a long gradient function the same way. Count the terms before starting, and count them again in the answer. Every term of $f'$ produces exactly one term of $f$, plus the $c$. The 2025 report lists candidates who *"missed a term when integrating long functions"*.
 
 ```practice
 caption: reversing the rule
@@ -64,7 +64,7 @@ questions:
     working:
       - math: f(x) = \dfrac{8x^4}{4} - \dfrac{6x^2}{2} + x + c
       - math: f(x) = 2x^4 - 3x^2 + x + c
-        note: "The $+\\,c$ is part of the answer — the 2025 report lists *omitted the constant of integration* among candidates not achieving."
+        note: "The $+\\,c$ is part of the answer. The 2025 report lists *omitted the constant of integration* among candidates not achieving."
   - ask: Find $f(x)$.
     math: f'(x) = 6x^2 - 10x + 3
     grade: achieved
@@ -77,20 +77,20 @@ questions:
     grade: achieved
     working:
       - math: y = x^3 - \dfrac{x^2}{2} + 4x + c
-        note: "The middle term's coefficient is $1$, so the division by $2$ simply stays."
+        note: "The coefficient of the middle term is $1$, so the division by $2$ simply stays."
   - ask: Find $y$.
     math: \dfrac{dy}{dx} = 4x^3 - x + 2
     grade: achieved
     working:
       - math: y = x^4 - \dfrac{x^2}{2} + 2x + c
-        note: "The middle term's coefficient is $1$, so the division by $2$ simply stays."
+        note: "The coefficient of the middle term is $1$, so the division by $2$ simply stays."
 ```
 
 ---
 
 ## Why the c is there
 
-Differentiating erases constants: the $+7$ in $x^2 + 7$ contributes no gradient, so $f'(x) = 2x$ carries no trace of it. Coming back, the erased constant cannot be recovered: every curve of the form $x^2 + \textsf{constant}$ has the gradient function $2x$, and the anti-derivative has to stand for all of them at once. The $c$ is how it does.
+Differentiating erases constants. The $+7$ in $x^2 + 7$ does not contribute to the gradient, so $f'(x) = 2x$ carries no trace of it. Coming back, you cannot recover the erased constant. Every curve of the form $x^2 + \textsf{constant}$ has the gradient function $2x$, and the anti-derivative has to stand for all of them at once. The $c$ is how it does.
 
 ```figure
 caption: One gradient function, a family of curves
@@ -104,16 +104,16 @@ steps:
           color: a
         - poly: [1, 0, -2]
           dashed: true
-    note: "Three of the curves whose gradient function is $2x$. The sketching lesson met this family by eye; $+\\,c$ is the same freedom written as algebra."
+    note: "Three of the curves whose gradient function is $2x$. The sketching lesson met this family by eye. $+\\,c$ is the same freedom written as algebra."
 ```
 
-The constant's proper name is the **constant of integration** — it keeps the operation's other word even when the working around it says anti-differentiate, and it is the name the reports use when they list its omission. The marking schedules treat the $c$ as part of the anti-derivative, not a refinement of it — the 2024 schedule's grade step reads *"Correct anti derivative with $+c$"*. An anti-derivative written without it is incomplete.
+The proper name of the constant is the **constant of integration**. The name keeps the other word for the operation, even when the working around it says anti-differentiate. It is the name the reports use when they list its omission. The marking schedules treat the $c$ as part of the anti-derivative, not a refinement of it. The grade step of the 2024 schedule reads *"Correct anti derivative with $+c$"*. An anti-derivative written without it is incomplete.
 
 ---
 
 ## Finding the constant
 
-A question that wants one particular curve supplies one more fact — usually a point the curve passes through. Anti-differentiate first, with the $c$ in place; then substitute the point, and the $c$ is the only unknown left.
+A question that wants one particular curve supplies one more fact, usually a point the curve passes through. Anti-differentiate first, with the $c$ in place. Then substitute the point, and the $c$ is the only unknown left.
 
 ```figure
 caption: Pinning down the curve
@@ -190,7 +190,7 @@ questions:
 
 ## When the point is hidden
 
-The hardest version gives no point directly. Instead it names a feature — *the $y$-value of the local minimum is $-40$* — and the point has to be found before it can be used. The minimum is a turning point, so its $x$ solves $f'(x) = 0$; that is turning-point working inside an anti-differentiation question, and it is how the 2025 paper built its Excellence part on this topic.
+The hardest version gives no point directly. Instead it names a feature, such as *the $y$-value of the local minimum is $-40$*. You have to find the point before you can use it. The minimum is a turning point, so its $x$ solves $f'(x) = 0$. That is turning-point working inside an anti-differentiation question, and it is how the 2025 paper built its Excellence part on this topic.
 
 ```practice
 caption: a hidden point
@@ -206,7 +206,7 @@ questions:
         note: "The minimum is a turning point, so it sits where the gradient function is zero."
       - math: x = 3 \;\textsf{ or }\; x = -2
       - math: f''(x) = 4x - 2 \qquad f''(3) = 10 > 0 \qquad\therefore\;\textsf{minimum at } x = 3
-        note: "Two candidates, and the question said *minimum*, so the choice is justified, not assumed."
+        note: "Two candidates, and the question said *minimum*, so you justify the choice rather than assume it."
       - math: f(3) = 18 - 9 - 36 + c = -40
       - math: c = -13
       - math: f(x) = \dfrac{2x^3}{3} - x^2 - 12x - 13
@@ -220,7 +220,7 @@ questions:
         note: "The minimum is a turning point, so it sits where the gradient function is zero."
       - math: x = 4 \;\textsf{ or }\; x = -2
       - math: f''(x) = 6x - 6 \qquad f''(4) = 18 > 0 \qquad\therefore\;\textsf{minimum at } x = 4
-        note: "Two candidates, and the question said *minimum*, so the choice is justified, not assumed."
+        note: "Two candidates, and the question said *minimum*, so you justify the choice rather than assume it."
       - math: f(4) = 64 - 48 - 96 + c = -50
       - math: c = 30
       - math: f(x) = x^3 - 3x^2 - 24x + 30
@@ -318,8 +318,8 @@ questions:
 
 Anti-differentiation reverses the rule: raise the power by one, divide by the new power, and write $+\,c$. Coefficients stay, terms go one at a time, and a constant gradient becomes a multiple of $x$. Every answer can be checked by differentiating it back.
 
-The $c$ stands for the whole family of curves sharing one gradient function — the vertical freedom the sketching lesson found. The schedules count the anti-derivative as correct only with the $c$ written.
+The $c$ stands for the whole family of curves sharing one gradient function. It is the vertical freedom the sketching lesson found. The schedules count the anti-derivative as correct only with the $c$ written.
 
-One extra fact picks out one curve: substitute the given point, solve for $c$, and write the finished function. When the fact is a feature — the value at a minimum — locate the feature first with $f'(x) = 0$ and a justification of its nature.
+One extra fact selects one curve. Substitute the given point, solve for $c$, and write the finished function. When the fact is a feature, such as the value at a minimum, locate the feature first with $f'(x) = 0$ and a justification of its nature.
 
-The final lesson takes both directions of the whole subject into the one context the standard names outright: distance, velocity and acceleration, where differentiating and anti-differentiating are steps down and up a single ladder.
+The final lesson takes both directions of the whole subject into the one context the standard names outright: distance, velocity and acceleration. There, differentiating and anti-differentiating are steps down and up a single ladder.

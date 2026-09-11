@@ -8,7 +8,7 @@ The introduction said that every function has a gradient function. This lesson i
 
 ## The gradient at a point
 
-The gradient of a curve at a point is the gradient of the **tangent** at that point: the straight line that touches the curve at that point and matches its steepness there.
+The gradient of a curve at a point is the gradient of the **tangent** at that point. The tangent is the straight line that touches the curve at that point and matches its steepness there.
 
 ```figure
 caption: The tangent carries the gradient
@@ -34,12 +34,12 @@ steps:
       points:
         - at: [1, 1]
           color: a
-    note: "The tangent touches at the marked point and matches the curve's steepness there. Its gradient is a number — rise over run — and that number is the gradient of the curve at the point."
+    note: "The tangent touches at the marked point and matches the curve's steepness there. Its gradient is a number, rise over run, and that number is the gradient of the curve at the point."
 ```
 
-Zoom in far enough on any point of a polynomial's graph and the curve becomes indistinguishable from its tangent. That is why a single number can describe the steepness at a point, even though the curve keeps bending either side of it.
+Zoom in far enough on any point of the graph of a polynomial, and the curve and its tangent look the same. That is why a single number can describe the steepness at a point, even though the curve keeps bending either side of it.
 
-Measuring a tangent by eye is guesswork. The gradient function replaces the guessing: a formula that returns the gradient at every point at once, found by a rule.
+Measuring a tangent by eye is guesswork. The gradient function replaces the guessing. It is a formula that returns the gradient at every point at once, and a rule finds it.
 
 ---
 
@@ -54,7 +54,7 @@ steps:
     note: "Multiply by the power, then lower the power by one."
 ```
 
-Applied to $x^3$: the power is $3$, so multiply by $3$ and lower the power to $2$.
+Apply it to $x^3$. The power is $3$, so multiply by $3$ and lower the power to $2$.
 
 ```figure
 caption: One power of x
@@ -66,11 +66,11 @@ steps:
 
 Three extensions turn the rule into a method for any polynomial, and each is a consequence of what a gradient is.
 
-**A coefficient stays and multiplies.** The graph of $5x^3$ is the graph of $x^3$ stretched to five times the height, so every gradient on it is five times steeper: the derivative of $5x^3$ is $5 \times 3x^2$, which is $15x^2$.
+**A coefficient stays and multiplies.** The graph of $5x^3$ is the graph of $x^3$ stretched to five times the height, so every gradient on it is five times steeper. The derivative of $5x^3$ is $5 \times 3x^2$, which is $15x^2$.
 
-**Terms differentiate one at a time.** A polynomial is differentiated term by term, each term keeping its sign.
+**Terms differentiate one at a time.** You differentiate a polynomial term by term, and each term keeps its sign.
 
-**A constant differentiates to zero.** The graph of $y = 7$ is a flat line. Its gradient is zero everywhere, so the $7$ contributes nothing to the gradient function. For the same reason the derivative of $3x$ is just $3$: the graph of $3x$ is a line of gradient $3$. The rule gives the same answer, because $3x^1$ becomes $3x^0$, and $x^0$ is $1$.
+**A constant differentiates to zero.** The graph of $y = 7$ is a flat line. Its gradient is zero everywhere, so the $7$ does not contribute to the gradient function. For the same reason the derivative of $3x$ is just $3$: the graph of $3x$ is a line of gradient $3$. The rule gives the same answer, because $3x^1$ becomes $3x^0$, and $x^0$ is $1$.
 
 ```figure
 caption: A polynomial, term by term
@@ -84,12 +84,12 @@ steps:
   - math: \dfrac{d}{dx}\left(-5x\right) = -5
     note: "$-5x$ is a line of gradient $-5$, and that is its derivative."
   - math: \dfrac{d}{dx}\left(8\right) = 0
-    note: "The constant contributes no gradient at all."
+    note: "The constant does not contribute to the gradient at all."
   - math: f'(x) = 12x^2 + 2x - 5
-    note: "The four derivatives, collected. The derivative of a cubic is a quadratic — differentiating always lowers every power by one."
+    note: "The four derivatives, collected. The derivative of a cubic is a quadratic. Differentiating always lowers every power by one."
 ```
 
-A coefficient written as a fraction behaves like any other coefficient. The derivative of $\dfrac{x^2}{2}$ is $\dfrac{2x}{2}$, which is $x$, and the derivative of $\dfrac{x}{2}$ is $\dfrac{1}{2}$. The 2025 report lists candidates who *"failed to differentiate when a fraction was involved in an expression"* among those not achieving — the fraction changes nothing about the rule.
+A coefficient written as a fraction behaves like any other coefficient. The derivative of $\dfrac{x^2}{2}$ is $\dfrac{2x}{2}$, which is $x$, and the derivative of $\dfrac{x}{2}$ is $\dfrac{1}{2}$. The fraction does not change the rule. The 2025 report lists candidates who *"failed to differentiate when a fraction was involved in an expression"* among those not achieving.
 
 ```practice
 caption: the rule
@@ -110,13 +110,13 @@ questions:
     grade: achieved
     working:
       - math: f'(x) = 5x^4 - 12x^2 + 2
-        note: "Term by term. The $2x$ becomes $2$, and the constant becomes nothing."
+        note: "Term by term. The $2x$ becomes $2$, and the constant becomes zero."
   - ask: Differentiate.
     math: f(x) = x^4 - 3x^2 + 5x - 6
     grade: achieved
     working:
       - math: f'(x) = 4x^3 - 6x + 5
-        note: "Term by term. The $5x$ becomes $5$, and the constant becomes nothing."
+        note: "Term by term. The $5x$ becomes $5$, and the constant becomes zero."
   - ask: Find the gradient function.
     math: f(x) = \dfrac{x^6}{3} + \dfrac{x^2}{2} - 10
     grade: achieved
@@ -152,15 +152,15 @@ steps:
     note: "The left column and the right column mean exactly the same thing."
 ```
 
-$\dfrac{dy}{dx}$ looks like a fraction and is not one — at this level it is a single symbol, and nothing may cancel inside it. The result of differentiating, whichever way it is written, is called the **derivative**; *gradient function* and *derivative* are the same thing.
+$\dfrac{dy}{dx}$ looks like a fraction, but it is not one. At this level it is a single symbol, and you must not cancel anything inside it. The result of differentiating, whichever way it is written, is called the **derivative**. *Gradient function* and *derivative* are the same thing.
 
 ---
 
 ## Expand before differentiating
 
-The rule reaches powers of $x$ in a sum of terms, and nothing else. A product must be expanded before the rule applies, because the derivative of a product is not the product of the derivatives.
+The rule reaches powers of $x$ in a sum of terms, and nothing else. You must expand a product before the rule applies, because the derivative of a product is not the product of the derivatives.
 
-$x \cdot x$ shows why. As a product, differentiating each factor gives $1 \times 1 = 1$. But $x \cdot x$ is $x^2$, and its derivative is $2x$. The product-of-derivatives answer is wrong at every point but one.
+$x \cdot x$ shows why. Differentiating each factor of the product gives $1 \times 1 = 1$. But $x \cdot x$ is $x^2$, and its derivative is $2x$. The product-of-derivatives answer is wrong at every point but one.
 
 ```figure
 caption: Expand, then differentiate
@@ -172,7 +172,7 @@ steps:
   - math: f'(x) = 2x - 3
 ```
 
-The standard states that polynomials are *given in expanded form*, so the expanding you do yourself mostly arises where a question asks you to build the function, as the maximum and minimum problems do. The habit belongs here all the same: the rule applies to expanded form only.
+The standard states that polynomials are *given in expanded form*. So you mostly expand where a question asks you to build the function, as the maximum and minimum problems do. The habit belongs here all the same: the rule applies to expanded form only.
 
 ```practice
 caption: expand first
@@ -182,14 +182,14 @@ questions:
     grade: merit
     working:
       - math: f(x) = 2x^2 + 5x - 3
-        note: "Expand first — differentiating each bracket separately gives a wrong answer."
+        note: "Expand first. Differentiating each bracket separately gives a wrong answer."
       - math: f'(x) = 4x + 5
   - ask: Differentiate.
     math: f(x) = (3x+2)(x-4)
     grade: merit
     working:
       - math: f(x) = 3x^2 - 10x - 8
-        note: "Expand first — differentiating each bracket separately gives a wrong answer."
+        note: "Expand first. Differentiating each bracket separately gives a wrong answer."
       - math: f'(x) = 6x - 10
   - ask: Differentiate.
     math: y = x^2(x - 6)
@@ -215,7 +215,7 @@ To find the gradient at one point, differentiate first, then substitute the poin
 caption: Gradient at a point
 steps:
   - math: f(x) = x^3 - 2x^2 \qquad\textsf{at}\qquad x = 3
-    note: "Differentiate first. The function itself will not be substituted into at all."
+    note: "Differentiate first. You do not substitute into the function itself at all."
   - math: f'(x) = 3x^2 - 4x
   - math: f'(3) = 3(3)^2 - 4(3)
     note: "The $x$-value goes into the gradient function, inside brackets."
@@ -223,9 +223,9 @@ steps:
     note: "At $x = 3$ the curve climbs at gradient $15$."
 ```
 
-Substituting into the wrong formula is the error to guard against here. $f(3)$ is the *height* of the curve at $x = 3$; $f'(3)$ is its *steepness* there. The two numbers answer different questions, and a question about gradient wants $f'$.
+Substituting into the wrong formula is the error to avoid here. $f(3)$ is the *height* of the curve at $x = 3$. $f'(3)$ is its *steepness* there. The two numbers answer different questions, and a question about gradient wants $f'$.
 
-The substitution itself is the other danger. The 2025 report's not-achieved list has both *"substituted values incorrectly into the given function or derivative"* and *"misinterpreted expressions such as $-x^2$"* — the same bracket discipline as algebra: the value goes in wrapped in brackets, so that an even power squares the sign away and an odd power keeps it.
+The substitution itself is the other danger. Use the same bracket discipline as in algebra. The value goes in wrapped in brackets, so that an even power removes the minus sign and an odd power keeps it. The not-achieved list of the 2025 report has both *"substituted values incorrectly into the given function or derivative"* and *"misinterpreted expressions such as $-x^2$"*.
 
 ```practice
 caption: gradient at a point
@@ -253,7 +253,7 @@ questions:
     from: "2025"
     working:
       - math: f'(x) = 6x^2 + 6x + \dfrac{1}{2}
-        note: "The $\\dfrac{x}{2}$ is the term to watch — its derivative is its coefficient, $\\dfrac{1}{2}$."
+        note: "The $\\dfrac{x}{2}$ is the term to watch. Its derivative is its coefficient, $\\dfrac{1}{2}$."
       - math: f'\!\left(-\dfrac{1}{2}\right) = 6\left(-\dfrac{1}{2}\right)^2 + 6\left(-\dfrac{1}{2}\right) + \dfrac{1}{2}
         note: "Brackets around the substituted value, so the square keeps the sign right."
       - math: f'\!\left(-\dfrac{1}{2}\right) = \dfrac{3}{2} - 3 + \dfrac{1}{2} = -1
@@ -262,7 +262,7 @@ questions:
     grade: achieved
     working:
       - math: f'(x) = 12x^2 + 4x + \dfrac{1}{3}
-        note: "The $\\dfrac{x}{3}$ is the term to watch — its derivative is its coefficient, $\\dfrac{1}{3}$."
+        note: "The $\\dfrac{x}{3}$ is the term to watch. Its derivative is its coefficient, $\\dfrac{1}{3}$."
       - math: f'\!\left(-\dfrac{1}{2}\right) = 12\left(-\dfrac{1}{2}\right)^2 + 4\left(-\dfrac{1}{2}\right) + \dfrac{1}{3}
         note: "Brackets around the substituted value, so the square keeps the sign right."
       - math: f'\!\left(-\dfrac{1}{2}\right) = 3 - 2 + \dfrac{1}{3} = \dfrac{4}{3}
@@ -272,7 +272,7 @@ questions:
 
 ## Reading the gradient function backwards
 
-The same formula answers the reverse question: *at which point does the curve have gradient three?* Set the gradient function equal to the given gradient and solve for $x$. The 2025 report names the error candidates make here: *"substituting the gradient value into the original function"* — the given number is a gradient, so the equation it belongs in is $f'(x) = \textsf{gradient}$, and it is never an input to $f$. Where the question asks for the point rather than just the $x$-value, finish by substituting that $x$ into the original function for its $y$-value — the point sits on the curve, so its height comes from $f$, not from $f'$.
+The same formula answers the reverse question: *at which point does the curve have gradient three?* Set the gradient function equal to the given gradient and solve for $x$. The given number is a gradient, so the equation it belongs in is $f'(x) = \textsf{gradient}$. It is never an input to $f$. The 2025 report names the error candidates make here: *"substituting the gradient value into the original function"*. Where the question asks for the point rather than just the $x$-value, finish by substituting that $x$ into the original function for its $y$-value. The point sits on the curve, so its height comes from $f$, not from $f'$.
 
 ```figure
 caption: From a gradient to a point
@@ -281,9 +281,9 @@ steps:
     note: "Which point on the curve has gradient $5$?"
   - math: f'(x) = 6x - 7
   - math: 6x - 7 = 5
-    note: "Set the gradient function equal to the gradient being asked about."
+    note: "Set the gradient function equal to the gradient the question asks about."
   - math: x = 2
-    note: "That locates the point along the $x$-axis. The question asked for the point, so its height is still needed."
+    note: "That locates the point along the $x$-axis. The question asked for the point, so you still need its height."
   - math: f(2) = 3(2)^2 - 7(2) - 10 = -12
     note: "Height comes from the original function. The point is $(2, -12)$."
 ```
@@ -356,7 +356,7 @@ questions:
     working:
       - math: \dfrac{dy}{dx} = 2x^3 + 9x^2 - 1
       - math: 2(-1)^3 + 9(-1)^2 - 1
-        note: "An odd power keeps the minus; an even power loses it."
+        note: "An odd power keeps the minus, and an even power loses it."
       - math: -2 + 9 - 1 = 6
   - ask: Use calculus to find the gradient of the function at the point where $x = -1$.
     math: y = \dfrac{x^4}{4} + 2x^3 - x
@@ -364,7 +364,7 @@ questions:
     working:
       - math: \dfrac{dy}{dx} = x^3 + 6x^2 - 1
       - math: (-1)^3 + 6(-1)^2 - 1
-        note: "An odd power keeps the minus; an even power loses it."
+        note: "An odd power keeps the minus, and an even power loses it."
       - math: -1 + 6 - 1 = 4
   - ask: Find the coordinates of the point on the curve where the gradient is $-2$.
     math: f(x) = x^2 - 8x + 3
@@ -387,14 +387,14 @@ questions:
     grade: merit
     working:
       - math: f(x) = x^3 - 2x^2 - 8x
-        note: "Expand before the rule can be used."
+        note: "Expand before you use the rule."
       - math: f'(x) = 3x^2 - 4x - 8
   - ask: Differentiate.
     math: f(x) = (x-3)(x^2+4x)
     grade: merit
     working:
       - math: f(x) = x^3 + x^2 - 12x
-        note: "Expand before the rule can be used."
+        note: "Expand before you use the rule."
       - math: f'(x) = 3x^2 + 2x - 12
   - ask: The gradient of the curve at $x = 2$ is $17$. Find $b$.
     math: f(x) = x^3 + bx^2 + x
@@ -436,7 +436,7 @@ questions:
 
 ## Summary
 
-The gradient of a curve at a point is the gradient of its tangent there, and the gradient function returns that number for every point at once.
+The gradient of a curve at a point is the gradient of its tangent there. The gradient function returns that number for every point at once.
 
 The rule is on the formulae sheet: multiply by the power, lower the power by one. Coefficients stay and multiply, terms differentiate one at a time, and a constant differentiates to zero.
 
