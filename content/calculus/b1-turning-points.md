@@ -2,7 +2,7 @@
 
 ---
 
-Module A ended twice at the same fact. A horizontal tangent has gradient zero, and a sketch of $f$ turns exactly where $f'$ crosses the axis. This lesson is about that point. Finding where $f'(x) = 0$, and saying what kind of point it is, is the centre of the standard. The word problems of the next lesson are the same work in context.
+In Module A you met the same fact twice. A horizontal tangent has gradient zero, and a sketch of $f$ turns exactly where $f'$ crosses the axis. This lesson is about that point. Finding where $f'(x) = 0$, and saying what kind of point it is, is the main skill in the standard. The word problems in the next lesson use the same method in real situations.
 
 ---
 
@@ -14,21 +14,21 @@ A **turning point** is a point where the curve stops climbing and starts falling
 caption: Finding the turning points
 steps:
   - math: f(x) = x^3 - 3x^2 - 9x + 2
-    note: "A cubic, so expect up to two turning points."
+    note: "This is a cubic, so expect up to two turning points."
   - math: f'(x) = 3x^2 - 6x - 9
     note: "Differentiate, and set the result equal to zero. Flat means gradient zero."
   - math: 3x^2 - 6x - 9 = 0
   - math: 3(x - 3)(x + 1) = 0
-    note: "Take out the common factor, then factorise the trinomial. The quadratic formula does the same job when the factors are hard to find."
+    note: "Take out the common factor, then factorise the trinomial. When the factors are hard to find, use the quadratic formula instead."
   - math: x = 3 \quad\textsf{or}\quad x = -1
-    note: "Two flat points, located along the $x$-axis. Their heights are still missing."
+    note: "These are the $x$-coordinates of the two flat points. You still need their heights."
   - math: f(-1) = 7 \qquad f(3) = -25
-    note: "Heights from the original function, as always. The turning points are $(-1, 7)$ and $(3, -25)$."
+    note: "Take the heights from the original function, as always. The turning points are $(-1, 7)$ and $(3, -25)$."
 ```
 
-Solving $f'(x) = 0$ is a quadratic equation, so everything from solving quadratics in algebra applies. Factorise if the factors are easy to find. Otherwise use the quadratic formula from the sheet. The calculus in this question is one line. The marks after it are algebra.
+For a cubic, $f'(x) = 0$ is a quadratic equation, so everything from solving quadratics in algebra applies. Factorise if the factors are easy to find. Otherwise use the quadratic formula from the sheet. The calculus in this question is one line. The marks after it are algebra.
 
-The heights follow the rule of every earlier lesson: $f$ for height, $f'$ for steepness. A turning point named in an answer is a point, and a point has both coordinates.
+Take each height from $f$, as in every earlier lesson: $f$ gives the height, and $f'$ gives the steepness. When an answer names a turning point, give both of its coordinates.
 
 ```figure
 caption: The curve, for reference
@@ -46,7 +46,7 @@ steps:
           color: a
           label: (3, −25)
       xticks: [-1, 3]
-    note: "Both turning points, found without drawing anything. The sketch confirms what the algebra found."
+    note: "You found both turning points without drawing anything. The sketch shows the same two points."
 ```
 
 A point where $f'(x) = 0$ is in general called a **stationary point**. Nearly always at this level it is a turning point, but a paper may use either word, and the method is the same for both.
@@ -78,7 +78,7 @@ questions:
       - math: x^2 = 4 \qquad x = 2 \;\textsf{ or }\; x = -2
       - math: f(2) = 8 - 24 + 3 = -13
       - math: f(-2) = -8 + 24 + 3 = 19
-        note: "Two points, two heights, each from $f$."
+        note: "There are two points, so find two heights, each from $f$."
       - math: (2, -13) \;\textsf{ and }\; (-2, 19)
   - ask: Find the coordinates of both turning points of the curve.
     math: f(x) = x^3 - 48x + 2
@@ -88,7 +88,7 @@ questions:
       - math: x^2 = 16 \qquad x = 4 \;\textsf{ or }\; x = -4
       - math: f(4) = 64 - 192 + 2 = -126
       - math: f(-4) = -64 + 192 + 2 = 130
-        note: "Two points, two heights, each from $f$."
+        note: "There are two points, so find two heights, each from $f$."
       - math: (4, -126) \;\textsf{ and }\; (-4, 130)
 ```
 
@@ -96,9 +96,9 @@ questions:
 
 ## The nature of a turning point
 
-*Nature* is the examiner's word for which kind. A **maximum** is where the curve turns from climbing to falling, and a **minimum** is where it turns from falling to climbing. The algebra that found the point does not tell you which it is, because $f'(x) = 0$ reads the same both ways. So the nature is a second question, and you answer it with its own working.
+*Nature* is the examiner's word for the kind of turning point. A **maximum** is where the curve turns from climbing to falling, and a **minimum** is where it turns from falling to climbing. Solving $f'(x) = 0$ does not tell you which it is, because the gradient is zero at both kinds. So the nature is a second question, and you answer it with its own working.
 
-The 2026 specification names three acceptable justifications: *"by using the second derivative, testing points around the turning points, or with an annotated sketch of the shape of the curve"*. Any one of the three is enough. The sections below show each one on the turning points found above.
+The 2026 specification names three acceptable justifications: *"by using the second derivative, testing points around the turning points, or with an annotated sketch of the shape of the curve"*. Any one of the three is enough.
 
 ### Testing points either side
 
@@ -118,12 +118,12 @@ steps:
       f'(x) & + & 0 & - & 0 & + \\[2pt]
        & \nearrow & \textsf{max} & \searrow & \textsf{min} & \nearrow
       \end{array}
-    note: "Climbing into $x = -1$ and falling out of it: a maximum. Falling into $x = 3$ and climbing out: a minimum."
+    note: "The curve climbs before $x = -1$ and falls after it, so that point is a maximum. It falls before $x = 3$ and climbs after it, so that point is a minimum."
 ```
 
 ### The second derivative
 
-Differentiating the gradient function gives the **second derivative**, written $f''(x)$ and read *f double dashed*. It is the gradient of the gradient. Where the function was given as an equation in $y$, the second derivative is written $\dfrac{d^2y}{dx^2}$. That matches the first derivative, written $\dfrac{dy}{dx}$. At a maximum the gradient is falling through zero, so $f''$ is negative there. At a minimum the gradient is rising through zero, so $f''$ is positive.
+Differentiating the gradient function gives the **second derivative**, written $f''(x)$ and read *f double dashed*. It is the gradient of the gradient function. Where the function was given as an equation in $y$, the second derivative is written $\dfrac{d^2y}{dx^2}$. That matches the first derivative, written $\dfrac{dy}{dx}$. At a maximum the gradient is falling through zero, so $f''$ is negative there. At a minimum the gradient is rising through zero, so $f''$ is positive.
 
 ```figure
 caption: The second derivative test
@@ -132,16 +132,16 @@ steps:
     note: "Differentiate once more."
   - math: f''(x) = 6x - 6
   - math: f''(-1) = -12 < 0 \qquad\therefore\;\textsf{maximum}
-    note: "Negative second derivative: the gradient is falling through zero there."
+    note: "The second derivative is negative, so the gradient is falling through zero there."
   - math: f''(3) = 12 > 0 \qquad\therefore\;\textsf{minimum}
-    note: "Positive: the gradient is rising through zero. One substitution per point, and the conclusion written beside each."
+    note: "The second derivative is positive, so the gradient is rising through zero. Substitute once for each point, and write the conclusion beside each one."
 ```
 
-The test is the fastest of the three, with one gap. If $f''$ is zero at the point, the test tells you nothing, and you must use one of the other two justifications instead.
+The second derivative test is the fastest of the three, but it does not always work. If $f''$ is zero at the point, the test does not tell you the nature, and you must use one of the other two justifications instead.
 
 ### An annotated sketch
 
-The shape argument is this. A cubic with a positive $x^3$ term climbs in from the lower left and climbs away to the upper right. So of its two turning points, the first must be the maximum and the second the minimum. Drawn small and labelled, with the reasoning written beside it, this is a complete justification. The word *annotated* is what makes it one. A bare sketch with no words does not claim anything.
+A cubic with a positive $x^3$ term climbs in from the lower left and climbs away to the upper right. So the first of its two turning points must be the maximum, and the second must be the minimum. An **annotated** sketch is a sketch with notes written on it. A small labelled sketch, with this reasoning written beside it, is a complete justification. A bare sketch with no words does not claim anything.
 
 Whichever of the three you use, you have to state the conclusion: *therefore $(3, -25)$ is a minimum*. The sentence is part of the working. The Excellence column of the 2024 schedule requires the minimum to be *stated* as such and the choice *justified*.
 
@@ -155,7 +155,7 @@ questions:
       - math: f'(x) = 2x - 8 = 0
       - math: x = 4 \qquad f(4) = 16 - 32 + 3 = -13
       - math: f''(x) = 2 > 0 \qquad\therefore\;(4, -13)\;\textsf{is a minimum}
-        note: "For a parabola the second derivative is a constant, so one line settles it. But you must still write the line."
+        note: "For a parabola the second derivative is a constant, so one line of working shows the nature. You must still write that line."
   - ask: Find the coordinates of the turning point of the curve, and use calculus to show that it is a minimum.
     math: f(x) = x^2 - 10x + 4
     grade: merit
@@ -163,7 +163,7 @@ questions:
       - math: f'(x) = 2x - 10 = 0
       - math: x = 5 \qquad f(5) = 25 - 50 + 4 = -21
       - math: f''(x) = 2 > 0 \qquad\therefore\;(5, -21)\;\textsf{is a minimum}
-        note: "For a parabola the second derivative is a constant, so one line settles it. But you must still write the line."
+        note: "For a parabola the second derivative is a constant, so one line of working shows the nature. You must still write that line."
   - ask: The curve has turning points at $x = -2$ and $x = 1$. Use calculus to determine the nature of each.
     math: f(x) = 2x^3 + 3x^2 - 12x + 4
     grade: merit
@@ -188,7 +188,7 @@ questions:
 
 ## Increasing and decreasing
 
-Between its turning points a curve does one thing: it climbs throughout or falls throughout. A question that asks where the function is **increasing** or **decreasing** is asking for those regions. The turning points are the boundaries between them.
+Between its turning points, a curve climbs the whole way or falls the whole way. A function is **increasing** where its curve climbs, and **decreasing** where its curve falls. So a question about where a function is increasing or decreasing asks for those regions. The turning points are the boundaries between them.
 
 Find where $f'(x) = 0$. Then read the sign of $f'$ in each region, from a test point or from the shape of the graph of $f'$.
 
@@ -196,11 +196,11 @@ Find where $f'(x) = 0$. Then read the sign of $f'$ in each region, from a test p
 caption: Where the function decreases
 steps:
   - math: f(x) = x^3 - 6x^2 + 9x + 1
-    note: "Decreasing means falling, and falling means negative gradient. The question is about the sign of $f'$."
+    note: "Decreasing means falling, and falling means a negative gradient. So the question asks where $f'$ is negative."
   - math: f'(x) = 3x^2 - 12x + 9 = 3(x-1)(x-3)
-    note: "Zero at $x = 1$ and $x = 3$, cutting the axis into three regions."
+    note: "$f'$ is zero at $x = 1$ and $x = 3$. These two values cut the $x$-axis into three regions."
   - math: f'(0) = 9 \qquad f'(2) = -3 \qquad f'(4) = 9
-    note: "Positive, negative, positive. An upward parabola is below the axis only between its roots."
+    note: "Positive, negative, positive. A parabola that opens upwards is below the axis only between its roots."
   - math: \textsf{decreasing for}\;\; 1 < x < 3
     note: "The answer is a region, written as an inequality, not a point."
   - graph:
@@ -230,7 +230,7 @@ questions:
       - math: 6(x - 2)(x + 1) = 0
       - math: x = 2 \;\textsf{ or }\; x = -1
       - math: f'(0) = -12 < 0
-        note: "One test point between the roots settles the sign of the whole region. An upward parabola is negative only between its roots."
+        note: "One test point between the roots gives the sign of $f'$ for the whole region. A parabola that opens upwards is negative only between its roots."
       - math: \textsf{decreasing for}\;\; -1 < x < 2
   - ask: Use calculus to find the values of $x$ for which the function is decreasing.
     math: f(x) = 2x^3 - 9x^2 - 24x + 1
@@ -240,7 +240,7 @@ questions:
       - math: 6(x - 4)(x + 1) = 0
       - math: x = 4 \;\textsf{ or }\; x = -1
       - math: f'(0) = -24 < 0
-        note: "One test point between the roots settles the sign of the whole region. An upward parabola is negative only between its roots."
+        note: "One test point between the roots gives the sign of $f'$ for the whole region. A parabola that opens upwards is negative only between its roots."
       - math: \textsf{decreasing for}\;\; -1 < x < 4
   - ask: Use calculus to find the values of $x$ for which the function is increasing.
     math: f(x) = x^3 - 9x^2 + 24x - 3
@@ -250,30 +250,30 @@ questions:
       - math: 3(x - 2)(x - 4) = 0
       - math: x = 2 \;\textsf{ or }\; x = 4
       - math: f'(3) = 27 - 54 + 24 = -3 < 0
-        note: "Negative between the roots, so positive outside them."
+        note: "$f'$ is negative between the roots, so it is positive outside them."
       - math: \textsf{increasing for}\;\; x < 2 \;\textsf{ and }\; x > 4
-        note: "Increasing happens in two separate regions, and the answer names both."
+        note: "The function is increasing in two separate regions, and the answer must give both."
 ```
 
 ---
 
 ## Working backwards to a coefficient
 
-A question can leave a coefficient unknown and give a fact about the curve instead. Each fact converts to an equation by the same two formulas as everything above. *Has a stationary point at $x = a$* means $f'(a) = 0$. *Passes through a point* or *meets the $x$-axis at $x = a$* means $f(a)$ equals the height named. Convert every fact, then solve what results.
+Some questions leave a coefficient unknown and give a fact about the curve instead. You change each fact into an equation with $f$ or $f'$, as in the rest of this lesson. *Has a stationary point at $x = a$* means $f'(a) = 0$. *Passes through a point* or *meets the $x$-axis at $x = a$* means $f(a)$ equals the height of that point. Change every fact into an equation, then solve the equations.
 
 ```figure
 caption: A fact becomes an equation
 steps:
   - math: f(x) = x^3 + kx^2 + 3 \qquad\textsf{stationary point at}\;\; x = 2
-    note: "One unknown coefficient, one fact about the curve."
+    note: "There is one unknown coefficient and one fact about the curve."
   - math: f'(x) = 3x^2 + 2kx
-    note: "$k$ is a constant, so it differentiates like any coefficient."
+    note: "$k$ is a constant, so treat it like any other coefficient when you differentiate."
   - math: f'(2) = 12 + 4k = 0
-    note: "Stationary at $x = 2$ means exactly this."
+    note: "A stationary point at $x = 2$ means that the gradient there is zero."
   - math: k = -3
 ```
 
-With two unknown coefficients the question gives two facts. Converting both gives a pair of simultaneous equations, which you solve as in algebra. The hardest turning-point part of the 2025 paper is built this way. It gives a cubic with coefficients $a$ and $b$, one $x$-intercept and one stationary point. Everything else follows once the two equations are written.
+With two unknown coefficients the question gives two facts. Converting both gives a pair of simultaneous equations, which you solve as in algebra. The hardest turning-point part of the 2025 paper is built this way. It gives a cubic with coefficients $a$ and $b$, one $x$-intercept and one stationary point. Everything else follows once you have written the two equations.
 
 ```practice
 caption: unknown coefficients
@@ -284,7 +284,7 @@ questions:
     working:
       - math: f'(x) = 3x^2 + 2px
       - math: f'(-2) = 12 - 4p = 0
-        note: "The stationary point converts to an equation in $p$."
+        note: "The stationary point gives an equation in $p$."
       - math: p = 3
       - math: f''(x) = 6x + 6 \qquad f''(-2) = -6 < 0
       - math: \therefore\;\textsf{a maximum}
@@ -294,7 +294,7 @@ questions:
     working:
       - math: f'(x) = 3x^2 + 2px
       - math: f'(-4) = 48 - 8p = 0
-        note: "The stationary point converts to an equation in $p$."
+        note: "The stationary point gives an equation in $p$."
       - math: p = 6
       - math: f''(x) = 6x + 12 \qquad f''(-4) = -12 < 0
       - math: \therefore\;\textsf{a maximum}
@@ -307,7 +307,7 @@ questions:
       - math: 8a + 4b = 0 \qquad\Rightarrow\qquad b = -2a
       - math: f'(x) = 3ax^2 + 2bx - 1
       - math: f'(1) = 3a + 2b - 1 = 0
-        note: "The stationary point gives the second equation. Two facts, two equations."
+        note: "The stationary point gives the second equation."
       - math: 3a - 4a - 1 = 0 \qquad\Rightarrow\qquad a = -1, \;\; b = 2
       - math: f'(x) = -3x^2 + 4x - 1 = -(3x - 1)(x - 1) = 0
       - math: x = \dfrac{1}{3}
@@ -322,7 +322,7 @@ questions:
       - math: 8a + 4b = 4 \qquad\Rightarrow\qquad b = 1 - 2a
       - math: f'(x) = 3ax^2 + 2bx - 4
       - math: f'(1) = 3a + 2b - 4 = 0
-        note: "The stationary point gives the second equation. Two facts, two equations."
+        note: "The stationary point gives the second equation."
       - math: 3a + 2(1 - 2a) - 4 = 0 \qquad\Rightarrow\qquad a = -2, \;\; b = 5
       - math: f'(x) = -6x^2 + 10x - 4 = -2(3x - 2)(x - 1) = 0
       - math: x = \dfrac{2}{3}
@@ -335,7 +335,7 @@ questions:
 
 ## Practice
 
-Work these on paper before revealing anything. They are ordered easiest first, and the band each one is pitched at is the band the marker would award for doing it well.
+Work these on paper before revealing anything. They are ordered easiest first, and each is labelled with the band the marker would award for doing it well.
 
 ```practice
 questions:
@@ -363,9 +363,9 @@ questions:
       - math: 3(x - 4)(x + 2) = 0
       - math: x = 4 \;\textsf{ or }\; x = -2
       - math: f'(0) = -24 < 0
-        note: "Negative between the roots, so positive outside them."
+        note: "$f'$ is negative between the roots, so it is positive outside them."
       - math: \textsf{increasing for}\;\; x < -2 \;\textsf{ and }\; x > 4
-        note: "Increasing happens in two separate regions, and the answer names both."
+        note: "The function is increasing in two separate regions, and the answer must give both."
   - ask: Use calculus to find the values of $x$ for which the function is increasing.
     math: f(x) = x^3 - 3x^2 - 45x + 2
     grade: merit
@@ -374,9 +374,9 @@ questions:
       - math: 3(x - 5)(x + 3) = 0
       - math: x = 5 \;\textsf{ or }\; x = -3
       - math: f'(0) = -45 < 0
-        note: "Negative between the roots, so positive outside them."
+        note: "$f'$ is negative between the roots, so it is positive outside them."
       - math: \textsf{increasing for}\;\; x < -3 \;\textsf{ and }\; x > 5
-        note: "Increasing happens in two separate regions, and the answer names both."
+        note: "The function is increasing in two separate regions, and the answer must give both."
   - ask: Find the coordinates of the three turning points of the curve.
     math: f(x) = x^4 - 8x^2
     grade: merit
@@ -384,7 +384,7 @@ questions:
       - math: f'(x) = 4x^3 - 16x = 0
         note: "The gradient function of a quartic is a cubic, and the 2023 report says candidates *found difficulty in solving a cubic expression*. Take out the common factor first, as always."
       - math: 4x(x^2 - 4) = 4x(x - 2)(x + 2) = 0
-        note: "The common factor $4x$ supplies one root itself, and leaves a difference of two squares."
+        note: "The common factor $4x$ gives one root by itself. What is left is a difference of two squares."
       - math: x = -2, \;\; 0, \;\; 2
       - math: f(\pm 2) = 16 - 32 = -16 \qquad f(0) = 0
       - math: (-2, -16), \;\; (0, 0) \;\textsf{ and }\; (2, -16)
@@ -395,7 +395,7 @@ questions:
       - math: f'(x) = 4x^3 - 36x = 0
         note: "The gradient function of a quartic is a cubic. Take out the common factor first, as always."
       - math: 4x(x^2 - 9) = 4x(x - 3)(x + 3) = 0
-        note: "The common factor $4x$ supplies one root itself, and leaves a difference of two squares."
+        note: "The common factor $4x$ gives one root by itself. What is left is a difference of two squares."
       - math: x = -3, \;\; 0, \;\; 3
       - math: f(\pm 3) = 81 - 162 = -81 \qquad f(0) = 0
       - math: (-3, -81), \;\; (0, 0) \;\textsf{ and }\; (3, -81)
@@ -406,10 +406,10 @@ questions:
       - math: \dfrac{dy}{dx} = 6x^2 - 6x - 36 = 0
       - math: 6(x - 3)(x + 2) = 0
       - math: x = 3 \;\textsf{ or }\; x = -2
-        note: "Two stationary points, and the question wants the minimum. So you must decide the nature, not assume it."
+        note: "There are two stationary points, and the question asks for the minimum. So you must show which one is the minimum, not assume it."
       - math: \dfrac{d^2y}{dx^2} = 12x - 6
       - math: 12(3) - 6 = 30 > 0 \qquad\therefore\;\textsf{minimum at } x = 3
-        note: "Testing points either side of $x = 3$, or an annotated sketch of an upward cubic, would justify it equally well."
+        note: "Testing points either side of $x = 3$, or an annotated sketch of a cubic with a positive $x^3$ term, would justify it equally well."
   - ask: Using calculus methods, find the $x$-coordinate of the local minimum of the curve, and explain how you know it is a minimum.
     math: y = 2x^3 - 6x^2 - 18x + 5
     grade: excellence
@@ -418,10 +418,10 @@ questions:
       - math: \dfrac{dy}{dx} = 6x^2 - 12x - 18 = 0
       - math: 6(x - 3)(x + 1) = 0
       - math: x = 3 \;\textsf{ or }\; x = -1
-        note: "Two stationary points, and the question wants the minimum. So you must decide the nature, not assume it."
+        note: "There are two stationary points, and the question asks for the minimum. So you must show which one is the minimum, not assume it."
       - math: \dfrac{d^2y}{dx^2} = 12x - 12
       - math: 12(3) - 12 = 24 > 0 \qquad\therefore\;\textsf{minimum at } x = 3
-        note: "Testing points either side of $x = 3$, or an annotated sketch of an upward cubic, would justify it equally well."
+        note: "Testing points either side of $x = 3$, or an annotated sketch of a cubic with a positive $x^3$ term, would justify it equally well."
   - ask: The curve $y = x^2 + bx + c$ has a minimum at $(3, -4)$. Find the values of $b$ and $c$.
     grade: excellence
     working:
@@ -446,12 +446,12 @@ questions:
 
 ## Summary
 
-A turning point is where the gradient is zero: solve $f'(x) = 0$, then take heights from $f$. The solving is a quadratic equation, so the marks around the calculus are algebra.
+A turning point is where the gradient is zero: solve $f'(x) = 0$, then take heights from $f$. For a cubic, $f'(x) = 0$ is a quadratic equation, so the marks after the differentiation are for algebra.
 
-The nature is a separate question with its own working. Three justifications are accepted: second derivative, test points either side, annotated sketch. Whichever you use, you must state the conclusion in words. $f''$ negative means maximum, and positive means minimum. Zero means the test tells you nothing, and you must use another justification.
+The nature is a separate question with its own working. Three justifications are accepted: second derivative, test points either side, annotated sketch. Whichever you use, you must state the conclusion in words. A negative $f''$ means a maximum, and a positive $f''$ means a minimum. If $f''$ is zero, the test does not tell you the nature, and you must use another justification.
 
 Between turning points a curve climbs throughout or falls throughout, so you answer *increasing* and *decreasing* questions with intervals bounded by the turning points.
 
-Facts about a curve convert to equations: on the curve means $f(a)$ equals the height, stationary means $f'(a) = 0$. Two unknowns need two facts.
+Change each fact about a curve into an equation. A point on the curve means $f(a)$ equals its height. A stationary point means $f'(a) = 0$. To find two unknowns, you need two facts.
 
-The next lesson uses all of this in word problems. The turning point becomes the largest volume, the least material, the greatest area: the question the whole standard is named after.
+In the next lesson you use all of this in word problems. There the turning point gives the largest volume, the least material or the greatest area. These are the problems in the title of the standard, *Apply calculus methods in solving problems*.

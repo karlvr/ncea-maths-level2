@@ -2,7 +2,7 @@
 
 ---
 
-The achievement objective that this standard comes from names two things: "apply trigonometric relationships, including the sine and cosine rules, in two and three dimensions." Every figure so far has lain flat on the page. A box, a pyramid, or a mast held by wires puts the same triangles on the faces and inside the volume of a solid. No rule in this standard works in three dimensions. The work is finding the flat triangle the solid contains, drawing it on its own, and solving it exactly as Module A already does.
+The achievement objective that this standard comes from says to "apply trigonometric relationships, including the sine and cosine rules, in two and three dimensions." Every figure so far has lain flat on the page. In a box, a pyramid, or a mast held by wires, the same kinds of triangle lie on the faces of a solid or inside it. Each rule in this standard applies only to a flat figure. Your work is to find a flat triangle inside the solid, draw it on its own, and solve it with the methods of Module A.
 
 ---
 
@@ -104,14 +104,14 @@ steps:
           to: G
           color: b
           dashed: true
-    note: "$AC$, the base diagonal, lies flat in the bottom face. It sits in a right triangle, because the base is a rectangle. $AG$, the diagonal wanted, is the hypotenuse of a second right triangle built from $AC$ and the vertical edge $CG$."
+    note: "$AC$, the base diagonal, lies flat in the bottom face. It sits in a right triangle, because the base is a rectangle. $AG$, the diagonal you need, is the hypotenuse of a second right triangle built from $AC$ and the vertical edge $CG$."
   - math: AC^2 = 12^2 + 9^2 = 225 \qquad AC = 15\ \textsf{m}
-    note: "Pythagoras, in the right angle of the base rectangle. The cosine rule is not needed, because the corners of a rectangle are already $90°$."
+    note: "Use Pythagoras in the base rectangle. You do not need the cosine rule, because each corner of a rectangle is already $90°$."
   - math: AG^2 = AC^2 + CG^2 = 15^2 + 8^2 = 289 \qquad AG = 17\ \textsf{m}
-    note: "A second right triangle: $AC$, the vertical edge $CG$, and the diagonal $AG$, with the right angle where the vertical edge meets the base."
+    note: "This is a second right triangle, with sides $AC$, the vertical edge $CG$, and the diagonal $AG$. The right angle is where the vertical edge meets the base."
 ```
 
-Two applications of Pythagoras, chained. The base diagonal comes from a right triangle inside a rectangle you already have. The full diagonal comes from a right triangle built from that base diagonal and a vertical edge. None of this is new mathematics. Pythagoras and SOH-CAH-TOA are the right-angle methods from Year 11, and every corner of a box gives them one.
+To find the diagonal of a box, use Pythagoras twice, one result after the other. The base diagonal comes from a right triangle inside the base rectangle. The full diagonal comes from a right triangle built from that base diagonal and a vertical edge. This is not new mathematics. Pythagoras and SOH-CAH-TOA are the right-angle methods from Year 11. You can use them in a box because every corner of a box is a right angle.
 
 ```practice
 caption: the diagonal of a box
@@ -120,29 +120,29 @@ questions:
     grade: achieved
     working:
       - math: d^2 = 6^2 + 8^2 = 100
-        note: "The base is a rectangle, so Pythagoras finds its diagonal directly."
+        note: "The base is a rectangle, so use Pythagoras to find its diagonal directly."
       - math: d = 10\ \textsf{m}
         note: "The base diagonal is $10$ m."
   - ask: A box measures $7$ m by $24$ m by $6$ m. Calculate the length of the diagonal across its base.
     grade: achieved
     working:
       - math: d^2 = 7^2 + 24^2 = 625
-        note: "The base is a rectangle, so Pythagoras finds its diagonal directly."
+        note: "The base is a rectangle, so use Pythagoras to find its diagonal directly."
       - math: d = 25\ \textsf{m}
         note: "The base diagonal is $25$ m."
   - ask: A warehouse is $8$ m long, $15$ m wide and $10$ m tall. Calculate the length of the diagonal running from one bottom corner to the opposite top corner.
     grade: merit
     working:
       - math: \textsf{base}^2 = 8^2 + 15^2 = 289 \qquad \textsf{base} = 17\ \textsf{m}
-        note: "The base diagonal first, from the rectangle it lies in."
+        note: "Find the base diagonal first, from the rectangle it lies in."
       - math: \textsf{diagonal}^2 = 17^2 + 10^2 = 389
       - math: \textsf{diagonal} \approx 19.7\ \textsf{m}
-        note: "The corner-to-corner diagonal of the warehouse is $19.7$ m. The answer is named, with its unit, as the context asked for."
+        note: "The corner-to-corner diagonal of the warehouse is $19.7$ m. The answer names what the number is and gives its unit."
   - ask: A warehouse is $9$ m long, $40$ m wide and $12$ m tall. Calculate the length of the diagonal running from one bottom corner to the opposite top corner.
     grade: merit
     working:
       - math: \textsf{base}^2 = 9^2 + 40^2 = 1681 \qquad \textsf{base} = 41\ \textsf{m}
-        note: "The base diagonal first, from the rectangle it lies in."
+        note: "Find the base diagonal first, from the rectangle it lies in."
       - math: \textsf{diagonal}^2 = 41^2 + 12^2 = 1825
       - math: \textsf{diagonal} \approx 42.7\ \textsf{m}
         note: "The corner-to-corner diagonal of the warehouse is $42.7$ m."
@@ -177,9 +177,9 @@ steps:
           from: A
           to: G
           right: true
-    note: "The triangle $ACG$, drawn on its own, flat. The right angle sits at $C$, where the vertical edge meets the base diagonal."
+    note: "This is triangle $ACG$, drawn flat on its own. The right angle sits at $C$, where the vertical edge meets the base diagonal."
   - math: \tan(\angle GAC) = \dfrac{8}{15}
-    note: "SOH-CAH-TOA reaches this directly. The triangle is right-angled, so the cosine and sine rules are not needed."
+    note: "The triangle is right-angled, so use SOH-CAH-TOA. You do not need the cosine rule or the sine rule."
   - math: \angle GAC \approx 28.1°
     note: "The diagonal leans $28.1°$ above the base."
 ```
@@ -191,27 +191,27 @@ questions:
     grade: merit
     working:
       - math: \textsf{base}^2 = 9^2 + 12^2 = 225 \qquad \textsf{base} = 15\ \textsf{m}
-        note: "The base diagonal, drawn flat inside the rectangular base."
+        note: "Find the base diagonal in the rectangular base."
       - math: \tan(\theta) = \dfrac{5}{15}
-        note: "The right triangle formed by the base diagonal, the vertical edge, and the box's own diagonal, redrawn on its own."
+        note: "Use the right triangle formed by the base diagonal, the vertical edge, and the box's own diagonal. Draw it on its own."
       - math: \theta \approx 18.4°
         note: "The diagonal makes an angle of $18.4°$ with the base."
   - ask: A box measures $20$ m by $15$ m by $9$ m. Calculate the angle its longest diagonal makes with the base.
     grade: merit
     working:
       - math: \textsf{base}^2 = 20^2 + 15^2 = 625 \qquad \textsf{base} = 25\ \textsf{m}
-        note: "The base diagonal, drawn flat inside the rectangular base."
+        note: "Find the base diagonal in the rectangular base."
       - math: \tan(\theta) = \dfrac{9}{25}
-        note: "The right triangle formed by the base diagonal, the vertical edge, and the box's own diagonal."
+        note: "Use the right triangle formed by the base diagonal, the vertical edge, and the box's own diagonal."
       - math: \theta \approx 19.8°
         note: "The diagonal makes an angle of $19.8°$ with the base."
 ```
 
 ---
 
-## Pyramids: a triangle that is not a right angle
+## Pyramids: a triangle without a right angle
 
-A box has a right angle at every corner. A pyramid does not. Its slant edges meet the base at an angle that is not $90°$. Two of its slant edges meet each other at the apex in a triangle with no right angle anywhere in it. Both triangles still come from the solid the same way: find them, draw them flat, and solve them.
+A box has a right angle at every corner. A pyramid does not. The apex of a pyramid is its top point, and each slant edge joins the apex to a corner of the base. A slant edge meets the base at an angle that is not $90°$. Two slant edges and the base edge between them form a triangle without any right angle. You find each triangle in a pyramid in the same way: find it in the solid, draw it flat, and solve it.
 
 ```figure
 caption: The height of a pyramid
@@ -260,11 +260,11 @@ steps:
           from: P
           to: B
           right: true
-    note: "A square-based pyramid, base $10$ m and slant edge $13$ m. $M$ is the centre of the base, directly beneath the apex $P$. The height $PM$ meets the base there at a right angle."
+    note: "This is a square-based pyramid with a base of $10$ m and slant edges of $13$ m. $M$ is the centre of the base, directly beneath the apex $P$. The height $PM$ meets the base there at a right angle."
   - math: MB^2 = \dfrac{10^2}{2} = 50
-    note: "$MB$ is half the diagonal of the base, and the diagonal itself is Pythagoras in the base square: diagonal$^2 = 10^2+10^2 = 200$. Halving a length before squaring it divides the square by four, so $MB^2 = 200 \\div 4 = 50$."
+    note: "$MB$ is half the diagonal of the base. Pythagoras in the base square gives diagonal$^2 = 10^2+10^2 = 200$. Halving a length divides its square by four, so $MB^2 = 200 \\div 4 = 50$."
   - math: PM^2 = 13^2 - 50 = 119 \qquad PM \approx 10.9\ \textsf{m}
-    note: "The right triangle $PMB$: Pythagoras, with $MB^2$ carried across unrounded."
+    note: "Use Pythagoras in the right triangle $PMB$, with the unrounded $MB^2$."
   - math: \tan(\angle PBM) = \dfrac{10.9}{7.07}
     note: $MB = \sqrt{50} \approx 7.07$ m. The angle a slant edge makes with the base sits in this same right triangle.
   - math: \angle PBM \approx 57.0°
@@ -288,11 +288,11 @@ steps:
         - from: B
           to: C
           label: 10 m
-    note: "Two adjacent slant edges and the base edge between them, drawn flat. All three sides are known, and none of the triangle's angles is $90°$."
+    note: "This triangle is two adjacent slant edges and the base edge between them, drawn flat. All three sides are known, and the triangle does not have a right angle."
   - math: \cos(\angle BPC) = \dfrac{13^2 + 13^2 - 10^2}{2(13)(13)}
-    note: "The cosine rule, because three sides are known and the triangle is not right-angled. SOH-CAH-TOA has nothing to work with here."
+    note: "Use the cosine rule, because three sides are known and the triangle is not right-angled. You cannot use SOH-CAH-TOA without a right angle."
   - math: \angle BPC \approx 45.2°
-    note: "The angle between the two slant edges, at the apex."
+    note: "This is the angle between the two slant edges, at the apex."
 ```
 
 ```practice
@@ -304,23 +304,23 @@ questions:
       - math: MB^2 = \dfrac{12^2}{2} = 72
         note: "$MB$ is half the base diagonal, so $MB^2$ is a quarter of the diagonal squared, which is itself $2\\times12^2$."
       - math: PM^2 = 15^2 - 72 = 153 \qquad PM \approx 12.4\ \textsf{m}
-        note: "The right triangle formed by the height, half the base diagonal, and the slant edge."
+        note: "Use the right triangle formed by the height, half the base diagonal, and the slant edge."
       - math: \tan(\theta) = \dfrac{12.4}{8.49} \qquad \theta \approx 55.6°
         note: $MB = \sqrt{72} \approx 8.49$ m. The pyramid's height is $12.4$ m and its slant edges meet the base at $55.6°$.
   - ask: A square-based pyramid has base $8$ m and slant edges of $11$ m. Calculate its height, and the angle a slant edge makes with the base.
     grade: merit
     working:
       - math: MB^2 = \dfrac{8^2}{2} = 32
-        note: "Half the base diagonal, squared."
+        note: "$MB^2$ is the square of half the base diagonal."
       - math: PM^2 = 11^2 - 32 = 89 \qquad PM \approx 9.4\ \textsf{m}
-        note: "The right triangle formed by the height, half the base diagonal, and the slant edge."
+        note: "Use the right triangle formed by the height, half the base diagonal, and the slant edge."
       - math: \tan(\theta) = \dfrac{9.4}{5.66} \qquad \theta \approx 59.1°
         note: $MB = \sqrt{32} \approx 5.66$ m. The pyramid's height is $9.4$ m and its slant edges meet the base at $59.1°$.
   - ask: A square-based pyramid has base $9$ m and slant edges of $14$ m. Calculate the angle between two adjacent slant edges, at the apex.
     grade: merit
     working:
       - math: \cos(\theta) = \dfrac{14^2 + 14^2 - 9^2}{2(14)(14)}
-        note: "The triangle formed by two slant edges and the base edge between them has no right angle, so the cosine rule is what reaches it."
+        note: "The triangle formed by two slant edges and the base edge between them has no right angle, so use the cosine rule to find the angle."
       - math: \theta \approx 37.5°
         note: "The two slant edges meet at $37.5°$."
   - ask: A square-based pyramid has base $11$ m and slant edges of $16$ m. Calculate the angle between two adjacent slant edges, at the apex.
@@ -336,15 +336,15 @@ questions:
 
 ## Redraw the triangle
 
-Every worked figure in this lesson has done the same thing before any number was substituted. It took one triangle from the solid and drew it on its own, with only its own three sides and angles labelled. That drawing is not a diagram added for this page. It is the method. A solid holds several triangles at once, and they share edges and vertices with each other. Reading the three pieces of information a rule needs off a crowded 3D sketch is where a correct method turns into a wrong substitution. Redrawn flat, a triangle carries only what belongs to it.
+In every worked figure in this lesson, one triangle was taken from the solid and drawn on its own before any number was substituted. Only the triangle's own three sides and angles were labelled. That drawing is not a diagram added for this page. It is the method. A solid contains several triangles at once, and they share edges and corners with each other. If you read the three values for a rule from a crowded 3D sketch, you can easily substitute a wrong value into a correct method. A triangle redrawn flat shows only its own sides and angles.
 
-The redrawn triangle is also the working NZQA's clarification asks for. A response that jumps from the dimensions of a solid to a substituted formula, with no drawing in between, has nowhere to show which triangle the numbers came from. At Excellence the grade judges "correct mathematical statements" and an explained strategy, and the triangle drawn on its own is one of those statements.
+The redrawn triangle is also the working NZQA's clarification asks for. A response that goes straight from the dimensions of a solid to a substituted formula, without a drawing in between, does not show which triangle the numbers came from. At Excellence, the marker looks for "correct mathematical statements" and an explained strategy. The triangle drawn on its own is one of those statements.
 
 ---
 
 ## Practice
 
-A mixed set: box, pyramid, and a mast held by wires, in the order the standard's grades run.
+Work these on paper before revealing anything. They are ordered easiest first, and each is labelled with the band the marker would award for doing it well.
 
 ```practice
 questions:
@@ -364,58 +364,58 @@ questions:
     grade: merit
     working:
       - math: \textsf{base}^2 = 11^2 + 14^2 = 317 \qquad \textsf{base} \approx 17.8\ \textsf{m}
-        note: "The base diagonal, from the rectangle it lies in."
+        note: "Find the base diagonal from the rectangle it lies in."
       - math: \tan(\theta) = \dfrac{7}{17.8}
-        note: "The right triangle drawn on its own: the base diagonal, the vertical edge, and the shed's own diagonal."
+        note: "Draw the right triangle on its own. Its sides are the base diagonal, the vertical edge, and the shed's own diagonal."
       - math: \theta \approx 21.5°
         note: "The diagonal makes an angle of $21.5°$ with the base."
   - ask: A shed is $13$ m long, $9$ m wide and $6$ m tall. Calculate the angle its longest diagonal makes with the base.
     grade: merit
     working:
       - math: \textsf{base}^2 = 13^2 + 9^2 = 250 \qquad \textsf{base} \approx 15.8\ \textsf{m}
-        note: "The base diagonal, from the rectangle it lies in."
+        note: "Find the base diagonal from the rectangle it lies in."
       - math: \tan(\theta) = \dfrac{6}{15.8}
-        note: "The right triangle drawn on its own."
+        note: "Draw the right triangle on its own."
       - math: \theta \approx 20.8°
         note: "The diagonal makes an angle of $20.8°$ with the base."
   - ask: A square-based pyramid has base $14$ m and slant edges of $17$ m. Calculate its height, and the angle a slant edge makes with the base.
     grade: merit
     working:
       - math: MB^2 = \dfrac{14^2}{2} = 98
-        note: "Half the base diagonal, squared."
+        note: "$MB^2$ is the square of half the base diagonal."
       - math: PM^2 = 17^2 - 98 = 191 \qquad PM \approx 13.8\ \textsf{m}
-        note: "The right triangle formed by the height, half the base diagonal, and the slant edge."
+        note: "Use the right triangle formed by the height, half the base diagonal, and the slant edge."
       - math: \tan(\theta) = \dfrac{13.8}{9.90} \qquad \theta \approx 54.4°
         note: $MB = \sqrt{98} \approx 9.90$ m. The pyramid's height is $13.8$ m and its slant edges meet the base at $54.4°$.
   - ask: A square-based pyramid has base $16$ m and slant edges of $19$ m. Calculate its height, and the angle a slant edge makes with the base.
     grade: merit
     working:
       - math: MB^2 = \dfrac{16^2}{2} = 128
-        note: "Half the base diagonal, squared."
+        note: "$MB^2$ is the square of half the base diagonal."
       - math: PM^2 = 19^2 - 128 = 233 \qquad PM \approx 15.3\ \textsf{m}
-        note: "The right triangle formed by the height, half the base diagonal, and the slant edge."
+        note: "Use the right triangle formed by the height, half the base diagonal, and the slant edge."
       - math: \tan(\theta) = \dfrac{15.3}{11.3} \qquad \theta \approx 53.5°
         note: $MB = \sqrt{128} \approx 11.3$ m. The pyramid's height is $15.3$ m and its slant edges meet the base at $53.5°$.
-  - ask: A vertical mast stands $18$ m tall. Two straight wires run from its top to two anchor points on level ground, one wire $24$ m long and the other $30$ m long. Looking straight down on the mast, the angle between the ground directions of the two wires, measured at the foot of the mast, is $75°$. Calculate the distance between the two anchor points.
+  - ask: A vertical mast stands $18$ m tall. Two straight wires run from its top to two anchor points on level ground, one wire $24$ m long and the other $30$ m long. Seen from directly above, the two wires make an angle of $75°$ at the foot of the mast. Calculate the distance between the two anchor points.
     grade: excellence
     working:
       - math: d_1^2 = 24^2 - 18^2 = 252 \qquad d_1 \approx 15.9\ \textsf{m}
         note: "Each wire, the mast, and the ground between them forms a vertical right triangle. $d_1$ is the ground distance from the mast's foot to the first anchor."
       - math: d_2^2 = 30^2 - 18^2 = 576 \qquad d_2 = 24\ \textsf{m}
-        note: "The same right triangle, for the second wire."
+        note: "Use the same kind of right triangle for the second wire."
       - math: "\\textsf{dist}^2 = d_1^2 + d_2^2 - 2d_1d_2\\cos75° = 252 + 576 - 2(15.9)(24)\\cos75°"
-        note: "$d_1$, $d_2$ and the angle between them lie flat on the ground. That triangle has no right angle in it, so the cosine rule is what reaches the distance between the anchors. Its two sides are the unrounded $252$ and $576$."
+        note: "$d_1$, $d_2$ and the angle between them lie flat on the ground. That triangle has no right angle, so use the cosine rule to find the distance between the anchors. Use the unrounded squares, $252$ and $576$, for $d_1^2$ and $d_2^2$."
       - math: \textsf{dist} \approx 25.1\ \textsf{m}
-        note: "The two anchor points are $25.1$ m apart. Two right triangles found the ground distances, and one flat triangle at ground level connected them. That is the strategy, devised rather than given by the question."
-  - ask: A vertical mast stands $15$ m tall. Two straight wires run from its top to two anchor points on level ground, one wire $20$ m long and the other $25$ m long. Looking straight down on the mast, the angle between the ground directions of the two wires, measured at the foot of the mast, is $68°$. Calculate the distance between the two anchor points.
+        note: "The two anchor points are $25.1$ m apart. The strategy was to use two right triangles to find the ground distances, then one flat triangle at ground level to join them. You devised that strategy. The question did not give it."
+  - ask: A vertical mast stands $15$ m tall. Two straight wires run from its top to two anchor points on level ground, one wire $20$ m long and the other $25$ m long. Seen from directly above, the two wires make an angle of $68°$ at the foot of the mast. Calculate the distance between the two anchor points.
     grade: excellence
     working:
       - math: d_1^2 = 20^2 - 15^2 = 175 \qquad d_1 \approx 13.2\ \textsf{m}
         note: "Each wire, the mast, and the ground between them forms a vertical right triangle."
       - math: d_2^2 = 25^2 - 15^2 = 400 \qquad d_2 = 20\ \textsf{m}
-        note: "The same right triangle, for the second wire."
+        note: "Use the same kind of right triangle for the second wire."
       - math: "\\textsf{dist}^2 = d_1^2 + d_2^2 - 2d_1d_2\\cos68° = 175 + 400 - 2(13.2)(20)\\cos68°"
-        note: "The two ground distances and the angle between them lie flat. The cosine rule reaches the distance between the anchors."
+        note: "The two ground distances and the angle between them lie flat on the ground. Use the cosine rule to find the distance between the anchors."
       - math: \textsf{dist} \approx 19.4\ \textsf{m}
         note: "The two anchor points are $19.4$ m apart."
 ```
@@ -424,6 +424,6 @@ questions:
 
 ## Summary
 
-Three dimensions add no sixth method. A box, a pyramid or a mast holds several flat triangles at once. Some are right-angled, where an edge meets a face square on. Some are oblique, where two sloping edges meet without a right angle. Finding either kind is the same first move every time. Identify the triangle, draw it on its own with only its own labels, and solve it with whichever of the five methods its given information matches.
+Three dimensions do not add a sixth method. A box, a pyramid or a mast contains several flat triangles at once. Some are right-angled, where an edge meets a face at a right angle. Others do not have a right angle, such as the triangle where two slant edges meet at the apex of a pyramid. You find either kind of triangle in the same way every time. Identify the triangle, draw it on its own with only its own labels, and solve it with whichever of the five methods its given information matches.
 
-That is the whole standard. There are five methods, each one Achieved on its own: length of an arc, area of a sector, the sine rule, the cosine rule and the area of a triangle. A figure with no rule of its own is cut into pieces that have one, in two dimensions or projected out of three. What the grades measure beyond that is the write-up. An Achieved answer is a method used and its answer named. A Merit answer is a chain of methods linked to the context with units. An Excellence answer is a strategy devised and explained in correct mathematical statements. The task itself is one extended problem, not a list of these skills in turn. Everything in this subject is the material the task uses.
+That is the whole standard. There are five methods: length of an arc, area of a sector, the sine rule, the cosine rule and the area of a triangle. One method used correctly is worth Achieved. Cut a figure that has no rule of its own into pieces that each have a rule. In three dimensions, draw each triangle flat first. Beyond Achieved, the grade depends on the write-up. An Achieved answer is a method used and its answer named. A Merit answer is a chain of methods linked to the context with units. An Excellence answer is a strategy devised and explained in correct mathematical statements. The task itself is one extended problem, not a list of these skills in turn. Everything in this subject is material for that one task.

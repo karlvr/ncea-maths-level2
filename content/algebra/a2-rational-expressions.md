@@ -6,9 +6,9 @@ A **rational expression** is a fraction with algebra in it. Rational means ratio
 
 You already know how to handle rational expressions. Every rule for ordinary number fractions applies. To multiply, multiply the tops and multiply the bottoms. To divide, turn the second fraction upside down and multiply. To add, put both fractions over a common denominator first. To cancel, remove a factor that appears top and bottom.
 
-The difficulty is that with numbers you can see the factors immediately. In $\dfrac{6}{9}$, the $3$ is obvious. With algebra the factors are hidden inside the expression, and you have to create the factors before you can use them.
+The difficulty is that with numbers you can see the factors immediately. In $\dfrac{6}{9}$, the $3$ is obvious. With algebra the factors are hidden inside the expression, and you have to factorise the expression before you can use its factors.
 
-This is the topic the examiner's reports are hardest on. The 2025 report says a lack of basic algebra skills limited candidates across all three papers of Level 2 maths. It says the lack was most evident when candidates were asked to work with expressions involving fractions.
+The examiner's reports are more critical of candidates' work in this topic than in any other. The 2025 report says a lack of basic algebra skills limited candidates across all three papers of Level 2 maths. It says the lack was most evident when candidates were asked to work with expressions involving fractions.
 
 The first move in almost every one of these questions is **factorise everything you can see.**
 
@@ -28,7 +28,7 @@ steps:
   - math: \dfrac{2x + 6}{2}
     note: Dividing by $2$ means dividing all of the numerator by $2$.
   - math: \dfrac{\ca{2}x}{\ca{2}} + \dfrac{\cb{6}}{\ca{2}}
-    note: Both terms, not just the one with the $2$ in front of it.
+    note: Divide both terms, not just the one with the $2$ in front of it.
   - math: x + 3
 ```
 
@@ -38,7 +38,7 @@ The temptation is to cancel the $2$ on the bottom against the $2$ in front of th
 caption: The error to avoid
 steps:
   - math: \dfrac{\ca{2}x + 6}{\ca{2}}
-    note: Cancelling only the twos that are easy to see.
+    note: Suppose you cancel only the twos that are easy to see.
   - math: x + 6 \qquad \color{red}{\times}
     note: You never divided the $6$. Substitute $x = 1$. The original expression is $4$, and this one is $7$.
 ```
@@ -56,7 +56,7 @@ steps:
   - math: \dfrac{(x+3)(x-3)}{x^2 + 7x + 12}
     note: The top is a difference of two squares.
   - math: \dfrac{(x+3)(x-3)}{(x+3)(x+4)}
-    note: The bottom needs two numbers multiplying to $12$ and adding to $7$.
+    note: For the bottom, find two numbers that multiply to $12$ and add to $7$.
   - math: \dfrac{\ca{\cancel{(x+3)}}(x-3)}{\ca{\cancel{(x+3)}}(x+4)}
     note: Now there is a factor common to both, so it cancels.
   - math: \dfrac{x-3}{x+4}
@@ -92,7 +92,7 @@ questions:
     grade: achieved
     working:
       - math: \dfrac{(x+5)(x-5)}{x^2 + 3x - 10}
-        note: Difference of two squares on the top.
+        note: The top is a difference of two squares.
       - math: \dfrac{(x+5)(x-5)}{(x+5)(x-2)}
         note: Multiply to $-10$, add to $3$.
       - math: \dfrac{x-5}{x-2}
@@ -117,7 +117,7 @@ questions:
     grade: merit
     working:
       - math: \dfrac{2(x^2-9)}{x^2+6x+9}
-        note: A common factor on top before anything else.
+        note: Take out the common factor on the top before anything else.
       - math: \dfrac{2(x+3)(x-3)}{(x+3)(x+3)}
         note: The two numbers for the denominator are the same number.
       - math: \dfrac{2(x-3)}{x+3}
@@ -127,7 +127,7 @@ questions:
     grade: merit
     working:
       - math: \dfrac{3(x^2-4)}{x^2+4x+4}
-        note: A common factor on top before anything else.
+        note: Take out the common factor on the top before anything else.
       - math: \dfrac{3(x+2)(x-2)}{(x+2)(x+2)}
       - math: \dfrac{3(x-2)}{x+2}
 ```
@@ -136,7 +136,7 @@ questions:
 
 ## Multiplying and dividing
 
-Multiplying is straightforward: tops together, bottoms together.
+Multiplying is straightforward: multiply the tops together and the bottoms together.
 
 But do not expand the brackets first. Factorise everything first, cancel anything common across the whole fraction, and only then combine what is left. If you expand first you produce large expressions that you will have to factorise again.
 
@@ -144,7 +144,7 @@ But do not expand the brackets first. Factorise everything first, cancel anythin
 caption: Cancel before combining
 steps:
   - math: \dfrac{x+3}{x^2-4} \times \dfrac{x-2}{x+3}
-    note: Two fractions to be multiplied, with nothing expanded.
+    note: This is a product of two fractions, with nothing expanded.
   - math: \dfrac{x+3}{(x+2)(x-2)} \times \dfrac{x-2}{x+3}
     note: Factorise whatever will factorise, and matching brackets appear.
   - math: \dfrac{\ca{(x+3)}\,\cb{(x-2)}}{(x+2)\,\cb{(x-2)}\,\ca{(x+3)}}
@@ -152,12 +152,12 @@ steps:
   - math: \dfrac{\ca{\cancel{(x+3)}}\,\cb{\cancel{(x-2)}}}{(x+2)\,\cb{\cancel{(x-2)}}\,\ca{\cancel{(x+3)}}}
     note: Both the factors on the top have a match underneath. What is left?
   - math: \dfrac{1}{x+2}
-    note: Nothing is left on the top, so a $1$ stands there.
+    note: Nothing is left on the top, so write a $1$ there.
 ```
 
-Dividing is multiplication by the reciprocal. Turn the second fraction upside down, change the divide into a multiply, and continue as above. Turn over the second fraction and not the first, because the second fraction is the one you are dividing by.
+Dividing is multiplication by the reciprocal, which is the fraction turned upside down. Turn the second fraction upside down, change the divide into a multiply, and continue as above. Turn over the second fraction and not the first, because the second fraction is the one you are dividing by.
 
-So the order is the same for multiplying and for dividing: factorise, multiply into one fraction, then cancel. Once the expression is one fraction, a factor on the top cancels against a match anywhere underneath, whichever fraction it arrived in.
+So the order is the same for multiplying and for dividing: factorise, multiply into one fraction, then cancel. Once the expression is one fraction, a factor on the top cancels against a match anywhere underneath, whichever fraction it was in at the start.
 
 ```practice
 caption: multiplying and dividing
@@ -169,7 +169,7 @@ questions:
       - math: \dfrac{3x}{x+1} \times \dfrac{x+1}{(3x)^2}
         note: $9x^2$ is $(3x)^2$, which puts a $3x$ underneath to match the one on the left.
       - math: \dfrac{\cb{3x}\,\ca{(x+1)}}{\ca{(x+1)}\,(\cb{3x})^2}
-        note: Tops together and bottoms together, without expanding anything.
+        note: Multiply the tops together and the bottoms together, without expanding anything.
       - math: \dfrac{1}{3x}
         note: Both pairs cancel. One $3x$ is left underneath, because the bottom had two of them.
   - ask: Simplify.
@@ -189,7 +189,7 @@ questions:
       - math: \dfrac{2x \cdot 3x}{x+3} \times \dfrac{x+3}{2x}
         note: $6x^2$ is $2x$ times $3x$, which puts a $2x$ on the top to match the one underneath.
       - math: \dfrac{\cb{2x} \cdot 3x\,\ca{(x+3)}}{\ca{(x+3)}\,\cb{2x}}
-        note: Tops together and bottoms together.
+        note: Multiply the tops together and the bottoms together.
       - math: 3x
         note: Both pairs cancel, and the $3x$ is what is left.
   - ask: Simplify.
@@ -243,15 +243,15 @@ questions:
 
 Here you need a common denominator, and the same rule applies as with numbers: you cannot add fractions until the bottoms match.
 
-Factorise the denominators first. You then build the lowest common denominator from the factors you find. Take each distinct factor, and include it as many times as it appears in any single denominator.
+Factorise the denominators first. You then build the lowest common denominator from the factors you find. Take each different factor, and include it the greatest number of times that it appears in any one denominator.
 
 ```figure
 caption: Adding over a common denominator
 steps:
   - math: \dfrac{1}{x+2} + \dfrac{3}{x-1}
-    note: The denominators share no factor, so the common denominator is their product.
+    note: The denominators do not share a factor, so the common denominator is their product.
   - math: \dfrac{1 \cdot \ca{(x-1)}}{(x+2)\ca{(x-1)}} + \dfrac{3 \cdot \cb{(x+2)}}{\cb{(x+2)}(x-1)}
-    note: Multiply each fraction top and bottom by what the other one is missing.
+    note: Multiply the top and bottom of each fraction by the denominator of the other fraction.
   - math: \dfrac{(x-1) + 3(x+2)}{(x+2)(x-1)}
     note: Same denominator now, so you can add the numerators.
   - math: \dfrac{x - 1 + 3x + 6}{(x+2)(x-1)}
@@ -272,13 +272,13 @@ steps:
     note: Write the second numerator in brackets before you do anything else.
   - math: \dfrac{(7x+2) - \ca{(2x-3)}}{5}
   - math: \dfrac{7x + 2 - 2x \ca{+} 3}{5}
-    note: Minus a $-3$ is $+3$. This sign is the one that costs marks.
+    note: Minus a $-3$ is $+3$. Getting this sign wrong costs marks.
   - math: \dfrac{5x + 5}{5}
   - math: \dfrac{\cb{5}(x+1)}{\cb{5}} \;=\; x+1
     note: A common factor appears, so it cancels.
 ```
 
-Write brackets around the second numerator before you do anything else, and expand the minus deliberately. The reports put this skill on both of their lists. The 2025 report gives dealing incorrectly with negative numbers as a reason candidates did not achieve. The 2024 report gives working with negative terms without error as something candidates awarded Merit could do.
+Write brackets around the second numerator before you do anything else, and apply the minus to every term inside the bracket. The reports put this skill on both of their lists. The 2025 report gives dealing incorrectly with negative numbers as a reason candidates did not achieve. The 2024 report gives working with negative terms without error as something candidates awarded Merit could do.
 
 ```practice
 caption: adding and subtracting
@@ -288,7 +288,7 @@ questions:
     grade: achieved
     working:
       - math: \dfrac{2\ca{(x+1)}}{x\,\ca{(x+1)}} + \dfrac{5\cb{x}}{\cb{x}\,(x+1)}
-        note: Multiply each fraction top and bottom by what the other one is missing.
+        note: Multiply the top and bottom of each fraction by the denominator of the other fraction.
       - math: \dfrac{2(x+1) + 5x}{x(x+1)}
       - math: \dfrac{7x+2}{x(x+1)}
         note: The denominator stays in factors.
@@ -314,7 +314,7 @@ questions:
     grade: merit
     working:
       - math: \dfrac{4(x+1) - \ca{3(x-2)}}{(x-2)(x+1)}
-        note: A subtraction, so the second numerator needs a bracket around it.
+        note: This is a subtraction, so put a bracket around the second numerator.
       - math: \dfrac{4x + 4 - 3x \ca{+} 6}{(x-2)(x+1)}
         note: $-3$ times $-2$ is $+6$.
       - math: \dfrac{x+10}{(x-2)(x+1)}
@@ -323,7 +323,7 @@ questions:
     grade: merit
     working:
       - math: \dfrac{5(x+4) - \ca{2(x-3)}}{(x-3)(x+4)}
-        note: A subtraction, so the second numerator needs a bracket around it.
+        note: This is a subtraction, so put a bracket around the second numerator.
       - math: \dfrac{5x + 20 - 2x \ca{+} 6}{(x-3)(x+4)}
       - math: \dfrac{3x+26}{(x-3)(x+4)}
   - ask: Write as a single fraction.
@@ -332,9 +332,9 @@ questions:
     from: "2024"
     working:
       - math: 4t^2
-        note: Each denominator divides into this one, and nothing smaller will do.
+        note: Each denominator divides into this one, and it is the smallest expression that they all divide into.
       - math: \dfrac{8t}{4t^2} + \dfrac{4(t-3)}{4t^2} - \dfrac{t}{4t^2}
-        note: Take each fraction up to the common denominator one at a time.
+        note: Rewrite each fraction over the common denominator, one at a time.
       - math: \dfrac{8t + 4t - 12 - t}{4t^2}
       - math: \dfrac{11t - 12}{4t^2}
         note: The 2025 report names expressions involving fractions as where a lack of basic algebra skills was particularly evident.
@@ -343,9 +343,9 @@ questions:
     grade: merit
     working:
       - math: 2t^2
-        note: Each denominator divides into this one, and nothing smaller will do.
+        note: Each denominator divides into this one, and it is the smallest expression that they all divide into.
       - math: \dfrac{6t}{2t^2} + \dfrac{2(t-2)}{2t^2} - \dfrac{t}{2t^2}
-        note: Take each fraction up to the common denominator one at a time.
+        note: Rewrite each fraction over the common denominator, one at a time.
       - math: \dfrac{6t + 2t - 4 - t}{2t^2}
       - math: \dfrac{7t - 4}{2t^2}
 ```
@@ -402,7 +402,7 @@ questions:
     grade: merit
     working:
       - math: \dfrac{(3+x)(3-x)}{(x+5)(x-3)}
-        note: Difference of two squares on top, trinomial underneath.
+        note: The top is a difference of two squares, and the bottom is a trinomial.
       - math: \dfrac{(x+3)\big(\!-\!1\big)\ca{(x-3)}}{(x+5)\ca{(x-3)}}
         note: $3-x$ is $-1(x-3)$.
       - math: \dfrac{-(x+3)}{x+5}
@@ -411,7 +411,7 @@ questions:
     grade: merit
     working:
       - math: \dfrac{(4+x)(4-x)}{(x+5)(x-4)}
-        note: Difference of two squares on top, trinomial underneath.
+        note: The top is a difference of two squares, and the bottom is a trinomial.
       - math: \dfrac{(x+4)\big(\!-\!1\big)\ca{(x-4)}}{(x+5)\ca{(x-4)}}
         note: $4-x$ is $-1(x-4)$.
       - math: \dfrac{-(x+4)}{x+5}
@@ -421,7 +421,7 @@ questions:
 
 ## Practice
 
-Work these on paper before revealing anything. They are ordered easiest first, and the band each one is pitched at is the band the marker would award for doing it well.
+Work these on paper before revealing anything. They are ordered easiest first, and each is labelled with the band the marker would award for doing it well.
 
 ```practice
 questions:
@@ -430,14 +430,14 @@ questions:
     grade: achieved
     working:
       - math: \dfrac{(x+5)(x+2)}{(x+2)(x-2)}
-        note: A trinomial on top, a difference of two squares underneath.
+        note: The top is a trinomial, and the bottom is a difference of two squares.
       - math: \dfrac{x+5}{x-2}
   - ask: Simplify fully.
     math: \dfrac{x^2 + 8x + 15}{x^2 - 9}
     grade: achieved
     working:
       - math: \dfrac{(x+5)(x+3)}{(x+3)(x-3)}
-        note: A trinomial on top, a difference of two squares underneath.
+        note: The top is a trinomial, and the bottom is a difference of two squares.
       - math: \dfrac{x+5}{x-3}
   - ask: Simplify.
     math: \dfrac{4x^2 + 20x + 25}{2x^2 + 5x}
@@ -456,7 +456,7 @@ questions:
       - math: \dfrac{9x^2 + 24x + 16}{x(3x+4)}
         note: Start with the denominator, where the common factor is easy to see.
       - math: \dfrac{(3x+4)^2}{x(3x+4)}
-        note: The first and last terms of the numerator are squares, and the middle term is twice the product of their roots.
+        note: The first and last terms of the numerator are squares, and the middle term is twice the product of their square roots.
       - math: \dfrac{3x+4}{x}
   - ask: Simplify fully.
     math: \dfrac{4x^3 + 14x^2 - 8x}{3x^2 + 10x - 8}
@@ -464,7 +464,7 @@ questions:
     from: "2025"
     working:
       - math: \dfrac{2x(2x^2 + 7x - 4)}{3x^2 + 10x - 8}
-        note: A common factor of $2x$ drops the numerator to a quadratic.
+        note: Take out a common factor of $2x$, and the bracket that remains is a quadratic.
       - math: \dfrac{2x(2x-1)\ca{(x+4)}}{(3x-2)\ca{(x+4)}}
         note: Both are trinomials with a coefficient on the $x^2$, so split the middle term.
       - math: \dfrac{2x(2x-1)}{3x-2}
@@ -474,7 +474,7 @@ questions:
     grade: merit
     working:
       - math: \dfrac{2x(2x^2 + 5x - 3)}{3x^2 + 7x - 6}
-        note: A common factor of $2x$ drops the numerator to a quadratic.
+        note: Take out a common factor of $2x$, and the bracket that remains is a quadratic.
       - math: \dfrac{2x(2x-1)\ca{(x+3)}}{(3x-2)\ca{(x+3)}}
         note: Both are trinomials with a coefficient on the $x^2$, so split the middle term.
       - math: \dfrac{2x(2x-1)}{3x-2}
@@ -484,20 +484,20 @@ questions:
     from: "2023"
     working:
       - math: \dfrac{2(6x^2 - 7x + 2)}{x(3x-2)}
-        note: Common factor out of each, top and bottom.
+        note: Take a common factor out of the top and out of the bottom.
       - math: \dfrac{2(3x-2)(2x-1)}{x(3x-2)}
       - math: \dfrac{2(2x-1)}{x} = \dfrac{4x-2}{x}
         note: Simplify first. You can reach the required form only after this cancels.
       - math: \dfrac{4x}{x} - \dfrac{2}{x} = 4 - \dfrac{2}{x}
         note: Split the numerator term by term over the denominator.
       - math: A = 4, \quad B = -2
-        note: $B$ is negative, and the form given has a plus in it. Both facts have to hold at once.
+        note: $B$ is negative, and the form given has a plus in it. That is correct, because adding $\dfrac{-2}{x}$ is the same as subtracting $\dfrac{2}{x}$.
   - ask: The expression can be written as $A + \dfrac{B}{x}$, where $A$ and $B$ are integers. Find $A$ and $B$.
     math: \dfrac{12x^2 + 12x - 9}{2x^2 + 3x}
     grade: merit
     working:
       - math: \dfrac{3(4x^2 + 4x - 3)}{x(2x+3)}
-        note: Common factor out of each, top and bottom.
+        note: Take a common factor out of the top and out of the bottom.
       - math: \dfrac{3(2x-1)\ca{(2x+3)}}{x\,\ca{(2x+3)}}
       - math: \dfrac{3(2x-1)}{x} = \dfrac{6x-3}{x}
         note: Simplify first. You can reach the required form only after this cancels.
@@ -513,7 +513,7 @@ questions:
       - math: (x+3)(x-3)
         note: The second denominator already contains the first, so it is the common denominator.
       - math: \dfrac{(x+3) - 6}{(x+3)(x-3)}
-        note: Only the first fraction needs taking up.
+        note: Only the first fraction has to be rewritten over the common denominator.
       - math: \dfrac{\ca{x-3}}{(x+3)\ca{(x-3)}}
         note: The numerator is now a copy of one of the factors underneath.
       - math: \dfrac{1}{x+3}
@@ -526,7 +526,7 @@ questions:
       - math: (x+2)(x-2)
         note: The second denominator already contains the first, so it is the common denominator.
       - math: \dfrac{(x+2) - 4}{(x+2)(x-2)}
-        note: Only the first fraction needs taking up.
+        note: Only the first fraction has to be rewritten over the common denominator.
       - math: \dfrac{\ca{x-2}}{(x+2)\ca{(x-2)}}
       - math: \dfrac{1}{x+2}
 ```
@@ -537,12 +537,12 @@ questions:
 
 A rational expression is a fraction with algebra in it, and every rule you know for number fractions still applies.
 
-Factorise first. Always. It is the step that makes everything else possible.
+Always factorise first. Until you factorise, you cannot see which factors cancel or what the common denominator is.
 
-Cancel factors, never terms. A factor multiplies the whole numerator and the whole denominator. Anything that is added or subtracted is a term, and you cannot cancel it.
+Cancel factors, never terms. You can cancel something only if it multiplies the whole numerator and the whole denominator. Anything that is added or subtracted is a term, and you cannot cancel it.
 
 To multiply, factorise and cancel before combining. To divide, turn the second fraction over. To add or subtract, factorise the denominators to find the common denominator, and put brackets around a numerator you are subtracting.
 
 Leave your answer factorised. Expanding it is not simplifying. The specification asks for the simplest algebraic form, and factorised is simplest.
 
-The common denominator comes back in Module B. You clear an equation with fractions in it by multiplying every term by the lowest common denominator. You find that denominator exactly as you find it here. The difference is that you may multiply an equation through, and you may not multiply an expression through.
+You use the common denominator again in Module B. You clear an equation with fractions in it by multiplying every term by the lowest common denominator. You find that denominator exactly as you find it here. The difference is that you may multiply an equation through, and you may not multiply an expression through.

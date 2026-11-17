@@ -8,11 +8,11 @@ Every question asks the same thing: write the given expression more simply.
 
 ## The value must not change
 
-One rule governs all work with expressions: the value of the expression must not change.
+One rule applies to all work with expressions: the value of the expression must not change.
 
 You may rewrite an expression in any form you like, provided that substituting a number for $x$ gives the same answer before and after.
 
-That rule also allows you to check your work. Choose a number, substitute it into the original expression and into your simplified expression, then calculate and compare the two answers. If the answers differ, there is an error in the working.
+You can also use that rule to check your work. Choose a number, substitute it into the original expression and into your simplified expression, then calculate and compare the two answers. If the answers differ, there is an error in the working.
 
 ```figure
 caption: Checking by substitution
@@ -68,7 +68,7 @@ questions:
     grade: achieved
     working:
       - math: 2(\ca{-3})^2 - 5(\ca{-3})
-        note: Brackets in first, arithmetic afterwards. That order keeps the signs right.
+        note: Write the numbers in brackets first, and do the arithmetic afterwards. That order keeps the signs right.
       - math: 2(9) + 15
         note: A negative squared is positive, and subtracting a negative adds.
       - math: "33"
@@ -97,7 +97,7 @@ questions:
       - math: (\ca{1}+3)(\ca{1}-3) = -8
         note: Now put the same number into the answer being tested.
       - math: \textsf{Not correct}
-        note: The two answers disagree, so the factorising is wrong.
+        note: The two answers differ, so the factorising is wrong.
   - ask: A student factorised the expression as $(x+5)(x-3)$. Decide by substitution whether that is correct.
     math: x^2 + 2x - 15
     grade: achieved
@@ -105,15 +105,15 @@ questions:
       - math: (\ca{1})^2 + 2(\ca{1}) - 15 = -12
         note: Choose any number and put it into the expression you were given.
       - math: (\ca{1}+5)(\ca{1}-3) = -12
-        note: Put the same number into the answer being tested. The two answers agree, but agreement at one number does not prove the factorising correct.
+        note: Put the same number into the answer being tested. The two answers match, but a match at one number does not prove that the factorising is correct.
       - math: (\cb{2})^2 + 2(\cb{2}) - 15 = -7 \qquad (\cb{2}+5)(\cb{2}-3) = -7
-        note: A second number, and the two calculations agree again.
+        note: Try a second number. The two answers match again.
       - math: \textsf{Correct}
   - ask: The side of a square is $3x$. Write an expression for its area.
     grade: achieved
     working:
       - math: A = (\ca{3x})^2
-        note: Brackets around the whole side length, so the square reaches the $3$ as well as the $x$.
+        note: Put brackets around the whole side length, so the square reaches the $3$ as well as the $x$.
       - math: A = 9x^2
   - ask: The radius of a circle is $4x$. Write an expression for its area.
     grade: achieved
@@ -127,7 +127,7 @@ questions:
 
 ## Show your working
 
-The value must not change, and your working is where you show that it did not. Each line is another form of the same expression, equal to the line above it. So the value carries unchanged from the first line to the last.
+The value must not change, and your working is where you show that it did not. Each line is another form of the same expression, equal to the line above it. So the value stays the same from the first line to the last.
 
 The examination specification requires you to show algebraic technique, not just a correct answer. An answer with no working is marked *Correct Answer Only*. That is worth Achieved at best, and it cannot reach Merit or Excellence however right the answer is. So write every step, including the ones that look too small to matter.
 
@@ -156,29 +156,29 @@ Which of the two words applies depends on how the expression is written. The par
 caption: The same expression, two ways
 steps:
   - math: 6x^2 + 9x
-    note: Added, so the parts are terms. There are two terms.
+    note: The parts are added, so they are terms. There are two terms.
   - math: 3x(2x+3)
-    note: Multiplied, so the parts are factors. Two factors, and one of them is a bracket.
+    note: The parts are multiplied, so they are factors. There are two factors, and one of them is a bracket.
   - math: 6x^2 + 9x \;=\; 3x(2x+3)
     note: The two forms are equal for every value of $x$. Only the way the expression is separated into parts differs.
 ```
 
-A term has factors of its own. $6x^2$ is $6 \times x \times x$, so $6$ and $x$ are both factors of it. Searching every term for a factor that all the terms share is the first of the three techniques below. The expression as a whole is different. An expression has factors only once the whole expression is a product. $6x^2 + 9x$ has none, because it is a sum.
+A term has factors of its own. $6x^2$ is $6 \times x \times x$, so $6$ and $x$ are both factors of it. Searching every term for a factor that all the terms share is the first step of factorising. The expression as a whole is different. An expression has factors only once the whole expression is a product. $6x^2 + 9x$ has none, because it is a sum.
 
-What you may do to a part depends on which of the two it is. You can cancel a factor against a matching factor, and you can take a factor shared by every term outside a bracket. Neither move is available to a term.
+What you may do to a part depends on which of the two it is. You can cancel a factor against a matching factor, and you can take a factor shared by every term outside a bracket. You cannot do either of these things to a term.
 
 ---
 
 ## Expanding and factorising
 
-Two operations, and they are opposites.
+Expanding and factorising are opposites.
 
 ```figure
 caption: Two directions
 steps:
   - math: |
       (x+2)(x+5) \quad\underset{\textsf{\scriptsize factorise}}{\overset{\textsf{\scriptsize expand}}{\rightleftharpoons}}\quad x^2 + 7x + 10
-    note: A product on the left, a sum of terms on the right. The same expression both times.
+    note: The left side is a product, and the right side is a sum of terms. Both sides are the same expression.
 ```
 
 **Expanding** converts a product into a sum of terms. Take $(x+2)(x+5)$. Multiply each term in the first bracket by each term in the second. $x$ times $x$ is $x$ squared. $x$ times five is five $x$. Two times $x$ is two $x$. Two times five is ten. Then collect the like terms: $x^2 + 7x + 10$.
@@ -190,7 +190,7 @@ steps:
   - math: (\ca{x}+\cb{2})(\cc{x}+\cd{5})
     note: Multiply each term in the first bracket by each term in the second.
   - math: \ca{x}\!\cdot\!\cc{x} \;+\; \ca{x}\!\cdot\!\cd{5} \;+\; \cb{2}\!\cdot\!\cc{x} \;+\; \cb{2}\!\cdot\!\cd{5}
-    note: Four products, because there are two terms in each bracket.
+    note: There are four products, because there are two terms in each bracket.
   - math: x^2 + \ca{5x} + \cb{2x} + 10
     note: Two of the products have the same letter part, so they add to one term.
   - math: x^2 + 7x + 10
@@ -198,7 +198,7 @@ steps:
 
 You expand three brackets the same way, two at a time. Expand any two of them, then multiply that result by the third bracket. The 2024 report describes candidates who identified three correct factors and then could not expand them.
 
-**Factorising** converts a sum of terms into a product. Starting from $x^2 + 7x + 10$, you recover $(x+2)(x+5)$. How you recover it is the subject of most of this lesson.
+**Factorising** converts a sum of terms into a product. Starting from $x^2 + 7x + 10$, you recover $(x+2)(x+5)$.
 
 Expanding and factorising differ in difficulty. Expanding is mechanical and always possible. Factorising is a search: you are finding what must have been multiplied together to produce the result. Not every expression factorises. That is why factorising is where the marks are.
 
@@ -210,7 +210,7 @@ questions:
     grade: achieved
     working:
       - math: x^2 + 7x + 3x + 21
-        note: Four products, one for each pairing of terms.
+        note: There are four products, one for each pair of terms.
       - math: x^2 + 10x + 21
   - ask: Expand and simplify.
     math: (x+2)(x+9)
@@ -243,7 +243,7 @@ questions:
     grade: achieved
     working:
       - math: (3x-2)(3x-2)
-        note: A square is the bracket written twice. It does not square each term.
+        note: A square is the bracket written twice. Do not square each term separately.
       - math: 9x^2 - 6x - 6x + 4
       - math: 9x^2 - 12x + 4
         note: The middle term is the one that disappears if you square term by term.
@@ -259,9 +259,9 @@ questions:
     grade: merit
     working:
       - math: (\ca{x^2 + x - 2})(x-3)
-        note: Expand two of the brackets first, and the third one waits.
+        note: Expand two of the brackets first. Multiply by the third bracket after that.
       - math: x^3 - 3x^2 + x^2 - 3x - 2x + 6
-        note: Six products this time, because three terms are multiplied by two.
+        note: There are six products this time, because each of three terms is multiplied by two terms.
       - math: x^3 - 2x^2 - 5x + 6
   - ask: Expand and simplify.
     math: (x+1)(x-2)(x+4)
@@ -277,14 +277,14 @@ questions:
 
 ## What factorising is for
 
-Factors do two things that terms cannot.
+You can do things with factors that you cannot do with terms.
 
 First: in an algebraic fraction, only factors cancel. Terms never cancel. So anything you intend to cancel has to be in factorised form first. That is the subject of the next lesson.
 
-Second: if two things multiply to give zero, at least one of them must be zero. That is the basis for solving a quadratic by factorising, and it requires a product. A sum of terms will not do.
+Second: if two numbers multiply to give zero, at least one of them must be zero. That is the basis for solving a quadratic by factorising. It works only for a product, not for a sum of terms.
 
 ```figure
-caption: What a product lets you do
+caption: What you can do with a product
 steps:
   - math: \dfrac{(x+2)(x+5)}{x+2}
     note: You can cancel a factor that appears top and bottom.
@@ -295,16 +295,16 @@ steps:
     note: That is how you solve a quadratic. Neither move works on a sum of terms.
 ```
 
-Factorising makes both moves available.
+You can make both moves only after you factorise.
 
 ---
 
 ## Three ways to factorise
 
-Three methods, applied in this order.
+Apply the methods in this order.
 
 ```figure
-caption: The order of attack
+caption: The order of the methods
 steps:
   - math: |
       \begin{array}{rl}
@@ -312,12 +312,12 @@ steps:
       2. & \textsf{difference of two squares} \\[3pt]
       3. & \textsf{quadratic trinomial}
       \end{array}
-    note: Always in this order. Step one often turns the expression into a case for step two or three.
+    note: Always use the methods in this order. Taking out a common factor often leaves a bracket that you can then factorise with the second or third method.
 ```
 
 ### Method 1—common factor
 
-Examine every term for something that all the terms contain, and take it outside a bracket.
+Search every term for a factor that all the terms contain, and take that factor outside a bracket.
 
 $6x^2 + 9x$. Every term contains a factor of $3$, and every term contains at least one $x$. Take out $3x$. What remains inside the bracket is $2x + 3$. The result is $3x(2x+3)$.
 
@@ -328,7 +328,7 @@ steps:
   - math: 6x^2 + 9x
     note: What appears in every term?
   - math: \ca{3}\!\cdot\!2\!\cdot\!\cb{x}\!\cdot\!x \;+\; \ca{3}\!\cdot\!3\!\cdot\!\cb{x}
-    note: A $3$ in both, and at least one $x$ in both.
+    note: Both terms contain a $3$ and at least one $x$.
   - math: \ca{3}\cb{x}(2x+3)
     note: The common part comes out the front, and the rest of each term stays inside.
 ```
@@ -399,11 +399,11 @@ steps:
     note: Both terms are squares, and there is a minus between them. Take the square root of each term. The two roots are $a$ and $b$, and they go into both brackets.
 ```
 
-Two conditions must both hold. The two terms, $a^2$ and $b^2$, are both perfect squares, and a minus separates them.
+The rule applies only when both of these conditions hold: the two terms, $a^2$ and $b^2$, are perfect squares, and a minus separates them.
 
 A perfect square is an expression that is the square of another expression, with no surd left. A surd is a $\sqrt{\phantom{x}}$ that you cannot remove by simplifying. $16$ is a perfect square because it is $4^2$, and $9x^2$ is one because it is $(3x)^2$. $5$ is not, because its square root is $\sqrt{5}$.
 
-$x^2 - 9$ factorises at sight.
+$x^2 - 9$ factorises immediately.
 
 ```figure
 steps:
@@ -455,7 +455,7 @@ questions:
       - math: x^2 + 16
         note: Both terms are squares, but a plus separates them.
       - math: \textsf{Does not factorise}
-        note: Difference of two squares needs a minus. A sum of two squares has no pair of brackets that produces it.
+        note: A difference of two squares has a minus between its terms. No pair of brackets expands to a sum of two squares.
   - ask: Factorise.
     math: 9x^2 - 64
     grade: achieved
@@ -476,7 +476,7 @@ questions:
       - math: 50x^2 - 8
         note: Neither term is a square, so the rule does not apply yet.
       - math: 2(25x^2 - 4)
-        note: Take out the common factor first, and the bracket can now use difference of two squares. The “fully” in the question means continue after this first factorisation.
+        note: Take out the common factor first. Then you can use difference of two squares on the bracket. The “fully” in the question means continue after this first factorisation.
       - math: 2(5x+2)(5x-2)
         note: Now fully factorised. The $2$ taken out in the first step is one of the factors, and it stays in the answer.
   - ask: Factorise fully.
@@ -484,13 +484,13 @@ questions:
     grade: merit
     working:
       - math: 2(9x^2 - 16)
-        note: Common factor first, and the bracket it leaves is a difference of two squares.
+        note: Take out the common factor first. The bracket that remains is a difference of two squares.
       - math: 2(3x+4)(3x-4)
 ```
 
 ### Method 3—quadratic trinomials
 
-Three terms, with $x^2$ at the front. Take $x^2 + 7x + 12$.
+A quadratic trinomial has three terms: an $x^2$ term, an $x$ term and a constant. Take $x^2 + 7x + 12$.
 
 Find two numbers that multiply to give the constant and add to give the coefficient of $x$. Multiply to $12$, add to $7$: $3$ and $4$. The factorisation is $(x+3)(x+4)$.
 
@@ -499,7 +499,7 @@ id: a1-trinomial
 caption: Factorising a trinomial
 steps:
   - math: x^2 + \ca{7}x + \cb{12}
-    note: Two numbers that multiply to the constant $\cb{12}$ and add to the coefficient $\ca{7}$.
+    note: Find two numbers that multiply to the constant $\cb{12}$ and add to the coefficient $\ca{7}$.
   - math: \cc{3} \times \cd{4} = \cb{12} \qquad \cc{3} + \cd{4} = \ca{7}
   - math: (x+\cc{3})(x+\cd{4})
 ```
@@ -519,7 +519,7 @@ steps:
       \end{array}
 ```
 
-When there is a coefficient in front of the $x^2$, the method extends. Take $2x^2 + 7x + 3$. Multiply the coefficient of $x^2$ by the constant: $2 \times 3 = 6$. Find two numbers that multiply to $6$ and add to $7$: $6$ and $1$. Use them to split the middle term into $6x + x$. Then factorise the first two terms and the last two terms separately, and a common bracket appears.
+When there is a coefficient in front of the $x^2$, the method has extra steps. Take $2x^2 + 7x + 3$. Multiply the coefficient of $x^2$ by the constant: $2 \times 3 = 6$. Find two numbers that multiply to $6$ and add to $7$: $6$ and $1$. Use them to split the middle term into $6x + x$. Then factorise the first two terms and the last two terms separately, and a common bracket appears.
 
 ```figure
 id: a1-split-middle
@@ -530,7 +530,7 @@ steps:
   - math: \cc{6} \times \cd{1} = 6 \qquad \cc{6} + \cd{1} = 7
     note: Now find two numbers multiplying to six and adding to seven.
   - math: 2x^2 + \cc{6x} + \cd{x} + 3
-    note: Use them to split the middle term. Four terms now, in two pairs.
+    note: Use them to split the middle term. There are now four terms, in two pairs.
   - math: \ca{2x}(x+3) + \cb{1}(x+3)
     note: Factorise the first pair and the last pair separately.
   - math: 2x(\ca{x+3}) + 1(\ca{x+3})
@@ -539,9 +539,9 @@ steps:
     note: Take the common bracket out, and what is left is the other bracket.
 ```
 
-The 2023 and 2025 papers both hide one of these inside a rational expression. The 2023 expression is $\dfrac{3x^2 - 10x + 8}{9x^2 - 16}$, and you have to split its middle term before anything in the question can cancel.
+The 2023 and 2025 papers both put one of these inside a rational expression. The 2023 expression is $\dfrac{3x^2 - 10x + 8}{9x^2 - 16}$. You have to split the middle term of the numerator before anything can cancel.
 
-A trinomial is sometimes a perfect square: the square of a single bracket. The method finds it without any change, because the two numbers are equal. $x^2 + 6x + 9$ needs two numbers multiplying to $9$ and adding to $6$, and both of them are $3$. So the factorisation is $(x+3)(x+3)$, which is written $(x+3)^2$.
+A trinomial is sometimes a perfect square: the square of a single bracket. You find it with the same method, and the two numbers are equal. For $x^2 + 6x + 9$, you need two numbers that multiply to $9$ and add to $6$, and both of them are $3$. So the factorisation is $(x+3)(x+3)$, which is written $(x+3)^2$.
 
 Expanding $(x+a)^2$ gives $x^2 + 2ax + a^2$. The first and last terms are squares, and the middle term is twice the product of the two terms in the bracket. Check those two conditions to recognise a perfect square without a search for a pair of numbers. They hold with a coefficient on the $x^2$ as well.
 
@@ -607,7 +607,7 @@ questions:
     working:
       - math: \cc{-6} \times \cd{-6} = 36 \qquad \cc{-6} + \cd{-6} = -12
       - math: (x-6)^2
-        note: The sign of the middle term puts the minus inside the bracket.
+        note: The middle term is negative, so the bracket has a minus in it.
   - ask: Factorise.
     math: 3x^2 + 11x + 6
     grade: merit
@@ -634,16 +634,16 @@ questions:
     grade: merit
     working:
       - math: 4x(x^2 - x - 6)
-        note: Common factor first, which drops the power and clears the coefficient.
+        note: Take out the common factor first. The bracket that remains has lower powers and no coefficient on the $x^2$.
       - math: \cc{-3} \times \cd{2} = -6 \qquad \cc{-3} + \cd{2} = -1
       - math: 4x(x-3)(x+2)
-        note: Three factors. Each method applied in turn produces one more.
+        note: The answer has three factors. Each method that you apply adds one more factor.
   - ask: Factorise fully.
     math: 2x^3 + 2x^2 - 12x
     grade: merit
     working:
       - math: 2x(x^2 + x - 6)
-        note: Common factor first, which leaves a trinomial with no coefficient on the $x^2$.
+        note: Take out the common factor first. That leaves a trinomial with no coefficient on the $x^2$.
       - math: \cc{3} \times \cd{-2} = -6 \qquad \cc{3} + \cd{-2} = 1
       - math: 2x(x+3)(x-2)
 ```
@@ -660,11 +660,11 @@ $3x^2$ and $5x^2$ are like terms. They add to $8x^2$. $3x^2$ and $5x$ are not li
 caption: Like and unlike
 steps:
   - math: 3\ca{x^2} + 5\ca{x^2} \;=\; 8\ca{x^2}
-    note: Identical letter parts, so the coefficients add.
+    note: The letter parts are identical, so the coefficients add.
   - math: 3\ca{x^2} + 5\cb{x}
-    note: Different letter parts. This is already in its simplest form.
+    note: The letter parts are different, so this is already in its simplest form.
   - math: 3x^2 + 5x \ne 8x^3 \quad\textsf{and}\quad \ne 8x
-    note: Neither of these is available. The two terms stay where they are.
+    note: Neither of these is equal to the expression. The two terms stay separate.
 ```
 
 Add the coefficients. The letter part does not change.
@@ -679,15 +679,15 @@ questions:
     grade: achieved
     working:
       - math: (5\ca{x^2} - 2\ca{x^2}) + (3\cb{x} + 8\cb{x})
-        note: Collect each letter part with its own kind before adding anything.
+        note: Group the terms that have the same letter part before you add anything.
       - math: 3x^2 + 11x
-        note: Two terms, and they will not reduce to one.
+        note: These are two terms, and you cannot combine them into one.
   - ask: Simplify.
     math: 7x^2 - 2x - 4x^2 + 9x
     grade: achieved
     working:
       - math: (7\ca{x^2} - 4\ca{x^2}) + (-2\cb{x} + 9\cb{x})
-        note: The sign in front of a term travels with it.
+        note: The sign in front of a term stays with it.
       - math: 3x^2 + 7x
   - ask: Expand and simplify.
     math: (x+4)(x-1) - (x-3)(x+2)
@@ -723,7 +723,7 @@ questions:
     grade: achieved
     working:
       - math: 2(4x^2 - 25)
-        note: Common factor first. Neither original term is a square.
+        note: Take out the common factor first, because neither term of the original expression is a square.
       - math: 2(2x+5)(2x-5)
   - ask: Factorise fully.
     math: 27x^2 - 12
@@ -792,10 +792,10 @@ questions:
     grade: excellence
     working:
       - math: \big(\ca{(x+3)}\big)^2 - \big(\cb{(x-2)}\big)^2
-        note: A square minus a square, where each square is of a bracket rather than a term.
+        note: This is a square minus a square. Each square is of a bracket rather than of a single term.
       - math: \big[\ca{(x+3)} + \cb{(x-2)}\big]\big[\ca{(x+3)} - \cb{(x-2)}\big]
       - math: (2x+1)(5)
-        note: The second bracket collapses, because subtracting $-2$ adds $2$.
+        note: The second bracket simplifies to $5$, because subtracting $-2$ adds $2$.
       - math: 5(2x+1)
         note: Expanding both squares first gets the same answer with far more work.
   - ask: Factorise fully.
@@ -813,7 +813,7 @@ questions:
 
 ## Summary
 
-You simplify expressions. You solve equations. This module is expressions.
+You simplify expressions. You solve equations. This module is about expressions.
 
 Terms are the parts that are added and factors are the parts that are multiplied. Only factors cancel.
 

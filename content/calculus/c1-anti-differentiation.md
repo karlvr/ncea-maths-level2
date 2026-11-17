@@ -2,7 +2,7 @@
 
 ---
 
-Module A turned functions into gradient functions. From here the standard runs the other way: the question gives the gradient function and wants the function it came from. The sketching lesson already went this way by eye and met the one obstacle: a gradient graph cannot show how high the curve sits. This lesson goes the same way by formula, and the obstacle becomes the constant $c$.
+In Module A you turned functions into gradient functions. In Module C you go in the other direction. A question gives the gradient function and asks for the function it came from. You already did this by eye in the sketching lesson, and found one problem: a gradient graph cannot show how high the curve sits. In this lesson you do it by formula, and the unknown height becomes the constant $c$.
 
 ---
 
@@ -17,9 +17,9 @@ steps:
     note: "Raise the power by one, then divide by the new power. The $+\\,c$ is part of the rule, not an afterthought."
 ```
 
-The operation has two names, and you will meet both. The standard calls it **anti-differentiation**, and these lessons follow it. Most textbooks also call the same operation **integration**, and use the two words interchangeably.
+The operation has two names, and you will meet both. The standard calls it **anti-differentiation**, and these lessons use that name. Most textbooks also call the same operation **integration**, and use the two words interchangeably. The function that anti-differentiating gives is the **anti-derivative**.
 
-Differentiation multiplied by the power and then lowered it. Coming back, the power rises first, and the division undoes the multiplication that differentiating would do. Apply it to $x^2$. The power rises to $3$, and you divide the term by $3$.
+Differentiation multiplied by the power and then lowered it. Anti-differentiation reverses both steps, in the reverse order. First the power rises by one. Then you divide by the new power, which undoes the multiplication. Apply it to $x^2$. The power rises to $3$, and you divide the term by $3$.
 
 ```figure
 caption: One power of x, reversed
@@ -27,7 +27,7 @@ steps:
   - math: f'(x) = x^{\ca{2}}
     note: "Raise the power by one, divide by the new power."
   - math: f(x) = \dfrac{x^{\ca{3}}}{\ca{3}} + c
-    note: "Check by differentiating the answer: the $3$ comes down, cancels the division, and $x^2$ returns. You can check every anti-derivative this way, and the check is free."
+    note: "Check by differentiating the answer. The $3$ comes down and cancels the division, which gives $x^2$ again. You can check every anti-derivative this way."
 ```
 
 Coefficients and terms behave exactly as they did when differentiating. A coefficient stays and multiplies, and you take terms one at a time. A constant term is a constant gradient, so it becomes that multiple of $x$. Anti-differentiating $5$ gives $5x$.
@@ -38,9 +38,9 @@ steps:
   - math: f'(x) = 6x^2 - 4x + 5
     note: "Three terms. Take them one at a time, raising and dividing."
   - math: f(x) = \dfrac{6x^3}{3} - \dfrac{4x^2}{2} + 5x + c
-    note: "Each new power divides its own term. Simplify the fractions before anything else happens."
+    note: "Divide each term by its own new power. Simplify the fractions next."
   - math: f(x) = 2x^3 - 2x^2 + 5x + c
-    note: "Differentiate this back: $6x^2 - 4x + 5$. Correct. One $c$ covers the whole function, not one per term."
+    note: "Differentiate this to check it. The result is $6x^2 - 4x + 5$, the gradient function you started with. Write one $c$ for the whole function, not one for each term."
 ```
 
 You anti-differentiate a long gradient function the same way. Count the terms before starting, and count them again in the answer. Every term of $f'$ produces exactly one term of $f$, plus the $c$. The 2025 report lists candidates who *"missed a term when integrating long functions"*.
@@ -71,26 +71,26 @@ questions:
     working:
       - math: f(x) = \dfrac{6x^3}{3} - \dfrac{10x^2}{2} + 3x + c
       - math: f(x) = 2x^3 - 5x^2 + 3x + c
-        note: "The $+\\,c$ is part of the answer, and it is what makes this a family of curves rather than one."
+        note: "The $+\\,c$ is part of the answer. With it, the answer stands for every curve with this gradient function, not just one."
   - ask: Find $y$.
     math: \dfrac{dy}{dx} = 3x^2 - x + 4
     grade: achieved
     working:
       - math: y = x^3 - \dfrac{x^2}{2} + 4x + c
-        note: "The coefficient of the middle term is $1$, so the division by $2$ simply stays."
+        note: "The coefficient of the middle term is $1$, so the $2$ does not cancel and stays in the denominator."
   - ask: Find $y$.
     math: \dfrac{dy}{dx} = 4x^3 - x + 2
     grade: achieved
     working:
       - math: y = x^4 - \dfrac{x^2}{2} + 2x + c
-        note: "The coefficient of the middle term is $1$, so the division by $2$ simply stays."
+        note: "The coefficient of the middle term is $1$, so the $2$ does not cancel and stays in the denominator."
 ```
 
 ---
 
 ## Why the c is there
 
-Differentiating erases constants. The $+7$ in $x^2 + 7$ does not contribute to the gradient, so $f'(x) = 2x$ carries no trace of it. Coming back, you cannot recover the erased constant. Every curve of the form $x^2 + \textsf{constant}$ has the gradient function $2x$, and the anti-derivative has to stand for all of them at once. The $c$ is how it does.
+The derivative of a constant term is zero. The $+7$ in $x^2 + 7$ does not change the gradient, so the $7$ does not appear in $f'(x) = 2x$. When you anti-differentiate $2x$, you cannot find out what the constant was. Every curve of the form $x^2 + \textsf{constant}$ has the gradient function $2x$. These curves are a **family of curves**: curves with the same shape that differ only by a vertical shift. The anti-derivative has to stand for every curve in the family. So you write $x^2 + c$, where $c$ stands for any constant.
 
 ```figure
 caption: One gradient function, a family of curves
@@ -104,24 +104,24 @@ steps:
           color: a
         - poly: [1, 0, -2]
           dashed: true
-    note: "Three of the curves whose gradient function is $2x$. The sketching lesson met this family by eye. $+\\,c$ is the same freedom written as algebra."
+    note: "Three of the curves whose gradient function is $2x$. You drew this family by eye in the sketching lesson. The value of $c$ is how far each curve is shifted up or down from $x^2$."
 ```
 
-The proper name of the constant is the **constant of integration**. The name keeps the other word for the operation, even when the working around it says anti-differentiate. It is the name the reports use when they list its omission. The marking schedules treat the $c$ as part of the anti-derivative, not a refinement of it. The grade step of the 2024 schedule reads *"Correct anti derivative with $+c$"*. An anti-derivative written without it is incomplete.
+The proper name of the constant is the **constant of integration**. The name uses the word integration, even in working that says anti-differentiate. The reports use this name when they list candidates who left the $c$ out. The marking schedules treat the $c$ as part of the anti-derivative, not an optional extra. The grade step of the 2024 schedule reads *"Correct anti derivative with $+c$"*. An anti-derivative written without it is incomplete.
 
 ---
 
 ## Finding the constant
 
-A question that wants one particular curve supplies one more fact, usually a point the curve passes through. Anti-differentiate first, with the $c$ in place. Then substitute the point, and the $c$ is the only unknown left.
+A question that asks for one particular curve gives one more fact. Usually it is a point that the curve passes through. Anti-differentiate first, with the $c$ in place. Then substitute the point, and solve for $c$, which is the only unknown left.
 
 ```figure
-caption: Pinning down the curve
+caption: Finding the one curve through a point
 steps:
   - math: f'(x) = 3x^2 - 8x \qquad\textsf{through}\qquad (1, 2)
-    note: "First the family, then the member."
+    note: "Anti-differentiate first, and keep the $+\\,c$. Use the point only after that."
   - math: f(x) = x^3 - 4x^2 + c
-    note: "The whole family. The point picks one curve out of it."
+    note: "This is every curve with the given gradient function. Only one of these curves passes through $(1, 2)$."
   - math: f(1) = 1 - 4 + c = 2
     note: "The curve passes through $(1, 2)$, so substituting $x = 1$ must give $2$."
   - math: c = 5
@@ -175,7 +175,7 @@ questions:
     working:
       - math: f(x) = \dfrac{x^2}{2} - 2x + c
       - math: f(0) = c = 1
-        note: "A point on the $y$-axis gives the $c$ directly. This is the curve the sketching lesson could only draw the shape of, now answered exactly."
+        note: "A point on the $y$-axis gives the $c$ directly. In the sketching lesson you could only draw the shape of this curve. Now you have its exact equation."
       - math: f(x) = \dfrac{x^2}{2} - 2x + 1
   - ask: The gradient function of a curve is $f'(x) = x + 3$, and the curve passes through $(0, 4)$. Find the equation of the curve.
     grade: merit
@@ -188,12 +188,12 @@ questions:
 
 ---
 
-## When the point is hidden
+## When the question does not give the point
 
-The hardest version gives no point directly. Instead it names a feature, such as *the $y$-value of the local minimum is $-40$*. You have to find the point before you can use it. The minimum is a turning point, so its $x$ solves $f'(x) = 0$. That is turning-point working inside an anti-differentiation question, and it is how the 2025 paper built its Excellence part on this topic.
+The hardest version of the question does not give a point directly. Instead it describes a feature of the curve, such as *the $y$-value of the local minimum is $-40$*. You have to find the point before you can use it. The minimum is a turning point, so its $x$-coordinate is a solution of $f'(x) = 0$. So you use turning-point working inside an anti-differentiation question. The Excellence part of the 2025 paper on this topic is built this way.
 
 ```practice
-caption: a hidden point
+caption: a point to find first
 questions:
   - ask: Find the equation of the original function $f(x)$, given that the $y$-value of the local minimum is equal to $-40$.
     math: f'(x) = 2x^2 - 2x - 12
@@ -201,12 +201,12 @@ questions:
     from: "2025"
     working:
       - math: f(x) = \dfrac{2x^3}{3} - x^2 - 12x + c
-        note: "The family first. The given $y$-value belongs to a point not yet located."
+        note: "Anti-differentiate first, and keep the $+\\,c$. You cannot use the $y$-value yet, because you do not know where the minimum is."
       - math: 2x^2 - 2x - 12 = 0 \qquad\Rightarrow\qquad 2(x - 3)(x + 2) = 0
         note: "The minimum is a turning point, so it sits where the gradient function is zero."
       - math: x = 3 \;\textsf{ or }\; x = -2
       - math: f''(x) = 4x - 2 \qquad f''(3) = 10 > 0 \qquad\therefore\;\textsf{minimum at } x = 3
-        note: "Two candidates, and the question said *minimum*, so you justify the choice rather than assume it."
+        note: "There are two possible $x$-values. The question said *minimum*, so justify which one is the minimum rather than assume it."
       - math: f(3) = 18 - 9 - 36 + c = -40
       - math: c = -13
       - math: f(x) = \dfrac{2x^3}{3} - x^2 - 12x - 13
@@ -215,12 +215,12 @@ questions:
     grade: excellence
     working:
       - math: f(x) = x^3 - 3x^2 - 24x + c
-        note: "The family first. The given $y$-value belongs to a point not yet located."
+        note: "Anti-differentiate first, and keep the $+\\,c$. You cannot use the $y$-value yet, because you do not know where the minimum is."
       - math: 3x^2 - 6x - 24 = 0 \qquad\Rightarrow\qquad 3(x - 4)(x + 2) = 0
         note: "The minimum is a turning point, so it sits where the gradient function is zero."
       - math: x = 4 \;\textsf{ or }\; x = -2
       - math: f''(x) = 6x - 6 \qquad f''(4) = 18 > 0 \qquad\therefore\;\textsf{minimum at } x = 4
-        note: "Two candidates, and the question said *minimum*, so you justify the choice rather than assume it."
+        note: "There are two possible $x$-values. The question said *minimum*, so justify which one is the minimum rather than assume it."
       - math: f(4) = 64 - 48 - 96 + c = -50
       - math: c = 30
       - math: f(x) = x^3 - 3x^2 - 24x + 30
@@ -230,7 +230,7 @@ questions:
 
 ## Practice
 
-Work these on paper before revealing anything. They are ordered easiest first, and the band each one is pitched at is the band the marker would award for doing it well.
+Work these on paper before revealing anything. They are ordered easiest first, and each is labelled with the band the marker would award for doing it well.
 
 ```practice
 questions:
@@ -316,10 +316,10 @@ questions:
 
 ## Summary
 
-Anti-differentiation reverses the rule: raise the power by one, divide by the new power, and write $+\,c$. Coefficients stay, terms go one at a time, and a constant gradient becomes a multiple of $x$. Every answer can be checked by differentiating it back.
+Anti-differentiation reverses the rule for differentiating. Raise the power by one, divide by the new power, and write $+\,c$. Keep each coefficient, and anti-differentiate one term at a time. A constant term such as $5$ becomes $5x$. You can check every answer by differentiating it.
 
-The $c$ stands for the whole family of curves sharing one gradient function. It is the vertical freedom the sketching lesson found. The schedules count the anti-derivative as correct only with the $c$ written.
+The $c$ is there because differentiating removes any constant term. With the $c$, the anti-derivative stands for the whole family of curves that share one gradient function. These curves differ only by a vertical shift, which a gradient graph cannot show. The schedules count the anti-derivative as correct only with the $c$ written.
 
-One extra fact selects one curve. Substitute the given point, solve for $c$, and write the finished function. When the fact is a feature, such as the value at a minimum, locate the feature first with $f'(x) = 0$ and a justification of its nature.
+To find one particular curve, you need one extra fact. Substitute the given point, solve for $c$, and write the finished function. When the fact is a feature, such as the $y$-value at a minimum, find that point first. Solve $f'(x) = 0$, and justify the nature of the turning point.
 
-The final lesson takes both directions of the whole subject into the one context the standard names outright: distance, velocity and acceleration. There, differentiating and anti-differentiating are steps down and up a single ladder.
+The final lesson uses both directions in the one context that the standard names: distance, velocity and acceleration. In that lesson, differentiating and anti-differentiating are steps down and up a single ladder.

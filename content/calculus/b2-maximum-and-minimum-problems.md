@@ -2,18 +2,18 @@
 
 ---
 
-The previous lesson found turning points of curves that were given. The closing parts of the examination give a situation instead. Examples are a container to design, a paddock to fence, and an area that must be as large as the material allows. You have to build the curve before the calculus can start. The specification calls this *forming polynomials from a variety of contexts*, and it is where each paper puts its Excellence.
+In the previous lesson you found the turning points of curves that were given. The closing parts of the examination give a situation instead. Examples are a container to design, a paddock to fence, and an area to make as large as possible from a fixed amount of material. You have to form the function yourself before you can differentiate it. The specification calls this *forming polynomials from a variety of contexts*, and each paper sets its Excellence parts on it.
 
 ---
 
 ## From situation to polynomial
 
-The quantity the question wants made largest or smallest has to become a function of **one** variable. That quantity is the volume, the area, or the amount of material. Two facts from the situation do it:
+The question asks you to make a quantity as large or as small as possible. That quantity is the volume, the area, or the amount of material. You have to write it as a function of **one** variable. Form that function from the quantity and the constraint:
 
-- **The quantity itself**, written from the formula for the shape. This usually has two variables in it.
-- **The constraint** is the fixed total the situation imposes: so much fencing, so much sheet metal, a volume that must be met. Solve the constraint for one variable and substitute it into the quantity.
+- **The quantity itself** is written from the formula for the shape. This usually has two variables in it.
+- **The constraint** is a fixed total in the situation, such as a length of fencing, an area of sheet metal, or a volume the container must hold. Solve the constraint for one variable, and substitute the result into the quantity.
 
-One variable, one polynomial, and the previous lesson does the rest.
+The result is a polynomial in one variable. Then find its turning point with the method of the previous lesson.
 
 ```figure
 caption: A paddock against a wall
@@ -23,7 +23,7 @@ steps:
   - math: A = x(40 - 2x)
     note: "The quantity to maximise, written from the shape as length times width, with the constraint already substituted."
   - math: A = 40x - 2x^2
-    note: "Expand before differentiating, always."
+    note: "Always expand before you differentiate."
   - math: A' = 40 - 4x = 0
     note: "The largest area sits at a turning point of $A$, and turning points are where the derivative is zero."
   - math: x = 10
@@ -31,7 +31,7 @@ steps:
     note: "The ends are ten metres, the long side twenty, and the area is $200$ m$^2$. The answer states the quantity the question asked for, with its unit."
 ```
 
-The first two lines carry the marks. Forming the polynomial is itself the assessed skill, before any turning point is found. The first grade step of the 2024 schedule for its container part is *"Sets up area equation in terms of 1 variable AND differentiates"*. Write the constraint, write the quantity, and show the substitution that combines them. An expression written without working does not earn marks if it is wrong. It earns less than full marks even when it is right, because the equation you form must be stated.
+The first two lines earn the marks. Forming the polynomial is itself the assessed skill, before any turning point is found. The first grade step of the 2024 schedule for its container part is *"Sets up area equation in terms of 1 variable AND differentiates"*. Write the constraint, write the quantity, and show the substitution that combines them. An expression written without working does not earn marks if it is wrong. It earns less than full marks even when it is right, because the equation you form must be stated.
 
 ```practice
 caption: forming
@@ -56,7 +56,7 @@ questions:
     grade: merit
     working:
       - math: P = x(20 - x) = 20x - x^2
-        note: "If one number is $x$, the sum makes the other $20 - x$."
+        note: "If one number is $x$, the other is $20 - x$, because the two numbers add to $20$."
       - math: P' = 20 - 2x = 0
       - math: x = 10
       - math: P = 10 \times 10 = 100
@@ -65,7 +65,7 @@ questions:
     grade: merit
     working:
       - math: P = x(30 - x) = 30x - x^2
-        note: "If one number is $x$, the sum makes the other $30 - x$."
+        note: "If one number is $x$, the other is $30 - x$, because the two numbers add to $30$."
       - math: P' = 30 - 2x = 0
       - math: x = 15
       - math: P = 15 \times 15 = 225
@@ -76,11 +76,11 @@ questions:
 
 ## Solve, then answer the question asked
 
-Setting the derivative to zero produces an equation, and its solutions need two checks before any of them becomes the answer.
+Setting the derivative to zero gives an equation. Its solutions are not yet the answer.
 
-**Reject what the situation cannot contain.** Lengths cannot be negative, and a side of zero leaves no shape at all. The 2025 schedule shows the form: *"$x = 0.6$ m or $-0.6$ (reject as $-$ve)"*. Write the rejection. Do not reject silently.
+**Reject any solution that is impossible in the situation.** Lengths cannot be negative, and a side of zero leaves no shape at all. The 2025 schedule shows the form: *"$x = 0.6$ m or $-0.6$ (reject as $-$ve)"*. Write the rejection. Do not leave a solution out without saying why.
 
-**Then answer the question that was asked.** The $x$ of the turning point locates the best design. It is rarely the answer itself. *Find the maximum volume* wants the volume. *Calculate the dimensions* wants every dimension, which means you use the constraint again to find the variables you substituted away. Ending at $x$ when the question asked for cubic metres loses the final step and its mark.
+**Then answer the question that was asked.** The $x$ of the turning point locates the best design. It is rarely the answer itself. *Find the maximum volume* asks for the volume. *Calculate the dimensions* asks for every dimension, so you use the constraint again to find the variables that you removed by substitution. Ending at $x$ when the question asked for cubic metres loses the final step and its mark.
 
 ---
 
@@ -88,7 +88,7 @@ Setting the derivative to zero produces an equation, and its solutions need two 
 
 The word *maximum* in the question is a claim, and the exam asks you to prove it. The container part of the 2025 paper instructs, *"prove that the volume is a maximum using calculus"*. Everything from the nature section of the previous lesson applies unchanged: second derivative, test points either side, annotated sketch. State the conclusion in the terms of the context: *$V'' = -12h$ is negative for any positive height, so the volume is a maximum*.
 
-In the schedules the proof is the step that separates Excellence from Merit on these parts, and it is one substitution plus one sentence.
+In the schedules, the proof is the step that separates Excellence from Merit on these parts. It takes one substitution and one sentence.
 
 ```practice
 caption: a full problem
@@ -97,13 +97,13 @@ questions:
     grade: excellence
     working:
       - math: V = x(30 - 2x)^2
-        note: "The base is the sheet minus two cuts on each side, and the height is the cut. One variable already, so no constraint is needed."
+        note: "Each side of the base is the side of the sheet minus two cuts. The height of the box is the cut. The volume already has one variable, so you do not need a constraint."
       - math: V = 900x - 120x^2 + 4x^3
-        note: "Expanded, so the rule can reach it."
+        note: "Expand it, so that you can differentiate each term with the rule."
       - math: V' = 900 - 240x + 12x^2 = 0
       - math: 12(x - 5)(x - 15) = 0
       - math: "x = 5 \\;\\textsf{ or }\\; x = 15 \\;\\;\\textsf{(reject: a 30 cm sheet cannot lose 30 cm)}"
-        note: "Two cuts of fifteen leave no base at all. The rejection is written, with its reason."
+        note: "Two cuts of fifteen leave no base at all. Write the rejection, with its reason."
       - math: V = 5(30 - 10)^2 = 2000 \;\textsf{cm}^3
       - math: V'' = -240 + 24x \qquad V''(5) = -120 < 0
       - math: \therefore\;\textsf{the volume is a maximum}
@@ -111,13 +111,13 @@ questions:
     grade: excellence
     working:
       - math: V = x(24 - 2x)^2
-        note: "The base is the sheet minus two cuts on each side, and the height is the cut. One variable already, so no constraint is needed."
+        note: "Each side of the base is the side of the sheet minus two cuts. The height of the box is the cut. The volume already has one variable, so you do not need a constraint."
       - math: V = 576x - 96x^2 + 4x^3
-        note: "Expanded, so the rule can reach it."
+        note: "Expand it, so that you can differentiate each term with the rule."
       - math: V' = 576 - 192x + 12x^2 = 0
       - math: 12(x - 4)(x - 12) = 0
       - math: "x = 4 \\;\\textsf{ or }\\; x = 12 \\;\\;\\textsf{(reject: a 24 cm sheet cannot lose 24 cm)}"
-        note: "Two cuts of twelve leave no base at all. The rejection is written, with its reason."
+        note: "Two cuts of twelve leave no base at all. Write the rejection, with its reason."
       - math: V = 4(24 - 8)^2 = 1024 \;\textsf{cm}^3
       - math: V'' = -192 + 24x \qquad V''(4) = -96 < 0
       - math: \therefore\;\textsf{the volume is a maximum}
@@ -127,22 +127,22 @@ questions:
 
 ## A power in the denominator
 
-One recent question forms a function that is not a polynomial. Eliminating $h$ from the surface area of a cylinder leaves a term like $\dfrac{1000}{r}$. The remedy comes from the index laws. Rewrite the term in index form, $1000r^{-1}$, and the differentiation rule works exactly as it always has: multiply by the power, lower the power by one.
+In one recent question, the function you form is not a polynomial. Eliminating $h$ from the surface area of a cylinder leaves a term like $\dfrac{1000}{r}$. Use the index laws to rewrite the term in index form, $1000r^{-1}$. Then the differentiation rule works exactly as it always has: multiply by the power, then lower the power by one.
 
 ```figure
-caption: The rule reaches a negative power
+caption: The rule works for a negative power
 steps:
   - math: S = 2\pi r^2 + \dfrac{1000}{r}
-    note: "The second term is not yet in a form the rule can reach."
+    note: "You cannot use the rule on the second term in this form."
   - math: S = 2\pi r^2 + 1000r^{\ca{-1}}
-    note: "Index form, from algebra. The power is $-1$."
+    note: "Write the term in index form, from algebra. The power is $-1$."
   - math: S' = 4\pi r \ca{-} 1000r^{\ca{-2}}
-    note: "Multiply by $-1$, lower the power to $-2$. The sign of the term flips, and the power falls further negative."
+    note: "Multiply by $-1$, then lower the power to $-2$. The term changes from positive to negative, and the power becomes more negative."
   - math: S' = 4\pi r - \dfrac{1000}{r^2}
-    note: "Return the term to fraction form for the solving, if that reads more easily."
+    note: "Write the term as a fraction again before you solve, if that is easier to read."
 ```
 
-Setting this to zero clears the fraction. $4\pi r = \dfrac{1000}{r^2}$ becomes $4\pi r^3 = 1000$, and the cube root finishes it. The cylinder part of the 2024 paper is exactly this shape.
+Set $S'$ equal to zero, then multiply both sides by $r^2$ to clear the fraction. $4\pi r = \dfrac{1000}{r^2}$ becomes $4\pi r^3 = 1000$. Then take the cube root to find $r$. The cylinder part of the 2024 paper is exactly this shape.
 
 ```practice
 caption: negative powers
@@ -152,10 +152,10 @@ questions:
     from: "2024"
     working:
       - math: \pi r^2 h = 330 \qquad\Rightarrow\qquad h = \dfrac{330}{\pi r^2}
-        note: "The volume is the constraint. Solve it for $h$, so the area becomes one-variable."
+        note: "The volume is the constraint. Solve it for $h$, so the area becomes a function of one variable."
       - math: S = 2\pi r^2 + 2\pi r \cdot \dfrac{330}{\pi r^2} = 2\pi r^2 + \dfrac{660}{r}
       - math: S = 2\pi r^2 + 660r^{-1}
-        note: "Index form, so the rule can reach it."
+        note: "Write it in index form, so that you can use the rule."
       - math: S' = 4\pi r - 660r^{-2} = 0
       - math: 4\pi r^3 = 660 \qquad\Rightarrow\qquad r^3 = \dfrac{660}{4\pi}
         note: "Multiply through by $r^2$ to clear the fraction, then isolate the cube."
@@ -165,10 +165,10 @@ questions:
     grade: excellence
     working:
       - math: \pi r^2 h = 500 \qquad\Rightarrow\qquad h = \dfrac{500}{\pi r^2}
-        note: "The volume is the constraint. Solve it for $h$, so the area becomes one-variable."
+        note: "The volume is the constraint. Solve it for $h$, so the area becomes a function of one variable."
       - math: S = 2\pi r^2 + 2\pi r \cdot \dfrac{500}{\pi r^2} = 2\pi r^2 + \dfrac{1000}{r}
       - math: S = 2\pi r^2 + 1000r^{-1}
-        note: "Index form, so the rule can reach it."
+        note: "Write it in index form, so that you can use the rule."
       - math: S' = 4\pi r - 1000r^{-2} = 0
       - math: 4\pi r^3 = 1000 \qquad\Rightarrow\qquad r^3 = \dfrac{1000}{4\pi}
         note: "Multiply through by $r^2$ to clear the fraction, then isolate the cube."
@@ -180,7 +180,7 @@ questions:
 
 ## Practice
 
-Work these on paper before revealing anything. They are ordered easiest first, and the band each one is pitched at is the band the marker would award for doing it well.
+Work these on paper before revealing anything. They are ordered easiest first, and each is labelled with the band the marker would award for doing it well.
 
 ```practice
 questions:
@@ -212,7 +212,7 @@ questions:
         note: "The material is the constraint, solved for $l$."
       - math: V = lwh = 2h^2 l = 2h^2 \cdot \dfrac{3 - 4h^2}{4h}
       - math: V = \dfrac{3h}{2} - 2h^3
-        note: "One variable. Expand, and it is a polynomial after all."
+        note: "The volume now has one variable. Expand it, and it is a polynomial."
       - math: V' = \dfrac{3}{2} - 6h^2 = 0
       - math: h^2 = \dfrac{1}{4} \qquad h = \dfrac{1}{2} \;\;\textsf{(reject } -\tfrac{1}{2}\textsf{, a negative height)}
       - math: V = \dfrac{3}{2}\!\left(\dfrac{1}{2}\right) - 2\!\left(\dfrac{1}{8}\right) = \dfrac{1}{2} \;\textsf{m}^3
@@ -227,7 +227,7 @@ questions:
         note: "The material is the constraint, solved for $l$."
       - math: V = lwh = 2h^2 l = 2h^2 \cdot \dfrac{12 - 4h^2}{4h}
       - math: V = 6h - 2h^3
-        note: "One variable. Expand, and it is a polynomial after all."
+        note: "The volume now has one variable. Expand it, and it is a polynomial."
       - math: V' = 6 - 6h^2 = 0
       - math: h^2 = 1 \qquad h = 1 \;\;\textsf{(reject } -1\textsf{, a negative height)}
       - math: V = 6(1) - 2(1) = 4 \;\textsf{m}^3
@@ -238,7 +238,7 @@ questions:
     from: "2024"
     working:
       - math: V = x^2 + 3(k - x)^2
-        note: "Substitute the constraint straight away, so the quantity is in one variable. $k$ is a number, not a variable. Carry it through."
+        note: "Substitute the constraint straight away, so the quantity is in one variable. $k$ is a number, not a variable. Keep it in every line."
       - math: V = x^2 + 3k^2 - 6kx + 3x^2 = 4x^2 - 6kx + 3k^2
         note: "Expanded, with brackets kept around $k - x$ while it is squared."
       - math: V' = 8x - 6k = 0 \qquad\Rightarrow\qquad x = \dfrac{3k}{4}
@@ -252,7 +252,7 @@ questions:
     grade: excellence
     working:
       - math: V = x^2 + (k - x)^2
-        note: "Substitute the constraint straight away, so the quantity is in one variable. $k$ is a number, not a variable. Carry it through."
+        note: "Substitute the constraint straight away, so the quantity is in one variable. $k$ is a number, not a variable. Keep it in every line."
       - math: V = x^2 + k^2 - 2kx + x^2 = 2x^2 - 2kx + k^2
         note: "Expanded, with brackets kept around $k - x$ while it is squared."
       - math: V' = 4x - 2k = 0 \qquad\Rightarrow\qquad x = \dfrac{k}{2}
@@ -268,12 +268,12 @@ questions:
 
 ## Summary
 
-The calculus in these questions is the calculus of the previous lesson. The new work is the forming. Write the quantity from the formula for the shape, write the constraint, substitute until one variable remains, and expand. State the equations as you form them. The forming is assessed on its own.
+The calculus in these questions is the calculus of the previous lesson. The new skill is forming the function. Write the quantity from the formula for the shape, write the constraint, substitute until one variable remains, and expand. State the equations as you form them. Forming the function is assessed on its own.
 
-Solve $f' = 0$, and reject in writing what the situation cannot contain. Then answer the question that was asked, the volume, the area or the dimensions, with units. If the question wants a substituted variable, use the constraint again to recover it.
+Solve $f' = 0$, and reject in writing any solution that is impossible in the situation. Then answer the question that was asked, the volume, the area or the dimensions, with units. If the question asks for a variable that you substituted, use the constraint again to find it.
 
-Prove the maximum or minimum with any of the three justifications, concluded in the context's own words. It is the Excellence step and costs two lines.
+Prove the maximum or minimum with any of the three justifications. Write the conclusion in the words of the context. This proof is the Excellence step, and it takes two lines.
 
-A constraint substitution can leave a power of $x$ underneath a fraction. Index form from algebra puts it back in reach of the rule.
+Substituting the constraint can leave a power of $x$ in the denominator of a fraction. Write the term in index form, and then you can use the rule.
 
-This closes the differentiation half of the standard. Module C runs the other way: from the gradient function back to the function, which is the direction the remaining exam questions run.
+This is the last lesson on differentiation in the standard. In Module C you work the other way: from the gradient function back to the function. The remaining exam questions work in that direction.

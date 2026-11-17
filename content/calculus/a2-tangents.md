@@ -2,19 +2,19 @@
 
 ---
 
-The previous lesson produced $f'(a)$: the gradient of the curve at one chosen point. A straight line through a known point with a known gradient is Level 1 work. Put the two together and you can write the equation of the tangent. That is the question this lesson is about, and it appears in every recent paper.
+In the previous lesson you found $f'(a)$: the gradient of the curve at one chosen point. A straight line through a known point with a known gradient is Level 1 work. Put the two together and you can write the equation of the tangent. That is the question this lesson is about, and it appears in every recent paper.
 
 ---
 
-## Two ingredients
+## The point and the gradient
 
-The tangent at $x = a$ is a straight line, and a straight line needs a point and a gradient. Both come from the curve, and each from a different formula.
+The tangent at $x = a$ is a straight line. To write the equation of a straight line, you need a point and a gradient. Both come from the curve, and each comes from a different formula.
 
 - **The point.** The tangent touches the curve at $x = a$, so the point is $\big(a, f(a)\big)$: the height comes from the original function.
 - **The gradient.** The gradient of the tangent is the gradient of the curve at the touching point, which is $f'(a)$, from the gradient function.
 
 ```figure
-caption: What the tangent needs
+caption: The point and the gradient of a tangent
 steps:
   - graph:
       domain: [-1, 4]
@@ -30,14 +30,14 @@ steps:
           color: a
           guides: true
       xticks: [3]
-    note: "One curve, one marked point, one line through it. The two ingredients of the line, where it passes and how steeply, are $f(3)$ and $f'(3)$."
+    note: "The tangent touches the curve at the marked point. Where the tangent passes comes from $f(3)$, and how steep it is comes from $f'(3)$."
 ```
 
 With the point and the gradient found, you assemble the line with
 
 $$y - y_1 = m(x - x_1)$$
 
-This equation is **not on the formulae sheet**. The sheet carries the differentiation rule. It assumes you know the straight-line equation. The 2024 report lists *"could not write the equation of a straight line"* among the reasons candidates did not achieve. Those candidates never reached the calculus in the question, because the Level 1 line equation was missing.
+This equation is **not on the formulae sheet**. The sheet carries the differentiation rule, but not the straight-line equation, so you have to remember it. The 2024 report lists *"could not write the equation of a straight line"* among the reasons candidates did not achieve. Those candidates never reached the calculus in the question, because the Level 1 line equation was missing.
 
 ---
 
@@ -47,19 +47,19 @@ This equation is **not on the formulae sheet**. The sheet carries the differenti
 caption: Tangent at a point
 steps:
   - math: f(x) = x^3 - 3x^2 + 2 \qquad\textsf{at}\qquad x = 1
-    note: "Two ingredients to collect, and each has its own formula."
+    note: "You need a point and a gradient, and each has its own formula."
   - math: f(1) = 1 - 3 + 2 = 0
-    note: "Height first. The tangent touches the curve at $(1, 0)$."
+    note: "Find the height first. The tangent touches the curve at $(1, 0)$."
   - math: f'(x) = 3x^2 - 6x
-    note: "Now the gradient. Differentiate, then substitute."
+    note: "Next find the gradient. Differentiate, then substitute."
   - math: f'(1) = 3 - 6 = -3
-    note: "The tangent's gradient is $-3$. Both ingredients are ready."
+    note: "The tangent's gradient is $-3$. You now have the point and the gradient."
   - math: y - 0 = -3(x - 1)
     note: "Point and gradient go into the straight-line equation."
   - math: y = -3x + 3
 ```
 
-The two substitutions are where the errors happen. $f(a)$ is the height and $f'(a)$ is the gradient. Swap them and every line after is wrong, though the working looks tidy. Say what each number is as you find it: *the point is $(1, 0)$, the gradient is $-3$*. Then the swap cannot happen silently.
+The two substitutions are where the errors happen. $f(a)$ is the height and $f'(a)$ is the gradient. Swap them and every line after is wrong, though the working looks tidy. Say what each number is as you find it: *the point is $(1, 0)$, the gradient is $-3$*. Then you cannot swap them without noticing.
 
 The 2024 marking schedule accepts the unsimplified form, so $y - 0 = -3(x-1)$ already earns the mark. Its note reads "Candidate does not need to simplify to $y = mx + c$". Simplifying anyway gives a form that is easier to check. Substitute the touching point into the finished equation, and the two sides must agree.
 
@@ -152,7 +152,7 @@ questions:
 
 ## A tangent with a stated gradient
 
-The question can run the other way. Instead of naming the touching point, it names the gradient: *find the tangent parallel to $y = 2x + 1$*. Parallel lines share a gradient, so the gradient of the tangent is $2$, and the unknown is where it touches. That is the backwards question from the previous lesson. Solve $f'(x) = 2$, take the height from $f$, and assemble the line as before.
+Some questions give the gradient of the tangent instead of the touching point: *find the tangent parallel to $y = 2x + 1$*. Parallel lines share a gradient, so the gradient of the tangent is $2$, and the touching point is the unknown. That is the backwards question from the previous lesson. Solve $f'(x) = 2$, take the height from $f$, and assemble the line as before.
 
 ```figure
 caption: From gradient to tangent
@@ -163,7 +163,7 @@ steps:
     note: "The gradient function, set equal to the gradient the tangent must have."
   - math: x = 4
   - math: f(4) = 16 - 24 + 4 = -4
-    note: "Height from the original function, as always. The tangent touches at $(4, -4)$."
+    note: "Take the height from the original function, as always. The tangent touches at $(4, -4)$."
   - math: y + 4 = 2(x - 4)
   - math: y = 2x - 12
 ```
@@ -198,18 +198,18 @@ questions:
     grade: merit
     working:
       - math: f'(x) = 2x - 10 = 0
-        note: "A horizontal line has gradient zero, so the gradient function is set to zero."
+        note: "A horizontal line has gradient zero, so set the gradient function equal to zero."
       - math: x = 5
       - math: f(5) = 25 - 50 + 18 = -7
       - math: y = -7
-        note: "A horizontal tangent is a line of constant height, so its equation carries no $x$."
+        note: "A horizontal tangent is a line of constant height, so its equation does not contain $x$."
 ```
 
 ---
 
 ## Practice
 
-Work these on paper before revealing anything. They are ordered easiest first, and each one's band is what the marker would award for doing it well.
+Work these on paper before revealing anything. They are ordered easiest first, and each is labelled with the band the marker would award for doing it well.
 
 ```practice
 questions:
@@ -234,7 +234,7 @@ questions:
       - math: \dfrac{dy}{dx} = 3x^2 - 4
       - math: \dfrac{dy}{dx} = -4 \;\textsf{ at }\; x = 0
       - math: y = -4x + 1
-        note: "The line passes through $(0, 1)$, so you already know the intercept, and the equation assembles directly."
+        note: "The line passes through $(0, 1)$, so you already know the $y$-intercept. Write the equation directly as $y = mx + c$."
   - ask: Find the equation of the tangent to the curve at $x = 0$.
     math: y = x^3 - 5x + 2
     grade: merit
@@ -249,7 +249,7 @@ questions:
     grade: excellence
     working:
       - math: f'(x) = 3x^2 - 9 = 3
-        note: "A quadratic, so expect two answers. The question said two tangents."
+        note: "This is a quadratic equation, so expect two answers. The question says there are two tangents."
       - math: x^2 = 4 \qquad x = 2 \;\textsf{ or }\; x = -2
       - math: f(2) = 8 - 18 = -10 \qquad f(-2) = -8 + 18 = 10
         note: "Each touching point gets its height from $f$, separately."
@@ -260,7 +260,7 @@ questions:
     grade: excellence
     working:
       - math: f'(x) = 3x^2 - 12 = 15
-        note: "A quadratic, so expect two answers. The question said two tangents."
+        note: "This is a quadratic equation, so expect two answers. The question says there are two tangents."
       - math: x^2 = 9 \qquad x = 3 \;\textsf{ or }\; x = -3
       - math: f(3) = 27 - 36 = -9 \qquad f(-3) = -27 + 36 = 9
         note: "Each touching point gets its height from $f$, separately."
@@ -276,7 +276,7 @@ questions:
       - math: y = 2ax - a^2
       - math: 0 = 2ax - a^2 \;\;\textsf{ at the } x\textsf{-axis}
       - math: x = \dfrac{a^2}{2a} = \dfrac{a}{2}
-        note: "Which is what was to be shown, for every point on the curve at once."
+        note: "This is the result the question asked you to show, and it is true for every point on the curve."
   - ask: Show that the tangent to the curve $y = x^3$ at the point $(a, a^3)$ meets the $x$-axis at $x = \dfrac{2a}{3}$.
     grade: excellence
     working:
@@ -285,17 +285,17 @@ questions:
       - math: y - a^3 = 3a^2(x - a)
         note: "Point $(a, a^3)$, gradient $3a^2$, into the straight-line equation."
       - math: y = 3a^2x - 2a^3
-        note: "Three $a^3$ taken off one $a^3$ leaves $-2a^3$."
+        note: "$a^3 - 3a^3 = -2a^3$."
       - math: 0 = 3a^2x - 2a^3 \;\;\textsf{ at the } x\textsf{-axis}
       - math: x = \dfrac{2a^3}{3a^2} = \dfrac{2a}{3}
-        note: "Which is what was to be shown, for every point on the curve at once."
+        note: "This is the result the question asked you to show, and it is true for every point on the curve."
 ```
 
 ---
 
 ## Summary
 
-A tangent is a straight line, so it needs a point and a gradient, and the curve supplies both. The point is $\big(a, f(a)\big)$ and the gradient is $f'(a)$. Height from $f$, steepness from $f'$, as everywhere in Module A.
+A tangent is a straight line, so you need a point and a gradient to write its equation. Both come from the curve. The point is $\big(a, f(a)\big)$ and the gradient is $f'(a)$. As everywhere in Module A, the height comes from $f$ and the steepness comes from $f'$.
 
 Assemble with $y - y_1 = m(x - x_1)$, which is not on the formulae sheet. Either form of the answer is accepted. The simplified form is the one you can check by substituting the touching point back in.
 

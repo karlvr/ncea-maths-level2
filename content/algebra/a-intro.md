@@ -10,23 +10,23 @@ An **expression** is a collection of terms with no equals sign. $3x^2 + 5x - 2$ 
 caption: An expression
 steps:
   - math: 3x^2 + 5x - 2
-    note: No equals sign.
+    note: There is no equals sign.
 ```
 
-An **equation** has an equals sign. $3x^2 + 5x - 2 = 0$ is an equation. It states that the left hand side is equal to the right hand side. That statement is true for some values of $x$ and false for others.
+An **equation** has an equals sign. $3x^2 + 5x - 2 = 0$ is an equation. It is a statement that the left hand side is equal to the right hand side. That statement is true for some values of $x$ and false for others.
 
 ```figure
 caption: An equation
 steps:
   - math: 3x^2 + 5x - 2 = 0
-    note: A statement that the two sides are equal. True for some values of $x$, false for others.
+    note: This is a statement that the two sides are equal. It is true for some values of $x$ and false for others.
   - math: 3(\ca{0})^2 + 5(\ca{0}) - 2 = -2
     note: Try $x = 0$. That gives $-2$, not $0$, so the statement is false here.
   - math: 3(\cb{-2})^2 + 5(\cb{-2}) - 2 = 0
-    note: Try $x = -2$. The statement is true. Finding the values that do this is what solving means.
+    note: Try $x = -2$. The statement is true. Finding the values of $x$ that make the statement true is what solving means.
 ```
 
-The two need different work. You **simplify** an expression: you rewrite it to be tidier, and it still means exactly the same thing. You **solve** an equation: you find the values of $x$ that make the statement true.
+An expression and an equation need different work. You **simplify** an expression: you rewrite it to be tidier, and it still means exactly the same thing. You **solve** an equation: you find the values of $x$ that make the statement true.
 
 ```figure
 caption: Two different jobs
@@ -45,7 +45,7 @@ steps:
 
 ## The three modules
 
-The standard divides into three, and they build on each other.
+The standard has three modules, and each module depends on the module before it.
 
 **Module A—Expressions.** You are given an expression and asked to rewrite it: expand it, factorise it, cancel it, simplify its powers.
 
@@ -67,17 +67,17 @@ The exam is three questions, each with several parts, and word problems appear t
 
 After each year's examination is marked, the examiners publish a report on it. The report says what candidates at each grade could commonly do, and what candidates who were not awarded the standard commonly got wrong. These lessons quote those reports wherever a finding is about the topic of the lesson. Every mistake quoted cost candidates marks in a real examination.
 
-> The specification gives three instructions. Take each one literally, because each one is a way to lose marks you had otherwise earned:
+> Take each instruction in the specification literally. If you do not follow one, you can lose marks that you had otherwise earned:
 >
 > - **Write every equation you form.** Do not just use it.
 > - **Show the algebra.** A correct answer with no working is marked *Correct Answer Only*, and that is worth an Achieved tick at best. It cannot reach Merit or Excellence however right the answer is.
 > - **Give answers in their simplest algebraic form.**
 >
-> Four more, from the examiner's reports rather than the specification:
+> These instructions come from the examiner's reports, not from the specification:
 >
 > - **Attempt every part of every question.** The parts are not ordered by difficulty, and one part can carry marks at more than one level. So a part further down the page may be easier than the part above it.
-> - **Cross out any working you abandoned.** Where you leave two answers standing, the reports ask candidates to make clear which one is to be marked. A crossing-out is how you do that.
-> - **End a *show that* answer with the statement it asked for.** The statement is printed on the page, so the marks are entirely in the steps that reach it. The last line says that the statement is shown. The 2024 report's Excellence list names candidates who were able to start and finish a proof using clear mathematical communication.
+> - **Cross out any working you abandoned.** Where you leave two answers on the page, the reports ask candidates to make clear which one is to be marked. A crossing-out is how you do that.
+> - **End a *show that* answer with the statement that the question asked you to show.** The statement is printed on the page, so the marks are entirely in the steps that reach it. The last line says that the statement is shown. The 2024 report's Excellence list names candidates who were able to start and finish a proof using clear mathematical communication.
 > - **Do what the instruction says.** *Simplify*, *solve*, *factorise* and *calculate the discriminant* ask for four different things. The 2024 report lists not following the instruction as a reason candidates did not achieve.
 
 ---

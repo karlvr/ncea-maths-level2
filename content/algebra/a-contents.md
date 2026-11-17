@@ -2,7 +2,7 @@
 
 ---
 
-This page is the whole of Level 2 algebra in one list: three modules, seven topics, and the skills inside each topic. This page does not teach anything. The list shows the size of the subject before you start on it. A textbook does not, because it shows one page at a time and never states how much there is altogether.
+This page is the whole of Level 2 algebra in one list: three modules, seven topics, and the skills inside each topic. This page does not teach anything. The list shows the size of the subject before you begin. A textbook does not, because it shows one page at a time and never states how much there is altogether.
 
 Read the list now, and again before the exam. In between, treat it as a checklist and mark the skills you can already do. Several of the skills are Level 1 work carried one step further, so the list starts partly marked.
 
@@ -10,9 +10,9 @@ Read the list now, and again before the exam. In between, treat it as a checklis
 
 ## Module A—Expressions
 
-Rewriting. There is no equals sign anywhere in this module, so you do not solve anything in it.
+This module is about rewriting expressions. There is no equals sign anywhere in this module, so you do not solve anything in it.
 
-**A1—Manipulating algebraic expressions.** The general moves: turning products into sums, and sums back into products.
+**A1—Manipulating algebraic expressions.** Turning products into sums, and sums back into products.
 
 - telling terms from factors
 - expanding brackets, including three of them
@@ -21,9 +21,9 @@ Rewriting. There is no equals sign anywhere in this module, so you do not solve 
 - quadratic trinomials, with and without a coefficient on the $x^2$
 - collecting like terms
 - checking an answer by substituting a number
-- substituting inside brackets, so that negatives and coefficients survive it
+- substituting inside brackets, so that you keep the negatives and the coefficients
 
-**A2—Rational expressions.** The same moves applied to fractions with algebra in them.
+**A2—Rational expressions.** The same methods, applied to fractions with algebra in them.
 
 - cancelling factors, never terms
 - multiplying and dividing
@@ -59,12 +59,12 @@ There is an equals sign now, so there is something to find.
 
 **B2—Solving quadratic equations.** Three methods for the same answer, and the skill is choosing between them.
 
-- taking the equation to standard form
+- rearranging the equation into standard form
 - solving by factorising
 - completing the square
 - the quadratic formula
 - choosing which of the three to use
-- discarding a solution the context does not allow
+- discarding a solution that is impossible in the context
 - building an equation from its roots
 - completing a model whose form you have been given
 
@@ -85,7 +85,7 @@ There is an equals sign now, so there is something to find.
 **C1—The nature of the roots.** How many solutions a quadratic has, determined without solving it.
 
 - the discriminant
-- the three cases it distinguishes
+- the three cases: a positive, zero or negative discriminant
 - what those three cases look like on a graph
 - whether the roots are rational
 - working backwards, from a stated number of roots to an unknown coefficient
@@ -95,7 +95,7 @@ There is an equals sign now, so there is something to find.
 
 ## How much of it is really new
 
-Seven topics and close to fifty skills, but the topics overlap, and that makes the subject smaller than the count suggests.
+The list has seven topics and close to fifty skills. But the topics overlap, so the subject is smaller than it looks.
 
 Three of the topics are one quadratic asked about in three ways.
 
@@ -121,6 +121,6 @@ steps:
     note: B3 asks for the value of $x$, and the first step is writing thirty-two as a power of two.
 ```
 
-That leaves algebraic fractions and linear equations. Four ideas in all, and most of them are asked about in two or three of the seven topics. That repetition is why the list above is longer than the subject it describes.
+That leaves algebraic fractions and linear equations. That makes four ideas in all, and most of them are asked about in two or three of the seven topics. That repetition is why the list above is longer than the subject it describes.
 
 Start at Module A and work down. Every later topic depends on an earlier one, and none of them depends on a topic further down the list.

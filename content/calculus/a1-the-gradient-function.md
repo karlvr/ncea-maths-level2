@@ -2,7 +2,7 @@
 
 ---
 
-The introduction said that every function has a gradient function. This lesson is the rule that finds it, and what the result tells you.
+The introduction said that every function has a gradient function. This lesson gives the rule for finding it, and explains what the result tells you.
 
 ---
 
@@ -11,7 +11,7 @@ The introduction said that every function has a gradient function. This lesson i
 The gradient of a curve at a point is the gradient of the **tangent** at that point. The tangent is the straight line that touches the curve at that point and matches its steepness there.
 
 ```figure
-caption: The tangent carries the gradient
+caption: The tangent has the same gradient as the curve
 steps:
   - graph:
       domain: [-2.5, 2.5]
@@ -39,7 +39,7 @@ steps:
 
 Zoom in far enough on any point of the graph of a polynomial, and the curve and its tangent look the same. That is why a single number can describe the steepness at a point, even though the curve keeps bending either side of it.
 
-Measuring a tangent by eye is guesswork. The gradient function replaces the guessing. It is a formula that returns the gradient at every point at once, and a rule finds it.
+Measuring the gradient of a tangent by eye gives only an estimate. The gradient function is a formula that gives the exact gradient at every point at once. You find the gradient function with a rule.
 
 ---
 
@@ -64,11 +64,11 @@ steps:
   - math: \ca{3}x^{2}
 ```
 
-Three extensions turn the rule into a method for any polynomial, and each is a consequence of what a gradient is.
+The rule also works for coefficients, for sums of terms and for constants, so you can differentiate any polynomial. In each case the result follows from what a gradient is.
 
 **A coefficient stays and multiplies.** The graph of $5x^3$ is the graph of $x^3$ stretched to five times the height, so every gradient on it is five times steeper. The derivative of $5x^3$ is $5 \times 3x^2$, which is $15x^2$.
 
-**Terms differentiate one at a time.** You differentiate a polynomial term by term, and each term keeps its sign.
+**Differentiate one term at a time.** You differentiate a polynomial term by term, and each term keeps its plus or minus sign.
 
 **A constant differentiates to zero.** The graph of $y = 7$ is a flat line. Its gradient is zero everywhere, so the $7$ does not contribute to the gradient function. For the same reason the derivative of $3x$ is just $3$: the graph of $3x$ is a line of gradient $3$. The rule gives the same answer, because $3x^1$ becomes $3x^0$, and $x^0$ is $1$.
 
@@ -142,7 +142,7 @@ The same operation is written two ways, and the papers use both.
 When the function is named $f(x) = x^2$ its gradient function is written $f'(x)$, read *f dashed of x*. When the function is written as an equation in $y$ such as $y = x^2$, the gradient function is written $\dfrac{dy}{dx}$, read *d y by d x*.
 
 ```figure
-caption: Two spellings of one operation
+caption: Two ways to write one operation
 steps:
   - math: |
       \begin{array}{c|c}
@@ -158,7 +158,7 @@ $\dfrac{dy}{dx}$ looks like a fraction, but it is not one. At this level it is a
 
 ## Expand before differentiating
 
-The rule reaches powers of $x$ in a sum of terms, and nothing else. You must expand a product before the rule applies, because the derivative of a product is not the product of the derivatives.
+The rule applies only to powers of $x$ in a sum of terms. You must expand a product before the rule applies, because the derivative of a product is not the product of the derivatives.
 
 $x \cdot x$ shows why. Differentiating each factor of the product gives $1 \times 1 = 1$. But $x \cdot x$ is $x^2$, and its derivative is $2x$. The product-of-derivatives answer is wrong at every point but one.
 
@@ -166,13 +166,13 @@ $x \cdot x$ shows why. Differentiating each factor of the product gives $1 \time
 caption: Expand, then differentiate
 steps:
   - math: f(x) = (x+2)(x-5)
-    note: "The rule cannot reach inside a product. Expand first."
+    note: "The rule does not apply to a product. Expand first."
   - math: f(x) = x^2 - 3x - 10
     note: "Now it is a sum of terms, and the rule applies to each."
   - math: f'(x) = 2x - 3
 ```
 
-The standard states that polynomials are *given in expanded form*. So you mostly expand where a question asks you to build the function, as the maximum and minimum problems do. The habit belongs here all the same: the rule applies to expanded form only.
+The standard states that polynomials are *given in expanded form*. So you mostly expand when a question asks you to write the function yourself, as in maximum and minimum problems. Expand first in every case all the same, because the rule applies to expanded form only.
 
 ```practice
 caption: expand first
@@ -223,9 +223,9 @@ steps:
     note: "At $x = 3$ the curve climbs at gradient $15$."
 ```
 
-Substituting into the wrong formula is the error to avoid here. $f(3)$ is the *height* of the curve at $x = 3$. $f'(3)$ is its *steepness* there. The two numbers answer different questions, and a question about gradient wants $f'$.
+Substituting into the wrong formula is the error to avoid here. $f(3)$ is the *height* of the curve at $x = 3$. $f'(3)$ is its *steepness* there. The two numbers are answers to different questions. For a question about gradient, substitute into $f'$.
 
-The substitution itself is the other danger. Use the same bracket discipline as in algebra. The value goes in wrapped in brackets, so that an even power removes the minus sign and an odd power keeps it. The not-achieved list of the 2025 report has both *"substituted values incorrectly into the given function or derivative"* and *"misinterpreted expressions such as $-x^2$"*.
+The substitution itself is the other danger. Use brackets as you do in algebra. Put the value inside brackets, so that an even power removes the minus sign and an odd power keeps it. The not-achieved list of the 2025 report has both *"substituted values incorrectly into the given function or derivative"* and *"misinterpreted expressions such as $-x^2$"*.
 
 ```practice
 caption: gradient at a point
@@ -253,18 +253,18 @@ questions:
     from: "2025"
     working:
       - math: f'(x) = 6x^2 + 6x + \dfrac{1}{2}
-        note: "The $\\dfrac{x}{2}$ is the term to watch. Its derivative is its coefficient, $\\dfrac{1}{2}$."
+        note: "The derivative of $\\dfrac{x}{2}$ is its coefficient, $\\dfrac{1}{2}$."
       - math: f'\!\left(-\dfrac{1}{2}\right) = 6\left(-\dfrac{1}{2}\right)^2 + 6\left(-\dfrac{1}{2}\right) + \dfrac{1}{2}
-        note: "Brackets around the substituted value, so the square keeps the sign right."
+        note: "Put brackets around the substituted value, so that its square is positive."
       - math: f'\!\left(-\dfrac{1}{2}\right) = \dfrac{3}{2} - 3 + \dfrac{1}{2} = -1
   - ask: Use calculus to find the gradient of the function at the point where $x = -\dfrac{1}{2}$.
     math: f(x) = 4x^3 + 2x^2 + \dfrac{x}{3} - 5
     grade: achieved
     working:
       - math: f'(x) = 12x^2 + 4x + \dfrac{1}{3}
-        note: "The $\\dfrac{x}{3}$ is the term to watch. Its derivative is its coefficient, $\\dfrac{1}{3}$."
+        note: "The derivative of $\\dfrac{x}{3}$ is its coefficient, $\\dfrac{1}{3}$."
       - math: f'\!\left(-\dfrac{1}{2}\right) = 12\left(-\dfrac{1}{2}\right)^2 + 4\left(-\dfrac{1}{2}\right) + \dfrac{1}{3}
-        note: "Brackets around the substituted value, so the square keeps the sign right."
+        note: "Put brackets around the substituted value, so that its square is positive."
       - math: f'\!\left(-\dfrac{1}{2}\right) = 3 - 2 + \dfrac{1}{3} = \dfrac{4}{3}
 ```
 
@@ -272,7 +272,7 @@ questions:
 
 ## Reading the gradient function backwards
 
-The same formula answers the reverse question: *at which point does the curve have gradient three?* Set the gradient function equal to the given gradient and solve for $x$. The given number is a gradient, so the equation it belongs in is $f'(x) = \textsf{gradient}$. It is never an input to $f$. The 2025 report names the error candidates make here: *"substituting the gradient value into the original function"*. Where the question asks for the point rather than just the $x$-value, finish by substituting that $x$ into the original function for its $y$-value. The point sits on the curve, so its height comes from $f$, not from $f'$.
+You can use the same formula for the reverse question: *at which point does the curve have gradient three?* Set the gradient function equal to the given gradient and solve for $x$. The given number is a gradient, so the equation it belongs in is $f'(x) = \textsf{gradient}$. Never substitute it into $f$. The 2025 report names the error candidates make here: *"substituting the gradient value into the original function"*. Where the question asks for the point rather than just the $x$-value, finish by substituting that $x$ into the original function for its $y$-value. The point sits on the curve, so its height comes from $f$, not from $f'$.
 
 ```figure
 caption: From a gradient to a point
@@ -283,12 +283,12 @@ steps:
   - math: 6x - 7 = 5
     note: "Set the gradient function equal to the gradient the question asks about."
   - math: x = 2
-    note: "That locates the point along the $x$-axis. The question asked for the point, so you still need its height."
+    note: "This $x$-value locates the point along the $x$-axis. The question asked for the point, so you still need its height."
   - math: f(2) = 3(2)^2 - 7(2) - 10 = -12
     note: "Height comes from the original function. The point is $(2, -12)$."
 ```
 
-One equation used twice: $f'$ finds *where*, $f$ finds *how high*. Keeping the two jobs separate is most of the mark in this kind of question.
+Use $f'$ to find *where* the point is, and use $f$ to find *how high* it is. Most of the mark in this kind of question is for keeping those two steps separate.
 
 ```practice
 caption: backwards
@@ -336,7 +336,7 @@ questions:
 
 ## Practice
 
-Work these on paper before revealing anything. They are ordered easiest first, and each one's band is what the marker would award for doing it well.
+Work these on paper before revealing anything. They are ordered easiest first, and each is labelled with the band the marker would award for doing it well.
 
 ```practice
 questions:
@@ -418,7 +418,7 @@ questions:
         note: "The claim is about gradients, so the working stays entirely in the gradient function."
       - math: f'(0) = 5
       - math: 3x^2 \ge 0 \;\textsf{ for every } x \textsf{, so } f'(x) \ge 5
-        note: "A square is never negative, and that carries the whole argument."
+        note: "The whole proof uses one fact: a square is never negative."
       - math: \textsf{The gradient is never less than } 5 \textsf{, its value at } x=0.
   - ask: Show that the gradient of the curve is smallest at $x = 0$.
     math: f(x) = 2x^3 + 3x
@@ -428,7 +428,7 @@ questions:
         note: "The claim is about gradients, so the working stays entirely in the gradient function."
       - math: f'(0) = 3
       - math: 6x^2 \ge 0 \;\textsf{ for every } x \textsf{, so } f'(x) \ge 3
-        note: "A square is never negative, and that carries the whole argument."
+        note: "The whole proof uses one fact: a square is never negative."
       - math: \textsf{The gradient is never less than } 3 \textsf{, its value at } x=0.
 ```
 
@@ -436,7 +436,7 @@ questions:
 
 ## Summary
 
-The gradient of a curve at a point is the gradient of its tangent there. The gradient function returns that number for every point at once.
+The gradient of a curve at a point is the gradient of its tangent there. The gradient function gives that number for every point at once.
 
 The rule is on the formulae sheet: multiply by the power, lower the power by one. Coefficients stay and multiply, terms differentiate one at a time, and a constant differentiates to zero.
 
@@ -444,4 +444,4 @@ The rule applies to a sum of terms only, so expand any product first.
 
 For a gradient at a point, substitute into $f'$, never into $f$: height and steepness are different numbers. For the point with a given gradient, solve $f'(x) = \textsf{gradient}$, then take the height from $f$.
 
-The next lesson uses $f'(a)$ as the $m$ in the equation of the tangent line. The lesson after that draws the graph of the gradient function beside the graph of $f$.
+The next lesson uses $f'(a)$ as the $m$ in the equation of the tangent line. In the lesson after that, you draw the graph of the gradient function beside the graph of $f$.

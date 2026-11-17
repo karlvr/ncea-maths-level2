@@ -2,13 +2,13 @@
 
 ---
 
-The cosine rule finds a side or an angle. The area of a triangle is a third quantity a question can ask for. The formula for it needs the same two pieces of information as the cosine rule for a side: two sides and the angle between them.
+The cosine rule finds a side or an angle. The area of a triangle is a third quantity a question can ask for. The formula for the area uses the same information as the cosine rule for a side: two sides and the angle between them.
 
 ---
 
 ## The area of a triangle
 
-$\textsf{Area} = \dfrac{1}{2}bc\sin A$, where $A$ is the angle between sides $b$ and $c$. The given information is two sides and the angle between them, the same shape as for the cosine rule. A different question is asked of it.
+$\textsf{Area} = \dfrac{1}{2}bc\sin A$, where $A$ is the angle between sides $b$ and $c$. You need two sides and the angle between them, the same information as for the cosine rule for a side. The difference is that the question asks for the area, not the third side.
 
 ```figure
 caption: Area from two sides and the angle between them
@@ -33,7 +33,7 @@ steps:
           label: 30°
     note: Two sides and the angle between them, at $C$. The third side is not needed.
   - math: \textsf{Area} = \dfrac{1}{2}(10)(9)\sin 30°
-    note: The two given sides and the angle they enclose substitute directly.
+    note: Substitute the two given sides and the angle between them directly.
   - math: \textsf{Area} = 45 \times 0.5 = 22.5 \;\textsf{m}^2
 ```
 
@@ -92,7 +92,7 @@ questions:
 
 ## Finding the angle first
 
-Where the included angle is not part of the given information, find it first. Then use the area formula on the two sides it sits between. Which method supplies the angle depends on what else is given. Use the angle sum where two other angles are known. Use the sine rule where an opposite pair is available. Use the cosine rule where three sides are given and nothing else. Three sides is the only shape of given information with no angle in it at all.
+Where the angle between the two sides is not given, find it first. Then use the area formula with the two sides that form that angle. The method you use to find the angle depends on what else is given. Use the angle sum where two other angles are known. Use the sine rule where you know an opposite pair. Use the cosine rule where three sides are given and nothing else. Three sides is the only kind of given information that does not include an angle.
 
 ```figure
 caption: An angle found before the area
@@ -112,14 +112,14 @@ steps:
         - from: A
           to: B
           label: 8 m
-    note: Three sides and no angle. The area formula needs an angle between two of them, so you find one first.
+    note: You know three sides and no angle. The area formula uses the angle between two of the sides, so find that angle first.
   - math: \cos A = \dfrac{9^2 + 8^2 - 12^2}{2(9)(8)}
-    note: The cosine rule reaches angle $A$, between the two sides, $b = 9$ and $c = 8$, that will carry the area formula.
+    note: Find angle $A$ with the cosine rule. $A$ is the angle between $b = 9$ and $c = 8$, the two sides the area formula will use.
   - math: \cos A = \dfrac{1}{144} = 0.0069\ldots
   - math: A = \cos^{-1}(0.0069\ldots) = 89.6°
   - math: \textsf{Area} = \dfrac{1}{2}(9)(8)\sin 89.6°
   - math: \textsf{Area} = 36 \times 0.99995\ldots = 36.0 \;\textsf{m}^2
-    note: $A$ is close to $90°$ here. That is a feature of this triangle, not a shortcut the method depends on.
+    note: $A$ is close to $90°$ here. That happens to be true of this triangle, and the method works for any angle.
 ```
 
 ```practice
@@ -144,7 +144,7 @@ questions:
     grade: merit
     working:
       - math: \cos A = \dfrac{7^2 + 12^2 - 13^2}{2(7)(12)}
-        note: Angle $A$, between the two sides the area formula will use.
+        note: Find angle $A$, the angle between the two sides the area formula will use.
       - math: \cos A = \dfrac{24}{168} = 0.1429\ldots
       - math: A = \cos^{-1}(0.1429\ldots) = 81.8°
       - math: \textsf{Area} = \dfrac{1}{2}(7)(12)\sin 81.8°
@@ -169,7 +169,7 @@ questions:
     working:
       - math: \cos A = \dfrac{6^2 + 8^2 - 10^2}{2(6)(8)}
       - math: \cos A = \dfrac{0}{96} = 0
-        note: A zero cosine. This is the $6$-$8$-$10$ right triangle that Pythagoras already fits. The cosine rule finds the right angle without being told to look for one.
+        note: The cosine is zero. This is the $6$-$8$-$10$ right-angled triangle, so its sides fit Pythagoras. The cosine rule gives the right angle even when the question does not mention one.
       - math: A = \cos^{-1}(0) = 90°
       - math: \textsf{Area} = \dfrac{1}{2}(6)(8)\sin 90° = 24.0 \;\textsf{m}^2
 ```
@@ -178,7 +178,7 @@ questions:
 
 ## Choosing the rule
 
-Four tools now cover any triangle, and which one applies depends on what is given.
+You can use the sine rule, the cosine rule and the area formula for any triangle. Which one applies depends on what is given.
 
 ```figure
 caption: Which rule fits the given information
@@ -194,7 +194,7 @@ steps:
       \end{array}
 ```
 
-The second and third rows start from identical given information. The same two sides and the same included angle can be asked for a side or for the area. The rule depends on what the question asks, not on the given information alone.
+The second and third rows start from identical given information. A question can give the same two sides and the same angle between them, and ask for either a side or the area. The rule to use depends on what the question asks, not on the given information alone.
 
 ```practice
 caption: choosing and solving
@@ -223,7 +223,7 @@ questions:
     grade: achieved
     working:
       - math: c^2 = 9^2 + 7^2 - 2(9)(7)\cos 65°
-        note: "Two sides and the angle between them, with a side wanted: the cosine rule."
+        note: You know two sides and the angle between them, and want a side, so use the cosine rule.
       - math: c^2 = 130 - 126\cos 65° = 76.75\ldots
       - math: c = \sqrt{76.75\ldots} = 8.8 \;\textsf{m}
   - ask: Find the length of side $c$.
@@ -274,7 +274,7 @@ questions:
     grade: achieved
     working:
       - math: \textsf{Area} = \dfrac{1}{2}(10)(8)\sin 40°
-        note: The same given shape as the two questions before it, but the area is wanted, not a side. So the area formula, not the cosine rule.
+        note: The given information is the same as in the two questions before it, but this question asks for the area, not a side. So use the area formula, not the cosine rule.
       - math: \textsf{Area} = 40 \times 0.6428\ldots = 25.7 \;\textsf{m}^2
   - ask: Find the area of the triangle.
     diagram:
@@ -323,7 +323,7 @@ questions:
     grade: achieved
     working:
       - math: \cos A = \dfrac{7^2 + 6^2 - 11^2}{2(7)(6)}
-        note: "Three sides, with an angle wanted: the cosine rule, rearranged for an angle."
+        note: You know three sides and want an angle, so use the cosine rule rearranged for an angle.
       - math: \cos A = \dfrac{-36}{84} = -0.4286\ldots
       - math: A = \cos^{-1}(-0.4286\ldots) = 115.4°
   - ask: Find the size of angle $A$.
@@ -378,7 +378,7 @@ questions:
     grade: achieved
     working:
       - math: \dfrac{b}{\sin 95°} = \dfrac{9}{\sin 38°}
-        note: "An opposite pair, side $a = 9$ and angle $A = 38°$, plus one more piece: the sine rule."
+        note: You know an opposite pair, side $a = 9$ and angle $A = 38°$, and one more angle, so use the sine rule.
       - math: b = \dfrac{9 \sin 95°}{\sin 38°}
       - math: b = 14.6 \;\textsf{m}
   - ask: Find the length of side $b$.
@@ -415,7 +415,7 @@ questions:
 
 ## Practice
 
-Work these on paper before revealing anything. They draw on the whole module, and the band each one is pitched at is the band the marker would award for doing it well.
+Work these on paper before revealing anything. They use every method in the module, and each is labelled with the band the marker would award for doing it well.
 
 ```practice
 questions:
@@ -445,7 +445,7 @@ questions:
     grade: merit
     working:
       - math: \angle T = 180° - 72° - 65° = 43°
-        note: The ratio already known is built from $AB = 50$ and its opposite angle, at $T$. That angle is found first, from the angle sum.
+        note: The known ratio comes from $AB = 50$ and its opposite angle at $T$. Find that angle first, from the angle sum.
       - math: \dfrac{BT}{\sin 72°} = \dfrac{50}{\sin 43°}
       - math: BT = \dfrac{50 \sin 72°}{\sin 43°}
       - math: BT = 69.7 \;\textsf{m}
@@ -554,7 +554,7 @@ questions:
     grade: excellence
     working:
       - math: \cos A = \dfrac{7^2 + 5^2 - 9^2}{2(7)(5)}
-        note: No angle is given, so the strategy is the cosine rule for an angle, then the area formula, then the area multiplied by the rate.
+        note: No angle is given, so the strategy is the cosine rule for an angle, then the area formula, then the area multiplied by the cost per square metre.
       - math: \cos A = \dfrac{-7}{70} = -0.1
       - math: A = \cos^{-1}(-0.1) = 95.7°
       - math: \textsf{Area} = \dfrac{1}{2}(7)(5)\sin 95.7° = 17.4 \;\textsf{m}^2
@@ -608,10 +608,10 @@ questions:
     grade: excellence
     working:
       - math: \dfrac{a}{\sin A} = \dfrac{b}{\sin B} \quad\Rightarrow\quad \sin R = \dfrac{70 \sin 22°}{30}
-        note: "$PQ = 70$ is opposite the angle at $R$. $QR = 30$, opposite $P$, is the known ratio."
+        note: $PQ = 70$ is opposite the angle at $R$. $QR = 30$ and the angle at $P$ are the opposite pair.
       - math: \sin R = 0.8741\ldots
       - math: R = \sin^{-1}(0.8741\ldots) = 60.9° \quad\textsf{or}\quad 180° - 60.9° = 119.1°
-        note: The diagram shows $R$ obtuse, so the second branch is the one wanted. The decision is stated, not left implicit.
+        note: The diagram shows $R$ obtuse, so the obtuse angle is the one wanted. The decision is stated, not left implicit.
       - math: \angle Q = 180° - 22° - 119.1° = 38.9°
       - math: \dfrac{PR}{\sin 38.9°} = \dfrac{30}{\sin 22°}
       - math: PR = \dfrac{30 \sin 38.9°}{\sin 22°} = 50.3 \;\textsf{m}
@@ -643,7 +643,7 @@ questions:
       - math: \dfrac{a}{\sin A} = \dfrac{b}{\sin B} \quad\Rightarrow\quad \sin R = \dfrac{65 \sin 20°}{25}
       - math: \sin R = 0.8893\ldots
       - math: R = \sin^{-1}(0.8893\ldots) = 62.8° \quad\textsf{or}\quad 180° - 62.8° = 117.2°
-        note: The diagram shows $R$ obtuse, so the second branch is the one wanted.
+        note: The diagram shows $R$ obtuse, so the obtuse angle is the one wanted.
       - math: \angle Q = 180° - 20° - 117.2° = 42.8°
       - math: \dfrac{PR}{\sin 42.8°} = \dfrac{25}{\sin 20°}
       - math: PR = \dfrac{25 \sin 42.8°}{\sin 20°} = 49.7 \;\textsf{m}
@@ -655,8 +655,8 @@ questions:
 
 ## Summary
 
-$\textsf{Area} = \dfrac{1}{2}bc\sin A$ needs the same given information as the cosine rule for a side: two sides and the angle between them. Where that angle is not part of the given information, find it first. It comes from the angle sum, the sine rule or the cosine rule, whichever the rest of the given information supplies. Only then can the area formula be used.
+$\textsf{Area} = \dfrac{1}{2}bc\sin A$ uses the same given information as the cosine rule for a side: two sides and the angle between them. Where that angle is not given, find it first. Use the angle sum, the sine rule or the cosine rule, depending on the rest of the given information. Then use the area formula.
 
-Which of the four tools fits a question depends on what is given and what is asked, not on which lesson it happened to appear in. An opposite pair needs the sine rule. Two sides and the angle between them need the cosine rule if a side is wanted, or the area formula if the area is wanted. Three sides need the cosine rule, rearranged for an angle.
+The method to use depends on what is given and what is asked, not on the lesson where you first saw it. With an opposite pair, use the sine rule. With two sides and the angle between them, use the cosine rule for a side, or the area formula for the area. With three sides, use the cosine rule, rearranged for an angle.
 
-Triangles are done. The standard's remaining two methods, arc length and sector area, apply the same idea, a fraction of the whole, to parts of a circle instead.
+This completes the methods for triangles. The next lesson covers the two remaining methods in the standard, arc length and sector area. Both use a fraction of a whole circle.
