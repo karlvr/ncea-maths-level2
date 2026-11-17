@@ -238,9 +238,9 @@ questions:
           to: B
           label: c
       angles:
-        - at: A
-          from: B
-          to: C
+        - at: C
+          from: A
+          to: B
           label: 105°
     grade: achieved
     working:
@@ -265,9 +265,9 @@ questions:
           to: B
           label: c
       angles:
-        - at: A
-          from: B
-          to: C
+        - at: C
+          from: A
+          to: B
           label: 100°
     grade: achieved
     working:
