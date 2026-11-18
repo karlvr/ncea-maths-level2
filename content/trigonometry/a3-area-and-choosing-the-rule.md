@@ -483,9 +483,9 @@ questions:
   - ask: A triangular sail has two edges of length $4.2$ m and $3.6$ m, with an angle of $110°$ between them. Find the length of the sail's third edge, its foot.
     diagram:
       points:
-        A: [0, 0]
-        B: [80, 0]
-        C: [35, 28]
+        A: [28.3, 22.2]
+        B: [0, 0]
+        C: [64, 0]
       edges:
         - from: A
           to: C
@@ -511,9 +511,9 @@ questions:
   - ask: A triangular sail has two edges of length $5.0$ m and $3.8$ m, with an angle of $115°$ between them. Find the length of the sail's third edge, its foot.
     diagram:
       points:
-        A: [0, 0]
-        B: [80, 0]
-        C: [32, 25]
+        A: [30.2, 23.1]
+        B: [0, 0]
+        C: [74.5, 0]
       edges:
         - from: A
           to: C
