@@ -552,9 +552,9 @@ main {
   stroke-width: 1.25;
 }
 
+/* Each label's font size is set on the element, by the code that places it. */
 .sketch text {
   font-family: var(--serif);
-  font-size: 15px;
   fill: var(--ink);
 }
 
@@ -564,7 +564,6 @@ main {
 }
 
 .sketch .sketch-numeral {
-  font-size: 13px;
   fill: var(--muted);
 }
 
@@ -644,14 +643,10 @@ main {
 .diagram-edge.c-c, .diagram-angle.c-c, .diagram-arc.c-c { stroke: var(--c-c); }
 .diagram-edge.c-d, .diagram-angle.c-d, .diagram-arc.c-d { stroke: var(--c-d); }
 
+/* Each label's font size is set on the element, by the code that places it. */
 .diagram text {
   font-family: var(--serif);
-  font-size: 15px;
   fill: var(--ink);
-}
-
-.diagram .diagram-label {
-  font-size: 14px;
 }
 
 .diagram .diagram-label.is-variable,

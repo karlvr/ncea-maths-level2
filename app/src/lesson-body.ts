@@ -26,7 +26,7 @@ export interface GraphCurve {
   readonly color?: Highlight
   /** Label for the curve, set in plain text beside it. */
   readonly label?: string
-  /** The x at which to set the label. Defaults to near the right-hand end. */
+  /** The x near which to set the label. Defaults to near the right-hand end. */
   readonly labelAt?: number
   readonly dashed?: boolean
   /** The x-interval to draw over, where narrower than the sketch's domain. */
@@ -68,7 +68,7 @@ export interface Graph {
 export interface DiagramEdge {
   readonly from: string
   readonly to: string
-  /** Label for the edge — a length, or a letter — set beside its midpoint. */
+  /** Label for the edge — a length, or a letter — set beside it, at its midpoint where there is room. */
   readonly label?: string
   readonly color?: Highlight
   /** Dashed is how a hidden edge of a solid, or an added line, is drawn. */

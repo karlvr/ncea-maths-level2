@@ -12,23 +12,39 @@
  * being solved inside a larger figure can be picked out.
  */
 import type { Diagram as DiagramSpec, DiagramEdge, Highlight } from '../lesson-body'
+import {
+  Clearance,
+  beyond,
+  measureLabel,
+  standoff,
+  textPosition,
+  type LabelSize,
+  type PlacedLabel,
+} from './label-layout'
+import { add, between, dot, length, perpendicular, rotate, scale, subtract, unit, type Vec } from './vector'
 
 const W = 360
 const MAX_H = 320
 const PAD = 34
 
-type Vec = readonly [number, number]
+/** The font size of a measurement label, in the figure's pixels. */
+const LABEL_FONT = 14
+/** The font size of a point's name, in the figure's pixels. */
+const NAME_FONT = 15
 
-const add = (a: Vec, b: Vec): Vec => [a[0] + b[0], a[1] + b[1]]
-const subtract = (a: Vec, b: Vec): Vec => [a[0] - b[0], a[1] - b[1]]
-const scale = (a: Vec, s: number): Vec => [a[0] * s, a[1] * s]
-const length = (a: Vec): number => Math.hypot(a[0], a[1])
-
-/** The unit vector along `a`, or upward when `a` has no length to speak of. */
-function unit(a: Vec): Vec {
-  const size = length(a)
-  return size < 1e-9 ? [0, 1] : [a[0] / size, a[1] / size]
-}
+/** The radius of an angle's arc, in the figure's pixels. */
+const ANGLE_RADIUS = 16
+/** The side of a right-angle square, in the figure's pixels. */
+const SQUARE_SIDE = 11
+/** The least distance from an angle's vertex to the centre of its label. */
+const ANGLE_LABEL_DISTANCE = 29
+/** The distance from a point to the centre of its name. */
+const NAME_DISTANCE = 15
+/**
+ * The turns, in degrees, that a name can take away from the direction that
+ * points out of the figure, in order of preference.
+ */
+const NAME_TURNS = [0, 25, -25, 50, -50, 75, -75, 100, -100]
 
 /** Normalises an edge to its object form, from the `[from, to]` shorthand. */
 function asEdge(edge: readonly [string, string] | DiagramEdge): DiagramEdge {
@@ -66,6 +82,51 @@ function bisector(center: Vec, from: Vec, to: Vec, reflex: boolean): Vec {
   return reflex ? scale(middle, -1) : middle
 }
 
+/**
+ * The distance from an angle's vertex to the centre of its label, along the
+ * unit vector `toward`, so that the label clears the angle's mark and both of
+ * its `arms`. A narrow angle sets its label further out, where the arms are
+ * further apart.
+ */
+function angleLabelDistance(size: LabelSize, toward: Vec, arms: readonly Vec[]): number {
+  let distance = Math.max(ANGLE_LABEL_DISTANCE, ANGLE_RADIUS + standoff(size, toward))
+  for (const arm of arms) {
+    const cos = dot(toward, arm)
+    // An arm that points away from the label, as in a reflex angle, cannot reach it.
+    if (cos <= 0) continue
+    const sin = Math.max(Math.sqrt(1 - cos * cos), 0.05)
+    distance = Math.max(distance, standoff(size, perpendicular(arm)) / sin)
+  }
+  return distance
+}
+
+/**
+ * The unit normal to the line from `a` to `b` on the side away from `middle`.
+ * Where `middle` lies on the line, the normal that points up the screen, or
+ * else to the right.
+ */
+function outwardNormal(a: Vec, b: Vec, middle: Vec): Vec {
+  const normal = perpendicular(unit(subtract(b, a)))
+  const side = dot(normal, subtract(between(a, b, 0.5), middle))
+  const reversed =
+    Math.abs(side) > 1e-6 ? side < 0 : normal[1] > 1e-9 || (Math.abs(normal[1]) <= 1e-9 && normal[0] < 0)
+  return reversed ? scale(normal, -1) : normal
+}
+
+/**
+ * Returns true when the line from `a` to `b` and the line from `c` to `d` lie
+ * along each other for part of their length, as part of a side does with the
+ * whole side. Positions are on the screen, and a pixel counts as touching.
+ */
+function overlapping(a: Vec, b: Vec, c: Vec, d: Vec): boolean {
+  const along = unit(subtract(b, a))
+  const across = perpendicular(along)
+  if (Math.abs(dot(subtract(c, a), across)) > 1 || Math.abs(dot(subtract(d, a), across)) > 1) return false
+  const from = dot(subtract(c, a), along)
+  const to = dot(subtract(d, a), along)
+  return Math.max(from, to) > 1 && Math.min(from, to) < length(subtract(b, a)) - 1
+}
+
 const colourClass = (color: Highlight | undefined) => (color ? ` c-${color}` : '')
 
 /** A measurement label is upright; a bare letter names a variable, in italic. */
@@ -82,13 +143,11 @@ export function Diagram({ diagram }: { diagram: DiagramSpec }) {
     ...arc,
     radius: length(subtract(at(arc.from), at(arc.center))),
   }))
+  const arcCurves = arcs.map((arc) => arcPoints(at(arc.center), at(arc.from), at(arc.to), arc.radius, arc.reflex ?? false))
 
   // The figure's extent in its own coordinates, arcs included: a sector's arc
   // can swing wide of every named point.
-  const extent = [
-    ...named.map(([, point]) => point),
-    ...arcs.flatMap((arc) => arcPoints(at(arc.center), at(arc.from), at(arc.to), arc.radius, arc.reflex ?? false)),
-  ]
+  const extent = [...named.map(([, point]) => point), ...arcCurves.flat()]
   const xs = extent.map((point) => point[0])
   const ys = extent.map((point) => point[1])
   const x0 = Math.min(...xs)
@@ -103,6 +162,7 @@ export function Diagram({ diagram }: { diagram: DiagramSpec }) {
   const sx = (x: number) => inset + (x - x0) * zoom
   const sy = (y: number) => height - PAD - (y - y0) * zoom
   const map = (point: Vec): Vec => [sx(point[0]), sy(point[1])]
+  const screen = (name: string): Vec => map(at(name))
   /** A world direction on the screen, where the y-axis points the other way. */
   const flip = (direction: Vec): Vec => [direction[0], -direction[1]]
 
@@ -110,22 +170,103 @@ export function Diagram({ diagram }: { diagram: DiagramSpec }) {
     named.reduce((sum, [, point]) => add(sum, point), [0, 0] as Vec),
     1 / Math.max(named.length, 1),
   )
+  const middle = map(centroid)
+
+  const angleMarks = angles.map((angle) => {
+    const vertex = at(angle.at)
+    const from = unit(subtract(at(angle.from), vertex))
+    const to = unit(subtract(at(angle.to), vertex))
+    return angle.right
+      ? [
+          add(vertex, scale(from, SQUARE_SIDE / zoom)),
+          add(vertex, scale(add(from, to), SQUARE_SIDE / zoom)),
+          add(vertex, scale(to, SQUARE_SIDE / zoom)),
+        ]
+      : arcPoints(
+          vertex,
+          add(vertex, scale(from, ANGLE_RADIUS / zoom)),
+          add(vertex, scale(to, ANGLE_RADIUS / zoom)),
+          ANGLE_RADIUS / zoom,
+          angle.reflex ?? false,
+        )
+  })
 
   const polyline = (points: readonly Vec[]) =>
     `M${points.map((point) => map(point).map((n) => n.toFixed(2)).join(',')).join('L')}`
 
-  /** A text position offset from a screen point along a world direction. */
-  const offset = (point: Vec, direction: Vec, distance: number) => {
-    const [dx, dy] = flip(unit(direction))
-    const [x, y] = map(point)
-    return { x: x + dx * distance, y: y + dy * distance + 4 }
-  }
+  // Every line is drawn before any label is placed, and the labels are placed
+  // from the most constrained to the least: a name stays close to its point,
+  // an angle's label sits on the angle's bisector, and an edge's label can
+  // move along the edge or to its other side.
+  const clearance = new Clearance(W, height)
+  edges.forEach((edge, index) => clearance.line(screen(edge.from), screen(edge.to), `edge ${index}`))
+  for (const mark of [...angleMarks, ...arcCurves]) clearance.polyline(mark.map(map))
+
+  const names = named.map(([name, point]) => {
+    const away = unit(subtract(map(point), middle))
+    return clearance.place(
+      measureLabel(name, NAME_FONT),
+      NAME_TURNS.map((turn) => add(map(point), scale(rotate(away, (turn * Math.PI) / 180), NAME_DISTANCE))),
+    )
+  })
+
+  const angleLabels = angles.map((angle): PlacedLabel | undefined => {
+    if (!angle.label) return undefined
+    const vertex = screen(angle.at)
+    const arms = [unit(subtract(screen(angle.from), vertex)), unit(subtract(screen(angle.to), vertex))]
+    const toward = flip(bisector(at(angle.at), at(angle.from), at(angle.to), angle.reflex ?? false))
+    const size = measureLabel(angle.label, LABEL_FONT)
+    const distance = angleLabelDistance(size, toward, arms)
+    return clearance.place(
+      size,
+      [0, 8, 16, 24].map((extra) => add(vertex, scale(toward, distance + extra))),
+    )
+  })
+
+  const arcLabels = arcs.map((arc): PlacedLabel | undefined => {
+    if (!arc.label) return undefined
+    const toward = bisector(at(arc.center), at(arc.from), at(arc.to), arc.reflex ?? false)
+    const onArc = map(add(at(arc.center), scale(toward, arc.radius)))
+    const size = measureLabel(arc.label, LABEL_FONT)
+    return clearance.place(
+      size,
+      [0, 8, 16].map((extra) => beyond(onArc, flip(toward), size, extra)),
+    )
+  })
+
+  const edgeLabels = edges.map((edge, index): PlacedLabel | undefined => {
+    if (!edge.label) return undefined
+    const a = screen(edge.from)
+    const b = screen(edge.to)
+    const size = measureLabel(edge.label, LABEL_FONT)
+    const outward = outwardNormal(a, b, middle)
+    const inward = scale(outward, -1)
+    // An edge that lies along an edge labelled before it, such as part of a
+    // side drawn over the whole side, sets its label on the other side.
+    const shared = edges
+      .slice(0, index)
+      .some((other) => other.label && overlapping(a, b, screen(other.from), screen(other.to)))
+    const [preferred, other] = shared ? [inward, outward] : [outward, inward]
+    const along = (side: Vec, fractions: readonly number[], extra = 0) =>
+      fractions.map((t) => beyond(between(a, b, t), side, size, extra))
+    return clearance.place(
+      size,
+      [
+        ...along(preferred, [0.5, 0.38, 0.62]),
+        ...along(other, [0.5, 0.38, 0.62]),
+        ...along(preferred, [0.26, 0.74]),
+        ...along(other, [0.26, 0.74]),
+        ...along(preferred, [0.5], 10),
+      ],
+      `edge ${index}`,
+    )
+  })
 
   return (
     <svg className="diagram" viewBox={`0 0 ${W} ${height}`} role="img" aria-label="A labelled diagram">
       {edges.map((edge, index) => {
-        const [x1, y1] = map(at(edge.from))
-        const [x2, y2] = map(at(edge.to))
+        const [x1, y1] = screen(edge.from)
+        const [x2, y2] = screen(edge.to)
         return (
           <line
             key={index}
@@ -139,39 +280,14 @@ export function Diagram({ diagram }: { diagram: DiagramSpec }) {
       })}
 
       {angles.map((angle, index) => {
-        const vertex = at(angle.at)
-        const from = at(angle.from)
-        const to = at(angle.to)
-        const toward = bisector(vertex, from, to, angle.reflex ?? false)
-        const mark = angle.right ? (
-          <path
-            className={`diagram-angle${colourClass(angle.color)}`}
-            d={polyline([
-              add(vertex, scale(unit(subtract(from, vertex)), 11 / zoom)),
-              add(vertex, scale(add(unit(subtract(from, vertex)), unit(subtract(to, vertex))), 11 / zoom)),
-              add(vertex, scale(unit(subtract(to, vertex)), 11 / zoom)),
-            ])}
-          />
-        ) : (
-          <path
-            className={`diagram-angle${colourClass(angle.color)}`}
-            d={polyline(
-              arcPoints(
-                vertex,
-                add(vertex, scale(unit(subtract(from, vertex)), 16 / zoom)),
-                add(vertex, scale(unit(subtract(to, vertex)), 16 / zoom)),
-                16 / zoom,
-                angle.reflex ?? false,
-              ),
-            )}
-          />
-        )
+        const label = angleLabels[index]
         return (
           <g key={index}>
-            {mark}
-            {angle.label && (
+            <path className={`diagram-angle${colourClass(angle.color)}`} d={polyline(angleMarks[index])} />
+            {angle.label && label && (
               <text
-                {...offset(vertex, toward, 29)}
+                {...textPosition(label)}
+                fontSize={LABEL_FONT}
                 className={`${labelClass(angle.label)}${colourClass(angle.color)}`}
                 textAnchor="middle"
               >
@@ -183,17 +299,14 @@ export function Diagram({ diagram }: { diagram: DiagramSpec }) {
       })}
 
       {arcs.map((arc, index) => {
-        const center = at(arc.center)
-        const toward = bisector(center, at(arc.from), at(arc.to), arc.reflex ?? false)
+        const label = arcLabels[index]
         return (
           <g key={index}>
-            <path
-              className={`diagram-arc${colourClass(arc.color)}`}
-              d={polyline(arcPoints(center, at(arc.from), at(arc.to), arc.radius, arc.reflex ?? false))}
-            />
-            {arc.label && (
+            <path className={`diagram-arc${colourClass(arc.color)}`} d={polyline(arcCurves[index])} />
+            {arc.label && label && (
               <text
-                {...offset(add(center, scale(toward, arc.radius)), toward, 14)}
+                {...textPosition(label)}
+                fontSize={LABEL_FONT}
                 className={`${labelClass(arc.label)}${colourClass(arc.color)}`}
                 textAnchor="middle"
               >
@@ -204,28 +317,29 @@ export function Diagram({ diagram }: { diagram: DiagramSpec }) {
         )
       })}
 
-      {edges.map(
-        (edge, index) =>
-          edge.label && (
+      {edges.map((edge, index) => {
+        const label = edgeLabels[index]
+        return (
+          edge.label &&
+          label && (
             <text
               key={index}
-              {...offset(
-                scale(add(at(edge.from), at(edge.to)), 0.5),
-                subtract(scale(add(at(edge.from), at(edge.to)), 0.5), centroid),
-                13,
-              )}
+              {...textPosition(label)}
+              fontSize={LABEL_FONT}
               className={`${labelClass(edge.label)}${colourClass(edge.color)}`}
               textAnchor="middle"
             >
               {edge.label}
             </text>
-          ),
-      )}
+          )
+        )
+      })}
 
-      {named.map(([name, point]) => (
+      {named.map(([name], index) => (
         <text
           key={name}
-          {...offset(point, subtract(point, centroid), 15)}
+          {...textPosition(names[index])}
+          fontSize={NAME_FONT}
           className="diagram-name"
           textAnchor="middle"
         >

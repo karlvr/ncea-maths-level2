@@ -113,7 +113,7 @@ steps:
 |---|---|
 | `domain` | The x-interval the sketch covers, as `[low, high]`. Required. |
 | `range` | The y-interval shown. Derived from the curves when omitted. |
-| `curves` | Each has `poly`, the polynomial's coefficients highest power first — `[1, 0, -3]` is $x^2-3$ — and optionally `color` (`a`–`d`, the highlight palette), `label`, `labelAt` (the x to set the label at), `dashed`, and its own `domain`. |
+| `curves` | Each has `poly`, the polynomial's coefficients highest power first — `[1, 0, -3]` is $x^2-3$ — and optionally `color` (`a`–`d`, the highlight palette), `label`, `labelAt` (the x to set the label near), `dashed`, and its own `domain`. |
 | `points` | Each has `at: [x, y]`, and optionally `label`, `color`, and `guides`, which draws dashed lines from the point to each axis. |
 | `xticks`, `yticks` | Values marked on an axis. An unmarked axis carries only its arrowhead. |
 | `xlabel`, `ylabel` | Axis labels, where the context names them something other than `x` and `y`. |
@@ -167,7 +167,7 @@ steps:
 | Field | Meaning |
 |---|---|
 | `points` | Named vertices: `A: [x, y]`, y upward. Coordinates are unitless and only their proportions matter — the diagram scales to fit. Every point is labelled with its name. |
-| `edges` | Each is `[P, Q]`, or an object with `from` and `to` and optionally `label` (set beside the edge's midpoint), `color` (`a`–`d`), and `dashed` — dashed is how a hidden edge of a solid, or a line added to the figure, is drawn. |
+| `edges` | Each is `[P, Q]`, or an object with `from` and `to` and optionally `label` (set beside the edge, at its midpoint where there is room), `color` (`a`–`d`), and `dashed` — dashed is how a hidden edge of a solid, or a line added to the figure, is drawn. |
 | `angles` | An arc marking the angle at vertex `at`, between the rays toward `from` and toward `to`, with an optional `label` and `color`. `right: true` draws the right-angle square instead of an arc. The smaller of the two angles is marked; `reflex: true` marks the other. |
 | `arcs` | A circular arc for sectors: `center`, `from` and `to` (points on the circle), and optionally `label` and `color`. The minor arc is drawn; `reflex: true` draws the major one. |
 
